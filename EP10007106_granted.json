@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "jurisdiction": "EP",
+    "application_number": "10007106.7",
+    "title": "Model determination system",
+    "applicant": "Accenture Global Services Limited",
+    "filing_date": "09.07.2010",
+    "examination_date": "11.10.2022",
+    "outcome": "granted"
+  },
+  "grant_label": "yes",
+  "dimension_scores": {
+    "novelty_score": 100,
+    "novelty_disc": "未被新颖性明确质疑。2010年欧洲检索意见未列实质性破坏新颖性的先文，仅指出权利要求1-15涉及Art.52(2)(3)排除主题；2020/2021审查通信引用EP1492030、US2008319811、US2008005076主要用于Art.56/COMVIK分析。区别特征被表述为在通用联网计算机/多维数据存储上运行的模型确定业务规则，而非被单一先文直接公开。",
+    "inventive_step_score": 80,
+    "inventive_step_disc": "曾被明确质疑但最终授权。2020和2021通信以通用联网计算机及EP1492030中的OLAP/多维数据存储为技术背景，认为权利要求1与最接近现有技术的区别在于变量确定、假设、模型生成和模型评价等业务/抽象模型步骤；审查员认为所谓元数据层/数据层带来的查询更快效果未能从权利要求导出，故按COMVIK方法不贡献技术性创造性。后续审查部发出Rule 71(3)授权意向并于05.01.2023作出Art.97(1)授权决定，说明最终文本中的Art.56异议已被撤回或克服。",
+    "support_score": 100,
+    "support_disc": "充分公开/Art.83及说明书支持未被质疑。最终授权文本采用原说明书第4-26页、2020年提交的第1-3页及2015年提交的权利要求1-10；未见对具体权利要求缺乏支持的正式异议。",
+    "clarity_score": 80,
+    "clarity_disc": "存在小幅Art.84问题但已在授权文本中处理。Rule 71(3)通信要求删除说明书第12页非必要的incorporation-by-reference，并加入被引用美国申请公开号；无未解决的模糊用语异议。",
+    "unity_score": 100,
+    "unity_disc": "未被质疑",
+    "eligibility_score": 80,
+    "eligibility_disc": "曾被Art.52(2)(3)质疑。2010检索意见认为权利要求1-15属于被排除主题，2020/2021通信也认为方法本身是抽象/业务构思，技术性仅在于通用计算机和多维存储；但最终欧洲专利被授权，表明最终文本被认为满足EP Art.52要求。"
+  },
+  "aggregate_score": 89,
+  "top_risk_reasons": [
+    "COMVIK技术贡献曾被否定",
+    "EP1492030揭示OLAP多维存储背景",
+    "模型生成步骤易被视为业务规则",
+    "Art.84曾要求删除非必要引用"
+  ],
+  "recommended_actions": [
+    "维持Rule 71(3)授权文本，避免恢复2010/2020版本中宽泛的业务方法表述",
+    "后续异议或无效中重点论证多维数据存储与元数据/数据层带来的查询速度技术效果",
+    "不要将区别特征仅表述为变量、假设和模型评价规则，应绑定具体计算机数据结构或处理流程",
+    "保留说明书第1-3页2020年修改文本及第12页Art.84删除记录作为授权文本依据"
+  ],
+  "evidence_trace": {
+    "prior_art_documents": [
+      "EP1492030",
+      "US2008319811",
+      "US2008005076",
+      "US48340106"
+    ],
+    "affected_claims": [
+      1,
+      6,
+      10
+    ],
+    "specification_support": [
+      {
+        "location": "Rule 71(3)通信第1页",
+        "relevance": "授权文本列明说明书第4-26页为原始文本，第1-3页为21.09.2020提交文本，权利要求1-10为13.05.2015提交文本"
+      },
+      {
+        "location": "Rule 71(3)通信第2页",
+        "relevance": "审查部要求删除第12页非必要引用并加入被引用美国申请公开号，作为Art.84修正"
+      },
+      {
+        "location": "2020/2021审查通信附件",
+        "relevance": "Art.56异议集中于权利要求1、6、10的通用计算机实现和非技术业务特征"
+      }
+    ],
+    "examination_rounds": 4
+  }
+}

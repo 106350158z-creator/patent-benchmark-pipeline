@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "jurisdiction": "EP",
+    "application_number": "94912949.8",
+    "title": "Method of estimating product distribution",
+    "applicant": "DUNS LICENSING ASSOCIATES, L.P.",
+    "filing_date": "05.04.1994",
+    "examination_date": "01.09.2003",
+    "outcome": "rejected"
+  },
+  "grant_label": "no",
+  "dimension_scores": {
+    "novelty_score": 100,
+    "novelty_disc": "未以Art.54新颖性作为拒绝理由。审查意见和决定引用D1 US4972504、D3 Chong、D5 Chou等用于Art.56显而易见性和技术贡献分析；区别特征主要是将采样/未采样销售网点数据与距离或邮编等空间相关参数相结合来估计销售额，未被认定为被单一先文直接公开。",
+    "inventive_step_score": 15,
+    "inventive_step_disc": "被明确否定。最终决定将D1 US4972504作为系统权利要求7的最接近现有技术，D1公开实时零售数据采集、中央处理器、存储零售数据库和统计输出；区别特征是基于采样和未采样销售网点、距离/邮编及空间相关进行销售活动估计。审查部认为客观问题只是改进销售活动估计的经济/统计问题，技术方面仅是用通用处理器、数据库和程序实现，属程序员常规工作；辅助请求加入处理器或邻近销售网点仍只细化业务概念。2000年通信还以D3 Chong结合D5 Chou说明GIS距离、缓冲区和空间权重函数用于零售/地域分析，方法权利要求缺乏创造性。",
+    "support_score": 60,
+    "support_disc": "说明书支持/充分公开存在实质风险但非最终唯一法条。2003年传票附件指出若主张对计算机技术有贡献，应清楚公开；说明书仅以结果方式描述中央站、数据分区、第二处理器并行处理和信号形成，未详细说明如何分配大量数据、合并结果或解决并行处理时序问题。受影响主要为涉及并行处理/中央站结构的权利要求13、19及对应从属项。",
+    "clarity_score": 40,
+    "clarity_disc": "Art.84被明确质疑。1998年通信认为权利要求1-55不简洁；2000年通信认为四个独立权利要求的部分重叠和不同措辞导致不清楚，'product information'、'second geographic data'以及销售网点'size'等用语含义不明。部分修改减少了权利要求数量，但清楚性问题仍构成重要背景风险。",
+    "unity_score": 100,
+    "unity_disc": "未被质疑",
+    "eligibility_score": 10,
+    "eligibility_disc": "被明确否定。最终决定认定主请求及辅助请求的权利要求1和7不满足Art.52(1)，因为实质上不超出Art.52(2)(c)和52(3)排除的商业方法本身；输入/输出为销售、网点和营销数据，数据库、处理器、存储器等仅为通用技术手段，未产生进一步技术效果。"
+  },
+  "aggregate_score": 49,
+  "top_risk_reasons": [
+    "核心为销售预测商业方法",
+    "D1下差异仅为经济统计规则",
+    "D3+D5公开GIS距离空间相关",
+    "系统权利要求仅泛称处理器数据库",
+    "多独权与术语不清触发Art.84"
+  ],
+  "recommended_actions": [
+    "将独立权利要求改为具体计算机技术方案，加入数据分区、并行调度、缓存或通信协议细节",
+    "把技术效果限定为降低处理延迟、内存占用或网络负载，并在说明书中补充对应实现依据",
+    "按COMVIK重构：把销售预测规则作为非技术约束，技术问题限定为如何高效实现该约束",
+    "删除重复独立权利要求，统一'size'、'product information'、'geographic data'等术语定义",
+    "避免仅加入'processor'、'database'等通用硬件，需限定其非惯常交互和具体数据流"
+  ],
+  "evidence_trace": {
+    "prior_art_documents": [
+      "D1 US4972504",
+      "D2 US5377095 / JPH0567119 / Patent Abstracts of Japan vol.017 no.396",
+      "D3 Chong, D., Beyond a demographic information system: retail and service industry applications of geographic information systems, GIS/LIS Proceedings 1992",
+      "D4 GB2250362A",
+      "D5 Chou Yue-Hong, Analyzing the spatial autocorrelation of polygonal data in GIS, URISA Proceedings 1989",
+      "D6 US4926394A",
+      "D7 Isaki Cary T., Small-Area Estimation of Economic Statistics, Journal of Business & Economic Statistics, Oct. 1990"
+    ],
+    "affected_claims": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      19
+    ],
+    "specification_support": [
+      {
+        "location": "2003年传票附件第7点",
+        "relevance": "说明书仅以结果描述中央站结构、数据分区和第二处理器并行处理，未充分说明并行处理技术实现"
+      },
+      {
+        "location": "最终决定第III部分第2.1-2.4节",
+        "relevance": "权利要求1的销售估计步骤被认定为业务/数学处理，未在物理技术系统中产生技术效果"
+      },
+      {
+        "location": "最终决定第III部分第5.2节",
+        "relevance": "辅助请求2关于邻近销售网点的修改在PCT公开第11-12页有基础，但只细化业务概念"
+      }
+    ],
+    "examination_rounds": 4
+  }
+}

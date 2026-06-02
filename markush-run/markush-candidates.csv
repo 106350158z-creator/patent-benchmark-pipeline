@@ -1,0 +1,13 @@
+rank,publication,application,status,title,applicant_or_assignee,relevance,source_url,selection_note
+1,EP3720438B1,EP18885399.8,Granted/active,Heterocycle substituted pyridine derivative antifungal agents,Basilea Pharmaceutica International AG / Amplyx Pharmaceuticals Inc,直接对应本地 APX001/fosmanogepix 异噁唑-吡啶 GWT1 抗真菌 Markush,https://patents.google.com/patent/EP3720438B1/en,选为正例
+2,EP2226320A4,EP08863620.4,Withdrawn/deemed withdrawn,Process for production of heterocycle-substituted pyridine derivative,Eisai R&D Management Co Ltd,同一杂环取代吡啶技术族的制备方法案；有检索意见和实审意见,https://patents.google.com/patent/EP2226320A4/en,选为反例
+3,EP2065377B1,EP07828273,Granted,Pyridine derivative substituted by heteroaryl ring and antifungal agent comprising the same,Eisai R&D Management Co Ltd,Eisai GWT1/吡啶衍生物核心授权族,https://patents.google.com/patent/EP2065377B1/en,候选正例
+4,EP1944303A1,EP06823088,Grant-family candidate,Pyridine derivative substituted by heterocycle and fungicide containing the same,Eisai R&D Management Co Ltd,EP3720438 审查中被作为 D3/最接近现有技术,https://patents.google.com/patent/EP1944303A1/en,候选先文/近邻
+5,EP2628738B1,EP11828243,Granted,Heterocyclic substituted pyridine derivatives and antifungal agent containing same,Eisai R&D Management Co Ltd,EP3720438 审查中作为 D2；同族核心授权案,https://patents.google.com/patent/EP2628738B1/en,候选正例
+6,EP2223926B1,EP08870557,Granted,Pyridine derivative substituted with heterocycle and phosphonoxymethyl group and antifungal agent containing the same,Eisai R&D Management Co Ltd,磷酸/膦酰氧甲基前药方向，贴合本地“磷酸酯前药”,https://patents.google.com/patent/EP2223926B1/en,候选正例
+7,EP2141171A4,EP08740790.4,Withdrawn/deemed withdrawn,Pyridine derivative substituted with heterocycle and phosphonoamino and antifungal agent containing the same,Eisai R&D Management Co Ltd,膦酰氨基前药方向；未授权撤回,https://patents.google.com/patent/EP2141171A4/en,候选反例
+8,EP2351752A4,EP09821820,Withdrawn,Pyridine derivatives substituted by heterocycles and gamma-glutamylamino groups and antifungal agents containing them,Eisai R&D Management Co Ltd,谷氨酰胺/γ-glutamyl 前药方向，贴合本地“谷氨酰胺前药”,https://patents.google.com/patent/EP2351752A4/en,候选反例
+9,EP1864980A4,EP06730370.1,Withdrawn/deemed withdrawn,Antifungal agent containing pyridine derivative,Eisai R&D Management Co Ltd,早期吡啶抗真菌核心族；有 R71(3) 后程序性未授权,https://patents.google.com/patent/EP1864980A4/en,候选反例
+10,EP1669348A4,EP04806919,Withdrawn,Novel antifungal agent comprising heterocyclic compound,Eisai R&D Management Co Ltd,BIQ/GWT1 早期近邻化合物族,https://patents.google.com/patent/EP1669348A4/en,候选反例
+11,EP2345328A1,EP09822228,Pending/near prior art,Composition for agricultural use,Sumitomo Chemical Company Ltd,EP3720438 审查中作为 D5，结构重叠的农业杀菌剂先文,https://patents.google.com/patent/EP2345328A1/en,候选先文
+
