@@ -52,8 +52,6 @@
     "support_disc": "充分公开/Art.83 或说明书支持评价，哪些权利要求缺乏支持；未涉及则写未被质疑",
     "clarity_score": 0-100,
     "clarity_disc": "Art.84 清楚性评价，列出模糊用语或不简洁问题；未涉及则写未被质疑",
-    "unity_score": 0-100,
-    "unity_disc": "单一性评价；未涉及则写未被质疑",
     "eligibility_score": 0-100,
     "eligibility_disc": "EP Art.52 专利适格性评价，说明是否属于 Art.52(2)(3) 排除主题"
   },
@@ -65,10 +63,32 @@
     "具体可执行的修改或答复建议"
   ],
   "evidence_trace": {
-    "prior_art_documents": ["所有引用的对比文件/先文"],
+    "prior_art_documents": [
+      {
+        "rank": 1,
+        "citation": "所有引用的对比文件/先文，保留top20",
+        "mentioned_in_examined_text": true,
+        "official_link": "EPO/Espacenet官方链接",
+        "llm_evidence_explanation": "LLM证据说明"
+      }
+    ],
     "affected_claims": [1,2,3],
     "specification_support": [
-      {"location": "段落号/页码/通信页", "relevance": "支撑或风险说明"}
+      {
+        "location": "段落号/页码/通信页",
+        "original_text": "审查材料原文，保持原语言",
+        "translation": "中文翻译；如原文为中文，则给英文翻译",
+        "llm_evidence_explanation": "支撑或风险说明"
+      }
+    ],
+    "examination_material_evidence": [
+      {
+        "issue": "novelty|inventive_step|support|clarity|eligibility|outcome",
+        "source": "文件名/页码/段落",
+        "original_text": "审查材料原文，保持原语言",
+        "translation": "中文翻译；如原文为中文，则给英文翻译",
+        "llm_evidence_explanation": "LLM证据说明"
+      }
     ],
     "examination_rounds": 1
   }
@@ -86,14 +106,14 @@ aggregate_score 权重：
 - 创造性 30%
 - 充分公开 15%
 - 清楚性 10%
-- 单一性 5%
-- 适格性 15%
+- 适格性 20%
 
 注意：
 1. EP 案件必须说明 COMVIK 逻辑：非技术业务规则不能支持创造性，只能作为技术问题约束。
 2. 如果某维度未被审查员质疑，给 100 分，disc 写“未被质疑”，但仍需结合材料说明没有该异议。
 3. top_risk_reasons 用中文，简明扼要。
 4. recommended_actions 必须具体到可加入的技术特征或答复论点。
-5. 输出必须是合法 JSON。
+5. 不输出单一性 unity 相关评分字段。
+6. evidence_trace 中证据必须保留原始文本原有语言，在旁边给翻译，并增加 LLM 证据说明。
+7. 输出必须是合法 JSON。
 ```
-

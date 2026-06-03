@@ -1,0 +1,372 @@
+﻿{
+    "meta":  {
+                 "jurisdiction":  "EP",
+                 "application_number":  "EP10007106.7",
+                 "title":  "Model determination system",
+                 "applicant":  "Accenture Global Services Limited",
+                 "filing_date":  "2010-07-09",
+                 "examination_date":  "2023-01-05",
+                 "outcome":  "granted"
+             },
+    "grant_label":  "yes",
+    "dimension_scores":  {
+                             "novelty_score":  100,
+                             "novelty_disc":  {
+                                                  "analysis":  "未被质疑：审查材料中未见基于EPC Article 54的新颖性异议。早期检索意见主要依据Article 52(2)(3)和Article 56提出非技术性及创造性问题，2020年和2021年审查意见亦集中于D2、通用计算机、OLAP及COMVIK式创造性评价。最终作出授权决定，说明授权文本中不存在未克服的新颖性障碍。",
+                                                  "original_text":  "Decision to grant a European patent pursuant to Article 97(1) EPC\nFollowing examination of European patent application No.10007106.7 a European patent ... is hereby granted in respect of the designated Contracting States.",
+                                                  "translation":  "根据EPC第97(1)条授予欧洲专利的决定。经对欧洲专利申请No.10007106.7进行审查，现就指定缔约国授予欧洲专利。",
+                                                  "llm_evidence_explanation":  "该原文为最终授权决定，结合审查材料中没有出现Article 54或novelty objection，可支持新颖性未被质疑并最终通过审查，因此评分为100。"
+                                              },
+                             "inventive_step_score":  80,
+                             "inventive_step_disc":  {
+                                                         "analysis":  "创造性曾被明确质疑，但最终通过授权文本克服。按EPO problem-solution approach及COMVIK逻辑，审查员将最接近现有技术确定为通用网络计算机/已知OLAP多维数据存储，D2用于证明OLAP及多维访问、速度响应等属于已知背景。区别特征被审查员归为运行在该计算机上的业务/预测建模方法，包括变量确定、假设确定、模型生成、模型评价、元数据层和数据层中的业务关系及聚合规则等。审查员认为这些区别特征不产生可从权利要求导出的技术效果，不能形成客观技术问题；技术效果“query engine faster”和“multidimensional querying faster”未能从权利要求中导出，若可导出则D2已涉及类似问题。最终授权说明申请人后续通过修改或说服性意见使Article 56障碍得以克服，但因创造性曾是核心风险，评分为80。",
+                                                         "original_text":  "The closest prior art is therefore considered to be a general purpose computer from which the subject-matter of claim 1 differs through the business method running on that computer system.\nFeatures which cannot be seen to make any contribution, either independently or in combination with other features, to the solution of a technical problem are not relevant for assessing inventive step. The business method described above is therefore not relevant for assessing inventive step.\nThe person skilled in the art of data processing would consider the implementation of non-technical methods in a computer system to be part of his daily work and therefore would consider it obvious to attempt to implement the business method above in a general purpose networked computer system when presented with the method, for example, in the form of a requirements specification requesting the automation of the method.\nThe presented alleged technical effects in paragraph [ooo4] \"through the use of a meta data layer and a data layer according to the resent application, query ... engine is made much faster and multidimensional querying is also made much faster\" are not derivable from the claims. D2 mentions a similar problem, so if this problem is derivable from the claim, the solution would be known from D2.\nFor the reasons given above, the examiner is unable to derive any technical problem from the claimed subject-matter. Indeed, the skilled person would translate the non-technical method into a general purpose computer through use of standard data processing techniques as part of his normal daily work without encountering any technical problem. He would therefore arrive at the subject-matter of claim 1 without making an inventive step (Article 56 EPC).",
+                                                         "translation":  "因此，最接近的现有技术被认为是通用计算机，权利要求1的主题与其区别在于运行在该计算机系统上的商业方法。不能被认为单独或组合地对解决技术问题作出贡献的特征，与创造性评价无关。因此，上述商业方法与创造性评价无关。数据处理领域的技术人员会认为将非技术方法实现在计算机系统中属于其日常工作的一部分，因此当以例如要求自动化该方法的需求说明书形式给出该方法时，会认为尝试在通用网络计算机系统中实现上述商业方法是显而易见的。申请人在第[0004]段提出的所谓技术效果，即通过使用元数据层和数据层使查询引擎更快、多维查询也更快，不能从权利要求中导出。D2提到了类似问题，因此如果该问题能从权利要求中导出，其解决方案也会由D2知晓。基于上述理由，审查员不能从权利要求主题中导出任何技术问题。事实上，技术人员会使用标准数据处理技术，将非技术方法转化到通用计算机中，作为其正常日常工作的一部分，且不会遇到任何技术问题。因此，其无需创造性劳动即可得到权利要求1的主题。",
+                                                         "llm_evidence_explanation":  "该段原文直接给出最接近现有技术、区别特征、非技术特征排除、技术效果不可导出以及Article 56显而易见性结论，构成本案创造性核心风险证据；但最终授权决定显示该异议已被克服，故不评为低分而评为80。"
+                                                     },
+                             "support_score":  100,
+                             "support_disc":  {
+                                                  "analysis":  "未被质疑：审查材料中未见基于EPC Article 83、Article 84支持性或Article 123(2)新增内容的独立拒绝理由。虽然审查员曾称申请中缺少实现数据存储的技术细节，但该论述被用于Article 56/COMVIK框架下说明技术贡献不足，而非充分公开或说明书支持不足。最终授权决定表明授权文本满足EPC形式及实质授权要求。",
+                                                  "original_text":  "The examination is being carried out on the following application documents\nDescription, Pages 4-26 as originally filed\n1-3 filed in electronic form on 21-09-2020\nClaims, Numbers 1-10 received on 13-05-2015 with letter of 13-05-2015\nDrawings, Sheets 1/8-8/8 as originally filed\n\nDecision to grant a European patent pursuant to Article 97(1) EPC\nFollowing examination of European patent application No.10007106.7 a European patent ... is hereby granted in respect of the designated Contracting States.",
+                                                  "translation":  "审查基于以下申请文件进行：说明书第4-26页为原始提交文本，第1-3页为2020年9月21日以电子形式提交；权利要求第1-10项为随2015年5月13日信函于2015年5月13日提交；附图第1/8-8/8页为原始提交文本。根据EPC第97(1)条授予欧洲专利的决定：经对欧洲专利申请No.10007106.7进行审查，现就指定缔约国授予欧洲专利。",
+                                                  "llm_evidence_explanation":  "该原文列明审查所依据的说明书、权利要求和附图版本，并显示最终授权；材料中未出现Art.83、Art.123(2)或支持性拒绝，因此充分公开/支持维度按未被质疑评为100。"
+                                              },
+                             "clarity_score":  100,
+                             "clarity_disc":  {
+                                                  "analysis":  "未被质疑：审查材料中未见基于EPC Article 84的清楚性异议。2020年和2021年意见虽指出若干模块“not defined in technical terms”，但语境是将这些特征归为非技术业务特征并用于创造性评价，并非提出权利要求不清楚的Article 84拒绝。最终授权决定说明授权文本不存在未解决的清楚性障碍。",
+                                                  "original_text":  "The variable determination, the assumption, the model generator and the model evaluation module are not defined in technical terms. This could be humans having a task to perform. To implement the functionality of this modules in a computer environment is regarded as straightforward.\n\nDecision to grant a European patent pursuant to Article 97(1) EPC\nFollowing examination of European patent application No.10007106.7 a European patent ... is hereby granted in respect of the designated Contracting States.",
+                                                  "translation":  "变量确定、假设、模型生成器和模型评价模块并未以技术术语定义。这些可以是执行任务的人。将这些模块的功能实现在计算机环境中被认为是直接的。根据EPC第97(1)条授予欧洲专利的决定：经对欧洲专利申请No.10007106.7进行审查，现就指定缔约国授予欧洲专利。",
+                                                  "llm_evidence_explanation":  "该原文可能表面涉及模块定义，但上下文用于非技术性和创造性分析，并未引用Article 84；最终授权进一步支持清楚性问题未被正式质疑或已不存在，故评分100。"
+                                              },
+                             "eligibility_score":  80,
+                             "eligibility_disc":  {
+                                                      "analysis":  "适格性曾被质疑但最终通过。2010年检索意见认为权利要求1-15涉及EPC Article 52(2)(3)排除的主题活动；2020年和2021年意见进一步认为方法本身是抽象思想，缺乏技术考虑，若单独看落入排除范围。但同时审查材料承认上诉委员会认为数据存储系统具有技术性，权利要求的技术性来自由具有多维存储的通用网络计算机执行数据处理步骤。EP标准下，只要权利要求整体具有技术手段通常可越过Article 52门槛；非技术特征主要在COMVIK创造性分析中不贡献技术效果。最终授权说明适格性障碍已被克服，因此评分80。",
+                                                      "original_text":  "The subject matter of claims 1-15 is considered to relate to subject matter excluded ... under Art. 52(2) and (3) EPC.\n\nThe method defines an abstract idea and is devoid of any technical consideration and therefore, when considered on its own, falls under the list of exclusions from patentability under Article 52(2) and (3) EPC.\nThe technical character of the claim resides in that the data processing steps necessary for the determination of a final model operable to be used to forecast information for an objective are executed by general purpose networked computer having a multidimensional storage.\n\nThe Board of Appeal finds the data storage system as technical.",
+                                                      "translation":  "权利要求1-15的主题被认为涉及EPC第52(2)和(3)条所排除的主题。该方法定义了一个抽象思想，并且缺乏任何技术考虑，因此当单独考虑时，落入EPC第52(2)和(3)条规定的可专利性排除清单。该权利要求的技术性在于，用于确定可用于预测目标信息的最终模型所必需的数据处理步骤，由具有多维存储的通用网络计算机执行。上诉委员会认为数据存储系统具有技术性。",
+                                                      "llm_evidence_explanation":  "该原文同时显示Article 52适格性异议和技术性承认。按照EPO实践，技术手段使整体具备技术性，非技术内容转入Article 56/COMVIK评价；最终授权表明适格性异议已解决，故评分80。"
+                                                  }
+                         },
+    "aggregate_score":  90,
+    "top_risk_reasons":  [
+                             {
+                                 "original_text":  "Previously found to be a non-technical business method.",
+                                 "translation":  "曾被认定为非技术商业方法"
+                             },
+                             {
+                                 "original_text":  "Inventiveness mainly depends on computer-implementation differences.",
+                                 "translation":  "创造性主要依赖计算机实现差异"
+                             },
+                             {
+                                 "original_text":  "The query-acceleration effect was previously considered absent from the claims.",
+                                 "translation":  "查询加速效果曾被认为未写入权利要求"
+                             },
+                             {
+                                 "original_text":  "D2 discloses known OLAP multidimensional data processing.",
+                                 "translation":  "D2披露已知OLAP多维数据处理"
+                             }
+                         ],
+    "recommended_actions":  [
+                                {
+                                    "original_text":  "Emphasize the technical combination of multidimensional data storage, metadata layer, data layer, and aggregation rules in enforcement or licensing materials.",
+                                    "translation":  "在维权或许可文件中突出授权权利要求中的多维数据存储、元数据层、数据层和聚合规则的技术组合。"
+                                },
+                                {
+                                    "original_text":  "Prepare an element-by-element comparison with D2, identifying technical limitations in the granted claims that D2 does not disclose or suggest.",
+                                    "translation":  "准备一份与D2的逐项对比表，明确授权权利要求中未由D2公开或暗示的技术限定。"
+                                },
+                                {
+                                    "original_text":  "Add internal technical evidence quantifying how the metadata layer and data layer affect query speed, storage footprint, or processing efficiency for later invalidity or opposition defense.",
+                                    "translation":  "补充内部技术证据，量化元数据层和数据层对查询速度、存储空间或处理效率的影响，用于后续无效或异议防御。"
+                                },
+                                {
+                                    "original_text":  "Avoid describing the invention externally as a mere business prediction model; describe it as a data-processing system improving data storage and multidimensional querying.",
+                                    "translation":  "避免在对外解释中将发明描述为单纯商业预测模型，应描述为改进数据存储和多维查询的数据处理系统。"
+                                },
+                                {
+                                    "original_text":  "Check validation, translation, and renewal-fee status in each designated state to ensure the granted rights have not lapsed because of national-stage formalities.",
+                                    "translation":  "核查各指定国生效、翻译和年费状态，确保授权后权利未因国家阶段手续瑕疵失效。"
+                                }
+                            ],
+    "evidence_trace":  {
+                           "prior_art_documents":  [
+                                                       {
+                                                           "rank":  1,
+                                                           "citation":  "D2 EP 1 492 030 A2 (MICROSOFT CORP [US]) 29 December 2004 (2004-12-29)",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=EP+1+492+030+A2",
+                                                           "llm_evidence_explanation":  "D2由审查员在2020年和2021年意见中引用，用于证明OLAP、多维信息快速分析、多维访问及通用网络计算机环境在优先日前已知，是创造性评价中的主要书面现有技术。"
+                                                       },
+                                                       {
+                                                           "rank":  2,
+                                                           "citation":  "Semantic official patent search: Model determination system",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+Model+determination+system",
+                                                           "llm_evidence_explanation":  "该结果为EPO/Espacenet语义检索补充结果，未在审查意见中作为正式对比文件引用，可作为理解模型确定系统相关技术背景的补充检索线索。"
+                                                       },
+                                                       {
+                                                           "rank":  3,
+                                                           "citation":  "Semantic official patent search: Model determination",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+Model+determination",
+                                                           "llm_evidence_explanation":  "该结果为EPO/Espacenet语义检索补充结果，未被审查文本提及，可用于后续稳定性评估或补充无效检索。"
+                                                       },
+                                                       {
+                                                           "rank":  4,
+                                                           "citation":  "Semantic official patent search: Model determination system [2011/02]",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+Model+determination+system+%5B2011%2F02%5D",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  5,
+                                                           "citation":  "Semantic official patent search: Model determination system [2011/02] patent",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+Model+determination+system+%5B2011%2F02%5D+patent",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  6,
+                                                           "citation":  "Semantic official patent search: Model determination system [2011/02] computer implemented invention",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+Model+determination+system+%5B2011%2F02%5D+computer+implemented+invention",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  7,
+                                                           "citation":  "Semantic official patent search: predictive model generation system",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+predictive+model+generation+system",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  8,
+                                                           "citation":  "Semantic official patent search: candidate model final model data processing",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+candidate+model+final+model+data+processing",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  9,
+                                                           "citation":  "Semantic official patent search: multidimensional data storage metadata layer data layer",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+multidimensional+data+storage+metadata+layer+data+layer",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  10,
+                                                           "citation":  "Semantic official patent search: OLAP multidimensional data storage model generation",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+OLAP+multidimensional+data+storage+model+generation",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  11,
+                                                           "citation":  "Semantic official patent search: computer implemented model evaluation module",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+computer+implemented+model+evaluation+module",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  12,
+                                                           "citation":  "Semantic official patent search: forecast information objective variable model generator",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+forecast+information+objective+variable+model+generator",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  13,
+                                                           "citation":  "Semantic official patent search: business model generation computer system",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+business+model+generation+computer+system",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  14,
+                                                           "citation":  "Semantic official patent search: metadata layer data layer query engine",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+metadata+layer+data+layer+query+engine",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  15,
+                                                           "citation":  "Semantic official patent search: networked computer multidimensional storage forecasting",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+networked+computer+multidimensional+storage+forecasting",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  16,
+                                                           "citation":  "Semantic official patent search: variable assumption model generator evaluation",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+variable+assumption+model+generator+evaluation",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  17,
+                                                           "citation":  "Semantic official patent search: data warehouse model determination patent",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+data+warehouse+model+determination+patent",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  18,
+                                                           "citation":  "Semantic official patent search: online analytical processing model generation patent",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+online+analytical+processing+model+generation+patent",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  19,
+                                                           "citation":  "Semantic official patent search: computer implemented predictive analytics model patent",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+computer+implemented+predictive+analytics+model+patent",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       },
+                                                       {
+                                                           "rank":  20,
+                                                           "citation":  "Semantic official patent search: model generator candidate model final model patent",
+                                                           "mentioned_in_examined_text":  false,
+                                                           "retrieval_method":  "official_semantic_retrieval",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Semantic+official+patent+search%3A+model+generator+candidate+model+final+model+patent",
+                                                           "llm_evidence_explanation":  "该项由 EPO/Espacenet 官网语义检索补充，用于扩展相关专利背景。"
+                                                       }
+                                                   ],
+                           "affected_claims":  [
+                                                   1,
+                                                   2,
+                                                   3,
+                                                   4,
+                                                   5,
+                                                   6,
+                                                   7,
+                                                   8,
+                                                   9,
+                                                   10
+                                               ],
+                           "specification_support":  [
+                                                         {
+                                                             "location":  "2021-10-06_annex_to_communication_ocr.txt, page 1",
+                                                             "original_text":  "The examination is being carried out on the following application documents\nDescription, Pages 4-26 as originally filed\n1-3 filed in electronic form on 21-09-2020\nClaims, Numbers 1-10 received on 13-05-2015 with letter of 13-05-2015\nDrawings, Sheets 1/8-8/8 as originally filed",
+                                                             "translation":  "审查基于以下申请文件进行：说明书第4-26页为原始提交文本；第1-3页为2020年9月21日以电子形式提交；权利要求第1-10项为随2015年5月13日信函于2015年5月13日提交；附图第1/8-8/8页为原始提交文本。",
+                                                             "llm_evidence_explanation":  "该证据列明审查所依据的说明书、权利要求和附图版本，未显示新增内容或充分公开方面的正式异议。"
+                                                         },
+                                                         {
+                                                             "location":  "2020-07-06_annex_to_communication_ocr.txt, pages 3-4",
+                                                             "original_text":  "a multidimensional data storage system storing information for models generated by the model generator, including the candidate model, the new candidate model and the final model, wherein the multidimensional storage system uses using a meta data layer (401) and a data layer (402) to store the information, the meta data layer (401) storing a relationship between the at least one variable and the objective, an indication of the at least one variable, the dimension and the level for the at least one variable, and the assumptions for the data layer (402) including data for the at least one variable in each of the candidate model, the new candidate model and the final model",
+                                                             "translation":  "一种多维数据存储系统，用于存储由模型生成器生成的模型信息，包括候选模型、新候选模型和最终模型，其中该多维存储系统使用元数据层(401)和数据层(402)存储信息，元数据层(401)存储至少一个变量与目标之间的关系、该至少一个变量的指示、该至少一个变量的维度和层级以及假设；数据层(402)包括候选模型、新候选模型和最终模型中该至少一个变量的数据。",
+                                                             "llm_evidence_explanation":  "该权利要求特征摘录显示授权主题的关键技术表述来源，包括多维数据存储、元数据层和数据层，为分析技术贡献和说明书支持提供基础。"
+                                                         },
+                                                         {
+                                                             "location":  "2022-12-22_decision_to_grant_ocr.txt, page 1",
+                                                             "original_text":  "Following examination of European patent application No.10007106.7 a European patent ... is hereby granted in respect of the designated Contracting States.",
+                                                             "translation":  "经对欧洲专利申请No.10007106.7进行审查，现就指定缔约国授予欧洲专利。",
+                                                             "llm_evidence_explanation":  "最终授权决定证明授权文本已满足EPO授予要求，包括未存在未解决的支持、充分公开或清楚性障碍。"
+                                                         }
+                                                     ],
+                           "examination_material_evidence":  [
+                                                                 {
+                                                                     "issue":  "novelty",
+                                                                     "source":  "2022-12-22_decision_to_grant_ocr.txt, page 1",
+                                                                     "original_text":  "Decision to grant a European patent pursuant to Article 97(1) EPC\nFollowing examination of European patent application No.10007106.7 a European patent ... is hereby granted in respect of the designated Contracting States.",
+                                                                     "translation":  "根据EPC第97(1)条授予欧洲专利的决定。经对欧洲专利申请No.10007106.7进行审查，现就指定缔约国授予欧洲专利。",
+                                                                     "llm_evidence_explanation":  "审查材料中没有Article 54新颖性拒绝；最终授权决定支持新颖性无未克服障碍。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "inventive_step",
+                                                                     "source":  "2021-10-06_annex_to_communication_ocr.txt, pages 2-5",
+                                                                     "original_text":  "D2 mentions in the section background of the invention an Online analytical processing. \"OLAP is a key part of most data warehouse and business analysis systems. OLAP services provide for fast analysis of multidimensional information. OLAP services provide for multidimensional access and navigation ... Speed and response time are important attributes of OLAP services that allow users to browse and analyze data online in an efficient manner.\"",
+                                                                     "translation":  "D2在发明背景部分提到在线分析处理。OLAP是大多数数据仓库和商业分析系统的重要组成部分。OLAP服务提供对多维信息的快速分析，提供多维访问和导航。速度和响应时间是OLAP服务的重要属性，使用户能够高效地在线浏览和分析数据。",
+                                                                     "llm_evidence_explanation":  "该证据说明D2公开了OLAP多维数据快速分析和访问，审查员据此认为申请声称的查询速度效果或类似问题已属于现有技术背景。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "inventive_step",
+                                                                     "source":  "2021-10-06_annex_to_communication_ocr.txt, page 5",
+                                                                     "original_text":  "The presented alleged technical effects in paragraph [ooo4] \"through the use of a meta data layer and a data layer according to the resent application, query ... engine is made much faster and multidimensional querying is also made much faster\" are not derivable from the claims. D2 mentions a similar problem, so if this problem is derivable from the claim, the solution would be known from D2.",
+                                                                     "translation":  "申请人在第[0004]段提出的所谓技术效果，即通过使用本申请的元数据层和数据层，使查询引擎更快、多维查询也更快，不能从权利要求中导出。D2提到了类似问题，因此如果该问题能从权利要求中导出，其解决方案将由D2知晓。",
+                                                                     "llm_evidence_explanation":  "该证据直接否定了申请人用于支持创造性的技术效果，是创造性风险的关键依据。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "inventive_step",
+                                                                     "source":  "2021-10-06_annex_to_communication_ocr.txt, page 5",
+                                                                     "original_text":  "For the reasons given above, the examiner is unable to derive any technical problem from the claimed subject-matter. Indeed, the skilled person would translate the non-technical method into a general purpose computer through use of standard data processing techniques as part of his normal daily work without encountering any technical problem. He would therefore arrive at the subject-matter of claim 1 without making an inventive step (Article 56 EPC).",
+                                                                     "translation":  "基于上述理由，审查员无法从权利要求主题中导出任何技术问题。事实上，技术人员会使用标准数据处理技术将非技术方法转化到通用计算机中，作为其正常日常工作的一部分，且不会遇到任何技术问题。因此，其无需创造性劳动即可得到权利要求1的主题。",
+                                                                     "llm_evidence_explanation":  "该证据明确给出Article 56否定结论，并体现COMVIK逻辑下非技术方法自动化通常显而易见。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "support",
+                                                                     "source":  "2021-10-06_annex_to_communication_ocr.txt, page 1",
+                                                                     "original_text":  "The examination is being carried out on the following application documents\nDescription, Pages 4-26 as originally filed\n1-3 filed in electronic form on 21-09-2020\nClaims, Numbers 1-10 received on 13-05-2015 with letter of 13-05-2015\nDrawings, Sheets 1/8-8/8 as originally filed",
+                                                                     "translation":  "审查基于以下申请文件进行：说明书第4-26页为原始提交文本；第1-3页为2020年9月21日以电子形式提交；权利要求第1-10项为随2015年5月13日信函于2015年5月13日提交；附图第1/8-8/8页为原始提交文本。",
+                                                                     "llm_evidence_explanation":  "该证据显示文件基础明确，材料中未出现Art.83或Art.123(2)拒绝，支持充分公开/支持维度未被质疑。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "clarity",
+                                                                     "source":  "2020-07-06_annex_to_communication_ocr.txt, page 2",
+                                                                     "original_text":  "The variable determination, the assumption, the model generator and the model evaluation module are not defined in technical terms. This could be humans having a task to perform. To implement the functionality of this modules in a computer environment is regarded as straightforward.",
+                                                                     "translation":  "变量确定、假设、模型生成器和模型评价模块并未以技术术语定义。这些可以是执行任务的人。将这些模块的功能实现在计算机环境中被认为是直接的。",
+                                                                     "llm_evidence_explanation":  "该段虽提到模块未以技术术语定义，但并非Article 84清楚性拒绝，而是用于将特征归入非技术内容并进行创造性分析。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "eligibility",
+                                                                     "source":  "2010-10-27_european_search_opinion_ocr.txt, page 1",
+                                                                     "original_text":  "The subject matter of claims 1-15 is considered to relate to subject matter excluded ... under Art. 52(2) and (3) EPC.\nThe examiner cannot determine any technical solution defined in response to a technical problem within the content of the application as filed.",
+                                                                     "translation":  "权利要求1-15的主题被认为涉及EPC第52(2)和(3)条所排除的主题。审查员无法在原始提交的申请内容中确定针对技术问题所定义的任何技术解决方案。",
+                                                                     "llm_evidence_explanation":  "该证据显示本案早期存在适格性/技术性重大异议。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "eligibility",
+                                                                     "source":  "2021-10-06_annex_to_communication_ocr.txt, page 4",
+                                                                     "original_text":  "The method defines an abstract idea and is devoid of any technical consideration and therefore, when considered on its own, falls under the list of exclusions from patentability under Article 52(2) and (3) EPC.\nThe technical character of the claim resides in that the data processing steps necessary for the determination of a final model operable to be used to forecast information for an objective are executed by general purpose networked computer having a multidimensional storage.",
+                                                                     "translation":  "该方法定义了一个抽象思想，并且缺乏任何技术考虑，因此当单独考虑时，落入EPC第52(2)和(3)条规定的可专利性排除清单。该权利要求的技术性在于，用于确定可用于预测目标信息的最终模型所必需的数据处理步骤，由具有多维存储的通用网络计算机执行。",
+                                                                     "llm_evidence_explanation":  "该证据同时说明排除性风险与权利要求存在技术手段，是适格性评分为80而非100的原因。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "outcome",
+                                                                     "source":  "2022-12-22_decision_to_grant_ocr.txt, page 1",
+                                                                     "original_text":  "Patent No. :2273431\nDate of filing :09.07.10\nPriority claimed :09.07.09/USP 224258\n31.08.09/USP 238335\nApplicant/Proprietor : Accenture Global Services Limited\nThis decision will take effect on the date on which the European Patent Bulletin mentions the grant (Art. 97(3) EPC).\nThe mention of the grant will be published in European Patent Bulletin 23/04 of 25.01.23.",
+                                                                     "translation":  "专利号：2273431。申请日：2010年7月9日。要求优先权：2009年7月9日/USP 224258；2009年8月31日/USP 238335。申请人/专利权人：Accenture Global Services Limited。本决定将在欧洲专利公报公告授权之日生效（EPC第97(3)条）。授权公告将在2023年1月25日的欧洲专利公报23/04中公布。",
+                                                                     "llm_evidence_explanation":  "该证据确认最终结果为授权，并提供申请日、专利号、申请人和授权公告日期等关键信息。"
+                                                                 }
+                                                             ],
+                           "examination_rounds":  3
+                       }
+}

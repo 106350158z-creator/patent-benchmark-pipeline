@@ -1,0 +1,362 @@
+﻿{
+    "meta":  {
+                 "jurisdiction":  "EP",
+                 "application_number":  "EP94912949.8",
+                 "title":  "METHOD OF ESTIMATING PRODUCT DISTRIBUTION",
+                 "applicant":  "DUNS LICENSING ASSOCIATES, L.P.",
+                 "filing_date":  "1994-04-05",
+                 "examination_date":  "2003-09-01",
+                 "outcome":  "rejected"
+             },
+    "grant_label":  "no",
+    "dimension_scores":  {
+                             "novelty_score":  100,
+                             "novelty_disc":  {
+                                                  "analysis":  "未被质疑。审查材料显示审查重点在Art.52(2)(3)适格性和Art.56创造性，最终驳回理由未以Art.54 EPC新颖性为依据，也未指出任何对比文件直接公开全部权利要求特征。",
+                                                  "original_text":  "Before examining novelty (Art. 54 EPC) and inventive step (Art. 56 EPC) of an application it should be proved whether the claimed subject-matter falls under the list of excluded subject-matter (Art. 52(2) in conjunction with (3) EPC) and thus items of Art. 52 (2) EPC are either abstract or non-technical.",
+                                                  "translation":  "在审查一件申请的新颖性（EPC第54条）和创造性（EPC第56条）之前，应证明所要求保护的主题是否落入排除主题清单（EPC第52条第2款结合第3款），因此EPC第52条第2款的项目属于抽象或非技术事项。",
+                                                  "llm_evidence_explanation":  "该原文表明审查员先审查排除适格性，材料未见基于Art.54 EPC的新颖性否定；最终决定也未以新颖性缺失为驳回基础，因此按未被质疑给100分。"
+                                              },
+                             "inventive_step_score":  15,
+                             "inventive_step_disc":  {
+                                                         "analysis":  "创造性被明确否定。按EPO problem-solution approach，审查材料中D1被用于销售活动估算系统的最接近现有技术，D3/D5用于GIS与空间自相关组合，D4用于并行计算架构。区别特征主要是利用地理距离、表征数据和加权因子估算未采样销售点的销售量，其效果只是提高销售预测/统计估算准确性。依COMVIK/T641/00逻辑，销售预测、市场营销和数学公式属于非技术业务目的，不能贡献创造性；可承认的技术问题最多重构为将经济/金融概念在常规计算机/软件中实现，该实现属于数据处理和编程技术人员的公知常识，故缺乏技术贡献和创造性。",
+                                                         "original_text":  "The Examining Division set out that claims 1 and 7 according to the main and auxiliary requests still do not meet the requirements of Article 52(1) EPC because it\u0027s subject matter does not go beyond a method of doing business as such which is excluded from patentability under Art. 52(2)(c) in combination with Art. 52(3) EPC. In addition, the subject matter of claims 1 and 7 according to the main and auxiliary requests still lacked an inventive step because of a lack of a technical contribution to the prior art Document D4.",
+                                                         "translation":  "审查部指出，主请求和辅助请求的权利要求1和7仍不符合EPC第52条第1款的要求，因为其主题并未超出作为此类的商业方法，而该商业方法根据EPC第52条第2款(c)项结合第3款被排除在可专利性之外。此外，主请求和辅助请求的权利要求1和7的主题由于相对于现有技术文件D4缺乏技术贡献，仍然缺乏创造性。",
+                                                         "llm_evidence_explanation":  "该原文直接记载最终决定中对权利要求1和7的创造性否定理由：相对于D4无技术贡献，并与Art.52排除理由并列构成驳回基础，支持低分评价。"
+                                                     },
+                             "support_score":  80,
+                             "support_disc":  {
+                                                  "analysis":  "充分公开/支持曾被质疑但并非最终驳回的主要理由。早期审查意见认为并行处理、数据划分和结果组合仅以结果限定，未详细披露如何基于销售数据特性处理。之后申请人删除了部分并行处理相关权利要求，最终决定主要基于Art.52和Art.56。因此该维度存在历史瑕疵但似已通过修改降低风险，评分80。",
+                                                  "original_text":  "Parallel processing is a special area of computer technology in which, additional to a special parallel hardware design, problems are dealt with of how to partion data tobeprocessed and how to finally combine theresults taking into account timing conditions. However, the current application gives no detailed disclosure on processing resulting from the specific properties of sales activity data. Therefore, such a general definition does not meet the requirements of Art. 84 EPC and Art. 83 EPC.",
+                                                  "translation":  "并行处理是计算机技术的一个特殊领域，除特殊并行硬件设计外，还涉及如何划分待处理数据以及如何在考虑时序条件的情况下最终组合结果等问题。然而，本申请没有就由销售活动数据的特定性质所产生的处理提供详细公开。因此，这样的一般性定义不符合EPC第84条和第83条的要求。",
+                                                  "llm_evidence_explanation":  "该原文明确提出Art.83充分公开问题，但后续最终决定未将Art.83作为驳回基础，说明该问题属于已被修改弱化或未维持的风险。"
+                                              },
+                             "clarity_score":  50,
+                             "clarity_disc":  {
+                                                  "analysis":  "清楚性被多轮审查意见质疑。问题包括独立权利要求数量过多、不简洁，方法和系统权利要求表述部分重叠但措辞不同，导致保护主题不清；此外“product information”“size”等术语含义不明确。尽管最终决定主要基于适格性和创造性，但Art.84问题在审查过程中反复出现，故评分为中等偏低。",
+                                                  "original_text":  "However, the application does not meet the requirements of Art. 84 EPC in that the number of independent claims is not concise. Furthermore, the objection already raised in the first communication as to Art. 52(2)c) - methods for doing business - is maintained. ... Thedifferentwordingsof thepartlyoverlapping independentclaimsrendersthe claimed subject-matter unclear. One independent claim per category seems tobe sufficient for the current application.",
+                                                  "translation":  "然而，本申请不符合EPC第84条的要求，因为独立权利要求的数量不简洁。此外，第一次审查意见中已经提出的关于EPC第52条第2款(c)项——商业方法——的异议予以维持。……部分重叠的独立权利要求采用不同措辞，使要求保护的主题不清楚。对于当前申请，每一类别一个独立权利要求似乎已经足够。",
+                                                  "llm_evidence_explanation":  "该原文直接对应Art.84清楚性/简明性异议，说明审查员认为权利要求结构和措辞使保护范围不清楚。"
+                                              },
+                             "eligibility_score":  10,
+                             "eligibility_disc":  {
+                                                      "analysis":  "适格性被最终明确否定，是驳回核心。申请主题为基于销售点数据、地理距离和加权因子估算产品销售/分布，审查部认为其本质是市场营销、销售预测、数学/统计计算，属于EPC Art.52(2)(c)商业方法以及Art.52(3)“as such”排除。即使权利要求包含数据库、处理器、网络等硬件术语，也仅为常规计算机实现，未产生进一步技术效果。",
+                                                      "original_text":  "The present application does not meet the requirements of Article 52(1) EPC because it\u0027s subject matter does not go beyond a method of doing business as such which is excluded from patentability under Art. 52(2)(c) in combination with Art. 52(3) EPC.",
+                                                      "translation":  "本申请不符合EPC第52条第1款的要求，因为其主题并未超出作为此类的商业方法，而该商业方法根据EPC第52条第2款(c)项结合第3款被排除在可专利性之外。",
+                                                      "llm_evidence_explanation":  "该原文来自最终驳回理由，直接确认申请因商业方法排除而不满足Art.52(1)，充分支持适格性低分。"
+                                                  }
+                         },
+    "aggregate_score":  48,
+    "top_risk_reasons":  [
+                             {
+                                 "original_text":  "Sales forecasting was characterized as a business method.",
+                                 "translation":  "销售预测被认定为商业方法"
+                             },
+                             {
+                                 "original_text":  "No further technical effect was found.",
+                                 "translation":  "无进一步技术效果"
+                             },
+                             {
+                                 "original_text":  "No technical contribution over D4 was found.",
+                                 "translation":  "相对D4缺乏技术贡献"
+                             },
+                             {
+                                 "original_text":  "The hardware features were treated as only a conventional implementation.",
+                                 "translation":  "硬件特征仅属常规实现"
+                             },
+                             {
+                                 "original_text":  "The claim wording was previously objected to as unclear.",
+                                 "translation":  "权利要求表述曾被指不清楚"
+                             }
+                         ],
+    "recommended_actions":  [
+                                {
+                                    "original_text":  "Limit the independent claims to implementations that solve a specific computer-technical problem, such as improvements to data structures, memory access, parallel scheduling, or communication protocols.",
+                                    "translation":  "将独立权利要求限定为解决具体计算机技术问题的实现，例如数据结构、内存访问、并行调度或通信协议改进。"
+                                },
+                                {
+                                    "original_text":  "Remove or downgrade purely business-purpose features, treat the sales estimation formula as a non-technical constraint, and claim only its technical implementation effect within a specific technical architecture.",
+                                    "translation":  "删除或降格纯商业目的特征，把销售估算公式作为非技术约束，仅主张其在特定技术架构中的技术实现效果。"
+                                },
+                                {
+                                    "original_text":  "Add evidence of specific technical effects to the specification, such as experimental data showing improved processing speed, reduced storage, reduced network transmission, or better parallel load balancing.",
+                                    "translation":  "在说明书中补充具体技术效果证据，例如处理速度提升、存储量降低、网络传输减少或并行负载均衡改进的实验数据。"
+                                },
+                                {
+                                    "original_text":  "Rewrite the inventive-step argument under the EPO COMVIK framework: identify the non-technical business requirements and show how the distinguishing technical features implement those requirements in a non-obvious way.",
+                                    "translation":  "按EPO COMVIK框架重写创造性论证：识别非技术业务需求，并证明区别技术特征如何实现该需求且非显而易见。"
+                                },
+                                {
+                                    "original_text":  "Merge overlapping independent claims, keep one independent claim per category, and harmonize the definitions of terms such as “sales activity,” “product information,” and “size.”",
+                                    "translation":  "合并重叠独立权利要求，每一类别保留一个独立权利要求，并统一“sales activity”“product information”“size”等术语定义。"
+                                },
+                                {
+                                    "original_text":  "If prosecution continues, file auxiliary requests limiting the claims to specific database indexing, geographic data encoding, inter-processor task allocation, and result-merging mechanisms.",
+                                    "translation":  "若继续申请，提交辅助请求，将权利要求限定到具体数据库索引、地理数据编码、处理器间任务分配和结果合并机制。"
+                                }
+                            ],
+    "evidence_trace":  {
+                           "prior_art_documents":  [
+                                                       {
+                                                           "rank":  1,
+                                                           "citation":  "D1 US-A-4972504",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US-A-4972504",
+                                                           "llm_evidence_explanation":  "D1被用于说明已有实时零售数据采集和市场研究系统，是审查意见中针对系统/销售估算的最接近现有技术之一。"
+                                                       },
+                                                       {
+                                                           "rank":  2,
+                                                           "citation":  "D4 GB-A-2250362",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=GB-A-2250362",
+                                                           "llm_evidence_explanation":  "D4公开常规并行计算/SIMD架构，最终决定提到权利要求1和7相对D4缺乏技术贡献。"
+                                                       },
+                                                       {
+                                                           "rank":  3,
+                                                           "citation":  "D3 CHONG,D.:\u0027BEYONDA DEMOGRAPHICINFORMATION SYSTEM:",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=CHONG%2CD.%3A%27BEYONDA+DEMOGRAPHICINFORMATION+SYSTEM%3A",
+                                                           "llm_evidence_explanation":  "D3涉及GIS在零售和服务行业中的应用，被用于说明接收销售/客户数据、组合地理数据和估算未覆盖区域属于显而易见。"
+                                                       },
+                                                       {
+                                                           "rank":  4,
+                                                           "citation":  "D7 ISAKI,CARYT.:\u0027JOURNALOFBUSINESS\u0026ECONOMICSTATISTICS\u0027",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=ISAKI%2CCARYT.%3A%27JOURNALOFBUSINESS%26ECONOMICSTATISTICS%27",
+                                                           "llm_evidence_explanation":  "D7被用于证明零售销售估算属于商业和经济统计领域，从而支持Art.52商业方法排除。"
+                                                       },
+                                                       {
+                                                           "rank":  5,
+                                                           "citation":  "US 5 377 095 A",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US+5+377+095+A",
+                                                           "llm_evidence_explanation":  "该文献出现在补充欧洲检索报告中，作为相关早期/背景技术覆盖销售预测系统相关权利要求。"
+                                                       },
+                                                       {
+                                                           "rank":  6,
+                                                           "citation":  "JP05067119A",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=JP05067119A",
+                                                           "llm_evidence_explanation":  "该日本文献为US 5,377,095的同族或相关摘要，在检索报告中列为相关文献。"
+                                                       },
+                                                       {
+                                                           "rank":  7,
+                                                           "citation":  "JP 03 224054 A",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=JP+03+224054+A",
+                                                           "llm_evidence_explanation":  "该文献在补充检索报告中作为A类技术背景文献，涉及G06F相关销售/信息处理。"
+                                                       },
+                                                       {
+                                                           "rank":  8,
+                                                           "citation":  "US5377095 A 27-12-94 JP 5067119 A 19-03-93",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US5377095+A+27-12-94+JP+5067119+A+19-03-93",
+                                                           "llm_evidence_explanation":  "该条为检索报告同族信息，反映US5377095与JP5067119的专利族关系。"
+                                                       },
+                                                       {
+                                                           "rank":  9,
+                                                           "citation":  "D2 US-A-5377095.-\u003e E",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US-A-5377095.-",
+                                                           "llm_evidence_explanation":  "D2在1998年审查意见中被引用，公开计算机化销售数据预测系统，用于说明类似销售预测技术背景。"
+                                                       },
+                                                       {
+                                                           "rank":  10,
+                                                           "citation":  "D3 Chong, D. \"Beyond a demographic information system: retail and service",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Chong%2C+D.+%22Beyond+a+demographic+information+system%3A+retail+and+service",
+                                                           "llm_evidence_explanation":  "该条为D3的另一引用形式，审查员用其证明GIS零售服务应用与距离/地域数据组合已知。"
+                                                       },
+                                                       {
+                                                           "rank":  11,
+                                                           "citation":  "D6 US-A-4,926,394",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US-A-4%2C926%2C394",
+                                                           "llm_evidence_explanation":  "D6由申请人在说明书中引用，用于对比具有连续物理过程的地质/地震空间相关估算；审查员认为本案销售数据不具备该物理过程。"
+                                                       },
+                                                       {
+                                                           "rank":  12,
+                                                           "citation":  "D3 Chong, D",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=Chong%2C+D",
+                                                           "llm_evidence_explanation":  "D3重复引用，仍对应GIS零售服务应用，是创造性显而易见组合的重要依据。"
+                                                       },
+                                                       {
+                                                           "rank":  13,
+                                                           "citation":  "D2 US-A-5377095(MAEDAETAL)27December 1994\u0026PATENT",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US-A-5377095",
+                                                           "llm_evidence_explanation":  "D2在最终事实部分被列为早期引用文件，涉及计算机化销售预测/订购系统。"
+                                                       },
+                                                       {
+                                                           "rank":  14,
+                                                           "citation":  "D4 GB 2250362A",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=GB+2250362A",
+                                                           "llm_evidence_explanation":  "D4的另一引用形式，最终程序中用于并行处理/计算机架构方面的技术背景和创造性否定。"
+                                                       },
+                                                       {
+                                                           "rank":  15,
+                                                           "citation":  "D5 CHOU, YUE-HONG: \u0027analyzing the spatial autocorrelation of polygonal data in",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=CHOU%2C+YUE-HONG%3A+%27analyzing+the+spatial+autocorrelation+of+polygonal+data+in",
+                                                           "llm_evidence_explanation":  "D5公开GIS中多边形数据的空间自相关和距离/权重函数，被用于补充D3说明加权距离估算显而易见。"
+                                                       },
+                                                       {
+                                                           "rank":  16,
+                                                           "citation":  "D6 US4926394A",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US4926394A",
+                                                           "llm_evidence_explanation":  "D6重复引用，作为申请人背景技术中物理过程空间相关的对比对象。"
+                                                       },
+                                                       {
+                                                           "rank":  17,
+                                                           "citation":  "D1 US-A-4972504 D2",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US-A-4972504+D2",
+                                                           "llm_evidence_explanation":  "该条合并列示D1和D2，均为审查中涉及销售/零售数据处理的先文。"
+                                                       },
+                                                       {
+                                                           "rank":  18,
+                                                           "citation":  "D4 GB 2250362A D5",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=GB+2250362A+D5",
+                                                           "llm_evidence_explanation":  "该条合并列示D4和D5，分别对应并行计算架构和空间自相关计算。"
+                                                       },
+                                                       {
+                                                           "rank":  19,
+                                                           "citation":  "D6 US4926394A were cited and the objection was raised that the subject matter of claims 1 and 7",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=US4926394A+were+cited+and+the+objection+was+raised+th",
+                                                           "llm_evidence_explanation":  "该条来自最终事实部分，表明D6连同其他文献被纳入审查讨论。"
+                                                       },
+                                                       {
+                                                           "rank":  20,
+                                                           "citation":  "JP 05 067119 A",
+                                                           "mentioned_in_examined_text":  true,
+                                                           "retrieval_method":  "examined_text",
+                                                           "official_source":  "European Patent Office Espacenet",
+                                                           "official_link":  "https://worldwide.espacenet.com/patent/search?q=JP+05+067119+A",
+                                                           "llm_evidence_explanation":  "该日本文献在最终事实部分作为D2同族/相关摘要出现，属于检索报告中的相关文献。"
+                                                       }
+                                                   ],
+                           "affected_claims":  [
+                                                   1,
+                                                   2,
+                                                   3,
+                                                   4,
+                                                   5,
+                                                   6,
+                                                   7,
+                                                   8,
+                                                   9,
+                                                   10,
+                                                   11,
+                                                   12
+                                               ],
+                           "specification_support":  [
+                                                         {
+                                                             "location":  "1998-12-09_communication_examining_division_ocr.txt, page 5, paragraph 4",
+                                                             "original_text":  "The description mentions some technical problems (structure of the central station If there were together with a new estimation method a contribution to computer technology this should have been clearly disclosed. The disclosure of the technical features of the central side as indicated in the description (page 13, lines 8-35) and in the respective claims is however described simply in terms of the result to be achieved.",
+                                                             "translation":  "说明书提到了一些技术问题（中央站的结构）。如果除了新的估算方法之外还存在对计算机技术的贡献，则应当清楚公开。然而，说明书第13页第8至35行以及相应权利要求中所示中央端的技术特征，仅以要达到的结果来描述。",
+                                                             "llm_evidence_explanation":  "该证据说明说明书对所谓技术实现仅功能化/结果化描述，支撑充分公开和支持性存在历史风险的结论。"
+                                                         },
+                                                         {
+                                                             "location":  "2003-09-01_grounds_for_decision_annex_ocr.txt, page 5, paragraph 2.2",
+                                                             "original_text":  "Despite the fact that, according to the wording of claim 1, it appears to be irrelevant how distances are determined, it becomes clear from the description that it is not the aim of the application to provide a new and inventive method of measuring distances as according to a preferred embodiment of the application, distances are determined based on generally known location information.",
+                                                             "translation":  "尽管根据权利要求1的措辞，如何确定距离似乎并不重要，但从说明书可清楚看出，本申请的目的并不是提供一种新的且具有创造性的距离测量方法，因为根据本申请的优选实施方式，距离是基于通常已知的位置信息确定的。",
+                                                             "llm_evidence_explanation":  "该证据说明说明书本身将距离确定限定为基于常规位置信息，支持审查员认为其非技术贡献且非新技术测量方法。"
+                                                         }
+                                                     ],
+                           "examination_material_evidence":  [
+                                                                 {
+                                                                     "issue":  "outcome",
+                                                                     "source":  "2003-09-01_decision_to_refuse_ocr.txt, page 1",
+                                                                     "original_text":  "The Examining Division -at the oral proceedings dated 15.07.2003-has decided: European Patent application No. 94 912 949.8 is refused.",
+                                                                     "translation":  "审查部在2003年7月15日的口头审理中决定：欧洲专利申请第94 912 949.8号被驳回。",
+                                                                     "llm_evidence_explanation":  "该原文直接证明本案最终结果为驳回，因此grant_label为no，outcome为rejected。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "eligibility",
+                                                                     "source":  "2003-09-01_grounds_for_decision_annex_ocr.txt, page 4, Article 52(2) and (3) EPC",
+                                                                     "original_text":  "The present application does not meet the requirements of Article 52(1) EPC because it\u0027s subject matter does not go beyond a method of doing business as such which is excluded from patentability under Art. 52(2)(c) in combination with Art. 52(3) EPC.",
+                                                                     "translation":  "本申请不符合EPC第52条第1款的要求，因为其主题并未超出作为此类的商业方法，而该商业方法根据EPC第52条第2款(c)项结合第3款被排除在可专利性之外。",
+                                                                     "llm_evidence_explanation":  "该最终理由直接对应适格性否定，是本案驳回的核心证据。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "inventive_step",
+                                                                     "source":  "2003-09-01_grounds_for_decision_annex_ocr.txt, page 3, paragraph 8.1",
+                                                                     "original_text":  "In addition, the subject matter of claims 1 and 7 according to the main and auxiliary requests still lacked an inventive step because of a lack of a technical contribution to the prior art Document D4.",
+                                                                     "translation":  "此外，主请求和辅助请求的权利要求1和7的主题由于相对于现有技术文件D4缺乏技术贡献，仍然缺乏创造性。",
+                                                                     "llm_evidence_explanation":  "该原文明确指出最终口头审理中维持了针对权利要求1和7的创造性缺失异议。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "inventive_step",
+                                                                     "source":  "2003-02-25_annex_to_summons_ocr.txt, page 10, paragraphs 5.4-5.5",
+                                                                     "original_text":  "As it has been expressed by the Board of Appeal in decision T 0641/00 ... Technical aspects first come into play with the implementation of such an economic or financial ... therefore, has to be reformulated as being to implement this economic or financial computer program, in a software application. ... However, the mere implementation of such an economic or financial concept a matter of common general knowledge of a skilled person who, in this case, is to be regarded as someone skilled in data-processing and software programming.",
+                                                                     "translation":  "正如上诉委员会在T0641/00决定中所表达的……技术方面首先出现在这种经济或金融概念的实现中……因此，问题必须被重构为在软件应用中实现该经济或金融计算机程序。……然而，仅仅实现这种经济或金融概念属于本领域技术人员的公知常识；在本案中，该技术人员应被视为数据处理和软件编程领域的技术人员。",
+                                                                     "llm_evidence_explanation":  "该证据体现COMVIK/T641/00方法：非技术经济概念不贡献创造性，技术问题限于常规软件实现。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "clarity",
+                                                                     "source":  "2000-09-29_communication_examining_division_ocr.txt, pages 2-3",
+                                                                     "original_text":  "However, the application does not meet the requirements of Art. 84 EPC in that the number of independent claims is not concise. ... Thedifferentwordingsof thepartlyoverlapping independentclaimsrendersthe claimed subject-matter unclear. One independent claim per category seems tobe sufficient for the current application.",
+                                                                     "translation":  "然而，本申请不符合EPC第84条的要求，因为独立权利要求的数量不简洁。……部分重叠的独立权利要求采用不同措辞，使要求保护的主题不清楚。对于当前申请，每一类别一个独立权利要求似乎已经足够。",
+                                                                     "llm_evidence_explanation":  "该证据直接说明审查员对权利要求不简洁和不清楚提出Art.84异议。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "support",
+                                                                     "source":  "1998-12-09_communication_examining_division_ocr.txt, page 5, paragraph 4",
+                                                                     "original_text":  "However, the current application gives no detailed disclosure on processing resulting from the specific properties of sales activity data. Therefore, such a general definition does not meet the requirements of Art. 84 EPC and Art. 83 EPC.",
+                                                                     "translation":  "然而，本申请没有就由销售活动数据的特定性质所产生的处理提供详细公开。因此，这样的一般性定义不符合EPC第84条和第83条的要求。",
+                                                                     "llm_evidence_explanation":  "该证据表明审查员曾就充分公开/支持提出Art.83问题，但最终决定未以该问题作为主要驳回理由。"
+                                                                 },
+                                                                 {
+                                                                     "issue":  "novelty",
+                                                                     "source":  "2003-02-25_annex_to_summons_ocr.txt, page 1, paragraph 2",
+                                                                     "original_text":  "Before examining novelty (Art. 54 EPC) and inventive step (Art. 56 EPC) of an application it should be proved whether the claimed subject-matter falls under the list of excluded subject-matter (Art. 52(2) in conjunction with (3) EPC) and thus items of Art. 52 (2) EPC are either abstract or non-technical.",
+                                                                     "translation":  "在审查一件申请的新颖性（EPC第54条）和创造性（EPC第56条）之前，应证明所要求保护的主题是否落入排除主题清单（EPC第52条第2款结合第3款），因此EPC第52条第2款的项目属于抽象或非技术事项。",
+                                                                     "llm_evidence_explanation":  "该证据显示审查并非基于Art.54否定新颖性，最终理由亦未列新颖性缺失，因此新颖性按未被质疑处理。"
+                                                                 }
+                                                             ],
+                           "examination_rounds":  4
+                       }
+}

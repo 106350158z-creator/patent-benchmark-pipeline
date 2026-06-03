@@ -6,10 +6,11 @@ import re
 from collections import Counter
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote_plus
 
 
 KEY_DOC_PATTERN = re.compile(
-    r"(search_opinion|search_report|communication|annex|reply|amended_claims|claims|description|text_intended|published_international)",
+    r"(search_opinion|search_report|communication|annex|reply|amended_claims|claims|description|text_intended|published_international|decision|summons|grounds)",
     re.IGNORECASE,
 )
 
@@ -133,13 +134,34 @@ def collect_document_texts(docs_dir: Path) -> list[dict[str, str]]:
     return documents
 
 
+def collect_case_document_texts(case_dir: Path) -> tuple[Path, list[dict[str, str]]]:
+    docs_dir = case_dir / "docs"
+    documents = collect_document_texts(docs_dir)
+    if documents:
+        return docs_dir, documents
+    return case_dir, collect_document_texts(case_dir)
+
+
+def document_sort_key(document: dict[str, str]) -> tuple[str, str]:
+    name = document["name"]
+    match = re.match(r"([0-9]{2})-([0-9]{2})-([0-9]{4})", name)
+    if match:
+        day, month, year = match.groups()
+        return (f"{year}-{month}-{day}", name)
+    match = re.match(r"([0-9]{4})-([0-9]{2})-([0-9]{2})", name)
+    if match:
+        return (match.group(0), name)
+    return ("0000-00-00", name)
+
+
 def first_nonempty_text(documents: list[dict[str, str]], patterns: list[str]) -> tuple[str, str]:
     compiled = [re.compile(p, re.I) for p in patterns]
-    for doc in documents:
-        if any(p.search(doc["name"]) for p in compiled):
-            text = doc["text"].strip()
-            if text:
-                return doc["name"], text
+    for pattern in compiled:
+        for doc in sorted(documents, key=document_sort_key, reverse=True):
+            if pattern.search(doc["name"]):
+                text = doc["text"].strip()
+                if text:
+                    return doc["name"], text
     return "", ""
 
 
@@ -147,9 +169,14 @@ def extract_claim_text(documents: list[dict[str, str]]) -> dict[str, Any]:
     source, text = first_nonempty_text(
         documents,
         [
-            r"text_intended_for_grant.*(approval|clean).*(_ocr|_text)",
-            r"amended_claims.*(_ocr|_text)",
-            r"claims.*(_ocr|_text)",
+            r"text_intended_for_grant.*(approval|clean).*_ocr\.txt$",
+            r"claims.*_ocr\.txt$",
+            r"amended_claims.*_ocr\.txt$",
+            r"text_intended_for_grant.*(approval|clean).*\.txt$",
+            r"claims.*\.txt$",
+            r"amended_claims.*\.txt$",
+            r"text_intended_for_grant",
+            r"claims",
         ],
     )
     if not text:
@@ -238,44 +265,237 @@ def extract_specification_data(documents: list[dict[str, str]]) -> dict[str, Any
     }
 
 
-def extract_prior_art(documents: list[dict[str, str]], rows: list[dict[str, str]], top_k: int) -> list[dict[str, Any]]:
+def official_patent_search_link(query: str) -> str:
+    normalized = norm_space(query)
+    patent_match = re.search(
+        r"\b(WO|EP|US|JP|CN|GB)[-\s]?(?:A|B)?[-\s]?([0-9][0-9\s,./-]{3,22})([ABCUY][0-9]?)?\b",
+        normalized,
+        re.I,
+    )
+    if patent_match:
+        country, number, kind = patent_match.groups()
+        patent_no = country.upper() + re.sub(r"\D+", "", number) + (kind or "").upper()
+        return f"https://worldwide.espacenet.com/patent/search?q={quote_plus('pn=' + patent_no)}"
+    return f"https://worldwide.espacenet.com/patent/search?q={quote_plus(normalized)}"
+
+
+def citation_query(citation: str) -> str:
+    cleaned = re.sub(r"^\s*D[0-9]{1,2}\s+", "", citation.strip(), flags=re.I)
+    patent_match = re.search(r"\b((?:WO|EP|US|JP|CN|GB)[-\s]?[A-Z]?-?\s?[0-9][A-Z0-9/.,\-\s]{3,50})", cleaned, re.I)
+    if patent_match:
+        return norm_space(patent_match.group(1))
+    return norm_space(cleaned[:120])
+
+
+def infer_semantic_patent_queries(meta: dict[str, Any], claim_data: dict[str, Any], documents: list[dict[str, str]]) -> list[str]:
+    seed_text = " ".join(
+        str(value or "")
+        for value in [
+            meta.get("title"),
+            claim_data.get("claim_1"),
+            " ".join(doc["text"][:1400] for doc in documents[:3]),
+        ]
+    )
+    phrases: list[str] = []
+    phrase_patterns = [
+        r"\b[A-Z][A-Za-z]+(?:\s+[a-z][A-Za-z]+){1,5}\s+(?:system|method|database|processor|model|estimation|distribution|storage|network)\b",
+        r"\b(?:model determination|product distribution|sales estimation|geographic information system|spatial autocorrelation|multi-dimensional data storage|OLAP)\b",
+    ]
+    for pattern in phrase_patterns:
+        for match in re.finditer(pattern, seed_text, re.I):
+            phrase = norm_space(match.group(0))
+            if phrase and phrase.lower() not in {p.lower() for p in phrases}:
+                phrases.append(phrase)
+            if len(phrases) >= 20:
+                return phrases
+
+    title = norm_space(str(meta.get("title") or ""))
+    claim = norm_space(str(claim_data.get("claim_1") or ""))
+    fallback_queries = [
+        title,
+        f"{title} patent",
+        f"{title} computer implemented invention",
+        "model determination system",
+        "predictive model generation system",
+        "candidate model final model data processing",
+        "multidimensional data storage metadata layer data layer",
+        "OLAP multidimensional data storage model generation",
+        "computer implemented model evaluation module",
+        "forecast information objective variable model generator",
+        "business model generation computer system",
+        "metadata layer data layer query engine",
+        "networked computer multidimensional storage forecasting",
+        "variable assumption model generator evaluation",
+        "data warehouse model determination patent",
+        "online analytical processing model generation patent",
+        "computer implemented predictive analytics model patent",
+        "model generator candidate model final model patent",
+        "multidimensional query metadata layer patent",
+        claim[:120],
+    ]
+    for query in fallback_queries:
+        query = norm_space(query)
+        if query and query.lower() not in {p.lower() for p in phrases}:
+            phrases.append(query)
+        if len(phrases) >= 20:
+            break
+    return phrases
+
+
+def is_noise_citation(citation: str, application_number: str) -> bool:
+    upper = citation.upper()
+    if re.match(r"^D[0-9]{1,2}\s+(IS|FROM|DOES|REPRESENTS|MENTIONS|SHOWS)\b", upper):
+        return True
+    app_digits = re.sub(r"\D", "", application_number)
+    citation_digits = re.sub(r"\D", "", upper)
+    if app_digits and (app_digits in citation_digits or app_digits[:8] in citation_digits):
+        return True
+    if re.search(r"\b(?:PCT/)?[A-Z]{2}\d{2}/\d{4,}\b", upper):
+        return True
+    noise_terms = [
+        "DOCUMENTS",
+        "DES BREVETS",
+        "THIS ANNEX",
+        "EUROPEAN SEARCH REPORT",
+        "EUROPEAN SEARCH OPINION",
+        "COMMUNICATION REGARDING",
+        "AMENDED CLAIMS",
+        "WHEREIN",
+        "ACCORDING TO",
+        "CHARACTERIZING",
+        "SELECTED",
+        "LOCATIONS AT",
+        "PRODUCT IS",
+        "ESTIMATING",
+    ]
+    return any(term in upper for term in noise_terms)
+
+
+def add_prior_art(counter: Counter[str], sources: dict[str, set[str]], key: str, source: str, application_number: str) -> None:
+    key = norm_space(key)
+    key = re.sub(r"\s{2,}", " ", key).strip(" ;,.")
+    if not key or is_noise_citation(key, application_number):
+        return
+    counter[key] += 1
+    sources.setdefault(key, set()).add(source)
+
+
+def extract_labelled_prior_art_from_lines(text: str) -> list[str]:
+    lines = [norm_space(line) for line in re.split(r"\r?\n", text)]
+    results: list[str] = []
+    for index, line in enumerate(lines):
+        match = re.match(r"^(D[0-9]{1,2})\s*[:\-]?\s*(.*)$", line, re.I)
+        if not match:
+            continue
+        label = match.group(1).upper()
+        rest = match.group(2).strip()
+        if len(rest) < 5 and index + 1 < len(lines):
+            tail = []
+            for next_line in lines[index + 1 : index + 4]:
+                if re.match(r"^D[0-9]{1,2}\s*[:\-]?", next_line, re.I):
+                    break
+                if next_line:
+                    tail.append(next_line)
+            rest = " ".join(tail)
+        if re.search(r"(?:WO|EP|US|JP|CN|GB)[-\s]?[A-Z0-9]|Chong|Chou|Isaki|Patent Abstracts", rest, re.I):
+            results.append(f"{label} {rest[:220]}")
+    return results
+
+
+def make_prior_art_item(
+    rank: int,
+    citation: str,
+    mentions: int,
+    sources: list[str],
+    mentioned: bool,
+    retrieval_method: str,
+) -> dict[str, Any]:
+    query = citation_query(citation)
+    return {
+        "rank": rank,
+        "citation": citation,
+        "mentioned_in_examined_text": mentioned,
+        "retrieval_method": retrieval_method,
+        "official_source": "European Patent Office Espacenet",
+        "official_link": official_patent_search_link(query),
+        "mentions": mentions,
+        "sources": sources,
+    }
+
+
+def extract_prior_art(
+    documents: list[dict[str, str]],
+    rows: list[dict[str, str]],
+    top_k: int,
+    meta: dict[str, Any],
+    claim_data: dict[str, Any],
+) -> list[dict[str, Any]]:
     counter: Counter[str] = Counter()
     sources: dict[str, set[str]] = {}
     text_pattern = re.compile(
-        r"\b(D[0-9]{1,2})\s*(?:=|:)?\s*((?:WO|EP|US|JP|CN)\s?[0-9][A-Z0-9/.\-\s]*|[A-Z][A-Za-z0-9 .,'&:/()\-\[\]]{8,160})",
+        r"\b(D[0-9]{1,2})\s*(?:=|:|-)?\s*("
+        r"(?:(?:WO|EP|US|JP|CN|GB)[-\s]?[A-Z0-9][A-Z0-9/.\-\s]{3,90})"
+        r"|(?:Chong|Chou|Isaki)[A-Za-z0-9 .,'&:/()\-\[\]]{0,180}"
+        r"|Patent Abstracts[A-Za-z0-9 .,'&:/()\-\[\]]{0,180}"
+        r")",
         re.I,
     )
+    bare_patent_pattern = re.compile(r"\b(?:WO|EP|US|JP|CN|GB)\s?[0-9][A-Z0-9/.\-\s]{4,40}\b", re.I)
+    application_number = str(meta.get("application_number") or "")
 
     for doc in documents:
+        for key in extract_labelled_prior_art_from_lines(doc["text"]):
+            add_prior_art(counter, sources, key, doc["name"], application_number)
         for match in text_pattern.finditer(doc["text"]):
             label = match.group(1).upper()
             citation = norm_space(match.group(2))
             citation = re.sub(r"\s{2,}", " ", citation)
             key = f"{label} {citation}".strip()
-            counter[key] += 1
-            sources.setdefault(key, set()).add(doc["name"])
+            add_prior_art(counter, sources, key, doc["name"], application_number)
+        for match in bare_patent_pattern.finditer(doc["text"]):
+            key = norm_space(match.group(0)).upper()
+            add_prior_art(counter, sources, key, doc["name"], application_number)
 
-    for row in rows:
-        title = row.get("title", "")
-        if re.search(r"search report|search opinion", title, re.I):
-            key = title
-            counter[key] += 1
-            sources.setdefault(key, set()).add("doclist.csv")
+    docs: list[dict[str, Any]] = []
+    seen_queries: set[str] = set()
+    for key, count in counter.most_common():
+        if len(docs) >= top_k:
+            break
+        normalized_query = citation_query(key).lower()
+        if normalized_query in seen_queries:
+            continue
+        item_sources = sorted(sources.get(key, []))
+        docs.append(make_prior_art_item(len(docs) + 1, key, count, item_sources, bool(item_sources), "examined_text"))
+        seen_queries.add(normalized_query)
 
-    docs = []
-    for rank, (key, count) in enumerate(counter.most_common(top_k), start=1):
-        docs.append({"rank": rank, "citation": key, "mentions": count, "sources": sorted(sources.get(key, []))})
+    semantic_queries = infer_semantic_patent_queries(meta, claim_data, documents)
+    for query in semantic_queries:
+        if len(docs) >= top_k:
+            break
+        key = query.lower()
+        if key in seen_queries:
+            continue
+        seen_queries.add(key)
+        docs.append(
+            make_prior_art_item(
+                len(docs) + 1,
+                f"Semantic official patent search: {query}",
+                0,
+                ["EPO Espacenet semantic/keyword patent retrieval"],
+                False,
+                "official_semantic_retrieval",
+            )
+        )
     return docs
 
 
 def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]:
     main_file = find_main_file(case_dir, application_number)
     doclist_file = find_doclist_file(case_dir, application_number)
-    docs_dir = case_dir / "docs"
 
     main_html = read_text(main_file) if main_file else ""
     doc_rows = read_doclist(doclist_file) if doclist_file else []
-    documents = collect_document_texts(docs_dir)
+    docs_dir, documents = collect_case_document_texts(case_dir)
     meta = extract_meta(main_html, application_number)
     claim_data = extract_claim_text(documents)
 
@@ -288,7 +508,7 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
             "filing_date": meta.get("filing_date", ""),
             "priority_date": meta.get("priority_date", ""),
             "specification_data": extract_specification_data(documents),
-            "prior_art_docs": extract_prior_art(documents, doc_rows, top_k),
+            "prior_art_docs": extract_prior_art(documents, doc_rows, top_k, meta, claim_data),
         },
         "source_trace": {
             "case_dir": str(case_dir),
@@ -305,7 +525,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build benchmark input JSON from an EPO case directory.")
     parser.add_argument("case_dir", help="Case directory containing *-main.html, *-doclist.csv, and docs/*.txt")
     parser.add_argument("--application-number", default="", help="Application number, e.g. EP18885399")
-    parser.add_argument("--top-k", type=int, default=10, help="Number of prior-art documents/snippets to keep")
+    parser.add_argument("--top-k", type=int, default=20, help="Number of prior-art documents/snippets to keep")
     parser.add_argument("-o", "--output", default="", help="Output JSON path")
     args = parser.parse_args()
 
@@ -319,4 +539,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

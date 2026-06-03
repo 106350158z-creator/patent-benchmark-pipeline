@@ -18,7 +18,7 @@ param(
 
     [switch]$RunOcr,
 
-    [int]$TopK = 10
+    [int]$TopK = 20
 )
 
 $ErrorActionPreference = "Stop"

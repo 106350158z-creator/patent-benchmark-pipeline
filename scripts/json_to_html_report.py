@@ -1,17 +1,18 @@
 import argparse
 import json
+import re
 from html import escape
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote_plus
 
 
 DIMENSIONS = [
-    ("novelty", "新颖性", "novelty_score", "novelty_disc"),
-    ("inventive_step", "创造性", "inventive_step_score", "inventive_step_disc"),
-    ("support", "充分公开/支持", "support_score", "support_disc"),
-    ("clarity", "清楚性", "clarity_score", "clarity_disc"),
-    ("unity", "单一性", "unity_score", "unity_disc"),
-    ("eligibility", "适格性", "eligibility_score", "eligibility_disc"),
+    ("novelty", "新颖性", "novelty_score", "novelty_disc", "是否被单一现有技术直接公开，未被质疑通常为高分。"),
+    ("inventive_step", "创造性", "inventive_step_score", "inventive_step_disc", "按 EPO problem-solution/COMVIK 判断区别特征是否贡献技术效果。"),
+    ("support", "充分公开/支持", "support_score", "support_disc", "说明书是否足以实施，权利要求是否有原始公开和技术支撑。"),
+    ("clarity", "清楚性", "clarity_score", "clarity_disc", "权利要求术语、边界、简洁性和 Art.84 问题。"),
+    ("eligibility", "适格性", "eligibility_score", "eligibility_disc", "是否落入 EP Art.52 排除主题，是否具有进一步技术效果。"),
 ]
 
 
@@ -45,7 +46,107 @@ def pct(score: Any) -> int:
 def render_list(items: Any) -> str:
     if not items:
         return '<p class="muted">无</p>'
-    return "<ul>" + "".join(f"<li>{h(item)}</li>" for item in items) + "</ul>"
+    rendered = []
+    for item in items:
+        if isinstance(item, dict):
+            rendered.append(f"<li>{render_dict_inline(item)}</li>")
+        else:
+            rendered.append(f"<li>{h(item)}</li>")
+    return "<ul>" + "".join(rendered) + "</ul>"
+
+
+def render_dict_inline(item: dict[str, Any]) -> str:
+    parts = []
+    for key, value in item.items():
+        if value in ("", None, [], {}):
+            continue
+        parts.append(f"<strong>{h(key)}:</strong> {h(value)}")
+    return "；".join(parts)
+
+
+def official_patent_link(citation: str) -> str:
+    cleaned = re.sub(r"^\s*D[0-9]{1,2}\s+", "", citation.strip(), flags=re.I)
+    cleaned = re.sub(r"^Semantic official patent search:\s*", "", cleaned, flags=re.I)
+    patent_match = re.search(
+        r"\b(WO|EP|US|JP|CN|GB)[-\s]?(?:A|B)?[-\s]?([0-9][0-9\s,./-]{3,22})([ABCUY][0-9]?)?\b",
+        cleaned,
+        re.I,
+    )
+    if patent_match:
+        country, number, kind = patent_match.groups()
+        patent_no = country.upper() + re.sub(r"\D+", "", number) + (kind or "").upper()
+        query = "pn=" + patent_no
+    else:
+        query = cleaned[:120]
+    return f"https://worldwide.espacenet.com/patent/search?q={quote_plus(query)}"
+
+
+def render_external_link(url: str, label: str = "官网链接") -> str:
+    if not url:
+        return ""
+    return f'<a href="{h(url)}" target="_blank" rel="noopener noreferrer">{h(label)}</a>'
+
+
+def register_number(meta: dict[str, Any], benchmark: dict[str, Any] | None = None) -> str:
+    value = ""
+    if benchmark:
+        value = str(benchmark.get("application_number") or "")
+    if not value:
+        value = str(meta.get("application_number") or "")
+    digits = re.sub(r"\D", "", value)
+    if digits.startswith("EP"):
+        return digits
+    if len(digits) >= 8:
+        return "EP" + digits[:8]
+    return value if value.startswith("EP") else f"EP{value}" if value else ""
+
+
+def render_bilingual_list(items: Any) -> str:
+    if not items:
+        return '<p class="muted">无</p>'
+    rows = []
+    for item in items:
+        if isinstance(item, dict):
+            original = str(item.get("original_text") or item.get("english") or "")
+            translation = str(item.get("translation") or item.get("chinese") or "")
+            text = f"{h(original)} <span class='translation-inline'>({h(translation)})</span>" if translation else h(original)
+        else:
+            text = h(item)
+        rows.append(f"<li>{text}</li>")
+    return "<ul class='bilingual-list'>" + "".join(rows) + "</ul>"
+
+
+def render_disc(value: Any) -> str:
+    if isinstance(value, dict):
+        rows = []
+        labels = {
+            "analysis": "分析",
+            "original_text": "原文",
+            "translation": "翻译",
+            "llm_evidence_explanation": "LLM证据说明",
+        }
+        for key in ["analysis", "original_text", "translation", "llm_evidence_explanation"]:
+            if value.get(key):
+                rows.append(f"<div><strong>{labels[key]}：</strong>{h(value.get(key))}</div>")
+        return "".join(rows) or h(value)
+    return h(value)
+
+
+def disc_parts(value: Any) -> dict[str, str]:
+    if isinstance(value, dict):
+        return {
+            "analysis": str(value.get("analysis") or ""),
+            "original_text": str(value.get("original_text") or ""),
+            "translation": str(value.get("translation") or ""),
+            "llm_evidence_explanation": str(value.get("llm_evidence_explanation") or ""),
+        }
+    text = "" if value is None else str(value)
+    return {
+        "analysis": text,
+        "original_text": "",
+        "translation": "",
+        "llm_evidence_explanation": "",
+    }
 
 
 def render_meta(meta: dict[str, Any], grant_label: str, aggregate_score: Any) -> str:
@@ -56,20 +157,68 @@ def render_meta(meta: dict[str, Any], grant_label: str, aggregate_score: Any) ->
         ("申请人", meta.get("applicant")),
         ("申请日", meta.get("filing_date")),
         ("审查意见日期", meta.get("examination_date")),
-        ("结果", meta.get("outcome")),
-        ("是否授权", grant_label),
+        ("授权结果", meta.get("outcome") or grant_label),
     ]
     body = "".join(f"<tr><th>{h(label)}</th><td>{h(value)}</td></tr>" for label, value in rows)
     return f"""
-    <section class="grid">
-      <div class="card score-card {score_class(aggregate_score)}">
-        <div class="label">综合评分</div>
-        <div class="big-score">{h(aggregate_score)}</div>
-        <div class="score-bar"><span style="width:{pct(aggregate_score)}%"></span></div>
-      </div>
-      <div class="card">
-        <h2>基本信息</h2>
-        <table class="kv">{body}</table>
+    <section class="card" id="case-info">
+      <h2>基本信息</h2>
+      <table class="kv">{body}</table>
+    </section>
+    """
+
+
+def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any]) -> str:
+    benchmark = benchmark or {}
+    bench_input = benchmark.get("benchmark_input") or {}
+    trace = benchmark.get("source_trace") or {}
+    claim = bench_input.get("claim_text") or {}
+    structure = bench_input.get("drug_structure") or {}
+    snippets = structure.get("markush_or_formula_snippets") or []
+    app_no = register_number(meta, benchmark)
+    links = [
+        ("EPO Register Main", f"https://register.epo.org/application?number={quote_plus(app_no)}&lng=en&tab=main"),
+        ("EPO Register Documents", f"https://register.epo.org/application?number={quote_plus(app_no)}&lng=en&tab=doclist"),
+        ("Espacenet Search", f"https://worldwide.espacenet.com/patent/search?q={quote_plus(app_no)}"),
+    ]
+    local_links = []
+    for label, key in [("Local main HTML", "main_html"), ("Local doclist CSV", "doclist_csv")]:
+        value = trace.get(key)
+        if value:
+            local_links.append(f"<li><span>{h(label)}</span><code>{h(value)}</code></li>")
+
+    claim_text = claim.get("claim_1") or ""
+    claim_html = (
+        f"<div class='preview-text'>{h(claim_text)}</div><p class='source'>Source: {h(claim.get('source'))}</p>"
+        if claim_text
+        else "<p class='muted'>No claim text extracted.</p>"
+    )
+    if snippets:
+        markush_html = "<ul>" + "".join(
+            f"<li><strong>{h(item.get('source'))}</strong><div class='preview-text compact'>{h(item.get('text'))}</div></li>"
+            for item in snippets[:4]
+            if isinstance(item, dict)
+        ) + "</ul>"
+    else:
+        markush_html = "<p class='muted'>No Markush / formula text detected in extracted documents.</p>"
+
+    return f"""
+    <section class="card" id="preview">
+      <h2>Application Preview</h2>
+      <div class="preview-grid">
+        <div>
+          <h3>Claim</h3>
+          {claim_html}
+        </div>
+        <div>
+          <h3>Markush / Formula</h3>
+          {markush_html}
+          <h3>Links</h3>
+          <ul class="link-list">
+            {''.join(f"<li>{render_external_link(url, label)}</li>" for label, url in links)}
+            {''.join(local_links)}
+          </ul>
+        </div>
       </div>
     </section>
     """
@@ -77,63 +226,159 @@ def render_meta(meta: dict[str, Any], grant_label: str, aggregate_score: Any) ->
 
 def render_dimensions(scores: dict[str, Any]) -> str:
     rows = []
-    for _, label, score_key, disc_key in DIMENSIONS:
+    for _, label, score_key, disc_key, description in DIMENSIONS:
         score = scores.get(score_key, "")
+        parts = disc_parts(scores.get(disc_key, "未被质疑"))
         rows.append(
             "<tr>"
-            f"<td class='dim-name'>{h(label)}</td>"
-            f"<td><span class='pill {score_class(score)}'>{h(score)}</span></td>"
-            f"<td>{h(scores.get(disc_key, '未被质疑'))}</td>"
+            "<td>"
+            f"<div class='dim-score-box {score_class(score)}'>"
+            f"<div class='dim-box-name'>{h(label)}</div>"
+            f"<div class='dim-box-score'>{h(score)}</div>"
+            "</div>"
+            "</td>"
+            f"<td class='dim-desc'>{h(description)}</td>"
+            f"<td>{h(parts['analysis'])}</td>"
+            f"<td><div class='evidence-original'>{h(parts['original_text'])}</div></td>"
+            f"<td>{h(parts['translation'])}</td>"
+            f"<td>{h(parts['llm_evidence_explanation'])}</td>"
             "</tr>"
         )
     return f"""
-    <section class="card">
+    <section class="card" id="dimensions">
       <h2>维度评分</h2>
-      <table>
-        <thead><tr><th>维度</th><th>分数</th><th>分析理由</th></tr></thead>
-        <tbody>{''.join(rows)}</tbody>
-      </table>
+      <div class="table-scroll">
+        <table class="dimension-table">
+          <thead><tr><th>维度/分数</th><th>字段描述</th><th>分析</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>
+          <tbody>{''.join(rows)}</tbody>
+        </table>
+      </div>
     </section>
     """
 
 
-def render_evidence(evidence: dict[str, Any]) -> str:
-    support = evidence.get("specification_support") or []
-    support_rows = []
-    for item in support:
+def render_prior_art(prior_art: Any) -> str:
+    if not prior_art:
+        return '<p class="muted">无</p>'
+    if not any(isinstance(item, dict) for item in prior_art):
+        items = []
+        for item in prior_art[:20]:
+            citation = str(item)
+            items.append(
+                "<li>"
+                f"{h(citation)} "
+                f"{render_external_link(official_patent_link(citation))}"
+                "</li>"
+            )
+        return "<ol class='prior-list'>" + "".join(items) + "</ol>"
+
+    rows = []
+    for index, item in enumerate(prior_art[:20], start=1):
+        if not isinstance(item, dict):
+            citation = str(item)
+            mentioned = ""
+            link = official_patent_link(citation)
+            explanation = ""
+            method = ""
+        else:
+            citation = str(item.get("citation") or "")
+            mentioned = "审查文本提及" if item.get("mentioned_in_examined_text") else "官网语义检索"
+            link = official_patent_link(citation)
+            explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")
+            method = str(item.get("retrieval_method") or "")
+        tag_class = "tag-hit" if mentioned == "审查文本提及" else "tag-semantic"
+        rows.append(
+            "<tr>"
+            f"<td>{h(index)}</td>"
+            f"<td>{h(citation)}<div class='small-link'>{render_external_link(link)}</div></td>"
+            f"<td><span class='tag {tag_class}'>{h(mentioned)}</span><div class='muted tiny'>{h(method)}</div></td>"
+            f"<td>{h(explanation)}</td>"
+            "</tr>"
+        )
+    return (
+        "<table>"
+        "<thead><tr><th>序号</th><th>引用/相关专利</th><th>来源标记</th><th>LLM证据说明</th></tr></thead>"
+        f"<tbody>{''.join(rows)}</tbody>"
+        "</table>"
+    )
+
+
+def render_evidence_table(items: Any, fallback_location_label: str = "位置") -> str:
+    rows = []
+    for item in items or []:
         if isinstance(item, dict):
-            support_rows.append(
+            location = item.get("location") or item.get("source") or ""
+            issue = item.get("issue") or ""
+            original = item.get("original_text") or ""
+            translation = item.get("translation") or ""
+            explanation = item.get("llm_evidence_explanation") or item.get("relevance") or ""
+            if not (original or translation or explanation) and item:
+                explanation = render_dict_inline(item)
+            rows.append(
                 "<tr>"
-                f"<td>{h(item.get('location'))}</td>"
-                f"<td>{h(item.get('relevance'))}</td>"
+                f"<td>{h(issue)}</td>"
+                f"<td>{h(location)}</td>"
+                f"<td><div class='evidence-original'>{h(original)}</div></td>"
+                f"<td>{h(translation)}</td>"
+                f"<td>{h(explanation)}</td>"
                 "</tr>"
             )
         else:
-            support_rows.append(f"<tr><td colspan='2'>{h(item)}</td></tr>")
+            rows.append(f"<tr><td></td><td>{h(fallback_location_label)}</td><td colspan='3'>{h(item)}</td></tr>")
 
-    if not support_rows:
-        support_rows.append("<tr><td colspan='2' class='muted'>无</td></tr>")
+    if not rows:
+        rows.append("<tr><td colspan='5' class='muted'>无</td></tr>")
+    return (
+        "<table>"
+        "<thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>"
+        f"<tbody>{''.join(rows)}</tbody>"
+        "</table>"
+    )
 
+
+def render_evidence(evidence: dict[str, Any]) -> str:
     return f"""
-    <section class="card">
+    <section class="card" id="evidence">
       <h2>证据链</h2>
       <table class="kv">
-        <tr><th>引用先文</th><td>{render_list(evidence.get('prior_art_documents'))}</td></tr>
         <tr><th>受影响权利要求</th><td>{h(evidence.get('affected_claims'))}</td></tr>
         <tr><th>审查轮次</th><td>{h(evidence.get('examination_rounds'))}</td></tr>
       </table>
-      <h3>说明书/审查证据位置</h3>
-      <table>
-        <thead><tr><th>位置</th><th>关联说明</th></tr></thead>
-        <tbody>{''.join(support_rows)}</tbody>
-      </table>
+      <h3>引用先文 / 官网相关专利</h3>
+      {render_prior_art(evidence.get('prior_art_documents'))}
+      <h3>说明书支持证据</h3>
+      {render_evidence_table(evidence.get('specification_support'))}
+      <h3>审查材料证据</h3>
+      {render_evidence_table(evidence.get('examination_material_evidence'))}
     </section>
     """
 
 
-def render_html(data: dict[str, Any], source_name: str) -> str:
+def render_report_nav(current_path: Path | None = None) -> str:
+    report_links = []
+    if current_path:
+        for html_path in sorted(current_path.parent.parent.glob("*/*-analysis.html")):
+            if html_path.resolve() == current_path.resolve():
+                continue
+            rel = Path("..") / html_path.parent.name / html_path.name
+            report_links.append(f"<a href='{h(rel.as_posix())}'>{h(html_path.parent.name)}</a>")
+    reports = "".join(report_links)
+    return f"""
+    <nav class="jump-nav">
+      <a href="#preview">Preview</a>
+      <a href="#case-info">Case</a>
+      <a href="#dimensions">Dimensions</a>
+      <a href="#risks">Risks</a>
+      <a href="#actions">Actions</a>
+      <a href="#evidence">Evidence</a>
+      {reports}
+    </nav>
+    """
+
+
+def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any] | None = None, current_path: Path | None = None) -> str:
     meta = data.get("meta") or {}
-    title = meta.get("title") or source_name
+    title = "Benchmark Data Preview"
     app_no = meta.get("application_number") or ""
     aggregate = data.get("aggregate_score", "")
     risks = data.get("top_risk_reasons") or []
@@ -145,7 +390,7 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{h(app_no)} 专利审查分析报告</title>
+  <title>Benchmark Data Preview</title>
   <style>
     :root {{
       --bg: #f6f7f9;
@@ -208,6 +453,53 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
       box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
       margin-bottom: 16px;
     }}
+    .jump-nav {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 16px;
+    }}
+    .jump-nav a {{
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 650;
+    }}
+    .preview-grid {{
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 18px;
+    }}
+    .preview-text {{
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }}
+    .preview-text.compact {{
+      max-height: 140px;
+      margin-top: 6px;
+    }}
+    .link-list {{
+      display: grid;
+      gap: 6px;
+      padding-left: 18px;
+    }}
+    .link-list code {{
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      word-break: break-all;
+    }}
     .score-card {{
       display: flex;
       flex-direction: column;
@@ -218,6 +510,11 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
       color: var(--muted);
       font-size: 14px;
       margin-bottom: 8px;
+    }}
+    .score-note {{
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
     }}
     .big-score {{
       font-size: 56px;
@@ -245,6 +542,34 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
       border-collapse: collapse;
       table-layout: fixed;
     }}
+    .table-scroll {{
+      overflow-x: auto;
+    }}
+    .dimension-table {{
+      min-width: 1500px;
+    }}
+    .dimension-table th:nth-child(1),
+    .dimension-table td:nth-child(1) {{
+      width: 150px;
+    }}
+    .dimension-table th:nth-child(2),
+    .dimension-table td:nth-child(2) {{
+      width: 220px;
+    }}
+    .dimension-table th:nth-child(3),
+    .dimension-table td:nth-child(3) {{
+      width: 320px;
+    }}
+    .dimension-table th:nth-child(4),
+    .dimension-table td:nth-child(4),
+    .dimension-table th:nth-child(5),
+    .dimension-table td:nth-child(5) {{
+      width: 340px;
+    }}
+    .dimension-table th:nth-child(6),
+    .dimension-table td:nth-child(6) {{
+      width: 260px;
+    }}
     th, td {{
       border: 1px solid var(--line);
       padding: 10px 12px;
@@ -263,6 +588,30 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
       width: 130px;
       font-weight: 650;
     }}
+    .dim-desc {{
+      color: var(--muted);
+      font-size: 14px;
+    }}
+    .dim-score-box {{
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+      display: grid;
+      gap: 6px;
+      justify-items: start;
+      min-height: 82px;
+    }}
+    .dim-box-name {{
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+    }}
+    .dim-box-score {{
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 800;
+    }}
     .pill {{
       display: inline-flex;
       min-width: 48px;
@@ -279,6 +628,13 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
       margin: 0;
       padding-left: 20px;
     }}
+    .bilingual-list {{
+      display: grid;
+      gap: 8px;
+    }}
+    .translation-inline {{
+      color: var(--muted);
+    }}
     .columns {{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -287,13 +643,48 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
     .muted {{
       color: var(--muted);
     }}
+    .tiny {{
+      font-size: 12px;
+      margin-top: 4px;
+    }}
+    a {{
+      color: var(--accent);
+      text-decoration: none;
+    }}
+    a:hover {{
+      text-decoration: underline;
+    }}
+    .small-link {{
+      margin-top: 4px;
+      font-size: 13px;
+    }}
+    .tag {{
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }}
+    .tag-hit {{
+      color: #166534;
+      background: #dcfce7;
+    }}
+    .tag-semantic {{
+      color: #1d4ed8;
+      background: #dbeafe;
+    }}
+    .evidence-original {{
+      white-space: pre-wrap;
+    }}
     .source {{
       margin-top: 8px;
       font-size: 13px;
       color: var(--muted);
     }}
     @media (max-width: 820px) {{
-      .grid, .columns {{
+      .grid, .columns, .preview-grid {{
         grid-template-columns: 1fr;
       }}
       main {{
@@ -309,22 +700,22 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
   <main>
     <header>
       <h1>{h(title)}</h1>
-      <p class="subtitle">{h(app_no)} · 专利审查 JSON 可视化报告</p>
+      <p class="subtitle">{h(app_no)} · {h(meta.get('title') or source_name)}</p>
       <p class="source">来源 JSON：{h(source_name)}</p>
     </header>
 
+    {render_report_nav(current_path)}
+    {render_preview(benchmark, meta)}
     {render_meta(meta, data.get("grant_label", ""), aggregate)}
     {render_dimensions(data.get("dimension_scores") or {})}
 
-    <section class="columns">
-      <div class="card">
-        <h2>主要风险</h2>
-        {render_list(risks)}
-      </div>
-      <div class="card">
-        <h2>建议动作</h2>
-        {render_list(actions)}
-      </div>
+    <section class="card" id="risks">
+      <h2>主要风险</h2>
+      {render_bilingual_list(risks)}
+    </section>
+    <section class="card" id="actions">
+      <h2>建议动作</h2>
+      {render_bilingual_list(actions)}
     </section>
 
     {render_evidence(evidence)}
@@ -334,11 +725,23 @@ def render_html(data: dict[str, Any], source_name: str) -> str:
 """
 
 
-def convert(input_path: Path, output_path: Path | None) -> Path:
-    data = json.loads(input_path.read_text(encoding="utf-8"))
+def find_benchmark_input(input_path: Path, explicit_path: Path | None = None) -> dict[str, Any] | None:
+    candidates = []
+    if explicit_path:
+        candidates.append(explicit_path)
+    candidates.extend(sorted(input_path.parent.glob("*benchmark-input.json")))
+    for candidate in candidates:
+        if candidate.exists():
+            return json.loads(candidate.read_text(encoding="utf-8-sig"))
+    return None
+
+
+def convert(input_path: Path, output_path: Path | None, benchmark_input_path: Path | None = None) -> Path:
+    data = json.loads(input_path.read_text(encoding="utf-8-sig"))
+    benchmark = find_benchmark_input(input_path, benchmark_input_path)
     if output_path is None:
         output_path = input_path.with_suffix(".html")
-    html = render_html(data, input_path.name)
+    html = render_html(data, input_path.name, benchmark, output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html, encoding="utf-8", newline="\n")
     return output_path
@@ -348,11 +751,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Convert patent analysis JSON to a standalone HTML report.")
     parser.add_argument("input_json", help="Path to the final patent analysis JSON.")
     parser.add_argument("-o", "--output", help="Output HTML path. Defaults to input path with .html suffix.")
+    parser.add_argument("--benchmark-input", help="Optional benchmark input JSON for claim/Markush/link preview.")
     args = parser.parse_args()
 
     input_path = Path(args.input_json)
     output_path = Path(args.output) if args.output else None
-    result = convert(input_path, output_path)
+    benchmark_input_path = Path(args.benchmark_input) if args.benchmark_input else None
+    result = convert(input_path, output_path, benchmark_input_path)
     print(f"Wrote {result}")
 
 

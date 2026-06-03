@@ -19,5 +19,6 @@ markush_pdf_paths.txt
 *.check.html
 *.check.json
 *.dryrun.json
+*.llm.json
 .DS_Store
 Thumbs.db

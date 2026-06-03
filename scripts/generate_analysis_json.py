@@ -8,7 +8,7 @@ from typing import Any
 from openai import OpenAI
 
 
-DEFAULT_MODEL = "gpt5.5"
+DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_BASE_URL = "https://api.ohmygpt.com/v1"
 DEFAULT_API_KEY_ENV = "OHMYGPT_API_KEY"
 
@@ -16,12 +16,14 @@ DEFAULT_API_KEY_ENV = "OHMYGPT_API_KEY"
 SYSTEM_PROMPT = """你是专利审查报告分析专家。你必须基于给定 benchmark input 和审查材料生成合法 JSON。
 要求：
 1. 只输出 JSON，不要输出 Markdown 或额外解释。
-2. 对 novelty_disc / inventive_step_disc 等理由字段，必须引用具体对比文件编号、区别特征和审查结论。
+2. 对 novelty_disc / inventive_step_disc 等理由字段，必须输出结构化对象，包含 analysis、original_text、translation、llm_evidence_explanation。
 3. 如果某维度未被质疑，给 100 分，disc 写“未被质疑”，并说明材料中未见该类异议。
 4. EP 创造性分析优先使用 EPO problem-solution approach；如存在非技术特征，再说明 COMVIK 逻辑。
 5. top_risk_reasons 用中文，每条不超过 50 字。
 6. recommended_actions 必须具体可执行。
-7. aggregate_score 必须按权重计算并四舍五入：新颖性25%，创造性30%，充分公开/支持15%，清楚性10%，单一性5%，适格性15%。
+7. 不输出单一性 unity 相关评分字段。
+8. aggregate_score 必须按权重计算并四舍五入：新颖性25%，创造性30%，充分公开/支持15%，清楚性10%，适格性20%。
+9. evidence_trace 中证据必须保留审查材料原文的原始语言，同时给出中文翻译，并增加 LLM 证据说明。
 """
 
 
@@ -38,27 +40,83 @@ OUTPUT_SCHEMA = {
     "grant_label": "yes|no",
     "dimension_scores": {
         "novelty_score": "0-100",
-        "novelty_disc": "新颖性评价的具体理由，引用对比文件和区别特征",
+        "novelty_disc": {
+            "analysis": "中文分析结论，引用对比文件和区别特征",
+            "original_text": "审查材料中对应新颖性的英文原文；如果材料未质疑新颖性，引用能说明未以Art.54拒绝的英文原文或最终结果英文原文",
+            "translation": "上述英文原文的中文翻译",
+            "llm_evidence_explanation": "LLM说明该原文如何支持本维度评分",
+        },
         "inventive_step_score": "0-100",
-        "inventive_step_disc": "创造性评价，包括最接近现有技术、区别特征、技术效果",
+        "inventive_step_disc": {
+            "analysis": "中文分析结论，包括最接近现有技术、区别特征、技术效果",
+            "original_text": "审查材料中对应创造性的英文原文",
+            "translation": "上述英文原文的中文翻译",
+            "llm_evidence_explanation": "LLM说明该原文如何支持本维度评分",
+        },
         "support_score": "0-100",
-        "support_disc": "充分公开/支持评价",
+        "support_disc": {
+            "analysis": "中文分析结论",
+            "original_text": "审查材料中对应充分公开/支持的英文原文；如未质疑，引用授权文本/说明书基础相关英文原文",
+            "translation": "上述英文原文的中文翻译",
+            "llm_evidence_explanation": "LLM说明该原文如何支持本维度评分",
+        },
         "clarity_score": "0-100",
-        "clarity_disc": "清楚性评价",
-        "unity_score": "0-100",
-        "unity_disc": "单一性评价",
+        "clarity_disc": {
+            "analysis": "中文分析结论",
+            "original_text": "审查材料中对应清楚性的英文原文",
+            "translation": "上述英文原文的中文翻译",
+            "llm_evidence_explanation": "LLM说明该原文如何支持本维度评分",
+        },
         "eligibility_score": "0-100",
-        "eligibility_disc": "适格性评价",
+        "eligibility_disc": {
+            "analysis": "中文分析结论",
+            "original_text": "审查材料中对应EP Art.52适格性的英文原文",
+            "translation": "上述英文原文的中文翻译",
+            "llm_evidence_explanation": "LLM说明该原文如何支持本维度评分",
+        },
     },
     "aggregate_score": "0-100",
     "top_risk_reasons": ["中文风险短句"],
     "recommended_actions": ["具体可执行建议"],
     "evidence_trace": {
-        "prior_art_documents": ["对比文件列表"],
+        "prior_art_documents": [
+            {
+                "rank": 1,
+                "citation": "对比文件/语义检索相关专利",
+                "mentioned_in_examined_text": True,
+                "official_link": "EPO/Espacenet 官方链接",
+                "llm_evidence_explanation": "该先文与审查意见或权利要求的关系",
+            }
+        ],
         "affected_claims": [1, 2, 3],
-        "specification_support": [{"location": "页码/段落/文件名", "relevance": "支撑说明"}],
+        "specification_support": [
+            {
+                "location": "页码/段落/文件名",
+                "original_text": "审查材料原文，保持原语言",
+                "translation": "中文翻译；如原文为中文，则给英文翻译",
+                "llm_evidence_explanation": "LLM 对该证据如何支撑结论的说明",
+            }
+        ],
+        "examination_material_evidence": [
+            {
+                "issue": "novelty|inventive_step|support|clarity|eligibility|outcome",
+                "source": "文件名/页码/段落",
+                "original_text": "审查材料原文，保持原语言",
+                "translation": "中文翻译；如原文为中文，则给英文翻译",
+                "llm_evidence_explanation": "LLM 证据说明",
+            }
+        ],
         "examination_rounds": 1,
     },
+}
+
+
+AGGREGATE_WEIGHTS = {
+    "novelty_score": 0.25,
+    "inventive_step_score": 0.30,
+    "support_score": 0.15,
+    "clarity_score": 0.10,
+    "eligibility_score": 0.20,
 }
 
 
@@ -125,6 +183,15 @@ def build_user_prompt(benchmark: dict[str, Any], source_texts: list[dict[str, st
 - 10-20分：被明确否定，审查员给出了充分否定理由
 - 0分：完全不满足，无救济可能
 
+输出要求：
+- 只保留新颖性、创造性、充分公开/支持、清楚性、适格性五个评分维度；不要输出单一性。
+- aggregate_score 按新权重计算：新颖性25%，创造性30%，充分公开/支持15%，清楚性10%，适格性20%。
+- evidence_trace.prior_art_documents 必须优先使用 benchmark_input.prior_art_docs，保留 top20；其中 mentioned_in_examined_text=true 的为审查文本已提及先文，其余为 EPO/Espacenet 官网语义检索补充结果。
+- dimension_scores 中每个 *_disc 都必须是对象，而不是字符串；每个对象必须包含 analysis、original_text、translation、llm_evidence_explanation。
+- 每个维度的 original_text 必须使用审查材料里的英文原始描述文本；不要只写中文概括。
+- evidence_trace 中的 specification_support 和 examination_material_evidence 必须包含 original_text、translation、llm_evidence_explanation。
+- original_text 必须保留审查材料原始语言和原始描述，不要先改写；translation 放在旁边。
+
 benchmark input：
 {compact_benchmark}
 
@@ -144,6 +211,83 @@ def extract_json_object(text: str) -> dict[str, Any]:
         if start >= 0 and end > start:
             stripped = stripped[start : end + 1]
     return json.loads(stripped)
+
+
+def to_float(value: Any) -> float | None:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def normalize_analysis_result(result: dict[str, Any], benchmark: dict[str, Any]) -> dict[str, Any]:
+    scores = result.setdefault("dimension_scores", {})
+    scores.pop("unity_score", None)
+    scores.pop("unity_disc", None)
+    for disc_key in [
+        "novelty_disc",
+        "inventive_step_disc",
+        "support_disc",
+        "clarity_disc",
+        "eligibility_disc",
+    ]:
+        value = scores.get(disc_key)
+        if isinstance(value, str):
+            scores[disc_key] = {
+                "analysis": value,
+                "original_text": "",
+                "translation": "",
+                "llm_evidence_explanation": "模型未返回该维度的结构化原文证据，已保留分析结论；请根据审查材料补齐原文和翻译。",
+            }
+
+    weighted = 0.0
+    complete = True
+    for key, weight in AGGREGATE_WEIGHTS.items():
+        score = to_float(scores.get(key))
+        if score is None:
+            complete = False
+            break
+        weighted += score * weight
+    if complete:
+        result["aggregate_score"] = int(round(weighted))
+
+    evidence = result.setdefault("evidence_trace", {})
+    benchmark_prior_art = ((benchmark.get("benchmark_input") or {}).get("prior_art_docs") or [])[:20]
+    existing = evidence.get("prior_art_documents") or []
+    explanation_by_citation: dict[str, str] = {}
+    for item in existing:
+        if isinstance(item, dict):
+            citation = str(item.get("citation") or "").strip().lower()
+            explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "").strip()
+            if citation and explanation:
+                explanation_by_citation[citation] = explanation
+
+    if benchmark_prior_art:
+        normalized_prior_art = []
+        for index, item in enumerate(benchmark_prior_art, start=1):
+            if not isinstance(item, dict):
+                continue
+            citation = str(item.get("citation") or "").strip()
+            explanation = explanation_by_citation.get(citation.lower())
+            if not explanation:
+                if item.get("mentioned_in_examined_text"):
+                    explanation = "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+                else:
+                    explanation = "该引用由 EPO/Espacenet 官网语义检索补充，用于扩展与权利要求主题相关的专利背景。"
+            normalized_prior_art.append(
+                {
+                    "rank": item.get("rank") or index,
+                    "citation": citation,
+                    "mentioned_in_examined_text": bool(item.get("mentioned_in_examined_text")),
+                    "retrieval_method": item.get("retrieval_method", ""),
+                    "official_source": item.get("official_source", ""),
+                    "official_link": item.get("official_link", ""),
+                    "llm_evidence_explanation": explanation,
+                }
+            )
+        evidence["prior_art_documents"] = normalized_prior_art[:20]
+
+    return result
 
 
 def call_model(
@@ -186,7 +330,7 @@ def main() -> None:
     parser.add_argument("-o", "--output", required=True, help="Output analysis JSON path.")
     parser.add_argument("--env-file", default=".env", help="Dotenv file path. Defaults to .env in the current working directory.")
     parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL") or DEFAULT_MODEL)
-    parser.add_argument("--base-url", default=os.environ.get("OPENAI_API_BASE") or os.environ.get("OPENAI_BASE_URL") or DEFAULT_BASE_URL)
+    parser.add_argument("--base-url", default=os.environ.get("OHMYGPT_API_BASE") or os.environ.get("OPENAI_API_BASE") or os.environ.get("OPENAI_BASE_URL") or DEFAULT_BASE_URL)
     parser.add_argument("--api-key-env", default=DEFAULT_API_KEY_ENV)
     parser.add_argument("--max-tokens", type=int, default=4096)
     parser.add_argument("--token-limit-param", choices=["max_tokens", "max_completion_tokens"], default="max_completion_tokens")
@@ -231,11 +375,10 @@ def main() -> None:
         reasoning_effort=args.reasoning_effort,
         verbosity=args.verbosity,
     )
-    result = extract_json_object(raw)
+    result = normalize_analysis_result(extract_json_object(raw), benchmark)
     output_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote analysis JSON: {output_path}")
 
 
 if __name__ == "__main__":
     main()
-
