@@ -20,5 +20,27 @@ markush_pdf_paths.txt
 *.check.json
 *.dryrun.json
 *.llm.json
+
+# Generated pipeline/report outputs
+**/*-analysis.html
+**/*-analysis.json
+**/*_analysis.html
+**/*_analysis.json
+**/*-benchmark-input.json
+**/*-report.html
+**/assets/
+
+# Fetched research artifacts and browser snapshots
+markush-run/EP*/
+markush-run/keyword-html-*/
+markush-run/us-file-wrapper-research-*/
+**/screens/
+*-snapshot.txt
+*-network.txt
+*-url.txt
+*-title.txt
+*-result.json
+*-inspect.txt
+*-controls.json
 .DS_Store
 Thumbs.db
