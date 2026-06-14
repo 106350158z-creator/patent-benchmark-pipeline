@@ -19,8 +19,8 @@ SYSTEM_PROMPT = """你是专利审查报告分析专家。你必须基于给定 
 2. 对 novelty_disc / inventive_step_disc 等理由字段，必须输出结构化对象，包含 analysis、original_text、translation、llm_evidence_explanation。
 3. 如果某维度未被质疑，给 100 分，disc 写“未被质疑”，并说明材料中未见该类异议。
 4. EP 创造性分析优先使用 EPO problem-solution approach；如存在非技术特征，再说明 COMVIK 逻辑。
-5. top_risk_reasons 用中文，每条不超过 50 字。
-6. recommended_actions 必须具体可执行。
+5. top_risk_reasons 用英文原始描述，每条不超过 25 words；后续翻译脚本会补中文翻译。
+6. recommended_actions 用英文原始描述，必须具体可执行；后续翻译脚本会补中文翻译。
 7. 不输出单一性 unity 相关评分字段。
 8. aggregate_score 必须按权重计算并四舍五入：新颖性25%，创造性30%，充分公开/支持15%，清楚性10%，适格性20%。
 9. evidence_trace 中证据必须保留审查材料原文的原始语言，同时给出中文翻译，并增加 LLM 证据说明。
@@ -35,7 +35,7 @@ OUTPUT_SCHEMA = {
         "applicant": "申请人",
         "filing_date": "申请日",
         "examination_date": "审查意见发文日或最终决定日",
-        "outcome": "granted|rejected|pending",
+        "outcome": "granted|rejected|withdrawn|pending",
     },
     "grant_label": "yes|no",
     "dimension_scores": {
@@ -76,15 +76,15 @@ OUTPUT_SCHEMA = {
         },
     },
     "aggregate_score": "0-100",
-    "top_risk_reasons": ["中文风险短句"],
-    "recommended_actions": ["具体可执行建议"],
+    "top_risk_reasons": ["English risk sentence"],
+    "recommended_actions": ["Specific actionable English recommendation"],
     "evidence_trace": {
         "prior_art_documents": [
             {
                 "rank": 1,
                 "citation": "对比文件/语义检索相关专利",
                 "mentioned_in_examined_text": True,
-                "official_link": "EPO/Espacenet 官方链接",
+                "official_link": "WIPO PATENTSCOPE 或 Google Patents 具体专利页链接",
                 "llm_evidence_explanation": "该先文与审查意见或权利要求的关系",
             }
         ],
@@ -118,23 +118,115 @@ AGGREGATE_WEIGHTS = {
     "clarity_score": 0.10,
     "eligibility_score": 0.20,
 }
+PATENT_COUNTRIES = "WO|EP|US|JP|CN|GB|DE|KR|AU|ES|FR|CA"
+
+
+def normalize_patent_publication(text: str) -> str:
+    cleaned = re.sub(r"^Semantic official patent search:\s*", "", text.strip(), flags=re.I)
+    cleaned = re.sub(r"^\s*D[0-9]{1,2}\s+", "", cleaned, flags=re.I)
+    cleaned = re.sub(r"\s+", " ", cleaned).upper()
+
+    match = re.search(r"\bWO\s*(\d{4})\s*/?\s*(\d{4,7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"WO{year}{serial}{kind or ''}"
+
+    match = re.search(r"\bWO\s*(\d{2})\s*/?\s*(\d{4,6})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"WO{year}{serial}{kind or ''}"
+
+    match = re.search(r"\bEP\s*((?:\d[\s,.-]?){7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        digits = re.sub(r"\D+", "", match.group(1))
+        if len(digits) == 7:
+            return f"EP{digits}{match.group(2) or ''}"
+
+    match = re.search(r"\bUS\s*(\d{4})[\s/.-]*(\d{6,7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"US{year}{serial.zfill(7)}{kind or 'A1'}"
+
+    match = re.search(r"\bUS\s*((?:\d[\s,.-]?){7,8})([A-Z]\d?)?\b", cleaned)
+    if match:
+        digits = re.sub(r"\D+", "", match.group(1))
+        if not match.group(2) and len(digits) == 8 and int(digits) > 13000000:
+            return ""
+        return f"US{digits}{match.group(2) or ''}"
+
+    match = re.search(r"\bJP\s*(0[1-9]|1[0-1])\s*((?:\d[\s,.-]?){5,6})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits).lstrip("0") or "0"
+        return f"JPH{year}{digits}{kind or ''}"
+
+    match = re.search(r"\bJP\s*([A-Z])\s*((?:\d[\s,.-]?){6,9})([A-Z]\d?)?\b", cleaned)
+    if match:
+        era, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits)
+        return f"JP{era}{digits}{kind or ''}"
+
+    match = re.search(rf"\b({PATENT_COUNTRIES})\s*((?:\d[\s,.-]?){{7,10}})([A-Z]\d?)?\b", cleaned)
+    if match:
+        country, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits)
+        return f"{country}{digits}{kind or ''}"
+
+    return ""
+
+
+def official_patent_search_link(citation: str) -> str:
+    publication = normalize_patent_publication(citation)
+    if not publication:
+        return ""
+    wipo_id = wipo_doc_id(publication)
+    if wipo_id:
+        return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={wipo_id}"
+    return f"https://patents.google.com/patent/{publication}/en"
+
+
+def verified_direct_patent_link(citation: str, url: str) -> str:
+    publication = normalize_patent_publication(citation)
+    if not publication or not url:
+        return ""
+    match = re.fullmatch(r"https://patents\.google\.com/patent/([A-Z]{2}[A-Z0-9]+)/(?:en|[a-z]{2})", url)
+    if not match:
+        return ""
+    linked_publication = normalize_patent_publication(match.group(1))
+    if linked_publication and linked_publication == publication:
+        return url
+    return ""
+
+
+def wipo_doc_id(publication: str) -> str:
+    publication = publication.upper()
+    match = re.fullmatch(r"WO(19|20)\d{2}(\d{4,7})(?:[A-Z]\d?)?", publication)
+    if match:
+        return re.sub(r"(?:[A-Z]\d?)$", "", publication)
+    match = re.fullmatch(r"WO(\d{2})(\d{5,6})(?:[A-Z]\d?)?", publication)
+    if match:
+        year, serial = match.groups()
+        century = "20" if int(year) < 50 else "19"
+        return f"WO{century}{year}{serial.zfill(6)}"
+    return ""
 
 
 def load_dotenv(path: Path) -> None:
     if not path.exists():
         return
-    for raw_line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+    for raw_line in path.read_text(encoding="utf-8-sig", errors="ignore").splitlines():
         line = raw_line.strip()
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, value = line.split("=", 1)
         key = key.strip()
         value = value.strip().strip('"').strip("'")
-        os.environ.setdefault(key, value)
+        if not os.environ.get(key):
+            os.environ[key] = value
 
 
 def read_json(path: Path) -> Any:
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
 def read_text(path: Path, max_chars: int) -> str:
@@ -186,7 +278,7 @@ def build_user_prompt(benchmark: dict[str, Any], source_texts: list[dict[str, st
 输出要求：
 - 只保留新颖性、创造性、充分公开/支持、清楚性、适格性五个评分维度；不要输出单一性。
 - aggregate_score 按新权重计算：新颖性25%，创造性30%，充分公开/支持15%，清楚性10%，适格性20%。
-- evidence_trace.prior_art_documents 必须优先使用 benchmark_input.prior_art_docs，保留 top20；其中 mentioned_in_examined_text=true 的为审查文本已提及先文，其余为 EPO/Espacenet 官网语义检索补充结果。
+- evidence_trace.prior_art_documents 必须优先使用 benchmark_input.prior_art_docs，保留 top20；其中 mentioned_in_examined_text=true 的为审查文本已提及先文，其余为 Google Patents 语义检索返回的具体专利文献页；禁止输出关键词搜索页或自行构造不存在的专利号。
 - dimension_scores 中每个 *_disc 都必须是对象，而不是字符串；每个对象必须包含 analysis、original_text、translation、llm_evidence_explanation。
 - 每个维度的 original_text 必须使用审查材料里的英文原始描述文本；不要只写中文概括。
 - evidence_trace 中的 specification_support 和 examination_material_evidence 必须包含 original_text、translation、llm_evidence_explanation。
@@ -202,15 +294,66 @@ benchmark input：
 
 def extract_json_object(text: str) -> dict[str, Any]:
     stripped = text.strip()
-    fence = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", stripped, flags=re.S | re.I)
-    if fence:
-        stripped = fence.group(1)
-    if not stripped.startswith("{"):
-        start = stripped.find("{")
-        end = stripped.rfind("}")
-        if start >= 0 and end > start:
-            stripped = stripped[start : end + 1]
-    return json.loads(stripped)
+    decoder = json.JSONDecoder()
+
+    def try_decode(candidate: str) -> dict[str, Any] | None:
+        candidate = candidate.strip()
+        if not candidate:
+            return None
+        try:
+            parsed, _ = decoder.raw_decode(candidate)
+        except json.JSONDecodeError:
+            return None
+        if isinstance(parsed, dict):
+            return parsed
+        return None
+
+    candidates = [stripped]
+    candidates.extend(match.group(1).strip() for match in re.finditer(r"```(?:json)?\s*(.*?)\s*```", stripped, flags=re.S | re.I))
+    first_brace = stripped.find("{")
+    if first_brace >= 0:
+        candidates.append(stripped[first_brace:])
+
+    for candidate in candidates:
+        parsed = try_decode(candidate)
+        if parsed is not None:
+            return parsed
+
+    in_string = False
+    escape = False
+    depth = 0
+    start: int | None = None
+    for index, char in enumerate(stripped):
+        if start is None:
+            if char == "{":
+                start = index
+                depth = 1
+                in_string = False
+                escape = False
+            continue
+
+        if escape:
+            escape = False
+            continue
+        if char == "\\" and in_string:
+            escape = True
+            continue
+        if char == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                parsed = try_decode(stripped[start : index + 1])
+                if parsed is not None:
+                    return parsed
+                start = None
+
+    raise json.JSONDecodeError("No JSON object found", stripped, 0)
 
 
 def to_float(value: Any) -> float | None:
@@ -268,12 +411,17 @@ def normalize_analysis_result(result: dict[str, Any], benchmark: dict[str, Any])
             if not isinstance(item, dict):
                 continue
             citation = str(item.get("citation") or "").strip()
+            official_link = verified_direct_patent_link(citation, str(item.get("official_link") or ""))
+            if not official_link:
+                official_link = official_patent_search_link(citation)
+            if not official_link:
+                continue
             explanation = explanation_by_citation.get(citation.lower())
             if not explanation:
                 if item.get("mentioned_in_examined_text"):
                     explanation = "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
                 else:
-                    explanation = "该引用由 EPO/Espacenet 官网语义检索补充，用于扩展与权利要求主题相关的专利背景。"
+                    explanation = "该引用由 Google Patents 语义检索返回的具体专利文献页补充，用于扩展与权利要求主题相关的专利背景。"
             normalized_prior_art.append(
                 {
                     "rank": item.get("rank") or index,
@@ -281,7 +429,7 @@ def normalize_analysis_result(result: dict[str, Any], benchmark: dict[str, Any])
                     "mentioned_in_examined_text": bool(item.get("mentioned_in_examined_text")),
                     "retrieval_method": item.get("retrieval_method", ""),
                     "official_source": item.get("official_source", ""),
-                    "official_link": item.get("official_link", ""),
+                    "official_link": official_link,
                     "llm_evidence_explanation": explanation,
                 }
             )
@@ -307,7 +455,12 @@ def call_model(
     kwargs: dict[str, Any] = {
         "model": model,
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {
+                "role": "system",
+                "content": SYSTEM_PROMPT
+                + "\n\nCritical source rule: every original_text value must be copied verbatim from one contiguous SOURCE passage. Do not paraphrase, normalize OCR, fill missing words, join separate passages, or use .../ellipses. Use shorter contiguous source excerpts when needed."
+                + "\n\nCritical prior-art rule: evidence_trace.prior_art_documents must contain only benchmark_input.prior_art_docs entries that include a parseable patent publication number. Do not invent or add Semantic official patent search entries, keyword-only search URLs, unrelated computer/model/OLAP terms, or citations that are not present in the supplied sources.",
+            },
             {"role": "user", "content": prompt},
         ],
         token_limit_param: max_tokens,
@@ -335,7 +488,7 @@ def main() -> None:
     parser.add_argument("--max-tokens", type=int, default=4096)
     parser.add_argument("--token-limit-param", choices=["max_tokens", "max_completion_tokens"], default="max_completion_tokens")
     parser.add_argument("--temperature", type=float, default=0.0)
-    parser.add_argument("--omit-temperature", action="store_true", default=True)
+    parser.add_argument("--omit-temperature", action="store_true", default=False)
     parser.add_argument("--request-timeout", type=float, default=360.0)
     parser.add_argument("--reasoning-effort", default=os.environ.get("OPENAI_REASONING_EFFORT") or "medium")
     parser.add_argument("--verbosity", default=os.environ.get("OPENAI_VERBOSITY") or "medium")

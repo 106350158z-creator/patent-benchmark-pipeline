@@ -67,12 +67,20 @@ Benchmark output 是最终 HTML 报告，由审查分析 JSON 经以下脚本渲
 python scripts\json_to_html_report.py analysis.json -o analysis.html
 ```
 
+分析 JSON 可由两种方式生成：
+
+```powershell
+python scripts\generate_analysis_json.py benchmark-input.json -o analysis.json
+python scripts\generate_analysis_json_split.py benchmark-input.json -o analysis.json
+```
+
+`generate_analysis_json_split.py` 会将主分析拆为 `meta`、`novelty`、`inventive_step`、`support`、`clarity`、`eligibility` 多次调用，再合并成同一输出 schema。该模式适合 `gpt-5.5` 等长请求容易被网关断开的模型。
+
 HTML 报告展示：
 
 - 基本信息；
 - 综合评分；
-- 新颖性、创造性、充分公开/支持、清楚性、单一性、适格性评分和理由；
+- 新颖性、创造性、充分公开/支持、清楚性、适格性评分和理由；
 - 主要风险；
 - 建议动作；
 - 证据链。
-

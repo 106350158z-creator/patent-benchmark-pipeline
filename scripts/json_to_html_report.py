@@ -1,10 +1,11 @@
 import argparse
 import json
+import os
 import re
 from html import escape
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote_plus
+from urllib.parse import quote, quote_plus
 
 
 DIMENSIONS = [
@@ -14,6 +15,7 @@ DIMENSIONS = [
     ("clarity", "清楚性", "clarity_score", "clarity_disc", "权利要求术语、边界、简洁性和 Art.84 问题。"),
     ("eligibility", "适格性", "eligibility_score", "eligibility_disc", "是否落入 EP Art.52 排除主题，是否具有进一步技术效果。"),
 ]
+PATENT_COUNTRIES = "WO|EP|US|JP|CN|GB|DE|KR|AU|ES|FR|CA"
 
 
 def h(value: Any) -> str:
@@ -64,21 +66,103 @@ def render_dict_inline(item: dict[str, Any]) -> str:
     return "；".join(parts)
 
 
+def normalize_patent_publication(text: str) -> str:
+    cleaned = re.sub(r"^Semantic official patent search:\s*", "", text.strip(), flags=re.I)
+    cleaned = re.sub(r"^\s*D[0-9]{1,2}\s+", "", cleaned, flags=re.I)
+    cleaned = re.sub(r"\s+", " ", cleaned).upper()
+
+    match = re.search(r"\bWO\s*(\d{4})\s*/?\s*(\d{4,7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"WO{year}{serial}{kind or ''}"
+
+    match = re.search(r"\bWO\s*(\d{2})\s*/?\s*(\d{4,6})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"WO{year}{serial}{kind or ''}"
+
+    match = re.search(r"\bEP\s*((?:\d[\s,.-]?){7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        digits = re.sub(r"\D+", "", match.group(1))
+        if len(digits) == 7:
+            return f"EP{digits}{match.group(2) or ''}"
+
+    match = re.search(r"\bUS\s*(\d{4})[\s/.-]*(\d{6,7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"US{year}{serial.zfill(7)}{kind or 'A1'}"
+
+    match = re.search(r"\bUS\s*((?:\d[\s,.-]?){7,8})([A-Z]\d?)?\b", cleaned)
+    if match:
+        digits = re.sub(r"\D+", "", match.group(1))
+        if not match.group(2) and len(digits) == 8 and int(digits) > 13000000:
+            return ""
+        return f"US{digits}{match.group(2) or ''}"
+
+    match = re.search(r"\bJP\s*(0[1-9]|1[0-1])\s*((?:\d[\s,.-]?){5,6})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits).lstrip("0") or "0"
+        return f"JPH{year}{digits}{kind or ''}"
+
+    match = re.search(r"\bJP\s*([A-Z])\s*((?:\d[\s,.-]?){6,9})([A-Z]\d?)?\b", cleaned)
+    if match:
+        era, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits)
+        return f"JP{era}{digits}{kind or ''}"
+
+    match = re.search(rf"\b({PATENT_COUNTRIES})\s*((?:\d[\s,.-]?){{7,10}})([A-Z]\d?)?\b", cleaned)
+    if match:
+        country, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits)
+        return f"{country}{digits}{kind or ''}"
+
+    return ""
+
+
 def official_patent_link(citation: str) -> str:
-    cleaned = re.sub(r"^\s*D[0-9]{1,2}\s+", "", citation.strip(), flags=re.I)
-    cleaned = re.sub(r"^Semantic official patent search:\s*", "", cleaned, flags=re.I)
-    patent_match = re.search(
-        r"\b(WO|EP|US|JP|CN|GB)[-\s]?(?:A|B)?[-\s]?([0-9][0-9\s,./-]{3,22})([ABCUY][0-9]?)?\b",
-        cleaned,
-        re.I,
-    )
-    if patent_match:
-        country, number, kind = patent_match.groups()
-        patent_no = country.upper() + re.sub(r"\D+", "", number) + (kind or "").upper()
-        query = "pn=" + patent_no
-    else:
-        query = cleaned[:120]
-    return f"https://worldwide.espacenet.com/patent/search?q={quote_plus(query)}"
+    publication = normalize_patent_publication(citation)
+    if not publication:
+        return ""
+    wipo_id = wipo_doc_id(publication)
+    if wipo_id:
+        return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={quote_plus(wipo_id)}"
+    return f"https://patents.google.com/patent/{publication}/en"
+
+
+def verified_direct_patent_link(citation: str, url: str) -> str:
+    publication = normalize_patent_publication(citation)
+    if not publication or not url:
+        return ""
+    match = re.fullmatch(r"https://patents\.google\.com/patent/([A-Z]{2}[A-Z0-9]+)/(?:en|[a-z]{2})", url)
+    if not match:
+        return ""
+    linked_publication = normalize_patent_publication(match.group(1))
+    if linked_publication and linked_publication == publication:
+        return url
+    return ""
+
+
+def patent_link_for_item(item: dict[str, Any]) -> str:
+    citation = str(item.get("citation") or "")
+    direct = verified_direct_patent_link(citation, str(item.get("official_link") or ""))
+    if direct:
+        return direct
+    return official_patent_link(citation)
+
+
+
+def wipo_doc_id(publication: str) -> str:
+    publication = publication.upper()
+    match = re.fullmatch(r"WO(19|20)\d{2}(\d{4,7})(?:[A-Z]\d?)?", publication)
+    if match:
+        return re.sub(r"(?:[A-Z]\d?)$", "", publication)
+    match = re.fullmatch(r"WO(\d{2})(\d{5,6})(?:[A-Z]\d?)?", publication)
+    if match:
+        year, serial = match.groups()
+        century = "20" if int(year) < 50 else "19"
+        return f"WO{century}{year}{serial.zfill(6)}"
+    return ""
 
 
 def render_external_link(url: str, label: str = "官网链接") -> str:
@@ -87,15 +171,39 @@ def render_external_link(url: str, label: str = "官网链接") -> str:
     return f'<a href="{h(url)}" target="_blank" rel="noopener noreferrer">{h(label)}</a>'
 
 
+def render_local_link(path_value: Any, current_path: Path | None, label: str | None = None) -> str:
+    if not path_value:
+        return ""
+    raw = Path(str(path_value))
+    href_text = str(label or raw.name or path_value)
+    href_path = str(path_value).replace("\\", "/")
+    if current_path:
+        target = raw if raw.is_absolute() else (Path.cwd() / raw)
+        try:
+            href_path = os.path.relpath(target.resolve(), current_path.parent.resolve()).replace("\\", "/")
+        except OSError:
+            href_path = str(path_value).replace("\\", "/")
+    href = quote(href_path, safe="/:#?&=%")
+    return f'<a href="{h(href)}">{h(href_text)}</a>'
+
+
+def render_local_trace_item(label: str, path_value: Any, current_path: Path | None) -> str:
+    if not path_value:
+        return ""
+    link = render_local_link(path_value, current_path)
+    return f"<li><span>{h(label)}</span>{link}</li>"
+
+
 def register_number(meta: dict[str, Any], benchmark: dict[str, Any] | None = None) -> str:
     value = ""
     if benchmark:
         value = str(benchmark.get("application_number") or "")
     if not value:
         value = str(meta.get("application_number") or "")
+    value = value.strip()
+    if re.fullmatch(r"EP\d{8}", value, flags=re.I):
+        return value.upper()
     digits = re.sub(r"\D", "", value)
-    if digits.startswith("EP"):
-        return digits
     if len(digits) >= 8:
         return "EP" + digits[:8]
     return value if value.startswith("EP") else f"EP{value}" if value else ""
@@ -168,13 +276,14 @@ def render_meta(meta: dict[str, Any], grant_label: str, aggregate_score: Any) ->
     """
 
 
-def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any]) -> str:
+def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], current_path: Path | None = None) -> str:
     benchmark = benchmark or {}
     bench_input = benchmark.get("benchmark_input") or {}
     trace = benchmark.get("source_trace") or {}
     claim = bench_input.get("claim_text") or {}
     structure = bench_input.get("drug_structure") or {}
-    snippets = structure.get("markush_or_formula_snippets") or []
+    markush_images = structure.get("markush_images") or []
+    page_images = structure.get("markush_page_images") or []
     app_no = register_number(meta, benchmark)
     links = [
         ("EPO Register Main", f"https://register.epo.org/application?number={quote_plus(app_no)}&lng=en&tab=main"),
@@ -185,7 +294,20 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any]) -> st
     for label, key in [("Local main HTML", "main_html"), ("Local doclist CSV", "doclist_csv")]:
         value = trace.get(key)
         if value:
-            local_links.append(f"<li><span>{h(label)}</span><code>{h(value)}</code></li>")
+            local_links.append(render_local_trace_item(label, value, current_path))
+
+    original_files = trace.get("original_application_files") or []
+    original_links = []
+    if isinstance(original_files, list):
+        for item in original_files:
+            if not isinstance(item, dict) or not item.get("path"):
+                continue
+            title = item.get("title") or item.get("file_name") or "Original application file"
+            date = item.get("date")
+            pages = item.get("pages")
+            suffix = " · ".join(str(v) for v in [date, f"{pages} pages" if pages else ""] if v)
+            label = f"{title} ({suffix})" if suffix else str(title)
+            original_links.append(f"<li>{render_local_link(item.get('path'), current_path, label)}</li>")
 
     claim_text = claim.get("claim_1") or ""
     claim_html = (
@@ -193,14 +315,25 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any]) -> st
         if claim_text
         else "<p class='muted'>No claim text extracted.</p>"
     )
-    if snippets:
-        markush_html = "<ul>" + "".join(
-            f"<li><strong>{h(item.get('source'))}</strong><div class='preview-text compact'>{h(item.get('text'))}</div></li>"
-            for item in snippets[:4]
-            if isinstance(item, dict)
-        ) + "</ul>"
-    else:
-        markush_html = "<p class='muted'>No Markush / formula text detected in extracted documents.</p>"
+    image_html = ""
+    display_images = markush_images or page_images
+    if display_images:
+        image_items = []
+        for item in display_images[:1]:
+            if not isinstance(item, dict) or not item.get("image_path"):
+                continue
+            score = item.get("score")
+            score_text = f"score {h(score)} · " if score is not None else ""
+            image_items.append(
+                "<figure class='markush-figure'>"
+                f"<img src='{h(item.get('image_path'))}' alt='Markush / Formula page image'>"
+                f"<figcaption>{score_text}{h(item.get('pdf') or item.get('source'))}, page {h(item.get('page'))}</figcaption>"
+                "</figure>"
+            )
+        if image_items:
+            image_html = "<div class='markush-images'>" + "".join(image_items) + "</div>"
+    if not image_html:
+        image_html = "<p class='muted'>No Markush / formula image selected.</p>"
 
     return f"""
     <section class="card" id="preview">
@@ -212,11 +345,15 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any]) -> st
         </div>
         <div>
           <h3>Markush / Formula</h3>
-          {markush_html}
+          {image_html}
           <h3>Links</h3>
           <ul class="link-list">
             {''.join(f"<li>{render_external_link(url, label)}</li>" for label, url in links)}
             {''.join(local_links)}
+          </ul>
+          <h3>Original Application Files</h3>
+          <ul class="link-list">
+            {''.join(original_links) if original_links else "<li><span class='muted'>No original application PDF downloaded.</span></li>"}
           </ul>
         </div>
       </div>
@@ -264,10 +401,12 @@ def render_prior_art(prior_art: Any) -> str:
         items = []
         for item in prior_art[:20]:
             citation = str(item)
+            link = official_patent_link(citation)
+            link_html = render_external_link(link, "Document link") if link else "<span class='muted tiny'>No verified patent link</span>"
             items.append(
                 "<li>"
                 f"{h(citation)} "
-                f"{render_external_link(official_patent_link(citation))}"
+                f"{link_html}"
                 "</li>"
             )
         return "<ol class='prior-list'>" + "".join(items) + "</ol>"
@@ -282,15 +421,21 @@ def render_prior_art(prior_art: Any) -> str:
             method = ""
         else:
             citation = str(item.get("citation") or "")
-            mentioned = "审查文本提及" if item.get("mentioned_in_examined_text") else "官网语义检索"
-            link = official_patent_link(citation)
-            explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")
             method = str(item.get("retrieval_method") or "")
-        tag_class = "tag-hit" if mentioned == "审查文本提及" else "tag-semantic"
+            if item.get("mentioned_in_examined_text"):
+                mentioned = "Examined text"
+            elif method in {"official_semantic_retrieval", "google_patents_semantic_retrieval"}:
+                mentioned = "Supplemental query"
+            else:
+                mentioned = "Supplemental source"
+            link = patent_link_for_item(item)
+            explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")
+        link_html = render_external_link(link, "Document link") if link else "<span class='muted tiny'>No verified patent link</span>"
+        tag_class = "tag-hit" if mentioned == "Examined text" else "tag-semantic"
         rows.append(
             "<tr>"
             f"<td>{h(index)}</td>"
-            f"<td>{h(citation)}<div class='small-link'>{render_external_link(link)}</div></td>"
+            f"<td>{h(citation)}<div class='small-link'>{link_html}</div></td>"
             f"<td><span class='tag {tag_class}'>{h(mentioned)}</span><div class='muted tiny'>{h(method)}</div></td>"
             f"<td>{h(explanation)}</td>"
             "</tr>"
@@ -354,15 +499,74 @@ def render_evidence(evidence: dict[str, Any]) -> str:
     """
 
 
+def merge_benchmark_prior_art(evidence: dict[str, Any], benchmark: dict[str, Any] | None) -> dict[str, Any]:
+    if not benchmark:
+        return evidence
+    benchmark_prior_art = ((benchmark.get("benchmark_input") or {}).get("prior_art_docs") or [])
+    if not benchmark_prior_art:
+        return evidence
+
+    explanation_by_publication: dict[str, str] = {}
+    for item in evidence.get("prior_art_documents") or []:
+        if not isinstance(item, dict):
+            continue
+        publication = normalize_patent_publication(str(item.get("citation") or ""))
+        explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")
+        if publication and explanation:
+            explanation_by_publication.setdefault(publication, explanation)
+
+    merged = []
+    for index, item in enumerate(benchmark_prior_art[:20], start=1):
+        if not isinstance(item, dict):
+            continue
+        citation = str(item.get("citation") or "")
+        publication = normalize_patent_publication(citation)
+        if not publication:
+            continue
+        merged.append(
+            {
+                "rank": item.get("rank") or index,
+                "citation": citation,
+                "mentioned_in_examined_text": bool(item.get("mentioned_in_examined_text")),
+                "retrieval_method": item.get("retrieval_method", ""),
+                "official_source": item.get("official_source", ""),
+                "official_link": patent_link_for_item(item),
+                "llm_evidence_explanation": explanation_by_publication.get(
+                    publication,
+                    "Extracted from verified patent publication references in the benchmark input.",
+                ),
+            }
+        )
+
+    if not merged:
+        return evidence
+    merged_evidence = dict(evidence)
+    merged_evidence["prior_art_documents"] = merged
+    return merged_evidence
+
+
 def render_report_nav(current_path: Path | None = None) -> str:
-    report_links = []
+    previous_link = '<span class="nav-disabled">上一个 HTML</span>'
+    next_link = '<span class="nav-disabled">下一个 HTML</span>'
     if current_path:
-        for html_path in sorted(current_path.parent.parent.glob("*/*-analysis.html")):
-            if html_path.resolve() == current_path.resolve():
-                continue
-            rel = Path("..") / html_path.parent.name / html_path.name
-            report_links.append(f"<a href='{h(rel.as_posix())}'>{h(html_path.parent.name)}</a>")
-    reports = "".join(report_links)
+        current_resolved = current_path.resolve()
+        html_paths = sorted(
+            current_path.parent.parent.glob("*/*-analysis.html"),
+            key=lambda path: path.as_posix().lower(),
+        )
+        current_index = next(
+            (index for index, html_path in enumerate(html_paths) if html_path.resolve() == current_resolved),
+            None,
+        )
+        if current_index is not None:
+            if current_index > 0:
+                previous_path = html_paths[current_index - 1]
+                previous_rel = Path("..") / previous_path.parent.name / previous_path.name
+                previous_link = f"<a href='{h(previous_rel.as_posix())}'>上一个 HTML：{h(previous_path.parent.name)}</a>"
+            if current_index < len(html_paths) - 1:
+                next_path = html_paths[current_index + 1]
+                next_rel = Path("..") / next_path.parent.name / next_path.name
+                next_link = f"<a href='{h(next_rel.as_posix())}'>下一个 HTML：{h(next_path.parent.name)}</a>"
     return f"""
     <nav class="jump-nav">
       <a href="#preview">Preview</a>
@@ -371,7 +575,8 @@ def render_report_nav(current_path: Path | None = None) -> str:
       <a href="#risks">Risks</a>
       <a href="#actions">Actions</a>
       <a href="#evidence">Evidence</a>
-      {reports}
+      {previous_link}
+      {next_link}
     </nav>
     """
 
@@ -383,7 +588,7 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     aggregate = data.get("aggregate_score", "")
     risks = data.get("top_risk_reasons") or []
     actions = data.get("recommended_actions") or []
-    evidence = data.get("evidence_trace") or {}
+    evidence = merge_benchmark_prior_art(data.get("evidence_trace") or {}, benchmark)
 
     return f"""<!doctype html>
 <html lang="zh-CN">
@@ -459,13 +664,19 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
       gap: 8px;
       margin: 0 0 16px;
     }}
-    .jump-nav a {{
+    .jump-nav a,
+    .jump-nav .nav-disabled {{
       border: 1px solid var(--line);
       border-radius: 8px;
       background: #fff;
       padding: 7px 10px;
       font-size: 13px;
       font-weight: 650;
+    }}
+    .jump-nav .nav-disabled {{
+      color: var(--muted);
+      background: #f1f3f6;
+      cursor: not-allowed;
     }}
     .preview-grid {{
       display: grid;
@@ -487,6 +698,70 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     .preview-text.compact {{
       max-height: 140px;
       margin-top: 6px;
+    }}
+    .markush-images {{
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }}
+    .markush-figure {{
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }}
+    .markush-figure img {{
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: contain;
+      background: #f8fafc;
+    }}
+    .markush-figure figcaption {{
+      border-top: 1px solid var(--line);
+      padding: 7px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }}
+    .candidate-gallery {{
+      margin: 10px 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }}
+    .candidate-gallery summary {{
+      cursor: pointer;
+      padding: 9px 11px;
+      font-weight: 650;
+      background: #f8fafc;
+    }}
+    .candidate-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      padding: 10px;
+    }}
+    .candidate-figure {{
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }}
+    .candidate-figure img {{
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      background: #f8fafc;
+    }}
+    .candidate-figure figcaption {{
+      border-top: 1px solid var(--line);
+      padding: 5px 7px;
+      color: var(--muted);
+      font-size: 11px;
     }}
     .link-list {{
       display: grid;
@@ -705,7 +980,7 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     </header>
 
     {render_report_nav(current_path)}
-    {render_preview(benchmark, meta)}
+    {render_preview(benchmark, meta, current_path)}
     {render_meta(meta, data.get("grant_label", ""), aggregate)}
     {render_dimensions(data.get("dimension_scores") or {})}
 

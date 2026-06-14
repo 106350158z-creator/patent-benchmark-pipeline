@@ -6,6 +6,8 @@ from typing import Any
 
 from openai import OpenAI
 
+from generate_analysis_json import extract_json_object
+
 
 def load_dotenv(path: Path) -> None:
     if not path.exists():
@@ -15,15 +17,44 @@ def load_dotenv(path: Path) -> None:
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, value = line.split("=", 1)
-        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if not os.environ.get(key):
+            os.environ[key] = value
 
 
-def translate_items(items: list[Any], client: OpenAI, model: str) -> list[dict[str, str]]:
-    normalized = [item.get("translation") if isinstance(item, dict) else str(item) for item in items]
+def contains_cjk(text: str) -> bool:
+    return any("\u4e00" <= char <= "\u9fff" for char in text)
+
+
+def normalize_item(item: Any) -> tuple[str, str]:
+    if isinstance(item, dict):
+        original = str(item.get("original_text") or "").strip()
+        translation = str(item.get("translation") or "").strip()
+        source = original or translation
+        if original and translation and not contains_cjk(original):
+            return original, translation
+        if source:
+            return source, source
+    source = str(item).strip()
+    return source, source
+
+
+def translate_items(items: list[Any], client: OpenAI, model: str, temperature: float) -> list[dict[str, str]]:
+    normalized = [normalize_item(item) for item in items]
+    to_translate = [
+        {"index": index, "text": source, "direction": "zh_to_en" if contains_cjk(source) else "en_to_zh"}
+        for index, (source, translation) in enumerate(normalized)
+        if source and (source == translation or (contains_cjk(source) == contains_cjk(translation)))
+    ]
+    output = [{"original_text": source, "translation": translation} for source, translation in normalized]
+    if not to_translate:
+        return output
+
     prompt = {
-        "task": "Translate Chinese patent-analysis bullet points into concise English original text while preserving the Chinese as translation.",
-        "output_schema": [{"original_text": "English sentence", "translation": "Chinese source sentence"}],
-        "items": normalized,
+        "task": "Return bilingual patent-analysis bullet points. If direction is zh_to_en, translate the text into concise English original_text and keep the Chinese text as translation. If direction is en_to_zh, keep the English text as original_text and translate it into concise Chinese translation.",
+        "output_schema": {"items": [{"index": 0, "original_text": "English sentence", "translation": "Chinese sentence"}]},
+        "items": to_translate,
     }
     response = client.chat.completions.create(
         model=model,
@@ -32,21 +63,28 @@ def translate_items(items: list[Any], client: OpenAI, model: str) -> list[dict[s
             {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},
         ],
         response_format={"type": "json_object"},
+        temperature=temperature,
     )
     content = response.choices[0].message.content or "{}"
-    data = json.loads(content)
+    if not content.strip():
+        return output
+    data = extract_json_object(content)
     translated = data.get("items") or data.get("result") or data.get("translations") or []
     if not isinstance(translated, list):
         translated = []
-    output: list[dict[str, str]] = []
-    for index, source in enumerate(normalized):
-        item = translated[index] if index < len(translated) and isinstance(translated[index], dict) else {}
-        output.append(
-            {
-                "original_text": str(item.get("original_text") or item.get("english") or source),
-                "translation": str(item.get("translation") or item.get("chinese") or source),
-            }
-        )
+    fallback_by_order = iter(to_translate)
+    for item in translated:
+        if not isinstance(item, dict):
+            continue
+        fallback = next(fallback_by_order, {})
+        index = item.get("index", fallback.get("index"))
+        if not isinstance(index, int) or index < 0 or index >= len(output):
+            continue
+        source = output[index]["original_text"]
+        output[index] = {
+            "original_text": str(item.get("original_text") or item.get("english") or source),
+            "translation": str(item.get("translation") or item.get("chinese") or output[index]["translation"]),
+        }
     return output
 
 
@@ -57,6 +95,7 @@ def main() -> None:
     parser.add_argument("--api-key-env", default="OHMYGPT_API_KEY")
     parser.add_argument("--base-url", default="")
     parser.add_argument("--model", default="")
+    parser.add_argument("--temperature", type=float, default=0.0)
     args = parser.parse_args()
 
     load_dotenv(Path(args.env_file))
@@ -69,8 +108,8 @@ def main() -> None:
     path = Path(args.analysis_json)
     data = json.loads(path.read_text(encoding="utf-8-sig"))
     client = OpenAI(api_key=api_key, base_url=base_url)
-    data["top_risk_reasons"] = translate_items(data.get("top_risk_reasons") or [], client, model)
-    data["recommended_actions"] = translate_items(data.get("recommended_actions") or [], client, model)
+    data["top_risk_reasons"] = translate_items(data.get("top_risk_reasons") or [], client, model, args.temperature)
+    data["recommended_actions"] = translate_items(data.get("recommended_actions") or [], client, model, args.temperature)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Updated bilingual lists: {path}")
 

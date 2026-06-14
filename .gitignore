@@ -1,18 +1,15 @@
+# Python and local environment
 __pycache__/
+**/__pycache__/
 *.pyc
 .env
+.env.*
+!.env.example
 .venv/
 venv/
+
+# Local runs and temporary files
 runs/
-*.pdf
-*_ocr.txt
-*_text.txt
-**/docs/*.pdf
-**/docs/*_ocr.txt
-**/docs/*_text.txt
-**/__pycache__/
-markush_source_summaries.txt
-markush_pdf_paths.txt
 *.log
 *.tmp
 *.prompt.txt
@@ -20,17 +17,38 @@ markush_pdf_paths.txt
 *.check.json
 *.dryrun.json
 *.llm.json
+*.bak
+
+# Downloaded patent/source artifacts
+*.pdf
+*_ocr.txt
+*_text.txt
+**/docs/*.pdf
+**/docs/*_ocr.txt
+**/docs/*_text.txt
+markush_source_summaries.txt
+markush_pdf_paths.txt
 
 # Generated pipeline/report outputs
+EP*_granted/
+EP*_refused/
+EP*_withdrawn/
+EP*_granted.json
+EP*_refused.json
+EP*_withdrawn.json
 **/*-analysis.html
 **/*-analysis.json
 **/*_analysis.html
 **/*_analysis.json
 **/*-benchmark-input.json
+**/*-doclist.csv
+**/*-doclist.html
+**/*-main.html
 **/*-report.html
 **/assets/
 
 # Fetched research artifacts and browser snapshots
+markush-run/
 markush-run/EP*/
 markush-run/keyword-html-*/
 markush-run/us-file-wrapper-research-*/
@@ -42,5 +60,11 @@ markush-run/us-file-wrapper-research-*/
 *-result.json
 *-inspect.txt
 *-controls.json
+
+# OS/editor noise
 .DS_Store
 Thumbs.db
+
+markush-run/
+文档/
+关键词靶点信息/

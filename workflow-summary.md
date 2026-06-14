@@ -1,8 +1,45 @@
 # EPO 审查报告爬取与分析流程总结
 
+## 当前药物 benchmark 链路
+
+当前药物可授权性 benchmark 使用 `markush-run\benchmark\ep_review_file_sources_merged_current.json` 作为 EP 审查文件候选清单。清单中的每条记录至少包含 EP application number、publication number、Google Patents 链接、EPO Register main/doclist 链接和可复用下载命令。
+
+推荐批量链路：
+
+```powershell
+python scripts\run_manifest_benchmark_batch.py `
+  --manifest markush-run/benchmark/ep_review_file_sources_merged_current.json `
+  --output-root markush-run/benchmark-api50 `
+  --analysis-mode split `
+  --env-file .env `
+  --api-key-env OPENAI_API_KEY `
+  --base-url https://yunwu.ai/v1 `
+  --model gpt-5.5 `
+  --write-analysis-steps `
+  --skip-existing
+```
+
+`split` 主分析模式将原来一次长耗时 LLM 请求拆为六次较小请求：`meta`、`novelty`、`inventive_step`、`support`、`clarity`、`eligibility`。每个子请求只处理一个局部任务，最后本地合并为与 HTML 渲染器兼容的 analysis JSON。该模式已在 `EP21842292` 上用 `gpt-5.5` 跑通，并产出 JSON 与 HTML。
+
+单案链路也支持同一模式：
+
+```powershell
+.\scripts\run_epo_benchmark.ps1 `
+  -ApplicationNumber EP21842292 `
+  -OutputRoot markush-run\benchmark-api50 `
+  -RunOcr `
+  -GenerateAnalysis `
+  -AnalysisMode split `
+  -EnvFile .env `
+  -ApiKeyEnv OPENAI_API_KEY `
+  -BaseUrl https://yunwu.ai/v1 `
+  -Model gpt-5.5 `
+  -WriteAnalysisSteps
+```
+
 ## 本次使用的数据源
 
-本次只使用公开的 European Patent Register：
+早期验证只使用公开的 European Patent Register：
 
 - 授权案例：`EP10007106` / 申请号 `10007106.7`，最终状态为 granted，标题 `Model determination system`
 - 驳回案例：`EP94912949` / 申请号 `94912949.8`，最终状态为 rejected，标题 `Method of estimating product distribution`
@@ -64,4 +101,3 @@ EP 案件的创造性分析按 COMVIK 逻辑处理：
 ### EP94912949 驳回案
 
 最终决定认为主请求和辅助请求均不满足 Art.52(1)，实质上是 Art.52(2)(c) 和 52(3) 排除的商业方法。即使用数据库、处理器、内存等硬件，也只是通用技术手段，没有进一步技术效果。创造性方面，D1 US4972504 作为最接近现有技术，区别特征只是基于距离/空间相关进行销售估计，客观问题属于经济/统计问题；D3+D5 也显示 GIS 距离和空间相关分析背景。
-

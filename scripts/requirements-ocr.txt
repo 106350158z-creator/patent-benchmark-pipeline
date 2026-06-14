@@ -1,5 +1,5 @@
 PyMuPDF
 Pillow
 numpy
+opencv-python
 rapidocr-onnxruntime
-

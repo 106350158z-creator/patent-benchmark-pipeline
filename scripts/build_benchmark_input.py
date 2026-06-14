@@ -13,6 +13,8 @@ KEY_DOC_PATTERN = re.compile(
     r"(search_opinion|search_report|communication|annex|reply|amended_claims|claims|description|text_intended|published_international|decision|summons|grounds)",
     re.IGNORECASE,
 )
+PATENT_COUNTRIES = "WO|EP|US|JP|CN|GB|DE|KR|AU|ES|FR|CA"
+UNVERIFIED_DIRECT_PUBLICATIONS = {"JPH03224054", "JPH03224054A"}
 
 
 def clean_text(value: str) -> str:
@@ -44,11 +46,15 @@ def read_doclist(path: Path) -> list[dict[str, str]]:
 
 
 def find_main_file(case_dir: Path, application_number: str) -> Path | None:
+    register_dir = case_dir / "register"
     candidates = [
         case_dir / f"{application_number}-main.html",
         case_dir / f"{application_number.replace('.', '')}-main.html",
+        register_dir / f"{application_number}-main.html",
+        register_dir / f"{application_number.replace('.', '')}-main.html",
     ]
     candidates.extend(case_dir.glob("*-main.html"))
+    candidates.extend(register_dir.glob("*-main.html"))
     for path in candidates:
         if path.exists():
             return path
@@ -56,11 +62,15 @@ def find_main_file(case_dir: Path, application_number: str) -> Path | None:
 
 
 def find_doclist_file(case_dir: Path, application_number: str) -> Path | None:
+    register_dir = case_dir / "register"
     candidates = [
         case_dir / f"{application_number}-doclist.csv",
         case_dir / f"{application_number.replace('.', '')}-doclist.csv",
+        register_dir / f"{application_number}-doclist.csv",
+        register_dir / f"{application_number.replace('.', '')}-doclist.csv",
     ]
     candidates.extend(case_dir.glob("*-doclist.csv"))
+    candidates.extend(register_dir.glob("*-doclist.csv"))
     for path in candidates:
         if path.exists():
             return path
@@ -112,6 +122,22 @@ def extract_meta(main_html: str, application_number: str) -> dict[str, Any]:
     }
 
 
+def extract_register_citations_block(main_html: str) -> str:
+    marker = "Documents cited:"
+    start = main_html.find(marker)
+    if start < 0:
+        return ""
+    tail = main_html[start:]
+    end_markers = [
+        "The EPO accepts no responsibility",
+        '<div id="epoFooter"',
+        "</body>",
+    ]
+    end_positions = [tail.find(marker) for marker in end_markers if tail.find(marker) >= 0]
+    end = min(end_positions) if end_positions else len(tail)
+    return tail[:end]
+
+
 def normalize_ep_date(value: str) -> str:
     match = re.fullmatch(r"([0-9]{2})\.([0-9]{2})\.([0-9]{4})", value.strip())
     if not match:
@@ -137,9 +163,53 @@ def collect_document_texts(docs_dir: Path) -> list[dict[str, str]]:
 def collect_case_document_texts(case_dir: Path) -> tuple[Path, list[dict[str, str]]]:
     docs_dir = case_dir / "docs"
     documents = collect_document_texts(docs_dir)
+    root_documents = collect_document_texts(case_dir)
     if documents:
+        seen = {doc["name"] for doc in documents}
+        for doc in root_documents:
+            if doc["name"] in seen:
+                continue
+            documents.append({"name": f"../{doc['name']}", "text": doc["text"]})
         return docs_dir, documents
-    return case_dir, collect_document_texts(case_dir)
+    return case_dir, root_documents
+
+
+def collect_downloaded_files(directory: Path) -> list[dict[str, str]]:
+    if not directory.exists():
+        return []
+
+    index_path = directory / "download-index.csv"
+    if index_path.exists():
+        files: list[dict[str, str]] = []
+        for row in read_doclist(index_path):
+            path = Path(row.get("path") or "")
+            if not path.is_absolute():
+                path = directory / (row.get("fileName") or path.name)
+            item = {
+                "title": row.get("title", ""),
+                "date": row.get("date", ""),
+                "document_id": row.get("documentId", ""),
+                "pages": row.get("pages", ""),
+                "path": str(path),
+                "file_name": row.get("fileName", "") or path.name,
+                "source_url": row.get("url", ""),
+            }
+            if path.exists():
+                files.append(item)
+        return files
+
+    return [
+        {
+            "title": path.stem,
+            "date": "",
+            "document_id": "",
+            "pages": "",
+            "path": str(path),
+            "file_name": path.name,
+            "source_url": "",
+        }
+        for path in sorted(directory.glob("*.pdf"))
+    ]
 
 
 def document_sort_key(document: dict[str, str]) -> tuple[str, str]:
@@ -166,15 +236,20 @@ def first_nonempty_text(documents: list[dict[str, str]], patterns: list[str]) ->
 
 
 def extract_claim_text(documents: list[dict[str, str]]) -> dict[str, Any]:
+    claim_documents = [
+        doc
+        for doc in documents
+        if not re.search(r"\btranslation\b|translations?_of_the_claims|translations?_of_claims", doc["name"], re.I)
+    ]
     source, text = first_nonempty_text(
-        documents,
+        claim_documents,
         [
-            r"text_intended_for_grant.*(approval|clean).*_ocr\.txt$",
             r"claims.*_ocr\.txt$",
             r"amended_claims.*_ocr\.txt$",
-            r"text_intended_for_grant.*(approval|clean).*\.txt$",
             r"claims.*\.txt$",
             r"amended_claims.*\.txt$",
+            r"text_intended_for_grant.*(approval|clean).*_ocr\.txt$",
+            r"text_intended_for_grant.*(approval|clean).*\.txt$",
             r"text_intended_for_grant",
             r"claims",
         ],
@@ -265,26 +340,110 @@ def extract_specification_data(documents: list[dict[str, str]]) -> dict[str, Any
     }
 
 
+def normalize_patent_publication(text: str) -> str:
+    cleaned = norm_space(text).upper()
+    cleaned = re.sub(r"^D[0-9]{1,2}\s+", "", cleaned)
+
+    match = re.search(r"\bWO\s*(\d{4})\s*/?\s*(\d{4,7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"WO{year}{serial}{kind or ''}"
+
+    match = re.search(r"\bWO\s*(\d{2})\s*/?\s*(\d{4,6})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"WO{year}{serial}{kind or ''}"
+
+    match = re.search(r"\bEP\s*((?:\d[\s,.-]?){7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        digits = re.sub(r"\D+", "", match.group(1))
+        if len(digits) == 7:
+            return f"EP{digits}{match.group(2) or ''}"
+
+    match = re.search(r"\bUS\s*(\d{4})[\s/.-]*(\d{6,7})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, serial, kind = match.groups()
+        return f"US{year}{serial.zfill(7)}{kind or 'A1'}"
+
+    match = re.search(r"\bUS\s*((?:\d[\s,.-]?){7,8})([A-Z]\d?)?\b", cleaned)
+    if match:
+        digits = re.sub(r"\D+", "", match.group(1))
+        if not match.group(2) and len(digits) == 8 and int(digits) > 13000000:
+            return ""
+        return f"US{digits}{match.group(2) or ''}"
+
+    match = re.search(r"\bJP\s*(0[1-9]|1[0-1])\s*((?:\d[\s,.-]?){5,6})([A-Z]\d?)?\b", cleaned)
+    if match:
+        year, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits).lstrip("0") or "0"
+        return f"JPH{year}{digits}{kind or ''}"
+
+    match = re.search(r"\bJP\s*([A-Z])\s*((?:\d[\s,.-]?){6,9})([A-Z]\d?)?\b", cleaned)
+    if match:
+        era, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits)
+        return f"JP{era}{digits}{kind or ''}"
+
+    match = re.search(rf"\b({PATENT_COUNTRIES})\s*((?:\d[\s,.-]?){{7,10}})([A-Z]\d?)?\b", cleaned)
+    if match:
+        country, raw_digits, kind = match.groups()
+        digits = re.sub(r"\D+", "", raw_digits)
+        return f"{country}{digits}{kind or ''}"
+
+    return ""
+
+
+def extract_patent_publications(text: str) -> list[str]:
+    refs: list[str] = []
+    seen: set[str] = set()
+    broad_pattern = re.compile(rf"\b(?:{PATENT_COUNTRIES})\s?[A-Z0-9][A-Z0-9/.,\-\s]{{3,60}}", re.I)
+    for match in broad_pattern.finditer(text):
+        publication = normalize_patent_publication(match.group(0))
+        if publication and publication not in seen:
+            seen.add(publication)
+            refs.append(publication)
+    return refs
+
+
 def official_patent_search_link(query: str) -> str:
-    normalized = norm_space(query)
-    patent_match = re.search(
-        r"\b(WO|EP|US|JP|CN|GB)[-\s]?(?:A|B)?[-\s]?([0-9][0-9\s,./-]{3,22})([ABCUY][0-9]?)?\b",
-        normalized,
-        re.I,
-    )
-    if patent_match:
-        country, number, kind = patent_match.groups()
-        patent_no = country.upper() + re.sub(r"\D+", "", number) + (kind or "").upper()
-        return f"https://worldwide.espacenet.com/patent/search?q={quote_plus('pn=' + patent_no)}"
-    return f"https://worldwide.espacenet.com/patent/search?q={quote_plus(normalized)}"
+    publication = normalize_patent_publication(query)
+    if not publication:
+        return ""
+    wipo_id = wipo_doc_id(publication)
+    if wipo_id:
+        return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={quote_plus(wipo_id)}"
+    return f"https://patents.google.com/patent/{publication}/en"
+
+
+def wipo_doc_id(publication: str) -> str:
+    publication = publication.upper()
+    match = re.fullmatch(r"WO(19|20)\d{2}(\d{4,7})(?:[A-Z]\d?)?", publication)
+    if match:
+        return re.sub(r"(?:[A-Z]\d?)$", "", publication)
+    match = re.fullmatch(r"WO(\d{2})(\d{5,6})(?:[A-Z]\d?)?", publication)
+    if match:
+        year, serial = match.groups()
+        century = "20" if int(year) < 50 else "19"
+        return f"WO{century}{year}{serial.zfill(6)}"
+    return ""
 
 
 def citation_query(citation: str) -> str:
+    publication = normalize_patent_publication(citation)
+    if publication:
+        return publication
     cleaned = re.sub(r"^\s*D[0-9]{1,2}\s+", "", citation.strip(), flags=re.I)
     patent_match = re.search(r"\b((?:WO|EP|US|JP|CN|GB)[-\s]?[A-Z]?-?\s?[0-9][A-Z0-9/.,\-\s]{3,50})", cleaned, re.I)
     if patent_match:
         return norm_space(patent_match.group(1))
     return norm_space(cleaned[:120])
+
+
+def citation_dedupe_key(citation: str) -> str:
+    publication = normalize_patent_publication(citation)
+    if publication:
+        return re.sub(r"[A-Z]\d?$", "", publication).lower()
+    return citation_query(citation).lower()
 
 
 def infer_semantic_patent_queries(meta: dict[str, Any], claim_data: dict[str, Any], documents: list[dict[str, str]]) -> list[str]:
@@ -346,6 +505,8 @@ def is_noise_citation(citation: str, application_number: str) -> bool:
     upper = citation.upper()
     if re.match(r"^D[0-9]{1,2}\s+(IS|FROM|DOES|REPRESENTS|MENTIONS|SHOWS)\b", upper):
         return True
+    if not normalize_patent_publication(citation):
+        return True
     app_digits = re.sub(r"\D", "", application_number)
     citation_digits = re.sub(r"\D", "", upper)
     if app_digits and (app_digits in citation_digits or app_digits[:8] in citation_digits):
@@ -397,8 +558,9 @@ def extract_labelled_prior_art_from_lines(text: str) -> list[str]:
                 if next_line:
                     tail.append(next_line)
             rest = " ".join(tail)
-        if re.search(r"(?:WO|EP|US|JP|CN|GB)[-\s]?[A-Z0-9]|Chong|Chou|Isaki|Patent Abstracts", rest, re.I):
-            results.append(f"{label} {rest[:220]}")
+        publication = normalize_patent_publication(rest)
+        if publication:
+            results.append(f"{label} {publication}")
     return results
 
 
@@ -410,17 +572,26 @@ def make_prior_art_item(
     mentioned: bool,
     retrieval_method: str,
 ) -> dict[str, Any]:
-    query = citation_query(citation)
+    publication = normalize_patent_publication(citation)
     return {
         "rank": rank,
         "citation": citation,
         "mentioned_in_examined_text": mentioned,
         "retrieval_method": retrieval_method,
-        "official_source": "European Patent Office Espacenet",
-        "official_link": official_patent_search_link(query),
+        "official_source": "Patent publication direct page",
+        "official_link": official_patent_search_link(publication),
         "mentions": mentions,
         "sources": sources,
     }
+
+
+def is_prior_art_source(document_name: str) -> bool:
+    lower = document_name.lower()
+    if re.search(r"search_(?:opinion|report)|communication|annex|summons|grounds|decision", lower):
+        return True
+    if re.search(r"claims|description|text_intended|published_international|translation", lower):
+        return False
+    return True
 
 
 def extract_prior_art(
@@ -434,58 +605,45 @@ def extract_prior_art(
     sources: dict[str, set[str]] = {}
     text_pattern = re.compile(
         r"\b(D[0-9]{1,2})\s*(?:=|:|-)?\s*("
-        r"(?:(?:WO|EP|US|JP|CN|GB)[-\s]?[A-Z0-9][A-Z0-9/.\-\s]{3,90})"
+        rf"(?:(?:{PATENT_COUNTRIES})[-\s]?[A-Z0-9][A-Z0-9/.\-\s]{{3,90}})"
         r"|(?:Chong|Chou|Isaki)[A-Za-z0-9 .,'&:/()\-\[\]]{0,180}"
         r"|Patent Abstracts[A-Za-z0-9 .,'&:/()\-\[\]]{0,180}"
         r")",
         re.I,
     )
-    bare_patent_pattern = re.compile(r"\b(?:WO|EP|US|JP|CN|GB)\s?[0-9][A-Z0-9/.\-\s]{4,40}\b", re.I)
     application_number = str(meta.get("application_number") or "")
+    prior_art_documents = [doc for doc in documents if is_prior_art_source(doc["name"])]
+    if not prior_art_documents:
+        prior_art_documents = documents
 
-    for doc in documents:
+    for doc in prior_art_documents:
         for key in extract_labelled_prior_art_from_lines(doc["text"]):
             add_prior_art(counter, sources, key, doc["name"], application_number)
         for match in text_pattern.finditer(doc["text"]):
             label = match.group(1).upper()
-            citation = norm_space(match.group(2))
-            citation = re.sub(r"\s{2,}", " ", citation)
-            key = f"{label} {citation}".strip()
+            publication = normalize_patent_publication(match.group(2))
+            if not publication:
+                continue
+            key = f"{label} {publication}".strip()
             add_prior_art(counter, sources, key, doc["name"], application_number)
-        for match in bare_patent_pattern.finditer(doc["text"]):
-            key = norm_space(match.group(0)).upper()
-            add_prior_art(counter, sources, key, doc["name"], application_number)
+        for publication in extract_patent_publications(doc["text"]):
+            add_prior_art(counter, sources, publication, doc["name"], application_number)
 
     docs: list[dict[str, Any]] = []
     seen_queries: set[str] = set()
     for key, count in counter.most_common():
         if len(docs) >= top_k:
             break
-        normalized_query = citation_query(key).lower()
+        normalized_query = citation_dedupe_key(key)
         if normalized_query in seen_queries:
+            continue
+        publication = normalize_patent_publication(key)
+        if publication in UNVERIFIED_DIRECT_PUBLICATIONS:
             continue
         item_sources = sorted(sources.get(key, []))
         docs.append(make_prior_art_item(len(docs) + 1, key, count, item_sources, bool(item_sources), "examined_text"))
         seen_queries.add(normalized_query)
 
-    semantic_queries = infer_semantic_patent_queries(meta, claim_data, documents)
-    for query in semantic_queries:
-        if len(docs) >= top_k:
-            break
-        key = query.lower()
-        if key in seen_queries:
-            continue
-        seen_queries.add(key)
-        docs.append(
-            make_prior_art_item(
-                len(docs) + 1,
-                f"Semantic official patent search: {query}",
-                0,
-                ["EPO Espacenet semantic/keyword patent retrieval"],
-                False,
-                "official_semantic_retrieval",
-            )
-        )
     return docs
 
 
@@ -496,8 +654,15 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
     main_html = read_text(main_file) if main_file else ""
     doc_rows = read_doclist(doclist_file) if doclist_file else []
     docs_dir, documents = collect_case_document_texts(case_dir)
+    original_application_dir = case_dir / "original-application"
+    original_application_files = collect_downloaded_files(original_application_dir)
     meta = extract_meta(main_html, application_number)
     claim_data = extract_claim_text(documents)
+
+    prior_art_documents = list(documents)
+    register_citations = extract_register_citations_block(main_html)
+    if main_file and register_citations.strip():
+        prior_art_documents.append({"name": f"{main_file.name}#documents_cited", "text": register_citations})
 
     return {
         "application_number": meta.get("application_number") or application_number,
@@ -508,13 +673,15 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
             "filing_date": meta.get("filing_date", ""),
             "priority_date": meta.get("priority_date", ""),
             "specification_data": extract_specification_data(documents),
-            "prior_art_docs": extract_prior_art(documents, doc_rows, top_k, meta, claim_data),
+            "prior_art_docs": extract_prior_art(prior_art_documents, doc_rows, top_k, meta, claim_data),
         },
         "source_trace": {
             "case_dir": str(case_dir),
             "main_html": str(main_file) if main_file else "",
             "doclist_csv": str(doclist_file) if doclist_file else "",
             "docs_dir": str(docs_dir),
+            "original_application_dir": str(original_application_dir) if original_application_dir.exists() else "",
+            "original_application_files": original_application_files,
             "text_documents_used": [doc["name"] for doc in documents],
             "register_status": meta.get("register_status", ""),
         },
