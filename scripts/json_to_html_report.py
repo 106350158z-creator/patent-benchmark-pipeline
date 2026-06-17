@@ -316,7 +316,7 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], curre
         else "<p class='muted'>No claim text extracted.</p>"
     )
     image_html = ""
-    display_images = markush_images or page_images
+    display_images = markush_images
     if display_images:
         image_items = []
         for item in display_images[:1]:

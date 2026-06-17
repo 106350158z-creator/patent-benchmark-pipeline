@@ -115,6 +115,22 @@ def run_collect(app: str, args: argparse.Namespace, project_root: Path) -> None:
     ]
     if args.run_ocr:
         collect_args.append("-RunOcr")
+        if args.ocr_scope:
+            collect_args += ["-OcrScope", args.ocr_scope]
+        if args.ocr_include_regex:
+            collect_args += ["-OcrIncludeRegex", args.ocr_include_regex]
+        if args.ocr_exclude_regex:
+            collect_args += ["-OcrExcludeRegex", args.ocr_exclude_regex]
+        collect_args += [
+            "-OcrWorkers",
+            str(args.ocr_workers),
+            "-OcrTimeoutSeconds",
+            str(args.ocr_timeout_seconds),
+            "-OcrZoom",
+            str(args.ocr_zoom),
+        ]
+    if args.extract_pdf_text:
+        collect_args.append("-ExtractPdfText")
     run_command(collect_args, cwd=project_root)
 
 
@@ -136,6 +152,22 @@ def run_refine(app: str, benchmark_input: Path, args: argparse.Namespace, projec
     ]
     print(f"[refine] {app}", flush=True)
     run_command(refine_args, cwd=project_root)
+
+
+def rebuild_benchmark_input(app: str, case_dir: Path, benchmark_input: Path, args: argparse.Namespace, project_root: Path) -> None:
+    build_args = [
+        sys.executable,
+        "scripts\\build_benchmark_input.py",
+        str(case_dir),
+        "--application-number",
+        app,
+        "--top-k",
+        str(args.top_k),
+        "-o",
+        str(benchmark_input),
+    ]
+    print(f"[refresh-input] {app}", flush=True)
+    run_command(build_args, cwd=project_root)
 
 
 def run_analysis(app: str, benchmark_input: Path, analysis_json: Path, analysis_html: Path, args: argparse.Namespace, project_root: Path) -> None:
@@ -259,11 +291,18 @@ def run_record(index: int, record: dict[str, Any], args: argparse.Namespace, pro
                 run_collect(app, args, project_root)
 
         if args.stage in {"analysis", "all"}:
+            refreshed_input = False
             if not benchmark_input.exists():
-                raise RuntimeError(f"Benchmark input not found for {app}: {benchmark_input}")
+                if args.refresh_input_before_analysis and case_dir.exists():
+                    rebuild_benchmark_input(app, case_dir, benchmark_input, args, project_root)
+                    refreshed_input = True
+                else:
+                    raise RuntimeError(f"Benchmark input not found for {app}: {benchmark_input}")
             if args.skip_existing and analysis_json.exists() and analysis_html.exists():
                 print(f"[skip] {app} already has analysis JSON and HTML", flush=True)
             else:
+                if args.refresh_input_before_analysis and not refreshed_input:
+                    rebuild_benchmark_input(app, case_dir, benchmark_input, args, project_root)
                 run_analysis(app, benchmark_input, analysis_json, analysis_html, args, project_root)
     except Exception as exc:
         status = "error"
@@ -302,18 +341,27 @@ def main() -> None:
     parser.add_argument("--model", default="gpt-5.5")
     parser.add_argument("--analysis-mode", choices=["single", "split"], default="split")
     parser.add_argument("--top-k", type=int, default=20)
-    parser.add_argument("--max-source-files", type=int, default=3)
-    parser.add_argument("--max-chars-per-file", type=int, default=1800)
-    parser.add_argument("--max-field-chars", type=int, default=1800)
+    parser.add_argument("--max-source-files", type=int, default=6)
+    parser.add_argument("--max-chars-per-file", type=int, default=2600)
+    parser.add_argument("--max-field-chars", type=int, default=2200)
     parser.add_argument("--max-prior-art", type=int, default=8)
-    parser.add_argument("--max-tokens", type=int, default=1000)
-    parser.add_argument("--meta-max-tokens", type=int, default=600)
+    parser.add_argument("--max-tokens", type=int, default=1200)
+    parser.add_argument("--meta-max-tokens", type=int, default=800)
     parser.add_argument("--request-timeout", type=int, default=180)
     parser.add_argument("--reasoning-effort", default="low")
     parser.add_argument("--verbosity", default="low")
     parser.add_argument("--write-analysis-steps", action="store_true")
     parser.add_argument("--skip-existing", action="store_true")
     parser.add_argument("--run-ocr", action="store_true", help="Run local OCR during collect. By default collect skips OCR.")
+    parser.add_argument("--extract-pdf-text", action="store_true", help="Extract embedded PDF text before optional OCR.")
+    parser.add_argument("--ocr-scope", choices=["docs", "original", "both"], default="docs")
+    parser.add_argument("--ocr-include-regex", default="claims|communication|decision|annex|reply|search_opinion|search_report|amended_claims")
+    parser.add_argument("--ocr-exclude-regex", default="translation|description|published_international|text_intended")
+    parser.add_argument("--ocr-workers", type=int, default=1)
+    parser.add_argument("--ocr-timeout-seconds", type=int, default=1200)
+    parser.add_argument("--ocr-zoom", type=float, default=1.6)
+    parser.add_argument("--no-refresh-input-before-analysis", dest="refresh_input_before_analysis", action="store_false")
+    parser.set_defaults(refresh_input_before_analysis=True)
     parser.add_argument("--workers", type=int, default=1, help="Number of records to process concurrently.")
     args = parser.parse_args()
 

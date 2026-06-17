@@ -237,24 +237,99 @@ def read_text(path: Path, max_chars: int) -> str:
     return text[:max_chars] if max_chars > 0 else text
 
 
+PAGE_MARKER_PATTERN = re.compile(r"---\s*PAGE\s+[0-9]+\s*---", re.IGNORECASE)
+
+
+def has_meaningful_text(text: str, min_chars: int = 80) -> bool:
+    cleaned = PAGE_MARKER_PATTERN.sub(" ", text)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return len(re.findall(r"[A-Za-z0-9\u4e00-\u9fff]", cleaned)) >= min_chars
+
+
+def source_date_rank(name: str) -> int:
+    match = re.match(r"(?:\.\./)?([0-9]{2})-([0-9]{2})-([0-9]{4})", name)
+    if match:
+        day, month, year = match.groups()
+        return int(f"{year}{month}{day}")
+    match = re.match(r"(?:\.\./)?([0-9]{4})-([0-9]{2})-([0-9]{2})", name)
+    if match:
+        year, month, day = match.groups()
+        return int(f"{year}{month}{day}")
+    return 0
+
+
+def source_priority(name: str) -> int:
+    lower = name.lower()
+    if "decision_to_grant" in lower or "decision to grant" in lower:
+        return 0
+    if "decision_to_refus" in lower or "decision to refus" in lower or "application_refused" in lower:
+        return 1
+    if "withdrawn" in lower:
+        return 2
+    if "communication_about_intention_to_grant" in lower or "intention_to_grant" in lower:
+        return 3
+    if "communication_from_the_examining_division" in lower:
+        return 4
+    if "annex_to_the_communication" in lower:
+        return 5
+    if "reply_to_communication" in lower:
+        return 6
+    if "amended_claims" in lower:
+        return 7
+    if re.search(r"(?:^|_)claims(?:_|\.|$)", lower):
+        return 8
+    if "search_opinion" in lower or "search_report" in lower:
+        return 9
+    if "text_intended_for_grant" in lower:
+        return 10
+    if "description" in lower:
+        return 11
+    if "published_international" in lower:
+        return 12
+    return 20
+
+
+def resolve_trace_path(value: str) -> Path:
+    if not value:
+        return Path("")
+    path = Path(value)
+    if path.exists() or path.is_absolute():
+        return path
+    cwd = Path.cwd()
+    candidates = [cwd / path]
+    parts = path.parts
+    if parts and parts[0].lower() == cwd.name.lower():
+        candidates.append(cwd / Path(*parts[1:]))
+    if cwd.parent != cwd:
+        candidates.append(cwd.parent / path)
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return path
+
+
 def collect_source_texts(benchmark: dict[str, Any], max_chars_per_file: int, max_files: int) -> list[dict[str, str]]:
     trace = benchmark.get("source_trace") or {}
-    docs_dir = Path(str(trace.get("docs_dir") or ""))
+    docs_dir = resolve_trace_path(str(trace.get("docs_dir") or ""))
     used_names = trace.get("text_documents_used") or []
     docs: list[dict[str, str]] = []
 
-    if docs_dir.exists():
-        for name in used_names[:max_files]:
+    main_html = resolve_trace_path(str(trace.get("main_html") or ""))
+    if main_html.exists() and max_files > 0:
+        docs.append({"name": main_html.name, "text": read_text(main_html, min(max_chars_per_file, 12000))})
+
+    remaining_slots = max(max_files - len(docs), 0)
+    ordered_names = sorted(used_names, key=lambda name: (source_priority(str(name)), -source_date_rank(str(name)), str(name)))
+    if docs_dir.exists() and remaining_slots > 0:
+        for name in ordered_names:
+            if len(docs) >= max_files:
+                break
             path = docs_dir / name
             text = read_text(path, max_chars_per_file)
-            if text.strip():
+            if has_meaningful_text(text):
                 docs.append({"name": name, "text": text})
 
-    main_html = Path(str(trace.get("main_html") or ""))
-    if main_html.exists():
-        docs.insert(0, {"name": main_html.name, "text": read_text(main_html, min(max_chars_per_file, 12000))})
-
-    return docs[:max_files]
+    return docs
 
 
 def build_user_prompt(benchmark: dict[str, Any], source_texts: list[dict[str, str]]) -> str:
@@ -364,6 +439,20 @@ def to_float(value: Any) -> float | None:
 
 
 def normalize_analysis_result(result: dict[str, Any], benchmark: dict[str, Any]) -> dict[str, Any]:
+    meta = result.setdefault("meta", {})
+    benchmark_input = benchmark.get("benchmark_input") or {}
+    for key in ["jurisdiction", "application_number", "title", "applicant", "filing_date"]:
+        if not meta.get(key):
+            meta[key] = benchmark_input.get(key) or benchmark.get(key) or ""
+    known_outcome = benchmark_input.get("known_outcome") or {}
+    if isinstance(known_outcome, dict):
+        deterministic_outcome = str(known_outcome.get("outcome") or "")
+        if deterministic_outcome in {"granted", "rejected", "withdrawn"}:
+            meta["outcome"] = deterministic_outcome
+            result["grant_label"] = known_outcome.get("grant_label") or ("yes" if deterministic_outcome == "granted" else "no")
+            if known_outcome.get("date") and not meta.get("examination_date"):
+                meta["examination_date"] = known_outcome.get("date")
+
     scores = result.setdefault("dimension_scores", {})
     scores.pop("unity_score", None)
     scores.pop("unity_disc", None)

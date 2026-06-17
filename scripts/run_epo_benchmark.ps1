@@ -21,23 +21,38 @@ param(
 
     [switch]$RunOcr,
 
+    [switch]$ExtractPdfText,
+
+    [ValidateSet("docs", "original", "both")]
+    [string]$OcrScope = "docs",
+
+    [string]$OcrIncludeRegex = "claims|communication|decision|annex|reply|search_opinion|search_report|amended_claims",
+
+    [string]$OcrExcludeRegex = "translation|description|published_international|text_intended",
+
+    [int]$OcrWorkers = 1,
+
+    [int]$OcrTimeoutSeconds = 1200,
+
+    [double]$OcrZoom = 1.6,
+
     [switch]$SkipRefine,
 
     [switch]$ContinueOnDownloadError,
 
     [int]$TopK = 20,
 
-    [int]$MaxSourceFiles = 3,
+    [int]$MaxSourceFiles = 6,
 
-    [int]$MaxCharsPerFile = 1800,
+    [int]$MaxCharsPerFile = 2600,
 
-    [int]$MaxFieldChars = 1800,
+    [int]$MaxFieldChars = 2200,
 
     [int]$MaxPriorArt = 8,
 
-    [int]$MaxTokens = 1000,
+    [int]$MaxTokens = 1200,
 
-    [int]$MetaMaxTokens = 600,
+    [int]$MetaMaxTokens = 800,
 
     [int]$RequestTimeout = 180,
 
@@ -131,9 +146,34 @@ if ($EpoProxyUrl) {
 }
 & (Join-Path $projectRoot "scripts\download-epo-docs.ps1") @originalDownloadArgs
 
+if ($ExtractPdfText) {
+    Write-Host "[4/8] Extracting embedded text from downloaded PDFs before OCR..."
+    python (Join-Path $projectRoot "scripts\extract_pdf_text.py") $docsDir
+} elseif ($RunOcr) {
+    Write-Host "[4/8] Embedded text extraction skipped. Running OCR directly."
+}
+
 if ($RunOcr) {
     Write-Host "[4/8] Running OCR on downloaded PDFs..."
-    python (Join-Path $projectRoot "scripts\ocr-pdfs.py") $docsDir --zoom 1.6 --overwrite
+    $ocrArgs = @(
+        (Join-Path $projectRoot "scripts\ocr_case_batch.py"),
+        $caseDir,
+        "--scope",
+        $OcrScope,
+        "--workers",
+        "$OcrWorkers",
+        "--timeout",
+        "$OcrTimeoutSeconds",
+        "--zoom",
+        "$OcrZoom"
+    )
+    if ($OcrIncludeRegex) {
+        $ocrArgs += @("--include-regex", $OcrIncludeRegex)
+    }
+    if ($OcrExcludeRegex) {
+        $ocrArgs += @("--exclude-regex", $OcrExcludeRegex)
+    }
+    python @ocrArgs
 } else {
     Write-Host "[4/8] OCR skipped. Use -RunOcr when downloaded PDFs are scanned documents."
 }

@@ -13,6 +13,7 @@ KEY_DOC_PATTERN = re.compile(
     r"(search_opinion|search_report|communication|annex|reply|amended_claims|claims|description|text_intended|published_international|decision|summons|grounds)",
     re.IGNORECASE,
 )
+PAGE_MARKER_PATTERN = re.compile(r"---\s*PAGE\s+[0-9]+\s*---", re.IGNORECASE)
 PATENT_COUNTRIES = "WO|EP|US|JP|CN|GB|DE|KR|AU|ES|FR|CA"
 UNVERIFIED_DIRECT_PUBLICATIONS = {"JPH03224054", "JPH03224054A"}
 
@@ -43,6 +44,12 @@ def read_doclist(path: Path) -> list[dict[str, str]]:
         return []
     with path.open("r", encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
+
+
+def has_meaningful_text(text: str, min_chars: int = 80) -> bool:
+    cleaned = PAGE_MARKER_PATTERN.sub(" ", text)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return len(re.findall(r"[A-Za-z0-9\u4e00-\u9fff]", cleaned)) >= min_chars
 
 
 def find_main_file(case_dir: Path, application_number: str) -> Path | None:
@@ -87,12 +94,60 @@ def extract_between(text: str, start: str, end_candidates: list[str], max_len: i
     return norm_space(tail[: min(end, max_len)])
 
 
+def strip_register_bulletin(value: str) -> str:
+    return norm_space(re.sub(r"\[[0-9]{4}/[0-9]{2}\]", " ", value))
+
+
+def extract_register_title(main_html: str, text: str) -> str:
+    match = re.search(
+        r"<td[^>]*>\s*English:\s*</td>\s*<td[^>]*>(.*?)</td>",
+        main_html,
+        flags=re.I | re.S,
+    )
+    if match:
+        return strip_register_bulletin(clean_text(match.group(1)))
+
+    match = re.search(
+        r"EP[0-9]+\s*-\s*(.*?)</a>",
+        main_html,
+        flags=re.I | re.S,
+    )
+    if match:
+        return strip_register_bulletin(clean_text(match.group(1)))
+
+    return strip_register_bulletin(extract_between(text, "English:", ["French:", "Entry into regional phase"], 500))
+
+
+def extract_register_applicant(main_html: str, text: str) -> str:
+    match = re.search(
+        r"Applicant\(s\)</td>\s*<td[^>]*>(.*?)</td>",
+        main_html,
+        flags=re.I | re.S,
+    )
+    if match:
+        lines = [
+            strip_register_bulletin(clean_text(line))
+            for line in re.split(r"<br\s*/?>", match.group(1), flags=re.I)
+        ]
+        lines = [
+            line
+            for line in lines
+            if line and line.lower() != "for all designated states" and not re.fullmatch(r"\[[0-9]{4}/[0-9]{2}\]", line)
+        ]
+        if lines:
+            return lines[0]
+
+    applicant = extract_between(text, "Applicant(s) For all designated states", ["Inventor(s)", "Representative(s)"], 800)
+    applicant = strip_register_bulletin(re.sub(r"\bFormer\b.*", "", applicant, flags=re.I))
+    return applicant
+
+
 def extract_meta(main_html: str, application_number: str) -> dict[str, Any]:
     text = clean_text(main_html)
 
     app_match = re.search(r"Application number, filing date\s+([0-9.]+)\s+([0-9]{2}\.[0-9]{2}\.[0-9]{4})", text)
-    title = extract_between(text, "English:", ["French:", "Entry into regional phase"], 500)
-    applicant = extract_between(text, "Applicant(s) For all designated states", ["Inventor(s)", "Representative(s)"], 800)
+    title = extract_register_title(main_html, text)
+    applicant = extract_register_applicant(main_html, text)
     priority_match = re.search(r"Priority number, date\s+.*?([0-9]{2}\.[0-9]{2}\.[0-9]{4})", text)
 
     status = ""
@@ -154,7 +209,7 @@ def collect_document_texts(docs_dir: Path) -> list[dict[str, str]]:
         if not KEY_DOC_PATTERN.search(path.name):
             continue
         text = read_text(path)
-        if not text.strip():
+        if not has_meaningful_text(text):
             continue
         documents.append({"name": path.name, "text": text})
     return documents
@@ -170,8 +225,8 @@ def collect_case_document_texts(case_dir: Path) -> tuple[Path, list[dict[str, st
             if doc["name"] in seen:
                 continue
             documents.append({"name": f"../{doc['name']}", "text": doc["text"]})
-        return docs_dir, documents
-    return case_dir, root_documents
+        return docs_dir, sorted(documents, key=source_document_sort_key)
+    return case_dir, sorted(root_documents, key=source_document_sort_key)
 
 
 def collect_downloaded_files(directory: Path) -> list[dict[str, str]]:
@@ -212,6 +267,68 @@ def collect_downloaded_files(directory: Path) -> list[dict[str, str]]:
     ]
 
 
+def doc_row_title(row: dict[str, str]) -> str:
+    return str(row.get("title") or row.get("description") or row.get("documentTitle") or row.get("name") or "")
+
+
+def doc_row_date(row: dict[str, str]) -> str:
+    return str(row.get("date") or row.get("Date") or row.get("created") or "")
+
+
+def infer_known_outcome(
+    doc_rows: list[dict[str, str]],
+    documents: list[dict[str, str]],
+    meta: dict[str, Any],
+) -> dict[str, str]:
+    evidence: list[dict[str, str]] = []
+    for row in doc_rows:
+        title = doc_row_title(row)
+        if title:
+            evidence.append({"source": title, "date": doc_row_date(row), "text": title})
+    for doc in documents:
+        text = norm_space(doc.get("text", "")[:5000])
+        evidence.append({"source": doc.get("name", ""), "date": "", "text": f"{doc.get('name', '')} {text}"})
+
+    checks = [
+        (
+            "granted",
+            "yes",
+            re.compile(r"decision\s+to\s+grant|decision_to_grant|is\s+hereby\s+granted|mention\s+of\s+the\s+grant", re.I),
+        ),
+        (
+            "rejected",
+            "no",
+            re.compile(r"decision\s+to\s+refus|decision_to_refus|application\s+refused|is\s+refused", re.I),
+        ),
+        (
+            "withdrawn",
+            "no",
+            re.compile(r"deemed\s+to\s+be\s+withdrawn|application\s+withdrawn|withdrawn", re.I),
+        ),
+    ]
+    for outcome, grant_label, pattern in checks:
+        matches = [item for item in evidence if pattern.search(item["text"])]
+        if matches:
+            item = sorted(matches, key=lambda x: document_date_rank(x["source"]) or document_date_rank(x["date"]), reverse=True)[0]
+            return {
+                "outcome": outcome,
+                "grant_label": grant_label,
+                "source": item["source"],
+                "date": item["date"],
+            }
+
+    status = str(meta.get("register_status") or "")
+    if re.search(r"patent has been granted|no opposition filed", status, re.I):
+        return {"outcome": "granted", "grant_label": "yes", "source": "register_status", "date": ""}
+    if re.search(r"application refused", status, re.I):
+        return {"outcome": "rejected", "grant_label": "no", "source": "register_status", "date": ""}
+    if re.search(r"deemed to be withdrawn", status, re.I):
+        return {"outcome": "withdrawn", "grant_label": "no", "source": "register_status", "date": ""}
+    if re.search(r"grant of patent is intended|examination is in progress", status, re.I):
+        return {"outcome": "pending", "grant_label": "no", "source": "register_status", "date": ""}
+    return {}
+
+
 def document_sort_key(document: dict[str, str]) -> tuple[str, str]:
     name = document["name"]
     match = re.match(r"([0-9]{2})-([0-9]{2})-([0-9]{4})", name)
@@ -222,6 +339,54 @@ def document_sort_key(document: dict[str, str]) -> tuple[str, str]:
     if match:
         return (match.group(0), name)
     return ("0000-00-00", name)
+
+
+def document_date_rank(name: str) -> int:
+    match = re.match(r"(?:\.\./)?([0-9]{2})-([0-9]{2})-([0-9]{4})", name)
+    if match:
+        day, month, year = match.groups()
+        return int(f"{year}{month}{day}")
+    match = re.match(r"(?:\.\./)?([0-9]{4})-([0-9]{2})-([0-9]{2})", name)
+    if match:
+        year, month, day = match.groups()
+        return int(f"{year}{month}{day}")
+    return 0
+
+
+def document_priority(name: str) -> int:
+    lower = name.lower()
+    if "decision_to_grant" in lower or "decision to grant" in lower:
+        return 0
+    if "decision_to_refus" in lower or "decision to refus" in lower or "application_refused" in lower:
+        return 1
+    if "withdrawn" in lower:
+        return 2
+    if "communication_about_intention_to_grant" in lower or "intention_to_grant" in lower:
+        return 3
+    if "communication_from_the_examining_division" in lower:
+        return 4
+    if "annex_to_the_communication" in lower:
+        return 5
+    if "reply_to_communication" in lower:
+        return 6
+    if "amended_claims" in lower:
+        return 7
+    if re.search(r"(?:^|_)claims(?:_|\.|$)", lower):
+        return 8
+    if "search_opinion" in lower or "search_report" in lower:
+        return 9
+    if "text_intended_for_grant" in lower:
+        return 10
+    if "description" in lower:
+        return 11
+    if "published_international" in lower:
+        return 12
+    return 20
+
+
+def source_document_sort_key(document: dict[str, str]) -> tuple[int, int, str]:
+    name = document["name"]
+    return (document_priority(name), -document_date_rank(name), name)
 
 
 def first_nonempty_text(documents: list[dict[str, str]], patterns: list[str]) -> tuple[str, str]:
@@ -658,6 +823,7 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
     original_application_files = collect_downloaded_files(original_application_dir)
     meta = extract_meta(main_html, application_number)
     claim_data = extract_claim_text(documents)
+    known_outcome = infer_known_outcome(doc_rows, documents, meta)
 
     prior_art_documents = list(documents)
     register_citations = extract_register_citations_block(main_html)
@@ -670,17 +836,21 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
             "drug_structure": extract_drug_structure(documents, claim_data),
             "claim_text": claim_data,
             "jurisdiction": meta.get("jurisdiction", "EP"),
+            "application_number": meta.get("application_number") or application_number,
+            "title": meta.get("title", ""),
+            "applicant": meta.get("applicant", ""),
             "filing_date": meta.get("filing_date", ""),
             "priority_date": meta.get("priority_date", ""),
+            "known_outcome": known_outcome,
             "specification_data": extract_specification_data(documents),
             "prior_art_docs": extract_prior_art(prior_art_documents, doc_rows, top_k, meta, claim_data),
         },
         "source_trace": {
-            "case_dir": str(case_dir),
-            "main_html": str(main_file) if main_file else "",
-            "doclist_csv": str(doclist_file) if doclist_file else "",
-            "docs_dir": str(docs_dir),
-            "original_application_dir": str(original_application_dir) if original_application_dir.exists() else "",
+            "case_dir": str(case_dir.resolve()),
+            "main_html": str(main_file.resolve()) if main_file else "",
+            "doclist_csv": str(doclist_file.resolve()) if doclist_file else "",
+            "docs_dir": str(docs_dir.resolve()),
+            "original_application_dir": str(original_application_dir.resolve()) if original_application_dir.exists() else "",
             "original_application_files": original_application_files,
             "text_documents_used": [doc["name"] for doc in documents],
             "register_status": meta.get("register_status", ""),

@@ -161,7 +161,10 @@ def render_page_array(page: fitz.Page, zoom: float) -> np.ndarray:
 
 def save_rgb(path: Path, image: np.ndarray) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(path), cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
+    ok, encoded = cv2.imencode(".png", cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
+    if not ok:
+        raise RuntimeError(f"Failed to encode image: {path}")
+    encoded.tofile(str(path))
 
 
 def binarize(image: np.ndarray) -> np.ndarray:
@@ -402,6 +405,77 @@ def resolve_docs_dir(benchmark_path: Path, trace: dict[str, Any]) -> Path:
     return (benchmark_path.parent / docs_dir).resolve()
 
 
+def resolve_trace_file(path_text: str, benchmark_path: Path) -> Path:
+    path = Path(path_text)
+    if path.is_absolute():
+        return path
+    if path.exists():
+        return path.resolve()
+    return (benchmark_path.parent / path).resolve()
+
+
+def fallback_pdf_priority(label: str) -> int:
+    lower = label.lower()
+    if "description" in lower:
+        return 160
+    if "published international" in lower:
+        return 140
+    if "text intended for grant" in lower:
+        return 130
+    if "claims" in lower:
+        return 100
+    return 0
+
+
+def fallback_visual_pdfs(benchmark_path: Path, trace: dict[str, Any], docs_dir: Path) -> list[tuple[Path, str, int]]:
+    candidates: list[tuple[Path, str, int]] = []
+    seen: set[Path] = set()
+
+    for item in trace.get("original_application_files") or []:
+        if not isinstance(item, dict) or not item.get("path"):
+            continue
+        label = " ".join(str(item.get(key) or "") for key in ["title", "file_name"])
+        priority = fallback_pdf_priority(label)
+        if priority <= 0:
+            continue
+        path = resolve_trace_file(str(item["path"]), benchmark_path)
+        if path.exists() and path.suffix.lower() == ".pdf" and path not in seen:
+            candidates.append((path, str(item.get("title") or item.get("file_name") or path.name), priority))
+            seen.add(path)
+
+    for pdf in sorted(docs_dir.glob("*.pdf")) if docs_dir.exists() else []:
+        priority = fallback_pdf_priority(pdf.name)
+        if priority <= 0 or pdf in seen:
+            continue
+        candidates.append((pdf, pdf.name, priority))
+        seen.add(pdf)
+
+    return sorted(candidates, key=lambda item: (-item[2], item[0].name))[:3]
+
+
+def is_likely_structure_candidate(item: dict[str, Any]) -> bool:
+    box = item.get("bbox_px") or [0, 0, 0, 0]
+    if len(box) != 4:
+        return False
+    x0, y0, x1, y1 = box
+    width = max(0, int(x1) - int(x0))
+    height = max(0, int(y1) - int(y0))
+    if width < 80 or height < 60:
+        return False
+    if width / max(height, 1) > 8:
+        return False
+    line_count = int(item.get("line_count") or 0)
+    slanted = int(item.get("slanted_line_count") or 0)
+    density = float(item.get("density") or 0)
+    if slanted < 8:
+        return False
+    if line_count > 240:
+        return False
+    if density > 0.16:
+        return False
+    return float(item.get("image_score") or item.get("score") or 0) >= 120
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Crop and rank likely Markush/Formula images from source PDFs.")
     parser.add_argument("benchmark_input")
@@ -456,6 +530,20 @@ def main() -> None:
             if existing is None or priority > existing["priority"]:
                 page_jobs[key] = {"source": source, "priority": priority}
 
+    if not page_jobs:
+        for pdf_path, source, priority in fallback_visual_pdfs(benchmark_path, trace, docs_dir):
+            try:
+                with fitz.open(pdf_path) as doc:
+                    page_count = min(args.max_pages, doc.page_count)
+            except Exception:
+                continue
+            for page_number in range(1, page_count + 1):
+                page_jobs[(pdf_path, page_number)] = {
+                    "source": source,
+                    "priority": priority,
+                    "fallback": True,
+                }
+
     for (pdf_path, page_number), job in sorted(page_jobs.items(), key=lambda item: (-item[1]["priority"], item[0][0].name, item[0][1])):
         with fitz.open(pdf_path) as doc:
             if page_number < 1 or page_number > doc.page_count:
@@ -471,7 +559,7 @@ def main() -> None:
                     "page": page_number,
                     "image_path": page_path.relative_to(benchmark_path.parent).as_posix(),
                     "context_priority": job["priority"],
-                    "extraction_method": "keyword-scored page fallback",
+                    "extraction_method": "visual fallback from original application" if job.get("fallback") else "keyword-scored page fallback",
                 }
             )
             for candidate in crop_candidates(image, binary, page_number, crop_dir, pdf_path.stem, args.candidate_limit):
@@ -489,7 +577,7 @@ def main() -> None:
                         "line_count": candidate.line_count,
                         "slanted_line_count": candidate.slanted_line_count,
                         "density": candidate.density,
-                        "extraction_method": "OpenCV connected-component crop",
+                        "extraction_method": "OpenCV visual fallback crop" if job.get("fallback") else "OpenCV connected-component crop",
                     }
                 )
 
@@ -503,10 +591,7 @@ def main() -> None:
         if len(deduped) >= args.candidate_limit:
             break
 
-    selected = [item for item in deduped if float(item.get("image_score") or item.get("score") or 0) >= 250]
-    if len(selected) < args.selected_limit:
-        selected_paths = {item["image_path"] for item in selected}
-        selected.extend(item for item in deduped if item["image_path"] not in selected_paths)
+    selected = [item for item in deduped if is_likely_structure_candidate(item)]
     structure["markush_images"] = selected[: args.selected_limit]
     structure["markush_candidate_images"] = deduped
     structure["markush_page_images"] = page_images[: args.max_pages]
