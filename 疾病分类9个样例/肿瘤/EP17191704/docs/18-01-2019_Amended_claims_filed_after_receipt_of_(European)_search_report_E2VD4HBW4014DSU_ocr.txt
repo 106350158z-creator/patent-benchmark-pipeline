@@ -1,0 +1,18 @@
+
+--- PAGE 1 ---
+AmendedClaims
+1.
+Acompoundofthestructure:
+NH
+for use in treating a disorder characterized by the presence or development of one or more solid
+tumors comprising administering to an individual in need thereof a therapeutically
+effective amount of the compound.
+2.
+The compound for use according to claim 1, wherein the disorder is a sarcoma,
+lymphoma,orcarcinoma.
+3.
+The compound for use according to claim 1,wherein the disorder is an adenocarcinoma,
+small cell lung carcinoma, non-small cell lung carcinoma, a melanoma, or a combination thereof.
+4.
+The compound for use according to claim 1, wherein the disorder is pancrcatic cancer.
+176

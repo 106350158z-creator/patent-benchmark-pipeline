@@ -1,0 +1,60 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+06.05.2021
+Sheet
+Application No:
+17 821 262.7
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-79
+as published
+Claims, Numbers
+1-9
+filed in electronic form on
+02-07-2020
+Drawings,Sheets
+1/20-20/20
+as published
+1).
+D1discloses inFig1theuseof olaparibinovarian and fallopian tube cancerwhohave
+undergoneplatinumbasedtherapy.
+D1,Table1 shows that 31%of thepatients selected had neitheraBRCA1notBCRA2
+mutation.
+Thisprotocol would appeartofall within the scope of amended claims 1,4,7，8 and 9
+underArticle54EPC.
+2).
+D1 does no mention theHRD status of the patients.Their selection,in claims 2 and 3,
+can thereforeberegarded asnovel underArticle54EPC.The application,paragraph
+260states that the treatment outcomes wereregardless ofHRDstatus.Hence no
+technicaleffectcanbeassociatedwiththisselection,whichcannotthereforebe
+regardedasinventiveunderArticle54EPC.
+EPOForm290601.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+06.05.2021
+Sheet
+2
+Application No:
+17821262.7
+Date
+Feuille
+Demande n°:
+3).
+Claims5and6relateto thereplacementof thecompound ofD12withniraparib.There
+appears tobe no evidence in the application comparing this alterative usewith that of
+D1. No inventive step can therefore presently be recognised in these claims under
+Article56EPC.
+4).
+According to the Board of Appeal, T1898/06, the term"derivative"in claims 4 is unclear
+underArticle84EPC.
+EPOForm 290601.91TRI

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import argparse
 import csv
 import html
@@ -48,8 +50,35 @@ def read_doclist(path: Path) -> list[dict[str, str]]:
 
 def has_meaningful_text(text: str, min_chars: int = 80) -> bool:
     cleaned = PAGE_MARKER_PATTERN.sub(" ", text)
+    cleaned = re.sub(r"^\s*SOURCE:.*$", " ", cleaned, flags=re.I | re.M)
     cleaned = re.sub(r"\s+", " ", cleaned)
     return len(re.findall(r"[A-Za-z0-9\u4e00-\u9fff]", cleaned)) >= min_chars
+
+
+def meaningful_char_count(text: str) -> int:
+    cleaned = PAGE_MARKER_PATTERN.sub(" ", text or "")
+    cleaned = re.sub(r"^\s*SOURCE:.*$", " ", cleaned, flags=re.I | re.M)
+    return len(re.findall(r"[A-Za-z0-9\u4e00-\u9fff]", cleaned))
+
+
+def relative_to_case(path: Path | None, case_dir: Path) -> str:
+    if not path:
+        return ""
+    try:
+        return str(path.resolve().relative_to(case_dir.resolve())).replace("\\", "/")
+    except ValueError:
+        return str(path).replace("\\", "/")
+
+
+def relativize_downloaded_files(files: list[dict[str, str]], case_dir: Path) -> list[dict[str, str]]:
+    relativized: list[dict[str, str]] = []
+    for item in files:
+        copied = dict(item)
+        raw_path = copied.get("path") or ""
+        if raw_path:
+            copied["path"] = relative_to_case(Path(raw_path), case_dir)
+        relativized.append(copied)
+    return relativized
 
 
 def find_main_file(case_dir: Path, application_number: str) -> Path | None:
@@ -181,14 +210,30 @@ def extract_register_citations_block(main_html: str) -> str:
     marker = "Documents cited:"
     start = main_html.find(marker)
     if start < 0:
-        return ""
+        match = re.search(r">\s*Cited in\s*<", main_html, re.I)
+        if not match:
+            return ""
+        start = main_html.rfind("<td", 0, match.start())
+        if start < 0:
+            start = match.start()
+
     tail = main_html[start:]
     end_markers = [
+        r">\s*by applicant\s*<",
         "The EPO accepts no responsibility",
         '<div id="epoFooter"',
         "</body>",
     ]
-    end_positions = [tail.find(marker) for marker in end_markers if tail.find(marker) >= 0]
+    end_positions = []
+    for end_marker in end_markers:
+        if end_marker.startswith(">"):
+            match = re.search(end_marker, tail, re.I)
+            if match:
+                end_positions.append(match.start())
+        else:
+            position = tail.find(end_marker)
+            if position >= 0:
+                end_positions.append(position)
     end = min(end_positions) if end_positions else len(tail)
     return tail[:end]
 
@@ -419,7 +464,7 @@ def extract_claim_text(documents: list[dict[str, str]]) -> dict[str, Any]:
             r"claims",
         ],
     )
-    if not text:
+    if not text or not has_meaningful_text(text, min_chars=120):
         return {"source": "", "claim_1": "", "target_claims": []}
 
     normalized = re.sub(r"\r\n?", "\n", text)
@@ -428,11 +473,83 @@ def extract_claim_text(documents: list[dict[str, str]]) -> dict[str, Any]:
         normalized,
     )
     claim_1 = norm_space(claim_match.group(1)) if claim_match else norm_space(normalized[:3000])
+    if meaningful_char_count(claim_1) < 120:
+        return {"source": source, "claim_1": "", "target_claims": []}
     return {
         "source": source,
+        "source_type": "ocr_preview",
         "claim_1": claim_1[:5000],
         "target_claims": [{"claim_number": 1, "text": claim_1[:5000]}] if claim_1 else [],
     }
+
+
+def load_verified_claim_text(case_dir: Path) -> dict[str, Any] | None:
+    app = case_dir.name
+    path = case_dir / f"{app}-claims-verified.json"
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        return None
+    claims = data.get("claims") or []
+    if not isinstance(claims, list):
+        return None
+    verified_claims = [
+        claim
+        for claim in claims
+        if isinstance(claim, dict)
+        and str(claim.get("status") or "").lower() == "verified"
+        and str(claim.get("text") or "").strip()
+    ]
+    claim_1 = next((claim for claim in verified_claims if int(claim.get("claim_number") or 0) == 1), None)
+    if not claim_1:
+        return None
+    return {
+        "source": data.get("source_pdf") or path.name,
+        "source_type": "human_verified_pdf",
+        "source_pdf": data.get("source_pdf") or "",
+        "source_pdf_sha256": data.get("source_pdf_sha256") or "",
+        "claims_verified_json": path.name,
+        "claim_1": str(claim_1.get("text") or ""),
+        "target_claims": [
+            {
+                "claim_number": claim.get("claim_number"),
+                "text": claim.get("text") or "",
+                "source_pages": claim.get("source_pages") or [],
+            }
+            for claim in sorted(verified_claims, key=lambda item: int(item.get("claim_number") or 0))
+        ],
+    }
+
+
+def annotate_claim_review_status(case_dir: Path, claim_data: dict[str, Any]) -> dict[str, Any]:
+    app = case_dir.name
+    path = case_dir / f"{app}-claims-verified.json"
+    if not path.exists():
+        claim_data.setdefault("source_type", "ocr_preview")
+        return claim_data
+    try:
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        claim_data["claims_review_status"] = "parse_error"
+        claim_data["claims_verified_json"] = path.name
+        claim_data.setdefault("source_type", "ocr_preview")
+        return claim_data
+    claims = data.get("claims") or []
+    verified = [
+        claim
+        for claim in claims
+        if isinstance(claim, dict)
+        and str(claim.get("status") or "").lower() == "verified"
+        and str(claim.get("text") or "").strip()
+    ]
+    claim_data["claims_verified_json"] = path.name
+    claim_data["claims_review_status"] = "verified" if claims and len(verified) == len(claims) else "needs_human_review"
+    claim_data["claims_review_verified_count"] = len(verified)
+    claim_data["claims_review_total_count"] = len(claims) if isinstance(claims, list) else 0
+    claim_data.setdefault("source_type", "ocr_preview")
+    return claim_data
 
 
 def extract_drug_structure(documents: list[dict[str, str]], claim_data: dict[str, Any]) -> dict[str, Any]:
@@ -820,9 +937,10 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
     doc_rows = read_doclist(doclist_file) if doclist_file else []
     docs_dir, documents = collect_case_document_texts(case_dir)
     original_application_dir = case_dir / "original-application"
-    original_application_files = collect_downloaded_files(original_application_dir)
+    original_application_files = relativize_downloaded_files(collect_downloaded_files(original_application_dir), case_dir)
     meta = extract_meta(main_html, application_number)
-    claim_data = extract_claim_text(documents)
+    ocr_claim_data = extract_claim_text(documents)
+    claim_data = load_verified_claim_text(case_dir) or annotate_claim_review_status(case_dir, ocr_claim_data)
     known_outcome = infer_known_outcome(doc_rows, documents, meta)
 
     prior_art_documents = list(documents)
@@ -846,14 +964,20 @@ def build(case_dir: Path, application_number: str, top_k: int) -> dict[str, Any]
             "prior_art_docs": extract_prior_art(prior_art_documents, doc_rows, top_k, meta, claim_data),
         },
         "source_trace": {
-            "case_dir": str(case_dir.resolve()),
-            "main_html": str(main_file.resolve()) if main_file else "",
-            "doclist_csv": str(doclist_file.resolve()) if doclist_file else "",
-            "docs_dir": str(docs_dir.resolve()),
-            "original_application_dir": str(original_application_dir.resolve()) if original_application_dir.exists() else "",
+            "path_base": "benchmark_input_dir",
+            "case_dir": ".",
+            "main_html": relative_to_case(main_file, case_dir),
+            "doclist_csv": relative_to_case(doclist_file, case_dir),
+            "docs_dir": relative_to_case(docs_dir, case_dir),
+            "original_application_dir": relative_to_case(original_application_dir, case_dir) if original_application_dir.exists() else "",
             "original_application_files": original_application_files,
             "text_documents_used": [doc["name"] for doc in documents],
             "register_status": meta.get("register_status", ""),
+            "quality": {
+                "source_text_documents": len(documents),
+                "claim_1_meaningful_chars": meaningful_char_count(claim_data.get("claim_1") or ""),
+                "source_meaningful_chars": sum(meaningful_char_count(doc.get("text", "")) for doc in documents),
+            },
         },
     }
 

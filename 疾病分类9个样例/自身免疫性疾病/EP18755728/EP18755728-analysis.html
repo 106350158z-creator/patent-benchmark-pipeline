@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patent Examination Benchmark Report</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1d2433;
+      --muted: #657084;
+      --line: #d9dee8;
+      --good: #15803d;
+      --good-bg: #dcfce7;
+      --warn: #a16207;
+      --warn-bg: #fef3c7;
+      --risk: #b91c1c;
+      --risk-bg: #fee2e2;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+    }
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 16px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(220px, 300px) 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      margin-bottom: 16px;
+    }
+    .jump-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .jump-nav a,
+    .jump-nav .nav-disabled {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .jump-nav .nav-disabled {
+      color: var(--muted);
+      background: #f1f3f6;
+      cursor: not-allowed;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 18px;
+    }
+    .preview-text {
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .preview-text.compact {
+      max-height: 140px;
+      margin-top: 6px;
+    }
+    .claims-list {
+      display: grid;
+      gap: 10px;
+    }
+    .claim-detail {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+    }
+    .claim-detail summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .claim-detail summary span {
+      margin-left: 8px;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .markush-images {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .markush-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .markush-figure img {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .markush-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 7px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .candidate-gallery {
+      margin: 10px 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .candidate-gallery summary {
+      cursor: pointer;
+      padding: 9px 11px;
+      font-weight: 650;
+      background: #f8fafc;
+    }
+    .candidate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      padding: 10px;
+    }
+    .candidate-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .candidate-figure img {
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .candidate-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 5px 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .link-list {
+      display: grid;
+      gap: 6px;
+      padding-left: 18px;
+    }
+    .link-list code {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      word-break: break-all;
+    }
+    .score-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 170px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .score-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .big-score {
+      font-size: 56px;
+      font-weight: 750;
+      line-height: 1;
+    }
+    .score-bar {
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+    .score-bar span {
+      display: block;
+      height: 100%;
+      background: currentColor;
+    }
+    .score-good { color: var(--good); }
+    .score-warn { color: var(--warn); }
+    .score-risk { color: var(--risk); }
+    .score-neutral { color: var(--accent); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .table-scroll {
+      overflow-x: auto;
+    }
+    .dimension-table {
+      min-width: 1500px;
+    }
+    .dimension-table th:nth-child(1),
+    .dimension-table td:nth-child(1) {
+      width: 150px;
+    }
+    .dimension-table th:nth-child(2),
+    .dimension-table td:nth-child(2) {
+      width: 220px;
+    }
+    .dimension-table th:nth-child(3),
+    .dimension-table td:nth-child(3) {
+      width: 320px;
+    }
+    .dimension-table th:nth-child(4),
+    .dimension-table td:nth-child(4),
+    .dimension-table th:nth-child(5),
+    .dimension-table td:nth-child(5) {
+      width: 340px;
+    }
+    .dimension-table th:nth-child(6),
+    .dimension-table td:nth-child(6) {
+      width: 260px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+      word-break: break-word;
+    }
+    th {
+      background: #f8fafc;
+      font-weight: 650;
+    }
+    .kv th {
+      width: 180px;
+    }
+    .dim-name {
+      width: 130px;
+      font-weight: 650;
+    }
+    .dim-desc {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .dim-score-box {
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+      display: grid;
+      gap: 6px;
+      justify-items: start;
+      min-height: 82px;
+    }
+    .dim-box-name {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .dim-box-score {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .pill {
+      display: inline-flex;
+      min-width: 48px;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-weight: 700;
+      background: #eef2ff;
+    }
+    .pill.score-good { background: var(--good-bg); }
+    .pill.score-warn { background: var(--warn-bg); }
+    .pill.score-risk { background: var(--risk-bg); }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .bilingual-list {
+      display: grid;
+      gap: 8px;
+    }
+    .source-sentence-list {
+      display: grid;
+      gap: 12px;
+    }
+    .source-sentence-list li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .source-sentence-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .source-line-meta,
+    .source-line-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .source-line-meta {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .source-line-note {
+      margin-top: 4px;
+    }
+    .translation-inline {
+      color: var(--muted);
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .tiny {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .small-link {
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tag-hit {
+      color: #166534;
+      background: #dcfce7;
+    }
+    .tag-semantic {
+      color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .evidence-original {
+      white-space: pre-wrap;
+    }
+    .source {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 820px) {
+      .grid, .columns, .preview-grid {
+        grid-template-columns: 1fr;
+      }
+      main {
+        padding: 20px 12px 32px;
+      }
+      .kv th {
+        width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Patent Examination Benchmark Report</h1>
+      <p class="subtitle">EP18755728.5 · SELECTIVE INHIBITORS OF NLRP3 INFLAMMASOME</p>
+      <p class="source">来源 JSON：EP18755728-analysis.json</p>
+    </header>
+
+    
+    <nav class="jump-nav">
+      <a href="#preview">Preview</a>
+      <a href="#case-info">Case</a>
+      <a href="#dimensions">Dimensions</a>
+      <a href="#risks">Risks</a>
+      <a href="#actions">Actions</a>
+      <a href="#evidence">Evidence</a>
+      <a href='../EP12710797/EP12710797-analysis.html'>上一个 HTML：EP12710797</a>
+      <a href='../EP18826609/EP18826609-analysis.html'>下一个 HTML：EP18826609</a>
+    </nav>
+    
+    
+    <section class="card" id="preview">
+      <h2>Application Preview</h2>
+      <div class="preview-grid">
+        <div>
+          <h3>Claim Draft Preview</h3><div class='preview-text'>CooleyRef.NODT-003/N01EP
+A compound ofFormula(I):
+O
+R
+(I);
+or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein:
+R1 is:
+(a) Cs-Ci6 polycyclic cycloalkyl, optionally substituted by one or more R6;
+(b)benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or
+dihydrobenzofuranyl is optionally substituted by one or more R6;
+(d)
+(e)
+253732927v1
+CooleyRef.NODT-003/N01EP
+CN
+CN
+CN
+CF
+CI
+CI
+R3is H, methyl, or ethyl, wherein the methyl or ethyl is optionally substituted with one or
+moreR;
+R4 is H, C1-C6 alkyl, -(CH2)o-3-(C3-C6 cycloalkyl), or -(CH2)o-3-Cs-C6 aryl;
+R6 is C-C6 alkyl, C2-C6 alkenyl, C1-C6 alkoxy, C3-Cs cycloalkyl, halo, oxo, -OH, -CN, -
+NH2,-NH(C1-C6 alkyl),-N(C1-C6 alkyl)2, -CH2F,-CHF2, Or -CF3;
+R7 is -ORs, Cs-Cio aryl, or 5-to 10- membered heteroaryl, wherein the Cs-C1o aryl or 5-
+to 10-membered heteroaryl is optionally substituted by one or more Rzs, wherein each Rzs is
+independently Ci-C6 alkyl, Ci-C6 alkoxy, 5- to 10-membered heteroaryl, halo, -OH, -CN, -
+253732927v1
+CooleyRef.NODT-003/N01EP
+(CH2)o-3-NH2, -(CH2)0-3-NH(C1-C6 alkyl), -(CH2)0-3-N(C1-C6 alky1)2, -CH2F, -CHF2, Or -CF3; and
+Rs is Ci-C6 alkyl or 5- to 7-membered heterocycloalkyl, wherein the Ci-C6 alkyl or 5- to
+7-membered heterocycloalkyl is optionally substituted by one or more R7s.</div><p class='source'>Draft claim 1 from claims review JSON; pages 1, 2, 3</p><p class='source'>Draft OCR claim only; verify against the authority PDF before using as legal text.</p><p class='source'>Review status: 0/22 verified · <a href="docs/11-05-2023_Text_intended_for_grant_%28clean_copy%29_LH6VQJUJ1U4DFRZ.pdf">Authority PDF</a> <a href="EP18755728-claims-review.html">Claims review HTML</a> <a href="EP18755728-claims-verified.json">Claims draft JSON</a></p>
+        </div>
+        <div>
+          <h3>Markush / Formula</h3>
+          <div class='markush-images'><figure class='markush-figure'><img src='assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c087.png' alt='Markush / Formula page image'><figcaption>score 2528.2 · 16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf, page 1</figcaption></figure></div>
+          <h3>Links</h3>
+          <ul class="link-list">
+            <li><a href="https://register.epo.org/application?number=EP18755728&amp;lng=en&amp;tab=main" target="_blank" rel="noopener noreferrer">EPO Register Main</a></li><li><a href="https://register.epo.org/application?number=EP18755728&amp;lng=en&amp;tab=doclist" target="_blank" rel="noopener noreferrer">EPO Register Documents</a></li><li><a href="https://worldwide.espacenet.com/patent/search?q=EP18755728" target="_blank" rel="noopener noreferrer">Espacenet Search</a></li>
+            <li><span>Local main HTML</span><a href="register/EP18755728-main.html">EP18755728-main.html</a></li><li><span>Local doclist CSV</span><a href="register/EP18755728-doclist.csv">EP18755728-doclist.csv</a></li>
+          </ul>
+          <h3>Original Application Files</h3>
+          <ul class="link-list">
+            <li><a href="original-application/31-07-2018_Abstract_E16YBRNZ8600DSU.pdf">Abstract (31.07.2018 · 1 pages)</a></li><li><a href="original-application/31-07-2018_Claims_E16YBRNZ3754DSU.pdf">Claims (31.07.2018 · 21 pages)</a></li><li><a href="original-application/31-07-2018_Description_E16YBRNZ0860DSU.pdf">Description (31.07.2018 · 200 pages)</a></li><li><a href="original-application/07-02-2019_Published_international_application_-_A1_E2ZDY14O5312DSU.pdf">Published international application - A1 (07.02.2019 · 222 pages)</a></li><li><a href="original-application/11-05-2023_Bibliographic_data_of_the_European_patent_application_LH68QE4YHUBSX91.pdf">Bibliographic data of the European patent application (11.05.2023 · 2 pages)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="card" id="case-info">
+      <h2>案件元数据</h2>
+      <table class="kv"><tr><th>法域</th><td>EP</td></tr><tr><th>申请号</th><td>EP18755728.5</td></tr><tr><th>发明名称</th><td>SELECTIVE INHIBITORS OF NLRP3 INFLAMMASOME</td></tr><tr><th>申请人</th><td>Nodthera Limited</td></tr><tr><th>申请日</th><td>2018-07-31</td></tr><tr><th>审查意见日期</th><td>2023-09-21</td></tr><tr><th>授权结果</th><td>granted</td></tr></table>
+    </section>
+    
+    
+    <section class="card" id="dimensions">
+      <h2>审查维度评分</h2>
+      <div class="table-scroll">
+        <table class="dimension-table">
+          <thead><tr><th>维度/分数</th><th>字段描述</th><th>分析</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>
+          <tbody><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>新颖性</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>是否被单一现有技术直接公开，未被质疑通常为高分。</td><td>审查档案中曾出现针对 claim 1 的新颖性质疑，但申请人通过修改 claim 1 后主张该异议已被克服，并明确表示新颖性应予承认。后续 Rule 71(3) 通知以及最终授予决定表明，修改后的权利要求已经通过审查。就当前记录看，新颖性风险很低，但这主要建立在已接受的限缩版本上。</td><td><div class='evidence-original'>Novelty
+It is submitted that,by making the above amendments to claim 1, the objection in item2of the examinationreporthasbeenovercome.Itisthereforesubmittedthatthenoveltyoftheclaimsshould
+nowbeacknowledged.</div></td><td>新颖性
+据提交，通过对权利要求1作出上述修改，第2项中的异议已经被克服。因此，现提交认为，这些权利要求的新颖性现在应当得到承认。</td><td>该原文直接表明审查员先前的新颖性异议已因对 claim 1 的修改而被克服，并且申请人要求承认新颖性，说明该维度的争议已被修正解决。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>创造性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>按 EPO problem-solution/COMVIK 判断区别特征是否贡献技术效果。</td><td>审查材料中没有保留创造性异议。16-07-2021的申请人答复直接转述审查员在item 3中的意见，称权利要求主题在新颖性前提下“appear to fulfil the requirements of Article 56 EPC”，申请人据此主张经修改后的权利要求应被视为具创造性。随后11-05-2023发出Rule 71(3)拟授权通知，最终21-09-2023作出授权决定。现有材料未显示需要以COMVIK处理的非技术特征争点，因此创造性风险极低。</td><td><div class='evidence-original'>In item3oftheexaminationreport,theExaminerstatedthatthesubject-matteroftheclaims,insofar asitisnovel,appearstofulfil therequirementsofArticle56EPC.Itisthereforesubmittedthat,inlight of theabove amendment madeto claim1,the amended claims asfiled herewith should be considered inventive.</div></td><td>在审查意见第3项中，审查员表示，权利要求的主题在其具备新颖性的范围内，似乎满足《欧洲专利公约》第56条的要求。因此，鉴于对权利要求1作出的上述修改，现提交认为所提交的修改后权利要求应被视为具有创造性。</td><td>该原文明确表明审查员已认可权利要求在Art.56 EPC下没有实质性障碍，且申请人修改后仍主张具创造性；结合后续授权，支持高分。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>充分公开/支持</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>说明书是否足以实施，权利要求是否有原始公开和技术支撑。</td><td>就充分公开/支持而言，SOURCE没有显示审查员对Art.83、Art.84或Art.123(2)提出未克服的支持性异议。申请人在回复中明确把修正后的claim 1对应到原始claims 1、17-19、23、24、26-30以及原始段落[0171]、[0175]、[0176]、[0178]和[0241]，说明原始公开存在明确basis。随后又收到Rule 71(3)意向授予，并最终作出grant决定，表明当前文本已被接受。当前剩余风险很低，主要只在未来如再作扩大性修改时，才可能重新触发123(2)/support审查。</td><td><div class='evidence-original'>Following examination of European patent application No. 18755728.5 a European patent with the title
+and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC (EPO Form
+2004C) or in the information (EPO Form 2004W, cf. Notice from the EPO dated 8 June 2015, OJ EPO
+2015, A52) dated 11.05.23 is hereby granted in respect of the designated Contracting States.</div></td><td>经审查欧洲专利申请第18755728.5号后，现根据《欧洲专利公约》规则71(3)的通知（EPO表格2004C）或信息（EPO表格2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）所指明的文本及支撑文件，授予一项欧洲专利，适用于所指定的缔约国。</td><td>该原文直接表明申请已在审查后获得授权，说明支持/充分公开问题已被审查并接受。结合申请人已明确给出amended claim 1的原始basis，可支持该维度给高分。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>清楚性</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>权利要求术语、边界、简洁性和 Art.84 问题。</td><td>审查材料中没有看到对权利要求清楚性的明确否定，且最终已经进入授权并作出授予决定，说明 Art.84 层面的主要障碍已被克服。唯一可见的清楚性敏感点是意向授权通知里对说明书的“too vague”备注，表明说明书曾存在一定含糊性；但该备注并非针对权利要求本身，因此当前对权利要求清楚性的残余风险较低。</td><td><div class='evidence-original'>isherebygrantedinrespectofthedesignatedContractingStates.</div></td><td>兹就指定缔约国授予该欧洲专利。</td><td>该原文直接表明程序已以授权结束，支持清楚性问题已被审查并最终通过，因此适合给出较高分。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>适格性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否落入 EP Art.52 排除主题，是否具有进一步技术效果。</td><td>从现有SOURCE看，本案最终已经被EPO授权，且未见针对EP Art.52适格性（排除主题/技术性/进一步技术效果）的明确否定意见。审查往来主要集中在其他常规可专利性与形式问题；申请人通过修改权利要求和说明书后，EPO发出拟授权并最终授权，说明本维度已顺利通过。当前适格性风险很低，除非后续再次修改把权利要求推向抽象规则、纯方法或非技术性主题。</td><td><div class='evidence-original'>Following examination of European patent application No.18755728.5 a European patent with the title
+and the supporting documents indicated in the communication pursuant to Rule71(3) EPC(EPOForm
+2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated 11.05.23ishereby granted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请第18755728.5号后，兹就该申请所对应的欧洲专利及在根据EPC规则71(3)的通信（EPO表格2004C）或信息（EPO表格2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）中所指明的支持文件，授予欧洲专利，并且该专利在所指定的缔约国范围内生效。</td><td>该原文直接表明申请已在Rule 71(3)程序后被授权，说明EPO已接受该申请整体可授权；在提供的材料中没有出现EP Art.52排除主题的否定结论，因此支持适格性高分。</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    
+
+    <section class="card" id="risks">
+      <h2>风险原因</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>novelty · 16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</div><div class='evidence-original'>Novelty
+It is submitted that,by making the above amendments to claim 1, the objection in item2of the examinationreporthasbeenovercome.Itisthereforesubmittedthatthenoveltyoftheclaimsshould
+nowbeacknowledged.</div><div class='translation-inline'>新颖性
+据提交，通过对权利要求1作出上述修改，第2项中的异议已经被克服。因此，现提交认为，这些权利要求的新颖性现在应当得到承认。</div><div class='source-line-note'>This is direct applicant-side evidence that the novelty objection was addressed by amendment.</div></li><li><div class='source-line-meta'>novelty · 21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</div><div class='evidence-original'>Followingexaminationof Europeanpatent applicationNo.18755728.5aEuropeanpatent withthetitle and thesupporting documents indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated 11.05.23ishereby granted inrespect of thedesignatedContractingStates.</div><div class='translation-inline'>经审查欧洲专利申请第18755728.5号后，依据 11.05.23 的 Rule 71(3) EPC 通知中所示的文本及附图和相关书目信息，现就指定缔约国授予欧洲专利。</div><div class='source-line-note'>The final grant decision shows the amended claim set was ultimately allowed, supporting a high novelty score despite the earlier objection.</div></li><li><div class='source-line-meta'>clarity · 21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</div><div class='evidence-original'>isherebygrantedinrespectofthedesignatedContractingStates.</div><div class='translation-inline'>兹就指定缔约国授予该欧洲专利。</div><div class='source-line-note'>最终授权决定支持该案已通过审查，说明没有留下足以阻却授权的清楚性问题。</div></li><li><div class='source-line-meta'>clarity · 11-05-2023_Communication_about_intention_to_grant_a_European_patent_LH68QDD010AXE8Z_ocr.txt</div><div class='evidence-original'>DESCRIPTION Pages14,205:toovague</div><div class='translation-inline'>说明书第14页、第205页：过于含糊。</div><div class='source-line-note'>该备注显示审查过程中曾出现含糊性关注点，但对象是说明书而非权利要求，故仅构成轻微残余风险。</div></li><li><div class='source-line-meta'>inventive_step · 16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</div><div class='evidence-original'>In item3oftheexaminationreport,theExaminerstatedthatthesubject-matteroftheclaims,insofar asitisnovel,appearstofulfil therequirementsofArticle56EPC.Itisthereforesubmittedthat,inlight of theabove amendment madeto claim1,the amended claims asfiled herewith should be considered inventive.</div><div class='translation-inline'>在审查意见第3项中，审查员表示，权利要求的主题在其具备新颖性的范围内，似乎满足《欧洲专利公约》第56条的要求。因此，鉴于对权利要求1作出的上述修改，现提交认为所提交的修改后权利要求应被视为具有创造性。</div><div class='source-line-note'>这是直接针对Art.56的正面表述，说明当时审查员没有坚持创造性缺陷。</div></li></ul>
+    </section>
+    <section class="card" id="actions">
+      <h2>建议依据原文</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>novelty · 16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</div><div class='evidence-original'>Novelty
+It is submitted that,by making the above amendments to claim 1, the objection in item2of the examinationreporthasbeenovercome.Itisthereforesubmittedthatthenoveltyoftheclaimsshould
+nowbeacknowledged.</div><div class='translation-inline'>新颖性
+据提交，通过对权利要求1作出上述修改，第2项中的异议已经被克服。因此，现提交认为，这些权利要求的新颖性现在应当得到承认。</div><div class='source-line-note'>This is direct applicant-side evidence that the novelty objection was addressed by amendment.</div></li><li><div class='source-line-meta'>novelty · 21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</div><div class='evidence-original'>Followingexaminationof Europeanpatent applicationNo.18755728.5aEuropeanpatent withthetitle and thesupporting documents indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated 11.05.23ishereby granted inrespect of thedesignatedContractingStates.</div><div class='translation-inline'>经审查欧洲专利申请第18755728.5号后，依据 11.05.23 的 Rule 71(3) EPC 通知中所示的文本及附图和相关书目信息，现就指定缔约国授予欧洲专利。</div><div class='source-line-note'>The final grant decision shows the amended claim set was ultimately allowed, supporting a high novelty score despite the earlier objection.</div></li><li><div class='source-line-meta'>clarity · 21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</div><div class='evidence-original'>isherebygrantedinrespectofthedesignatedContractingStates.</div><div class='translation-inline'>兹就指定缔约国授予该欧洲专利。</div><div class='source-line-note'>最终授权决定支持该案已通过审查，说明没有留下足以阻却授权的清楚性问题。</div></li><li><div class='source-line-meta'>clarity · 11-05-2023_Communication_about_intention_to_grant_a_European_patent_LH68QDD010AXE8Z_ocr.txt</div><div class='evidence-original'>DESCRIPTION Pages14,205:toovague</div><div class='translation-inline'>说明书第14页、第205页：过于含糊。</div><div class='source-line-note'>该备注显示审查过程中曾出现含糊性关注点，但对象是说明书而非权利要求，故仅构成轻微残余风险。</div></li><li><div class='source-line-meta'>inventive_step · 16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</div><div class='evidence-original'>In item3oftheexaminationreport,theExaminerstatedthatthesubject-matteroftheclaims,insofar asitisnovel,appearstofulfil therequirementsofArticle56EPC.Itisthereforesubmittedthat,inlight of theabove amendment madeto claim1,the amended claims asfiled herewith should be considered inventive.</div><div class='translation-inline'>在审查意见第3项中，审查员表示，权利要求的主题在其具备新颖性的范围内，似乎满足《欧洲专利公约》第56条的要求。因此，鉴于对权利要求1作出的上述修改，现提交认为所提交的修改后权利要求应被视为具有创造性。</div><div class='source-line-note'>这是直接针对Art.56的正面表述，说明当时审查员没有坚持创造性缺陷。</div></li></ul>
+    </section>
+
+    
+    <section class="card" id="evidence">
+      <h2>证据链</h2>
+      <table class="kv">
+        <tr><th>受影响权利要求</th><td>1</td></tr>
+        <tr><th>审查轮次</th><td>3</td></tr>
+      </table>
+      <h3>引用先文 / 官网相关专利</h3>
+      <table><thead><tr><th>序号</th><th>引用/相关专利</th><th>来源标记</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>1</td><td>WO9611927<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO1996011927" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>2</td><td>EP0555537<div class='small-link'><a href="https://patents.google.com/patent/EP0555537/en" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>3</td><td>WO2014081856<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014081856" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>4</td><td>WO2015077451<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2015077451" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>5</td><td>WO0248099<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2002048099" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>6</td><td>WO0116093<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2001016093" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>7</td><td>WO2005079300<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2005079300" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>8</td><td>EP0520336<div class='small-link'><a href="https://patents.google.com/patent/EP0520336/en" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>9</td><td>WO2004035039<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2004035039" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>10</td><td>EP0271251<div class='small-link'><a href="https://patents.google.com/patent/EP0271251/en" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>11</td><td>DE1953431<div class='small-link'><a href="https://patents.google.com/patent/DE1953431/en" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>12</td><td>WO2016131098<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2016131098" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr></tbody></table>
+      <h3>说明书/支持证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td></td><td>support_disc</td><td><div class='evidence-original'>Following examination of European patent application No. 18755728.5 a European patent with the title
+and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC (EPO Form
+2004C) or in the information (EPO Form 2004W, cf. Notice from the EPO dated 8 June 2015, OJ EPO
+2015, A52) dated 11.05.23 is hereby granted in respect of the designated Contracting States.</div></td><td>经审查欧洲专利申请第18755728.5号后，现根据《欧洲专利公约》规则71(3)的通知（EPO表格2004C）或信息（EPO表格2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）所指明的文本及支撑文件，授予一项欧洲专利，适用于所指定的缔约国。</td><td>该原文直接表明申请已在审查后获得授权，说明支持/充分公开问题已被审查并接受。结合申请人已明确给出amended claim 1的原始basis，可支持该维度给高分。</td></tr><tr><td></td><td>16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</td><td><div class='evidence-original'>Claim1hasbeen amendedsoastorecite thatRisH,methyl,orethyl,whereinthemethylorethylisoptionallysubstituted with one ormore Rz[emphasis added].Basis for this amendment can befound at,for example,original claims 27-29 and original paragraphs [0171], [0175],[0176], [0178] and [0241]. Basis for amended claim 1 can thus be found at original claims 1,17-19, 23, 24 and 26-30, and paragraphs [0171], [0175], [0176], [0178] and [0241].</div></td><td>claim 1 已修改为记载 R 为 H、甲基或乙基，其中甲基或乙基可任选地被一个或多个 Rz 取代。该修改的依据可见于例如原始权利要求27-29以及原始段落[0171]、[0175]、[0176]、[0178]和[0241]。因此，修正后claim 1的依据可见于原始权利要求1、17-19、23、24和26-30，以及段落[0171]、[0175]、[0176]、[0178]和[0241]。</td><td>这是对claim 1原始公开基础的明确指认，直接支持123(2)/84意义下的支持性与原始basis充足。</td></tr></tbody></table>
+      <h3>审查材料证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>novelty</td><td>16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</td><td><div class='evidence-original'>Novelty
+It is submitted that,by making the above amendments to claim 1, the objection in item2of the examinationreporthasbeenovercome.Itisthereforesubmittedthatthenoveltyoftheclaimsshould
+nowbeacknowledged.</div></td><td>新颖性
+据提交，通过对权利要求1作出上述修改，第2项中的异议已经被克服。因此，现提交认为，这些权利要求的新颖性现在应当得到承认。</td><td>This is direct applicant-side evidence that the novelty objection was addressed by amendment.</td></tr><tr><td>novelty</td><td>21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</td><td><div class='evidence-original'>Followingexaminationof Europeanpatent applicationNo.18755728.5aEuropeanpatent withthetitle and thesupporting documents indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated 11.05.23ishereby granted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请第18755728.5号后，依据 11.05.23 的 Rule 71(3) EPC 通知中所示的文本及附图和相关书目信息，现就指定缔约国授予欧洲专利。</td><td>The final grant decision shows the amended claim set was ultimately allowed, supporting a high novelty score despite the earlier objection.</td></tr><tr><td>inventive_step</td><td>16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</td><td><div class='evidence-original'>In item3oftheexaminationreport,theExaminerstatedthatthesubject-matteroftheclaims,insofar asitisnovel,appearstofulfil therequirementsofArticle56EPC.Itisthereforesubmittedthat,inlight of theabove amendment madeto claim1,the amended claims asfiled herewith should be considered inventive.</div></td><td>在审查意见第3项中，审查员表示，权利要求的主题在其具备新颖性的范围内，似乎满足《欧洲专利公约》第56条的要求。因此，鉴于对权利要求1作出的上述修改，现提交认为所提交的修改后权利要求应被视为具有创造性。</td><td>这是直接针对Art.56的正面表述，说明当时审查员没有坚持创造性缺陷。</td></tr><tr><td>inventive_step</td><td>21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</td><td><div class='evidence-original'>Followingexaminationof Europeanpatent applicationNo.18755728.5aEuropeanpatent withthetitle and thesupporting documents indicated inthecommunication pursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated 11.05.23ishereby granted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请第18755728.5号，并依据2023年5月11日《欧洲专利公约》规则71(3)所附通信中的标题和相关文件，现就所指定的缔约国授予欧洲专利。</td><td>最终授权决定表明审查程序已经结束且未保留创造性拒绝，支持该维度通过。</td></tr><tr><td>support</td><td>16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt</td><td><div class='evidence-original'>Claim1hasbeen amendedsoastorecite thatRisH,methyl,orethyl,whereinthemethylorethylisoptionallysubstituted with one ormore Rz[emphasis added].Basis for this amendment can befound at,for example,original claims 27-29 and original paragraphs [0171], [0175],[0176], [0178] and [0241]. Basis for amended claim 1 can thus be found at original claims 1,17-19, 23, 24 and 26-30, and paragraphs [0171], [0175], [0176], [0178] and [0241].</div></td><td>claim 1 已修改为记载 R 为 H、甲基或乙基，其中甲基或乙基可任选地被一个或多个 Rz 取代。该修改的依据可见于例如原始权利要求27-29以及原始段落[0171]、[0175]、[0176]、[0178]和[0241]。因此，修正后claim 1的依据可见于原始权利要求1、17-19、23、24和26-30，以及段落[0171]、[0175]、[0176]、[0178]和[0241]。</td><td>这是对claim 1原始公开基础的明确指认，直接支持123(2)/84意义下的支持性与原始basis充足。</td></tr><tr><td>clarity</td><td>21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</td><td><div class='evidence-original'>isherebygrantedinrespectofthedesignatedContractingStates.</div></td><td>兹就指定缔约国授予该欧洲专利。</td><td>最终授权决定支持该案已通过审查，说明没有留下足以阻却授权的清楚性问题。</td></tr><tr><td>clarity</td><td>11-05-2023_Communication_about_intention_to_grant_a_European_patent_LH68QDD010AXE8Z_ocr.txt</td><td><div class='evidence-original'>DESCRIPTION Pages14,205:toovague</div></td><td>说明书第14页、第205页：过于含糊。</td><td>该备注显示审查过程中曾出现含糊性关注点，但对象是说明书而非权利要求，故仅构成轻微残余风险。</td></tr><tr><td>eligibility</td><td>11-05-2023_Communication_about_intention_to_grant_a_European_patent_LH68QDD010AXE8Z_ocr.txt</td><td><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,withthetextanddrawingsandtherelatedbibliographicdataasindicatedbelow.</div></td><td>兹通知您，审查部打算基于上述申请授予欧洲专利，具体文本、附图及相关书目信息如下所示。</td><td>拟授权通信表明审查部已接受该申请进入授权阶段，未见适格性被作为阻却理由。</td></tr><tr><td>eligibility</td><td>21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt</td><td><div class='evidence-original'>Following examination of European patent application No.18755728.5 a European patent with the title
+and the supporting documents indicated in the communication pursuant to Rule71(3) EPC(EPOForm
+2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated 11.05.23ishereby granted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请第18755728.5号后，兹就该申请所对应的欧洲专利及在根据EPC规则71(3)的通信（EPO表格2004C）或信息（EPO表格2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）中所指明的支持文件，授予欧洲专利，并且该专利在所指定的缔约国范围内生效。</td><td>最终授权决定是最强的通过信号；在可见材料里没有针对Art.52排除主题的拒绝，因此适格性应评为通过。</td></tr></tbody></table>
+    </section>
+    
+  </main>
+</body>
+</html>

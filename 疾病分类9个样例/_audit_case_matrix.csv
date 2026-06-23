@@ -1,0 +1,10 @@
+﻿category,application_number,has_benchmark_input,has_analysis_json,has_analysis_html,register_html_count,register_csv_count,docs_pdf_count,docs_txt_count,original_pdf_count,png_count
+肿瘤,EP16802532,True,True,True,2,1,26,26,5,0
+肿瘤,EP17191704,True,True,True,2,1,13,13,5,0
+肿瘤,EP17821262,True,True,True,2,1,26,26,4,0
+自身免疫性疾病,EP18755728,True,True,True,2,1,24,24,5,0
+自身免疫性疾病,EP18826609,True,True,True,2,1,32,32,5,0
+自身免疫性疾病,EP12710797,True,True,True,2,1,14,14,6,0
+代谢性疾病,EP16823054,True,True,True,2,1,15,17,3,0
+代谢性疾病,EP18712343,True,True,True,2,1,13,13,5,0
+代谢性疾病,EP20726962,True,True,True,2,1,15,15,3,0

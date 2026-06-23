@@ -1,0 +1,505 @@
+
+--- PAGE 1 ---
+Eur.pat.appln.no.12710797.7
+Entry into European phase
+P102705EP00
+New Claims
+1.
+A compound of Formula (I),
+Formula (I)
+b
+or a pharmaceutically acceptable salt or ester thereof;
+wherein ..- indicates an optionally unsaturated bond;
+each of B,X,A or V is absent if Z1, Z2,Z3 and Z4, respectively,is N; and
+10
+each of B,X, A and V is independently H, halo, azido,—CN,—CF3,—
+CONR1R2,—NR1R2, -SR2,-OR2, -R3, -W, -L-W, -Wo, -L-N(R) -W0, A2 or A3, when
+each of Z1, Z2,Z3 and Z4,respectively,is C;
+Zis O,S, CR42,NR4CR4, CR4NR4, CR4,NR4 0r N;
+each of Z1,Z2, Z3 and Z4 is independently C or N, provided any three N are non-
+15
+adjacent;
+Zis C; or Zmay beN when Zis N;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+U1 is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R°)-, -SO2-, 0r
+-SO3-, where T is O,S, or NH; or U1 may be a bond when Z is N or U2 is H;
+20
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl
+or C2-C10 heteroalkenyl group,each of which may be optionally substituted
+
+--- PAGE 2 ---
+2
+with one or more halogens, =O, or an optionally substituted 3-7 membered
+in each -NR'R2, R1 and R2 together with N may form an optionally substituted
+azacyclic ring, optionally containing an additional heteroatom selected from N,
+5
+O and S as a ring member;
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=0;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+10
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+R3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these,each of which may be
+optionally substituted with one or more halogens, =O, or an optionally
+15
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+Wo;
+each R and Ro is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+20
+heteroalkenylene linker, each of which may be optionally substituted with one
+or more substituents selected from the group consisting of halogen, oxo (=O),or
+C1-C6 alkyl;
+Wis an optionally substituted 4-7 membered azacyclic ring,optionally
+containing an additional heteroatom selected from N, O and S as a ring
+25
+member;
+Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms;
+provided one of U2, V, A, X and B is a secondary amine A? or a tertiary amine
+A3,wherein
+30the secondary amine A2is -NH-Wo,and
+
+--- PAGE 3 ---
+3
+thetertiaryamineA3is afullysaturated andoptionallysubstituted six
+membered or seven-membered azacyclic ring optionally containing an
+additional heteroatom selected from N,O or S as a ring member, or the tertiary
+amine A3 is a partially unsaturated or aromatic optionally substituted five-
+5
+membered azacyclic ring,optionally containing an additional heteroatom
+selected from N, O or S as a ring member;
+for use in treating an autoimmune disease in a subject.
+2.
+A compound of Formula (Il),
+0
+10
+Formula (Il)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein -..- indicates an optionally unsaturated bond;
+15
+each of A and Xis independently H, halo,azido, -CN,-CF3,-CONR1R2,-NR1R2,
+-SR²,-OR2,-R3,-W,-L-W,-W0,-L-N(R)-W0,A2or A3;
+Zis O,S,CR42,NR4CR4,CR4NR4 or NR4;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+U1 is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R0)-, -SO2-, 0r
+20
+-SO3-, where T is O,S, or NH; or U1 may be a bond when U2 is H;
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl
+or C2-C10 heteroalkenyl group, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-7 membered
+carbocyclic or heterocyclic ring; or U2 is -W, -L-W, -L-N(R)-Wo, A2 or A3;
+
+--- PAGE 4 ---
+4
+in each -NRiR2, R1 and R2 together with N may form an optionally substituted
+Oand S as aringmember;
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=O;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+10
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these, each of which may be
+optionally substituted with one or more halogens,=O, or an optionally
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+15
+WO;
+each R and Ro is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each of which may be optionally substituted with one
+20
+C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally
+containing an additional heteroatom selected from N, O and S as a ring
+member;
+Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl
+25
+group substituted with from 1 to 4 fluorine atoms;
+provided that one of U2,A, and Xis a secondary amine A2 or a tertiary amine
+A3,wherein
+the secondaryamineA²is-NH-Wo,and
+the tertiary amine A3 is a fully saturated and optionally substituted six-
+30
+0membered or seven-membered azacyclic ring optionally containing an
+
+--- PAGE 5 ---
+5
+additional heteroatom selected from N, O or S as a ring member, or the tertiary
+amine A3is a partially unsaturated or aromatic optionally substituted five-
+membered azacyclic ring optionally containing an additional heteroatom
+selectedfrom N,O orS as aringmember;
+for use in treating an autoimmune disease in a subject.
+3.
+A compound of Formula (III),
+0
+B
+Formula (III)
+10
+or a pharmaceutically acceptable salt or ester thereof;
+wherein_--indicates an optionally unsaturated bond; and
+each of B,X,A or V is absent if Z1,Z2, Z and Z4, respectively, is N; and
+each of B, X, A and V is independently H, halo, azido, -CN, -CF3, -CONRiR2, -
+15
+NR1R2,-SR2,-OR2,-R3,-W,-L-W,-Wo,-L-N(R)-Wo,A2or A3,when each of Z1,
+Z2, Z3 and Z4, respectively, is C;
+each of Z1, Z2, Z3 and Z4 is independently C or N, provided any three N are non-
+adjacent;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+20
+U1 is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R9)-, -SO2-, 0r
+-SO3-,where T is O, S,or NH; or U1 may be a bond when Z5 is N or U2 is H;
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl
+or C2-C10 heteroalkenyl group, each of which may be optionally substituted
+
+--- PAGE 6 ---
+6
+with one or more halogens, =O, or an optionally substituted 3-7 membered
+carbocyclic or heterocyclic ring; or U2 is -W, -L-W, -L-N(R) -Wo, A2 or A3;
+in each -NRiR2, R1 and R2 together with N may form an optionally substituted
+azacyclic ring, optionally containing an additional heteroatom selected from N,
+5
+O and S as a ring member;
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=0;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+10
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+R3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these,each of which may be
+optionally substituted with one or more halogens, =O, or an optionally
+15
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+Wo;
+each R and Ro is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+20
+heteroalkenylene linker, each of which may be optionally substituted with one
+or more substituents selected from the group consisting of halogen, oxo (=O),or
+C1-C6 alkyl;
+Wis an optionally substituted 4-7 membered azacyclic ring,optionally
+containing an additional heteroatom selected from N, O and S as a ring
+25
+member;
+Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms;
+provided that one of U2, V, A, X and B is a secondary amine A² or a tertiary
+amine A3,wherein
+30the secondary amine A2 is -NH-Wo, and
+
+--- PAGE 7 ---
+thetertiaryamineA3is afullysaturated andoptionallysubstituted six-
+membered or seven-membered azacyclic ring optionally containing an
+additionalheteroatom selected fromN,O or S as a ring member,or thetertiary
+amine A3 is a partially unsaturated or aromatic optionally substituted five-
+5
+membered azacyclic ring,optionally containing an additional heteroatom
+selected from N,O orS as a ringmember,
+for use in treating an autoimmune disease in a subject.
+4.
+A compound of Formula (IV),
+0
+B
+10
+Formula (IV)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein -.-- indicates an optionally unsaturated bond;
+15
+each of B,X,A or V is absent if Z1, Z2,Z? and Z4 respectively, is N; and
+each of B,X,A and V is independently H, halo, azido, -CN, -CF3, -CONR1R2,—
+NR1R2,-SR2,-OR2,-R3,-W,-L-W,-Wo,-L-N(R)-Wo,A2 or A3,when each of Z1,
+Z2, Z3 and Z4, respectively, is C;
+each of Z1, Z2, Z3 and Z4 is independently C or N, provided any three N are non-
+20
+adjacent;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+in each NRiR2, R1 and R2 together with N may form an optionally substituted
+azacyclic ring,optionally containing an additional heteroatom selected from N,
+O and S as a ring member;
+
+--- PAGE 8 ---
+8
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=0;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more
+5
+halogens,=O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+R3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these, each of which may be
+optionally substituted with one or more halogens, =O, or an optionally
+10
+substituted 3-6 membered carbocyclic orheterocyclic ring;
+R4 is -W, -L-W or -L-N(R)-WO; and
+each R is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker, each of which may be optionally substituted with one
+15
+or more substituents selected from the group consisting of halogen, oxo (=O), or
+C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally
+containing an additional heteroatom selected from N, O and S as a ring
+member;and
+20
+Wo is an optionally substituted 3-4 membered carbocyclic ring, 0r a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms,
+for use in treating an autoimmune disease in a subject.
+5.
+A compound of Formula (V),
+
+--- PAGE 9 ---
+9
+Formula (V)
+or a pharmaceutically acceptable salt or ester thereof;
+5
+- indicates an optionally unsaturated bond;
+A and V independently are H, halo, azido, -CN, -CF3, -CONRiR2, -NR1R2, -SR2,
+-OR2, -R3, -W, -L-W,-Wo, -L-N(R)-W0,A2 or A3;
+Zis O, S, CR42, NR4CR4, CR4NR4 0r NR4;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+10
+U1 is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R°)-, -SO2-, 0r
+-SO3-, where T is O, S, or NH; or U1 may be a bond when U2 is H;
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl
+or C2-C10 heteroalkenyl group, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-7 membered
+15
+carbocyclic or heterocyclic ring; or U2 is -W, -L-W or -L-N(R)-Wo,A2 or A3;
+in each -NRiR2, R1 and R2 together with N may form an optionally substituted
+azacyclic ring, optionally containing an additional heteroatom selected from N,
+Oand S as a ring member;
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens,or
+20
+=0;
+R² is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+
+--- PAGE 10 ---
+10
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these, each of which may be
+optionally substituted with one or more halogens, =O, or an optionally
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+5
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+Wo;
+each R and Ro is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each of which may be optionally substituted with one
+10
+or more substituents selected from the group consisting of halogen, oxo (=O), or
+C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally
+containing an additional heteroatom selected from N, O and S as a ring
+member;
+15
+Wo is an optionally substituted 3-4 membered carbocyclic ring, 0r a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms;
+provided one of U2, A, and V is a secondary amine A2 or a tertiary amine A3,
+wherein
+the secondary amine A2is-NH-Wo,and
+20
+the tertiary amine A3 is a fully saturated and optionally substituted six-
+membered or seven-membered azacyclic ring optionally containing an
+additional heteroatom selected from N, O or S as a ring member,or the tertiary
+amine A3 is a partially unsaturated or aromatic optionally substituted five-
+membered azacyclic ring optionally containing an additional heteroatom
+25
+selected from N, O or S as a ring member,
+for use in treating an autoimmune disease in a subject.
+6.
+A compound of Formula (VI),
+
+--- PAGE 11 ---
+11
+NR7R8
+n（Q
+Formula (VI)
+or a pharmaceutically acceptable salt or ester thereof;
+5
+wherein:
+X1 is CH or N;
+X2, X3, X4, X5, X6 and X7 independently are NR4, CH2, CHQ or C(Q)2, provided
+that: (i) zero, one or two of X2, X3, X4, X5, X6 and X7 are NR4; (ii) when X1 is N,
+both of X2 and X7 are not NR4; (i) when X1 is N, X3 and X6 are not NR4; and
+10
+(iv) when X1 is CH and two of X2, X3, X4, X5, X6 and X7 are NR4, the two NR4 are
+located at adjacent ring positions or are separated by two or more other ring
+positions;
+A and V independently are H, halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -SR2,
+-OR2,-R3,-W,-L-W,-W0, 0r-L-N(R)-W0;
+15
+each Q is independently halo,azido, -CN,-CF3,-CONR1R2,-NR1R2, -SR2, -OR2,
+-R3,-W,-L-W,-W0,or-L-N(R)-W0;
+in each —NRiR2, R1 and R2 together with N may form an optionally substituted
+azacyclic ring, optionally containing one additional heteroatom selected from N,
+O and Sas a ring member;
+20
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=0;
+R is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more
+
+--- PAGE 12 ---
+12
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these, each of which may be
+5
+optionally substituted with one or more halogens, =O, or an optionally
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+Wo;
+each R is independently H or C1-C6 alkyl;
+10
+R7 is H and Rs is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring; or in —NR7R8, R7 and R8 together with N may form an
+optionally substituted azacyclic ring, optionally containing an additional
+15
+heteroatom selected from N, O and S as a ring member;
+m is 0,1,2,3 or 4;
+nis 0,1,2,3,4,0r 5;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker, each of which may be optionally substituted with one
+20
+ or more substituents selected from the group consisting of halogen, oxo (=O), or
+C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally
+containing an additional heteroatom selected from N, O and S as a ring
+member; and
+25
+Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms,
+for use in treating an autoimmune disease in a subject.
+7.
+A compound of Formula (VIII),
+
+--- PAGE 13 ---
+13
+NR7R8
+n（Q）
+(Q）m
+Formula (VIII)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein:
+A and V independently are H, halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -SR2,
+-OR2,-R3,-W,-L-W, -W0, or -L-N(R)-W0;
+each Q is independently halo, azido,-CN,-CF3, -CONR1R2,-NR1R2,-SR2,-OR2,
+-R3,-W,-L-W,-Wo,or -L-N(R)-W0;
+10
+in each —NRiR2, R1 and R2 together with N may form an optionally substituted
+O and S as a ring member;
+R1is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=0;
+15
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+R3is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or
+20
+C6-C12 arylalkyl, or a heteroform of one of these, each of which may be
+optionally substituted with one or more halogens,=O, or an optionally
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+
+--- PAGE 14 ---
+14
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+Wo;
+each R is independently H or C1-C6 alkyl;
+R7 is H and Rs is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+5
+heteroalkenyl, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring; or in —NR7R8, R7 and R8 together with N may form an
+optionally substituted azacyclic ring, optionally containing an additional
+heteroatom selected from N, O and S as a ring member;
+10
+m is 0,1,2, 3 or 4;
+nis 0,1,2,3,4 or 5;
+pis 0, 1, 2 or 3;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each of which may be optionally substituted with one
+15
+or more substituents selected from the group consisting of halogen,oxo (=O),or
+C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally
+containing an additional heteroatom selected from N, O and S as a ring
+member; and
+20
+Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms,
+for use in treating an autoimmune disease in a subject.
+8.
+A compound ofFormula (VIl)
+
+--- PAGE 15 ---
+15
+n（Q
+(Q）m
+Formula (VII)
+or a pharmaceutically acceptable salt or ester thereof;
+A and V independently are H, halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -
+SR2,-OR2,-R3,-W,-L-W,-W0,or-L-N(R)-W0;
+each Q is independently halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -SR2, -OR2,
+-R3, -W, -L-W, -W0, or -L-N(R)-W0;
+in each—NRiR2,R1 and R2 together with N may form an optionally substituted
+10
+azacyclic ring, optionally containing an additional heteroatom selected from N,
+O and S as a ring member;
+R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or
+=0;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+15
+heteroalkenyl, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or
+heterocyclic ring;
+R3is an optionally substituted C1-C10 alkyl,C2-C10 alkenyl,C5-C10 aryl, or
+C6-C12 arylalkyl, or a heteroform of one of these, each of which may be
+20
+Ao       a   
+substituted 3-6 membered carbocyclic or heterocyclic ring;
+each R4 is independently H,or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-
+Wo;
+
+--- PAGE 16 ---
+16
+each R is independently H or C1-C6 alkyl;
+m is 0,1,2,3 or 4;
+n is 0,1,2, 3, 4 or 5;
+p is 0,1,2 or 3;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each of which may be optionally substituted with one
+or more substituents selected from the group consisting of halogen, oxo (=O), or
+C1-C6 alkyl;
+Wis an optionally substituted 4-7 membered azacyclic ring,optionally
+10
+containing an additional heteroatom selected from N, O and S as a ring
+member; and
+Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl
+group substituted with from 1 to 4 fluorine atoms,
+for use in treating an autoimmune disease in a subject.
+15
+'6
+A compound selected from the group consisting of:
+
+--- PAGE 17 ---
+17
+0
+0
+CH3;
+CH3

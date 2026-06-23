@@ -1,0 +1,161 @@
+{
+  "application_number": "EP18826609",
+  "source_pdf": "docs/14-01-2025_Text_intended_for_grant_(clean_copy)_M5PTWVQZ1EWVBWD.pdf",
+  "source_pdf_sha256": "452fe8a841c76294a63cbd654e6a3479e019c86bec1368ed4a2acded01fea29a",
+  "source_kind": "text_intended_for_grant_clean_copy",
+  "draft_text_source": "docs/19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+  "draft_text_pdf": "docs/19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+  "draft_generated_at": "2026-06-18T07:20:50.236776+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [
+    "Claim 9 is an OCR placeholder and must be filled from the authority PDF during review."
+  ],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "A compound of Formula (Iacl):\nR3S\n(R3s)0-2\n(lac-1),\nor a solvate,or pharmaceutically acceptable salt thereof, wherein:\nR2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is 4- to 8-membered monocyclic\nheterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-C6 alkenyl, C2-C6\nalkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6 alkyl), -N(C1-C6\nalkyl)2, or oxo; and\neach R3s is independently Ci-C6 alkyl, Ci-Co haloalkyl, C3-Cs cycloalkyl, halo, or Cs-Cs\nheterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl),-N(Ci-C6 alkyl)2, halo, or -CN.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 2,
+      "text": "The compound of claim 1, wherein R2s is oxetanyl, azetidinyl, tetrahydrofuranyl,\npyrrolidinyl, tetrahydropyranyl, piperidinyl, morpholinyl, or azepanyl, wherein the oxetanyl,\nazetidinyl, tetrahydrofuranyl, pyrrolidinyl, tetrahydropyranyl, piperidinyl, morpholinyl, or azepanyl\nis optionally substituted with one or more Ci-C6 alkyl, Ci-Co haloalkyl, or oxo; or\nfurtheroptionally\n3136543695V11\nCooleyRef.NODT-004/N01EP(330150-2065)\n<",
+      "source_pages": [
+        1,
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "Thecompound of claim1or claim2,wherein atleastoneR3s\nmethyl, ethyl, isopropyl,-CH2OCHs,-CH2CFs,-CH2CH2OCHs,-CH2CN,CH2CF2, or -\nCH2CHN(CH3)2.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "The compound of any one of the preceding claims,wherein the compound is of Formula\n(Iabc-1),(Iabc-1a),or (Iabc-1b):\nN\nN-R3S\n(R3s)0-2\n-R3S\n(R3s)0-2\n(Iabc-1);\n(Iabc-1a); or\n31354369511\nCooleyRef.NODT-004/N01EP(330150-2065)\n-R3S\n(R3s)0-2\n(Iabc-1b)\nor a solvate, or pharmaceutically acceptable salt thereof, wherein R2s and R3s are as\ndescribed inclaim1.",
+      "source_pages": [
+        2,
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "The compound of any one of claims 1 to 4,wherein the compound is ofFormula(Iabc-\nla):\nN\nN-R3S\n(R3s)0-2\n(Iabc-1a)\nor a solvate,or pharmaceutically acceptable salt thereof,whereinR3s is as described in\nclaim 1.",
+      "source_pages": [
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 6,
+      "text": "The compound of any one of claims1 to5,being selected from:\nCompoundNo.\nStructure\nC\n0.0\nCH\nH\nNa\n313654359511\nCooleyRef.NODT-004/N01EP (330150-2065)\nO\nN-CH3\nS\nH\nNa\nCH3\nN\n-CH3\nNat\nCH\nCH3\nS\nHO\nH\nCH3\nIV/\nN\nN\nHO\nH\nNa\nCH3\nS\nN\nH\nNa\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nO\nCH\nN\nH\nNa\nCH3\nO\niV\nN-CH3\nN\nN\nH\nNa\nO\nO.\nN\n-CH3\nS\nH\nCH3\nNa\nHC\nQ\nO\nO\nN-CH\nH\nCH3\nNa\nO\nN\nCH3\nH\nCH3\nNa\nCH3\n3135436911\nCooleyRef.NODT-004/N01EP (330150-2065)\nHC\nO\nO\nN-CH3\nH\nCH3\nNa\nCH3\nO\nCH\nH\nNa\n-0\nO\nO\n.0\nN\nHO-N\nS\nH\nNa\nO\nO\nS\nN\nH\nNa\nN\nCH3\nCH\nN\nH\nNa\nN.\nCH3\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nD\nNa*\nNa\nNa\nS\nN\nH\nNa\n'N\nNa\nN\nH\nN\nN\n313654369511\nCooley Ref. NODT-004/N01EP (330150-2065)\nNa\nS\nH\nNa\nO\nN\nH\nN\nNai\nH\nNa\nH\nNa\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nH\nNa\nNai\nO\nNa\nO\nH\nNa\nD\nNa\nH\nNa\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nO\nNa\nNa\nH\nNa\nNa\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nNa\nO.\nNa\nH\nNa\nO\nH\nNa\nO.\nN\nH\nNa\nNa*\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nO\nQ\nNa\nNa\nN\nH\nNa\nO.\nO\nN\nH\nNa\nO\nH\nNa\nO\nC\nN\nH\nNa\n313654369511\nCooley Ref. NODT-004/N01EP (330150-2065)\nO\nH\nNa\nH\nNa\nN\nN\nH\nNa\nO\n0.0\nH\nNa\nO\nO.\nO\nS\nN\nH\nNa\nN\nH\nNa\n3135436911\nCooleyRef.NODT-004/N01EP (330150-2065)\nN\nH\nNa\nO\nH\nNa\nO\nC\nN\nH\nNa\nN\nH\nNa\nD\nH\nNa\nN\nH\nNa\nO\nS\nN\nH\nNa\n313654369511\nCooleyRef.NODT-004/N01EP (330150-2065)\nS\nN\nH\nNa*\nO\nO.\nN\nN\nH\nNa*\nO\nN\nH\nNa\nS\nN\nH\nNa\nCS\nN\nH\nNa\nNa\nO\nN\nH\nNa\n313654369511\nCooleyRef.NODT-004/N01EP(330150-2065)\nD\nC\nH\nNa\nNa\nNa*\nNa\nand pharmaceutically acceptablesalts thereof.",
+      "source_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 7,
+      "text": "A pharmaceutical composition comprising the compound of any one of claims 1 to 6 or a\npharmaceutically acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier.",
+      "source_pages": [
+        16
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 8,
+      "text": "The compound of any one of claims 1 to 6, or the pharmaceutical composition of claim 7,\nfor use in inhibiting inflammasome activity; optionally,the inflammasome is NLRP3\ninflammasome,and the activity is invitro or in vivo.\n313654359511\nCooley Ref. NODT-004/N01EP (330150-2065)\nuse in treating or preventing a disease or disorder; preferably wherein the disease or disorder is an\ninflammatory disorder, an autoinflammatory disorder, an autoimmune disorder, a neurodegenerative\ndisease,or cancer.",
+      "source_pages": [
+        16,
+        17
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 9,
+      "text": "",
+      "source_pages": [],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": "Draft placeholder: OCR did not expose a clear boundary for this claim number. Fill from the authority PDF during review."
+    },
+    {
+      "claim_number": 10,
+      "text": "The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein the\ndisease or disorder is an inflammatory disorder, an autoinflammatory disorder or an autoimmune\ndisorder; optionally, the disease or disorder is selected from cryopyrin-associated\nautoinflammatory syndrome (CAPS; e.g., familial cold autoinflammatory syndrome (FCAS),\nMuckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular\n(CINCA) syndrome/ neonatal-onset multisystem inflammatory disease (NOMID)), familial\nMediterraneanfever(FMF),nonalcoholicfattyliver disease(NAFLD),non-alcoholic\nsteatohepatitis (NASH),gout, rheumatoid arthritis, osteoarthritis, Crohn's disease, chronic\nobstructive pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2\ndiabetes, multiple sclerosis, dermatological diseases (e.g., acne) and neuroinflammation\noccurring in protein misfolding diseases (e.g.,Prion diseases)",
+      "source_pages": [
+        17
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 11,
+      "text": "The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein\ndisease or disorder is a neurodegenerative disease; optionally, the disease or disorder is\nParkinson's disease or Alzheimer's disease.",
+      "source_pages": [
+        17
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 12,
+      "text": "The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein the\ndisease or disorder is cancer; optionally, the cancer is metastasising cancer, gastrointestinal\ncancer, brain cancer, skin cancer, non-small-cell lung carcinoma, head and neck squamous cell\ncarcinoma or colorectal adenocarcinoma.\n3136543695V11",
+      "source_pages": [
+        17
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

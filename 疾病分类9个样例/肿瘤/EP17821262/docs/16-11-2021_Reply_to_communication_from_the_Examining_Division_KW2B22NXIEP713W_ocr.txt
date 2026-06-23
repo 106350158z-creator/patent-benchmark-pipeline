@@ -1,0 +1,124 @@
+
+--- PAGE 1 ---
+JA·KEMP
+BY ONLINE FILING
+The EuropeanPatent Office
+80298Munich
+Germany
+16November2021
+EuropeanPatentApplicationNo.17821262.7
+TESAROINC.
+OurRef:N421104EPRCS/JMS
+I write in response to the communication underArticle 94(3) EPC dated6May2021.
+Pleasereplaceclaims1to9currentlyonfilewiththeattachedamendedclaims1to
+8.Please also replace the description (pages 1-79) currently on file with the
+attachedamendeddescriptionpages1-78.
+To assist theexaminer,Ialsoattacha copy of the amendedpagesshowing the
+changes made in marked-up form.
+Amendments
+Claim1hasbeen amended to specify that the therapeuticagent is niraparib.Basis
+for this amendment may be found in previous claim 4,and at line8 of paragraph
+[00o8]onpage3oftheapplicationasfiled.
+Previousclaim4hasbeendeleted,andpreviousclaims5to9havebeenrenumbered
+accordingly.
+Previousclaim9(presentclaim8)hasbeencorrected tospecifythat thecancers are
+platinumsensitive.Basisforthisamendmentmaybefoundinclaims23to28ofthe
+applicationasoriginallyfiled.
+Thedescriptionhasalsobeenamendedforconformitywiththeclaims,andto
+removestatementswhichpurporttoincorporationbyreferencetheentirecontentof
+cross-referenced documents.
+Novelty (Art54EPC)
+TheoutstandingobjectionoflackofnoveltyisbasedonD1.
+PATENTATTORNEYS·TRADEMARKATTORNEYS
+LONDON·PARIS·OXFORD·CAMBRIDGE·MUNICH
+80TurnmillStreet, London EC1M5QU
+T+44 20 3077 8600 F +44 20 7430 1000
+mail@jakemp.comwww.jakemp.com
+JA Kemp LLP is a Limited Liability Partnership, registered in England and Wales (registered number OC427581) and regulatec by IPReg.
+Our registerecl office is at 80 TurnmillStreet, London EC1M 5QU, UK. Our use of the word partner refers to a member of J A Kemp LLP.
+
+--- PAGE 2 ---
+JA·KEMP
+2
+niraparib.D1 does not disclose niraparib.The claimed subject matter is therefore
+novel.
+Inventive Step (Art 56 EPC)
+Technicalproblemandsolution
+TheexaminerhasidentifiedD1astheclosestpriorart.D1describestheresultsofa
+Phase2clinicalstudywitholaparibinpatientshavingplatinum-sensitive,relapsed,
+high-grade serious ovarian cancer.As explained above, the present application
+differsfromD1inatleasttheuseofniraparib,rather than olaparib.
+Thetechnicaleffectofthisdifferenceisthatuseofthespecificdrugniraparib
+enablesefficacyinthetreatmentofpatientshaving an absence ofBRCA1and/or
+BRCA2mutation.Thisisarecalcitrantpatientgroupwhichhadnotbeen showntobe
+effectivelytreatedwiththedrugdisclosedinD1.
+Inthisregard,thoseofskillintheartwouldbewellawareattheprioritydateofthe
+present application thatolaparibwasnot approvedfor thetreatment of cancer
+patientshavinganabsenceofmutationinBRCA1and/orBRCA2,asrequired by the
+present claims.In this regard,we attach the European Public Assessment Report
+(EPAR)publishedbytheEuropean Medicines Agency forLynparza(olaparib).This
+documentissuedin2014,beforetheprioritydateof thepresentapplicationin2016.
+Section4.1of the EPARfor Lynparza(olaparib) clearly states that Lynparza isforuse
+onlyinpatientswithBRCAmutations:
+adultpatientswithplatinum-sensitiverelapsedBRCA-mutated(germline
+and/orsomatic)highgradeserousepithelialovarian,fallopiantube，or
+primaryperitonealcancerwhoareinresponse(completeresponseorpartial
+response)toplatinum-basedchemotherapy.(emphasisadded)
+Therefore,at the priority date of the present application,it was clearly established
+intheartthatolaparibwasnottobeusedinthetreatmentofcancerinpatients
+havinganabsenceofBRCA1and/orBRCA2mutation.Thedeficientactivityof
+paragraph[00150]of the application explains that:
+“theolaparibclinicaldatademonstratedthatPARPinhibitorswouldnotbe
+beneficialtoprolongprogressionfreesurvivalinthetreatmentofcancer
+added).
+Incontrast,theexamplesofthepresentapplicationdemonstratethatniraparibis
+effectiveintreatingcancerinpatientswhohaveanabsenceofamutationinBRCA1
+free survival (PFS) was significantly longerforpatients whoreceived niraparibthan
+for patients who received placebo across all patient groups (paragraph [00223]).
+
+--- PAGE 3 ---
+JA·KEMP
+3
+theoverallnon-germlineBRCAmutantcohortwherethemedianPFSforpatients
+treatedwithniraparibwas9.3monthscomparedwith3.9monthsforcontrol.
+Further,we attach the EuropeanPublic Assessment Report(EPAR) published by the
+EuropeanMedicinesAgencyforZejula(niraparib).Incontrast,totheEPARfor
+olaparib,thecorrespondingsection4.1of theEPARforZejula(niraparib)doesnot
+containanylimitationontheBRCAmutationstatusofthepatientstobetreated:
+Zejulaisindicated:
+·asmonotherapyforthemaintenancetreatmentofadultpatientswith
+orprimaryperitonealcancerwhoareinresponse(completeorpartial)
+followingcompletionoffirst-lineplatinum-basedchemotherapy.
+·asmonotherapyforthemaintenancetreatmentofadultpatientswith
+platinum-sensitiverelapsedhighgradeserousepithelialovarian,fallopian
+toplatinum-basedchemotherapy.
+TheeffectivetreatmentofpatientswithoutmutationsinBRCA1orBRCA2by
+niraparib,ascomparedwitholaparibisreferencedintheapplicationasfiled.
+Paragraph[00224] of the description explains that that the“results[with niraparib]
+366(15):1382-1392)".“Study19"is document D1(Ledermann et al)on filein these
+proceedings.
+Therefore,thetechnicalproblemtobesolvedby thepresent applicationisthe
+an absence of a mutation in BRCA1 and/or BRCA2.The solution is niraparib for use
+assetoutintheclaimsofthepresentapplication.
+Obviousness
+ThereisnothinginD1whichremotelysuggeststhataneffectivetreatment against
+be achieved by use of niraparib in place of olaparib.The claimed subject matter
+doesthereforeinvolveaninventivestep.
+Clarity
+Previousclaim4hasbeendeleted,sotheobjectionwithrespecttothisclaimno
+longer applies.
+Conclusion
+Itisbelievedthatallthepointsraisedintheexaminationreporthavebeenmetand
+thatthis applicationisnowin allowableform.Accordingly,I lookforward to
+receivinga communication underRule71(3)EPCin duecourse.
+
+--- PAGE 4 ---
+JA·KEMP
+Intheeventthatthereareanysubstantivemattersoutstanding,theexamineris
+requested toissue a further written communication or,if more appropriate，to
+contactme by telephone or atmail@jakemp.com.
+In the unlikely event that the examiner should consider rejection of the applicationI
+ElectronicallySigned
+RCSRINIVASAN
+FORJAKEMPLLP
+ASSOCIATIONNO.811

@@ -1,0 +1,10 @@
+﻿category,application_number,claim_chars,claims_review_status,claims_total,claims_verified,claims_draft,source_docs,txt_files,ocr_files,useful_txt_files,docs_text_chars,analysis_outcome,grant_label,known_outcome,doclist_outcome,aggregate_score,evidence_total,evidence_exact_hits,evidence_compact_hits,quality_status,issues
+代谢性疾病,EP16823054,2186,needs_review,26,0,26,8,23,8,8,160503,granted,yes,granted,granted,95,29,3,29,pass,
+代谢性疾病,EP18712343,1777,needs_review,40,0,40,8,21,8,8,24561,granted,yes,granted,granted,95,32,0,32,pass,
+代谢性疾病,EP20726962,3845,needs_review,23,0,23,9,24,9,9,67074,granted,yes,granted,granted,92,30,7,30,pass,
+肿瘤,EP16802532,728,needs_review,8,0,8,22,48,22,22,58106,granted,yes,granted,granted,84,36,0,36,pass,
+肿瘤,EP17191704,356,needs_review,5,0,5,12,25,12,12,50689,withdrawn,no,withdrawn,withdrawn,39,24,0,24,pass,
+肿瘤,EP17821262,489,needs_review,8,0,8,17,43,17,17,70477,granted,yes,granted,granted,87,29,0,29,pass,
+自身免疫性疾病,EP12710797,1940,needs_review,15,0,15,9,23,9,9,82179,granted,yes,granted,granted,97,28,1,28,pass,
+自身免疫性疾病,EP18755728,2245,needs_review,22,0,22,18,42,18,18,148720,granted,yes,granted,granted,93,26,0,26,pass,
+自身免疫性疾病,EP18826609,431,needs_review,12,0,12,27,59,27,27,190358,granted,yes,granted,granted,92,27,0,27,pass,

@@ -1,0 +1,106 @@
+
+--- PAGE 1 ---
+Cooley
+OliverWare
++44 (0) 20 7556 4433
+oware@cooley.com
+EuropeanPatentOffice
+80298
+Munich
+Germany
+07October2022
+OurRef:NODT-004/N01EP330150-2065
+DearEuropeanPatentOffice
+Re.
+Europeanpatent applicationno.18826609.2
+SULPHONYLUREADERIVATIVESASNLRP3INFLAMMASOMEMODULATORS
+NodtheraLimited
+Wereferto the communicationpursuant toArticle 94(3) EPCdated 29 March 2022and to theabove-
+identified application.
+Welodgeherewithan amendedsetof claimstobesubstitutedfortheclaimsaspresentlyonfile.For
+theconvenienceoftheExaminer,afurthercopyoftheamendedclaimsshowingtheamendmentsin
+track-changesformatisalsoenclosed.
+Theapplicantrespectfullyrequeststhatanyamendmentofthedescriptionbedeferred untilsuchtime
+as an allowableclaimsethasbeenagreed upon.
+Amendments
+Thepreambleofclaim2hasbeenamendedtorefertoclaim1.
+Claim9 hasbeen amended to insert the structures of compounds nos.1-166.This amendment finds
+basisinoriginalclaim88andTable1oftheapplicationasfiled.
+Clarity
+TheExaminerhasobjected thatclaim2asonfilemakesreferenceto“anyoftheprecedingclaims".
+Asset out above,claim2hasbeenamended torefer toclaim1only.As such,this objection is no
+longer relevant.
+TheExaminerhasobjectedthatclaim9asonfilemakesreferencetocompoundsdisclosedinthe
+description.Assetoutabove,claim9hasbeenamendedtoinsertthestructuresofthesecompounds.
+Accordingly,thisobjectionisnolongerrelevant.
+Novelty and inventive step
+COOLEY (UK) LLP 22 BISHOPSGATE LONDON EC2N 4BQ, UK
+T: +44 (0) 20 7583 4055 F: +44 (0) 20 7785 9355 COOLEY.COM
+Cooley (UK) LP is α Iimited liability partnership and is registered in England and Wales with registered number OC395270. Our registered office is at
+the address above. Cooley (UK) LLP is authorised and regulated by the Solicitors Regulation Authority (SRA number 617791). A list of the members of
+Cooley {UK) LLP and their professional qualifications is open to inspection at itsregistered office. The word parner' used in relation to Cooley (UK)
+LLP,refers o a memberof Cooley (UK) LP or an employee or consultant of Cooley (UK) LP (rany afilited fim) f equivalentstanding.
+275460174 v1
+
+--- PAGE 2 ---
+Cooley
+07October2022
+PageTwo
+We are pleased tonote that the Examinerhasrecognised that theclaims onfileare novel.The
+Examinerhas,however,objected that the subject matter of the claims onfilelacks an inventive step
+in view of D1.The Examiner has particularly highlighted Examples17, 35, and 39 of D1.
+theApplicanthasnowsynthesisedandtestedthecompoundofExample17fromD1inthePBMC
+assay described in thepresent application as filed(seepages 294to 295 of the application as filed)
+and the majority of tests returned an IC50 value of >10 μM.
+The compound ofExample17hasthefollowingstructure:
+By contrast,fromareviewof all compoundswithinthepresentapplication,wesubmit thattheclosest
+）
+H
+Na
+Example 46of thepresent applicationdiffersfromExample 17of D1byvirtue of containing a 1-
+It canbeseen that thecorrespondingPBMCIC50of Example46of thepresent applicationreturneda
+value of“++++"(see Table A on page 297 of the application as filed) which corresponds to an IC50
+value of<1μM(seepage295of the application asfiled).
+COOLEY (UK) LLP 22 BISHOPSGATE LONDON EC2N 4BQ, UK
+T: +44 (0) 20 7583 4055 F: +44 (0) 20 7785 9355 COOLEY.COM
+ s ayjo pelasibano ose eqwnu paesiba um sepm puo pu(ug u peesie s puo dlysieuod  pew o sl dmn (n) eloo
+the address above. Cooley (UK) LLP is authorised and regulated by the Solicitors Regulation Authority (SRA number 6177911. A list of the members of
+Cooley {UK) LLP and their professional qualifications is open to inspection at itsregistered office. The word partner' used in relation to Cooley (UK)
+LLP,refers o a member of Cooley (UK) LP cr an employee or consultant of Cooley (UK) LP (orany afiliaed fim) of equivalent standing.
+275460174 v1
+
+--- PAGE 3 ---
+Cooley
+07 October 2022
+Page Three
+Therefore,theeffectofsuch a substitutionisgreaterthan10fold(i.e.from<1μM to>10μM.
+Wesubmitthatthiscomparativedataclearlydemonstratesthattheskilledpersonwouldbesurprised
+thatsuchasubstitutionwouldhavesuchaprofoundandmeasurableeffectonthepotencyof the
+resultantcompounds(i.e.greaterthana10fold increaseinpotency).
+EveniftheExaminerismindednottoagreethatthiscomparativedataiscompellingevidenceofthe
+presenceof aninventivestep,we alsosubmit thatthepresentcaseisinventiveduetostructural non-
+obviousness over D1.For example, there are only8 compounds inD1whichhave bis-substituted
+nitrogen atoms (see Examples3,17-20,29 and 31-32 of D1).None of these compounds in D1contain
+present claim 1 requires the corresponding nitrogen atom tobe bis-substituted (i.e.neither R² nor R3
+canbehydrogen)and the R?substituent(the groupwhichcorrespondstoR1in D1)mustbe directly
+attached.Thus,wesubmitthattheskilledpersonwouldnothavebeenmotivated toremovethelinker
+betweenthenitrogenatomand theheteroaryl ringinD1basedonthefact thatitispresentin all
+cases.
+Accordingly,claim 1involves an inventive step in viewof D1 at least byvirtue of the above reasons.
+Claims2-15eitherdepend upon claim1orincorporateitssubject matterbyreference and therefore
+likewiseinvolveaninventivestep atleastbyvirtuethereof.
+TheApplicantsubmitsthatthisresponseovercomesallobjectionsraisedintheExaminationReport.
+If,however,theExaminerdisagrees,theyarerequested toissue another Official Communication，or
+tocontacttheundersignedforanyminoroutstandingmatters.Purelyasaprecaution,should the
+Examinerbemindedtorefusethis application,oralproceedingsviavideoconferencearerequested
+underArticle116EPCbeforeanysuchdecisionistaken.
+Yours faithfully
+WARE,OliverJames
+ForandonbehalfofCooley(UK)LLP
+Associationno.676
+COOLEY (UK) LLP22 BISHOPSGATELONDON EC2N 4BQ, UK
+Cooley (UK) LLP is a limited liabity partnership and is registered in England and Wales with registered number OC395270. Our registered office is at
+the addressabove. Cooley (UK) LLPis authorised and regulated by the Solicitors Regulation Authority (SRA number 6177911. Alist of the members of
+Cooley [UK) LLP and their professional qualificafions is open fo inspection at itsregistered office.The wordpartner' used inrelation to Cooley [UK]
+LLP, refers to a memberof Cooley (UK) LP or an employee or consulfant of Cooley (UK) LP (or any afilited fim) of equivalent standing.
+275460174 v1

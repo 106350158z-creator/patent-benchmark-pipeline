@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import argparse
 import json
 import os
@@ -226,7 +228,10 @@ def load_dotenv(path: Path) -> None:
 
 
 def read_json(path: Path) -> Any:
-    return json.loads(path.read_text(encoding="utf-8-sig"))
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
+    if isinstance(data, dict):
+        data["__source_path"] = str(path.resolve())
+    return data
 
 
 def read_text(path: Path, max_chars: int) -> str:
@@ -289,33 +294,66 @@ def source_priority(name: str) -> int:
     return 20
 
 
-def resolve_trace_path(value: str) -> Path:
+def resolve_trace_path(value: str, base_dir: Path | None = None, case_dir: Path | None = None) -> Path:
     if not value:
         return Path("")
-    path = Path(value)
+    normalized_value = value.replace("\\", "/")
+    path = Path(normalized_value)
     if path.exists() or path.is_absolute():
         return path
     cwd = Path.cwd()
-    candidates = [cwd / path]
+    candidates = []
+    if case_dir:
+        candidates.append(case_dir / path)
+    if base_dir:
+        candidates.append(base_dir / path)
+    candidates.append(cwd / path)
     parts = path.parts
     if parts and parts[0].lower() == cwd.name.lower():
         candidates.append(cwd / Path(*parts[1:]))
     if cwd.parent != cwd:
         candidates.append(cwd.parent / path)
+    if base_dir:
+        parts = tuple(Path(normalized_value).parts)
+        for index, part in enumerate(parts):
+            if part == base_dir.name:
+                suffix = Path(*parts[index + 1 :]) if index + 1 < len(parts) else Path("")
+                candidates.append(base_dir / suffix)
     for candidate in candidates:
         if candidate.exists():
             return candidate
     return path
 
 
-def collect_source_texts(benchmark: dict[str, Any], max_chars_per_file: int, max_files: int) -> list[dict[str, str]]:
+def benchmark_base_dir(benchmark: dict[str, Any]) -> Path | None:
+    source_path = benchmark.get("__source_path")
+    if source_path:
+        return Path(str(source_path)).parent
     trace = benchmark.get("source_trace") or {}
-    docs_dir = resolve_trace_path(str(trace.get("docs_dir") or ""))
+    raw_case_dir = str(trace.get("case_dir") or "")
+    if raw_case_dir:
+        case_dir = Path(raw_case_dir.replace("\\", "/"))
+        if case_dir.exists():
+            return case_dir
+    return None
+
+
+def collect_source_texts(
+    benchmark: dict[str, Any],
+    max_chars_per_file: int,
+    max_files: int,
+    *,
+    include_register_html: bool = False,
+) -> list[dict[str, str]]:
+    trace = benchmark.get("source_trace") or {}
+    base_dir = benchmark_base_dir(benchmark)
+    case_dir = resolve_trace_path(str(trace.get("case_dir") or "."), base_dir=base_dir) if base_dir else None
+    docs_dir = resolve_trace_path(str(trace.get("docs_dir") or ""), base_dir=base_dir, case_dir=case_dir)
     used_names = trace.get("text_documents_used") or []
     docs: list[dict[str, str]] = []
 
-    main_html = resolve_trace_path(str(trace.get("main_html") or ""))
-    if main_html.exists() and max_files > 0:
+    main_html = resolve_trace_path(str(trace.get("main_html") or ""), base_dir=base_dir, case_dir=case_dir)
+    if include_register_html and main_html.exists() and max_files > 0:
         docs.append({"name": main_html.name, "text": read_text(main_html, min(max_chars_per_file, 12000))})
 
     remaining_slots = max(max_files - len(docs), 0)
@@ -330,6 +368,23 @@ def collect_source_texts(benchmark: dict[str, Any], max_chars_per_file: int, max
                 docs.append({"name": name, "text": text})
 
     return docs
+
+
+def benchmark_quality_issues(benchmark: dict[str, Any], source_texts: list[dict[str, str]]) -> list[str]:
+    issues: list[str] = []
+    benchmark_input = benchmark.get("benchmark_input") or {}
+    claim = benchmark_input.get("claim_text") or {}
+    claim_text = claim.get("claim_1") if isinstance(claim, dict) else str(claim or "")
+    if not has_meaningful_text(str(claim_text or ""), min_chars=120):
+        issues.append("claim_text.claim_1 has no meaningful extracted claim text")
+    if not source_texts:
+        issues.append("no meaningful SOURCE documents selected")
+    source_chars = sum(len(re.findall(r"[A-Za-z0-9\u4e00-\u9fff]", doc.get("text", ""))) for doc in source_texts)
+    if source_chars < 1200:
+        issues.append(f"selected SOURCE text is too short ({source_chars} meaningful chars)")
+    if source_texts and all(doc["name"].lower().endswith(".html") for doc in source_texts):
+        issues.append("selected SOURCE documents contain only register HTML")
+    return issues
 
 
 def build_user_prompt(benchmark: dict[str, Any], source_texts: list[dict[str, str]]) -> str:
@@ -583,6 +638,8 @@ def main() -> None:
     parser.add_argument("--verbosity", default=os.environ.get("OPENAI_VERBOSITY") or "medium")
     parser.add_argument("--max-chars-per-file", type=int, default=18000)
     parser.add_argument("--max-source-files", type=int, default=16)
+    parser.add_argument("--include-register-html", action="store_true", help="Allow EPO register HTML in SOURCE context. Default keeps SOURCE to examination text files.")
+    parser.add_argument("--allow-low-quality-source", action="store_true", help="Continue even when claim/source quality gates fail.")
     parser.add_argument("--dry-run", action="store_true", help="Build prompt and write it next to output, but do not call the API.")
     args = parser.parse_args()
 
@@ -593,7 +650,15 @@ def main() -> None:
 
     benchmark_path = Path(args.benchmark_input)
     benchmark = read_json(benchmark_path)
-    source_texts = collect_source_texts(benchmark, args.max_chars_per_file, args.max_source_files)
+    source_texts = collect_source_texts(
+        benchmark,
+        args.max_chars_per_file,
+        args.max_source_files,
+        include_register_html=args.include_register_html,
+    )
+    quality_issues = benchmark_quality_issues(benchmark, source_texts)
+    if quality_issues and not args.allow_low_quality_source:
+        raise RuntimeError("Source quality gate failed: " + "; ".join(quality_issues))
     prompt = build_user_prompt(benchmark, source_texts)
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)

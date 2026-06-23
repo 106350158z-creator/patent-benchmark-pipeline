@@ -1,0 +1,105 @@
+{
+  "application_number": "EP16802532",
+  "source_pdf": "docs/21-03-2022_Text_intended_for_grant_(clean_copy)_L0MYGE6S14NJ6SX.pdf",
+  "source_pdf_sha256": "f23a9de83619bbcd4d6e7dc12c9c5df220fe7e51196f13dc549b71dbe7fd7223",
+  "source_kind": "text_intended_for_grant_clean_copy",
+  "draft_text_source": "docs/08-11-2021_Claims_KVQIPZFPOZPZBS0_ocr.txt",
+  "draft_text_pdf": "docs/08-11-2021_Claims_KVQIPZFPOZPZBS0.pdf",
+  "draft_generated_at": "2026-06-18T07:20:47.317325+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "A compound of formula I or a pharmaceutical acceptable salt thereof:\n(CH2)m\nR4\nR7\nwherein\nA is a divalent radical -(CRaRb)n-A'-, wherein Ra and Rh are independently selected\nfrom a group consisting of H, a Ci-3 alkyl, a halogen, and n is an integer from O to 3;\nm is an integer from 0 to 3;\nR' is substituted or unsubstituted phenyl, optionally substituted C3-Cs cycloalkyl;\nA'is a benzene ring, a five- or six-membered nitrogen-containing heterocycle;\nR² is independently selected from a C2-C4 alkenyl substituted acylamino, substituted\nor unsubstituted C2-C4 alkenyl substituted acyl;\nR?is selected from a group consisting of:\nR3, R4, R′ and R6 are independently selected from a group consisting of H, a\nsubstituted or unsubstituted C1-C6 alkoxy, a substituted or unsubstituted C1-C6 alkyl,\nor a compound or a pharmaceutical acceptable salt thereof selected from the\nfollowing group:\nEP16802532.8-8November2021",
+      "source_pages": [
+        1,
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 2,
+      "text": "The compound of claim 1, wherein the substituted or unsubstituted Ci-C6 alkoxy\nis a C-C3 alkoxy; and\nthe substituted or unsubstituted Ci-C6 alkyl is a Ci-C3 alkyl.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "The compound or a pharmaceutical acceptable salt thereof of claim 1, selected\nfromthefollowinggroup:\nEP16802532.8-8November2021\n53-2(S)",
+      "source_pages": [
+        2,
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "The compound of claim 1, wherein\nRl is substituted or unsubstituted phenyl;\nn=0;\nA' is a benzene ring, or a five-membered nitrogen-containing heterocycle;\nR² is independently selected from a C2-C4 alkenyl substituted acylamino,or C2-C4\n-3-\nEP16802532.8-8November2021\nalkenylsubstituted acyl;\nm is an integer from 0 to 2;\nR' is selected from:\nR’,R4,R and R6 are independently selected from a group consisting of H, a\nsubstituted or unsubstituted C1-C3 alkoxy,a substituted or unsubstituted C1-C3 alkyl.",
+      "source_pages": [
+        3,
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "The compound or a pharmaceutical acceptable salt thereof of claim 1, selected\nfromthefollowinggroup:\nand\n53-2(S).",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 6,
+      "text": "A pharmaceutical composition, comprising the compound or a pharmaceutical\nacceptable salt thereof of any one of claims 1-5 and a pharmaceutically acceptable carrier\nor excipient.",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 7,
+      "text": "The compound of any one of claims 1-5 for use in treating or preventing\nEGFR-mediated diseases, or inhibiting EGFR,wherein the EGFR-mediated disease is\ncancer.\nEP16802532.8-8November2021",
+      "source_pages": [
+        4,
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 8,
+      "text": "The compound for use of claim 7, wherein the cancer is selected from a group\nconsisting of non-small cell lung cancer, small cell lung cancer, lung adenocarcinoma,\nlung squamous cell carcinoma, breast cancer,prostate cancer, glioblastoma, ovarian\ncancer, squamous cell carcinoma of head and neck, cervical cancer, esophageal cancer,\nliver cancer, kidney cancer, pancreas cancer, colon cancer, skin cancer, leukemia,\nlymphoma, stomach cancer, multiple myeloma and solid tumors.",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

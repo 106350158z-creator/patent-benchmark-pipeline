@@ -1,0 +1,207 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+29.03.2022
+Sheet
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-305
+as published
+Claims,Numbers
+1-15
+filed inelectronicform on
+05-02-2021
+Referenceismadetothefollowingdocuments:
+D1
+WO2017/140778A1
+D2
+SARAHDOYLEETAL:"Targeting theNLRP3inflammasome in
+chronic inflammatory diseases: current perspectives",
+JOURNALOFINFLAMMATIONRESEARCH,1January2015
+(2015-01-01),page 15,XP055555633,DOI:10.2147/JIR.S51250
+D3
+REBECCA C COLL ET AL:"A small-molecule inhibitor of the
+NLRP3inflammasomeforthe treatmentof inflammatory diseases",
+NATURE MEDICINE,16February 2015(2015-02-16),
+XP055303035,NewYorkISSN:1078-8956,DOl:10.1038/nm.3806
+2
+Independent claims
+-compounds of formula (l)(claim 1)
+-theirpharmaceutical compositions(claim10)
+-their pharmaceutical uses (claims 11-12)
+3
+Amendments(Article 123(2)EPC)
+Thepresent set of claims is based on the original application asfollows:
+-claim1 corresponds to original claim1
+-newclaim2is directedtocompounds as claimed in claim1whereinR1is
+defined as disclosed in paragraphs [0104], [169], [173] and original claims 3-5,
+7-8, 11-13, 14
+-claim3isbased onoriginal claims18-20
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+29.03.2022
+Sheet
+2
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+[229], [238], [249], [353],[412], original claims 46
+]]
+[483], [487], [490], [496], [500] and original claim 66
+-claim6isbasedonoriginalclaims67-68
+-claim7isbasedonoriginalclaims69to87
+-claim 8 is based on claim 86
+-claim9 correspondstoclaim88
+-claim10 correspondstooriginal claim102
+-claim11correspondstooriginalclaim105rewordedsuchtocomplywiththe
+requirementsofArticle53(c)EPC
+-claim12correspondstooriginalclaim108rewordedsuchtocomplywiththe
+requirements of Article 53(c) EPC
+-claim13corresponds tooriginalclaim116rewordedsuchtocomplywith the
+requirementsofArticle53(c)EPC
+-claim14correspondstooriginalclaim117rewordedsuchtocomplywiththe
+requirementsofArticle53(c)EPC
+-claim15correspondstooriginalclaim118rewordedsuchtocomplywiththe
+requirementsofArticle53(c)EPC
+Theamendmentsfromthecurrentsetofclaimsareconsideredtofulfillthe
+requirements of Article 123(2)EPC.
+4
+Novelty(Article54EPC)
+Thepresent compounds of formula(l)(independent claim 1) area novel
+selection from the general structures disclosed in claims 1 and 7(formulaV) of
+D1 and differfrom the compound MCC950disclosed inD3onaccountof the
+present R2R3-N- substituent. D2 does not disclose any specific compounds
+containing a sulphonylurea group.Thepresentclaimed subject-matter directed
+to compounds of formula (l), their pharmacological compositions and uses
+appearstofulfilltherequirementsofArticle54EPC.
+5
+Inventive step (Article 56EPC)
+EPO Form 2906 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+29.03.2022
+Sheet
+3
+Application No:
+18826 609.2
+Date
+Feuille
+Demande n°:
+5.1
+Thepresent claimed compoundsof formula(l) areusefulto treatdiseases
+connectedtotheinhibitionoftheNLRP3activation.
+R2
+wherein R1is a cycloalkyl oraryl,R2 is-(CX1x2)n-R2s with n=0-2 and
+Rs=heterocycloalkyl andR3isaheterocycloalkylorheterocycloaryl
+5.2
+D1,which is regarded as being the closest prior art,discloses compounds of
+formula (l) with the same uses as the present ones.
+Formula ()
+Thesubject-matterof claim 1canbeconsidered as a selection ofaformula(l)
+from the compounds of formula 1 or V disclosed in document (claims 1 and 7)
+for the same use.The skilled person starting from the compounds of formula (l)
+ofclaim1hastoselecttheW2tobeabsent,tolimit theR2tobecycloalkyl or
+arylmoiety,andR1tobeoneheterocycloalkylandtheotheronetobe
+previous claims) indicates as preferred structure the compoudns of formula V,
+whereinR1W1couldbeselectedaccordingtoclaim5tobe(R1)2N,whereinat
+least one of R1comprises a bicyclic group.Further,according to claim 6 the
+R1W1could bea
+groupwhereinR3couldbe aheterocycloor
+heteroaryl.Asregardsthespecificexamplesdisclosed inD1,compounds17,
+35and39appeartobethecloseststructuralforthepresentones.
+1-[(furan-2-ymethy)[2-(morpholin-4
+yl)ethyllsulfamoyll-3-(1,2,3,5,6,7-hexahycro-S-
+3-{1,2,3,5.6,7
+cen-4-yl]-1-[(6-
+indacen-4-yf)urea
+methoxy-4-methylpyridin-3-yl)suifamoyl]lurea
+1-|(2,4-dime
+ethylpyridin-3-yl)sulfamoyl]-3-
+(1,2,3,5,6,7-hexahydro-s-indacen-4-yl)urea
+EPO Form 2906 01.91TRI
+
+--- PAGE 4 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+29.03.2022
+Sheet
+ApplicationNo:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+Thus,thepresentcompoundsofclaim1representanovelselectionfromthe
+from examples35,39andhaving inmind the technicalproblemof providing
+furthersulfamoylureeaderivativesusefultotreatdiseasesconnectedtothe
+inhibitionofNLRP3wouldexpectthatintroducingofasubstituentasdefinedfor
+thepresentR2(inparticularinviewofexample17ofD1)wouldnotinterfere
+withtheclaimedactivity.
+Thus,theabove-mentionedtechnical ofprovidingfurthersulfamoylureea
+derivativesusefultotreatdiseasesconnectedtotheinhibitionofNLRP3is
+reformulatedastheprovisionoffurthersulfamoylureeaderivativesusefulto
+treatdiseasesconnectedtotheinhibitionofNLRP3andhavingunexpected
+properties overtheclosest structural compounds disclosed inD1,namely the
+compounds17,35and/or39.
+Sincenosucheffectsorproperties areindicated and supported in the
+application,thesubject-matter of claim1doesnot involve aninventivestep
+withinthemeaningofArticle56EPC.Inordertoshowanysuchunexpected
+effect(s) vis-a-vis the said prior art,any comparative tests must beperformed
+usingcompoundswiththemaximumstructuralsimilarity.Thisisnecessaryto
+showconvincinglythattheunexpectedeffectindeedoriginatesfromthe
+distinguishing feature,in the present case the specific definition of R2 in
+combinationwiththedefinitionofR3.Inaddition,itshouldbecrediblyshown
+thattheeffectoccursoverthewholeclaimedrange.
+6
+Article84EPC
+6.1
+Current claim 2makes reference to any of theproceedings claims.This cannot
+be correct since the singlepreceding claim is claim 1.
+6.2
+Claim9doesnot tofulfill therequirementsofArticle84EPCsinceit makes
+referencetothe166compoundsdisclosedinthespecification.Accordingto
+Article84EPC,theclaimshavetobeclearandconcise,whichisnotthecase
+for claim 9.
+7
+TheApplicantisaskedtofileamendmentswhichtakeaccountoftheabove
+comments and,wherenecessary,toharmonisethe claims and the
+correspondingpartsof the description.Article 123(2)EPCmustberespected.
+The Applicant is asked to submit any corrections in the form of handwritten
+EPO Form 2906 01.91TRI
+
+--- PAGE 5 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+29.03.2022
+Sheet
+5
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+pages. For each amendment the Applicant is asked to indicate the support in
+bedeletedfromthedescfriptionandthemethodsoftreatmenthavetobe
+rewordedtocomplywiththerequirementsofArticle53(c)EPC.
+EPO Form 2906 01.91TRI

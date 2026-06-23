@@ -1,0 +1,69 @@
+
+--- PAGE 1 ---
+EP16802532.8-6August2020
+Claims
+1.A compoundof formulaI or apharmaceutical acceptablesalt thereof:
+(CH2)m
+R7
+wherein
+A is a divalent radical -(CRaRb)n-A'-,wherein Ra and Rh are independently selected
+from a group consisting of H, a Ci-3 alkyl, a halogen, and n is an integer from O to 3;
+m is an integer from 0 to 3;
+R' is substituted or unsubstituted phenyl, optionally substituted C3-Cs cycloalkyl;
+A'is a benzene ring, a five- or six-membered nitrogen-containing heterocycle;
+R²is independently selected from a C2-C4 alkenyl substituted acylamino, substituted
+or unsubstituted C2-C4 alkenyl substituted acyl;
+R7is selected from a group consisting of:
+R’, R4, R and R° are independently selected from a group consisting of H, a
+substituted or unsubstituted Ci-C6 alkoxy,a substituted or unsubstituted Ci-C6 alkyl.
+2. The compound of claim 1,wherein the substituted or unsubstituted Ci-C6 alkoxy
+is a C1-C3 alkoxy; and
+the substituted or unsubstituted Ci-C6 alkyl is a Ci-C3 alkyl.
+3.A compound or a pharmaceutical acceptable salt thereof selected from the
+following group:
+
+--- PAGE 2 ---
+EP16802532.8-6August2020
+
+--- PAGE 3 ---
+EP16802532.8-6August2020
+38
+0t
+46
+53-2(S)
+and
+52
+12
+4.The compound of claim 1,wherein
+R1 is substituted or unsubstituted phenyl;
+n=0;
+A'is a benzene ring, or a five-membered nitrogen-containing heterocycle;
+-3-
+
+--- PAGE 4 ---
+EP16802532.8-6August2020
+R2 is independently selected from a C2-C4 alkenyl substituted acylamino, or C2-C4
+alkenyl substituted acyl;
+mis an integerfrom0 to 2;
+R'is selected from:
+R’, R4, R and R′ are independently selected from a group consisting of H, a
+substituted or unsubstituted C-C3 alkoxy, a substituted or unsubstituted Ci-C3 alkyl.
+5.A compound or a pharmaceutical acceptable salt thereof selected from the
+following group:
+and
+42
+53-2(S).
+6.A pharmaceutical composition, comprising the compound or a pharmaceutical
+
+--- PAGE 5 ---
+EP16802532.8-6August2020
+acceptable salt thereof of any one of claims 1-5 and a pharmaceutically acceptable carrier
+orexcipient.
+7. Use of the compound of any one of claims 1-5 for preparation of a medicament
+for treating or preventing EGFR-mediated diseases,or inhibiting EGFR,wherein the
+EGFR-mediated diseaseis cancer.
+8. The use of claim 7,wherein the cancer is selected from a group consisting of
+non-small cell lung cancer, small cell lung cancer, lung adenocarcinoma, lung squamous
+cell carcinoma, breast cancer, prostate cancer, glioblastoma, ovarian cancer, squamous
+cell carcinoma of head and neck, cervical cancer, esophageal cancer, liver cancer, kidney
+multiple myeloma and solid tumors.

@@ -1,0 +1,1374 @@
+{
+  "application_number": "EP12710797.7",
+  "benchmark_input": {
+    "drug_structure": {
+      "markush_or_formula_snippets": [
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "text": "A compound of Formula (VI), 0 NR7R8 Q)m Formula (VI) 5 or a pharmaceutically acceptable salt or ester thereof; wherein: X1 is CH or N; X2,X3,X4, X5,X6 and X7independently are NR4, CH2, CHQ or C(Q)2, provided that: (i) zero, one or two of X2, X3,X4,X5, X6 and X7 are NR4; (ii) when X1 is N, 10 both of X2 and X7 are not NR4; (ii) when X1 is N,X3 and X6 are not NR4; and (iv) when X1is CH and two of X2, X3,X4, X5, X6 and X7 are NR4, the two NR4 are located at adjacent ring positions or are separated by two or more other ring positions; A and V independently are H,halo, azido, -CN, -CF3, -CONR1R2,-NR1R2,-SR2, 15 -OR2,-R3,-W, -L-W,-W0, or -L-N(R)-Wo; each Q is independently halo, azido, -CN, -CF3, -CONR1R2,-NR1R2, -SR2, -OR2, -R3,-W,-L-W,-W0,or -L-N(R)-W0; in each —NR1R2, R1 and R2 together with N may form an optionally substituted azacyclic ring, optionally containing one additional heteroatom"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "they are directed to a compound for use in multiple sclerosis. In contrast,D1 is directed to a composition comprising a nucleic acid and a quinolone analog of formulas (I)-(V) for use in the 5 treatment of psoriasis. Inventive Step: Claims 1-15 alsoinvolve an inventive step in view of WO 2010/113096(D2) and the publication by Drygin Denis (D3)for the following reasons. 10 According to the written opinion of the IPRP, D2 would represent the most relevant state of the art.D2would disclose thatcompoundswhich decrease the ex"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "--- PAGE 1 --- Eur. pat.appln. no. 12710797.7 Our letter of 13 October 2016 P102705EP00 Amended claims (marked-up version) A eompound of Formula (l), B 5 Formula (I) or-a-pharmaeeutically-aeceptable-salt-or ester-thereof; wherein -indicates an-optionally-unsaturated bond; cach-of B, X,A orVis-absent if Z+,Z²,Z²-and-Z4,respectively,is-N; and 10 each of B, X, A and Vis independently H, halo, azido,CN,CF3, CONR+R²,NR+R²SR²,OR²,R²,W,LW,Wo,L-N(R)W0,A²-or-A²,when each-of Z+,Z²,Z²-and Z4,respectively,is-C; cach-of Z+,Z²,Z²"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "lie ring; optionally-containing an-additional heteroatom- seleeted from N,-O or S-as-a ring-member; for use in-treating an autoimmune disease in-a subject. 2 A compound of Formula (II), 0 X 10 Formula (Il) or a pharmaceutically-aeceptable salt or-ester-thercof; wherein-- indicates an-optionally unsaturated bond; 15 each-of A-and X is-independently H, halo, azido, CN, CF3,CONR+R², NR+R², Z-is-O,S,CR42,NR+CR4,CR4NR+-Or-NR4; Yis an-optionally-substituted 5-6-membered carboeyelie -or heteroeyelie-ring; U+-is-C(=T)N(R),C(=T)N(R)O,C(=T)，SO"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "e-ring optionally-containing-an-additional heteroatom- seleeted from-N, O or S-as-a ring member; 5 for-use-in-treating-an-autoimmune disease in-a-subjeet. 3. A compound of Formula (IIl), 0 B Formula (III) 10 or-α-pharmaeeutically-aeeeptable-salt-or-ester-thereof; wherein_--indieates-an-optionally-unsaturated-bond; and cach-of B,X, A or V is absent if Z,Z²,Z²-and Z4, respectively,is N; and each of B, X, A-and V is independently H, halo, azido, -CN, CFa,CONR+R², 15 NR+R²,SR²,OR²,R²,W,L-W,Wo,LN(R)Wo,A²or-A²,when-eachofZ, Z²,Z²-and-Z4,re"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "; optionally-containing an-additional heteroatom seleeted from N,-O or S-as a ring-member, for use in-treating an autoimmune disease in-a subject. A compound-ofFormula-(IV), 0 B 10 Formula (IV) or a pharmaceutieally-aeceptable salt-or-ester-thereof; wherein-indieates-an-optionally-unsaturated-bond; 15 cach-of B, X,A or Vis-absent if Z+, Z²,Z²-and-Z4-respectively, is N;and cach of B, X, A and Vis independently H, halo,azido, CN,CF2,CONR+R², NR+R²,SR²,OR²,R²,W,LW,Wo,L-N(R)Wo,A²-orA²,when-eachofZ+, Z²,Z²-and Z4, respectively"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "earbocyelie ring, or-a-C1-C6 alkyl group-substituted with-from-1-to-4fluorine-atoms, for-use-in-treating-an-autoimmunedisease-in-asubjeet: --- PAGE 9 --- 9 A compound of Formula (V), ） B Formula (V) 5 or a pharmaeeutieally-aeceptable-salt-or ester thereof; indieates an optionally unsaturated bond; A-and V independently are H,halo, azido, CN, CFa,CONR+R², NR+R²,SR², 10 Y is-an-optionally substituted-5-6 membered carboeyelie or heterocyelie ring; U+isC(=T)N(R),C(=T)N(R)O,C(=T),SO2N(R),SO2N(R)N(R)，SO2,or -SOa, where-Tis O, S,or-NH;or"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "ontaining an-additional heteroatom- selected from N, O or S-as a ring member, for use in treating an autoimmune disease in a subjeet. --- PAGE 11 --- 11 61. A compound of Formula (VI), 0 0 NR7R8 Q）m Formula (VI) 5 or a pharmaceutically acceptable salt or ester thereof; wherein: X1 is CH or N; X2, X3,X4, X5, X6 and X7 independently are NR4, CH2, CHQ or C(Q)2, provided that: (i) zero, one or two of X2, X3, X4,X5, X6 and X7 are NR4; (ii) when X1 is N, 10 both of X2 and X7 are not NR4; (ii) when X1 is N, X3 and X6 are not NR4; and (iv)"
+        }
+      ],
+      "smiles": [],
+      "extraction_note": "先按 Formula/Markush OCR 上下文定位 PDF 页面，再用 OpenCV 连通域和线段特征切出候选结构图；markush_images 为自动筛选 Top 候选，markush_candidate_images 保留候选图库供人工复核。",
+      "markush_images": [
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 13,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p013_c159.png",
+          "bbox_px": [
+            303,
+            245,
+            826,
+            544
+          ],
+          "score": 2556.0,
+          "image_score": 656.0,
+          "context_priority": 1900,
+          "line_count": 95,
+          "slanted_line_count": 48,
+          "density": 0.06087,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Claims_EZK6D2TL7828DSU_p005_c147.png",
+          "bbox_px": [
+            303,
+            453,
+            804,
+            754
+          ],
+          "score": 2544.0,
+          "image_score": 644.0,
+          "context_priority": 1900,
+          "line_count": 95,
+          "slanted_line_count": 45,
+          "density": 0.06109,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Claims_EZK6D2TL7828DSU_p001_c158.png",
+          "bbox_px": [
+            363,
+            395,
+            874,
+            728
+          ],
+          "score": 2534.2,
+          "image_score": 634.2,
+          "context_priority": 1900,
+          "line_count": 94,
+          "slanted_line_count": 43,
+          "density": 0.06208,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_candidate_images": [
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c046.png",
+          "bbox_px": [
+            215,
+            349,
+            1309,
+            512
+          ],
+          "score": 3113.0,
+          "image_score": 1213.0,
+          "context_priority": 1900,
+          "line_count": 515,
+          "slanted_line_count": 1,
+          "density": 0.14275,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c043.png",
+          "bbox_px": [
+            215,
+            349,
+            1309,
+            512
+          ],
+          "score": 3113.0,
+          "image_score": 1213.0,
+          "context_priority": 1900,
+          "line_count": 515,
+          "slanted_line_count": 1,
+          "density": 0.14275,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c047.png",
+          "bbox_px": [
+            215,
+            245,
+            1309,
+            409
+          ],
+          "score": 3095.8,
+          "image_score": 1195.8,
+          "context_priority": 1900,
+          "line_count": 501,
+          "slanted_line_count": 3,
+          "density": 0.14017,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c044.png",
+          "bbox_px": [
+            215,
+            1580,
+            1303,
+            1744
+          ],
+          "score": 3075.2,
+          "image_score": 1175.2,
+          "context_priority": 1900,
+          "line_count": 484,
+          "slanted_line_count": 4,
+          "density": 0.14724,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c041.png",
+          "bbox_px": [
+            215,
+            1641,
+            1267,
+            1805
+          ],
+          "score": 3052.4,
+          "image_score": 1152.4,
+          "context_priority": 1900,
+          "line_count": 478,
+          "slanted_line_count": 1,
+          "density": 0.13996,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c044.png",
+          "bbox_px": [
+            215,
+            1496,
+            1260,
+            1659
+          ],
+          "score": 2995.6,
+          "image_score": 1095.6,
+          "context_priority": 1900,
+          "line_count": 442,
+          "slanted_line_count": 3,
+          "density": 0.14558,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c044.png",
+          "bbox_px": [
+            215,
+            1590,
+            1309,
+            1754
+          ],
+          "score": 2985.8,
+          "image_score": 1085.8,
+          "context_priority": 1900,
+          "line_count": 441,
+          "slanted_line_count": 1,
+          "density": 0.13431,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c042.png",
+          "bbox_px": [
+            215,
+            1081,
+            1190,
+            1244
+          ],
+          "score": 2874.6,
+          "image_score": 974.6,
+          "context_priority": 1900,
+          "line_count": 377,
+          "slanted_line_count": 2,
+          "density": 0.1243,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c042.png",
+          "bbox_px": [
+            146,
+            1123,
+            1207,
+            1286
+          ],
+          "score": 2860.6,
+          "image_score": 960.6,
+          "context_priority": 1900,
+          "line_count": 407,
+          "slanted_line_count": 5,
+          "density": 0.12626,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c038.png",
+          "bbox_px": [
+            146,
+            1173,
+            1028,
+            1337
+          ],
+          "score": 2845.6,
+          "image_score": 945.6,
+          "context_priority": 1900,
+          "line_count": 352,
+          "slanted_line_count": 6,
+          "density": 0.12963,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c040.png",
+          "bbox_px": [
+            146,
+            1165,
+            1183,
+            1328
+          ],
+          "score": 2834.6,
+          "image_score": 934.6,
+          "context_priority": 1900,
+          "line_count": 357,
+          "slanted_line_count": 1,
+          "density": 0.11936,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c033.png",
+          "bbox_px": [
+            215,
+            245,
+            1206,
+            356
+          ],
+          "score": 2815.0,
+          "image_score": 915.0,
+          "context_priority": 1900,
+          "line_count": 355,
+          "slanted_line_count": 0,
+          "density": 0.14082,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c036.png",
+          "bbox_px": [
+            215,
+            245,
+            1206,
+            356
+          ],
+          "score": 2815.0,
+          "image_score": 915.0,
+          "context_priority": 1900,
+          "line_count": 355,
+          "slanted_line_count": 0,
+          "density": 0.14082,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c045.png",
+          "bbox_px": [
+            159,
+            349,
+            1219,
+            512
+          ],
+          "score": 2783.6,
+          "image_score": 883.6,
+          "context_priority": 1900,
+          "line_count": 332,
+          "slanted_line_count": 1,
+          "density": 0.11229,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c049.png",
+          "bbox_px": [
+            144,
+            238,
+            298,
+            1822
+          ],
+          "score": 2667.2,
+          "image_score": 767.2,
+          "context_priority": 1900,
+          "line_count": 274,
+          "slanted_line_count": 1,
+          "density": 0.07056,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c048.png",
+          "bbox_px": [
+            144,
+            238,
+            309,
+            1814
+          ],
+          "score": 2655.4,
+          "image_score": 755.4,
+          "context_priority": 1900,
+          "line_count": 263,
+          "slanted_line_count": 3,
+          "density": 0.07393,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p009_c037.png",
+          "bbox_px": [
+            146,
+            1281,
+            1248,
+            1442
+          ],
+          "score": 2596.6,
+          "image_score": 1296.6,
+          "context_priority": 1300,
+          "line_count": 547,
+          "slanted_line_count": 6,
+          "density": 0.13877,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c036.png",
+          "bbox_px": [
+            433,
+            1331,
+            1301,
+            1443
+          ],
+          "score": 2577.2,
+          "image_score": 677.2,
+          "context_priority": 1900,
+          "line_count": 214,
+          "slanted_line_count": 1,
+          "density": 0.1091,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c050.png",
+          "bbox_px": [
+            144,
+            238,
+            309,
+            1781
+          ],
+          "score": 2575.4,
+          "image_score": 675.4,
+          "context_priority": 1900,
+          "line_count": 223,
+          "slanted_line_count": 1,
+          "density": 0.07178,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c030.png",
+          "bbox_px": [
+            689,
+            1433,
+            1132,
+            1597
+          ],
+          "score": 2572.2,
+          "image_score": 672.2,
+          "context_priority": 1900,
+          "line_count": 204,
+          "slanted_line_count": 3,
+          "density": 0.14436,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c029.png",
+          "bbox_px": [
+            288,
+            1372,
+            736,
+            1533
+          ],
+          "score": 2570.0,
+          "image_score": 670.0,
+          "context_priority": 1900,
+          "line_count": 205,
+          "slanted_line_count": 2,
+          "density": 0.12743,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c033.png",
+          "bbox_px": [
+            215,
+            504,
+            980,
+            616
+          ],
+          "score": 2558.8,
+          "image_score": 658.8,
+          "context_priority": 1900,
+          "line_count": 216,
+          "slanted_line_count": 0,
+          "density": 0.12077,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 13,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p013_c159.png",
+          "bbox_px": [
+            303,
+            245,
+            826,
+            544
+          ],
+          "score": 2556.0,
+          "image_score": 656.0,
+          "context_priority": 1900,
+          "line_count": 95,
+          "slanted_line_count": 48,
+          "density": 0.06087,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c032.png",
+          "bbox_px": [
+            288,
+            1288,
+            736,
+            1450
+          ],
+          "score": 2553.8,
+          "image_score": 653.8,
+          "context_priority": 1900,
+          "line_count": 196,
+          "slanted_line_count": 2,
+          "density": 0.13168,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c031.png",
+          "bbox_px": [
+            215,
+            504,
+            980,
+            616
+          ],
+          "score": 2553.4,
+          "image_score": 653.4,
+          "context_priority": 1900,
+          "line_count": 213,
+          "slanted_line_count": 0,
+          "density": 0.12089,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Claims_EZK6D2TL7828DSU_p005_c147.png",
+          "bbox_px": [
+            303,
+            453,
+            804,
+            754
+          ],
+          "score": 2544.0,
+          "image_score": 644.0,
+          "context_priority": 1900,
+          "line_count": 95,
+          "slanted_line_count": 45,
+          "density": 0.06109,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c030.png",
+          "bbox_px": [
+            847,
+            1184,
+            1276,
+            1346
+          ],
+          "score": 2541.6,
+          "image_score": 641.6,
+          "context_priority": 1900,
+          "line_count": 187,
+          "slanted_line_count": 3,
+          "density": 0.11938,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Claims_EZK6D2TL7828DSU_p001_c158.png",
+          "bbox_px": [
+            363,
+            395,
+            874,
+            728
+          ],
+          "score": 2534.2,
+          "image_score": 634.2,
+          "context_priority": 1900,
+          "line_count": 94,
+          "slanted_line_count": 43,
+          "density": 0.06208,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c031.png",
+          "bbox_px": [
+            752,
+            1224,
+            1250,
+            1378
+          ],
+          "score": 2522.4,
+          "image_score": 622.4,
+          "context_priority": 1900,
+          "line_count": 183,
+          "slanted_line_count": 0,
+          "density": 0.11782,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c024.png",
+          "bbox_px": [
+            215,
+            1193,
+            549,
+            1336
+          ],
+          "score": 2506.0,
+          "image_score": 606.0,
+          "context_priority": 1900,
+          "line_count": 165,
+          "slanted_line_count": 4,
+          "density": 0.1489,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c030.png",
+          "bbox_px": [
+            908,
+            1539,
+            1228,
+            1697
+          ],
+          "score": 2504.4,
+          "image_score": 604.4,
+          "context_priority": 1900,
+          "line_count": 173,
+          "slanted_line_count": 0,
+          "density": 0.15281,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 11,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p011_c165.png",
+          "bbox_px": [
+            362,
+            252,
+            874,
+            573
+          ],
+          "score": 2499.0,
+          "image_score": 599.0,
+          "context_priority": 1900,
+          "line_count": 90,
+          "slanted_line_count": 36,
+          "density": 0.0617,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c033.png",
+          "bbox_px": [
+            752,
+            1079,
+            1190,
+            1233
+          ],
+          "score": 2449.8,
+          "image_score": 549.8,
+          "context_priority": 1900,
+          "line_count": 136,
+          "slanted_line_count": 3,
+          "density": 0.1159,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c020.png",
+          "bbox_px": [
+            973,
+            1548,
+            1248,
+            1709
+          ],
+          "score": 2445.8,
+          "image_score": 545.8,
+          "context_priority": 1900,
+          "line_count": 136,
+          "slanted_line_count": 2,
+          "density": 0.1509,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 13,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p013_c158.png",
+          "bbox_px": [
+            508,
+            437,
+            787,
+            688
+          ],
+          "score": 2441.2,
+          "image_score": 541.2,
+          "context_priority": 1900,
+          "line_count": 49,
+          "slanted_line_count": 40,
+          "density": 0.05922,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 11,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p011_c164.png",
+          "bbox_px": [
+            533,
+            449,
+            833,
+            718
+          ],
+          "score": 2436.8,
+          "image_score": 536.8,
+          "context_priority": 1900,
+          "line_count": 51,
+          "slanted_line_count": 38,
+          "density": 0.05758,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Claims_EZK6D2TL7828DSU_p005_c146.png",
+          "bbox_px": [
+            510,
+            645,
+            792,
+            899
+          ],
+          "score": 2410.0,
+          "image_score": 510.0,
+          "context_priority": 1900,
+          "line_count": 45,
+          "slanted_line_count": 34,
+          "density": 0.0588,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c037.png",
+          "bbox_px": [
+            215,
+            679,
+            645,
+            988
+          ],
+          "score": 2409.6,
+          "image_score": 509.6,
+          "context_priority": 1900,
+          "line_count": 67,
+          "slanted_line_count": 24,
+          "density": 0.0759,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c018.png",
+          "bbox_px": [
+            215,
+            1580,
+            475,
+            1742
+          ],
+          "score": 2408.4,
+          "image_score": 508.4,
+          "context_priority": 1900,
+          "line_count": 123,
+          "slanted_line_count": 0,
+          "density": 0.14606,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Claims_EZK6D2TL7828DSU_p001_c157.png",
+          "bbox_px": [
+            533,
+            592,
+            833,
+            861
+          ],
+          "score": 2404.2,
+          "image_score": 504.2,
+          "context_priority": 1900,
+          "line_count": 44,
+          "slanted_line_count": 33,
+          "density": 0.0582,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005_c041.png",
+          "bbox_px": [
+            215,
+            575,
+            653,
+            904
+          ],
+          "score": 2390.0,
+          "image_score": 490.0,
+          "context_priority": 1900,
+          "line_count": 65,
+          "slanted_line_count": 23,
+          "density": 0.07534,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c015.png",
+          "bbox_px": [
+            215,
+            1329,
+            491,
+            1469
+          ],
+          "score": 2389.2,
+          "image_score": 489.2,
+          "context_priority": 1900,
+          "line_count": 109,
+          "slanted_line_count": 0,
+          "density": 0.15802,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c018.png",
+          "bbox_px": [
+            425,
+            643,
+            592,
+            867
+          ],
+          "score": 2378.2,
+          "image_score": 478.2,
+          "context_priority": 1900,
+          "line_count": 44,
+          "slanted_line_count": 31,
+          "density": 0.09455,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c037.png",
+          "bbox_px": [
+            215,
+            679,
+            631,
+            983
+          ],
+          "score": 2366.2,
+          "image_score": 466.2,
+          "context_priority": 1900,
+          "line_count": 64,
+          "slanted_line_count": 16,
+          "density": 0.07462,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c045.png",
+          "bbox_px": [
+            144,
+            381,
+            335,
+            1824
+          ],
+          "score": 2354.0,
+          "image_score": 454.0,
+          "context_priority": 1900,
+          "line_count": 100,
+          "slanted_line_count": 1,
+          "density": 0.0699,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007_c034.png",
+          "bbox_px": [
+            339,
+            877,
+            667,
+            1119
+          ],
+          "score": 2349.6,
+          "image_score": 449.6,
+          "context_priority": 1900,
+          "line_count": 47,
+          "slanted_line_count": 21,
+          "density": 0.07114,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001_c038.png",
+          "bbox_px": [
+            215,
+            491,
+            658,
+            778
+          ],
+          "score": 2347.6,
+          "image_score": 447.6,
+          "context_priority": 1900,
+          "line_count": 47,
+          "slanted_line_count": 22,
+          "density": 0.06553,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003_c012.png",
+          "bbox_px": [
+            159,
+            349,
+            384,
+            507
+          ],
+          "score": 2340.8,
+          "image_score": 440.8,
+          "context_priority": 1900,
+          "line_count": 81,
+          "slanted_line_count": 2,
+          "density": 0.12613,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_page_images": [
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p001.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 3,
+          "image_path": "assets/markush-pages/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p003.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-pages/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p005.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 7,
+          "image_path": "assets/markush-pages/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p007.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 11,
+          "image_path": "assets/markush-pages/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p011.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "pdf": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU.pdf",
+          "page": 13,
+          "image_path": "assets/markush-pages/13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_p013.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/13-10-2016_Claims_EZK6D2TL7828DSU_p001.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+          "pdf": "13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+          "page": 5,
+          "image_path": "assets/markush-pages/13-10-2016_Claims_EZK6D2TL7828DSU_p005.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        }
+      ],
+      "markush_extraction_status": {
+        "status": "selected",
+        "reason": "At least one visual candidate passed the chemical-structure filters.",
+        "selected_count": 3,
+        "candidate_count": 48,
+        "page_count": 10,
+        "snippet_count": 8
+      }
+    },
+    "claim_text": {
+      "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+      "source_type": "ocr_preview",
+      "claim_1": "A compound of Formula (VI), 0 NR7R8 Q)m Formula (VI) 5 or a pharmaceutically acceptable salt or ester thereof; wherein: X1 is CH or N; X2,X3,X4, X5,X6 and X7independently are NR4, CH2, CHQ or C(Q)2, provided that: (i) zero, one or two of X2, X3,X4,X5, X6 and X7 are NR4; (ii) when X1 is N, 10 both of X2 and X7 are not NR4; (ii) when X1 is N,X3 and X6 are not NR4; and (iv) when X1is CH and two of X2, X3,X4, X5, X6 and X7 are NR4, the two NR4 are located at adjacent ring positions or are separated by two or more other ring positions; A and V independently are H,halo, azido, -CN, -CF3, -CONR1R2,-NR1R2,-SR2, 15 -OR2,-R3,-W, -L-W,-W0, or -L-N(R)-Wo; each Q is independently halo, azido, -CN, -CF3, -CONR1R2,-NR1R2, -SR2, -OR2, -R3,-W,-L-W,-W0,or -L-N(R)-W0; in each —NR1R2, R1 and R2 together with N may form an optionally substituted azacyclic ring, optionally containing one additional heteroatom selected from N, 20 O and S as a ring member; --- PAGE 2 --- 2 R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =0; R is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10 5 halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring; R3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12 arylalkyl, or a heteroform of one of these, each of which may be optionally substituted with one or more halogens, =O, or an optionally 10 substituted 3-6 membered carbocyclic or heterocyclic ring; each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)- Wo; each R is independently H or C1-C6 alkyl; R7 is H and R8 is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10 15 heteroalkenyl, each of which may be optionally substituted with one or more halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring; or in —NR7R8, R7 and R8 together with N may form an optionally substituted azacyclic ring, optionally containing an additional heteroatom selected from N, O and S as a ring member; 20 m is 0,1,2,3 or 4; nis 0,1,2,3,4,or 5; L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10 heteroalkenylene linker, each of which may be optionally substituted with one 25 C1-C6 alkyl; W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an additional heteroatom selected from N, O and S as a ring member; and Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl 30group substituted with from 1 to 4 fluorine atoms, --- PAGE 3 --- 3 for use in treating multiple sclerosis in a subject.",
+      "target_claims": [
+        {
+          "claim_number": 1,
+          "text": "A compound of Formula (VI), 0 NR7R8 Q)m Formula (VI) 5 or a pharmaceutically acceptable salt or ester thereof; wherein: X1 is CH or N; X2,X3,X4, X5,X6 and X7independently are NR4, CH2, CHQ or C(Q)2, provided that: (i) zero, one or two of X2, X3,X4,X5, X6 and X7 are NR4; (ii) when X1 is N, 10 both of X2 and X7 are not NR4; (ii) when X1 is N,X3 and X6 are not NR4; and (iv) when X1is CH and two of X2, X3,X4, X5, X6 and X7 are NR4, the two NR4 are located at adjacent ring positions or are separated by two or more other ring positions; A and V independently are H,halo, azido, -CN, -CF3, -CONR1R2,-NR1R2,-SR2, 15 -OR2,-R3,-W, -L-W,-W0, or -L-N(R)-Wo; each Q is independently halo, azido, -CN, -CF3, -CONR1R2,-NR1R2, -SR2, -OR2, -R3,-W,-L-W,-W0,or -L-N(R)-W0; in each —NR1R2, R1 and R2 together with N may form an optionally substituted azacyclic ring, optionally containing one additional heteroatom selected from N, 20 O and S as a ring member; --- PAGE 2 --- 2 R1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =0; R is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10 5 halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring; R3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12 arylalkyl, or a heteroform of one of these, each of which may be optionally substituted with one or more halogens, =O, or an optionally 10 substituted 3-6 membered carbocyclic or heterocyclic ring; each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)- Wo; each R is independently H or C1-C6 alkyl; R7 is H and R8 is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10 15 heteroalkenyl, each of which may be optionally substituted with one or more halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring; or in —NR7R8, R7 and R8 together with N may form an optionally substituted azacyclic ring, optionally containing an additional heteroatom selected from N, O and S as a ring member; 20 m is 0,1,2,3 or 4; nis 0,1,2,3,4,or 5; L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10 heteroalkenylene linker, each of which may be optionally substituted with one 25 C1-C6 alkyl; W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an additional heteroatom selected from N, O and S as a ring member; and Wo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl 30group substituted with from 1 to 4 fluorine atoms, --- PAGE 3 --- 3 for use in treating multiple sclerosis in a subject."
+        }
+      ],
+      "claims_verified_json": "EP12710797-claims-verified.json",
+      "claims_review_status": "needs_human_review",
+      "claims_review_verified_count": 0,
+      "claims_review_total_count": 15
+    },
+    "jurisdiction": "EP",
+    "application_number": "EP12710797.7",
+    "title": "QUINOLONE ANALOGS FOR TREATING AUTOIMMUNE DISEASES",
+    "applicant": "Tel HaShomer Medical Research Infrastructure and Services Ltd.",
+    "filing_date": "2012-02-26",
+    "priority_date": "2011-03-17",
+    "known_outcome": {
+      "outcome": "granted",
+      "grant_label": "yes",
+      "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+      "date": ""
+    },
+    "specification_data": {
+      "examples": [
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "to theinstant applicationwhich provides unprecedented evidence that CX-5461 can reduce the viability of non-transformed immune cells from 20 both healthy and MS subjects (see,for example,Examples 2-4,Figures 5,6 and 7A-B of the application as filed). Furthermore, the skilled person would not expect based on the mechanism of action of analog CX-5461 described in D3 that it would also be suitable as an MS drug. The 25 mere reason that CX-5461is ableto disruptthebindingof theSL1 transcriptionfactor to the rDNA promoter does not automaticallymake it a suitable as an MS drug,as explainedbelow. --- PAGE"
+        }
+      ],
+      "pharmacology_or_effect_data": [
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "iption of Figure 4 on page 1424 of D3, which states that\"CX-5461exhibitsbroad anti-proliferative potencyinapanel of cancer cell 5 linesinp53-independentmanner,buthasminimaleffectonviabilityofnon- transformed human cells\" and in D3, page 1429, first column, which states\"..CX-5461 takesadvantageoftheequivalentqualitiesofcancercellsandelicitspotentandselective antitumor activity,whereashavinga minimaleffect onnon-transformed cells.\"D3also disclosesthat\"CX-5461waswelltoleratedatalltestedschedulesasjudgedbythe 10 absence of significant changes in animal body weight\"(see page1425,second column, lastparagraph"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "D3 from using CX-5461 in order to affect non-transformed cells. This is in sharpcontrast to theinstant applicationwhich provides unprecedented evidence that CX-5461 can reduce the viability of non-transformed immune cells from 20 both healthy and MS subjects (see,for example,Examples 2-4,Figures 5,6 and 7A-B of the application as filed). Furthermore, the skilled person would not expect based on the mechanism of action of analog CX-5461 described in D3 that it would also be suitable as an MS drug. The 25 mere reason that CX-5461is ableto disruptthebindingof theSL1 transcriptionfactor to the rDNA promote"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "omoter.Such disruption inhibitsinitiation of rRNA synthesis by the PolI multi-protein complex (see D3,page 1427,first column, first paragraph). 5 In contrast, D2 does not refer to activity of an RNA polymerase I enzyme itself, but rather to the expression of a specifically defined network of genes involved in the RNA polymerase I pathway (see D2, Table 3, pages 120-121). Specifically, D2 discloses that anefficientdrugmoleculeforthetreatmentofRRMSisa\"drugmoleculewhich 10 downregulatesalevelofexpressionofatleastonegeneinvolvedintheRNApolymerase I pathway\" (see, e.g.,claim 9 in D2). However, SL1 (i.e. th"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "are considered relevant with respect to MS include SL1. Therefore,based on the mechanism of CX-5461 described in D3,the skilled person would not expect that CX-5461 would have an activity similar to the activity described forthecompoundsofD2. 20 Furthermore,D2 teaches the use of expression inhibitors,whereas D3 teaches that CX-5461 selectively inhibits RNA polymerase I activity (i.e., in the synthesis of rRNA) while not affecting the levels of mRNA and protein synthesis.Thus, CX-5461 cannot be considered as an expression inhibitor based on the teachings of D3,which describes 25thecompoundas“apotentan"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "7/1453 Our ref. KB/P102705EP00 Date 13 October 2016 Patents & Trademarks Therefore, the skilled person starting from D2 and looking for MS drug alternatives, wouldnotexpectthatthe activityinhibitordescribedinD3wouldhavethesame activity on MS as the expression inhibitor described in D2,especially considering that D3explicitlymentions thatthe activityinhibitor of D3donotinhibit mRNA expression 5 or protein synthesis. Summarizing,the skilled person would not arrive at the present invention based on D2 and D3. First of all, the skilled person would not consider consulting D3 when trying to find alternativ"
+        }
+      ],
+      "synthesis_routes": [
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "marks D3 discloses that the mechanism of action of CX-5461 is disruption of binding of the SL1 transcription factor to the rDNA promoter.Such disruption inhibitsinitiation of rRNA synthesis by the PolI multi-protein complex (see D3,page 1427,first column, first paragraph). 5 In contrast, D2 does not refer to activity of an RNA polymerase I enzyme itself, but rather to the expression of a specifically defined network of genes involved in the RNA polymerase I pathway (see D2, Table 3, pages 120-121). Specifically, D2 discloses that anefficientdrugmoleculeforthetreatmentofRRMSisa\"drugmoleculewhich 10 down"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "cribed forthecompoundsofD2. 20 Furthermore,D2 teaches the use of expression inhibitors,whereas D3 teaches that CX-5461 selectively inhibits RNA polymerase I activity (i.e., in the synthesis of rRNA) while not affecting the levels of mRNA and protein synthesis.Thus, CX-5461 cannot be considered as an expression inhibitor based on the teachings of D3,which describes 25thecompoundas“apotentandselectiveinhibitorofPolImediatedrRNA synthesisin cancer cellsthat doesnotinhibitDNA,mRNAorprotein synthesis\"(seeD3,page 4118, secondcolumn,secondparagraph). --- PAGE 6 --- Page 6 V.O. Your ref. 12710797.7/1453 Our r"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "ctivity on MS as the expression inhibitor described in D2,especially considering that D3explicitlymentions thatthe activityinhibitor of D3donotinhibit mRNA expression 5 or protein synthesis. Summarizing,the skilled person would not arrive at the present invention based on D2 and D3. First of all, the skilled person would not consider consulting D3 when trying to find alternativeMS drugs from those described inD2.Furthermore,based on the 10 mechanism of action,the skilled person would not expect that compound CX-5461 would also work as a potent MS drug. Therefore, the present claims are inventive in vie"
+        }
+      ],
+      "use_descriptions": [
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "cted to a compound for use in multiple sclerosis. In contrast,D1 is directed to a composition comprising a nucleic acid and a quinolone analog of formulas (I)-(V) for use in the 5 treatment of psoriasis. Inventive Step: Claims 1-15 alsoinvolve an inventive step in view of WO 2010/113096(D2) and the publication by Drygin Denis (D3)for the following reasons. 10 According to the written opinion of the IPRP, D2 would represent the most relevant state of the art.D2would disclose thatcompoundswhich decrease the expressionlevel of at least one gene involved in the RNA polymerase I pathway are efficient dr"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "ugs in the treatmentof multiplesclerosis (MS). 15 Further, according to the written opinion, D3 would provide an alternative anti MS drug, because D3 would describe analog CX-5461 as a potent and selective inhibitor of RNA polymerase I.Accordingly,the combination of D2 and D3would makeit obvious for a skilled person to try CX-5461 for treating MS. 20 It is disagreed with the IPRP that the skilled person would combine the teachings o"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "3to arrive atthepresentinvention. First of all, when considering D2, the skilled person would have no reason to consult 25D3 for alternative MS drugs, as D3 does not relate to the treatment of MS. Second,even when consultingD3,the skilled person would not conclude based on D3 that analog CX-5461 would be a potent alternative MS drug, as explained below. --- PAGE 4 --- Page 4 V.O. Your ref. 12710797.7/1453 Our ref. KB/P102705EP00 Date 13 October 2016 Patents & Trademarks If anything,D3 teaches away of such use.D3explicitly teaches that CX-5461 specifically affects cancerous cells (transformed cells"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "of a specifically defined network of genes involved in the RNA polymerase I pathway (see D2, Table 3, pages 120-121). Specifically, D2 discloses that anefficientdrugmoleculeforthetreatmentofRRMSisa\"drugmoleculewhich 10 downregulatesalevelofexpressionofatleastonegeneinvolvedintheRNApolymerase I pathway\" (see, e.g.,claim 9 in D2). However, SL1 (i.e. the gene targeted by CX-5461 of D3) is not one of the genes defined as a\"gene involved in the RNA polymerase I pathway\"according toD2.None of the 15genes mentioned in D2 that are considered relevant with respect to MS include SL1. Therefore,based on the"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "nsaturated or-aromatie optionally substituted five- 5 membered-azacyelie ring; optionally-containing an-additional heteroatom- seleeted from N,-O or S-as-a ring-member; for use in-treating an autoimmune disease in-a subject. 2 A compound of Formula (II), 0 X 10 Formula (Il) or a pharmaceutically-aeceptable salt or-ester-thercof; wherein-- indicates an-optionally unsaturated bond; 15 each-of A-and X is-independently H, halo, azido, CN, CF3,CONR+R², NR+R², Z-is-O,S,CR42,NR+CR4,CR4NR+-Or-NR4; Yis an-optionally-substituted 5-6-membered carboeyelie -or heteroeyelie-ring; U+-is-C(=T)N(R),C(=T)N(R)O,C(=T)"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "unsaturated-or-aromatie-optionally-substituted-five- membered-azaeyelie-ring optionally-containing-an-additional heteroatom- seleeted from-N, O or S-as-a ring member; 5 for-use-in-treating-an-autoimmune disease in-a-subjeet. 3. A compound of Formula (IIl), 0 B Formula (III) 10 or-α-pharmaeeutically-aeeeptable-salt-or-ester-thereof; wherein_--indieates-an-optionally-unsaturated-bond; and cach-of B,X, A or V is absent if Z,Z²,Z²-and Z4, respectively,is N; and each of B, X, A-and V is independently H, halo, azido, -CN, CFa,CONR+R², 15 NR+R²,SR²,OR²,R²,W,L-W,Wo,LN(R)Wo,A²or-A²,when-eachofZ, Z²,Z²-and-Z"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "unsaturated or-aromatie optionally substituted five- 5 membered-azacyelie ring; optionally-containing an-additional heteroatom seleeted from N,-O or S-as a ring-member, for use in-treating an autoimmune disease in-a subject. A compound-ofFormula-(IV), 0 B 10 Formula (IV) or a pharmaceutieally-aeceptable salt-or-ester-thereof; wherein-indieates-an-optionally-unsaturated-bond; 15 cach-of B, X,A or Vis-absent if Z+, Z²,Z²-and-Z4-respectively, is N;and cach of B, X, A and Vis independently H, halo,azido, CN,CF2,CONR+R², NR+R²,SR²,OR²,R²,W,LW,Wo,L-N(R)Wo,A²-orA²,when-eachofZ+, Z²,Z²-and Z4, respectively"
+        },
+        {
+          "source": "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+          "text": "om N, O and S as a ring member; and 20 We-is-an-optionally-substituted 3-4-membered earbocyelie ring, or-a-C1-C6 alkyl group-substituted with-from-1-to-4fluorine-atoms, for-use-in-treating-an-autoimmunedisease-in-asubjeet: --- PAGE 9 --- 9 A compound of Formula (V), ） B Formula (V) 5 or a pharmaeeutieally-aeceptable-salt-or ester thereof; indieates an optionally unsaturated bond; A-and V independently are H,halo, azido, CN, CFa,CONR+R², NR+R²,SR², 10 Y is-an-optionally substituted-5-6 membered carboeyelie or heterocyelie ring; U+isC(=T)N(R),C(=T)N(R)O,C(=T),SO2N(R),SO2N(R)N(R)，SO2,or -SOa, where-"
+        }
+      ],
+      "comparative_data": [
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "mulas (I)-(V) for use in the 5 treatment of psoriasis. Inventive Step: Claims 1-15 alsoinvolve an inventive step in view of WO 2010/113096(D2) and the publication by Drygin Denis (D3)for the following reasons. 10 According to the written opinion of the IPRP, D2 would represent the most relevant state of the art.D2would disclose thatcompoundswhich decrease the expressionlevel of at least one gene involved in the RNA polymerase I pathway are efficient drugs in the treatmentof multiplesclerosis (MS). 15 Further, according to the written opinion, D3 would provide an alternative anti MS drug, because"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "D3 would describe analog CX-5461 as a potent and selective inhibitor of RNA polymerase I.Accordingly,the combination of D2 and D3would makeit obvious for a skilled person to try CX-5461 for treating MS. 20 It is disagreed with the IPRP that the skilled person would combine the teachings of D2 andD3to arrive atthepresentinvention. First of all, when considering D2, the skilled person would have no reason to consult 25D3 for alternative MS drugs, as D3 does not relate to the treatment of MS. Second,even when consultingD3,the skilled person would"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "not conclude based on D3 that analog CX-5461 would be a potent alternative MS drug, as explained below. --- PAGE 4 --- Page 4 V.O. Your ref. 12710797.7/1453 Our ref. KB/P102705EP00 Date 13 October 2016 Patents & Trademarks If anything,D3 teaches away of such use.D3explicitly teaches that CX-5461 specifically affects cancerous cells (transformed cells)while having no effect on non- transformed cells, as explained in the description of Figur"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "e 4 on page 1424 of D3, which states that\"CX-5461exhibitsbroad anti-proliferative potencyinapanel of cancer cell 5 linesinp53-independentmanner,buthasminimaleffectonviabilityofnon- transformed human cells\" and in D3, page 1429, first column, which states\"..CX-5461 takesadvantageoftheequivalentqualitiesofcancercellsandelicitspotentandselective antitumor activity,whereashavinga minimaleffect onnon-transformed cells.\"D3also disclosesthat\"CX-"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "toimmune disease in general, and MS in particular, does not involve transformed cells,the skilled person startingfromD2 and lookingfor alternative MS 15 drugs,would be deterred by D3 from using CX-5461 in order to affect non-transformed cells. This is in sharpcontrast to theinstant applicationwhich provides unprecedented evidence that CX-5461 can reduce the viability of non-transformed immune cells from 20 both healthy and MS subjects (see,for example,Examples 2-4,Figures 5,6 and 7A-B of the application as filed). Furthermore, the skilled person would not expect based on the mechanism of action"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "of analog CX-5461 described in D3 that it would also be suitable as an MS drug. The 25 mere reason that CX-5461is ableto disruptthebindingof theSL1 transcriptionfactor to the rDNA promoter does not automaticallymake it a suitable as an MS drug,as explainedbelow. --- PAGE 5 --- Page 5 V.O. Your ref. 12710797.7/1453 Our ref. KB/P102705EP00 Date 13 October 2016 Patents & Trademarks D3 discloses that the mechanism of action of CX-5461 is disruption of"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "binding of the SL1 transcription factor to the rDNA promoter.Such disruption inhibitsinitiation of rRNA synthesis by the PolI multi-protein complex (see D3,page 1427,first column, first paragraph). 5 In contrast, D2 does not refer to activity of an RNA polymerase I enzyme itself, but rather to the expression of a specifically defined network of genes involved in the RNA polymerase I pathway (see D2, Table 3, pages 120-121). Specifically, D2 discloses that anefficientdrugmoleculeforthetreatmentofRRMSisa\"drugmoleculewhich 10 downregulatesalevelofexpressionofatleastonegen"
+        },
+        {
+          "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "text": "einvolvedintheRNApolymerase I pathway\" (see, e.g.,claim 9 in D2). However, SL1 (i.e. the gene targeted by CX-5461 of D3) is not one of the genes defined as a\"gene involved in the RNA polymerase I pathway\"according toD2.None of the 15genes mentioned in D2 that are considered relevant with respect to MS include SL1. Therefore,based on the mechanism of CX-5461 described in D3,the skilled person would not expect that CX-5461 would have an activity similar to the activity described forthecompoundsofD2. 20 Furthermore,D2 teaches the use of"
+        }
+      ]
+    },
+    "prior_art_docs": [
+      {
+        "rank": 1,
+        "citation": "WO2007022474",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2007022474",
+        "mentions": 2,
+        "sources": [
+          "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "EP12710797-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 2,
+        "citation": "WO2010113096",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2010113096",
+        "mentions": 2,
+        "sources": [
+          "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+          "EP12710797-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 3,
+        "citation": "WO2012123938",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2012123938",
+        "mentions": 1,
+        "sources": [
+          "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt"
+        ]
+      },
+      {
+        "rank": 4,
+        "citation": "WO2009046383",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009046383",
+        "mentions": 1,
+        "sources": [
+          "EP12710797-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 5,
+        "citation": "WO2008131134",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2008131134",
+        "mentions": 1,
+        "sources": [
+          "EP12710797-main.html#documents_cited"
+        ]
+      }
+    ]
+  },
+  "source_trace": {
+    "path_base": "benchmark_input_dir",
+    "case_dir": ".",
+    "main_html": "register/EP12710797-main.html",
+    "doclist_csv": "register/EP12710797-doclist.csv",
+    "docs_dir": "docs",
+    "original_application_dir": "original-application",
+    "original_application_files": [
+      {
+        "title": "Abstract",
+        "date": "28.03.2012",
+        "document_id": "ESZ40ACM8142328",
+        "pages": "1",
+        "path": "original-application/28-03-2012_Abstract_ESZ40ACM8142328.pdf",
+        "file_name": "28-03-2012_Abstract_ESZ40ACM8142328.pdf",
+        "source_url": "https://register.epo.org/application?documentId=ESZ40ACM8142328&appnumber=EP12710797&showPdfPage=all&proc="
+      },
+      {
+        "title": "Claims",
+        "date": "28.03.2012",
+        "document_id": "ESZ40ACM0538328",
+        "pages": "24",
+        "path": "original-application/28-03-2012_Claims_ESZ40ACM0538328.pdf",
+        "file_name": "28-03-2012_Claims_ESZ40ACM0538328.pdf",
+        "source_url": "https://register.epo.org/application?documentId=ESZ40ACM0538328&appnumber=EP12710797&showPdfPage=all&proc="
+      },
+      {
+        "title": "Description",
+        "date": "28.03.2012",
+        "document_id": "ESZ40ACL4074328",
+        "pages": "84",
+        "path": "original-application/28-03-2012_Description_ESZ40ACL4074328.pdf",
+        "file_name": "28-03-2012_Description_ESZ40ACL4074328.pdf",
+        "source_url": "https://register.epo.org/application?documentId=ESZ40ACL4074328&appnumber=EP12710797&showPdfPage=all&proc="
+      },
+      {
+        "title": "Drawings",
+        "date": "28.03.2012",
+        "document_id": "ESZ40ACN5169328",
+        "pages": "7",
+        "path": "original-application/28-03-2012_Drawings_ESZ40ACN5169328.pdf",
+        "file_name": "28-03-2012_Drawings_ESZ40ACN5169328.pdf",
+        "source_url": "https://register.epo.org/application?documentId=ESZ40ACN5169328&appnumber=EP12710797&showPdfPage=all&proc="
+      },
+      {
+        "title": "Published international application - A1",
+        "date": "20.09.2012",
+        "document_id": "ETPP4NYB4830FI4",
+        "pages": "116",
+        "path": "original-application/20-09-2012_Published_international_application_-_A1_ETPP4NYB4830FI4.pdf",
+        "file_name": "20-09-2012_Published_international_application_-_A1_ETPP4NYB4830FI4.pdf",
+        "source_url": "https://register.epo.org/application?documentId=ETPP4NYB4830FI4&appnumber=EP12710797&showPdfPage=all&proc="
+      },
+      {
+        "title": "Bibliographic data of the European patent application",
+        "date": "16.03.2017",
+        "document_id": "EZ67GHHG0776DSU",
+        "pages": "1",
+        "path": "original-application/16-03-2017_Bibliographic_data_of_the_European_patent_application_EZ67GHHG0776DSU.pdf",
+        "file_name": "16-03-2017_Bibliographic_data_of_the_European_patent_application_EZ67GHHG0776DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=EZ67GHHG0776DSU&appnumber=EP12710797&showPdfPage=all&proc="
+      }
+    ],
+    "text_documents_used": [
+      "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+      "24-03-2017_Communication_about_intention_to_grant_a_European_patent_EZ67GOPF1671DSU_ocr.txt",
+      "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "05-04-2016_Communication_from_the_Examining_Division_EYS6YDBI1779DSU_ocr.txt",
+      "05-04-2016_Annex_to_the_communication_EYS6YDER6021DSU_ocr.txt",
+      "13-10-2016_Amended_claims_with_annotations_EZK6D2J13229DSU_ocr.txt",
+      "20-09-2013_Amended_claims_filed_after_receipt_of_(European)_search_report_EU5ADQAV2359FI4_ocr.txt",
+      "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+      "28-03-2012_Claims_ESZ40ACM0538328_ocr.txt"
+    ],
+    "register_status": "No opposition filed within time limit",
+    "quality": {
+      "source_text_documents": 9,
+      "claim_1_meaningful_chars": 1940,
+      "source_meaningful_chars": 82179
+    }
+  }
+}

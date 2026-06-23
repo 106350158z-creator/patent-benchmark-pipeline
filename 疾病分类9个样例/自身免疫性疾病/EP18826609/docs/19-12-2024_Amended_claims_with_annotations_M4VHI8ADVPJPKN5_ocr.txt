@@ -1,0 +1,1070 @@
+
+--- PAGE 1 ---
+Cooley Ref.NODT-004/N01EP (330150-2065)
+MAINREQUEST
+CLAIMS:
+--AcompoundofFormula(Iacl):
+-R3S
+(R3s)0-2
+(Iac-1).
+or a solvate, or pharmaceutically acceptable salt thereof, wherein:
+RisC-C16-cyeloalkyl-optionally-substituted-by-one-or-more-Ris,wherein-the-C-C16
+cycloalkyl is a C-Cg monocyclie cycloallyl or polyeyclic cycloalkyl, or, Ris a phenyl
+substituted by-two-or-three Ris;wherein-each-Risisindependently-C+Callyl, CChaloalkyl,
+C-C6alkoxy,C-Chaloalkoxy,or halo,andat leastone Risis CCalkyl,CC6haloalkyl,or
+hale,
+R2 is -(CHXX2)n-R2s, wherein n is 0, 1, or 2, and each-X is independently H, C-C6
+allyl,CCalkenyl,orC-Callynyl,wherein-the CCallyl,CCalkenyl,orCCalkynyl
+is optionally-substituted-with-one or-more halo,CN,OH,O(C+C6alkyl),NH,NH(C+C
+alkyl),N(C+-C6alkyl)2,or-oxo;
+R2s is 4-to 8-membered monocyclic heterocycloalkyl optionally substituted with one or
+more C1-C6 alkyl, C2-C6 alkenyl, C2-C6 alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6
+alkyl), -NH2, -NH(C1-C6 alkyl),-N(C1-C6 alkyl)2, or oxo; and
+Ris-7-to-12-membered-heterocycloallkyl or-5--or-6-membered heteroaryloptionally
+substituted-with-one-or-more-Rss,-wherein-each Rss is independently Ci-Co alkyl, C1-C6
+haloalkyl, C3-Cs cycloalkyl, halo, or Cs-Cs heterocycloalkyl wherein the C,-C6 alkyl, C1-C6
+haloalkyl, Cs-Cs cycloalkyl, or Cs-Cs heterocycloalkyl is optionally substituted with -O(C1-C6
+alkyl), -N(Ci-C6 alkyl)2, halo, or -CN.
+313546511
+
+--- PAGE 2 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+2.The-compound of claim-1,wherein-RisCs-C_monoeyelic-cycloalkyl,Cg-Co bicyclic
+cycloalkyl, C2-6-tricyclic cycloalkyl, or- phenyl, wherein-the CCzmonocyclic cycloalkyl, Cg-
+Cto_bicyclic-cycloalkyl,or-C-Ci6tricyclie-cycloalkyl-is-optionally-substituted-by-one-or-more
+Ris,the phenylis substituted-by-two-or-three-Ris;and wherein-at-least-one-Ris-is-C-Ceallyl,
+C-Cehaloalkyl,or halo,-
+optionally-wherein:
+(a) the C-Cz_ monocyclie cycloalkyl is cyelopentyl, cyclohexyl, or cycloheptyl, wherein
+the cyclopentyl, cyclohexyl, or-cycloheptyl is optionally substituted by one or-more-Ris; further
+optionally-wherein-the-C-Cmonocyclic-cyeloallkyl-is
+(b)the-Cy-Ciobieyclic-cycloal
+is0,1,or-2;option
+(e)the-C2-Ci6-tricyclic-cyeloallylis
+wherein-n-and-ne
+each-independently-are-0, 1, 2,or3;further-optionally
+313654363511
+
+--- PAGE 3 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+R
+d)thepheny
+R1S
+further-optionally
+The compound of claim-1-or 2,wherein-Ris-Ras,(CXXz)-Ras-or-(CXgXs)-R2s
+42.
+The compound of any-one-ofclaims 1-to-3,whereinR2s is 4--to-8-membered-monocyelie
+heterocycloalkyl optionally substituted with-one or-more-C-Callkyl, C-Calkenyl, C-C6
+alkynyl,CC6haloalkyl,halo,CN,OH,O(CCalkyl),NH,NH(CCalkyl),N(CC6
+alkyl)2,or-oxo;
+313654393511
+
+--- PAGE 4 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+Optionally oxetanyl, azetidinyl, tetrahydrofuranyl, pyrrolidinyl, tetrahydropyranyl, piperidinyl,
+morpholinyl, or azepanyl,wherein the oxetanyl, azetidinyl, tetrahydrofuranyl,pyrrolidinyl,
+tetrahydropyranyl, piperidinyl, morpholinyl, or azepanyl is optionally substituted with one or more
+C1-C6 alkyl, C1-C6 haloalkyl, or oxo; or
+further optionally
+The-compoundofany-oneofclaims1to4,whereinRis7to12-membered
+heteroeycloalkyl optionally-substituted-with-one or-more-R3s;
+optionally-wherein-Rispyrrolyl,pyrazolyl,imidazolyl,triazolyl,tetrazolyl,isoxazolyl,
+furanyl, oxazolyl, isothiazolyl, thiadiazolyl,
+pyrimidinyl,pyridazinyl,or-4,5,6,7
+313654363511
+
+--- PAGE 5 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+tetrahydrobenzo[clisoxazole,wherein-the-pyrrolyl,pyrazolyl,imidazolyl,triazolyl,tetrazolyl,
+isoxazolyl,furanyl,oxazolyl,isothiazolyl,thiadiazolyl,pyridinyl,pyrimidinyl,pyridazinyl,or
+4,5,6,7-tetrahydrobenzo[cJisoxazole-is-optionally-substituted-with-one-or-more-Ras; or
+further-optional
+36. The compound of any-one-of claims 1 or claim 2to-5, wherein-at least-one-Rss is C-Ce-
+alkyl, CCshaloalkyl,C-Cseycloallkyl,halo,or C3-Csheterocycloalkyl wherein-the C+C6
+alkyl,C+-Chaloalkyl,C-Cgcycloallkyl,or CCgheterocycloalkylis optionally substituted
+with-O(C+C6alkyl),N(CCaalkyl)2,halo,or-CN;
+3136543635V11
+
+--- PAGE 6 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+optionally-whereinatleastoneRssis
+,methyl,ethyl,isopropyl,-
+CH2OCH3,-CH2CF3,-CH2CH2OCH3,-CH2CN,CHCF2,Or-CHCHN(CH3)2.
+74.The compound of any one of the preceding claims, wherein the compound is of Formula
+(S0D0D(0D）(0D（10D(01-9D)(q19D)(019D)(9D(29D）(1qD)Z0D）(10D
+(Ic-6), (Ic-7), (Ic-8), (lab-1), (lab-2); (Iac-1), (Iac-2), (Iac-3), (lac-4), (Ibc-1), (Ibc-2); (Iabc-1),
+(Iabc-la),or (Iabc-1b):
+R
+1S
+H
+R2S(1b3)
+(lble)
+H
+R
+(He-1)
+(lc-2);
+-R3S
+R3S
+(R3s)2
+H
+H
+H
+H
+(lc-3);
+(Ic-4);
+3136543635V11
+
+--- PAGE 7 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+N
+H
+H
+R
+0
+0
+N
+H
+H
+R
+(Ic-8);
+N
+N
+H
+H
+Hab
+R1S
+O
+N-R3S
+N
+(R3s)0-2
+R
+(R3s)0-2
+R2
+Hac-
+R
+(Iac-2);
+R1S
+O
+N
+H
+Hae
+(lac-4),
+O
+0
+O
+O
+R
+N
+H
+be
+(lbc-2)
+N
+N-R3S
+N
+(R3s)0-2
+N
+(R3s)0-2
+R2S
+(Iabc-1);
+(Iabc-1a);or
+3135436511
+
+--- PAGE 8 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+(R3s)0-2
+(Iabc-1b)
+or a solvate, or pharmaceutically acceptable salt thereof, wherein R-R2s,-R, and R3s are
+as described hereinin claim 1.
+85.
+The compound of any one of claims1 to 74,wherein the compound is of Formula(Iabc-
+la):
+N-R3S
+(R3s)0-2
+(Iabc-1a)
+or a solvate,or pharmaceutically acceptable salt thereof,whereinR3s is as described
+hereininclaiml.
+96.
+The compound of any oneof the-claims1 to&5,being selectedfrom:
+CompoundNo.
+Structure
+0.0
+》
+CH3
+Na
+3136543635V11
+
+--- PAGE 9 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+0.0
+S
+CH3
+H
+Na
+O
+00
+S
+CH
+H
+Na
+CH3
+O0
+CH3
+S
+CH3
+H
+Na
+00
+CH
+N
+CH3
+H
+Na
+CH3
+313654363511
+
+--- PAGE 10 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound-No.
+Strueture
+00
+CH
+S
+H
+Na
+O
+00
+八
+Na
+CH3
+Q
+00
+N-CH3
+Na
+00
+CH
+H
+Na
+CH3
+10
+H
+CH3
+Na
+10
+313654363511
+
+--- PAGE 11 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound No.
+Strueture
+H;C
+O
+0
+S
+11
+CH3
+Na
+.O
+N
+O
+CH
+12
+H
+Na
+D
+O
+S
+13
+H
+Na.
+心
+N-CH3
+14
+H
+CH3
+Na
+CH3
+31354631
+
+--- PAGE 12 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound-No.
+Strueture
+HC
+O
+O
+N
+CH3
+15
+H
+CH3
+Na
+CH3
+16
+S
+H
+Na
+Q
+O
+.0
+17
+Na
+18
+H
+Na
+CH3
+19
+H
+Na
+313654363511
+
+--- PAGE 13 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+O
+20
+Na
+CH3
+O
+O
+0
+N
+CH3
+S
+21
+H
+Na
+O
+O
+S
+HO
+22
+H
+Na
+O
+CH
+23
+H
+Na
+N
+CH3
+13
+313654363511
+
+--- PAGE 14 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+Q
+24
+Na
+N
+CH3
+25
+Na
+00
+26
+Na
+00
+27
+H
+Na
+00
+28
+H
+Na
+00
+29
+N
+H
+N
+313654363511
+
+--- PAGE 15 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound No.
+Strueture
+0
+0.0
+30
+N
+H
+Na
+31
+Na
+00
+32
+H
+Na
+00
+S
+33
+Na
+34
+Na
+00
+35
+N
+H
+Na
+15
+31354631
+
+--- PAGE 16 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+00
+36
+H
+eN
+Q
+37
+Na
+38
+Na
+39
+Na
+40
+Na
+00
+41
+H
+Na
+313654363511
+
+--- PAGE 17 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+00
+S.
+42
+Na
+43
+Na*
+44
+H
+45
+Na*
+OO
+46
+Na
+47
+Na
+313654363511
+
+--- PAGE 18 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound-No.
+Strueture
+0.0
+NH
+48
+Na
+49
+Na
+50
+N
+H
+Na
+51
+52
+Na
+53
+Na
+18
+313654363511
+
+--- PAGE 19 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+55
+H
+Na
+Q
+O
+O
+56
+H
+Na
+O
+57
+N
+H
+Na
+O
+59
+N
+H
+Na
+Q
+60
+Na
+0
+61
+Na
+19
+313654363511
+
+--- PAGE 20 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound No.
+Structure
+62
+Na
+O
+63
+H
+Na
+64
+H
+Na
+H
+65
+Na
+67
+H
+Na
+20
+31354631
+
+--- PAGE 21 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+0.
+68
+H
+Na
+O
+70
+Na
+CI
+O.
+72
+H
+Na&
+.0
+73
+H
+Na
+N
+N
+74
+H
+Na
+21
+313654363511
+
+--- PAGE 22 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound-No.
+Strueture
+D
+O
+75
+H
+Na
+O.
+O
+76
+H
+Na
+77
+Na
+Q
+78
+N
+H
+Na
+OO
+79
+H
+Na
+O
+80
+Na
+22
+313654363511
+
+--- PAGE 23 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+'o
+O
+18
+Na
+82
+H
+Na
+83
+H
+Na
+84
+N
+N
+N
+H
+Na
+85
+H
+Na
+O
+H
+N
+23
+313654363511
+
+--- PAGE 24 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+D
+O
+87
+Na
+O
+S
+88
+NaB
+89
+Na
+0.
+O
+16
+Na
+92
+Na
+CI
+Q
+O
+93
+Na
+24
+313654363511
+
+--- PAGE 25 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Structure
+CI
+94
+Na
+95
+H
+Na
+%
+日
+Na
+6
+N
+98
+N
+H
+Na
+99
+H
+Na
+25
+313654363511
+
+--- PAGE 26 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+100
+H
+eN
+O
+O
+101
+N
+N
+N
+H
+Na
+102
+H
+Na
+103
+Na
+O
+104
+H
+Na
+105
+N
+H
+Na
+26
+313654363511
+
+--- PAGE 27 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Structure
+CI
+O
+O
+106
+H
+Na
+107
+Na
+0
+108
+H
+Na
+D
+109
+H
+PN
+110
+N
+N
+H
+Na
+O
+111
+H
+Na
+27
+313654363511
+
+--- PAGE 28 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Structure
+CI
+O
+112
+Naf
+O
+113
+H
+N
+114
+N
+N
+H
+Na*
+115
+H
+Na*
+O.
+O
+S
+116
+H
+Na
+OO
+117
+H
+Na
+28
+313654363511
+
+--- PAGE 29 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+O
+O.
+118
+N
+H
+Na
+O
+N
+119
+Na"
+O
+O
+O
+120
+N
+H
+Na
+00
+121
+H
+Na
+0
+122
+N
+H
+Na
+00
+123
+N
+N
+H
+Na
+29
+313654363511
+
+--- PAGE 30 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound-No.
+Structure
+O
+0
+S
+124
+N
+N
+Na
+00
+125
+H
+Na
+00
+126
+H
+Na
+O
+127
+H
+Na
+CI
+O
+128
+H
+Na
+O
+00
+O
+129
+S
+H
+Na
+130
+H
+Na*
+30
+313654363511
+
+--- PAGE 31 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound No.
+Structure
+131
+H
+Na*
+O
+0.0
+132
+H
+Na
+00
+O
+133
+H
+Na
+O
+134
+Na
+135
+N
+H
+Na
+O
+136
+N
+H
+Na
+31
+3135436511
+
+--- PAGE 32 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Structure
+00
+137
+H
+Na
+00
+138
+H
+Na
+O
+00
+S
+139
+H
+Na
+140
+H
+Na
+0.0
+141
+H
+Na
+C
+142
+H
+Na
+32
+313654393511
+
+--- PAGE 33 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+O
+00
+S
+143
+H
+Na
+CI
+00
+144
+H
+Na*
+00
+N=N
+145
+H
+Na
+146
+H
+Na
+00
+S
+147
+H
+Na
+Q
+148
+H
+Na
+O
+00
+149
+H
+Na*
+33
+313654363511
+
+--- PAGE 34 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+CompoundNo.
+Strueture
+O
+00
+150
+H
+Na
+151
+Na
+O
+O
+152
+N
+H
+Na
+00
+153
+Na
+O
+00
+154
+H
+Na
+0
+S.
+155
+H
+Na
+34
+313654363511
+
+--- PAGE 35 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Compound-No.
+Structure
+S.
+156
+H
+Na*
+00
+157
+H
+Na
+O
+158
+Na
+O
+N
+S
+159
+H
++N
+.0
+160
+H
+Na*
+161
+Na
+35
+313654363511
+
+--- PAGE 36 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+Compound-No.
+Structure
+162
+H
+Na
+O
+163
+Na*
+164
+Na
+165
+PN
+00
+166
+Na*
+and pharmaceutically acceptablesalts thereof.
+107.A pharmaceutical composition comprising the compound of any one of claims 1 to 96 or
+a pharmaceutically acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier.
+H8.The compound of any one of claims 1 to 96,or the pharmaceutical composition of claim10Z,
+36
+31236543935V11
+
+--- PAGE 37 ---
+Cooley Ref.NODT-004/N01EP (330150-2065)
+for use in inhibiting inflammasome activity; optionally, the inflammasome is NLRP3
+inflammasome, and the activity is in vitro or in vivo.
+129.The compound of any one of claims 1 to 96, or the pharmaceutical composition of claim 107,
+for use in treating or preventing a disease or disorder; preferably wherein the disease or disorder
+is an inflammatory disorder, an autoinflammatory disorder, an autoimmune disorder, a
+neurodegenerative disease, or cancer.
+1310. The compound or pharmaceutical composition for use of claim 11-8or claim 129, wherein
+the disease or disorder is an inflammatory disorder, an autoinflammatory disorder or an
+autoimmune disorder; optionally,the disease or disorder is selected from cryopyrin-associated
+autoinflammatory syndrome (CAPS; e.g., familial cold autoinflammatory syndrome (FCAS),
+Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular
+(CINCA)syndrome/neonatal-onset multisystem inflammatory disease (NOMID)),familial
+Mediterraneanfever (FMF),nonalcoholic fattyliver disease (NAFLD),non-alcoholic
+steatohepatitis (NASH), gout, rheumatoid arthritis, osteoarthritis, Crohn’s disease, chronic
+obstructive pulmonary disease (COPD),chronic kidney disease (CKD),fibrosis,obesity,type 2
+diabetes, multiple sclerosis, dermatological diseases (e.g., acne) and neuroinflammation
+occurring in protein misfolding diseases (e.g.,Prion diseases).
+1411.The compound or pharmaceutical composition for use of claims 11-8or_claim-129,
+wherein disease or disorder is a neurodegenerative disease; optionally, the disease or disorder is
+Parkinson's disease orAlzheimer'sdisease.
+1512. The compound or pharmaceutical composition for use of claims H18or claim 129.
+wherein the disease or disorder is cancer; optionally, the cancer is metastasising cancer,
+gastrointestinal cancer,brain cancer, skin cancer, non-small-cell lung carcinoma, head and neck
+squamouscellcarcinomaorcolorectaladenocarcinoma.
+37
+3136543635V11

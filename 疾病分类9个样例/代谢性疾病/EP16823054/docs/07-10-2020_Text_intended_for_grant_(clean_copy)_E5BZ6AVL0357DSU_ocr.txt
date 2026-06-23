@@ -1,0 +1,4291 @@
+
+--- PAGE 1 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+1 → 2
+WO2017/115205
+PCT/IB2016/057728
+FIELD OF THE INVENTION
+Providedhereinaresubstituted3-azabicyclo[3.1.0]hexanesasketohexokinase
+5compoundstoamammal inneedthereof.
+BACKGROUNDOFTHEINVENTION
+fromdefects ininsulinproduction，insulin action，or both.Two majorforms of diabetes are
+10
+system destroys pancreaticbeta cells,the only cellsin thebody that makethehormone insulin
+usuallybeginswitheitherinsulinresistanceorwhenthereisinsufficientproductionofinsulinto
+15
+maintain an acceptable glucose level.
+AlthoughT2D is most commonly associated with hyperglycemia and insulin resistance,
+other diseases associated with T2Dinclude hepatic insulin resistance，impaired glucose
+hypertension,hyperinsulinemiaandnonalcoholicfattyliverdisease(NAFLD)
+20
+NAFLDis thehepaticmanifestation of metabolicsyndrome,and is a spectrum of hepatic
+conditions encompassing steatosis,non-alcoholic steatohepatitis (NASH),fibrosis,cirrhosis and
+ultimately hepatocellular carcinoma.NAFLD andNASH are considered the primaryfatty liver
+Theseverity of NAFLD/NASH is based on the presence of lipid，inflammatory cell infiltrate
+s
+progresstoNASH,asubstantial portiondo.
+development of NAFLD/NASH (Vos,M.B.,and Lavine,J.E.(2013,Hepatology 57,2525-2531).
+30
+）Schwarz,et al.,(2009),JClinInvest 119,1322-1334),a distinct characteristicofpatients with
+NAFLD (Lambert, J. E.,et al.,(2014), Gastroenterology 146,726-735). Studies in humans have
+demonstrated that short termfructosefeeding causesincreasesin hepatictriglycerides and that
+removal offructoseconsumptioncanreversehepatictriglycerideaccumulation(Schwarz,J.M.,
+Noworolski,et al.,(2015),J ClinEndocrinolMetab100,2434-2442).Moreover,in adolescents
+(Schwarz,J.M.,Noworolski,et al.,(2015)PP07-3:IsocaloricFructoseRestrictionfor10Days
+1
+
+--- PAGE 2 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+2→3
+WO2017/115205
+PCT/IB2016/057728
+ReducesHepaticDeNovoLipogenesisand LiverFatinObeseLatinoandAfricanAmerican
+Children.http://press.endocrine.org.proxy1.athensams.net/doi/abs/10.1210/endo-
+meetings.2015.OABA.6.PP07-3)
+The high prevalence of T2D,obesity and NAFLD/NASH and associated co-morbidities,
+5such as cardiovascular disease and stroke,hasled toincreased desireforbothpreventivecare
+agents thatincreaseinsulinsecretion,impactinsulinaction(thiazolidinediones(TZD),
+biguanides)，alter lipid metabolism(TZD's,fibrates),affect central-feeding behavior,promote
+urinary glucose excretion(SGLT2 inhibitors) and reduce nutrient absorption (lipase inhibitors).
+10InhibitingKHKmetabolismof fructoseoffers a novel alternative to current treatment strategies.
+Ketohexokinase(KHK)istheprincipleenzymeinfructosemetabolismandcatalyzesthe
+15KHKa as evidenced by a much lower Km (Ishimoto, Lanaspa et al.，PNAS 109, 4320-4325,
+kidney and intestines,the primary sites offructose metabolismin the body(Diggle CP，et al.
+(2009) J Histochem Cytochem 57:763-774;Ishimoto,Lanaspa,et al.,PNAS 109,4320-4325,
+2012).Additionally,lossoffunctionmutationshavebeenreported inhumanswithnoadverse
+20
+Amore severeconditioninvolved infructosemetabolism isHereditary Fructose
+Intolerance (HFI,OMIM #229600)which is caused by defects inaldolase B(GENE:ALDOB)
+whichistheenzymeresponsibleforbreakingdownF1Pandisimmediatelydownstreamofthe
+KHK step in the pathway (Bouteldja N,et. al, J. Inherit.Metab.Dis.2010 Apr;33(2):105-12;
+25Tolan,DR,Hum Mutat.1995;6(3):210-8;http://www.omim.org/entry/229600).It is a rare
+F1P,depletion of ATP，andincrease inuric acid，the combinationof whichcauses
+30
+vomiting,severe hypoglycemia, diarrhea, and abdominal distress, leading to long term growth
+defects, liver and kidney damage and potentially death (Ali M et al, J. Med. Genet. 1998
+35
+2
+
+--- PAGE 3 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+3 → 4
+WO2017/115205
+PCT/IB2016/057728
+http://hfinfo.proboards.com.Accessed14December2015).Evenwhentheyappearnon-
+symptomatic, some patients develop NAFLD and kidney disease, which underscores the
+inadequacyofself-imposeddietaryrestrictionastheonlytreatmentoption,andthehighunmet
+medicalneedforthis condition.
+5
+Theactivityofthispathwayincreaseswithhyperglycemia.Inthesestudies，theauthors
+demonstratedthat theKHKnullmicewereprotectedfromglucoseinducedweightgain,insulin
+10
+al.，Nature Comm.4,2434,2013).Therefore,the inhibition of KHK is anticipated to benefit
+involved.
+15associated diseases including diabetes (T1D and/or T2D),idiopathic T1D (Type 1b),latent
+autoimmune diabetes in adults (LADA),early-onset T2D (EOD),youth-onset atypical diabetes
+(YOAD)，maturityonsetdiabetesoftheyoung(MODY)，malnutrition-relateddiabetes,
+glucose tolerance，diabetic neuropathy，diabetic nephropathy，kidney disease(e.g.，acute
+20
+kidney disorder,tubulardysfunction,proinflammatorychanges to theproximaltubules)，diabetic
+retinopathy，adipocyte dysfunction，visceral adipose deposition，obesity，eating disorders,
+total cholesterol,high LDL cholesterol，and low HDL cholesterol),hyperinsulinemia,NAFLD
+(including related diseases such as steatosis,NASH，fibrosis，cirrhosis，and hepatocellular
+25carcinoma),HFl, coronary artery disease,peripheral vascular disease,hypertension,endothelial
+restenosisafterangioplasty,intermittent claudication,post-prandial lipemia,metabolicacidosis,
+ketosis，arthritis，osteoporosis，leftventricularhypertrophy,peripheralarterialdisease,macular
+30
+degeneration,cataract,glomerulosclerosis,chronicrenalfailure,metabolicsyndrome，syndrome
+X,premenstrual syndrome,angina pectoris, thrombosis，atherosclerosis，transient ischemic
+attacks,vascular restenosis,impaired glucose metabolism,conditions of impaired fasting
+plasma glucose,hyperuricemia, gout,erectile dysfunction, skin and connective tissue disorders,
+foot ulcerations,ulcerative colitis，hyper apo B lipoproteinemia，Alzheimer's Disease,
+35 schizophrenia,impaired cognition， inflammatory bowel disease,ulcerative colitis， Crohn's
+disease,and irritablebowelsyndrome.
+3
+
+--- PAGE 4 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+4 → 5
+WO2017/115205
+PCT/IB2016/057728
+DRAWINGS
+Figure1providesthePxRDpatternofcrystallinefreeacidofExample4.
+Figure 2 provides thePXRD pattern of crystalline sodium salt of Example 5.
+Figure3provides structuresof ExamplesfromTable 4.
+5
+DETAILEDDESCRIPTIONOFTHEINVENTION
+Thepresent inventionconcerns compounds ofFormulal
+R1
+(1)
+or a pharmaceuticallysalt thereof,wherein
+10
+Y is N or C-CN;
+Z is N or CH;
+X is N or CR3;
+provided that at least one of Y,Z,or X is N;
+R1 is C3.7cycloalkyl or a 4-to 7-membered heterocyclic moiety,wherein the heterocyclic
+15
+wherein the cycloalkylorheterocyclicmoietyhas0to3substitutuentsindependentlyselected
+from -C1.salkyland -OH,wherein -C13alkyl is substituted with 0to 3 halogen atoms,and
+provided that there is no more than one-OH substituent; or
+N(C1-3alkyl)2,NH(C1-3alkyl),or NH(C3-4Cycloalkyl),wherein each C1.3alkyl is substituted
+20
+with 0 to 1 OH;
+R² is -(L)m-CON(RN)2, -(L)m-SO2Rs, -L-(CH2)nSO2R, -L-(CH2)nCO2H, -L-(CH2)nC(O)RC,
+-L-(CH2)nCONHSO2R", -L-(CH2)nSO2NHCOR", -L-(CH2)nSO2NHCONH2, Or -L-(CH2)ntetrazol-5-
+yl;
+m is 0 or 1;
+25
+n is 0 or 1;
+RN is H or -C1-salkyl;
+R is H or -C1-salkyl;
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+304alkyloxy;
+
+--- PAGE 5 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)*AMENDED*
+95
+R3 is H, halogen, -CN, -C1.salkyl,-OC1-salkyl,-C1.3alkyl substituted with 1 to 3 halogen
+atoms,or-C3-4cycloalkyl; and
+R4 is cyclopropyl, cyclobutyl, or -C1-salkyl substituted with 0 to 5 halogen atoms as
+valency allows.
+5
+Another
+embodimentconcerns compounds of FormulaI，orapharmaceutically
+10
+acceptablesaltthereof,wherein
+Y is N or C-CN;
+Z is N or CH;
+X is CR3;
+provided that at least oneof YorZisN;
+15
+wherein the cycloalkyl or heterocyclic moiety has 0 to 3 substitutuents independently selected
+from-C1-3alkyland-OH,wherein-C13alkyl is substituted with0 to3Fatoms(whereinhalogen
+is F),and provided that there is no more than one-OH substituent;or
+20
+N(C1-3alkyl)2,NH(C1-3alkyl),or NH(C3-4cycloalkyl),wherein each C1-3alkyl is substituted
+with 0 to 1 OH;
+R² is -(L)m-CON(RN)2, -(L)m-SO2Rs, -L-(CH2)nSO2R, -L-(CH2)nCO2H, -L-(CH2)nC(O)RC,
+-L-(CH2)nCONHSO2R", -L-(CH2)nSO2NHCOR", -L-(CH2)nSO2NHCONH2, Or -L-(CH2)ntetrazol-5-
+yl;
+25
+m is 0 or 1;
+n is 0 or 1;
+5
+
+--- PAGE 6 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+6 → 7
+WO 2017/115205
+PCT/IB2016/057728
+RN is H or -C1-salkyl;
+R is H or -C1-salkyl;
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1.
+4alkyloxy;
+R3 is H, halogen, -CN, -C1-salkyl, -OC1.salkyl,-C1.salkyl substituted with 1 to 3 halogen
+atoms,or-C3-4cycloalkyl;and
+R4 is -C1-salkyl substituted with 0 to 5 halogen atoms as valency allows.
+10
+thereof,wherein
+Yis C-CN;
+Z is N;
+X is CR3;
+R1 is C3.7cycloalkyl or a 4- to 7-membered heterocyclic moiety,wherein the heterocyclic
+15
+whereinthecycloalkylorheterocyclicmoietyhas0to3substitutuentsindependentlyselected
+from-C13alkyland-OH,provided that there isnomore than one-OH substituent;
+R² is -(L)m-CON(RN)2, -(L)m-SO2R, -L-(CH2)SO2R, -L-(CH2)nCO2H, -L-(CH2)nC(O)RC,
+-L-(CH2)nCONHSO2R, -L-(CH2)nSONHCOR", or -L-(CH2)ntetrazol-5-yl;
+20
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1salkyl;
+R is H or -C1-salkyl;
+L is CH2, CHF, or CF2;
+25
+4alkyloxy;
+R3 is H, halogen, -CN,-C1-salkyl,-OC1-salkyl,-C1.salkyl substituted with 1 to 3 halogen
+atoms,or-C3-4cycloalkyl;and
+R4 is -C1-salkyl substituted with 0 to 5 halogen atoms as valency allows.
+30
+acceptablesaltthereof,wherein
+Y is N;
+Z is N;
+X is CR3;
+35
+R1 is C3.7cycloalkyl or a 4- to 7-membered heterocyclic moiety,wherein the heterocyclic
+moiety contains 1 to 2 atoms independently selected from nitrogen, oxygen and sulfur, and
+6
+
+--- PAGE 7 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+7→ 8
+WO2017/115205
+PCT/IB2016/057728
+whereinthecycloalkylorheterocyclicmoietyhas0to3substitutuentsindependentlyselected
+from-C1-3alkyl,and-OH,provided that thereisnomorethanone-OHsubstituent;
+R² is -(L)m-CON(RN)2, -(L)m-SO2R, -L-(CH2)nSO2R", -L-(CH2)nCO2H, -L-(CH2)nC(O)RC,
+-L-(CH2)nCONHSO2R, -L-(CH2)nSO2NHCOR", or -L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-salkyl;
+R is H or -C1-salkyl;
+L is CH2,CHF,or CF2;
+10
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+R3 is H, halogen, -CN, -C1-3alkyl, -OC1-3alkyl, -C1-3alkyl substituted with 1 to 3 halogen
+atoms, or-C3-4cycloalkyl; and
+R* is -C1-salkyl substituted with 0 to 5 halogen atoms as valency allows.
+15
+Another embodiment concerns compounds of Formula I，or a pharmaceutically
+acceptable salt thereof,wherein
+Y is N of C-CN;
+Zis N of CH;
+X is CR3;
+20
+provided at least one of Y or Zis N;
+R1 is C3.7cycloalkyl or a 4-to 7-membered heterocyclic moiety,wherein the heterocyclic
+whereinthecycloalkylorheterocyclicmoietyhas0to3substitutuentsindependentlyselected
+from-C1-3alkyl，and -OH,provided that there is no more than one-OH substituent;
+25
+R² is -(L)m-CON(RM)2, -(L)m-SO2R", -L-(CH2)nSO2R", -L-(CH2)nCO2H, -L-(CH2)nC(O)RC,
+-L-(CH2)nCONHSO2R, -L-(CH2)nSONHCOR", or -L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -CH3;
+30
+R is H or -CH3;
+L is CH2,CHF,or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1.
+4alkyloxy;
+R3 is H,-CI,-CH3,-CH2CH3,-O-CH3,cyclopropyl, or CN; and
+35
+R4 is -CF3,-CHF2, Or-CF2CH3.
+
+--- PAGE 8 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+8→9
+WO2017/115205
+PCT/IB2016/057728
+compounds of Formula I, or a pharmaceutically salt thereof, wherein RN is H or -CH3.
+compounds ofFormulaI,orapharmaceutically salt thereof,whereinRis H or-CH3.
+5
+compounds of Formula I,ora pharmaceutically salt thereof,wherein R²is-CHCO2H (n is 0 and
+L is CH2).Another embodiment concerns any other embodiment discussed herein regarding
+compounds of Formula I，or a pharmaceutically salt thereof，wherein R² is -CHzCO2H,
+-CHCO2CH3,Or-CHCO2CH2CH3(n isO,R°is OCHor OCHCHwhenpresent,andL is CH2).
+10
+of Formula I, or a pharmaceutically salt thereof, wherein R² is -CH2CH2CO2H,-CH2CH2CO2CH3,
+or-CHCH2CO2CHCH3(n is 1,Ris OCHorOCH2CH3whenpresent,andLis CH2)
+Anotherembodimentconcernsanyotherembodimentdiscussedhereinregarding
+compounds of Formula I, or a pharmaceutically salt thereof, wherein R² is -(L)m-CON(R?)2.
+OSNO(HO)(O)(HO)-OO(HO)-"OS(HO)--OS"()-
+-L-(CH2)nSO2NHCOR°, or -L-(CH2)ntetrazol-5-yl.
+Another embodiment concernsanyotherembodimentdiscussedhereinregarding
+compounds of Formula I, or a pharmaceutically salt thereof, wherein R² is H,-Cl, -CH3,
+-CH2CH3,-O-CH3,Cyclopropyl,or CN.
+20
+Anotherembodimentconcernsanyotherembodimentdiscussedhereinregarding
+compounds of Formula I, or a pharmaceutically salt thereof, wherein R4 is -CF3，-CHF2，or
+-CF2CH3.
+compounds of Formula I，or a pharmaceutically salt thereof, wherein R' is cyclobutyl (C4
+25
+cycloalkyl)having0to3substitutuentsindependentlyselectedfrom-CHand-OH,provided
+thatthereisnomorethanone-OHsubstituent.
+heterocyclic moiety selected from azetidin-1-yl,pyrrolidin-1-yl, and piperidin-1-yl(Rbeing the 4-
+-CH3and-OH,provided that thereis nomore than one-OH substituent.
+ApreferredembodimentconcernscompoundsofFormulaI,orapharmaceuticallysalt
+thereof, wherein X,R², m,n,R,R,L,R°,R’,and R4have any embodiment described herein,
+wherein R1 is azetidin-1-yl, pyrrolidin-1-yl, and piperidin-1-yl having 0 to 2-CH substituents and
+35having 0 to 1-OH substituent,and whereinYis C-CN and ZisN,orYand Zare each N.
+8
+
+--- PAGE 9 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+9 → 10
+WO2017/115205
+PCT/IB2016/057728
+AnotherpreferredembodimentconcernscompoundsofFormulaI,orapharmaceutically
+salt thereof, wherein X, R², m, n, RN, R, L, R°, R”, and R4 have any embodiment described
+herein, wherein R' is azetidin-1-yl,having 1to 2-CH substituents and having 0 to 1-OH
+substituent,and whereinYis C-CN and ZisN,orYand Zare each N.
+5
+AnotherembodimentconcernscompoundsofFormulaI，orapharmaceuticallysalt
+thereof,whereinY is C-CN and Zis N,orYand Zare each N.
+Anotherembodiment of theinventionconcernscompoundsofFormula I(a)
+R1
+(la)
+10ora pharmaceutically salt thereof,wherein the R² substituent on azabicyclo[3.1.0]hex-6-yl and H
+atoms at the bridge carbons are in the same plane,and whereinX,Y,Z,R²,m,n,R,R,L,R,
+R?,and R4have any embodiment described herein.
+Anotherembodimentof theinventionconcernscompoundsofFormulaI(b)
+R1
+R
+口
+15
+(Ib)
+ora pharmaceutically salt thereof,wherein theR²substituent on azabicyclo[3.1.0]hex-6-yl and H
+atoms at the bridge carbons are in the same plane, and wherein X, Y, Z, R², m, n, R, R, L, R,
+R?,and R4have any embodiment described herein.
+20
+butyl, 2-methyl-propyl, 1, 1-dimethylethyl, pentyl, and hexyl.
+The term"cycloalkyl",as used herein,means a cyclic,monovalent hydrocarbon group of
+formula -CnH(2n-1) containing at least three carbon atoms. Non-limiting examples include
+9
+
+--- PAGE 10 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+10 → 11
+WO2017/115205
+PCT/IB2016/057728
+The term"alkyloxy"，as usedherein,means analkylsubstituent attached through an
+throughacarbonylgroup(-CO-).
+Non-limitingexamplesincludemethoxycarbonyl,
+ethoxycarbonyl,andpropoxycarbonyl.
+The term"alkylcarbonyloxy",as used herein,means an alkyl group attached through a
+carbonyloxygroup(-C(=O)-O-).Representativeexamplesincludemethylcarbonyloxy,
+ethylcarbonyloxy，andtert-butylcarbonyloxy.
+10
+group attached through an alkyloxy group.
+The term “halogen",as used herein,refers to F,Cl,Br,1.
+The term“heterocyclic moiety",as used herein,refers to a cycloalkyl grouphaving 4 to7
+carbon atomsinwhich one ormore of thering methylene groups(-CH2-)hasbeen replaced with
+a group selected from -O-, -S- or-N-, where valency requirments for-N- are satisfied with H or
+15
+5being a pointof attachment.
+Commonabbreviationsused herein:
+ADPisadenosinediphosphate;
+ATPis adenosine triphosphate;
+CDCls is deuterochloroform;
+20
+COEt is ethyl carboxylate;
+DCMisdichloromethane;
+DIPEA is N,N-disopropylethylamine;
+DMF is dimethylformamide;
+DMSO is dimethylsulfoxide;
+25
+EtOAc is ethyl acetate;
+H or h or hr is for hour(s);
+HEPES is 4-(2-hydroxyethyl)-1-piperazine ethanesulfonic acid;
+KCI is potassium chloride;
+Min is for minute(s);
+30
+MgCl is magnesium chloride;
+NaHCOisSodiumbicarbonate;
+Na2SO4is sodium sulfate
+NADH is nicotinamide adenine dinucleotide (reduced form)
+NAD+isnicotinamideadeninedinucleotide(oxidizedform)
+35
+PEP is phosphoenolpyruvate;
+RT orrtisroom temperature;
+10
+
+--- PAGE 11 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)*AMENDED*
+11 → 12
+TCEPistris(2-carboxyethyl)phosphine;
+TFA is trifluoroacetic acid;
+THF is tetrahydrofuran.
+5thereof,wherein each compound is independently selected from any one or more Example
+providedherein.
+OnewayofcarryingouttheinventionistoadministeracompoundofFormula()inthe
+enzyme.Such derivatives are referred to as‘prodrugs'.Further information on the use of
+prodrugsmaybefound in‘Pro-drugsasNovelDeliverySystems'，Vol.14，ACSSymposium
+151987 (Ed. E. B.Roche, American Pharmaceutical Association).Reference can also be made to
+Nature Reviews/Drug Discovery，2008,7，355 and Current Opinion in Drug Discovery and
+Development,2007，10,550
+Prodrugs ，which are herewith disclosed，can,for example,be produced by replacing
+20to those skilled in the art as‘pro-moieties'as described,for example, in‘Design of Prodrugs'by
+H.Bundgaard (Elsevier,1985).
+Thus,a prodrug is(a)an ester or amide derivative ofa
+X
+carboxylicacid ina compound ofFormula(l);(b)an ester,carbonate,carbamate,phosphate or
+ether derivative of a hydroxyl group in a compound of Formula (l);(c) an amide, imine,
+thioester,thiocarbonate,thiocarbamateorsulfidederivativesofathiolgroupinacompound of
+Formula (Il); or (e) an oxime or imine derivative of a carbonyl group in a compound of Formula
+().
+Some specific examples of prodrugs disclosed hereininclude where R2
+1
+invention:
+(i) where the compound of Formula () contains a carboxylic acid functionality
+acid functionality of the compound of Formula (l) is replaced by C1-salkyl(e.g.ethyl) or (C1-8
+35alkyl)C(=O)OCH2-(e.g.tBuC(=O)OCH2-);
+11
+
+--- PAGE 12 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)*AMENDED*
+12 → 13
+(i)where the compound of Formula (l)contains an alcohol functionality(-OH),an
+esterthereof，suchasacompoundwhereinthehydrogenof thealcoholfunctionalityofthe
+compound of Formula (l) is replaced by -CO(C1-salkyl) (e.g. methylcarbonyl) or the alcohol is
+esterifiedwithanaminoacid;
+5
+(ii)where the compoundof Formula (l)contains an alcohol functionality(-OH)，an
+etherthereof，suchasacompoundwhereinthehydrogenof thealcoholfunctionalityofthe
+compound of Formula (I) is replaced by(C1-salkyl)C(=O)OCH2-or-CHOP(=O)(OH)2;
+(iv)where the compound of Formula (l) contains an alcohol functionality (-OH),a
+phosphate thereof,such asa compound wherein thehydrogenof the alcoholfunctionalityof the
+10 compound of Formula (I) is replaced by -P(=O)(OH)2 or -P(=O)(ONa)2 or -P(=O)(O-)2Ca2+;
+asthecasemaybe,oneorbothhydrogensoftheaminofunctionalityof thecompoundof
+15withanaminoacid;
+(vi)where the compound ofFormula (l)contains a primary or secondary amino
+functionality(-NH2or-NHRwhereR≠H),an amine thereof,forexample,a compound wherein,
+as the casemaybe,one or both hydrogens of the aminofunctionality of the compound of
+Formula (I) is/are replaced by-CH2OP(=O)(OH)2.
+20
+Certain compounds of Formula(l) may themselves act asprodrugsof other compounds
+form of a prodrug.In certain circumstances,a prodrug of a compound of Formula(l)may be
+created by internally linking two functional groups in a compound of Formula (l), for instance by
+formingalactone.
+25
+invention,”“compound(s)of the present invention,”“the invention,”and“compound ofFormula
+1.”Such terms are used interchangeably.Furthermore,it is intended that the embodiments
+discussedhereinwithreferencetoFormula|also concern compounds of FormulaI(a)or
+30including hydrates，solvates,clathrates，stereoisomers
+crystalline (including co-crystals) and non-
+crystalline forms, isomorphs,polymorphs，and tautomers thereof. Forexample,the
+compoundsof theinvention，orpharmaceuticallyacceptablesalts thereof,mayexist in
+have a well-defined stoichiometry independent of humidity.When,however,the solvent or
+35waterisweaklybound,as in channel solvates and hygroscopic compounds,the water/solvent
+12
+
+--- PAGE 13 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)*AMENDED*
+13 →14
+content will be dependent on humidity and drying conditions. In such cases,non-stoichiometry
+will bethenorm.
+isolated site,channel, or metal-ion coordinated hydrates-see Polymorphism in Pharmaceutical
+5SolidsbyK.R.Morris(Ed.H.G.Brittain,Marcel Dekker,1995).Isolated site hydrates are ones
+inwhichthe watermolecules areisolated fromdirect contact witheachother byintervening
+organic molecules.In channelhydrates,the water molecules lie inlattice channels where they
+arenexttootherwatermolecules.Inmetal-ioncoordinatedhydrates,thewater moleculesare
+bondedtothemetalion.
+10
+Whenthesolventor wateristightlybound，thecomplexmayhavea well-defined
+stoichiometryindependentofhumidity.When，however，thesolventorwaterisweaklybound,
+dependent onhumidity and drying conditions.In such cases,non-stoichiometry willbe the norm.
+Alsoincludedwithinthescopeof theinventionaremulti-componentcomplexes(other
+15than salts and solvates) wherein the drug and at least one other component are present in
+stoichiometricor non-stoichiometricamounts.Complexesof thistypeinclude clathrates(drug-
+complexesofneutralmolecularconstituentswhichareboundtogetherthroughnon-covalent
+20
+Zaworotko(2004).For a general review of multi-component complexes,see JPharm Sci,64
+(8),1269-1288,byHaleblian (August 1975).
+The compounds of the invention may containasymmetric or chiral centers,and,
+25therefore，existindifferent stereoisomericforms.Unlessspecifiedotherwise,itisintended that
+allstereoisomericformsofthecompoundsoftheinventionaswellasmixtures thereof,including
+racemicmixtures,form part of the present invention.In addition,the inventionembraces all
+geometricisomers.Forexample,ifacompoundoftheinventionincorporatesa
+double bond ora fused ring,both the cis-and trans-forms,aswellas mixtures,areembraced
+30within thescope of theinvention.
+basisoftheirphysicalchemicaldifferencesbymethodswellknownto thoseskilledintheart,
+35
+s
+13
+
+--- PAGE 14 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+14 → 15
+WO2017/115205
+PCT/IB2016/057728
+diastereoisomerstothecorrespondingpureenantiomers.Enantiomerscanalsobeseparated
+byuseofachiral HPLCcolumn.Alternatively,thespecificstereoisomersmaybesynthesized
+by using an optically active starting material, by asymmetric synthesis using optically active
+reagents, substrates,catalysts or solvents,orby converting one stereoisomerinto the other by
+5asymmetrictransformation.
+Where the compounds of theinventionpossess one ormore stereogeniccenters and no
+intended toencompassallformsof thecompound,includingtheracemicform.Wherethe
+compoundsof theinventionpossesstwoormorestereogeniccentersandtheabsoluteor
+10
+0relativestereochemistryisgiveninthename,thedesignationsRandSreferrespectivelyto
+eachstereogenic center inascending numerical order (1，2，3,etc.）according to the
+conventional IUPACnumberschemesforeachmolecule.Stereogeniccentersofmolecules
+mayberepresented by multiple,alternate combinations of solid and dashed wedges.Many
+Examples provided herein may include a 3.1.0 ring system with meso stereochemistry as
+innamingExamplesandintermediates,andutilizingChemBioDrawUltra14.0.0.117and/or
+ACD/NameSoftwarev12.0.It shouldbenoted thatbondsmaybewedgedordashedwhile
+20between the bond from the core moiety and R', where the core moiety is pyridinyl, pyrimidinyl,
+ortriazinyldependingonthedefinitionsofX,Y，andZ.
+In anotherembodiment,theinventionprovides a pharmaceutical composition comprising
+embodiments described herein,in admixture with at least one pharmaceutically acceptable
+25excipient.
+Thepresent inventionalsoprovides anyoneorcombinationof:
+a methodof treatingadiseaseforwhichaninhibitorofKHKis indicated,inasubject in
+30
+the manufactureof amedicament for treating a diseasefor whichaninhibitor of KHK is
+indicated;
+medicament;
+35
+acompoundofFormulaI,orapharmaceuticallyacceptablesaltthereof，forusein the
+treatmentofadiseaseforwhichaninhibitorofKHKisindicated;
+14
+
+--- PAGE 15 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+15 → 16
+WO2017/115205
+PCT/IB2016/057728
+apharmaceuticalcompositionfor the treatmentofadiseaseforwhich aninhibitorof
+KHK is indicated, comprising a compound of Formula I, or a pharmaceutically acceptable salt
+5thereof.
+thatatleastonecompoundofFormulaI，orapharmaceuticallyacceptablesalt thereof，is
+10
+disease)selected fromany one or more of the following:T1D，T2D,idiopathic T1D,LADA,
+EOD,YOAD,MODY,malnutrition-related diabetes,gestational diabetes,hyperglycemia,insulin
+resistance,hepaticinsulinresistance,impaired glucosetolerance，diabeticneuropathy,diabetic
+nephropathy，kidneydisease，acutekidneydisorder,tubular dysfunction，proinflammatory
+15changes to the proximal tubules,diabetic retinopathy,adipocyte dysfunction,visceral adipose
+hypertriglyceridemia,increased total cholesterol,high LDL cholesterol,low HDL cholesterol,
+hyperinsulinemia,NAFLD，steatosis,NASH,fibrosis,cirrhosis,hepatocellular carcinoma，HFI,
+coronary arterydisease，peripheral vascular disease,hypertension,endothelialdysfunction,
+20
+impaired vascular compliance，congestive heart failure，myocardial infarction，stroke,
+hemorrhagic stroke，ischemic stroke,pulmonary hypertension，restenosis after angioplasty,
+intermittent claudication，post-prandial lipemia，metabolic acidosis,ketosis，arthritis,
+osteoporosis,left ventricular hypertrophy，peripheral arterial disease，macular degeneration,
+cataract,glomerulosclerosis,chronic renal failure，metabolic syndrome，syndrome X,
+25
+premenstrual syndrome, angina pectoris, thrombosis, atherosclerosis, transient ischemic
+plasma glucose,hyperuricemia,gout,erectile dysfunction,skinandconnectivetissuedisorders,
+foot ulcerations，ulcerative colitis，hyper apo B lipoproteinemia，Alzheimer's Disease,
+schizophrenia，impaired cognition，inflammatory bowel disease，ulcerative colitis，Crohn's
+30disease,and irritable bowel syndrome.
+In another embodiment,the inventionprovides a method of treatinga diseaseselected
+from any one or combination of the following:T1D,T2D, insulin resistance，kidney disease,
+acutekidneydisorder，tubular dysfunction,proinflammatorychanges totheproximal tubules,
+adipocyte dysfunction,visceral adipose deposition，obesity，eating disorders，excessive sugar
+cholesterol，low HDL cholesterol，NAFLD,steatosis，NASH,fibrosis,cirrhosis，hepatocellular
+15
+
+--- PAGE 16 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+16 → 17
+WO2017/115205
+PCT/IB2016/057728
+carcinoma,HFl,hypertension,endothelial dysfunction,metabolicsyndrome,hyperuricemia,and
+gout.
+FormulaI,orapharmaceuticallyacceptablesaltthereof,asdefinedinanyoftheembodiments
+In anotherembodiment, theinvention provides a pharmaceutical composition comprising
+embodimentsdescribedherein，inadmixturewithatleastonepharmaceuticallyacceptable
+excipient.
+10
+In anotherembodiment,theinventionprovides a pharmaceuticalcompositioncomprising
+a compoundofFormulaI,orapharmaceuticallyacceptablesalt thereof,asdefined inanyofthe
+herein.
+Thephrase“therapeuticallyeffectiveamount”meansanamountofacompoundof the
+15invention that (i) treats or prevents the particular disease,(ii)attenuates,ameliorates,or
+Theterm“mammal”referstowarmblooded animals,includinghumans(maleorfemale)
+20mice,rats,gerbils,cattle,goats, sheep,monkeys,and chimpanzees.
+Theterm"patient”isanalternativereferenceformammal.
+The phrase “pharmaceutically acceptable”indicates that the substance or composition
+must be compatible chemically and/or toxicologically,with the otheringredients comprising a
+formulation,and/orthemammalbeingtreatedtherewith.
+25
+andpalliativetreatment,i.e.relieve,alleviate,orslowtheprogressionofthepatient'sdiseaseor
+Thepresent invention includes allpharmaceutically acceptable isotopically-labelled
+30atomic number,but anatomic mass ormass number different from the atomic mass or mass
+numberusuallyfoundinnature.
+Examplesofisotopessuitableforinclusioninthecompoundsoftheinventioninclude
+isotopes of hydrogen, such as 2H and °H, carbon, such as 11c, 13C and 14C, chlorine, such as
+36CI, fluorine, such as 18F, iodine, such as 1231 and 1251, nitrogen, such as 13N and 15N, oxygen,
+35 such as 15o, 170 and 180
+16
+
+--- PAGE 17 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+17 → 18
+WO 2017/115205
+PCT/IB2016/057728
+Certainisotopically-labelledcompoundsofFormulaI,forexample,thoseincorporating a
+radioactive isotopes tritium， i.e.H,and carbon-14, i.e.14C,are particularly useful for this
+5
+Substitution with heavier isotopes such as deuterium，i.e. ²H，may afford certain
+half-lifeorreduced dosagerequirements,andhence maybepreferred insome circumstances.
+Substitution with positron emitting isotopes, such as11c, 18F,15O and 13N, can be useful
+inPositron EmissionTomography(PET) studiesforexamining substratereceptor occupancy.
+10
+techniquesknowntothoseskilledintheartorbyprocessesanalogoustothosedescribed inthe
+accompanyingExamples andPreparationsusinganappropriate isotopically-labelledreagents
+inplaceof the non-labelledreagent previously employed.
+COMBINATIONAGENTS
+15
+(eitherinthesamedosageformorinseparatedosageforms)orsequentially.
+The administrationoftwoor morecompounds“incombination”means that the two
+20
+at the same point in time but as separate dosage forms at the same or different site of
+25administration.
+In anotherembodiment,the compounds of thisinvention areco-administered with any
+administeredtoamammalinatherapeuticallyeffectiveamounttotreatthediseasesdescribed
+herein.
+30
+administration,”and"administered simultaneously”mean that the compounds areadministered
+in combination.
+In anotherembodiment of the present invention,a compound of FormulaI maybe co-
+35consisting of gut-selective MTP inhibitors(e.g.,dirlotapide,mitratapide and implitapide,R56918
+(CAS No. 403987 and CAS No. 913541-47-6)), cholecystokinin-A (CCK-A) agonists (e.g.,N-
+17
+
+--- PAGE 18 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+18 →19
+WO2017/115205
+PCT/IB2016/057728
+described in US 6,818,658), lipase inhibitor (e.g.,Cetilistat),PYY3-36 (as used herein “PYY3-36"
+5
+includes analogs, such as peglated PYY3-36 e.g., those described in US Publication
+2006/0178501), opioid antagonists (e.g., naltrexone), the combination of naltrexone with
+buproprion，oleoyl-estrone (CAS No.180003-17-2)，obinepitide (TM30338)，pramlintide
+(Symlin?)，tesofensine(NS233o)，leptin，liraglutide，bromocriptine，lipase inhibitors(such as
+tetrahydrolipstatin，i.e.orlistat)，exenatide(Byetta?),AOD-9604(CAS No.221231-10-3)and
+10
+sibutramine.
+1) inhibitors, stearoyl-CoA desaturase-1(SCD-1) inhibitor,monoamine reuptake inhibitors (such
+bromocriptine)，melanocyte-stimulating hormone analogs, melanin concentrating hormone
+15
+agents (such as a bombesin agonist),neuropeptide-Y antagonists (e.g.,NPY Y5 antagonists),
+thyromimetic agents,dehydroepiandrosterone or an analog thereof，glucocorticoidagonists or
+20& Gamble Company, Cincinnati, OH),human agouti-related protein (AGRP) inhibitors, ghrelin
+inhibitors (e.g.,gut-selective MTP inhibitors)，orexin antagonist, the combination of naltrexone
+withbuproprionandthelike.
+In another embodiment of the present invention, a compound of Formula I may be co-
+group consisting of an acetyl-CoA carboxylase-(ACC) inhibitor (e.g.，those described in
+WO2009144554,WO2003072197，WO2009144555andWO2008065508)，adiacylglycerolO-
+acyltransferase 1(DGAT-1) inhibitor(e.g.,those described in WO09016462 orWO2010086820,
+AZD7687 or LCQ908),monoacylglycerol O-acyltransferase inhibitors，a phosphodiesterase
+30
+(PDE)-10 inhibitor,an AMPK activator, a sulfonylurea (e.g.，acetohexamide, chlorpropamide,
+diabinese，glibenclamide，glipizide，glyburide，glimepiride，gliclazide，glipentide，gliquidone,
+glisolamide, tolazamide，and tolbutamide), ameglitinide， an a-amylase inhibitor (e.g.,
+tendamistat, trestatin and AL-3688),an a-glucoside hydrolase inhibitor (e.g.,acarbose),an α-
+35and salbostatin),a PPARy agonist (e.g.,balaglitazone,ciglitazone, darglitazone,englitazone,
+isaglitazone,pioglitazone and rosiglitazone),a PPAR a/y agonist(e.g.,CLX-0940,GW-1536,
+18
+
+--- PAGE 19 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+19 → 20
+WO2017/115205
+PCT/IB2016/057728
+GW-1929, GW-2433,KRP-297,L-796449,LR-90,MK-0767，SB-219994,and saroglitazar)，a
+(Victoza?)，albiglutide，exenatide(Byetta?,Bydureon?),，albiglutide,lixisenatide,dulaglutide，
+5
+trodusquemine, hyrtiosal extract, and compounds disclosed by Zhang, S., et al.,Drug Discovery
+Today,12(9/10),373-381 (2007), SIRT-1 activator (e.g.,resveratrol， GSK2245840 or
+10
+(JNK)inhibitor,glucokinaseactivators(GKa)(e.g.，thoseinWO2010103437，WO2010103438
+WO2010013161，WO2007122482，TTP-399，TTP-355,TTP-547，AZD1656，ARRY403，MK-
+0599，TAK-329,AZD5658 or GKM-001),insulin and insulin analogues thereof，an insulin
+mimetic,a glycogen phosphorylase inhibitor (e.g. GSK1362885),a VPAC2 receptor agonist,
+15SGLT2 inhibitors (e.g.,those described in E.C.Chao et al.Nature Reviews Drug Discovery 9,
+ASP-1941, THR1474, TS-071, ISIS388626 and LX4211 as well as those in WO2010023594), a
+glucagon receptor modulator such as those described inDemong,D.E.et al.Annual Reports in
+Medicinal Chemistry 2008, 43, 119-137;GPR119 modulators (e.g.,particularly agonists, such
+20as those described inWO2010140092,WO2010128425，WO2010128414，WO2010106457,
+Jones，R.M.et al.in MedicinalChemistry2009,44，149-170(e.g.MBX-2982,GSK1292263,
+APD597 and PSN821)),FGF21 derivatives or analogs(e.g.,those described inKharitonenkov,
+termed GPBAR1) receptor modulators (e.g.,and INT777 and agonists,such as those
+25described in Zhong,M., Current Topics in Medicinal Chemistry, 2010, 10(4), 386-396), GPR40
+agonists(e.g.，thosedescribedinMedina,J.C.，AnnualReportsinMedicina/Chemistry，2008,
+43,75-85,includingbutnot limited toTAK-875,GPR120modulators,particularlyagonists,high
+affinitynicotinicacidreceptor(HM74A)activators,andSGLT1inhibitors,suchasGSK1614235(,
+30
+）35throughpage30,line19)，inhibitors ormodulatorsof carnitinepalmitoyltransferase
+enzymes，inhibitorsoffructose1,6-diphosphatase,inhibitorsofaldosereductase,
+mineralocorticoidreceptor inhibitors，inhibitors of TORC2,inhibitors of CCR2 and/or CCR5,
+inhibitors of serine palmitoyl transferase,modulators of GPR81，GPR39,GPR43,GPR41,
+35GPR105,Kv1.3，retinol binding protein 4,glucocorticoid receptor,somatostatin receptors(e.g.
+SSTR1,SSTR2,SSTR3andSSTR5),inhibitors ormodulatorsofPDHK2orPDHK4,inhibitors
+19
+
+--- PAGE 20 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+20 → 21
+WO2017/115205
+PCT/IB2016/057728
+of MAP4K4,modulators of IL1familyincluding IL1beta,modulators of RXRalpha，suitable anti-
+Pat, 2010, 20(12), 1627-51.
+Inanotherembodimentof thepresent invention,acompoundofFormulaImaybeco-
+5administered with agents typically used by those with diabetes,e.g.，a thyroid hormone(like
+agents to treat any type of depression (e.g.,fluoxetine, sertraline，paroxetine, escitalopram,
+citalopram，duloxetine，levomilnacipran，venlafaxine，desvenlafaxine.Bupropion，tricyclic
+antidepressants，including imipramine,nortriptyline，protriptyline， amitriptyline, doxepin,
+10
+trimipramine,anddesipramine).
+administeredwitha cholesterol/lipidmodulating agent,where the cholesterollipid modulating
+agentisselectedfrom thegroupconsisting ofHMG-CoAreductaseinhibitors(e.g.,pravastatin,
+15nisbastatin)and ZD-4522 (a.k.a.rosuvastatin,or atavastatin or visastatin));HMG-CoA
+inhibitor;asqualenecyclaseinhibitor;acombinedsqualeneepoxidase/squalenecyclase
+20
+lipooxygenaseinhibitors;cholesterolabsorptioninhibitors;cholesterylestertransferprotein
+modulators.
+Inanotherembodiment,acompoundofFormula|maybeco-administeredwithagents
+for the treatment of NASH and/orNAFLD，such as Obeticholic Acid (OCA,Intercept),GFT505
+25(elafibranor), caspase inhibitors (e.g. emricasan)， glutathione transferase inducers (e.g.
+oltipraz)，adenosylmethioninedecarboxylaseinhibitors(e.g.SAMe)，fatty-acid/bile-acid
+(BMS-986036),CCR2/CCR5 dual receptor antagonist (e.g.cenicriviroc or TAK652),Galectin-3
+30
+0lipoxygenase inhibitor (e.g.tipelukast), siRNA against HSP 47 (e.g.ND-L02-s0201), Orlistat,
+TZDs and other insulin sensitizing agents,Metformin, Omega-3-acid ethyl esters (e.g. Lovaza),
+Fibrates,HMG CoA-reductase Inhibitors，Ezetimibe，Probucol， Ursodeoxycholic acid，TGR5
+35SGLT2 Inhibitors,Phentermine,Topiramate,Incretin (GLP and GIP) analogs and Angiotensin-
+receptor blockers.
+20
+
+--- PAGE 21 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+21 → 22
+WO2017/115205
+PCT/IB2016/057728
+anti-platelet or platelet inhibitory agents, thrombin inhibitors, thrombolytic or fibrinolytic agents,
+cardiac glycosides, diruetics,mineralocorticoid receptor antagonists, NO donating agents such
+ 5 as organonitrates, NO promoting agents such as phosphodiesterase inhibitors, cholesterol/lipid
+anxiety agents,anti-proliferative agents，anti-tumor agents，anti-ulcer andgastroesophageal
+10
+(including thyroid hormone receptor antagonist), anti-infective agents, anti-viral agents, anti-
+bacterialagents,andanti-fungalagents.
+Agents usedin anICUsetting areincluded，for example，dobutamine，dopamine，
+epinephrine,nitroglycerin,nitroprussideetc.
+Combinationagentsusefulfortreatingvasculitisareincluded,forexample，azathioprine，
+15cyclophosphamide,mycophenolate,mofetil,rituximabetc.
+Inanother embodiment,thepresent inventionprovidesacombinationwhereinthe
+ExemplaryfactorXainhibitorsincludeapixabanandrivaroxaban.Examplesofsuitableanti-
+20
+coagulantsforuseincombinationwiththecompoundsoftheinventionincludewarfarin,
+syntheticpentasaccharide,andheparins(e.g.,unfractionedandlowmolecularweightheparins
+suchasenoxaparinanddalteparin)
+25granular secretion of platelets.Agents include, but are not limited to, the various known
+indomethacin，mefenamate， droxicam， diclofenac， sulfinpyrazone，piroxicam， and
+acidorASA)andCOX-2inhibitorssuchasCELEBREXorpiroxicamarepreferred.Other
+30
+abciximab), thromboxane-A2-receptor antagonists (e.g.,ifetroban), thromboxane-A2-synthetase
+salts orprodrugs thereof.
+P2Y1 and P2Y12, with P2Y12 being even more preferred.Preferred P2Y12 receptor
+21
+
+--- PAGE 22 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+22 → 23
+WO2017/115205
+PCT/IB2016/057728
+intestinal tract inuse.
+5
+oftheserineproteasethrombin.Byinhibitingthrombin,variousthrombin-mediatedprocesses,
+and/orthegranularsecretionofplasminogenactivatorinhibitor-1and/orserotonin)and/orfibrin
+formationaredisrupted.Anumberofthrombininhibitorsareknowntooneofskillintheartand
+10
+0theseinhibitorsarecontemplatedtobeused incombinationwiththepresentcompounds.Such
+inhibitors include，but are not limited to,argatroban，boroarginine derivatives,boropeptides
+dabigatran,heparins(unfractionated and separately lowmolecularweight),hirudin,argatroban,
+BoroargininederivativesandboropeptidesincludeN-acetylandpeptidederivativesofboronic
+15 acid, such as C-terminal alpha-aminoboronic acid derivatives of lysine, ornithine,arginine,
+herein,includessuitablederivativesoranalogsofhirudin,referredtohereinashirulogs,suchas
+disulfatohirudin.The term thrombolytics orfibrinolytic agents (or thrombolytics or fibrinolytics),
+20
+inhibitors (i.e.，inactivators of tissue plasminogen activator inhibitors)，alpha2-antiplasmin
+inhibitors,andanisoylatedplasminogenstreptokinaseactivator complex,including
+pharmaceuticallyacceptablesalts orprodrugs thereof.The termanistreplase,asusedherein,
+in EP028,489,the disclosure ofwhichishereby incorporated hereinbyreferenceherein.The
+termurokinase,asused herein,isintendedtodenotebothdualand singlechainurokinase,the
+Non-limitingexamplesofsuitableanti-arrythmicagentsinclude:ClassIagents(suchas
+30
+as ditiazem and verapamil); K+ channel openers such as lAch inhibitors, and IKur inhibitors
+(e.g.,compounds such as those disclosed inWO01/40231).
+Thecompoundsof the inventionmaybeused incombinationwithantihypertensive
+35a
+according to standard assays (e.g.,blood pressure measurements).Examples of suitable anti-
+22
+
+--- PAGE 23 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+23 → 24
+WO2017/115205
+PCT/IB2016/057728
+hypertensiveagentsinclude:alphaadrenergicblockers;betaadrenergicblockers;calcium
+channel blockers (e.g., ditiazem, verapamil, nifedipine and amlodipine); vasodilators (e.g.,
+hydralazine),  diruetics (e.g., chlorothiazide，  hydrochlorothiazide,  flumethiazide,
+hydroflumethiazide，bendroflumethiazide，methylchlorothiazide， trichloromethiazide,
+5
+musolimine，bumetanide，triamtrenene，amiloride，spironolactone):renin inhibitors;ACE
+inhibitors (e.g.，captopril,zofenopril,fosinopril,enalapril,ceranopril,cilazopril, delapril, pentopril,
+quinapril, ramipril, lisinopril); AT-1 receptor antagonists (e.g., losartan, irbesartan, valsartan); ET
+receptor antagonists (e.g.,sitaxsentan,atrasentan and compounds disclosed in U.S.Patent
+10
+0Nos. 5,612,359 and 6,043,265); Dual ET/All antagonist (e.g., compounds disclosed in WO
+00/01389);neutralendopeptidase(NEP)inhibitors;vasopeptidaseinhibitors(dualNEP-ACE
+verapamil,nifedipineandamlodipineandmybefradil.
+15
+Inanotherembodiment,aFormula|compoundmaybeco-administeredwithoneor
+more diuretics.Examples ofsuitablediureticsinclude(a)loopdiureticssuchasfurosemide
+(such as LASIXTM),torsemide (such as DEMADEXTM),bemetanide (such as BUMEXTM),and
+ethacrynicacid(suchas EDECRiNtM);(b)thiazide-typediuretics suchas chlorothiazide(such
+20
+as DIURILTM，ESIDRIXTMor HYDRODIURILTM),hydrochlorothiazide(such asMICROZIDETM or
+ORETICTM)，benzthiazide，hydroflumethiazide(such as SALURONTM)，bendroflumethiazide,
+methychlorthiazide，polythiazide，trichlormethiazide，andindapamide(suchasLOZOLtM);(c)
+phthalimidine-type diuretics such as chlorthalidone (such as HYGROTONTM),and metolazone
+(such as ZAROXOLYNTM);(d) quinazoline-type diuretics such as quinethazone; and (e)
+as MIDAMORTM or MODURETICTM).
+diuretic.In stillanother embodiment, the loop diuretic is selected from furosemide and
+torsemide.In still another embodiment,one or more compounds of Formula|may be co-
+30administered with furosemide.In still another embodiment,one or more compounds of Formula
+releaseformoftorsemide.
+thiazide-typediuretic.Instillanotherembodiment,thethiazide-typediureticisselectedfromthe
+35group consisting of chlorothiazide and hydrochlorothiazide.In still another embodiment,one or
+more compoundsofFormula|maybeco-administeredwithchlorothiazide.Instillanother
+23
+
+--- PAGE 24 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+24 → 25
+WO 2017/115205
+PCT/IB2016/057728
+embodiment,oneormorecompoundsofFormulaImaybeco-administeredwith
+hydrochlorothiazide.
+Inanotherembodiment,oneormorecompoundsofFormulaImaybeco-administered
+withaphthalimidine-typediuretic.Instillanotherembodiment,thephthalimidine-typediureticis
+5chlorthalidone.
+eplerenone.
+cilostazol);and PDEVinhibitors (such as sildenafil).
+10
+Those skilled in the art will recognize that the compounds of thisinventionmay alsobe
+stenting，drug elutingstents,stemcelltherapy and medicaldevices suchasimplanted
+pacemakers,defibrillators,or cardiacresynchronization therapy.
+Inanotherembodiment，theinventionprovidescombinationtherapieswhereinthe
+for thetreatmentofthediseases,conditionsand/or disorders describedherein.Therefore,
+methodsoftreatmentthatincludeadministeringcompoundsoftheinventionincombinationwith
+otherpharmaceuticalagentsarealsoprovided
+AdministrationandDosing
+20
+Typically，acompoundoftheinventionisadministeredinanamounteffectivetotreata
+25using preclinical and clinical approaches familiar to the medicinal arts.
+Thecompoundsoftheinventionmaybeadministeredorally.Oraladministrationmay
+sublingual administrationmaybe employed by which the compound enters thebloodstream
+directlyfrom the mouth.
+30
+Inanotherembodiment，the compounds of the inventionmay alsobe administered
+directlyinto the bloodstream,into muscle，or into aninternalorgan.Suitable means for
+intraventricular，intraurethral,intrasternal，intracranial,intramuscular andsubcutaneous.
+35needle-freeinjectors and infusiontechniques.
+24
+
+--- PAGE 25 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+25 → 26
+WO2017/115205
+PCT/IB2016/057728
+Inanotherembodiment,thecompoundsoftheinventionmayalsobeadministered
+topicallyto the skinor mucosa,that is,dermally ortransdermally.In another embodiment, the
+compoundsoftheinventioncanalsobeadministeredintranasallyorbyinhalation.Inanother
+embodiment,the compounds of the invention may be administered rectally or vaginally.In
+5another embodiment,the compounds of theinventionmay alsobe administered directlyto the
+eyeorear.
+The dosageregimen for the compounds and/or compositions containing the compounds
+is based onavariety of factors,including the type,age,weight,sexand medicalcondition of the
+patient;theseverityofthecondition;therouteofadministration;and theactivityoftheparticular
+10
+compound employed.Thus the dosage regimen may vary widely. Dosage levels of the order
+from about 0.01 mg to about 100 mg per kilogram of body weight per day are useful in the
+treatmentof theabove-indicatedconditions.Inoneembodiment,thetotaldailydoseofa
+compoundof theinvention(administered insingleordivideddoses)istypicallyfromabout0.01
+15from about 0.1 to about 50 mg/kg, and in another embodiment, from about 0.5 to about 30
+Dosageunitcompositionsmaycontainsuchamountsorsubmultiplesthereoftomakeupthe
+daily dose.In many instances,the administration of the compound will berepeated a plurality of
+20
+times in a day (typically no greater than4 times).Multiple dosesper day typicallymaybeused
+toincreasethetotaldailydose,ifdesired.
+For oral administration，the compositions may be provided in the form of tablets
+200,250 and 500milligrams of the active ingredient for the symptomatic adjustment of the
+25dosage to the patient. A medicament typically contains from about 0.01 mg to about 500 mg of
+theactiveingredient,orinanotherembodiment,fromabout 1mgtoabout 100mgofactive
+ingredient.Intravenously,doses may range from about 0.01 to about 10 mg/kg/minute during a
+constantrateinfusion.
+Suitablesubjectsaccordingtothepresentinventionincludemammaliansubjects.
+30Mammals according to the invention include canine，feline，bovine，caprine，equine，ovine,
+porcine,rodents,lagomorphs,primates,and thelike,and encompassmammals inutero.In one
+embodiment,humans are suitable subjects.Human subjects may be of either gender and at any
+stageofdevelopment.
+PharmaceuticalCompositions
+35
+For the treatment of the diseases referred toherein, the compounds of the invention may
+be administered as compound per se.Alternatively,pharmaceutically acceptable salts are
+25
+
+--- PAGE 26 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+26 → 27
+WO 2017/115205
+PCT/IB2016/057728
+theparentcompound.
+formulatedwiththe compoundas aunit-dose composition,forexample,a tablet,which can
+containfrom0.05%to95%byweightof theactivecompounds.Acompoundoftheinvention
+activesubstancescanalsobepresent.
+10
+Thecompoundsof theinventionmaybe administeredby anysuitableroute,preferably
+intheformofapharmaceuticalcompositionadaptedtosucharoute,and inadoseeffectivefor
+the treatment intended.The active compounds and compositions，for example，may be
+administered orally,rectally,parenterally,or topically.
+Oral administrationofasolid doseformmaybe,forexample,presented indiscreteunits,
+predeterminedamountofatleastonecompoundofthepresentinvention.Inanother
+embodiment,theoraladministrationmaybeinapowderorgranuleform.Inanother
+20
+tablets,and pills,the dosage forms also may comprise buffering agents or may be prepared
+withentericcoatings.
+In another embodiment,oral administration maybeina liquid doseform.Liquid dosage
+forms for oral administration include，for example，pharmaceutically acceptable emulsions,
+25 solutions, suspensions, syrups, and elixirs containing inert diluents commonly used in the art
+"Parenteral administration" includes，for example，subcutaneous injections,intravenous
+30
+injections， intraperitoneally， intramuscular injections, intrasternal injections, and infusion.
+Injectable preparations (i.e.,sterile injectable aqueous or oleaginous suspensions)may be
+formulated according to the known art using suitable dispersing,wetting agents，and/or
+suspending agents.
+In another embodiment,the present invention comprises a topical dose form."Topical
+35administration"includes,for example，transdermaladministration，such as via transdermal
+26
+
+--- PAGE 27 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+27 → 28
+WO 2017/115205
+PCT/IB2016/057728
+administration.Compositions for topical administration also include，for example，topical gels,
+absorptionorpenetrationoftheactiveingredientthroughtheskinorotheraffectedareas.When
+5
+accomplished using apatch either of thereservoir andporous membrane type or of a solid
+creams,ointments,dusting powders，dressings,foams，films，skinpatches,wafers,implants
+s
+include alcohol,water,mineral oil，liquid petrolatum，white petrolatum，glycerin，polyethylene
+10
+C.Finnin and T.M.Morgan,J.Pharm.Sci.,vol.88,pp.955-958,1999.
+Formulations suitable for topical administration to the eye include，for example，eye
+typical formulation suitable for ocular or aural administration may be in the form of drops of a
+15micronized suspension or solution in isotonic, pH-adjusted, sterile saline. Other formulations
+suitableforocularandauraladministrationincludeointments,biodegradable(i.e.，absorbable
+particulateorvesicularsystems,suchasniosomes orliposomes.Apolymersuchascrossed
+20
+hydroxypropylmethylcellulose，hydroxyethylcellulose，ormethylcellulose，ora
+iontophoresis.
+Forintranasaladministrationoradministrationbyinhalation,theactivecompoundsofthe
+pressurized container or a nebulizer,with theuse ofa suitablepropellant.Formulations suitable
+as a mixture,for example,in a dry blend with lactose,or as a mixed component particle,for
+30
+as an aerosolspray from a pressurizedcontainer，pump，spray,atomizer(preferably an
+35example,chitosanorcyclodextrin.
+27
+
+--- PAGE 28 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+28 → 29
+WO 2017/115205
+PCT/IB2016/057728
+Inanotherembodiment,thepresentinventioncomprisesarectaldoseform.Suchrectal
+suppositorybase,but various alternativesmaybe used as appropriate.
+Othercarriermaterials and modesof administrationknowninthepharmaceuticalart
+procedures are well known in the art and are described in standard textbooks.Formulation of
+drugs is discussed in, for example，Hoover, John E.，Remington's Pharmaceutical Sciences,
+10
+Mack Publishing Co.,Easton， Pennsylvania,1975;Liberman et al.，Eds.，Pharmaceutical
+Dosage Forms,Marcel Decker, New York, N.Y.,1980; and Kibbe et al.,Eds.,Handbook of
+PREPARATION
+15
+In the preparation of the compounds of FormulaI，it is noted that some of the
+preparation methods.The need for such protection is readily determined by one skilled in the
+20
+）art.Theuse ofsuchprotection/deprotectionmethodsisalsowithin theskillin theart.For a
+general description of protecting groups and their use,see T.W. Greene,Protective Groups in
+OrganicSynthesis，JohnWiley&Sons,NewYork，1991.
+Forexample,certaincompounds containprimary amines orcarboxylic acid
+functionalitieswhichmayinterferewithreactionsatothersitesofthemoleculeifleft
+25unprotected. Accordingly, such functionalities may be protected by an appropriate protecting
+groupwhich may be removed in a subsequent step.Suitableprotecting groups for amine and
+(suchasN-t-butoxycarbonyl(Boc)，b
+benzyloxycarbonyl(Cbz)，and9-
+30
+acids)which are generally not chemicallyreactiveunder thereaction conditions described and
+compounds.
+the methodology employed in thepreparation of the compounds of the present invention.Some
+35of the compoundsof thepresentinvention containa single chiral centerwithstereochemical
+designation(R).Itwillbeapparenttooneskilledintheartthatallof thesynthetic
+28
+
+--- PAGE 29 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+29 → 30
+WO2017/115205
+PCT/IB2016/057728
+transformationscanbeconductedinasimilarmannerwhetherthematerialsare
+enantioenriched orracemic. Moreover the resolution to the desired optically active material may
+takeplaceatanydesiredpointinthesequenceusingwellknownmethodssuchasdescribed
+hereinandinthechemistryliterature.
+5
+In the Reaction Schemes that follow,the variables X,Y,Z,R,R²,R²,R4,R°,R,R,L,
+m,and nareasdescribed hereinfor compoundsof Formula(l)unless otherwisenoted.For
+theSchemesprovidedbelow,someleaving groupsareidentified asLG'orLG²,eachof which
+10
+group such as any alkyl or aryl sulfonate (e.g., mesylate, tosylate, or triflate), or a halogen or
+generally contains1to6 carbon atoms.Aryl isgenerallyphenyl.When theprotecting groupis
+identified as PG', it can be an alkyl amine protecting group such as benzyl, benzhydryl, or the
+like; a carbamate protecting group such as Boc, Cbz, or the like; or an amide protecting group
+15suchtrifluoroacetamide.
+Intermediatesofformula6canbepurchasedorbegenerallysynthesizedbycondensation
+reactions as shown in Scheme 1.Esters 1(where R?canbeF,Cl,Br,alkyl, and the like)can be
+deprotonatedbytheactionofabasesuchaspotassiumt-butoxide,lithiumdisoproprylamide
+20
+sodiumhydride，andthelikeandreactedwithesters2toprovidebeta-ketoesters3.
+chloroformates8toprovidesimilarbeta-ketoesters3.
+Esters3canthenbecondensedwithreagents likeureatoformpyrimidines5withor
+without heating oralternativelywith acid orbasecatalysis.Activation of thehydroxyl toaleaving
+25group can be effected by reagents such as phosphorus oxyhalide, phosphorus pentahalide,
+alkylor aryl-thiolsandsalts thereof(followedwithoxidationor not).BOP，PyBOP，or other
+29
+
+--- PAGE 30 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+30 → 31
+WO2017/115205
+PCT/IB2016/057728
+OH
+activationto
+leavinggroup
+OH
+activationto
+leavinggroup
+OH
+R3
+10
+11
+Scheme1
+Compoundsofgeneralformula11canbepurchasedorsynthesizedstartingfrombeta-
+ketoesters3thatcanbereactedwithcyanoacetamide9togivecompoundsofgeneralformula
+transformation of 5 to6.
+NH3
+source
+HN
+14
+R
+D-alkyh
+O-alkyl
+O-alkyl
+12
+R
+13
+15
+alkyl
+activationto
+OH
+O
+2.alkylation
+leavinggroup
+O-alkyl
+OH
+O-alkyl
+18
+17
+16
+electrophilic
+aromatic
+substitution
+alkyl
+activationto
+OH
+leavinggroup
+acid
+21
+20
+19
+Scheme2
+10
+Intermediates 18canbesynthesizedasshowninScheme2.Starting frombetaketo
+esters12,treatmentwithanammoniasourcesuchasammoniumacetate,ammoniumchloride
+ammoniumhydroxide，ammoniainsolventsolutionandthelikeunderavarietyofconditions
+includingwithorwithoutheatingoralternativelywithacidorbasecatalysistoprovide
+30
+
+--- PAGE 31 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+31 → 32
+WO2017/115205
+PCT/IB2016/057728
+compoundsofgeneralformula15.Treatmentwithbasecancyclizetothepyridineand
+hydrogenfluoride，chloride，bromide,iodide，ora variety ofLewis Acidswith or without heating
+fashion to the conditions described for the transformation of 5 to 6 in Scheme 1.Alternatively,
+the pyridine can be prepared with substitution (where R² is F,Cl, Br,and alkyls that can be
+introducedviaelectrophilicaromaticsubstitutionviamethodssuchasFriedel-Craftsalkylations)
+byreactingcompoundsofformula16withoneofavarietyofelectrophilicaromaticsubstitution
+10
+conditions such as chlorine gas,bromine,selectFluorTM，N-fluorobenzenesulfonimide，N-
+halosuccinimides，or anyother knownsources of electrophilichalide,oralkylhalidesin the
+presence of aluminumcatalysts,toprovidecompoundsof generalformula 19.Thiscan thenbe
+convertedintointermediatesofgeneralformula21byanalogousmethodsasdescribedforthe
+conversionof16to18.
+PG
+PG
+PG1
+OH
+LG
+22
+23
+24
+PG
+HN
+O-PG2
+O-PG2
+15
+25
+26
+Scheme3A
+Schemes3Ato3D.Startingfromprotected[3.1.0]azabicyclohexanes22(purchasedor
+synthesized in manners similar to Berliner,M.A.;et al.Org.Process Res.Dev.2011,15, 1052-
+20
+1062),thehydroxyl moiety canbe converted intoLG²using standard procedures and displaced
+under various standard conditions for acid or basic catalysis,where PG2 is alkyl (e.g., C1-salkyl)
+orbenzyl.RemovalofPGcouldbeeffected inmanymannersdescribed inliteraturetoprovide
+25aminoesters26.
+31
+
+--- PAGE 32 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+32 → 33
+WO2017/115205
+PCT/IB2016/057728
+22
+OH
+27
+OR
+28
+29
+30
+26
+Scheme3B
+Alternatively，asinScheme3B,thehydroxyl moietyof 22could beoxidized toaldehyde
+27and homologated usingaWittigreaction andhydrolysis toprovidehomologated aldehydes
+29.Further oxidation using a variety of oxidants such as sodium chlorite，bleach,potassium
+permanganate,or others would thenprovide carboxylic acids 30 or esters 26.
+PG1
+PG1
+22
+27
+30
+35A
+31
+PG
+PG
+PG
+32
+33
+34
+CI
+HO
+N2
+Scheme3C
+Alternatively，asinScheme3C，thealdehydes27couldbeconvertedintoalkynes31
+10
+usingavarietyofconditionssuchasGilbert-Seyferth,Ohira-Bestmanreagent,CBr4withPPh3，
+or others.The alkyne could thenbe converted into carboxylic acids 30 using Bronsted or Lewis
+be oxidized to acids 32 and treated toArndt-Eistert homologation(32 to33 to 34 to 30)
+15
+intermediate35Acanbesynthesizedbyfunctionalizingalcohols22underavarietyofconditions
+described in literature(see,e.g.,WO2010116328).
+32
+
+--- PAGE 33 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+33 → 34
+WO2017/115205
+PCT/IB2016/057728
+PG
+HN(R
+N(RN)
+N(R
+35B
+HN(R
+35C
+35D
+35E
+35F
+Scheme3D
+Amines of formula 35D，35F，35H，35K，35N can be synthesized as described in
+literatureorsynthesizedasdescribed inSchemes3Dto3F.Startingfrom30,treatmentwitha
+reagentthatdisplaceshydroxylwithchloride(suchasphosphorus oxychloride,oxalylchloride,
+theabsenceofDMF)canleadtoacidchlorides35B.Subsequent treatmentwithanamine,
+HN(RN)2,in the presence of any base，such as DIPEA，TEA，DBU,KCO3，NaHCO3,Or any
+others canlead to amides35C.Alternatively,30 canbe directly coupled with an amine using
+10
+DCC,andmany others described in literature)toprovide35C.Acid chloride 35B canbe treated
+with a sulfonamide，H2NS(O)R to provide acyl sulfonamides 35E.Alternatively，30 can be
+converted to 35E using a sulfonamide,HNS(O)R",and conditions analogous to those
+describedfortheconversionof30to35C
+PG1
+24
+N=N
+35G
+35H
+15
+Scheme3E
+Intermediate24canbeconvertedintotetrazole35Gwiththeadditionofanazidesuch
+as sodium-，potassium-azide，trimethylsilylazide，tributyltin azide，or others,in thepresence of
+heatorwiththeadditionofacatalysttoacceleratethereaction.Tetrazole35Histhenobtained
+20
+)usingstandardprocedurestoremovePG1.
+33
+
+--- PAGE 34 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+34 → 35
+WO2017/115205
+PCT/IB2016/057728
+PG
+23
+35J
+35K
+RS
+PG
+HN
+CI
+35L
+35M
+35N
+Scheme3F
+Intermediate23canbeconvertedintosulfone35Jwithavarietyofmethodssuchas
+displacementof theleavinggroupwithasulfinicacidorsodium,potassium,or othersalt of
+sulfinicacid,HOS(O)Runderneutralorbasicconditions.Alternatively,Intermediate23canbe
+converted into35J inaprocess consisting of displacement of the leaving grouponIntermediate
+23with a thiol or a sodium,potassium,or other salt of thiol toprovidea thioether,which can
+thenbe oxidized toa sulfoneusing an oxidant such asmeta-chloroperbenzoic acid,hydrogen
+10
+beconvertedintosulfonylchloride35Lbytreatmentwiththioureafollowedbybleach;orwith
+chlorination using NCS,thionyl chloride,phosphorus oxychloride,or other chlorinatingreagents;
+orothermethodsknowninliterature.Intermediate35Lcanbeconvertedinto35Jbytreatment
+15
+withan alkylatingreagent such as alkyllithium,alkylmagnesiumhalide,trialkylaluminum,or any
+other nucleophilic sources ofalkyl groups.Intermediate 35Lcanbe converted into acyl
+sulfonamide35Mbytreatmentwithanamide,H2NC(O)Rinthepresenceofbasesuchas
+sodium hydride, lithiumdisopropylamide, potassium carbonate, DBU, or other bases. Removal
+of the protecting groups of 35C,35E,35G,35J, and 35M can be effected with acidic,basic,
+20
+0hydrogenolysis,or other conditionsknown in literature toremove a givenprotecting group to
+provide35D,35F,35H,35K,and35N,respectively.
+NH2
+PG1
+R1Sub
+R1Sub
+R1Sub
+R1Sub
+R1Sub
+38
+R1Sub
+G
+OH
+OH
+LG3
+36
+39
+40
+37
+PG1
+H
+Scheme4A
+s
+25described in literature (such as in J. Med. Chem.1994, 37, 4195),or synthesized as described
+inSchemes 4Ato4C.Intermediatediols36canbeconverted intoIntermediates37through
+34
+
+--- PAGE 35 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+35 →36
+WO2017/115205
+PCT/IB2016/057728
+activationwith mesylchloride or anhydride，triflic anhydride，and other sulfonate-forming
+triphenylphopshine,iodinewithtriphenylphosphineorimidazole，oravarietyofotherreagents.
+Treatment of 37withamine38canlead toazetidines39.Standarddeprotectionmethods afford
+intermediates of general formula 40 that ultimately become R of compounds of Formula (l),so
+R1sub is H when R1 is not substituted or R1sub is -C1-salkyl and -OH as defined in any
+embodimentof compoundsofFormula(l)forsubstituentsoffof R1.
+O
+alkyl/aryl
+45
+HN
+PG
+HN.
+LGHN
+PG1
+PG1
+LG3 HN.
+41
+42
+43
+OH
+-M
+39
+44
+PG1
+PG1
+Scheme4B
+10
+Alternatively,as in Scheme 4B,whenJishydrogen,oxidation can take place toprovide
+ketones 44 (where G can be H or any C1-3alkyl).Treatment with any known metal hydride (J-M,
+where J is hydrogen and M is a metal counterion such as lithium,magnesium,zinc,aluminum,
+boron, or others) source can lead to azetidinyl Intermediates 40 for R', influencing the desired
+15
+withmetalalkylating agents(J-M,whereJis anyC1-salkyland M isa metal counterionsuch as
+lithium，magnesium,zinc,aluminum,boron,or others) such as alkylmagnesium halides,
+alkyllithiums，or many other sources of nucleophilic alkyl groups to provide compounds of
+generalformula39whereJis alkyl.Thesecanbetakenforwardtoazetidines40 asdescribed
+previously.Alternatively,ketones41canbeactivatedwithaleaving group(LG3)bytreatment
+20
+withbase and electrophilichalogen sourcetoprovideketones 42.Derivitization can thenbe
+performedinamanneranalogoustothetransformationof44to39toprovidecompounds43.
+whichcanbetakenforwardtoIntermediates40asdescribedpreviously.Alternatively，esters45
+canbeconvertedintoketones42throughahomologationreactionwiththeincorporationofa
+25
+5leavinggroupwithreagentssuchaschloroaceticacidordihalomethanebothinthepresenceof
+35
+
+--- PAGE 36 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+36 →37
+WO2017/115205
+PCT/IB2016/057728
+strongbaseorwithasulfoniumylide,andmanyotherreagentsasdescribedinliterature.
+Intermediate 42can thenbe takenforward to40 asdescribed previously.
+NH2
+PG1
+HO
+46
+LG3
+47
+LG3
+40
+NH2
+39
+PG
+48
+LG3
+49
+LG3
+Scheme4C
+5
+Alternatively,alkenes 46or48(whereJ canbe any alkylor hydrogen;G canbeH or any
+C1-salkyl); can be treated with a variety of oxidants such as m-CPBA (meta-chloroperbenzoic
+acid)，hydrogen peroxide，t-butyl hydroperoxide，Sharpless epoxidation conditions，Shi
+epoxidationconditions,ormanyotherconditionsknowninliteraturetoprovideepoxides47or
+49,respectively.Epoxides47or49canbetreatedwithanamineinamanneranalogoustothe
+10
+transformationof37to39toprovideazetidines39,whichcanbetakenforwardtoIntermediates
+40.
+HN
+OH
+Activation to
+Leaving Group
+52
+R
+OH
+R
+50
+51
+53
+R'H
+54
+Removal
+of PG2
+or
+R1-M 55
+when R2
+contains
+53
+56
+R2
+anester
+57
+-(CH2)nCOH
+Scheme5
+IntermediatesofFormula56and57cangenerallybesynthesized asshown inScheme
+15
+55.Startingfrombis-hydroxyheteroarylsof generalformula50(purchased,knownin literature，or
+described inprevious schemes),conversion tointermediates of general formula 51 can occur in
+an analogousfashionto theprocessdescribedfor the transformationof Intermediate5to6in
+36
+
+--- PAGE 37 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+37→38
+WO2017/115205
+PCT/IB2016/057728
+Scheme1.Amines ofgeneralformula52(purchased，found inliterature,ordescribed in
+previous schemes，suchas 30or 25,which must first be deprotected under acidic,basic,
+hydrogenolysis，orother conditionsasdescribedinliteratureforagivenprotectinggroup)can
+becoupledwith51underbasicoracidicconditionsviaanSvArreactioninthepresenceof
+bases such as sodium-,potassium-,orcesium carbonate,-bicarbonate,hydroxide,acetate,or
+anorganic aminebase suchas triethylamine,disopropylethylamine,DBU,and thelike orunder
+palladiumcatalysiswithavarietyofpalladiumsources,ligands，andbasestoprovide
+Intermediates53.Thesecanthenbesubsequentlycoupledwithaminesofgeneralformula54
+10
+mannertothepreviousstep,butoftenwithhighertemperaturestoproduceIntermediates56.
+Alternatively,treatmentofcompounds53withalkyl-metalormetalloidcomplexes55suchas
+alkyl zinc，alkylboronic acid，-boronate，-trifluoroborate salts and thelike under palladium
+catalysis can provide Intermediates 56. When R² contains an ester (see Scheme 3A),a
+15
+Intermediates 57.
+OH
+Activationto
+Leaving Group
+52
+OH
+R
+LG
+58
+60
+59
+R'H54
+or
+R1-M55
+Removal
+of PG2
+when R2
+contains
+62
+anester
+61
+L-(CH2)nCO2H
+R2
+Scheme6A
+Alternatively,Intermediates60,61，and62(Scheme6A)canbesynthesizedinamanner
+analogoustothemethodsdescribedforIntermediates53,56,and57,respectively，asshownin
+20Scheme5.
+37
+
+--- PAGE 38 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+38→39
+WO2017/115205
+PCT/IB2016/057728
+LG2
+60
+61
+62
+Electrophilic
+Electrophilic
+Electrophilic
+L-(CH2)nCO2H
+aromatic
+aromatic
+aromatic
+substitution
+substitution
+substitution
+RH54
+R
+Removal
+or
+of PG2
+R1-M 55
+whenR2
+R4
+contains
+R3
+anester
+R3
+63
+65
+R2
+L-(CH2)nCO2H
+Scheme6B
+Intermediates60,61，and62canbesubjectedtoelectrophilicaromaticsubstitution
+Intermediate16to19inScheme2toproduceIntermediates63,64,and65,respectively,where
+R3= F, Cl, Br,I or alkyls that can be introduced via electrophilic aromatic substitution via
+methodssuchasFriedel-Craftsalkylations.Intermediates63and64canthenbetakenforward
+tocompoundsofformula65throughmethodsanalogoustothosealreadydescribed.
+LG2
+R1
+R3a
+R3a
+65aR3a
+63a
+64a
+-(CH2)nCO2H
+R3-M66
+R3-M 66
+R3-M 66
+LG2
+RH 54
+Removal
+or
+R1-M 55
+of PG2
+whenR2
+contains
+R3
+anester
+R3
+67
+68
+69
+L-(CH2)nCO2H
+R2
+10
+Scheme 6C
+38
+
+--- PAGE 39 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+39 → 40
+WO2017/115205
+PCT/IB2016/057728
+Alternatively, as shown in Scheme 6C,compounds 63a,64a, and 65a (where R3a =
+(where R = Me,Et, iPr, cPr, and OMe) by treatment with R?M (reagent 66 where M can be a
+metal or metalloid such as sodium, potassium,zinc, tin, boron, aluminum, magnesium,or
+5others) and palladium or copper catalysis in a manner analogous to the described coupling of
+53with55tofromcompounds56(Scheme5).
+ExemplifiedIntermediates
+2,4-dichloro-6-(difluoromethyl)pyrimidine
+F
+10
+A solution of ethyl difluoroacetate(250 g,2.01 mol) and EtOAc(1070 g,12.10mol) was
+heated to70°Cand treatedwithasolutionofsodiumethoxide(151g,2.22mol)inanhydrous
+cooledreactionmixture was acidified to pH = 2-3 with a solution of 4M HCl in EtOAc,resulting
+inprecipitation of solids.The mixturewas filtered through apad of Celite，and thefiltrate cake
+15was washed with EtOAc (4x 30 mL).The filtrate was concentrated to give crude ethyl 4,4-
+difluoro-3-oxobutanoate(200g,59.8%)asyellow oil,whichwasused inthenext stepwithout
+further purification.
+Toa solutionofethyl4,4-difluoro-3-oxobutanoate(100g，602mmol)inanhydrous
+toluene(1000 mL) was added urea(43.4g,722mmol) and 2M sodium ethoxide in ethanol(81.7
+20g, 1.20 mol) dropwise. The resulting yellow solution was stirred at rt for 30 min, and then stirred
+yellow suspension was cooled to rt and concentrated to give 6-(diluoromethyl)pyrimidine-2,4-
+diol as a yellow solid(100 g,quant.),which was used in the next step directly without further
+purification.
+25
+In two separate batches，a brown suspension of 6-(difluoromethyl)pyrimidine-2,4-diol
+(97.6 g, 602 mmol) and N,N-dimethylaniline (67.8 g, 560 mmol) in acetonitrile (1000 mL) was
+cooled to0°℃ and phosphorus oxychloride(231 mL,2.48 mol) was added dropwise.After the
+addition was complete,the resulting mixture was heated to 95 °C for 16 h.The reaction was
+then cooled to 25°C,quenched with ice water(1000 mL),and extracted with methyl tert-butyl
+30ether(8x 500 mL).The combined organic layers were washed with brine (200 mL),dried over
+anhydrous Na2SO4,filtered and concentrated to give a brown oil(100 g).The two batches were
+39
+
+--- PAGE 40 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+40 → 41
+WO2017/115205
+PCT/IB2016/057728
+give 2,4-dichloro-6-(difluoromethyl)pyrimidine (92.0 g) as a light yellow oil.
+H NMR (400 MHz, CDsOD) 8: 7.87 (s, 1H), 6.72 (t, 1H).
+2,4-dichloro-6-(difluoromethyl)-5-methylpyrimidine
+CI
+5
+CH3
+A solution of ethylpropionate(200 g.1.96mol) inTHF(1250mL)was treatedwith
+sodium hydride (60% in mineral oil, 78.3 g, 1.96 mol) in portions. The resulting slurry was then
+50°C for 19h.The cooled reactionmixture was then treated with10% sulfuric acid (600 mL)
+10
+andextracted withEtOAc(4x500mL).Thecombinedorganiclayerswerewashedwithbrine
+columnchromatographyelutingwithpetroleumether/EtOAc(1oo:0to5:1)togiveethyl4,4-
+difluoro-2-methyl-3-oxobutanoate(260g,74%)as aredoil,whichwasused directlyin the next
+step.
+15
+In twoseparatebatches,toa solution of 4,4-difluoro-2-methyl-3-oxobutanoate(130 g,
+722mmol)in anhydrous toluene(1.44L)was added urea(52.0 g,866 mmol)and 2Msodium
+ethoxidein ethanol(98.2g,1.44 mol)dropwise.Theresultingyellowsolutionwasstirred atrt for
+20
+whichwasuseddirectlyinthenextstep
+Amixture of 6-(difluoromethyl)-5-methylpyrimidine-2,4-diol(84.7 g.481mmol)and
+25
+concentrated to give a dark brown oil(300g,crude).The crudeproduct was divided into three
+to 98:2) to give 2,4-dichloro-6-(difluoromethyl)-5-methylpyrimidine as a red oil(92 g,30%).
+H NMR (400 MHz, CDsOD) 8: 6.83 (t, 1H), 2.49 (s, 3H).
+40
+
+--- PAGE 41 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+41 → 42
+WO 2017/115205
+PCT/IB2016/057728
+2,4-dichloro-5-methyl-6-(trifluoromethyl)pyrimidine
+CI
+CH3
+To a solution of ethyl propionate (35.0 g,340 mmol) in THF(350 mL) at 25 °C was
+added sodium hydride (60% in mineral oil, 13.7 g, 343 mmol).The grey slurry was heated to 50
+5
+Candethyltrifluoroacetate(97.4g,685mmol)wasaddeddropwisetothemixtureover15min.
+The reaction was stirred at 50°℃ for 16 h.The cooled reactionmixture was slowly added to
+10% sulfuric acid at 0°℃.The resulting yellow mixture was extracted with EtOAc(3x 500 mL)
+4,4,4-trifluoro-2-methyl-3-oxobutanoate(60 g)which was used directly in the next step
+10
+anhydrous toluene(500mL)wasaddedurea(21.8g,363mmol)and freshlyprepared2M
+stirredatrtfor15min,andthenheated to130°Cfor48h.Thereactionmixturewas
+concentratedandsolventwasremoved toprovidecrude5-methyl-6-(trifluoromethyl)pyrimidine-
+15
+5-Methyl-6-(trifluoromethyl)pyrimidine-2,4-diol(120 g,480 mmol) was added into
+phosphorus oxychloride (371.0g，2.420 mmol) at 0°C and treated with N,N-dimethylaniline
+(54.6g,451 mmol)dropwise.Theresulting mixture was heated to100°C for 16h.The dark
+reactionmixturewascooledtortandpouredintoicewater.Thewaterlayerwasextractedwith
+20
+methyltert-butyl ether(3x 10o0 mL) and combined organic layers were dried over Na2SO4 and
+concentrated to give a dark yellow oil (80 g). The crude product was dissolved in n-hexane and
+under reduced pressure to provide 2,4-dichloro-5-methyl-6-(trifluoromethyl)pyrimidine (40 g,
+36%)asayellowoilwithresidualn-hexanepresent.
+25H NMR (400 MHz, CDsOD) 8:2.53 (S,3H).
+2,4-dichloro-6-(1,1-difluoroethyl)pyrimidine
+CI
+Step 1: 6-(1,1-difluoroethyl)pyrimidine-2,4-diol
+41
+
+--- PAGE 42 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+42 → 43
+WO2017/115205
+PCT/IB2016/057728
+A solution of lithium hexamethyldisilazide (217ml,1M solution in THF,217 mmol) in dry
+THF(400mL)was cooledunderanatmosphereofargon to-78°C and treatedwithEtOAc
+(19.1g,217 mmol) dropwise.The reaction mixture was stirred at-78°C for 1h,then treated with
+ethyl2,2-difluoropropionate (15.0 g，110 mmol) dropwise.Stirring was continued for 4h at -
+5
+578°C.A saturated solutionof ammoniumchloride(150ml)wasadded dropwise.The mixture
+was warmed to rt, acidified with 1M HCl (150 ml) and left standing for 2 h.The phases were
+werewashed with1M HCl,brine,dried overNa2SO4and concentrated.The crudeproductwas
+purified usingcolumn chromatographyelutingwithpetroleumether/EtOAc(100:0to7:3)togive
+10
+0ethyl 4,4-difluoro-3-oxopentanoate(27g)as a yellow oil whichwas used directly in thenext step.
+mg,133mmol) inanhydrous toluene(400 mL)and ethanol(30 mL)wasadded solid sodium
+ethoxide (30200 mg,222 mmol) at rt.Then the mixture was heated to 125°℃ under a reflux
+condenserfittedwithaDean-Starktrap.Thereactionmixturewascooledtortandthesolvent
+15
+wasremovedunderreducedpressure.Theresiduewas acidified topH=4with4NHClin
+EtOAcandextractedwithEtOAc(3x100mL).Thecombinedorganiclayerwaswashedwith
+brine,driedoverwithNa2SO4，filteredandthefiltratewasconcentratedtogive thecrude
+to allowcollectionof thetitlecompound(11.6g,59%)asasolid.
+20
+0H NMR (400 MHz, CDCIs) 8: 5.71 (S, 1H), 1.93 (t, 3H).
+Step2
+Toa solutionof6-(1,1-difluoroethyl)pyrimidine-2,4-diol(9.60g,54.5mmol) in acetonitrile
+(120mL）wasaddedphosphorusoxychloride(41.8g，273mmol)followedbyN,N-
+disopropylamine(704mg,5.45mmol).The mixturewas stirred at 80°Cfor16h.Thereaction
+25
+mixture was cooled to rt and poured into ice-water (60 mL). The mixture was basified to pH = 7
+organicphase was dried overNa2SO4,filtered and concentrated to give a brownoil.The crude
+provide 2,4-dichloro-6-(1,1-difluoroethyl)pyrimidine (6.5 g,56%)as a clear oil.
+30H NMR (400 MHz, CDOD) 8: 7.85 (S,1H), 1.97 (t, 3H).
+2,4-dichloro-6-(1,1-difluoroethyl)-5-methylpyrimidine
+CI
+CH3
+42
+
+--- PAGE 43 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+43 → 44
+WO2017/115205
+PCT/IB2016/057728
+Step1:ethyl4,4-difluoro-2-methyl-3-oxopentanoate
+To a solution of ethyl propionate (15.0 g,147 mmol) in THF (70 mL)was added sodium
+hydride(60%in mineraloil,5.87g,147 mmol)inportions.Theresulting grey slurrywas then
+treated with ethyl 2,2-difluoropropionate (24.3 g,176mmol) dropwise over 15 min.The slurry
+washeated to50°℃ for4h,then stirred at 16°Cfor 60h.The mixturewasslowlypoured into
+10%sulfuric acid (60 mL) and extracted with EtOAc (2x50 mL).The organic phase was dried
+over Na2SO4，filtered and concentrated.The crude product was purified with column
+chromatographyelutingwithEtOAc:petroleumether(1:10)togive the titlecompound(18g)as
+a brown oil.
+10H NMR (400 MHz, CDOD) 8: 3.76 (q,2H), 3.52 (q, 1H),1.32 (t, 3H),0.98 (d, 3H), 0.83 (t,3H).
+Step 2
+To a solution of ethyl 4,4-difluoro-2-methyl-3-oxopentanoate (18 g,93 mmol)and urea
+(6.68g,111mmol) in toluene(270 mL)was added a solution of sodiumethoxide(12.6g,185
+15
+mixture was concentrated to give 6-(1,1-difluoroethyl)-5-methylpyrimidine-2,4-diol (19 g) as a
+greysolidwhichwasused inthenextstepwithoutfurtherpurification.
+A mixture of 6-(1,1-difluoroethyl)-5-methylpyrimidine-2,4-diol (7.5 g, 39 mmol) in
+reactionmixturewascarefullypouredintoicewater(150mL)andextractedwithEtOAc(3x80
+20
+mL).The combined organic layers were washed withbrine (2x 100 mL),dried over Na2SO4,
+2,4-dichloro-6-(1,1-difluoroethyl)-5-methylpyrimidine as a yellow oil (6.0 g,67%).
+H NMR (400 MHz, CDCIs) 8: 2.59 (s,3H),2.01 (t, 3H).
+25
+ylmethanesulfonate
+OH
+Step 1:(2R)-2-[(1R)-1-bromoethyl]oxirane
+chloroform(10 L)was treated withbromine(2.15kg,13.4mol)over the course of 2h at 0°C.
+30Themixturewas stirred at 15°Cfor30min.Themixtures werequenched withsaturated sodium
+43
+
+--- PAGE 44 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+44 → 45
+WO 2017/115205
+PCT/IB2016/057728
+thiosulfatesolution(500mL)at 15°C.The threereactionmixtures werecombinedand
+2,3-dibromobutan-1-ol(10.5kg,quant.)asyellowoil,whichwas taken to thenextstepwithout
+5
+water(6 L) was added to a solution of trans-2,3-dibromobutan-1-ol (3.33kg,12.7mol) inTHF (9
+L)dropwise at 15°C.Thereaction mixture was stirred atrtfor2h.The threereaction mixtures
+Na2SO4，filtered and concentrated invacuo togive the tilecompound(6.5kg,quant.）asa
+10
+H NMR (600 MHz, CDsOD) 8: 3.86 (quin., 1H), 3.19-3.22 (m, 1H), 2.94 (t, 1H), 2.76-2.78 (m,
+1H), 1.73 (d, 3H).
+Step 2: (2S,3R)-1-(diphenylmethyl)-2-methylazetidin-3-ol
+15kg,16.2 mol) and benzhydrylamine (2.97 kg,16.2 mol) in anhydrous ethanol (5.41 L) was
+mixturewasstirred at65°Cforanadditional24h.The tworeactionmixtureswerecooled tort,
+combined and filtered.Thefiltrate was concentrated.Theresidue was dissolved inDCM(10L),
+washedwithsaturatedaqueousammoniumchloride(2×5L),driedoverNa2SO4，filteredand
+20
+36.5% yield) as yellow oil.
+H NMR (400 MHz, CDCls) 8: 7.16-7.46 (m, 10H), 4.34 (s, 1H), 3.93 (q, 1H), 3.66 (t, 1H), 3.03
+(q, 1H), 2.58 (t, 1H), 0.76 (d, 3H).
+25 Step 3: (2S,3R)-1-(diphenylmethyl)-3-hydroxy-2-methylazetidinium [(1R,4S)-7,7-dimethyl-2-
+oxobicyclo[2.2.1jhept-1-yl]methanesulfonate
+To a solution of [(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonic acid
+(2.7kg,12 mol)in ethanol (8L)was added a solution of (2S,3R)-1-(diphenylmethyl)-2-
+30removeEtOH.Theresiduewas treated withmethyl tert-butylether(5 L)and evaporated until ~1
+Lofsolventremained.Theresiduewastreatedwithadditionalmethyltert-butylether(5L)and
+filtered.Thefilter cakewasdried invacuotogiveawhitesolid(3.5kg)whichwas dissolvedin
+DCM (7.6 L) and EtOAc (10.9 L) was added. The mixture was stirred at rt for 30 min, resulting in
+mixturewasstirredatrtfor30minandtheresultingwhiteprecipitateswerecollectedby
+44
+
+--- PAGE 45 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+45 → 46
+WO2017/115205
+PCT/IB2016/057728
+L) was added. The reaction mixture was stirred at rt for 30 min, and the precipitated solids were
+collectedbyfiltrationtogivea whitesolid(1.3kg,ee=95.2%bychiralSFC).This materialwas
+dissolved inDCM(7L)and heated torefluxed for 40min.EtOAc(3.5L)was added and the
+were collected by filtration.The filter cake was dried in vacuo to give the title compound (1.1kg,
+98.2%ee by chiral SFC, 62.9% chiral resolution yield) as a white solid.
+H NMR (600 MHz, CDsOD) 8: 7.44-7.59 (m, 10H), 5.66 (s, 1H), 4.35-4.41 (m, 1H), 4.25-4.30
+(m, 2H), 3.73-3.78 (m, 1H), 3.37 (d, 1H), 2.80 (d, 1H), 2.68-2.74 (m, 1H), 2.36 (dt, 1H), 2.02-
+102.09 (m, 2H),1.91 (d, 1H), 1.60-1.66 (m, 1H), 1.40-1.45 (m, 1H), 1.16 (s, 3H),1.09 (d, 3H), 0.88
+(S, 3H).
+Step 4
+A partial solution of (2S,3R)-1-(diphenylmethyl)-3-hydroxy-2-methylazetidinium [(1R,4S)-
+7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonate (18.96 g, 39.04 mmol) in methanol
+15(60 mL)was treated with 10% palladium hydroxide on carbon(1.11g)ina stainless steel
+reactionvessel.The reaction vessel wasflushed with nitrogen gas then filled with hydrogen gas
+through a plug of Celite°，eluting with methanol (4 x 80 mL). The combined filtrates were
+20
+the sides of the flask were scrapped with a spatula, and the heptanes were decanted.This
+2-methylazetidin-1-ium [(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonate
+(11.8g,95%)asawhitesolid.
+H NMR (600 MHz, CDsOD) 8: 4.27-4.34 (m, 2H), 4.04-4.09 (m, 1H), 3.76-3.80 (m, 1H), 3.31 (d,
+1H), 2.80 (d, 1H), 2.62-2.69 (m, 1H),2.34-2.39 (m, 1H), 2.04-2.09 (m, 2H),1.92 (d, 1H), 1.63-
+301.68 (m, 1H), 1.54 (d, 3H), 1.41-1.47 (m, 1H), 1.13 (s, 3H), 0.88 (s, 3H).
+45
+
+--- PAGE 46 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+46 → 47
+WO2017/115205
+PCT/IB2016/057728
+yllmethanesulfonate
+OH
+?
+H
+Step1:tert-butyl[(2S)-4-chloro-3-oxobutan-2-yl]carbamate
+5
+Magnesiumturnings(120g,4.90mol)andiodine(50mg)werecombinedina three-
+chloride(428g,4.65mol)inTHF(1.52L)was added dropwisevia additionfunnel at sucharate
+10
+0that agentlerefluxis maintained.After theadditionwas complete，thedarksolutionwith Mg
+turningswasheatedat60°Cfor30min thencooled to0°C.To thecooledGrignardsolution
+was added triethylamine (120 g,1.19 mol) and solid sodium chloroacetic acid (139 g,1.19 mol).
+A solution of Boc-L-alanine methyl ester(157 g,0.77 mol) in toluene(900 mL) was then added
+15
+5°℃,and acetic acid (320 g,5.50 mol) in water(640 mL) was added dropwise.Aqueous 2M HCI
+45minuntil gas evolutionceased.Thelayers wereseparated and the aqueouslayer was
+20Na2SO4 and concentrated to give a yellow oil. Heptane (300 mL) was added to the oil and
+stirred at rt for 30 min.The resulting solid is filtered and washed withheptane to give the title
+compound(105g,61%)as a white solid.
+H NMR (400 MHz, CDCla) 8: 5.08 (br. S, 1H), 4.50-4.57 (m, 1H), 4.23-4.32 (m, 2H), 1.44 (s,
+9H),1.36 (d, 3H).
+25
+Step2:tert-butyl[(2S,3S)-4-chloro-3-hydroxy-3-methylbutan-2-yl]carbamate
+To a solution of tert-butyl[(2S)-4-chloro-3-oxobutan-2-yl]carbamate (90 g,0.40 mol) in
+DCM (2.0 L) cooled to-70 °C was added methyl magnesium bromide (460 mL,1.38 mol,3 M in
+diethylether)dropwise.Themixturewasstirred at-70°Cfor1hand thenwarmed to~-5°C
+andstirredfor5h.Thereactionmixturewasquenchedwithsaturatedaqueousammonium
+30
+chloride(500mL)dropwise atarate sothat theinternaltemperature didnotrise above 10°℃.
+46
+
+--- PAGE 47 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+47 → 48
+WO2017/115205
+PCT/IB2016/057728
+concentrated invacuo.Thecrudeproductwas dissolvedinhexane/EtOAc(10/1，200mL).The
+yellowmixturewaswarmed to50°C,stirred for10 min and then slowlycooled to0°C.Asolid
+5formed which was filtered to give the title compound (45 g, 47%) as a white solid.
+H NMR (400 MHz, CDCIs) 8: 4.72 (br. S, 1H), 3.77-3.87 (m, 1H), 3.60 (d, 1H), 3.52 (d, 1H), 1.46
+(S, 9H), 1.30 (s, 3H), 1.21 (d, 3H).
+Step3
+To a solution of the tert-butyl[(2S,3S)-4-chloro-3-hydroxy-3-methylbutan-2-yl]carbamate
+10(55 g,0.23 mmol) in DCM (20 mL) and methanol(100 mL) was added 4N HCl in dioxane (150
+mL)at 0°C.Thebrownmixture waswarmed to20°Cand stirred for2.5h.Thebrownmixture
+was concentrated to give abrown oil(40g,100%)that was dissolved in CHsCN(300 mL) and
+15
+was concentrated in vacuo to give (2S,3R)-2,3-dimethylazetidin-3-ol(22 g,75%)as abrown oil.
+The compound was used in the subsequent stepwithout further purification.
+A yellow solution of (2S,3R)-2,3-dimethylazetidin-3-ol(23.4 g,0.23 mol) in acetonitrile
+(130 mL) was added [(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonic acid
+20
+give(2S,3R)-3-hydroxy-2,3-dimethylazetidinium[(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-
+1-yllmethanesulfonate(50g,65%)asawhitesolid.
+H NMR (400 MHz, CDsOD) 8: 4.36 (q, 1H), 3.89 (d, 1H), 3.76 (d, 1H), 3.32 (d, 1H), 2.80 (d,
+1.48 (m, 7H), 1.16 (s, 3H), 0.88 (s, 3H).
+47
+
+--- PAGE 48 ---
+EP16823054.8
+DESCRIPTION(06.07.2017)
+48 → 49
+WO2017/115205
+PCT/IB2016/057728
+oxobicyclo[2.2.1jhept-1-yl]methanesulfonate
+A solution of R-(-)-1,3-butanediol (20.0 g,222 mmol) and DIPEA (101.5 mL，585.0
+mmol)inacetonitrile(444mL)was cooled to-30°Cand treated withtrifluoromethanesulfonic
+internalreactiontemperaturebetween-30and-35°C.After the additionwas complete，the
+reactionmixturewasstirredfor10minat-30°Candthentreatedwithadditional
+min.ThereactionmixturewasthentreatedwithadditionalDIPEA(101.5mL,585.0mmol)over
+10the course of 15 min while maintaining the internal temperature at -30°C. After an additional 10
+minat-30°C thereactionmixturewas treatedwitha solutionofbenzhydrylamine(38mL)in
+acetonitrile(40mL）dropwiseover 30minviaanadditionfunnel，maintainingtheinternal
+placed inanicewaterbathfor30min.Thereactionwasthenstirred atrtfor30min,followedby
+(900 mL)andextractedwithtoluene(1 L).The aqueousphase wasback-extracted with toluene
+(300mL)and thecombinedorganiclayerswerewashedwithwater(2x250mL),driedover
+20
+The crude product was dissolved in methanol(200 mL),placed in a water bath at 10°C,and
+treated with [(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonic acid (49 g) in
+thesolidsweredriedunderhighvacuumfor15htogiveasolid(99.2g).Thesolidwas
+25dissolved in DCM (100 mL) and stirred at rt for 10 min to give a dark solution. EtOAc (850 mL)
+wasaddedslowlywithstirringandsolidsprecipitatedfromsolutionafter~5min.The
+suspensionwasstirred atrtfor2h,and thesolidswerecollectedbyfiltrationandwashedwith
+EtOAc (50 mL).The solids were dissolved in DCM(100 mL) and EtOAc (700 mL) was added.
+Themixturewasstirredatrt andsolidsimmediatelyprecipitated fromsolution.Thesuspension
+30
+was stirred at rt for 15h,then the solids were collected by filtration,washed withEtOAc(50 mL)
+anddriedunderreducedpressure togive the title compound(66.7g,65%yield)as a white
+solid.
+H NMR (500 MHz, CDsOD) 8: 7.54-7.59 (m, 4H), 7.43-7.53 (m, 6H), 5.67 (s, 1H), 4.69-4.76 (m,
+1H), 3.97-4.02 (m, 2H), 3.36 (d, 1H), 2.81 (d, 1H), 2.70-2.75 (m, 1H), 2.58-2.64 (m, 1H), 2.31-
+352.39 (m, 2H), 2.03-2.09 (m, 2H), 1.91 (d, 1H), 1.62-1.66 (m,1H),1.41-1.47 (m, 1H), 1.16 (S,
+48
+
+--- PAGE 49 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+49 → 50
+WO 2017/115205
+PCT/IB2016/057728
+3H),1.11(d,3H),0.88(s,3H);Elemental analysis:Calculated for C27H3sNO4S:C=69.05%,H =
+7.51%, N = 2.98%; Found: C = 68.90%,H = 7.59%, N = 2.91%.
+Step2
+51
+Thereactionmixturewasfiltered throughapadofCelite，eluting withmethanol(1o0mL),and
+10
+0thefiltratewasconcentratedinvacuotogiveawhitesolid.Thewhitesolidwassuspended ina
+mixture of EtOAc/methyl tert-butyl ether(1:1,200 mL) and stirred for 1h at 60°C.After cooling
+15
+oxobicyclo[2.2.1]hept-1-yl]methanesulfonate(18.1 g,95%)as a white solid.
+H NMR (500 MHz, CDsOD) 8: 4.59-4.66 (m, 1H), 4.05 (q, 1H), 3.92 (td, 1H), 3.32 (m, 1H), 2.80
+(d, 1H), 2.59-2.70 (m, 2H), 2.36 (dt, 1H), 2.25-2.32 (m, 1H), 2.03-2.10 (m, 2H),1.92 (d, 1H),
+1.62 -1.68 (m, 1H), 1.57 (d, 3H), 1.41-1.47 (m, 1H), 1.15 (s, 3H), 0.89 (s, 3H); Elemental
+20
+analysis:Calculated for C14H2sNO4S:C=55.42%,H=8.31%,N=4.62%;Found:C=55.59%,
+H = 8.41%, N = 4.49%
+(2S)-2-methylazetidinehydrochloride
+?
+CI
+HH
+Step 1:(2R)-4-[(methylsulfonyl)oxy]butan-2-yl methanesulfonate
+25
+A solution of (3R)-butane-1,3-diol (3 g,30 mmol) and triethylamine (10.1 g,99.9 mmol)
+inDCM(60 mL)was cooled to0°Cand treated withmethanesulfonylchloride(11.4g,99.9
+mmol)inadropwisemannerat 0°C.After 15min theice-waterbathwasremovedand the
+chloride (80 mL)and extracted with DCM (3 x 50 mL).The combined organic layers were
+30
+washedwithbrine,driedoverNa2SO4andconcentratedtogivearesidue.Theresiduewas
+the titlecompound(7.3g,89%)as a colourlessoil.
+H NMR (400 MHz, CDCIs) 8: 5.00 (s, 1H), 4.35 (t, 2H), 3.07 (s, 3H), 3.06 (s, 3H), 2.05-2.12 (m,
+2H), 1.50 (d, 3H).
+49
+
+--- PAGE 50 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+50 → 51
+WO2017/115205
+PCT/IB2016/057728
+Step2
+(2R)-4-[(methylsulfonyl)oxy]butan-2-yl methanesulfonate (7.20 g,29.2 mmol)was
+dissolved inbenzylamine(19.2mL，175mmol)and stirredat45°Cfor16h.Thereaction
+mixturewascooled tortandamixtureofcyclohexane/methyltert-butylether(1:1)wasadded,
+5
+resultingintheprecipitationofwhitesolids.Theprecipitateswereremovedbyfiltrationand the
+filtratewasevaporatedunderreducedpressureandpurifiedusingcolumnchromatography
+and treatedwith10%palladiumhydroxideoncarbon(500mg).Theresultingsuspensionwas
+10
+andstirredunderhydrogen(30PSl)foranadditional 40h.Thecooledreactionmixture was
+filtered and the filtrated with treated with 4N HCI in EtOAc(15 mL) and stirred at rt for 30 min.
+a white gum.
+151H NMR (400 MHz, CDCIs) 8: 4.50-4.60 (m, 1H), 3.97-4.04 (m, 1H), 3.75-3.90 (m, 1H), 2.58-
+2.65 (m, 1H), 2.26-2.35 (m,1H), 1.54 (d, 3H).
+ethyl(1R,5S,6s)-3-azabicyclo[3.1.0jhex-6-ylacetate
+H
+NH
+H
+20
+described inBerliner,M.A.;et al.Org.ProcessRes.Dev.2011，15,1052-1062.
+mmol) in dry THF (1230 mL) and DMF (95 mL) was added triethylamine (241 g, 2.38 mol) at 0
+°C. The mixture was stirred at 0 °C for 5 min and treated with methanesulfonyl chloride (82.22 g,
+quenchedwithadditionofsaturated NaHCO(1oo0mL)and thenthemixturewasextracted
+the titlecompound (99 g,89%)as a brown oil.
+MS(ES+): 281.9 (M+H).
+30
+Toasolutionof[(1R,5S,6r)-3-benzyl-3-azabicyclo[3.1.0]hex-6-ylmethyl
+methanesulfonate(99 g,352 mmol) in DMF (700 mL) was added sodium cyanide (18.49 g,
+50
+
+--- PAGE 51 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+51 → 52
+WO2017/115205
+PCT/IB2016/057728
+(50g).Thebrownoilwaspurifiedbycolumnchromatographyonsilicagelelutingwith
+MS(APCI):213.1 (M+H).
+Toethanol(215mL)wasaddedconcentratedsulfuricacid(108mL)at0°C.Themixture
+10
+mixture of EtOH and sulfuric acid at 0°C.The mixture was stirred at 80°C for 16 h.The
+mixturewas adjusted topH=9with5MNaOHat0°C，and theproductwas extracted with
+to give a yellow oil(45 g).The yellow oil was purified by column chromatography on silica gel
+15yellow oil.
+MS(APCI): 260.1 (M+H).
+Step4:ethyl(1R,5S,6s)-3-azabicyclo[3.1.0]hex-6-ylacetate
+mmol) in EtOH (1500 mL) was added 10% palladium hydroxide on carbon (5 g,4 mmol). The
+20
+mixturewasdegassedandrefilledthreetimeswithnitrogenanddegassedandthenrefilledfor
+threetimeswithhydrogengas.Themixturewasstirredunder anatmosphereofhydrogen(50
+PSl)at50°Cfor 16h.Thecooledreactionmixture wasflushed withnitrogen,filtered,and the
+25MS(ES+):170.1(M+H).
+一
+Step 1:tert-butyl(1R,5S,6s)-6-(2-ethoxy-2-oxoethyl)-3-azabicyclo[3.1.0]hexane-3-carboxylate
+51
+
+--- PAGE 52 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+52 → 53
+WO 2017/115205
+PCT/IB2016/057728
+Toa solution of[(1R,5S,6s)-3-(tert-butoxycarbonyl)-3-azabicyclo[3.1.0]hex-6-yl]acetic
+acid (400 mg,1.66 mmol, MFCD12198681)in DCM (12 mL)was added ethanol(0.4 mL),4-
+dimethylaminopyridine (203mg,1.66 mmol) and N,N'-dicyclohexylcarbodimide(342 mg,1.66
+mmol) at rt. The resulting colorless suspension was stirred at rt for 16 h. The mixture was
+extractedwithDCM(3x25mL).Thecombinedorganiclayerswerewashedwithbrine,dried
+flash columnchromatography,elutingwithEtOAc/petroleumether(1% to 11%EtOAc)to give
+thetitlecompound(350mg,78%)asa colorlessoil.
+10
+0H NMR (400 MHz, CDCIa)  4.15 (q, 2H), 3.53-3.64 (m, 2H), 3.29-3.37 (m, 2H), 2.17-2.32 (m,
+Step2
+H NMR (400 MHz, CDsOD)  4.13 (q, 2H), 3.37-3.45 (m, 4H), 2.35 (d, 2H), 1.72-1.77 (m, 2H),
+1.25 (t, 3H), 1.06-1.12 (m, 1H).
+ethyl(1R,5S,6s)-3-azabicyclo[3.1.0]hex-6-ylacetatehydrochloride
+H
+CIO
+H
+20
+Step1:tert-butyl(1R,5S,6r)-6-(bromomethyl)-3-azabicyclo[3.1.0jhexane-3-carboxylate
+To a solution of tert-butyl (1R,5S,6r)-6-(hydroxymethyl)-3-azabicyclo[3.1.0]hexane-3-
+carboxylate (5.1 g.23.91 mmol, MFCD14525755) in DCM (180 mL) was added carbon
+tetrabromide (11.9 g,35.9 mmol) and triphenylphosphine (9.41 g, 35.9 mmol) at 5°℃.The
+25reactionmixturewaswarmed tort and stirredfor12 h.Thereactionmixturewasevaporated to
+dryness and purified using column chromatographyeluting withpetroleum ether/EtOAc(100:1
+to 10:1) to give the title compound (5.6 g,85%)as a yellow oil
+H NMR (400 MHz, CDsOD) 0 3.54 (d, 2H), 3.32-3.43 (m, 4H), 1.61-1.64 (m, 2H), 1.46 (s, 9H),
+1.03-1.05 (m,1H).
+30
+Step 2: tert-butyl(1R,5S,6s)-6-(cyanomethyl)-3-azabicyclo[3.1.0jhexane-3-carboxylate
+To a solution of tert-butyl (1R,5S,6r)-6-(bromomethyl)-3-azabicyclo[3.1.0]hexane-3-
+carboxylate (6000 mg, 21.73 mmol) in DMF (150 mL) was added sodium cyanide (1600 mg,
+32.6mmol)atrtand thereactionmixturewasstirredfor16hatrt.Theyellowmixturewas
+52
+
+--- PAGE 53 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+53 → 54
+WO 2017/115205
+PCT/IB2016/057728
+diluted withEtOAc(100 mL)，washedwithbrine(100mL).The organiclayer was dried over
+Na2SO4,filteredandevaporatedtoaffordayellow oil，that waspurifiedusingcolumn
+chromatography eluting withpetroleumether/EtOAc(10o:1to5:1)to give the title compound
+(4.0g,83%)as ayellow oil.
+1H), 1.49-1.52 (m, 2H), 1.41 (s, 9H), 0.88-0.91 (m, 1H).
+Step3
+Acetylchloride(300mg,3.82mmol)was added todry ethanol(2.5mL)at 0°C and
+10
+azabicyclo[3.1.0]hexane-3-carboxylate(85 mg,0.38 mmol)was added to the solution and the
+mixturewas stirred at70°Cfor68h.The solutionwascooled tort and concentrated togive
+ethyl (1R,5S,6s)-3-azabicyclo[3.1.0]hex-6-ylacetate hydrochloride (80 mg,>99%) as a white
+solid.
+H NMR (400 MHz, CDsOD) 0 4.15-4.18 (m, 2H), 3.44-3.47 (m, 4H), 2.36-2.38 (m, 2H), 1.74-
+151.78 (m, 2H), 1.25-1.30 (m, 3H), 1.14-1.17 (m, 1H).
+methyl (1R,5S,6s)-3-azabicyclo[3.1.0jhex-6-ylacetate hydrochloride
+H
+H
+CIθH
+20described in Berliner,M.A.;et al.Org.Process Res.Dev.2011,15,1052-1062.
+3.05mol) in methanol(600 mL)wasadded 4MHClinmethanol(6.2 L)at 10°C over a period of
+45minand themixturewasstirred for15min.Thereactionmixtureslowlyheated to25-30°C
+for 2 h.The solvent was evaporated under reduced pressure to afford crude product.The crude
+25product was triturated with ether (1.5 L) to give [(1R,5S,6r)-3-benzyl-3-azabicyclo[3.1.0]hex-6-
+ylmethanolhydrochloride (703 g,96%yield) as pale brown solid which was used directly in the
+nextstep.
+Toastirredsolutionof [(1R,5S,6r)-3-benzyl-3-azabicyclo[3.1.0]hex-6-yl]methanol
+hydrochloride (699 g, 2.91 mol) in toluene (1.4 L) was added thionyl chloride (693 g,5.83
+30moles)at5 to 10°C over aperiod of 30 min and stirred for 15 min.Thereaction mixture
+EtOAc (5 L) and saturated NaHCO solution (3 L,pH = ~8) and stirred for 1h, then the layers
+53
+
+--- PAGE 54 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+54 → 55
+WO2017/115205
+PCT/IB2016/057728
+evaporated under reduced pressure to give the title compound (611g,95%) as a brown color
+liquid.
+51H NMR (600 MHz, DMSO-de)  7.30 (t, 2H), 7.20-7.25 (m, 3H), 3.51-3.56 (m, 4H), 2.87 (d, 2H),
+2.29 (d, 2H), 1.54-1.57 (m, 1H), 1.43 (s, 2H).
+Step 2:[(1R,5S,6s)-3-benzyl-3-azabicyclo[3.1.0]hex-6-yl]acetonitrile
+To a stirred solution of (1R,5S,6r)-3-benzyl-6-(chloromethyl)-3-azabicyclo[3.1.0]hexane
+(664 g,2.99 mol) inDMF (2.9L)was added sodium cyanide (191g,3.89 mol)at rt and the
+10
+EtOAc in petroleum ether to give the title compound (593 g, 93.2%) as a brown color liquid.
+151H NMR (600 MHz, DMSO-de)  7.27-7.32 (m, 2H), 7.19-7.26 (m, 3H), 3.54 (s, 2H), 2.87 (d,
+2H), 2.45 (d, 2H), 2.28 (d, 2H), 1.33-1.41 (m, 3H).
+Acetylchloride(2.21kg,28.3mol)was added tomethanol(3.77L)at0°Covera period
+of 1h.Thereactiontemperaturewasslowlyheated to45°Cfor30min.Thereactionmixture
+20
+was again cooled to 0°C and added a solution of [(1R,5S,6s)-3-benzyl-3-azabicyclo[3.1.0]hex-
+)
+Theresulting solution was slowly heated to 65°Cfor 4 h.The reaction mixture was cooled to rt
+andconcentratedunderreducedpressure.ThecrudewasdissolvedinEtOAc(6L)and
+25aqueous layer was further extracted with EtOAc (2 x 1 L). The combined organic layers were
+washedwithbrinesolution(2.0L),driedoveranhydrousNa2SO4andevaporatedunderreduced
+pressuretogive the titlecompound(377g,82%)asabrowncolor liquid
+H NMR (600 MHz, CDCls)  7.19-7.31 (m, 5H), 3.67 (s, 3H), 3.56 (s, 2H), 2.99 (d, 2H), 2.34 (d,
+2H), 2.18 (d, 2H), 1.50-1.54 (m, 1H), 1.23 (s, 2H).
+30
+Step4
+To a solution of methyl [(1R,5S,6s)-3-benzyl-3-azabicyclo[3.1.0]hex-6-yl]acetate (542 g,
+30min.Thereaction mixture was warmed to rt and stirred for 2 h.The solvent was evaporated
+underreducedpressure.Thecrudeproductwas trituratedwithether(1.5L)togiveanoff-white
+35solid (545 g,87.7%yield) that was used directly in the next step. The crude product(420 g,149
+moles)was dissolved inmethanol (4 L) in an autoclave and treated with 10%Pd(OH)2/C (41.4
+54
+
+--- PAGE 55 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+55 → 56
+WO2017/115205
+PCT/IB2016/057728
+g,50%wet)under nitrogen,the autoclave was evacuated twice with nitrogen and placed under
+cooled to rt and stirred for 4 h. The reaction mixture was filtered through a bed of Celite,
+washing with methanol(2x 1 L).The filtrate was evaporatedunderreduced pressure.The
+5
+crudeproduct wastriturated withether(1L) and thesolidswere collected byfiltrationto give the
+off-whitesolid.
+H NMR (600 MHz, DMSO-ds) o: 9.25-9.80 (br. S, 2H), 4.05-4.44 (br. s, 1H), 3.2-3.4 (br. s, 1H),
+3.21 (s, 3H), 3.15 (s, 2H), 2.30 (d, 2H), 1.60 (s, 2H), 1.20-1.27 (m, 1H).
+10
+2,6-dichloro-4-(1,1-difluoroethyl)-5-fluoropyridine-3-carbonitrile
+CI
+added sodium hydride (60% in mineral oil,3.19 g,79.6 mmol) and the mixture was heated to 50
+15°℃.Ethyl fluoroacetate(15.4 g,145 mmol) was added dropwise over 1min and thereaction was
+°℃.Themixture was extracted with EtOAc(3x150mL),washed with brine(100 mL),dried over
+Na2SO4,filtered and concentrated togiveayellowoil(13g).The crudeproduct wasdissolved in
+ethanol(200 mL) and treated with 2-cyanoacetamide(5.52 g,65.6 mmol) and piperidine (5.59
+20
+precipitated out of solution and was collected by filtration to give the title compound (10 g, 70%)
+as a white solid.
+H NMR (400 MHz, DMSO-ds) 0: 8.20 (br. s, 2H), 1.89 (t, 3H).
+Step2
+25
+A mixture of 4-(1,1-difluoroethyl)-5-fluoro-2,6-dihydroxypyridine-3-carbonitrile (10.0 g,
+45.8 mmol) and phosphorus pentachloride(95.5 g, 458 mmol) was stirred at 130°℃ for 32 h.
+Thereaction mixture was cooled tort andpoured intoaqueousNaHCOs(750mL)at0°C.The
+productwas extracted withEtOAc(3x 150mL),washed withbrine(150mL).dried over
+30column chromatography(EtOAc/petroleum ether from 0:100 to 3:97)to give 2,6-dichloro-4-(1,1-
+difluoroethyl)-5-fluoropyridine-3-carbonitrile(6.0g,51%)asayellowoil
+H NMR (400 MHz, DMSO-de) 0: 2.10 (t, 3H).
+55
+
+--- PAGE 56 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+56 → 57
+WO2017/115205
+PCT/IB2016/057728
+2,4-dichloro-6-(1,1-difluoroethyl)pyridine
+OH
+OH
+Step1:6-(1,1-difluoroethyl)pyridine-2,4-diol
+A suspension of ethyl 6-(1,1-difluoroethyl)-2,4-dihydroxypyridine-3-carboxylate(10.5g,
+542.5mmol)in6N HCl(100 mL)wasstirredat100°C for16h.Thereaction mixturewascooled
+to rt and evaporated underreduced pressure to give the title compound (8.0 g,90%) as a white
+solid.
+1H NMR (400 MHz, DMSO-de) o: 7.9-8.6 (m, 2H), 6.62 (s, 1H), 6.27 (S, 1H), 1.95 (t, 3H).
+Step2:2,4-dichloro-6-(1,1-difluoroethyl)pyridine
+10
+pentachloride(34.4g,165mmol) was stirred at 125°℃for20 h.The mixture was quenched with
+ice-water(200mL),and extracted withEtOAc(2x100mL).Theorganicphasewas dried over
+Na2SO4,filtered and concentrated.The crudeproduct waspurified using column
+chromatographyelutingwithpetroleumethertogive2,4-dichloro-6-(1,1-difluoroethyl)pyridine
+15
+(2.5g,36%yield)as a lightyellowoil.
+MS(ES+): 211.6 (M+H).
+Examples
+OH
+20
+OH
+Step 1:ethyl{(1R,5S,6s)-3-[6-chloro-5-cyano-4-(trifluoromethyl)pyridin-2-yl]-3-
+azabicyclo[3.1.0]hex-6-y}acetate
+A suspension of2,6-dichloro-4-(trifluoromethyl)pyridine-3-carbonitrile(2.4g,9.8mmol),
+25
+56
+
+--- PAGE 57 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+57 → 58
+WO2017/115205
+PCT/IB2016/057728
+purified by silica gel chromatography (10-35% EtOAc in n-heptane) to afford the title compound
+as anoff-whitesolid(2.2g,57%).
+52H),3.67-3.53 (m, 2H), 2.43-2.21 (m, 2H),1.75-1.57 (m, 2H), 1.19 (t, 3H), 0.81 (dt, 1H).
+Ethyl
+{(1R,5S,6s)-3-[6-chloro-5-cyano-4-(trifluoromethyl)pyridin-2-yl]-3-
+azabicyclo[3.1.0]hex-6-yl}acetate (2.1g,5.7 mmol),(2S,3R)-3-hydroxy-2-methylazetidin-1-ium
+10
+[(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonate (2.0 g,6.2 mmol),NaHCOs
+(1.7 g, 20 mmol) were suspended in ethanol and stirred at 80 °C for 18 h. The reaction was
+diluted with saturated NaHCOs(200 mL) and extracted with EtOAc(3x100 mL). The combined
+organics were dried over Na2SO4,filtered and concentrated. The resultant white solid was
+carriedforwardtothenextstepwithoutpurification.
+15MS (ES+): 447.0 (M+Na).
+Step3
+cyano-6-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-4-(trifluoromethyl)pyridin-2-yl}-3-
+azabicyclo[3.1.0jhex-6-yl]acetate(2.5g.5.9mmol)inethanol(80mL)and thereactionwas
+20
+）stirred at rt for1h.Thereactionwas concentrated,diluted withwater(25mL),acidified with 1N
+25then filtered and the filter cake washed with n-heptane to afford Example 1as a white solid (2.4
+Example1asawhitesolid (1.4g,44%).
+30MP = 189.9-196.8 °C. MS (ES+): 397.1 (M+H).H NMR (600 MHz, DMSO-ds) O: 12.10 (br. S,
+1H), 6.22 (s, 1H), 5.63 (br. S, 1H),4.54 (t, 1H), 4.20 (quin. 1H), 4.06 (br. S, 1H), 3.94-3.60 (m,
+57
+
+--- PAGE 58 ---
+EP16823054.8
+DESCRIPTION (06.07.2017)
+58 →59
+WO2017/115205
+PCT/IB2016/057728
+Example2:[(1R,5S,6R)-3-{3-chloro-5-cyano-6-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-4-
+)
+OH
+OH
+Step 1
+5
+(trifluoromethyl)pyridin-2-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetate
+Ethyl
+mL)was treated with N-chlorosuccinimide(28.3mg,0.212mmol)at rtand themixture was
+10
+stirred for 16h at 25 °C.The mixture was diluted with water(15 mL)and saturated aqueous
+washedwithbrine,driedoverNa2SO4andconcentratedinvacuotoprovidethetitlecompound
+Step 2
+15
+Example 2 was prepared in an analogous manner to Example 1，step3,using ethyl
+[(1R,5S,6R)-3-{3-chloro-5-cyano-6-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-4-
+MS (ES+): 431.1 (M+H). H NMR (400 MHz, CDsOD) 8 4.70 (dd, 1H), 4.39-4.25 (m, 2H), 4.24-
+yl}-3-azabicyclo[3.1.0jhex-6-yl]acetate
+OMe
+58
+
+--- PAGE 59 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+59 → 60
+WO2017/115205
+PCT/IB2016/057728
+Step1:
+Methyl {(1R,5S,6s)-3-[2-chloro-6-(trifluoromethyl)pyrimidin-4-yl]-3-azabicyclo[3.1.0]hex-6-
+yllacetate
+Toasolutionof methyl(1R,5S,6s)-3-azabicyclo[3.1.0]hex-6-ylacetatehydrochloride
+671.5mmol)inDCM(50 ml)was added in drops at-72°C;the additionfunnelwaswashed with
+DCM(50 ml) and the wash was added into the reaction flask.DIPEA (273 mL,1570 mmol)was
+mixture was stirred at -65 °℃ to -63 °℃ for 1 h and then warmed to 25°℃ over 3 h. The resulting
+10
+clear solution was concentrated to ~1/5 of the initial volume. To the obtained heavy slurry,
+MTBE(700 mL) and heptane(700 mL)were added and theresulting slurrywas stirred at 25°℃
+for 10 min then solids were filtered off and washed with MTBE-heptane (4:1).The combined
+mother liquorwasconcentratedinvacuotoanoil，whichwascombinedwithheptane(1200
+15formed.The liquid was decanted and the solid was washed with heptane (200 mL) and dried in
+purification.
+H NMR (400 MHz, CDCls) 8: 6.47 (s, 1H), 4.07 (d, 1H), 3.71 (s, 3H), 3.53-3.68 (m, 3H), 2.36-
+2.49 (m, 1H), 2.21-2.34 (m, 1H), 1.60-1.73 (m, 2H), 0.88-0.97 (m, 1H).
+20
+Step2
+6-yllacetatefromStep 1wasdissolved inacetonitrile(1500mL)and(2S)-2-methylazetidinium
+[(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonate (223.0 g,735 mmol) was
+added.The mixture was stirred at 60 °C and DIPEA (77.0 mL,442 mmol) was added during 3 h.
+25The mixture was stirred for 3 h and then DIPEA (180 mL, 1.03 mol) was added over 3 h and the
+mixture was stirred at 60 °C for 18 h.Additional (2S)-2-methylazetidinium [(1R,4S)-7,7-
+dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonate(18.0g,59mmol)wasaddedandthe
+mixturewasstirredat60°Cforanother 18h.Themixturewasconcentrated to~1/4of theinitial
+volume andtheresultantyellowoilwaspartitionedbetween500mLof water,400mLof
+30
+mLof saturated NaHCOs(120 mL),and then stirred with SiO2(70 g)and anhydrous MgSO4(70
+g).Solidswerefiltered offand the clearsolutionwas concentrated toobtain216.6g Example3
+as a colorless oil.
+59
+
+--- PAGE 60 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+60 → 61
+WO 2017/115205
+PCT/IB2016/057728
+(m, 3H), 3.70 (s, 3H), 3.50-3.64 (m,1H),3.41-3.50 (m, 2H),2.33-2.42 (m,1H), 2.31 (d, 2H),
+1.88-1.99 (m, 1H), 1.52-1.59 (m, 2H), 1.49 (d, 3H), 0.88-0.96 (m, 1H).
+5
+azabicyclo[3.1.ojhex-6-yl]aceticacid
+OH
+To a stirred solution of unpurified methyl [(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-
+added a solutionofsodiumhydroxide(35.1g,877 mmol) inwater(70mL)in smallportions
+10
+under stirringat5°C to15°C.Themixturebecameclearin30min.Theclear solutionwas
+stirred atRTfor3h,thenconcentratedto~1/3oftheinitialvolumeand theresiduewasdiluted
+withwater(750mL)and brine (250 mL),thenwashed witha mixture of MTBE(260mL)and
+MTBE-heptane (2:1)mixture (2x300 mL) and the organic layers discarded.The aqueous layer
+15was then combined with MTBE (250 mL) and heptane (250 mL) and cooled to 0 °C. Slowly
+under stirring at0°C to 4°C,6M aq.HCI(130mL)was added,followed by1M aq.KHSO4
+(150mL),and theobtained mixturewas stirred for 15 min.The organicphasewas separated
+andtheaqueousphasewasadditionallyextractedwithamixtureofMTBE(170mL)and
+heptane(170 mL).The combined organic extractwas washed withwater-brine(1:1)mixture
+20
+(150 mL),dried over anhydrous MgSO4(60 g)and SiO2(60 g),filtered,and concentrated to give
+a colorless oil.It was combined(asa concentrated solutioninMTBE)withanotherbatch,which
+was prepared usingidentical conditions on the same scale.The combined MTBE solution was
+concentratedinvacuo,thenheptane(2oo0mL)was addedandthesuspensionwas
+concentrated again,withgradual increaseofvacuumtoobtain thedesiredproduct(406.0g).A
+25
+portion of this material(196 g) was dissolved in MTBE(220 mL)at 60°C to 63°C, stirred slowly,
+title compound (50 mg).The mixture was stirred at 60°℃ for 30 min, then additional heptane
+and thenslowlycooled to25°Cand stirred for20h.Asmall amountofsolidwasstuckon the
+30flask walls and easily moved into the liquid phase with a spatula and the mixture was further
+60
+
+--- PAGE 61 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+61 → 62
+WO2017/115205
+PCT/IB2016/057728
+conditions without seeding.
+5MP:122-123 °C,[α]o +86.3° (CDCls.C= 1.37).MS(ES+): 357.3 (M+H).H NMR (400 MHz,
+CDCI) 8: 10.84 (br. S,1H), 5.92 (s,1H),4.38-4.51 (m,1H), 3.89-4.10 (m, 3H),3.53-3.66 (m,
+1H), 3.41-3.53 (m, 2H), 2.30-2.46 (m, 3H),1.94 (ddt, 1H),1.55-1.63 (m, 2H),1.50 (d, 3H), 0.94
+(m, 1H).
+PowderX-raydiffractionanalysiswasconductedusingaBrukerAxSD4Endeavor
+thesecondary opticsused variable slits.Diffracted radiation was detected by aPSD-Lynx Eye
+40.0 degrees 2-Theta using a step size of 0.020 degrees and a step time of 0.3 second.
+15
+duringcollection.DatawerecollectedusingBrukerDlFFRACPlussoftwareandanalysiswas
+performedbyEVAdiffractplussoftware.
+algorithmintheEVAsoftware，peakswereselectedwithathresholdvalueof1andawidth
+20value of 0.3wereused tomakepreliminarypeak assignments.The output of automated
+assignmentswasvisuallycheckedtoensurevalidityandadjustmentsmanuallymadeif
+notresolvedorwereconsistentwithnoisewerealsodiscarded.Atypicalerrorassociatedwith
+thepeakpositionfromPXRDstated inUSPandJP isupto+/-0.2°.
+25
+Characteristic peaks for crystalline free acid of Example 4 include Angle 2θ(°)values of
+about 9.0,10.4，15.0,and 21.4+/-0.2°.Yet another embodiment of the crystallinefree acid of
+Example4iswherecharacteristicpeaksincludeAngle2θ()valuesofabout9.0,15.019.6,
+21.4, and 26.5 +/- 0.2°.Yet another embodiment of the crystalline free acid of Example 4 is
+where characteristicpeaks include Angle 2θ(°)values of about 9.0，10.4，11.5，15.0,16.5,
+3019.6,21.4, and 26.5+/-0.2°.Yet another embodiment of the crystalline free acid of Example 4
+is where characteristicpeaks includeAngle2θ(°)values of about 10.4,11.5，15.0,19.6,and
+4.
+35
+61
+
+--- PAGE 62 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+62 → 63
+WO2017/115205
+PCT/IB2016/057728
+Table1:PXRDpeak list for crystalline freeacid of Example 4
+Angle20
+Intensity
+Angle 20
+Intensity
+Angle20
+Intensity
+(°)*
+(%)
+(°)*
+(%)
+(°)*
+(%)
+9.0
+37
+18.3
+85
+25.9
+20
+10.4
+17
+18.8
+17
+26.5
+30
+11.5
+16
+18.9
+7
+27.1
+6
+13.5
+10
+19.6
+100
+27.6
+5
+13.9
+5
+21.4
+36
+28.1
+6
+15.0
+45
+22.8
+22
+29.1
+6
+16.5
+23
+22.9
+15
+30.1
+10
+17.3
+4
+23.3
+55
+30.5
+6
+17.7
+14
+23.7
+6
+31.6
+4
+18.1
+40
+25.7
+7
+Example 5:[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+OH
+5
+H
+OH
+Step 1: methyl [(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+A
+solutionof
+methyl
+1{(1R,5S,6s)-3-[2-chloro-6-(trifluoromethyl)pyrimidin-4-yl]-3-
+azabicyclo[3.1.0]hex-6-yl}acetate (1.55 g,4.60 mmol)，(2S,3R)-3-hydroxy-2-methylazetidin-1-
+10
+ium [(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-yl]methanesulfonate (1.62 g, 5.10 mmol),
+triethylamine (1.6 mL,12.0 mmol) and acetonitrile (15.4 mL) was heated at 60 °℃ for 16 h. The
+reaction was cooled tort and concentrated.Water(15 mL) was added and the reaction was
+extracted with EtOAc(10mLx 3).The combined organic layerswere concentrated and purified
+by flash chromatography (EtOAc/heptane, 0% to 100%) on a silica gel column to give the title
+15
+compound(1.3g,73%)asawhitesolid
+62
+
+--- PAGE 63 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+63 → 64
+WO2017/115205
+PCT/IB2016/057728
+H NMR (400 MHz, CDCIs) 8: 5.98 (s, 1H), 4.31 (ddd, 1H), 4.23 (t, 1H), 4.21-4.11 (m, 1H), 4.09-
+3.89 (m, 1H), 3.76 (dd, 1H), 3.72 (s, 3H), 3.67-3.54 (m, 1H), 3.53-3.41 (m, 2H), 2.34 (d, 2H),
+1.61-1.58 (m, 2H), 1.54 (d, 3H), 0.98-0.88 (m, 1H).
+Step2
+5
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetate(1.30g，3.36mmol)in
+methanol (5 mL) was added 2M aqueous NaOH (4.2 mL,8.4 mmol).After 3 h at rt, the reaction
+10form was made by mixing Example 5 (500 mg, 1.34 mmol) with 1M NaOH (1.34 mL,1.34
+mmol).Thesolutionwasstirred atrtfor5minutesthendriedunderreducedpressuretoyield a
+white solid.EtOAc (3 mL),heptane(0.5 mL)and water (0.1mL)were addedand the
+Example 5 as the crystalline sodium salt.
+15MS(AP+): 373.4 (M+H). H NMR (400 MHz, CDCIs) 8: 5.96 (S, 1H), 4.34-4.25 (m, 1H), 4.25-4.17
+(m, 1H), 4.17-4.10 (m, 1H), 4.06-3.88 (m, 1H), 3.74 (dd, 1H), 3.65-3.53 (s, 1H), 3.53-3.43 (m,
+2H), 2.45-2.27 (m, 2H), 1.62-1.55 (m, 2H), 1.52 (d, 3H), 0.97-0.87 (m, 1H).
+PowderX-raydiffractionanalysiswasconductedusingaBrukerAXSD4Endeavor
+20
+thesecondaryoptics used variable slits.Diffracted radiationwas detected byaPSD-LynxEye
+was collected in theTheta-2Theta goniometer at theCu wavelengthKa=1.54056A from 3.0 to
+25during collection.Data were collected using Bruker DIFFRAC Plus software and analysis was
+performedbyEVAdiffractplussoftware.
+algorithmintheEVAsoftware,peakswereselectedwitha thresholdvalueof1andawidth
+value of 0.3were used to makepreliminary peak assignments.The output of automated
+30assignments was visuallychecked to ensurevalidity and adjustments manuallymade if
+notresolvedorwere consistent withnoisewerealsodiscarded.Atypicalerrorassociatedwith
+thepeakposition fromPXRDstated inUSPandJP is upto+/-0.2°.
+35of about 5.9,11.5,11.8,13.3,21.5 +/-0.2°.Yet another embodiment of the crystalline sodium
+salt of Example 5 is where characteristic peaks include Angle 2θ(°)values of about 5.9,10.3,
+63
+
+--- PAGE 64 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+64 → 65
+WO2017/115205
+PCT/IB2016/057728
+11.5,11.8,13.3,16.5,21.5,ad 22.6 +/-0.2°.Yet another embodiment of the crystalline sodium
+salt of Example 5 is where characteristicpeaks include Angle 2θ(°)values of about 5.9,10.3,
+11.8,16.5,and 21.5 +/-0.2°.Table 2providesPXRD peak list for crystalline sodium salt of
+Example 5,+/-0.2°is to apply to said peaks.Figure 2 provides thePXRD pattern of crystalline
+5
+sodiumsalt of Example 5.
+Table2:PXRDpeak listfor crystallinesodiumsaltof Example5
+Angle 20
+Intensity
+Angle 20
+Intensity
+Angle 20
+Intensity
+()*
+(%)
+(°)*
+(%)
+(°)*
+(%)
+81
+17.7
+6
+23.7
+11
+6.8
+27
+18.3
+11
+23.9
+20
+7.6
+11
+19.0
+5
+25.0
+3
+10.3
+26
+19.2
+4
+25.8
+4
+11.5
+92
+19.9
+15
+26.7
+6
+11.8
+100
+20.4
+7
+27.0
+8
+13.3
+48
+20.7
+28
+28.6
+3
+13.7
+5
+21.1
+4
+30.8
+8
+15.3
+20
+21.5
+21
+31.5
+3
+16.5
+88
+22.6
+18
+34.3
+17.0
+22
+23.1
+4
+36.0
+Example 6: {(1R,5S,6s)-3-[2-cyclobutyl-6-(trifluoromethyl)pyrimidin-4-yl]-3-
+azabicyclo[3.1.0]hex-6-yl}acetic acid
+10
+OH
+Step 1:Ethyl {(1R,5S,6s)-3-[2-cyclobutyl-6-(trifluoromethyl)pyrimidin-4-yl]-3-
+azabicyclo[3.1.0jhex-6-yl}acetate
+Toasolution of ethyl {(1R,5S,6s)-3-[2-chloro-6-(trifluoromethyl)pyrimidin-4-yl]-3-
+15
+bromide in THF (0.86 mL, 0.43 mmol) was added. The resulting grey suspension was flushed
+64
+
+--- PAGE 65 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+65 → 66
+WO2017/115205
+PCT/IB2016/057728
+extract was washed with brine, dried over Na2SO4,and concentrated. The residue was purified
+by preparative TLC,eluting with a mixture EtOAc-petroleum ether (1:5) to obtain the title
+compoundasacolorlessgum(45mg,85%yield).
+MS(ES+):369.9(M+H).
+Step2
+and purified by reversephasepreparativeHPLC toprovide15mg(36%yield)asawhitesolid.
+10
+MS(ES+): 342.1 (M+H). H NMR (400 MHz, CDsOD) 8: 6.57 (S, 1H), 4.04-4.18 (m, 1H), 3.46-
+0.94 (m, 1H).
+HO
+15
+OH
+To a mixture of ethyl [(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetate(100mg，0.250mmol;
+20
+addedpotassiumcyclopropyltrifluoroborate(185mg,1.25mmol),AgNO(8.5mg,0.050mmol),
+K2S2Og(338 mg,1.25 mmol),DCE(5.0 mL) and water (5.0 mL).TFA (57 mg,0.50 mmol) was
+thenadded.Thereactionvial wascapped and the reaction mixture was stirred at50°Cfor16h.
+Thereactionmixture was diluted with aq.ammonium chloride(10 mL),extracted with EtOAc
+25
+10%MeOH in DCM to give the tile compound (30 mg, 27%) as colorless oil.
+MS(ES+): 441.1 (M+H).
+65
+
+--- PAGE 66 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+66 → 67
+WO2017/115205
+PCT/IB2016/057728
+Step2
+phasepreparativeHPLCtoprovide10mg(36%yield)asawhitesolid.
+MS(ES+): 413.1 (M+H). H NMR (400 MHz, CDsOD) 8: 4.30-4.19 (m, 3H), 4.15-4.07 (m, 2H),
+(m, 2H), 0.93-0.84 (m, 1H), 0.49-0.41 (m, 2H).
+Example8:[(1R,5S,6R)-3-{5-ethyl-2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+10
+HO
+OH
+Step 1:ethyl [(1R,5S,6R)-3-{5-bromo-2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+15(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetate (100 mg,0.259 mmol; made
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetate)indryacetonitrile(10mL)
+was added N-bromosuccinimide (60 mg, 0.29 mmol, 85% purity) and the reaction was stirred for
+20
+(30mLx 3) and the combined organic layerswere washed with brine,dried overwith Na2SO4,
+%yield)aslightyellowsolid.
+25
+To a mixture of ethyl [(1R,5S,6R)-3-{5-bromo-2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-
+tributylvinyl tin (51 mg,0.16 mmol) and Pd(PPhs)2Cl2 (11 mg,0.015 mmol) in dry dioxane (5.0
+mL) was added tetrabutylammonium bromide (35 mg, 0.11 mmol). The red reaction mixture was
+66
+
+--- PAGE 67 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+67 →68
+WO2017/115205
+PCT/IB2016/057728
+stirred at 50°℃ for 16h.Theblack reaction mixture was diluted with aq.NH4Cl,extracted with
+Na2SO4，filteredand thefiltratewasconcentratedtogivethecrudeproduct asredoil.The
+5re-purified under the same condition by preparative TLC (Petroleum ether: EtOAc=1:1) to obtain
+the title compound as a white solid (15mg). MS (ES+): 427.1 (M+H).
+To a mixture of ethyl [(1R,5S,6R)-3-{5-ethenyl-2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-
+17% purity) in dry ethanol (10.0 mL) was added Pd/C (2.1 mg, 0.0020 mmol). The black
+s
+whitesolid.
+15
+Step4
+[(1R,5S,6R)-3-{5-ethenyl-2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetateandpurifiedviapreparative
+20
+MS (ES+): 401.0 (M+H). H NMR (400MHz, CDOD)  4.22 (dd, 1H), 4.16-4.08 (m, 2H), 4.03 (t,
+2H), 3.75 - 3.64 (m, 2H), 3.45-3.48 (m, 1H), 2.73 (q, 2H), 2.36 - 2.29 (d, 2H),1.63-1.59 (br. m
+2H), 1.49 (d, 3H), 1.03 (t, 3H), 0.91-0.83 (m, 1H).
+Example9:(2S,3R)-2,3-dimethyl-1-[4-{(1R,5S,6S)-6-[(methylsulfonyl)methyl]-3
+HO
+25
+H
+Step1:(1R,5S,6r)-3-benzyl-6-(iodomethyl)-3-azabicyclo[3.1.0]hexane
+[(1R,5S,6r)-3-benzyl-3-azabicyclo[3.1.0]hex-6-yl]methyl methanesulfonate(600 mg,2.13
+mmol)and Nal (639,4.26mmol)was suspended in MeCN (5 mL)and stirred for 16 h.The
+30combinedorganicswere concentratedtoyieldaredoilwhichwaspurifiedbyflash
+67
+
+--- PAGE 68 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+68 → 69
+WO 2017/115205
+PCT/IB2016/057728
+chromatography(Petroleumether/EtOAc0to40%)onasilicagelcolumntoisolatethetitle
+compound(500mg,75%)asayellowoil.
+2.24 (m, 2H), 1.87 - 1.76 (m, 1H), 1.36-1.29 (m, 2H)
+5
+portionwise.The yellow solution was stirred at 80°C for 16 h,then at rt for 48 h.Thereaction
+wasdiluted withwater(50ml)andextractedwithEtOAc(30mlx3).Thecombinedorganics
+10
+(Petroleum ether/EtOAc 50 to 80%) on a silica gel column to isolate the title compound (310 mg,
+73%)asayellowsolid.
+H NMR (400 MHz, CDCIs) 0 7.41 -7.10 (m, 5H), 3.59 (s, 2H), 3.04 (d, 2H), 2.96 - 2.86 (m,
+5H), 2.44 - 2.33 (m, 2H), 1.75 - 1.65 (m, 1H), 1.53 - 1.41 (m, 2H).
+15
+(1R,5S,6r)-3-Benzyl-6-[(methylsulfonyl)methyl]-3-azabicyclo[3.1.0]hexane (310 mg, 1.17
+mmol) was dissolved in EtOH(10 mL) and 10 wt%Pd/C (249 mg,0.234 mmol) was added.The
+suspensionwasstirredunder50psiofH2for48h.Thereactionwasfilteredand thefiltratewas
+concentrated to yield a white solid (200 mg,98%) and used directly in the next step without
+20
+purification.
+Step 4
+Example 9 was made analogously toExample 1,Steps 1-2 starting from(1R,5S,6r)-6-
+[(methylsulfonyl)methyl]-3-azabicyclo[3.1.0]hexane(40mg,0.11mmol).Uponcompletion,the
+reactionwasquenchedwithsat.aq.NHCI andextractedwithEtOAc.Theorganicswere
+25
+concentrated and purified by preparatory HPLC(PhenomenexGemini C18250*50 10um 26%
+Example9(30mg,25%yieldovertwosteps)as awhitesolid.
+MS(ES+): 420.9 (M+H). H NMR (400 MHz, CD3OD)  6.13 (S, 1H), 4.16 (q, 1H), 4.09 -3.87
+301.87 (s, 2H), 1.42 (d, 3H), 1.39 (s, 3H), 0.98 (tt, 1H)
+3-azabicyclo[3.1.0]hex-6-yl]-N-(methylsulfonyl)acetamide
+68
+
+--- PAGE 69 ---
+EP 16823054.8
+DESCRIPTION (06.07.2017)
+69 → 70
+WO2017/115205
+PCT/IB2016/057728
+H
+[(1R,5S,6R)-3-{2-[(2S)-2-Methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-
+azabicyclo[3.1.0]hex-6-yl]acetic acid (75 mg,0.21 mmol) was dissolved in DCM (6 mL).
+Carbonyldimidazole (34 mg,0.21 mmol) was added. After 2 h, methanesulfonamide (22 mg,
+16 h,the reactionwas diluted with NH4Cl solution(15mL)and extracted withDCM(15 mlx 3).
+acid)to63%MeCNinwater(0.225%FA)toisolateExample10 as a whitesolid(32mg,35%).
+10
+MS(ES+): 434.0 (M+H). H NMR (400 MHz, CDOD)  6.05 (S, 1H), 4.50 -4.35 (m, 1H), 4.04 -
+3.83 (m, 3H),3.71-3.40 (m, 3H),3.24 (s,3H), 2.45-2.36 (m, 1H),2.34 (d,2H), 2.00-1.86
+(m, 1H), 1.69 -1.57 (m, 2H),1.48 (d, 3H), 0.90 -0.79 (m, 1H).
+Example 11:(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-6-
+(1H-tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0jhexane
+15
+carboxylate
+tert-Butyl (1R,5S,6s)-6-(cyanomethyl)-3-azabicyclo[3.1.0]hexane-3-carboxylate (50 mg,
+0.22 mmol) was dissolved in toluene (2 mL) and tributyltin azide(224 mg,0.675mmol) was
+20
+added.Thereactionwasrefluxedfor16hthencooledtort.Thereactionwasdilutedwith
+saturated aq.Na2COs (5 mL) and water (5 mL) and washed with DCM (15 mL x 2).The aq.
+layer was thenacidified topH=5and extracted with 10:1CH2Cl2:MeOH(15mLx 3).The
+oil.Thiscompoundwasusedwithoutfurtherpurification.
+69
+
+--- PAGE 70 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+70 → 71
+WO2017/115205
+PCT/IB2016/057728
+H NMR (400 MHz, CDCIs)  3.60 - 3.48 (m, 2H), 3.46 - 3.29 (m, 2H), 3.08 (dd, 1H), 2.90 (dd,
+1H), 1.65 - 1.50 (m, 2H), 1.43 (s, 9H), 1.13 - 1.02 (m, 1H).
+Step 2: (1R,5S,6s)-6-(1H-tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0jhexane trifluoroacetic acid salt
+tert-Butyl (1R,5S,6s)-6-(1H-tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0]hexane-3-carboxylate
+5(45 mg,0.10 mmol)was dissolved in DCM (3 mL) and TFA (1.5 mL)was added.After 2 h at rt,
+purification.
+Step3
+10
+tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0]hexane (trifluoroacetate salt,70 mg,0.12 mmol).Upon
+completion,thereaction was quenched with sat.aq.NH4CI(20 mL),acidified to pH=5,and
+extracted with EtOAc(20mLx 3).The organics were concentrated and purified bypreparatory
+HPLC(Daiso 150*255um,36%MeCN inwater(0.225%Formic Acid) to66%MeCN inwater
+(0.225% Formic Acid)) to isolate Example 11(9 mg,19%)as a white solid.
+15MS(ES+): 381.0 (M+H). H NMR (400 MHz, CDOD)  6.07 (s, 1H), 4.50 -4.35 (m, 1H), 4.09 -
+3.84 (m, 3H), 3.72-3.56 (m, 1H),3.56 -3.44 (m, 2H), 3.00 (d, 2H), 2.46 -2.34 (m,1H), 2.02-
+1.86 (m, 1H), 1.82-1.67 (m, 2H),1.49 (d, 3H), 1.04 - 0.94 (m, 1H).
+HO
+OH
+20
+H
+Step1:ethyl-3-amino-4,4-difluoropent-2-enoate
+In two separate batches,a solutionof EtOAc(6.0g,70 mmol) inTHF(50 mL)was
+added sodiumhydride(60%inmineraloil,2.72g,68.1mmol) inportions.After the addition was
+25
+dropwisemanner.Thereactionmixturewasheated at50°Cfor4h,thenstirred at rt for16 h.
+Thereactionmixture waspouredinto10%sulfuricacid(50mL)andextractedwithEtOAc(2x
+products were combined and  purified using column  chromatography eluting  with
+70
+
+--- PAGE 71 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+71 → 72
+WO2017/115205
+PCT/IB2016/057728
+and treated with ammonium acetate (42.8 g,555mmol).The mixture was heated at 80°C for 16
+h.Thesolventwasremovedunderreducedpressureand theresiduewasdilutedwithaqueous
+5dried over Na2SO4,filtered and concentrated to give the tile compound (22.5 g,90.5%)as a
+brown oil.
+H NMR (400 MHz, CDCls) O: 4.89 (s, 1H), 4.16 (q, 2H), 1.81 (t, 3H), 1.28 (t, 3H).
+Toa solutionofethyl-3-amino-4,4-difluoropent-2-enoate(22.5g,126mmol)andpyridine
+10(11.9 g.151 mmol) in DCM (250 mL) was added ethyl 3-chloro-3-oxopropanoate (18.9 g,
+with EtOAc/petroleum ether (1:10) to give the title compound (18.9 g, 51.3% yield) as light
+15yellow oil.
+H NMR (400 MHz, CDCIs) o: 10.53 (br. S, 1H), 5.77 (s, 1H), 4.18-4.28 (m, 4H), 3.45 (s, 2H),
+1.99 (t, 3H), 1.23-1.39 (m, 6H).
+Step3:ethyl6-(1,1-difluoroethyl)-2,4-dihydroxypyridine-3-carboxylate
+Asuspensionofethyl-3-[(3-ethoxy-3-oxopropanoyl)amino]-4,4-difluoropent-2-enoate
+20(18.9 g,64.4 mmol) and potassium tert-butoxide (8.68 g,77.3 mmol) in EtOH (100 mL) was
+pressure,and theresidue was pouredintoice-water(150mL).The resulting solution was
+acidified topH=2with aqueous 2NHCl.Theproduct was extracted withEtOAc(2×200 mL)
+The combined organic layers were filtered，and the white cake(13.0 g) was collected. The
+g),whichwerecombinedwiththefilteredsolidstogivethetitlecompound(14.5g,91%yield)as
+a white solid.
+H NMR (400 MHz, DMSO-ds) o: 11.82 (br. s, 2H), 6.30 (s, 1H), 4.23 (q, 2H), 1.92 (t, 3H), 1.28
+(t, 3H).
+30
+Step 4: ethyl 6-(1,1-difluoroethyl)-2,4-diethoxypyridine-3-carboxylate
+To a mixture of ethyl 6-(1,1-difluoroethyl)-2,4-dihydroxypyridine-3-carboxylate (2.00 g,
+8.09 mmol)and solid potassium carbonate (2.80 g,20.2 mmol) in DMF(35 mL)was added
+iodoethane(2.52 g,16.2 mmol) dropwise at 0°℃.The mixture was stirred at 30°C for 16 h.The
+reactionmixture was diluted withwater(100mL)andextracted withEtOAc(3x35mL).The
+35combined organic layers were washed with brine(2×40 mL),dried over Na2SO4,filtered and
+71
+
+--- PAGE 72 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+72 → 73
+WO 2017/115205
+PCT/IB2016/057728
+concentrated to give a crude product (2.51 g,>100%) as a yellow oil,which was used to the
+next step directly.
+H NMR (400 MHz, CDCIs) 0: 6.87 (s, 1H), 4.36-4.44 (m, 4H), 4.15 (q, 2H), 1.94 (t, 3H), 1.41 (t,
+3H),1.33-1.39 (m, 6H).
+5
+Step5: ethyl5-chloro-6-(1,1-difluoroethyl)-2,4-diethoxypyridine-3-carboxylate
+To a solution of ethyl 6-(1,1-diluoroethyl)-2,4-dihydroxypyridine-3-carboxylate (2.50 g,
+8.24 mmol)in acetonitrile(30mL)was added N-chlorosuccinimide(2.20g,16.5 mmol).The
+colorlessreactionmixturewasstirred at10o°Cfor16h.Thereactionmixturewasdilutedwith
+10
+EtOAc(3x40 mL).The combined organic layers were washed with brine(50 mL),dried over
+Na2SO4,filtered and concentrated.The crude product was purified by column chromatography
+eluting withEtOAc/petroleumether(0:100 to96:4)togive the titlecompound(2.1g,75%)as a
+light yellow oil.
+H NMR (400 MHz, CDCIs) O: 4.33-4.34 (m, 4H), 4.21 (q, 2H), 2.02 (t, 3H), 1.35-1.46 (m, 9H).
+15
+Step6:5-chloro-6-(1,1-difluoroethyl)pyridine-2,4-diol
+A solution of ethyl 5-chloro-6-(1,1-difluoroethyl)-2,4-diethoxypyridine-3-carboxylate (2.10
+reaction mixture was concentrated and treated withammonium hydroxide (6 mL).The reaction
+mixturewas concentrated to give the title compound (3.1g,>100%,30%pure)asa lightyellow
+20solid.
+H NMR (400 MHz, DMSO-de) 0: 6.36 (s, 1H), 1.93 (t, 3H).
+Step7:3,4,6-trichloro-2-(1,1-difluoroethyl)pyridine
+A mixture of 5-chloro-6-(1,1-difluoroethyl)pyridine-2,4-diol (1.80 g,2.6 mmol,30% pure)
+in phosphorus oxychloride (18 mL) and DMF (4.5 mL) was stirred at 100 °C for 16 h.The
+25reaction mixture was poured into ice-water(80 mL) and extracted with EtOAc (3x 40 mL).The
+combinedorganiclayerswerewashedwithbrine(2×50mL),driedoverNa2SO4，filteredand
+EtOAc/petroleum ether(0:100 to 0.5:99.5) to give the title compound (540 mg,85%)as a white
+solid.
+30H NMR (400 MHz, CDCIs)0: 7.56 (s,1H),2.08 (t, 3H).
+Step 8: ethyl {(1R,5S,6s)-3-[3,6-dichloro-2-(1,1-difluoroethyl)pyridin-4-yl]-3-
+azabicyclo[3.1.0]hex-6-yl}acetate
+Amixture of 3,4,6-trichloro-2-(1,1-difluoroethyl)pyridine (50 mg,0.2 mmol)，ethyl
+(1R,5S,6s)-3-azabicyclo[3.1.0]hex-6-ylacetate (34 mg, 0.20 mmol) and triethylamine (62 mg,
+mL)and aqueousammoniumchloride(10mL)and extracted withEtOAc(3x15mL).The
+72
+
+--- PAGE 73 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+73 → 74
+WO2017/115205
+PCT/IB2016/057728
+(0:100 to7:93) togive the title compound (70 mg)as a yellow solid.
+H NMR (400 MHz, CDsOD) 0: 6.84 (s, 1H), 4.13 (q, 2H), 4.02-4.08 (m, 2H), 3.45-3.54 (m, 2H),
+52.33 (d, 2H), 1.97 (t, 3H),1.57-1.62 (m, 2H), 1.25 (t, 3H),0.99-1.06 (m, 1H).
+Step9
+Toa solution of ethyl {(1R,5S,6s)-3-[3,6-dichloro-2-(1,1-difluoroethyl)pyridin-4-yl]-3-
+azabicyclo[3.1.0]hex-6-yl}acetate(70 mg,0.18 mmol)in dioxane (5mL)was added (2S,3R)-3-
+hydroxy-2-methylazetidin-1-ium
+[(1R,4S)-7,7-dimethyl-2-oxobicyclo[2.2.1]hept-1-
+10
+aminoethylphenyl)]palladium(ll)(6.73 mg,0.00923 mmol) and 2-dicyclohexylphosphino-2',6'-
+158
+acidified topH=5with2N HCl,and extracted withEtOAc(3×25mL),the combined organics
+werewashedwithbrine，driedoverNa2SO4，filteredandconcentrated.Thecrudeproductwas
+Example12(10.5mg,14%)asawhitesolid.
+20
+1.46 (d, 3H), 1.14-1.18 (m, 1H).
+HO
+H
+'OH
+25
+Toa solutionof ethyl[(1R,5S,6R)-3-{5-bromo-2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-
+methanol(5.0mL)wasadded sodiummethoxide(16.9mg,0.313mmol)andcopper(l)bromide
+(2.2mg,0.016 mmol) and heated to 60 °C for 16 h.Additional copper (l) bromide (2.2mg,0.016
+73
+
+--- PAGE 74 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+74 → 75
+WO2017/115205
+PCT/IB2016/057728
+mmol)wasaddedand thereactionheatedat60°Cfor16h.Thereactionmixturewasdiluted
+organiclayerswerewashedwithbrine,driedoverwithNa2SO4,filteredandconcentratedtogive
+a crude product that waspurified via reverse phase preparative HPLC to provide 20 mg(48%
+5yield)of Example 13asa whitesolid.
+3.57 (s, 3H), 2.30 (br. d, 2H),1.57 (br. s, 2H), 1.46 (s, 3H), 0.91-0.81 (m, 1H).
+Biological Data
+A screening assay was developed for KHK involvinga coupled enzyme system which
+10used the product of theKHK reaction to drive an absorbance signal in kinetic mode.KHK takes
+fructoseandATPandconvertsittoF1PandADP.ADPthenservesassubstratetopyruvate
+kinasewhichconvertsPEPtopyruvatewhichisthenreducedtolactatebylactate
+dehydrogenasewiththeconcomitantoxidationofNADHtoNAD+.Theresultingdepletionof
+NADH wasmonitored by measuring absorbance at340 nm.
+15
+NCBlrefseqNP_006479.1alongwithsequencesforanN-terminalHis-tagand a thrombin
+usingIPTG induction and purified using Ni-NTA column followed bySuperdex75.Purified KHK-
+20C andKHK-Awere treated with thrombin to remove the His-tag,and final cleanup was done
+32667 Da).
+25used,and monitored by UV-vis spectroscopy in continuous mode at rt. Compounds were
+prepared in DMSO as 4 mM stocks, diluted using an 11-point half-log scheme on a Biomek FX
+(BeckmanCoulter),and incubated at rt for30 minuteswith thereaction mixturecontaining50
+mM HEPES,pH7.4,140 mM KCI, 3.5 mM MgCI2,0.8 mM fructose,2 mM TCEP,0.8 mM PEP,
+reactionwasinitiatedwiththeadditionof0.2mMATP.Theabsorbancewasmeasuredfor30
+minutesonaSpectraMaxreader(MolecularDevices)afterATPwasadded.Theconcentrations
+provided are based on thefinal mixture volume of 40μL(referred to as the final concentration).
+effect(HPE)control,and2.5%DMSOwhichwaspresent inallreactionwellswasusedaszero
+74
+
+--- PAGE 75 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+75 → 76
+WO2017/115205
+PCT/IB2016/057728
+percent effect(ZPE)control.Reactionrates were obtained for 300-1800secondstimewindow
+inunitsof 1ooo*AU/min(absorbanceunitperminute),and averagevaluesforZPEandHPE
+controlsfrom16wellseachwerecalculated,AveZPEandAveHPE,respectively
+5
+100 - 100x(Compound absorbance rate value -AveHPE)
+(AvezPE-AveHPE)
+The%inhibitionwasthenplottedagainstthelogofcompoundconcentrationusing
+slope" using nonlinear regression analysis to give ICso values.For each compound tested, the
+10ICso provided is the average based on at least two separate assays conducted on separate
+days.
+Compoundshaving an ICsovalueless than20 nMwereexamined ina secondKHK
+assay,referred to asAssay B,using 10-fold less enzyme and measuring absorbancefor3
+hours to obtain ICso values below the 10 nM lower limit of Assay A. Compounds were prepared
+spanningaconcentrationrangeof97pMto100nM,andincubatedwithreactionmixture
+initiatedwithadditionof0.2mMATP,andtheabsorbancewasmonitoredfor3hoursat340nm.
+ReactionratesandICsovalueswerecalculatedasdescribedabove.
+20
+A third KHK assay,referred to as AssayC,was performed at high fructose and ATP
+thenaturalsubstratesoftheKHKenzyme.AssayCwasconductedasdescribedabovefor
+25
+DMSO as 4 μM stocks,diluted using an 11-point 2-fold dilution scheme on a Biomek FX
+30reactionwasinitiated withadditionof 0.2mMATP,and the absorbancewasmonitoredfor3
+hoursat340nm.ReactionratesandICsovalueswerecalculatedasdescribedabove.
+75
+
+--- PAGE 76 ---
+EP 16 823 054.8
+DESCRIPTION(06.07.2017)
+76 → 77
+WO 2017/115205
+PCT/IB2016/057728
+Table 3.Biological Data forAssaysA,B,C and D*
+Example No.
+ICso (nM)
+Assay A
+AssayB
+Assay C
+Assay D
+10 nM KHK-C
+1 nM KHK-C
+1 nM KHK-C
+1 nM KHK-A
+1
+5.5 (6)
+1.5 (2)
+3.3 (6)
+7.3 (2)
+2
+6.8 (2)
+1.5 (2)
+3.6 (2)
+3
+3,508 (2)
+4
+14.2 (16)
+8.4 (2)
+37.3 (10)
+66.0 (2)
+5
+24.7 (6)
+13.6 (6)
+58.8 (10)
+95.5 (2)
+6
+169.5 (2)
+7
+110.9 (2)
+8
+53.8 (3)
+６
+14,361 (2)
+10
+682.1 (2)
+11
+866.1 (2)
+12
+288.8 (2)
+13
+33.9 (2)
+24
+9.7 (4)
+3.3 (2)
+11.0 (4)
+12.1 (2)
+40
+11.1 (4)
+3.7 (2)
+37.9 (2)
+42
+8.8 (4)
+2.4 (4)
+10.5 (2)
+43
+17.8 (4)
+8.0 (4)
+48.6 (2)
+50
+4.4 (2)
+1.5 (2)
+2.6 (2)
+Avg ICsobased on(#)numberof runsperExample.
+The following Examples presented in Table 4 were made using conditions similar to the
+referenced Examples listed in the column identified as“Ref.Ex.#",making non-critical,routine
+changes. Table 4 also contains biological data from Assay A for these Examples. Structures of
+theseExamples fromTable 4 are found inFigure 3.
+76
+
+--- PAGE 77 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+77 → 78
+WO 2017/115205
+PCT/IB2016/057728
+Table4.ExamplesandBiologicalDataforAssayA
+Ref.
+IC5o (nM)
+Ex#
+Name
+NMRData/LCMSData
+Ex.#
+AssayA+
+H NMR (400 MHz,CDOD)0:6.30 (t,
+[(1R,5S,6R)-3-{6-
+1H), 6.03 (s, 1H), 4.21 (dd, 1H), 4.15-
+(difluoromethyl)-2-[(2S,3R)-3-4.03 (m,2H),3.90 (br. S,1H) 3.68-3.55
+Ex
+hydroxy-2-methylazetidin-1-
+(m,2H), 3.54-3.41 (m, 2H),2.32 (d,
+Ex 1
+152.2 (2)
+14
+yl]pyrimidin-4-yl}-3-
+2H), 1.61 (br. s, 2H), 1.49 (d, 3H),
+azabicyclo[3.1.0]hex-6-
+0.86-0.79 (m, 1H).
+ylacetic acid
+MS (ES+): 355.0 (M+H).
+[(1R,5S,6R)-3-{5-chloro-6-
+H NMR (400 MHz, CDOD) 0: 6.75 (t,
+(difluoromethyl)-2-[(2S,3R)-3-
+1H), 4.26 (dd, 2H), 4.19 (dd, 1H), 4.13-
+Ex
+hydroxy-2-methylazetidin-1-
+4.00 (m,2H),3.72 (t, 2H),3.64 (dd,
+Ex 2
+19.1 (2)
+15
+yllpyrimidin-4-yl}-3-
+1H), 2.26 (d, 2H), 1.56 (br. s, 2H), 1.47
+azabicyclo[3.1.0]hex-6-
+(d, 3H), 0.91-0.74 (m, 1H).
+yllacetic acid
+MS (ES+): 389.0 (M+H).
+[(1R,5S,6R)-3-{5-chloro-2-
+H NMR (400 MHz, CDOD) 0: 4.27 (t,
+[(2S,3R)-3-hydroxy-2-
+2H), 4.21-4.14 (m, 1H), 4.14-4.00 (m,
+Ex
+methylazetidin-1-yl]-6-
+2H), 3.74 (br. t, 2H), 3.65 (dd, 1H),
+Ex 2
+6.4 (4)
+16
+(triluoromethyl)pyrimidin-4-
+2.29 (d, 2H), 1.57 (br. s, 2H), 1.47 (d,
+yl}-3-azabicyclo[3.1.0]hex-6-
+3H), 0.87-0.78 (m, 1H).
+yllaceticacid
+MS (ES+): 406.9 (M+H).
+H NMR (400 MHz, CDsOD) 0: 6.00 (s,
+[(1R,5S,6R)-3-{6-(1,1-
+1H), 4.26-4.15 (m, 1H), 4.14-3.99 (m,
+difluoroethyl)-2-[(2S,3R)-3-
+2H), 3.88 (br. s, 1H), 3.62 (dd, 2H),
+Ex
+hydroxy-2-methylazetidin-1-
+3.52-3.41 (m, 2H), 2.30 (d, 2H), 1.82 (t,Ex 1
+131.4 (2)
+17
+yl]pyrimidin-4-yl}-3-
+3H), 1.59 (br. S, 2H), 1.49 (d, 3H), 0.88
+azabicyclo[3.1.0]hex-6-
+-0.78 (m, 1H).
+yllacetic acid
+MS (ES+): 369.1 (M+H).
+77
+
+--- PAGE 78 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+78 → 79
+WO 2017/115205
+PCT/IB2016/057728
+[(1R,5S,6R)-3-{5-chloro-6-
+H NMR (400 MHz, CDOD) 0: 4.27 (t,
+(1,1-difluoroethyl)-2-[(2S,3R)-2H),4.20-3.94 (m,3H),3.73-3.65 (m,
+Ex
+3-hydroxy-2-methylazetidin-1-2H), 3.62 (dd, 1H), 2.29 (d, 2H),1.90
+Ex 2
+16.7 (2)
+18
+ylpyrimidin-4-yl}-3-
+(t, 3H), 1.55 (br. S, 2H), 1.47 (d, 3H),
+azabicyclo[3.1.0]hex-6-
+0.87 -0.79 (m, 1H).
+yllaceticacid
+MS (ES+): 403.2 (M+H).
+H NMR(400 MHz, CDOD) 0: 6.86 (t,
+1H), 6.02 (s, 1H), 4.68-4.53 (m, 1H),
+[(1R,5S,6R)-3-{5-cyano-4-
+4.39 (td, 1H), 4.12-4.01 (m, 1H), 3.90-
+(difluoromethyl)-6-[(2S)-2-
+Ex
+3.60 (br. m, 2H), 3.57-3.41 (d, 2H),
+methylazetidin-1-yllpyridin-2-
+Ex 1
+7.2(4)
+19
+2.51-2.36 (m, 1H), 2.31 (d, 2H), 2.05-
+yl}-3-azabicyclo[3.1.0]hex-6-
+1.93 (m, 1H), 1.61 (br. S, 2H),1.49 (d,
+yllacetic acid
+3H), 0.86-0.79 (m, 1H).
+MS (ES+): 363.1(M+H)
+H NMR (400 MHz, CDsOD) 0: 7.03 (t,
+[(1R,5S,6R)-3-{6-
+1H), 4.53-4.43 (m, 1H), 4.41-4.29 (m,
+(difluoromethyl)-2-[(2S,3R)-3-
+1H), 4.29-4.15 (m, 3H), 4.00-3.87 (m,
+Ex
+hydroxy-2-methylazetidin-1-
+2H), 3.85 (dd, 1H), 2.37 -2.30 (m, 5H),Ex 1
+33.4 (2)
+20
+yl]-5-methylpyrimidin-4-yl}-3-
+1.70-1.64 (br. s, 2H), 1.52 (d, 3H),
+azabicyclo[3.1.0]hex-6-
+0.88-0.80 (m, 1H).
+yllacetic acid
+MS (ES+): 368.9 (M+H).
+[(1R,5S,6R)-3-{3-chloro-5-
+H NMR (400 MHz, CDOD) 0: 7.11 (t,
+cyano-4-(difluoromethyl)-6-
+1H),4.38-4.21 (m, 4H), 3.85 (d, 1H),
+Ex
+[(2S,3R)-3-hydroxy-2,3-
+3.75 (dd, 2H), 2.29 (d, 2H), 1.61 - 1.55
+Ex 28.7 (2)
+21
+dimethylazetidin-1-yllpyridin-
+(m, 2H), 1.41 (s, 3H), 1.40 (d, 3H),
+2-yl}-3-azabicyclo[3.1.0]hex-
+0.88-0.81 (m, 1H).
+6-yllacetic acid
+MS(ES+): 427.0 (M+H).
+78
+
+--- PAGE 79 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+79 → 80
+WO2017/115205
+PCT/IB2016/057728
+MS(ES+):387.1(M+H).Retention
+time:2.190min;Column:Waters
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-
+Atlantis dC184.6x50mm,5um.
+hydroxy-2,3-dimethylazetidin-
+Modifier:TFA 0.05%.Gradient:95%
+Ex
+1-yll-6-
+water/5%acetonitrilelinearto5%
+Ex 1
+702.8 (2)
+22
+(trifluoromethyl)pyrimidin-4-
+water/95%acetonitrileover4.0min,
+yl}-3-azabicyclo[3.1.0]hex-6-
+HOLDat 5%water/95% acetonitrile
+yllacetic acid
+for totalrun time of5.0 min.Flow
+2.0mL/min.
+MS(AP+):411.1(M+H);retention time
+=1.62min;Column:WatersXBridge
+[(1R,5S,6R)-3-{5-cyano-6-
+C184.6x50,5umMobilephaseA:
+[(2S,4S)-4-hydroxy-2-
+0.03% NH4OH in H20 (v/v); Mobile
+Ex
+methylpyrrolidin-1-yl]-4-
+phase B:0.03% NH4OH in acetonitrile
+Ex 1
+11.6 (2)
+23
+(triluoromethyl)pyridin-2-yl}-
+(v/v)Gradient:95.0% H2O/5.0%
+3-azabicyclo[3.1.0]hex-6-
+Acetonitrilelinearto5%H2O/95%
+yllacetic acid
+Acetonitrile in4.0min,HOLDat5%
+H2O/95%Acetonitrilefortotalrun time
+of5.0min.Flow:2mL/min
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-
+H NMR (600 MHz, CDOD)0: 4.15-
+hydroxy-2-methylazetidin-1-
+4.22 (m, 1H), 4.02-4.14 (m, 4H), 3.56-
+Ex
+yll-5-methyl-6-
+3.67 (m, 3H), 2.32 (br. d, 2H), 2.20-
+Ex 1
+9.7 (4)
+24
+(trifluoromethyl)pyrimidin-4-
+2.23 (m, 3H), 1.54-1.57 (m, 2H), 1.50
+yl}-3-azabicyclo[3.1.0]hex-6-
+(d, 3H), 0.87-0.94 (m, 1H).
+ylacetic acid
+MS(ES+): 387.8 (M+H).
+[(1R,5S,6R)-3-{6-
+H NMR (400 MHz, CDOD) 0: 6.46
+(difluoromethyl)-2-[(2S,3R)-3-(m,1H),4.17-3.98 (m, 3H),3.79 (d,
+X3
+hydroxy-2,3-dimethylazetidin-
+1H), 3.72 (d, 1H), 3.59 (dd, 2H), 2.29
+Ex 1
+258.9 (2)
+25
+1-yl-5-methylpyrimidin-4-yl}-
+(d, 2H), 2.23 (s, 3H), 1.53 (br. S, 2H),
+3-azabicyclo[3.1.0]hex-6-
+1.46-1.31 (m, 6H), 0.93-0.84 (m, 1H).
+yllacetic acid
+MS (ES+):382.9 (M+H).
+79
+
+--- PAGE 80 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+80 → 81
+WO 2017/115205
+PCT/IB2016/057728
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-
+1H NMR (400 MHz, CDsOD) 0: 4.17-
+hydroxy-2,3-dimethylazetidin-3.98 (m, 3H), 3.76 (dd, 2H),3.58 (t,
+Ex
+1-yll-5-methyl-6-
+2H), 2.28 (d, 2H), 2.19 (d, 3H), 1.53
+Ex 1
+63.6 (2)
+26
+(trifluoromethyl)pyrimidin-4-
+(br. s, 2H), 1.45-1.30 (m, 6H), 0.94-
+yl}-3-azabicyclo[3.1.0]hex-6-
+0.81 (m, 1H).
+yllacetic acid
+MS (ES+): 401.0 (M+H).
+H NMR (400MHz, CDOD)0:6.30 (d,
+1H), 5.46 (s, 1H), 4.23-4.16 (m, 1H),
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-
+4.16-4.08 (m, 1H), 4.00-3.90 (m, 1H),
+hydroxy-2-methylazetidin-1-
+Ex
+3.57 (dd, 2H),3.50 (dd, 1H), 3.41 -
+yll-6-(trifluoromethyl)pyridin-
+Ex 1
+109.4 (2)
+27
+3.32 (m, 2H), 2.31 (d, 2H), 1.67-1.62
+4-yl}-3-azabicyclo[3.1.0]hex-
+(m, 2H), 1.48 (d, 3H), 0.93 - 0.82 (m,
+6-yl]acetic acid
+1H).
+MS (ES+): 371.9 (M+H)
+H NMR (400MHz, CDOD) 0: 5.97 (S,
+[(1R,5S,6R)-3-{2-[(2S)-2-
+1H), 4.26-4.18 (m, 1H), 3.93 (br. S,
+methylpyrrolidin-1-yl]-6-
+1H),3.72-3.40 (m, 5H),2.32 (d, 2H),
+Ex
+(trifluoromethyl)pyrimidin-4-
+2.15 - 1.94 (m, 2H), 1.94 - 1.81 (m,
+Ex 1
+119.8 (2)
+28
+yl}-3-azabicyclo[3.1.0]hex-6-
+1H), 1.74 - 1.64 (m, 1H), 1.60 (br. S,
+yllacetic acid
+2H), 1.24 (d, 3H), 0.87-0.79 (m, 1H).
+MS(ES+): 371.0 (M+H)
+[(1R,5S,6R)-3-{6-
+H NMR (400 MHz, CDsOD) 0: 6.71 (t,
+(difluoromethyl)-2-[(2S,3R)-3-
+1H),4.23-3.97 (m, 5H),3.61-3.54 (m,
+Ex
+hydroxy-2-methylazetidin-1-
+3H), 3.58 (s, 3H), 2.30 (br. d, 2H), 1.56
+Ex 13 264.9 (2)
+29
+yl]-5-methoxypyrimidin-4-yl}-
+(br. S, 2H), 1.47 (s, 3H), 0.90-0.82 (m,
+3-azabicyclo[3.1.0]hex-6-
+1H).
+yllacetic acid
+MS(ES+): 384.9(M+H)
+H NMR(400MHz,CDOD)0:4.32-
+[(1R,5S,6R)-3-{4-[(2S,3R)-3-
+4.22 (m, 1H), 4.22 - 4.10 (m, 2H), 3.97-
+hydroxy-2-methylazetidin-1-
+3.85 (m,2H), 3.73 (dd, 1H),3.55 -3.42
+Ex
+yl]-6-(trifluoromethyl)-1,3,5-
+(m, 2H), 2.41 - 2.21 (m, 2H), 1.56 (br.
+Ex1
+509.2 (2)
+30
+triazin-2-yl}-3-
+S, 2H), 1.50 (d, 3H),0.85 - 0.68 (m,
+azabicyclo[3.1.0]hex-6-
+1H).
+yllacetic acid
+MS(ES+): 373.9 (M+H)
+80
+
+--- PAGE 81 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+81 → 82
+WO2017/115205
+PCT/IB2016/057728
+H NMR(400 MHz, CDOD) 0: 6.59 (S,
+{(1R,5S,6s)-3-[5-cyano-6-
+1H), 4.26-4.05 (m,1H), 4.02-3.88 (m,
+cyclobutyl-4-
+1H), 3.81-3.53 (m, 3H), 2.39-2.52 (m,
+Ex
+(triluoromethyl)pyridin-2-yl]-
+2H) 2.39-2.28 (m, 4H), 2.16-2.03 (m,
+Ex6
+30.0 (2)
+31
+3-azabicyclo[3.1.0]hex-6-
+1H), 1.99-1.86 (m, 1H), 1.75-1.62 (m,
+yllacetic acid
+2H), 0.92-0.83 (m, 1H).
+MS(ES+): 365.9 (M+H).
+H NMR (400MHz, CDOD)0:5.18 (S,
+[(1R,5S,6R)-3-{6-[(2S,3R)-3-
+1H), 4.25 - 4.18 (m, 1H), 4.18 - 4.12
+hydroxy-2-methylazetidin-1-
+(m, 1H), 4.11 - 4.03 (m, 1H), 3.73 (br.
+Ex
+yl]-2-
+1,760.4
+m, 2H), 3.57 (dd, 1H), 3.42 (br. d, 2H),
+Ex1
+32
+(trifluoromethyl)pyrimidin-4-
+(2)
+2.31 (d, 2H), 1.59 (br. S, 2H), 1.48 (d,
+yl}-3-azabicyclo[3.1.0]hex-6-
+3H), 0.86-0.79 (m, 1H).
+yl]aceticacid
+MS(ES+): 372.9 (M+H)
+[(1R,5S,6R)-3-{6-(1,1-
+H NMR (400 MHz, CDOD) O: 4.24-
+difluoroethyl)-2-[(2S,3R)-3-
+3.91 (m,5H), 3.68-3.44 (m, 3H), 2.27
+Ex
+hydroxy-2-methylazetidin-1-
+(d, 2H), 2.20 (br. S, 3H), 1.90 (t, 3H),
+Ex 1
+113.6 (4)
+33
+yl]-5-methylpyrimidin-4-yl}-3-
+1.58-1.41 (m, 5H), 0.91 (br. S, 1H).
+azabicyclo[3.1.0]hex-6-
+MS (ES+): 382.9 (M+H).
+yllacetic acid
+H NMR (400 MHz, CDOD) 0: 6.27 (S,
+[(1R,5S,6R)-3-{2-(1,1-
+1H), 5.40 (s, 1H), 4.19 (t, 1H), 4.09-
+difluoroethyl)-6-[(2S,3R)-3-
+4.14 (m, 1H), 3.91-3.98 (m, 1H), 3.54-
+Ex
+hydroxy-2-methylazetidin-1-
+3.58 (m, 2H), 3.48 (dd, 1H), 3.32-3.36
+Ex 12 331.4 (2)
+34
+yllpyridin-4-yl}-3-
+(m, 2H), 2.30 (d, 2H), 1.86 (t, 3H),
+azabicyclo[3.1.0]hex-6-
+1.61-1.64 (m, 2H),1.47 (t, 3H), 0.85-
+yllaceticacid
+0.89 (m, 1H).
+MS(ES+): 368.0 (M+H).
+81
+
+--- PAGE 82 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+82 → 83
+WO 2017/115205
+PCT/IB2016/057728
+MS (ES+):421.32(M+H).Retention
+[(1R,5S,6R)-3-{5-chloro-2-
+time=4.1336;SFC Column:LuxCell3
+[(2S,4S)-4-hydroxy-2-
+4.6 x100 mm 5 μm.Modifier A: CO2,
+Ex
+methylpyrrolidin-1-yl]-6-
+ModifierB:Methanolwith0.2%
+Ex 2
+187.5 (2)
+35
+(triluoromethyl)pyrimidin-4-
+NH4OH.Gradient:85:15A:B,hold for 6
+yl}-3-azabicyclo[3.1.0]hex-6-
+minutes.ColumnTemp=40°C.Back
+yllacetic acid
+Pressure:120 Bar.Flow:1.5mL/min.
+[(1R,5S,6R)-3-{5-chloro-6-
+H NMR (400 MHz, CDOD) 0: 6.75 (t,
+(difluoromethyl)-2-[(2S,3R)-3-
+1H), 4.25 (dd, 2H), 4.14 (q, 1H), 3.88-
+Ex
+hydroxy-2,3-dimethylazetidin-
+3.65 (m, 4H),2.30 (d, 2H),1.57 (br.S,
+Ex2
+102.8 (2)
+36
+1-yl]pyrimidin-4-yl}-3-
+2H), 1.47-1.31 (m, 6H), 0.88-0.78 (m, 1
+azabicyclo[3.1.0]hex-6-
+H).
+ylacetic acid
+MS (ES+): 402.9 (M+H).
+{(1R,5S,6s)-3-[5-cyano-4-
+(difluoromethyl)-6-(pyrrolidin-
+Ex
+MS (API+):363(M+H).Retention
+1-yl)pyridin-2-yl]-3-
+Ex 1
+58.3 (4)
+37
+time:3.218.Method 1*
+azabicyclo[3.1.0]hex-6-
+ylacetic acid
+{(1R,5S,6s)-3-[5-cyano-4-
+(difluoromethyl)-6-(2-
+Ex
+MS (API+): 377 (M+H). Retention
+methylpyrrolidin-1-yl)pyridin-
+Ex 1
+25.3 (4)
+38
+time:3.325.Method 1*
+2-yl]-3-azabicyclo[3.1.0]hex-
+6-yllacetic acid
+{(1R,5S,6s)-3-[2-(2-
+methylpiperidin-1-yl)-6-
+Ex
+MS (API+):385 (M+H).Retention time
+(trifluoromethyl)pyrimidin-4-
+Ex 1
+24.8 (2)
+39
+=3.528.Method 2**
+yl]-3-azabicyclo[3.1.0]hex-6-
+ylaceticacid
+82
+
+--- PAGE 83 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+83 → 84
+WO 2017/115205
+PCT/IB2016/057728
+1H NMR (400 MHz, CDsOD) 0: 6.74 (t,
+[(1R,5S,6R)-3-{5-chloro-6-
+1H), 4.45-4.35 (m, 1H), 4.25 (t, 2H),
+(difluoromethyl)-2-[(2S)-2-
+3.98 (dt, 1H), 3.89 (q,1H), 3.72 (br. t,
+Ex
+methylazetidin-1-yllpyrimidin-
+-2H), 2.45-2.33 (m, 1H), 2.30 (d, 2H),
+Ex 2
+11.1 (4)
+40
+4-yl}-3-azabicyclo[3.1.0]hex-
+2.00-1.89 (m, 1H), 1.61-1.53 (m, 2H),
+6-yl]acetic acid
+1.47 (d, 3H), 0.87-.080 (m, 1H).
+MS(ES+): 373.1 (M+H).
+H NMR(400MHz,CDsOD):6.52(t,
+[(1R,5S,6R)-3-{6-
+1H), 4.20 - 4.14 (m, 1H), 4.09 (q, 1H),
+(difluoromethyl)-5-ethyl-2-
+4.05- 3.93 (m, 3H),3.66 -3.56 (m,
+Ex
+[(2S,3R)-3-hydroxy-2-
+3H), 2.75 (q, 2H), 2.34-2.27 (br. m,
+Ex8
+110.7 (2)
+41
+methylazetidin-1-yl]pyrimidin-
+2H), 1.57 (br. s, 2H), 1.48 (d, 3H), 1.03
+4-yl}-3-azabicyclo[3.1.0]hex-
+(t, 3H), 0.93 - 0.85 (m, 1H).
+6-yllacetic acid
+MS(ES+): 382.9 (M+H).
+H NMR (400 MHz, CDCIs)O:4.34-
+[(1R,5S,6R)-3-{5-methyl-2-
+4.43 (m,1H), 3.95-4.09 (m, 3H),3.86-
+[(2S)-2-methylazetidin-1-yl]-6-3.95 (m, 1H), 3.48-3.61 (m, 2H), 2.30-
+Ex
+（trifluoromethyl)pyrimidin-4-
+2.40 (m, 3H), 2.16 (s, 3H), 1.89-2.00
+Ex 1
+8.8 (4)
+42
+yl}-3-azabicyclo[3.1.0]hex-6-
+(m, 1H), 1.45-1.54 (m, 5H), 0.95-1.04
+yllacetic acid
+(m, 1H).
+MS(ES+): 371.1 (M+H).
+H NMR (400 MHz, CDOD) 0: 6.45 (t,
+[(1R,5S,6R)-3-{6-
+1H), 4.43-4.28 (m,1H), 4.06 (dd, 2H),
+(difluoromethyl)-5-methyl-2-
+3.94 (td, 1H), 3.85 (q, 1H),3.64-3.50
+Ex
+[(2S)-2-methylazetidin-1-
+(m, 2H), 2.36 (dtd, 1H), 2.28 (d, 2H),
+Ex 1
+17.8 (4)
+43
+yl]pyrimidin-4-yl}-3-
+2.21 (t, 3H), 2.00-1.88 (m, 1H), 1.51
+azabicyclo[3.1.0]hex-6-
+(br. s, 2H), 1.47 (d, 3H), 0.99-0.81 (m,
+yllacetic acid
+1H).
+MS (ES+): 353.1 (M+H).
+83
+
+--- PAGE 84 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+84 → 85
+WO 2017/115205
+PCT/IB2016/057728
+1H NMR (400 MHz, CDOD) O: 4.43-
+[(1R,5S,6R)-3-{6-(1,1-
+4.21 (m, 1H), 4.02 (t, 2H), 3.94-3.77
+difluoroethyl)-5-methyl-2-
+(m, 2H), 3.49 (t, 2H), 2.40-2.29 (m,
+Ex
+[(2S)-2-methylazetidin-1-
+1H), 2.26 (d, 2H), 2.19 (br. s, 3H), 1.93Ex 151.4 (4)
+44
+yl]pyrimidin-4-yl}-3-
+(m, 4H), 1.47 (m, 5H), 0.98-0.87 (m,
+azabicyclo[3.1.0]hex-6-
+1H).
+ylacetic acid
+MS (ES+): 367.3 (M+H).
+H NMR (400 MHz, CDsOD) 0: 7.04 (t,
+[(1R,5S,6R)-3-{5-cyclopropyl-
+1H), 4.27-4.18 (m, 3H), 4.11-4.03 (m,
+6-(difluoromethyl)-2-[(2S,3R)-
+2H), 3.65-3.51 (m,3H),2.30 (d, 2H),
+Ex
+3-hydroxy-2-methylazetidin-1-
+1.86-1.75 (m, 1H), 1.54-1.50 (m, 2H),
+Ex7
+237.8 (2)
+45
+yl]pyrimidin-4-yl}-3-
+1.47 (d, 3H), 1.04-0.97 (m, 2H), 0.95-
+azabicyclo[3.1.0]hex-6-
+0.87 (m, 1H), 0.47-0.41 (m, 2H).
+ylacetic acid
+MS(ES+): 395.0 (M+H).
+{(1R,5S,6s)-3-[6-(azetidin-1-
+1H NMR (400 MHz, CDOD) 0: 6.07 (S,
+yl)-5-cyano-4-
+1H), 4.29 (t, 4H), 4.04 - 3.56 (br. m,
+Ex
+(trifluoromethyl)pyridin-2-yl]-
+2H), 3.51 (dd, 2H), 2.41 - 2.27 (m, 4H),Ex 1
+21.5 (2)
+46
+3-azabicyclo[3.1.0]hex-6-
+1.62 (br. s, 2H), 0.87 - 0.74 (m, 1H).
+ylaceticacid
+MS (ES+):366.8 (M+H).
+1H NMR (400 MHz, CDOD) 0: 6.30 (S,
+{(1R,5S,6s)-3-[2-(azetidin-1-
+1H),4.18 (t, 4H), 4.05-3.93 (m, 1H),
+yl)-6-
+Ex
+3.79-3.70 (m, 1H), 3.65-3.50 (m, 2H),
+(trifluoromethyl)pyrimidin-4-
+Ex 1
+619.1 (2)
+47
+2.43-2.34 (m, 2H), 2.33 (d, 2H), 1.70-
+yll-3-azabicyclo[3.1.0]hex-6-
+1.59 (m, 2H), 0.87-0.79 (m, 1H).
+yllacetic acid
+MS (ES+): 342.9 (M+H).
+(2S,3R)-1-[5-chloro-4-
+H NMR (400 MHz, CDsOD) 0: 4.42-
+{(1R,5S,6S)-6-
+4.27 (m, 2H), 4.21-4.10 (m, 1H), 3.89-
+Ex
+[(methylsulfonyl)methyl]-3-
+3.70 (m, 4H), 3.17 (d, 2H), 3.01 (s,
+Ex 1
+1,359 (2)
+48
+azabicyclo[3.1.0]hex-3-y}-6-
+3H),1.86 (d, 2H), 1.50-1.33 (m, 6H),
+(trifluoromethyl)pyrimidin-2-
+1.06-0.93 (m, 1H).
+yll-2,3-dimethylazetidin-3-ol
+MS(ES+): 455.0 (M+H).
+84
+
+--- PAGE 85 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+85→86
+WO 2017/115205
+PCT/IB2016/057728
+1H NMR (400MHz,CDsOD)0:6.05 (S,
+[(1R,5S,6S)-3-{2-[(2S)-2-
+1H), 4.49 -4.37 (m, 1H), 4.00 (dt, 1H),
+methylazetidin-1-yl]-6-
+3.95-3.85(m,1H),3.77-3.54(m,
+Ex
+(trifluoromethyl)pyrimidin-4-
+3H), 3.42 (br. d, 1H), 2.40 (dddd, 1H),
+Ex 1
+2084 (4)
+49
+yl}-3-azabicyclo[3.1.0]hex-6-
+2.12 (d, 2H), 2.01 - 1.79 (m, 3H), 1.48
+yl]aceticacid
+(d, 3H), 1.38-1.29 (m, 1H).
+MS(ES+): 356.9 (M+H).
+H NMR (400 MHz, CDsOD) 0: 4.71-
+[(1R,5S,6R)-3-{5-cyano-4-
+4.64 (m, 1H), 4.24-4.30 (m, 1H), 4.16-
+(1,1-difluoroethyl)-3-fluoro-6-
+4.11 (m, 1H), 4.09-3.98 (m, 2H), 3.78-
+Ex
+[(2S,3R)-3-hydroxy-2-
+3.62 (m, 3H), 2.35 (d, 2H), 1.99 (t, 3H),Ex 1
+4.4 (2)
+50
+methylazetidin-1-yllpyridin-2-
+1.66-1.60 (m, 2H), 1.47 (d, 3H), 0.92-
+yl}-3-azabicyclo[3.1.0]hex-6-
+0.87 (m, 1H).
+yllacetic acid
+MS(ES+): 411.1 (M+H).
+{(1R,5S,6s)-3-[5-cyano-6-
+(cyclobutylamino)-4-
+Ex
+MS(API+):363(M+H).Retention time
+(difluoromethyl)pyridin-2-yl]-
+Ex1
+150.4 (4)
+51
+=3.226.Method 2**
+3-azabicyclo[3.1.0]hex-6-
+ylacetic acid
+H NMR (400MHz, CDOD)0:6.13 (S,
+3-[(1R,5S,6R)-3-{5-cyano-6-
+1H), 4.66 (ddd, 1H), 4.34 - 4.23 (m,
+[(2S,3R)-3-hydroxy-2-
+1H), 4.14 (dt, 1H), 4.01-3.78 (br. m,
+Ex
+methylazetidin-1-yl]-4-
+1H),3.78 (dd, 1H), 3.68 -3.40 (m, 3H),Ex 1;82.5 (2)
+52
+(trifluoromethyl)pyridin-2-yl}-
+2.40 (t, 2H), 1.65 - 1.52 (m, 4H), 1.49
+3-azabicyclo[3.1.0]hex-6-
+(d,3H),0.60 (tt, 1H).
+yllpropanoic acid
+MS(ES+): 411.0 (M+H).
+[(1R,5S,6R)-3-{5-cyano-2-
+[(2S,3R)-3-hydroxy-2-
+Ex
+methylazetidin-1-yl]-6-
+MS(ES+):398.3 (M+H);Retention
+Ex1
+21.0 (2)
+53
+(trifluoromethyl)pyrimidin-4-
+time:2.1964. Method 3***
+yl}-3-azabicyclo[3.1.0]hex-6-
+yllacetic acid
+85
+
+--- PAGE 86 ---
+EP 16 823 054.8
+DESCRIPTION (06.07.2017)
+86 → 1
+WO2017/115205
+PCT/IB2016/057728
+[(1R,5S,6R)-3-{5-cyano-4-
+[(2S,3R)-3-hydroxy-2-
+Ex
+methylazetidin-1-yl]-6-
+MS(ES+):398.2(M+H);retention time:
+Ex 1
+19.0 (2)
+54
+(trifluoromethyl)pyrimidin-2-
+2.6397.Method 3***
+yl}-3-azabicyclo[3.1.0]hex-6-
+yllacetic acid
+H NMR (600 MHz, CDOD) 0: 6.69 (t,
+[(1R,5S,6R)-3-{5-cyano-4-
+1H), 6.08 (s, 1H), 4.35 (q, 1H), 4.26 (d,
+(difluoromethyl)-6-[(2S,3R)-3-
+1H), 4.10-3.93 (br. S, 1H), 3.87 (d, 1H),
+Ex
+hydroxy-2,3-dimethylazetidin-
+3.74 - 3.43 (m, 3H), 2.32 (d, 2H), 1.69 -Ex 113.7 (2)
+55
+1-yl]pyridin-2-yl}-3-
+1.55 (m, 2H), 1.44-1.38 (m, 6H), 0.87 -
+azabicyclo[3.1.0]hex-6-
+0.81 (m, 1H).
+yllacetic acid
+MS(ES+): 392.9 (M+H).
++Avg ICso based on (#) number of runs per Example.
+*Examples 37 and 38use Method 1:Column:Xbridge C18 2.1x50mm 5um.Temperature:40
+conditions:B:1%,A:99%.Gradient:B:1%,A:99% to B:5%,A:95% from t=0.00 min to 0.60
+min,then to B: 100% from t = 0.60 min to 4.00 min, then to B: 1%,A:99% from t = 4.00 min to
+**Examples39 and 51useMethod2:Column:Xbridge C182.1x50mm5um.Temperature:40
+C.MobilePhase A:0.0375%TFA inH2O.MobilePhaseB:0.01875%TFA in acetonitrile.Initial
+10
+conditions:B:10%,A:90%.Hold from t =0.00 min to 0.50 min.Gradient:B:10%,A:90% to B:
+100%,A: 0% from t = 0.50 min to 4.00 min,then to B:10%,A: 90% from t = 4.00 min to 4.30
+min,hold until t = 4.70 min.Flow rate = 0.8 mL/min, 2 μL injection volume.
+***Examples 53 and 54 use Method 3: Column:OJ-H 4.6x100mm,5um;Mobile phase A:
+Methanol(v/v);Mobile phaseB:CO2(v/v).Gradient:80.0%CO2/ 20.0% Methanol Isocratic over
+155min.Flow:1.5mL/min.BackPressure:100Bar.
+86
+
+--- PAGE 87 ---
+EP 16 823 054.8
+CLAIMS (19.08.2020)
+1 → 2
+Claims
+1.
+AcompoundofFormulal
+P
+(I)
+Y is N or C-CN;
+Z is N or CH;
+Xis N or CR3;
+10
+provided that at least one of Y,Z,orX is N;
+R1isC3-7cycloalkyl ora 4-to7-memberedheterocyclicmoiety,wherein the
+heterocyclic moiety contains 1to 2 atoms independently selected from nitrogen, oxygen and
+independently selected from-C1-3alkyl，and -OH,provided that there is nomore than one -
+15
+OH substituent;or
+substitutedwith0to1OH;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORs, -L-(CH2)nSO2NHCONH2, or -
+20
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1; 
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+Rs is H or -C1-3alkyl;
+25
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+R3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1.3alkyl substituted with1 to 3halogen
+atoms,or-C3-4cycloalkyl;and
+30
+R4 is cyclopropyl, cyclobutyl, or -C1-3alkyl substituted with 0 to 5 halogen atoms as
+valency allows.
+
+--- PAGE 88 ---
+EP 16 823 054.8
+CLAIMS (19.08.2020)
+2→3
+2.
+The compound of claim 1, or a pharmaceutically acceptable salt thereof, wherein
+Y is N or C-CN;
+Z is N or CH;
+X is CR3;
+provided that at least one ofYorZisN;
+R1isC3.7cycloalkyl ora 4-to7-membered heterocyclic moiety,wherein the
+sulfur,and wherein the cycloalkyl orheterocyclicmoietyhas 0 to3substitutuents
+independentlyselectedfrom-C1-3alkyl，and-OH,providedthatthereisnomorethanone-
+10
+OH substituent;or
+N(C1-3alkyl)2, NH(C1-3alkyl), or NH(C3.4cycloalkyl), wherein each C1-3alkyl is
+substitutedwith0 to1OH;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORS, -L-(CH2)nSO2NHCONH2, Or -
+15
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+R$ is H or -C1-3alkyl;
+20
+L is CH2, CHF, or CF2;
+RC is-C1-4alkyloxy,-C1-4alkyloxycarbonyloxy-C1-4alkyloxy,or-C1-4alkylcarbonyloxy-C1.
+4alkyloxy;
+R3is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1-3alkyl substituted with1 to 3halogen
+atoms, or-C3-4cycloalkyl; and
+25
+R4 is-C1-3alkyl substituted with0 to5 halogen atoms as valency allows.
+3.
+The compound of claim 1 or claim 2,or a pharmaceutically acceptable salt thereof,
+wherein
+Yis C-CN;
+Z is N;
+30
+X is CR3;
+R1isC3.7cycloalkyl ora 4-to7-membered heterocyclic moiety,wherein the
+sulfur,and wherein the cycloalkyl orheterocyclicmoietyhas0 to3substitutuents
+independently selected from-C1-3alkyl， and-OH,provided that there is no more than one -
+35
+OH substituent;
+R² is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC,-L-(CH2)nCONHSO2RS,-L-(CH2)nSO2NHCORS,or -L-(CH2)ntetrazol-5-yl;
+2
+
+--- PAGE 89 ---
+EP 16 823 054.8
+CLAIMS (19.08.2020)
+3 → 4
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+RS is H or -C1-3alkyl;
+L is CH2, CHF, or CF2;
+4alkyloxy;
+R3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1-3alkyl substituted with 1 to 3 halogen
+atoms,or-C3-4cycloalkyl;and
+10
+R4is-C1-3alkyl substitutedwith0 to5halogen atoms asvalency allows.
+4.
+The compound of any one of claims 1 to 2, or a pharmaceutically acceptable salt
+thereof,wherein
+Y is N;
+Z is N;
+15
+Xis CR3;
+R1isC3-7cycloalkyl ora 4-to7-memberedheterocyclic moiety,wherein the
+independentlyselected from-C1-3alkyl，and-OH,provided that there is no more than one-
+20
+OH substituent;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC,-L-(CH2)nCONHSO2RS,-L-(CH2)nSO2NHCORS, or-L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+25
+RN is H or -C1-3alkyl;
+RS is H or -C1-3alkyl;
+L is CH2, CHF, or CF2;
+4alkyloxy;
+30
+R3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1-3alkyl substituted with1 to 3 halogen
+atoms,or-C3-4cycloalkyl;and
+5.
+Thecompoundofanyoneofclaims1to4,orapharmaceuticallyacceptablesalt
+thereof,whereinRisHor-CH3.
+35
+6.
+Thecompoundof anyoneof claims1to5,orapharmaceuticallyacceptablesalt
+thereof,wherein R² is-CH2CO2H,-CH2CO2CH3,Or-CH2CO2CH2CH3.
+3
+
+--- PAGE 90 ---
+EP 16 823 054.8
+CLAIMS (19.08.2020)
+4 → 5
+7.
+Thecompoundofanyoneofclaims1to6,orapharmaceuticallyacceptablesalt
+thereof,wherein R3 is H,-CI,-CHs,-CH2CHs,-O-CH3,cyclopropyl, or CN.
+8.
+Thecompoundofanyoneofclaims1to7,orapharmaceuticallyacceptablesalt
+thereof,whereinR4is-CF3,-CHF2,or-CF2CH3.
+9.
+The compound of any one of claims1to8,ora pharmaceutically acceptable salt
+pyrrolidin-1-yl, and piperidin-1-ylhaving 0 to3 substitutuents independentlyselected from-
+CH3and-OH,provided thatthereisnomore thanone-OHsubstituent.
+10.
+The compound of anyoneof claims 1to 9,ora pharmaceutically acceptable salt
+10
+thereof,whereinR1isazetidin-1-yl,having 1to2-CHssubstituents andhaving 0to1-OH
+substituent,and whereinYis C-CN and Zis N,orYand Z are each N.
+11.
+The compound of any one of claims1to8,ora pharmaceutically acceptable salt
+thereof,whereinR1iscyclobutylhaving0to3substitutuentsindependentlyselectedfrom-
+CH3and-OH,provided thatthereisnomore thanone-OHsubstituent.
+15
+12.
+Thecompoundofclaim1，orpharmaceuticallyacceptablesaltthereof,whereinthe
+compound isselectedfrom
+OH
+OH
+OH
+OMe
+OH
+OH
+OH
+HO
+and
+OH
+
+--- PAGE 91 ---
+EP 16 823 054.8
+CLAIMS (19.08.2020)
+5→6
+13.The compound of claim 1,or pharmacuetically acceptable salt thereof,wherein the
+compoundisselectedfrom
+(2S,3R)-2,3-dimethyl-1-[4-{(1R,5S,6S)-6-[(methylsulfonyl)methyl]-3-
+azabicyclo[3.1.0]hex-3-yl}-6-(trifluoromethyl)pyrimidin-2-yl]azetidin-3-ol;
+5
+azabicyclo[3.1.0]hex-6-yl]-N-(methylsulfonyl)acetamide; and
+(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-6-(1H-
+tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0jhexane.
+14.The compound of claim 1,or pharmacuetically acceptable salt thereof,wherein the
+10compound is selected from
+(trifluoromethyl)pyridin-2-yl}-3-azabicyclo[3.1.0jhex-6-yl]acetic acid;
+15
+azabicyclo[3.1.0]hex-6-yl]aceticacid;
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]aceticacid;
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-5-methyl-6-
+20
+15.A compound of claim 1, or pharmaceutically acceptable salt thereof, wherein the
+25
+3-azabicyclo[3.1.0]hex-6-yl]acetic acid.
+[(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-
+azabicyclo[3.1.0]hex-6-yl]aceticacid.
+17.The compound of claim 16,wherein the crystalline form ischaracterized by the
+30
+18.A compound of claim 1,or pharmaceutically acceptable salt thereof,wherein the
+compound is [(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]aceticacid
+19.A pharmaceutical compositioncomprising thecompound of FormulaI of any of
+claims 1 to 18, or a pharmaceutically acceptable salt thereof, and a pharmaceutically
+acceptable excipient.
+5
+
+--- PAGE 92 ---
+EP 16 823 054.8
+CLAIMS (19.08.2020)
+6 → 7
+20.AcompoundofFormulaIof anyoneofclaims1to18,orapharmaceutically
+acceptablesaltthereof,foruseasamedicament.
+21.AcompoundofFormulaIofanyoneofclaims1to18,orapharmaceutically
+acceptablesaltthereof，foruseinamethodof treatingadisease,whereinthediseaseis
+5
+selectedfromanyone orcombinationofT1D,T2D,idiopathicT1D,LADA,EOD,YOAD
+resistance,hepaticinsulinresistance,impairedglucosetolerance,diabeticneuropathy
+diabeticnephropathy,kidneydisease,acutekidneydisorder,tubulardysfunction,
+10
+cholesterol,lowHDLcholesterol,hyperinsulinemia,NAFLD,steatosis,NASH,fibrosis
+cirrhosis, hepatocellular carcinoma, HFl, coronary artery disease, peripheral vascular
+15
+heart failure,myocardial infarction,stroke,hemorrhagic stroke,ischemic stroke,pulmonary
+hypertension,restenosisafterangioplasty,intermittentclaudication,post-prandiallipemia
+arterialdisease,maculardegeneration,cataract,glomerulosclerosis,chronicrenalfailure
+metabolic syndrome，syndromeX,premenstrualsyndrome,anginapectoris,thrombosis,
+20
+atherosclerosis,transientischemicattacks,vascularrestenosis,impairedglucose
+dysfunction,skinandconnectivetissue disorders,footulcerations,ulcerative colitis,hyper
+bowel disease,ulcerative colitis,Crohn'sdisease,and irritablebowel syndrome.
+25
+whereinthediseaseisNAFLD.
+23.AcompoundofFormulaIofanyoneofclaims1to18,orapharmaceutically
+acceptablesalt thereof,foruse inamethodof treating a disease asclaimed inclaim21,
+30
+whereinthediseaseisNASH.
+24.AcompoundofFormulaIofanyoneofclaims1to18,orapharmaceutically
+acceptablesalt thereof,for use ina method of treatinga diseaseas claimed in claim21,
+whereinthediseaseisfibrosis.
+25.A compound of FormulaI of any one of claims 1 to 18,or a pharmaceutically
+35
+acceptablesaltthereof,foruseinamethodoftreatingadiseaseasclaimed inclaim21,
+whereinthediseaseiscirrhosis.
+6
+
+--- PAGE 93 ---
+EP16823054.8
+CLAIMS(19.08.2020)
+7→1/5
+26.A compound of FormulaI of any one of claims 1 to 18,or a pharmaceutically
+acceptable salt thereof,for use in a method of treating a disease as claimed in claim 21,
+whereinthediseaseishepatocellularcarcinoma.
+
+--- PAGE 94 ---
+EP 16 823054.8
+DRAWING (06.07.2017)
+1/5 → 2/5
+WO2017/115205
+PCT/IB2016/057728
+1/5
+M
+ 2 Theta Degrees
+L
+19
+17
+15
+9
+12000
+10000
+8000
+0009
+2000
+Counts
+
+--- PAGE 95 ---
+EP 16 823 054.8
+DRAWING (06.07.2017)
+2/5 → 3/5
+WO2017/115205
+PCT/IB2016/057728
+2/5
+39
+37
+35
+3
+3
+29
+27
+25
+2123
+2 Theta Degrees
+2
+1
+19
+7
+5
+3
+4000
+3000
+2000
+000
+Counts
+
+--- PAGE 96 ---
+EP 16 823 054.8
+DRAWING (06.07.2017)
+3/5 → 4/5
+WO2017/115205
+PCT/IB2016/057728
+3/5
+FIG. 3
+StructuresofExamplesinTable4
+OH
+OH
+OH
+Ex 14
+Ex 15
+Ex 16
+H
+N
+O
+OH
+CI
+C
+OH
+OH
+OH
+H
+OH
+H
+Ex 17
+Ex 18
+Ex 19
+OH
+FHC
+OH
+H
+C
+HO
+OH
+HO
+OH
+H
+Ex 20
+Ex 21
+Ex 22
+N
+N
+CI
+HO
+OH
+HO
+H
+H
+HO
+Ex 23
+Ex 24
+Ex 25
+N
+F3C
+OH
+HO
+日
+OH
+H
+H
+Ex 26
+Ex 27
+Ex 28
+日
+0
+OH
+OH
+OH
+H
+H
+H
+Continued
+
+--- PAGE 97 ---
+EP 16 823 054.8
+DRAWING (06.07.2017)
+4/5 → 5/5
+WO2017/115205
+PCT/IB2016/057728
+4/5
+FIG. 3 continued
+OH
+HO
+Ex31
+Ex29
+Ex30
+O
+F2HC
+OH
+工
+OH
+H
+OH
+OH
+OH
+Ex32
+Ex33
+Ex34
+N
+H
+HO
+H
+工
+OH
+H
+/OH
+Ex36
+Ex35
+N
+Ex37
+0
+F2HC
+0
+CI
+OH
+C
+OH
+工
+N
+Ex38
+Ex39
+Ex 40
+N
+F2HC
+F2HC
+0
+OH
+CI
+OH
+工
+H
+H
+Ex 42
+Ex 43
+Ex 41
+日
+2H
+OH
+OH
+工
+Continued
+
+--- PAGE 98 ---
+EP 16 823 054.8
+DRAWING (06.07.2017)
+5/5
+WO2017/115205
+PCT/IB2016/057728
+5/5
+FIG. 3 continued
+OH
+Ex 46
+Ex 44
+Ex 45
+130
+OH
+Ex 47
+Ex 49
+Ex 48
+OH
+工
+CI
+工
+日
+Ex50
+NH
+Ex51
+H3CF
+OH
+0
+H
+OH
+Ex53
+日
+Ex52
+HO
+N
+F3C
+工
+Ex55
+N
+F2HC
+0
+OH
+Ex54
+OH
+工
+OH
+工

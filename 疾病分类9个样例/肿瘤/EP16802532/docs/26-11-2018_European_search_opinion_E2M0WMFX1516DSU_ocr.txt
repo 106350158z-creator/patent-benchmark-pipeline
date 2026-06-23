@@ -1,0 +1,93 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+1
+Application
+16802532.8
+Date
+Feuille
+No:
+Demande n°
+s
+Description, Pages
+1-67
+filed with entryinto theregional phasebefore theEPO
+Claims, Numbers
+1-10
+filedwithentryintotheregionalphasebeforetheEPO
+Drawings, Sheets
+1/4-4/4
+filedwithentryintotheregionalphasebefore theEPO
+Referenceismade to thefollowingdocument;thenumbering willbe adhered
+to in therest of the procedure.
+D1
+WEI ZHOU ET AL:"Discovery of Pteridin-7(8 H)-one-Based
+IrreversibleInhibitorsTargeting theEpidermal GrowthFactor
+Receptor(EGFR)KinaseT790M/L858RMutant",
+JOURNALOFMEDICINALCHEMISTRY,
+vol.56,no.20,24 October 2013 (2013-10-24),pages
+7821-7837,XP055096868,
+ISSN:0022-2623,DOl:10.1021/jm401045n
+Thefollowing documentshavebeencited intheinternational searchreport;
+thenumberingwillbeadheredtointherestoftheprocedure.
+D2
+CN1373763A(WARNER-LAMBERTCOMPANY)9October
+2002 (2002-10-09)
+D3
+D4
+WO2013/170671A1(EASTCHINAUNIVERSITYOFSCIENCE
+AND TECHNOLOGY).) 21 November 2013 (2013-11-21)
+2
+D1 which concerns EGFR inhibitors, discloses the compounds 3w and 3x.
+D2 which describes CDK inhibitors,discloses the compounds 1,2,9,10,12,
+18, 19, 29, 36-38, 40, 50 and 51.
+EPO Form 1703 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+2
+Application
+16 802 532.8
+Date
+No:
+Feuille
+Demande n°
+D3discloses compoundsfor thetreatmentofdiseases associated with
+variousproteinkinasesbutEGFR(cancer),specificallymentionedarethe
+compound in embodiment 4 and compound 9.
+D4,whichconcernsEGFRinhibitors,disclosesthecompounds3,18-22and
+32.Theactivityhasbeenprovedintable1.
+Accordingly,thesubject-matterofpresentclaims1and6-10isnotnovelwith
+respect to article 54(1)(2)EPC.
+3
+D1andD4bothconcernEGFRinhibitorsandthusformapossiblepriorart
+for the assessment of inventive step.
+A skilledpersonlookingforalternativeEGFRinhibitors,starting eitherfrom
+truewithregard toD1sincethe compounds disclosed there correspond partly
+thepresentpreferred compounds.
+Therefore,thepresentsubject-matter,asfarasitisnovel,doesnotinvolve
+aninventivestepwithrespecttoarticle56EPC.
+4
+The applicanthasdefinedseveral substituentsinpresentclaims1the 2by
+theuseofbracketswhichrenderstheseclaimsvagueandunclearinmeaning
+(article 84 EPC).
+5
+Thetreatmentclaim10 needs tobereformulated inordertocomplywith
+article 54(5) EPC.
+6
+Present claims7and 10 are characterised byfunctionalfeatures.Claims7
+and 10 donot comply with article84EPC,because the therapeutic
+application isfunctionallydefined bya mechanismof action(EGFR mediated
+theformof a defined,real treatmentof a pathological condition.This
+conditionscited inthe application.
+EPO Form 1703 01.91TRI

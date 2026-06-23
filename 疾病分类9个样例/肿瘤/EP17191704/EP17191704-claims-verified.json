@@ -1,0 +1,68 @@
+{
+  "application_number": "EP17191704",
+  "source_pdf": "docs/27-03-2020_Claims_E4LDZ21Q5777DSU.pdf",
+  "source_pdf_sha256": "03f856de62e59bdfe37fcae41705f80eb893358d1ad46970f26d0af2b46e0b1e",
+  "source_kind": "claims",
+  "draft_text_source": "docs/27-03-2020_Claims_E4LDZ21Q5777DSU_ocr.txt",
+  "draft_text_pdf": "docs/27-03-2020_Claims_E4LDZ21Q5777DSU.pdf",
+  "draft_generated_at": "2026-06-18T07:20:47.361664+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "Acompoundof thestructure:\nNH2\nfor use in treating a disorder characterized by the presence or development of one or more solid\ntumors comprising administering to an individualin need thereof a therapeutically effective\namount of the compound,wherein the disorder is an adenocarcinoma, small celllung carcinoma,\nnon-small cell lung carcinoma, a melanoma,or a combination thereof, wherein the\nadenocarcinomaiscoloncancer.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 2,
+      "text": "The use of claim1,wherein the disorderiscolon canceradenocarcinoma.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "The use of claim 1, wherein the disorder is a small cell lung carcinoma.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "The use of claim1,wherein the disorderis a non-small cell lung carcinoma.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "The use of claim 1,wherein the disorder is a melanoma.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

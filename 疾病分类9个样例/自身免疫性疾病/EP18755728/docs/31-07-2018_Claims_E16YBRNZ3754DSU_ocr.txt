@@ -1,0 +1,502 @@
+
+--- PAGE 1 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+CLAIMS
+1.
+A compound ofFormula (I):
+R3
+R
+(1);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein:
+R1 is C3-C7 monocyclic cycloalkyl, polycyclic cycloalkyl, Cs-C1o aryl, 8- to 12-
+membered heterocycloalkyl, or 5- to 6-membered heteroaryl, wherein the C3-C7 monocyclic
+cycloalkyl, polycyclic cycloalkyl, 8-to 12-membered heterocycloalkyl, or 5-to 6-membered
+heteroaryl is optionally substituted by one or more R6;
+R; is H or Ci-C4 alkyl optionally substituted with one or more R7;
+R4 is H, C1-C6 alkyl, -(CH2)o-3-(C3-C6 cycloalkyl), Or -(CH2)o-3-Cs-C6 aryl;
+R6 is C1-C6 alkyl, C2-C6 alkenyl, C1-C6 alkoxy, C3-Cs cycloalkyl, halo, 0xo, -OH, -CN, -
+NH2, -NH(C1-C6 alkyl), -N(C1-C6 alkyl)2, -CHF, -CHF2, Or -CF3;
+R7 is -ORs, Cs-Cio aryl, or 5- to 10- membered heteroaryl, wherein the Cs-Cio aryl or 5-
+to 10-membered heteroaryl is optionally substituted by one or more Rzs, wherein each Rzs is
+independently Ci-C6 alkyl, Ci-C6 alkoxy, 5- to 10-membered heteroaryl, halo, -OH, -CN, -
+(CH2)0o-3-NH2, -(CH2)o-3-NH(C1-C6 alkyl), -(CH2)o-3-N(C)-C6 alkyl)2, -CH2F, -CHF2, Or -CF3; and
+Rs is Ci-C6 alkyl or 5-to 7-membered heterocycloalkyl, wherein the C1-C6 alkyl or 5- to
+7-membered heterocycloalkyl is optionally substituted by one or more R7s.
+2.
+The compound of claim 1, wherein R1 is C3-C7 monocyclic cycloalkyl, polycyclic
+cycloalkyl, or Cs-Cio aryl, wherein the Cs-C7 monocyclic cycloalkyl, polycyclic cycloalkyl, or
+Cs-C6 aryl is optionally substituted by one or more R6.
+3.
+The compound of claim 1 or claim 2, wherein R1 is C3-C7 monocyclic cycloalkyl
+optionally substituted by one or moreR6.
+4.
+The compound of any one of claims 1-3, wherein R1 is cyclopentyl, cyclohexyl, or
+201
+182236082 v1
+
+--- PAGE 2 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+or more R6.
+5.
+The compound of claim 1 or claim 2, wherein Ri is Cs-C16 polycyclic cycloalkyl
+substituted by one or moreR6.
+6.
+The compound of any one of claims 1-2 and 5, wherein R1 is adamantly, norbornyl, or
+bicyclo[2.2.2]octanyl, wherein the adamantly, norbornyl, or bicyclo[2.2.2]octanyl is optionally
+substituted by one or more R6.
+7.
+The compound of any one of claims 1-2 and 5, wherein R1 is Ci2-Ci6 tricyclic saturated
+cycloalkyl optionally substituted by one or more R6.
+8.
+The compound of any one of claims 1-2, 5, and 7, wherein R1 is hexahydroindacenyl
+optionally substituted by one or moreR6.
+9.
+The compound of any one of claims 1-2, 5, and 7-8, wherein R1 is hexahydroindacenyl
+optionally substituted by one, two, three, or four substituents independently selected from C-C4
+alkyl, C-C6 alkoxy, halo, oxo, -OH, and -CF3.
+10.
+The compound of any one of claims 1-2, 5, and 7-9, wherein R1 is hexahydroindacenyl.
+11.
+The compound of any one of claims 1-2, 5, and 7-10, wherein R1 is
+12.
+The compound of any one of claims 1-2, 5, and 7-9, wherein R1 is
+202
+182236082 v1
+
+--- PAGE 3 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+or
+wherein n and na each independently are 0, 1, 2, or 3.
+13.
+The compound of claim 1 or claim 2, wherein R1 is Cs-Cio aryl optionally substituted by
+one ormoreR6.
+14.
+The compound of any one of claims 1-2 and 13, wherein R1 is phenyl optionally
+substituted by one or more R6.
+15.
+The compound of any one of claims 1-2 and 13-14, wherein phenyl optionally substituted
+by one, two, or three substituents independently selected from C-C4 alkyl, halo, -CN, and -CF3;
+optionally, the one, two, or three substituents are independently selected from Cl and F.
+16.
+The compound of any one of claims 1-2 and 13-14, wherein R1 is
+R6
+203
+182236082v1
+
+--- PAGE 4 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+17.
+The compound of any one of claims 1-2,13-14, and 16, wherein R1 is
+CN
+18.
+The compound of any one of claims 1-2, 13-14, and 16, wherein R1 is
+CN
+CN
+CN
+204
+182236082v1
+
+--- PAGE 5 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+O1
+19.
+The compound of any one of claims 1-2,13-14,and 16,R1 is
+20.
+The compound of any one of claims 1-2 and 13, wherein R1 is naphthalenyl optionally
+substitutedby oneormoreR6.
+21.
+The compound of any one of claims 1-2, 13, and 20, wherein R1 is unsubstituted
+naphthalenyl;
+optionally, R1 is
+or
+22.
+The compound of claim 1, wherein R1 is 8- to 12-membered heterocycloalkyl optionally
+substitutedby one ormoreR6.
+23.
+The compound of claim 1 or claim 22, wherein R1 is benzofuranyl or
+dihydrobenzofuranyl, wherein the benzofuranyl or dihydrobenzofuranyl is optionally substituted
+by one or more R6;
+205
+182236082 v1
+
+--- PAGE 6 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+optionally, R1 is
+24.
+The compound of claim 1 or claim 22,wherein R1 is
+25.
+The compound of claim 1,wherein R1 is 5- to 6-membered heteroaryl optionally
+substituted by one or more R6.
+26.
+The compound of claim1 or claim 25,wherein R1is thiophenyl optionally substituted by
+one or more R6; optionally, R1 is
+27.
+The compound of any one of claims 1-26,wherein R3is H.
+28.
+The compound of any one of claims 1-26, wherein Rs is Ci-C4 alkyl optionally
+substitutedwithone ormoreR7.
+29.
+The compound of any one of claims 1-26 and 28, wherein R3 is methyl or ethyl.
+30.
+The compound of any one of claims 1-26 and 28,wherein R is Ci-C4 alkyl substituted
+206
+182236082 v1
+
+--- PAGE 7 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+with one or more R7.
+31.
+The compound of any one of claims 1-26,28, and 30, wherein R is methyl substituted
+with one or more Ci-C6 alkoxy, wherein the Ci-Co alkoxy is optionally substituted with one or
+more C-C6 alkoxy;
+optionally, R is
+32.
+The compound of any one of claims 1-26,28,and 30,wherein Ris methyl substituted
+with one or more-O-(5-to 7-membered heterocycloalkyl);
+optionally, R3 is
+33.
+The compound of any one of claims 1-26, 28, and 30, wherein in some embodiments, R3
+is methyl with one or more Cs-Cio aryl, wherein the Cs-Cio aryl is optionally substituted with one
+ormore5-to10-membered heteroaryl or-CN;
+optionally, Rs is 
+N
+or
+207
+182236082 v1
+
+--- PAGE 8 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+34.
+The compound of any one of claims 1-26, 28, and 30, wherein R3 is methyl substituted
+with one or more 5-to 10-membered heteroaryl, wherein the 5-to 10-membered heteroaryl is
+optionally substituted with one or more C-C6 alkyl, Ci-C6 alkoxy, halo, -CN, -(CH2)o-3-N(Ci-C6
+alkyl)2, or -CF3.
+35.
+The compound of any one of claims 1-26, 28, 30, and 34, wherein R3 is methyl
+substituted with one or more pyridinyl, wherein the pyridinyl is optionally substituted with one
+or more C-C6 alkyl, Ci-C6 alkoxy, halo, -CN, -(CH2)o-3-N(Ci-C6 alkyl)2, or -CF3;
+optionally, Rs is 
+The compound of any one of claims 1-26,28, 30, and 34, wherein R3 is methyl
+substituted with one or more pyrazolyl, wherein the pyrazolylis optionally substituted with one
+or more methyl, methoxy, F, Cl, -CN, -CH2-N(CH3)2, or -CF3;
+optionally;R3is
+208
+182236082 v1
+
+--- PAGE 9 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+37. The compound of any one of claims 1-26, 28, 30, and 34, wherein R3 is methyl
+substituted with one or more imidazolyl, wherein the imidazolyl is optionally substituted with
+one or more C1-C6 alkyl, Ci-C6 alkoxy, halo, -CN, -(CH2)o-3-N(Ci-C6 alkyl)2, or -CF3;
+optionally,Ris
+N
+or
+38.
+The compound of any one of claims 1-26, 28, 30, and 34, wherein R3 is methyl
+substituted with one or more pyridazinyl, wherein the pyridazinyl is optionally substituted with
+one or more C1-C6 alkyl, Ci-C6 alkoxy, halo, -CN, -(CH2)o-3-N(Ci-C6 alkyl)2, Or -CF3;
+optionally,Ris
+39.
+The compound of any one of claims 1-26,28,30,and 34,wherein R3is methyl
+substituted with one or more pyrimidinyl, wherein the pyrimidinyl is optionally substituted with
+one or more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(Ci-C6 alkyl)2, or -CF3;
+optionally,Ris
+209
+182236082 v1
+
+--- PAGE 10 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+40.
+The compound of any one of claims 1-26,28,30, and 34,wherein R3 is methyl
+substituted with one or more pyrazinyl, wherein the pyrazinyl is optionally substituted with one
+or more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(Ci-C6 alkyl)2, or -CF3;
+optionally,R3is
+41.The compound of any one of claims 1-26,28,30,and 34,wherein R; is methyl
+substituted with one or more triazolyl, wherein the triazolyl is optionally substituted with one or
+more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN,-(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3;
+optionally, R3 is h
+210
+182236082v1
+
+--- PAGE 11 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+or
+42.
+The compound of any one of claims 1-26,28,and 30,wherein Ris ethyl substituted with
+one or more Cs-Cio aryl;
+optionally,Ris
+43.
+The compound of any one of claims 1-42,wherein R4 is H.
+44.
+The compound of any one of claims 1-42, wherein R4 is C1-C6 alkyl, -(CH2)o-3-(C3-C6
+cycloalkyl), or -(CH2)o--Cs-C6 aryl.
+45.
+The compound of any one of claims 1-42 and 44, wherein R4 is Ci-C6 alkyl;
+optionally, R4 is methyl, ethyl, propyl, or butyl.
+46.
+The compound of any one of claims 1-42 and 44,wherein R4 is -(CH2)o-3-(C3-C6
+cycloalkyl);
+optionally, R4 is
+47.
+The compound of any one of claims 1-42 and 44, wherein in some embodiments, R4 is -
+(CH2)0-3-Cs-C6 aryl;
+211
+182236082 v1
+
+--- PAGE 12 ---
+CooleyRef.NODT-003/001WO (330150-2003)
+optionally, R4 is
+48. The compound of any one of claims 1-47, wherein at least one R6 is Ci-C6 alkyl, C2-C6
+alkenyl, Ci-C6 alkoxy, or C3-Cs cycloalkyl.
+49. The compound of any one of claims 1-47, wherein at least one R6 is halo, oxo, -OH, -CN,
+-NH2, -NH(C1-C6 alkyl), -N(C1-C6 alkyl)2, -CH2F, -CHF2, Or -CF3.
+50.
+The compound of any one of claims 1-49, wherein at least one R7 is -ORs;
+optionally, at least one R7 is Ci-C6 alkoxy optionally substituted by one or more R7s; or
+at least one R7 is -O-(5- to 7-membered heterocycloalkyl) optionally substituted with one or
+moreR7s.
+51.The compound of any one of claims 1-49, wherein at least one R7 is Cs-Cio aryl
+optionally substituted by one or moreR7s.
+52. The compound of any one of claims 1-49, wherein at least one R7 is 5- to 10-membered
+heteroaryl optionally substituted by one or more R7s.
+53.The compound of any one of claims 1-52, wherein at least one Rzs is Ci-C6 alkyl, Ci-C6
+alkoxy, or 5-to 10-membered heteroaryl.
+54. The compound of any one of claims 1-52, wherein at least one Rzs is halo, -OH, -CN, -
+(CH2)0-3-NH2, -(CH2)0-3-NH(C1-C6 alkyl), -(CH2)0-3-N(C1-C6 alkyl)2, -CH2F, -CHF2, Or -CF3.
+55.The compound of any one of claims 1-54, wherein Rs is Ci-C6 alkyl optionally
+substituted by one or more R7s.
+56.The compound of any one of claims 1-54, wherein Rs is 5-to 7-membered
+heterocycloalkyl optionally substituted with one or more R7s.
+212
+182236082 v1
+
+--- PAGE 13 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+57.
+The compound of any one of claims 1-56,being of Formula (la) or (Ib):
+R3
+R3
+(la);
+(Ib);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof.
+58.
+The compound of any one of claims 1-56, being of any one ofFormulae (Il), (Ila), and
+(IIb):
+(II);
+(Ila);
+(IIb);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof.
+59.
+The compound of any one of claims 1-56,being of any one of Formulae (ll), (IIla), and
+:(qm)
+(III);
+213
+182236082v1
+
+--- PAGE 14 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+(Illa);
+(IIb);
+or a prodrug,hydrate, solvate, or pharmaceutically acceptable salt thereof.
+60.
+The compound of any one of claims 1-56 and 58-59, being of any one of Formulae (IV),
+(IVa),and(IVb):
+(IV);
+O
+(IVa);
+(IVb);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof.
+61.
+The compound of any one of claims 1-56, being of any one of Formulae (V), (Va), (Vb),
+(VI), (VIa), and (VIb):
+R3
+(V);
+O
+R3
+(Va);
+0
+(Vb);
+214
+182236082 v1
+
+--- PAGE 15 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+R
+(VI);
+(Vla);
+(VIb);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof.
+62.
+The compound of any one of claims 1-56,59, and 61,being of any one of Formulae
+(VII), (VIIla), (VIIb), (VII), (VIIIa), and (VIIIb):
+R
+(VII);
+(VIla);
+(VIIb);
+R7
+(VII);
+(VIlla);
+(VIlb);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof.
+215
+182236082v1
+
+--- PAGE 16 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+63.
+The compound of any one of claims 1-56 and 58-62, being of any one of Formulae (IX),
+(IXa), (IXb), (X), (Xa), and (Xb):
+R
+(IX);
+R
+0
+(IXa);
+O
+(IXb);
+O
+(X);
+R
+O
+(Xa);
+(Xb);
+or a prodrug, hydrate, solvate, or pharmaceutically acceptable salt thereof.
+216
+182236082v1
+
+--- PAGE 17 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+64.The compound of any one of claims 1-63, being selected from Compound Nos. 1-130 and
+prodrugs and pharmaceutically acceptablesaltsthereof.
+65.The compound of any one of claims 1-64, being selected from Compound Nos. 1-130 and
+pharmaceutically acceptable salts thereof.
+66.The compound of any one of claims 1-65, being selected from Compound Nos. 1-130.
+67.  A compound being an isotopic derivative of the compound of any one of claims 1-66.
+68. The compound of claim 67, being a deuterium labeled compound.
+69. The compound of claim 68, being a deuterium labeled compound of any one of
+Compound Nos. 1-130 and prodrugs and pharmaceutically acceptable salts thereof.
+70. The compound of claim 69, being a deuterium labeled compound of any one of
+Compound Nos. 1-130.
+71. A compound obtainable by, or obtained by, a method described herein;
+optionally, the method comprises one or more steps described in Schemes 1-5.
+72.A compound, by an intermediate obtained by a method for preparing the compound of
+any one of claims 1-70;
+optionally, the intermediate is selected from the intermediates described in Examples 1-
+126.
+73.A pharmaceutical composition comprising the compound of any one of claims 1-72 or a
+74. The pharmaceutical composition of claim 73, wherein the compound is selected from
+217
+182236082 v1
+
+--- PAGE 18 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+Compound Nos. 1-130.
+75.A method of inhibiting inflammasome activity, comprising contacting a cell with an
+effective amount of the compound of any one of claims 1-72 or a pharmaceutically acceptable
+salt thereof;
+optionally, the inflammasome is NLRP3 inflammasome, and the activity is in vitro or in
+vivo.
+76. A method of treating or preventing a disease or disorder in a subject in need thereof,
+comprising administering to the subject a therapeutically effective amount of the compound of
+any one of claims 1-72 or a pharmaceutically acceptable salt thereof, or the pharmaceutical
+composition of claim 73 or claim 74.
+77. The method of claim 76, wherein the disease or disorder is associated with an implicated
+inflammasome activity;
+optionally, the disease or disorder is a disease or disorder in which inflammasome
+activity is implicated.
+78.The method of claim 76 or claim 77,wherein the disease or disorder is an
+autoinflammatory disorder, an autoimmune disorder, a neurodegenerative disease,or cancer.
+79.The method of any one of claims 76-78, wherein the disease or disorder is an
+autoinflammatory disorder or an autoimmune disorder;
+Optionally, the disease or disorder is selected from cryopyrin-associated auto-
+inflammatory syndrome (CAPS; e.g., familial cold autoinflammatory syndrome (FCAS)),
+Muckle-Wells syndrome (MWS),chronicinfantile neurological cutaneous and articular
+(CINCA) syndrome/neonatal-onset multisystem inflammatory disease (NOMID),familial
+Mediterranean fever and nonalcoholic fatty liver disease (NAFLD), non-alcoholic steatohepatitis
+(NASH),gout,rheumatoid arthritis,osteoarthritis,Crohn's disease,chronic obstructive
+pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2 diabetes,
+multiple sclerosis and neuroinflammation occurring in protein misfolding diseases (e.g., Prion
+218
+182236082 v1
+
+--- PAGE 19 ---
+CooleyRef.NODT-003/001WO (330150-2003)
+diseases).
+80.The method of any one of claims 76-78,wherein disease or disorder is a
+neurodegenerative disease;
+optionally, the disease or disorder is Parkinson's disease or Alzheimer's disease.
+81. The method of any one of claims 76-78, wherein the disease or disorder is cancer;
+optionally, the cancer is metastasising cancer, gastrointestinal cancer, skin cancer, non-
+small-cell lung carcinoma, or colorectal adenocarcinoma.
+82. The compound of any one of claims 1-72, or the pharmaceutical composition of claim 69
+or claim 70, for use in inhibiting inflammasome activity;
+optionally, the inflammasome is NLRP3 inflammasome,and the activity is in vitro or in
+vivo.
+83. The compound of any one of claims 1-72, or the pharmaceutical composition of claim 69
+or claim 70, for use in treating or preventing a disease or disorder.
+84. The compound or pharmaceutical composition of claim 83, wherein the disease or
+disorder is associated with an implicated inflammasome activity;
+optionally, the disease or disorder is a disease or disorder in which inflammasome
+activity is implicated.
+85. The compound or pharmaceutical composition of claim 83 or claim 84, wherein the
+disease or disorder is an autoinflammatory disorder, an autoimmune disorder,a
+neurodegenerative disease,orcancer.
+86. The compound or pharmaceutical composition of any one of claims 83-85, wherein the
+disease or disorder is an autoinflammatory disorder or an autoimmune disorder;
+optionally, the disease or disorder is selected from cryopyrin-associated
+autoinflammatory syndrome (CAPS; e.g., familial cold autoinflammatory syndrome (FCAS)),
+219
+182236082 v1
+
+--- PAGE 20 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+Muckle-Wells syndrome (MWS),chronic infantile neurological cutaneous and articular
+(CINCA) syndrome/ neonatal-onset multisystem inflammatory disease (NOMID), familial
+Mediterranean fever and nonalcoholic fatty liver disease (NAFLD), non-alcoholic steatohepatitis
+(NASH),gout,rheumatoid arthritis,osteoarthritis,Crohn's disease,chronic obstructive
+pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2 diabetes,
+multiple sclerosis and neuroinflammation occurring in protein misfolding diseases (e.g., Prion
+diseases).
+87. The compound or pharmaceutical composition of any one of claims 83-85, wherein
+disease or disorderis a neurodegenerative disease;
+optionally,the disease or disorder is Parkinson's disease or Alzheimer's disease.
+88.The compound or pharmaceutical composition of any one of claims 83-85, wherein the
+disease or disorderiscancer;
+optionally, the cancer is metastasising cancer, gastrointestinal cancer, skin cancer, non-
+small-cell lung carcinoma, or colorectal adenocarcinoma.
+89.Use of the compound of any one of claims 1-72 or a pharmaceutical salt thereof in the
+manufacture of a medicament for inhibiting inflammasome activity;
+optionally, the inflammasome is NLRP3 inflammasome, and the activity is in vitro or in
+vivo.
+90. Use of the compound of any one of claims 1-72 or a pharmaceutical salt thereof in the
+manufacture of a medicament for treating or preventing a disease or disorder.
+91.The use of claim 90, wherein the disease or disorder is associated with an implicated
+inflammasome activity;
+optionally, the disease or disorder is a disease or disorder in which inflammasome
+activity is implicated.
+92.The use of claim 90 or claim 91, wherein the disease or disorder is an autoinflammatory
+220
+182236082 v1
+
+--- PAGE 21 ---
+CooleyRef.NODT-003/001WO(330150-2003)
+disorder, an autoimmune disorder, a neurodegenerative disease, or cancer.
+93. The use of any one of claims 90-92, wherein the disease or disorder is an
+autoinflammatorydisorder or anautoimmune disorder;
+optionally,the disease or disorder is selected from cryopyrin-associated
+autoinflammatory syndrome (CAPS; e.g., familial cold autoinflammatory syndrome (FCAS)),
+Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular
+(CINCA) syndrome/ neonatal-onset multisystem inflammatory disease (NOMID), familial
+Mediterranean fever and nonalcoholic fatty liver disease (NAFLD), non-alcoholic steatohepatitis
+(NASH),gout,rheumatoid arthritis,osteoarthritis,Crohn’s disease, chronic obstructive
+pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2 diabetes,
+multiple sclerosis and neuroinflammation occurring in protein misfolding diseases (e.g., Prion
+diseases).
+94. The use of any one of claims 90-92, wherein disease or disorder is a neurodegenerative
+disease;
+optionally, the disease or disorder is Parkinson's disease or Alzheimer's disease.
+95.
+The use of any one of claims 90-92, wherein the disease or disorder is cancer;
+optionally, the cancer is metastasising cancer, gastrointestinal cancer, skin cancer, non-
+small-celllungcarcinoma,orcolorectaladenocarcinoma.
+221
+182236082v1

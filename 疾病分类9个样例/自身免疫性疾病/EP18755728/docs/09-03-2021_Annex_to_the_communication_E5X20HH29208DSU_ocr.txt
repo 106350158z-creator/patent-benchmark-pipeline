@@ -1,0 +1,69 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+09.03.2021
+Sheet
+Application No:
+18 755 728.5
+Date
+Feuille
+Demande n°:
+Description,Pages
+1-200
+as published
+Claims,Numbers
+1-22
+filedwith entry into theregionalphasebefore theEPO
+1．Amendments
+a,The following amendments as filed with entry into the regional phase are admissible
+under Art.123 (2) EPC: claim1 is based on claims 1,17-19,23,24 and 26 as originally
+filed,claims2and3onclaims5and6asoriginallyfiled,claims4and5onclaims7to
+10 and11 to12as originallyfiled,claims6 to11onclaims 28to29,31 to 41,42 and 43
+as originally filed,claims 12 to 16 are based on claims 44 to 47,48 to 49,50 to 52,53 to
+54 and55to56Claim17isbaseduponclaims57to68asoriginally filedwithreference
+to claim 1. Claim 18 is based on claim 65 and table 1 as originally filed and claims 19 to
+22 have their basis in claims 67 to 68,73,83 and 85to88 as originally filed.
+2.Novelty
+Due to the restrictions as made to residue R1in claim 1,documents D1 toD3 and
+documentsD5toD21arenolonger noveltydestroying,since theybearresiduesin the
+position corresponding to the position of present residue R1 which do no longer fall
+undertherestrictedscopeofclaim1.
+Nevertheless,thecompound(2-chlorophenyl)-carbamoyl-Leu-OHisdefinitelya
+compound falling under the scope of present claim 1: R1 is 2-chhlorophenyl (group e) in
+present claim 1), R3 is C4-alkyl and R4 is hydrogen. Thus claims 1, 7 and 11 do not fulfil
+therequirementsof noveltyaccording toArt.54EPC.
+3.Inventive step
+Document D22 is to be considered to be the closest prior art, since this document is the
+onlyoneconcernedwithinhibitorsoftheactivationoftheNLRP3inflammasomeasis
+the present application.These compounds do show a completely differentchemical
+EPOForm290601.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+09.03.2021
+Sheet
+2
+Application No:
+18 755 728.5
+Date
+Feuille
+Demande n°:
+structuretheyaresulfonyl ureaderivativeswhereasthepresentcompoundsare
+cycloalkyl-,hexhydroindacenyl-,phenyl-,naphtyl-,benzofuranyl- and thienyl-
+carbamoyloxy-aceticacidderivatives.
+Thus, the problem underlying the present application is to be seen in the provision of
+furtherinhibitorsoftheactivationoftheNLRP3inflammasome.Thisproblemhas
+apparentlybeensolved asdemonstratedbyexample126giveninthedescription.The
+solution of thisproblem could inprinciplebe considered toinvolve an inventivestep,
+claimed carbamoyloxy-acetic acid derivativeswould show aninhibitory effecton the
+activation of the NLRP3inflammasome.Thus,as far asbeing novel, the subject matter
+4.The Applicant is invited to file a new claims.It is brought to the Applicant's attention,
+that any amendments must strictly meet therequirements of Art. 123(2) EPC and that a
+clearbasis for any amendment in the specification as originally filed has tobe given.
+EPOForm290601.91TRI

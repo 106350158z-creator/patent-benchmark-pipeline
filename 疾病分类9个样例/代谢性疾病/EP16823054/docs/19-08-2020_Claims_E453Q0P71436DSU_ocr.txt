@@ -1,0 +1,226 @@
+
+--- PAGE 1 ---
+Claims
+A compoundofFormulal
+R
+(1
+orapharmaceuticallyacceptablesalt thereof,wherein
+Y is N or C-CN;
+Z is N or CH;
+X is N or CR3;
+10
+provided that at least one of Y, Z, or X is N;
+R1 is C3.7cycloalkyl or a 4-to 7-membered heterocyclic moiety, wherein the
+sulfur,andwherein thecycloalkyl orheterocyclicmoietyhas0to3substitutuents
+independently selected from -C1-3alkyl, and -OH, provided that there is no more than one -
+15
+OH substituent; or
+substitutedwith0 to1OH;
+R2 is -(L)m-CON(RM)2, -(L)m-SO2Rs, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORS,-L-(CH2)nSO2NHCONH2, Or -
+20
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+nis 0 or 1;
+RN is H or -C1-3alkyl;
+R$ is H or -C1-3alkyl;
+25
+Lis CH2, CHF,or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+atoms,or-C3-4cycloalkyl; and
+30
+valency allows.
+
+--- PAGE 2 ---
+2.
+Yis N or C-CN;
+Zis N or CH;
+X is CR3;
+5
+provided that at least one of YorZis N;
+sulfur,and wherein thecycloalkyl orheterocyclicmoietyhas0to3substitutuents
+independently selected from-C1-3alkyl, and-OH, provided that there is no more than one -
+10
+OH substituent; or
+substitutedwith0to1OH;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2RS, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)R℃,-L-(CH2)nCONHSO2RS,-L-(CH2)nSO2NHCORS,-L-(CH2)nSO2NHCONH2,Or -
+15
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+nis 0 or 1;
+RN is H or -C1-3alkyl;
+R$ is H or -C1-3alkyl;
+20
+Lis CH2,CHF,or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+R3 is H, halogen, -CN, -C1-3alkyl, -OC1-3alkyl, -C1-3alkyl substituted with 1 to 3 halogen
+atoms,or-C3-4cycloalkyl;and
+25
+3.
+The compound of claim 1or claim 2,ora pharmaceutically acceptable salt thereof,
+wherein
+Yis C-CN;
+Z is N;
+30
+Xis CR3;
+sulfur,andwhereinthecycloalkylorheterocyclicmoietyhas0to3substitutuents
+independently selected from -C1-salkyl, and -OH, provided that there is no more than one -
+35
+OH substituent;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2RS, -L-(CH2)nCO2H, -L-
+2
+
+--- PAGE 3 ---
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+Rs is H or -C1-3alkyl;
+5
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+atoms,or-C3-4cycloalkyl; and
+10
+R4 is -C1-3alkyl substituted with 0 to 5 halogen atoms as valency allows.
+4.
+The compound of any one of claims 1 to 2, or a pharmaceutically acceptable salt
+thereof, wherein
+Y is N;
+Z is N;
+15
+X is CR3;
+R1 isC3.7cycloalkyl or a 4-to7-membered heterocyclic moiety,wherein the
+independentlyselectedfrom-C1-3alkyl，and-OH,providedthatthereisnomorethanone-
+20
+OH substituent;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2RS, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORS, or -L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+25
+RN is H or -C1-3alkyl;
+Rs is H or -C1-3alkyl;
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+30
+atoms, or-C3-4cycloalkyl; and
+R4 is -C1-3alkyl substituted with 0 to 5 halogen atoms as valency allows.
+5.
+The compound of any one of claims 1to 4,ora pharmaceutically acceptable salt
+thereof,whereinRisHor-CH3.
+35
+6.
+The compound of any one of claims 1to 5,ora pharmaceutically acceptable salt
+thereof, wherein R2 is -CH2CO2H,-CH2CO2CH3, Or -CH2CO2CH2CH3
+3
+
+--- PAGE 4 ---
+7.
+Thecompoundof anyoneofclaims1to6,orapharmaceuticallyacceptablesalt
+thereof, wherein R3 is H, -CI, -CH3, -CH2CH3, -O-CH3, Cyclopropyl, or CN.
+8.
+The compound of any one of claims 1 to 7, or a pharmaceutically acceptable salt
+thereof,wherein R4 is-CF3,-CHF2,or-CF2CH3.
+5
+9.
+Thecompoundofanyoneofclaims1to8,orapharmaceuticallyacceptablesalt
+thereof, wherein R1 is the 4- to 7-membered heterocyclic moiety selected from azetidin-1-yl,
+CH3and-OH,provided that thereisnomorethanone-OHsubstituent.
+10.
+The compound of any one of claims 1 to 9,ora pharmaceutically acceptable salt
+10
+thereof, wherein R1 is azetidin-1-yl, having 1 to 2 -CHs substituents and having 0 to 1-OH
+substituent,and whereinYis C-CN and ZisN,orYand Z are each N.
+11.
+thereof,wherein R1 is cyclobutyl having0to3substitutuentsindependentlyselected from-
+CH3and-OH,provided that there is nomore thanone-OH substituent.
+15
+12.
+The compound of claim 1,or pharmaceutically acceptable salt thereof, wherein the
+compoundisselectedfrom
+OH
+OH
+OH
+OMe
+HO
+OH
+and
+OH
+H
+OH
+
+--- PAGE 5 ---
+13.The compound of claim 1,or pharmacuetically acceptable salt thereof,wherein the
+compound isselected from
+(2S,3R)-2,3-dimethyl-1-[4-{(1R,5S,6S)-6-[(methylsulfonyl)methyl]-3-
+azabicyclo[3.1.0]hex-3-yl}-6-(trifluoromethyl)pyrimidin-2-yl]azetidin-3-ol;
+5
+azabicyclo[3.1.0jhex-6-yl]-N-(methylsulfonyl)acetamide; and
+tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0]hexane.
+14. The compound of claim 1, or pharmacuetically acceptable salt thereof, wherein the
+10
+compound is selected from
+[(1R,5S,6R)-3-{5-cyano-6-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-4-
+15
+[(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-
+azabicyclo[3.1.0]hex-6-yl]acetic acid;
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0jhex-6-yl]aceticacid;
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-5-methyl-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetic acid; and
+15.A compound of claim 1, or pharmaceutically acceptable salt thereof, wherein the
+compound is [(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-
+25
+3-azabicyclo[3.1.0]hex-6-yl]acetic acid.
+azabicyclo[3.1.0]hex-6-yl]acetic acid.
+30
+followingprincipalpowderx-raydiffractionpatternpeaksexpressedintermsof2θas
+measured with a copper radiation chosen from 9.0, 10.4, 15.0, and 21.4 +/- 0.2°.
+18. A compound of claim 1, or pharmaceutically acceptable salt thereof, wherein the
+compound is [(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetic acid.
+claims 1 to 18, or a pharmaceutically acceptable salt thereof, and a pharmaceutically
+acceptableexcipient.
+5
+
+--- PAGE 6 ---
+20.A compound ofFormulaIof any one of claims 1 to18,ora pharmaceutically
+acceptablesalt thereof,foruseasamedicament.
+acceptablesaltthereof，foruseinamethodoftreatingadisease,whereinthediseaseis
+5
+resistance,hepaticinsulinresistance,impairedglucosetolerance,diabeticneuropathy,
+diabeticnephropathy,kidneydisease,acutekidneydisorder,tubulardysfunction,
+10
+cholesterol,lowHDLcholesterol,hyperinsulinemia,NAFLD,steatosis,NASH,fibrosis,
+15
+heart failure,myocardial infarction, stroke,hemorrhagic stroke, ischemic stroke,pulmonary
+arterial disease,maculardegeneration,cataract,glomerulosclerosis,chronicrenalfailure,
+metabolicsyndrome,syndromeX,premenstrual syndrome,anginapectoris,thrombosis,
+20
+atherosclerosis,transientischemicattacks,vascularrestenosis,impaired glucose
+metabolism, conditions of impaired fasting plasma glucose, hyperuricemia, gout, erectile
+dysfunction,skin and connectivetissue disorders,foot ulcerations,ulcerative colitis,hyper
+boweldisease,ulcerative colitis,Crohn'sdisease,and irritablebowel syndrome.
+25
+22.A compound of Formula I of any one of claims 1 to 18, or a pharmaceutically
+acceptablesalt thereof,foruseinamethodof treatingadiseaseasclaimed inclaim21,
+whereinthediseaseisNAFLD.
+23.A compound of Formula I of any one of claims 1 to 18, or a pharmaceutically
+30
+whereinthediseaseisNASH.
+24.A compound of FormulaIof anyone of claims 1to18,ora pharmaceutically
+acceptable salt thereof, for use in a method of treating a disease as claimed in claim 21,
+whereinthediseaseisfibrosis.
+25.A compound of FormulaI of any one of claims 1 to 18,or a pharmaceutically
+35
+acceptablesalt thereof,foruseinamethodof treatingadiseaseasclaimed inclaim21,
+whereinthediseaseiscirrhosis
+6
+
+--- PAGE 7 ---
+26. A compound of Formula I of any one of claims 1 to 18, or a pharmaceutically
+whereinthediseaseishepatocellularcarcinoma.

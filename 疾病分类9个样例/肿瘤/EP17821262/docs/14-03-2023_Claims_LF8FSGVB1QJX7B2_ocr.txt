@@ -1,0 +1,44 @@
+
+--- PAGE 1 ---
+CLAIMS
+1.
+for use in treating cancer in a human patient, wherein the agent is niraparib, or a
+pharmaceutically acceptablesalt thereof,
+wherein the patient is characterized by previous treatment with a platinum-based
+therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or BRCA2,
+wherein the niraparib, or a pharmaceutically acceptable salt thereof, is
+administered as a maintenance therapy following complete or partial response to at least
+one platinum-based therapy,and
+wherein the patient is further characterized by an absence of homologous
+recombinationdeficiency(HRD).
+2.
+The therapeutic agent for use according to claim 1, wherein the patient has a tumor with a
+negative HRD status.
+3.
+The therapeutic agent for use according to claim 1 or claim 2,wherein the niraparib, or a
+pharmaceutically acceptable salt thereof,is administered as a maintenance therapy
+following partial response to at least one platinum-based therapy.
+4.
+The therapeutic agent for use according to any one of claims 1-3, wherein the niraparib,
+or a pharmaceutically acceptable salt thereof,is prepared in the form of a tosylate
+monohydrate.
+5.
+The therapeutic agent for use according to any one of claims 1-4, wherein the cancer is
+selected from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal
+cancer, and breast cancer.
+6.
+The therapeutic agent for use according to claim 5, wherein the ovarian cancer is high
+79
+
+--- PAGE 2 ---
+7.
+The therapeutic agent for use according to any one of claims 1-6, wherein the cancer is a
+recurrent cancer.
+8.
+The therapeutic agent for use according to claim 7, wherein the cancer is selected from
+the group consisting of: ovarian cancer,fallopian tube cancer or primary peritoneal
+cancer.
+The therapeutic agent for use according to claim 8, wherein the ovarian cancer, fallopian
+tube cancer or primary peritoneal cancer is platinum sensitive at the commencement of
+treatment.
+80

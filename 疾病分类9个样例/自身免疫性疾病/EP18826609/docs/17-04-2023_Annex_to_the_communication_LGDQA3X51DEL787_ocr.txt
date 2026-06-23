@@ -1,0 +1,124 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+17.04.2023
+Sheet
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+The examinationisbeingcarriedout on thefollowing application documents
+Description, Pages
+1-305
+as published
+Claims,Numbers
+1-15
+filed in electronic form on
+07-10-2022
+Amendments(Article123(2)EPC)
+requirementsofArticle123(2)EPC.
+2
+Inventivestep(Article56EPC)
+are maintained.
+2.1
+Thepresent claimed compounds of formula(l)are useful to treat diseases
+connected to the inhibitionof theNLRP3 activation.
+N
+R3
+R2
+(I),
+wherein R1 is a cycloalkyl or aryl, R2 is -(CX1X2)n-R2s with n=0-2 and
+2.2
+Closest prior art
+D1, which is regarded as being the closest prior art, discloses compounds of
+formula (l) (claim 1) or (V)(claim 7) with the same uses as the present ones.
+Formula (1)
+Fomula V
+from the compounds of formulaIor Vdisclosed in this document(claims 1 and
+7) for the same use.The main selection which appears to be the core of the
+EPOForm 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+17.04.2023
+Sheet
+2
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+currentclaimedsubject-matterisrepresentedbythedefinitionsofthepresent
+R2and R3whichcontainbothaheterocycle moiety,whereinoneof them(R3)
+directly linked ontheN atom.
+As regards the specific examples disclosed in D1,compounds 14,17,19,35,
+39 and theones disclosed onpage30 appear tobe theclosest structural for the
+present ones.
+1-{(furan-2-y(methy)[2-{(morpholin
+yl)thyl]sulfamoyl3-(1,2,3,5,6,7-hexahycrs
+1-[(furan-2-ylmethyl)sulfamoyl]-3-(1,2,3,5,6,7-
+indacen-4-yf)jurea
+hexahydiro-s-indacen-4-ylurea
+With theletterof07.10.2022,theApplicant filed comparativedatabetween
+compound17ofD1andpresentexample46:
+The Applicant argued that example 17of D1 has in thePBMC assay higher
+than 10um while the present example 46has anIC50 lower than 1μm.This
+argumentmightberelevantforassessinginventivestepifwould havebeen
+crediblethatallclaimedcompoundspossestheclaimedimprovement.
+Considering the specific data provided onpages 301 to116 of the current
+therangeof10to50um:
+comp58
+comp 71
+comp90
+while examples66,73 and 81are disclosed tohave anIC50between1 to
+3um,example69between3and10μm,andexample93lessthan1μm:
+EPO Form 2906 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+17.04.2023
+Sheet
+t3
+Application No:
+18826609.2
+Date
+Feuille
+Demande n°:
+Inviewoftheverysmallstructuraldifferencesbetweenthecompound58,71
+compounds66,73,81,and69whichhaveanlC50lowerthan10umitcannot
+beconcludedwhich is thedifferentiatingfeatureresponsiblefor theimproved
+activity.
+Thesamevariationinactivityduetosmallstructuraldifferencescouldalsobe
+seen from the data provided for the D1 compounds on pages 128-129.
+AsregardtheargumentprovidedbytheApplicantwiththeletterof07.10.2022
+that none of the specific examples disclosed in D1 contains a directly attached
+heterocycleonthenitrogenatom,theExaminingDivisionwouldliketounderline
+thatareseveral examplesinD1containingadirectlyattachedheterocycle
+activity.
+Thus,it is considered that since thepresent general formula claimed by claim 1
+is a selection over the structure (l) of D1 and D1 discloses examples having a
+heterocycledirectlylinkedonthenitrogencorrespondingtothepresentNR2R3
+as well as compounds wherein the nitrogen corresponding to the present
+NR2R3isbisubstituted,the skilled personwould expect thesame level of
+activity for the present claimed compounds. Combining the bisubstitution on the
+nitrogencorresponding to the present NR2R3(as disclosed for some examples
+ofD1)withthepresenceofadirectlylinkedheterocycle(asdisclosedforother
+quated N), it cannot be considered as inventive per se.
+The data used by Applicant as comparison in the letter of 07.10.2022 cannot, in
+view of theexperimental dataprovided in thepresent application and in D1,
+supportthewholeclaimedscope.
+claimedscope.Inthecasethatitisnotcrediblethatallclaimedcompounds
+wouldpossestheclaimedimprovementandsinceforanovelselectionan
+over the compounds disclosed in D1,summons to oral proceedings might be
+issued(seealsotheobjectionsraisedinthepreviouscommunications).
+EPO Form 2906 01.91TRI

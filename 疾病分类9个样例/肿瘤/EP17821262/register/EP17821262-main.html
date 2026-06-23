@@ -1,0 +1,1207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <title> EP About this file - European Patent Register</title>
+  <link rel="stylesheet" href="/theme/cssPrint.css"  media="print" type="text/css"/>
+  
+  <link rel="stylesheet" href="/theme/cssPrintLayout.css"  media="print" type="text/css"/>
+
+  <link rel="stylesheet" href="/theme/rplusPrint.css" media="print" type="text/css"/>
+  
+  <link rel="stylesheet" href="/theme/common.css"  media="screen" type="text/css"/>
+
+  <!--[if IE 8]>
+		<link rel="stylesheet" href="/theme/css_IE8.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/rplus_IE8.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/css_ie8_print.css" type="text/css"/>
+  <![endif]-->
+  <!--[if IE 7]>
+		<link rel="stylesheet" href="/theme/css_IE7.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/rplus_IE7.css" type="text/css"/>
+  <![endif]-->
+  <!--[if IE 6]>
+		<link rel="stylesheet" href="/theme/css_IE6.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/rplus_IE6.css" type="text/css"/>
+  <![endif]-->
+  <!--[if Opera]>
+		<link rel="stylesheet" href="/theme/rplus_opera.css" type="text/css"/>
+	<![endif]-->
+	
+  <link rel="stylesheet" href="/theme/rplus.css" type="text/css"/>
+  
+  <link rel="stylesheet" href="/theme/cssJQuery.css" type="text/css"/>
+
+<!--c:set var="jsStatic" value="/" scope="application" /--> <!-- AMF -->
+
+<script language="javascript" type="text/javascript" src = "/scripts/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/jquery.combobox.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/iutil.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/accordion.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/jquery.tools.min.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/jquery.expandableinput.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/jquery.session.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/main.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/alert.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/rplus.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/jquery.blockUI.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/federated.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/jquery.jsonp-2.4.0.min.js"></script>
+<script type='text/javascript' src='/dwr/engine.js'></script>
+<script type='text/javascript' src='/dwr/util.js'></script>
+<script type='text/javascript' src='/dwr/interface/MonitoredList.js'></script>
+<script type='text/javascript' src='/statusMap.js'></script>
+<script type='text/javascript' src='/txtMessages.js'></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/bot.js"></script>
+<!-- Matomo Tag Manager -->
+
+<script>
+
+var container_ID = 'K4s1az21', env = '-i';
+var currentUrl = document.location.href;
+if (currentUrl.includes('register.epo.org')) {
+  env = '';
+  container_ID = '6yl2jF3T';
+}
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.async=true; g.src='https://matomo' + env + '.epo.org/js/container_' + container_ID + '.js'; s.parentNode.insertBefore(g,s);
+
+</script>
+
+<!-- End Matomo Tag Manager -->
+</head>
+
+<body lang="en" class="present">
+<script language="javascript" type="text/javascript">
+   $(document).ready(function() {
+          $('.hoverable').hover(
+             function() {
+                $(this).addClass('hovered');
+             }, function() {
+                $(this).removeClass('hovered');
+             }
+          );
+          var path = '';
+          var param = {clnrefer : ""}
+          if (path == '/regviewer') {
+        	  $('#smartSearchForm textarea[name="query"]').val('');
+          } else if (path == '/advancedSearch' && param.clnrefer == 'yes') {
+        	  $('#searchForm textarea[class="expandable"]').each(function() {
+        		  $(this).val('');
+        		  removeSessionAttr(getPage() + $(this).attr("name"));
+	      	  });
+          }
+
+       });
+</script>
+<div class="printGrid">
+	<div class="printIt">
+		<div class="printLogo">
+			<img alt="logo" src="/images/header/logo.gif" />
+		</div>
+	</div>
+	<div id="page" class="pageWrap">
+	<a name="toplink"></a>
+	<div class="epoHeader">
+	<div id="epoHeader" class="clearfix">
+	<a id="epoLogo" href="http://www.epo.org" name="epoLogo"><img alt="logo missing" src="/images/header/logo.gif"/></a>
+	
+	<div id="epoHeaderCenter"><img alt="logo center" src="/images/header/logo_patent_register_en.gif"/></div>
+	<div id="epoHeaderMetaNav">
+		<ul class="modLanguageNavi clearfix">
+			<li>
+				<a href="?lng=de&amp;number=EP17821262&amp;tab=main">
+   Deutsch</a>
+
+<a href="?lng=en&amp;number=EP17821262&amp;tab=main">
+   English</a>
+
+<a href="?lng=fr&amp;number=EP17821262&amp;tab=main">
+   Français</a>
+
+</li>
+		</ul>
+		<ul class="modServiceNavi clearfix">
+			<li class="navElem contact">
+				<a href="http://www.epo.org/service-support/contact-us.html" target="_blank">Contact</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div><div class="modAppFlyoutNavi noPrint">
+		<div class="lvl1ul clearfix">
+			<ul class="primary">
+				<li class="lvl1li"><a class="leftArrow" href="https://www.epo.org/searching-for-patents/legal/register.html">About European Patent Register</a></li>
+				
+				<li class="lvl1li">
+					<a class="hasSubMenu sel" href="#">Other EPO online services</a>
+					<div class="lvl2ul epoMenu" style="opacity: 1; visibility: hidden; display: none;">
+						<ul class="epoGrpList epoGrpLeft">
+							
+   
+    
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="http://worldwide.espacenet.com">Espacenet
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="https://register.epo.org/login">Register Alert
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="https://data.epo.org/publication-server/?hp=stages">European Publication Server
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="http://www.epo.org/searching/subscription/gpi.html">Global Patent Index
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="http://www.epo.org/searching/free/bulletin.html">European Patent Bulletin
+            </a>
+</li>
+        
+    
+</ul>
+					</div>
+				</li>
+            </ul>
+			<ul class="secondary">
+				<li><a class="tooltipHeader registerAlertLogin" title="Subscribe to this email alert service to monitor patent applications throughout the EP grant procedure." href="authenticate">Register Alert (email alerts)</a></li>
+					</ul>
+		</div>			
+	</div>
+	<div id="content"></div>
+      <script language="JavaScript" type="text/javascript">
+
+<!--
+	var status = "false";
+	$(document).ready(function(){
+	$("div.pageWrap").addClass("screenWide");
+	$('a[href="#"]').click(function(e) { e.preventDefault ? e.preventDefault() : e.returnValue = false; });
+	$('<p class="tooltipForRSSApnsEmail"></p>').appendTo('body');
+	 
+	// email valid format
+	var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	//disable submit button
+	$("#okSubmit").attr('disabled', true);
+	$("#okSubmit").css("color","#C0C0C0");
+	$("#okSubmit").css("cursor","default");
+	
+	$("#alertSubscribeId").on('mouseover',function() {
+    var textarea_value = $("#emailadresse").val();
+	var valid = pattern.test(textarea_value);
+    if(textarea_value != '' && valid ) {
+		//enable submit button
+        $("#okSubmit").attr('disabled' , false);
+		$("#okSubmit").css("color","#000000");
+		$("#okSubmit").css("cursor","pointer");
+    }else{
+		//disable submit button
+        $("#okSubmit").attr('disabled' , true);
+		$("#okSubmit").css("color","#C0C0C0");
+		$("#okSubmit").css("cursor","default");
+    }
+	});
+	
+	}); 
+	 //To open the dialog box of RSS subscription alert
+	 function openAlert(){	 
+		var dialog = document.getElementById('alertSubscribeId');
+		var email = document.getElementById("emailId");
+		dialog.style.display = "block";
+		window.onclick = function(event) {
+		if (event.target == dialog) {
+        dialog.style.display = "none";
+			}
+		} 
+		 
+	 }
+	//To close the dialog box of RSS subscription alert
+	function closeAlert(){	 
+		var dialog = document.getElementById('alertSubscribeId');
+		var cancel = document.getElementById("cancel");
+        dialog.style.display = "none";
+	 }
+	 
+	 
+	function showDetails() {
+		if (status === "false") {
+			$("#historyButton").text('Hide history');
+            $("#historyButton").removeClass('showHist');
+            $("#historyButton").addClass('hideHist');
+            $(".former").show();
+			status = "true";
+		} else {
+			$("#historyButton").text('Show history');
+            $("#historyButton").removeClass('hideHist');
+            $("#historyButton").addClass('showHist');
+            $(".former").hide();
+			status = "false";
+		}
+	}
+
+	function downloadXML(href, message) {
+		if(message.length > 0){
+			alert(message);
+		}
+        window.open(href,"DownloadXML");     // Open in a new window
+         //window.open(href); self.focus();   // Background window
+         //window.location = href;            // Open in the current window
+	}
+
+	function refineSearch() {
+		window.location.href="application?lastSearch=advanced";
+	}
+
+	function filterDocs(number, lng) {
+		var filter = $("select").val();
+		window.location.href="application?lng="+lng+"&tab=doclist&number="+number+"&filter="+encodeURIComponent(filter);
+	}
+	function filterueDocs(number, lng) {
+		var filter = $("select").val();
+		window.location.href="application?lng="+lng+"&tab=ueDoclist&number="+number+"&filter="+encodeURIComponent(filter);
+	}
+-->
+
+
+</script>
+
+<div id="epoNavigation" class="epoNavigation">
+		<script type="text/javascript">
+$(document).ready(function(){
+   if (false) {
+      if ($("#").hasClass("bendr")) {
+         $("#").removeClass("bendr").addClass("bendractive");
+      }
+      if ($("#").hasClass("bendl")) {
+         $("#").removeClass("bendl").addClass("bendlactive");
+      }
+   }
+});
+</script>
+
+<spring:url var="rootCont" value="/"/>
+
+  <div class="modAppNav noScript">
+      <ul>
+		<li id="smartSearch" class="bendr"><a href="regviewer?lng=en">Smart search</a></li>
+        <li id="advancedSearch" class="bendr"><a href="advancedSearch?lng=en&amp;clnrefer=yes">Advanced search</a></li>
+        <li class="spacer"></li>
+        <li id="help" class="bendl last"><a href="help?topic=index&amp;lng=en">Help</a></li>
+        </ul>
+   </div>
+</div>
+
+	<div id="epoContentLeft" class="noPrint" >
+			<ul class="epoContentNav">
+				<span class="sel" style="padding-left: 6px;">EP3478286</span>
+				<span class="sel" style="padding-left: 16px;">European procedure</span>
+				<ul>
+					<li>
+						<a class="sel lastActiveElement" href='/application?number=EP17821262&amp;lng=en&amp;tab=main'>EP About this file</a>
+							</li>
+					<li>
+						<a href="/application?number=EP17821262&amp;lng=en&amp;tab=legal">EP Legal status</a>
+								</li>
+					<li>
+						<a href="/application?number=EP17821262&amp;lng=en&amp;tab=federated">EP Federated register</a>
+								</li>
+					<li>
+						<a href="/application?number=EP17821262&amp;lng=en&amp;tab=event">EP Event history</a>
+								</li>
+					<li>
+						<a href="/application?number=EP17821262&amp;lng=en&amp;tab=citations">EP Citations</a>
+								</li>
+					<li>
+						<a href="/application?number=EP17821262&amp;lng=en&amp;tab=family">EP Patent family</a>
+								</li>
+					<li>
+						<a href="/application?number=EP17821262&amp;lng=en&amp;tab=doclist">EP All documents</a>
+								</li>
+					</ul>
+				</ul>
+			<div style="clear: right;">&nbsp;</div>
+
+			<!-- only context menu for results page -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<script>
+$(document).ready(function() {
+  $('.dijitAccordionTitle').click(function() {
+    var accordionContainer = $('.epoAccordionContainer');
+    var contentContainer = $('.dijitContainer.dijitAccordionContainer.dijitLayoutContainer');
+    accordionContainer.css('height', 'auto');
+    contentContainer.css('height', 'auto');
+  });
+});
+</script>
+
+   <div class="epoAccordionContainer" style="height: auto;">
+       <div class="dijitContainer dijitAccordionContainer dijitLayoutContainer" style="overflow: hidden; height: auto;" >
+			
+            
+               
+            
+
+            
+            
+
+            
+               <div class="dijitAccordionTitle">
+                  <span class="dijitInline dijitAccordionArrow"></span>
+                  <img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+                  <span class="dijitAccordionText">Quick help</span>
+               </div>
+               <div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+                           <ul>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.1&amp;lng=en" title="&lt;h4&gt;What happens if I click on the &#034;XML&#034; or &#034;ST36&#034; buttons?&lt;/h4&gt;&lt;p&gt;You will be able to download the information from the &amp;#034;About this file&amp;#034; screen either as an XML or &amp;#034;Standard 36&amp;#034; file.&lt;/p&gt;">What happens if I click on the "XML" or "ST36" buttons?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.2&amp;lng=en" title="&lt;h4&gt;What kind of information can be found if I click on the &#034;Show history&#034; button?&lt;/h4&gt;&lt;p&gt;This button is only displayed if changes occured to bibliographic data published in the EP Bulletin during the application&amp;#039;s lifetime, from the date of first publication by the EPO onwards.&lt;/p&gt;">What kind of information can be found if I click on the "Show history" button?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.3&amp;lng=en" title="&lt;h4&gt;What kind of information can be found under &#034;Status&#034;?&lt;/h4&gt;&lt;p&gt;The list of legal events can be found under more...&lt;/p&gt;">What kind of information can be found under "Status"?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.4&amp;lng=en" title="&lt;h4&gt;What do the digits in square brackets refer to?&lt;/h4&gt;&lt;p&gt;The digits in square brackets refer to the issue of the European Patent Bulletin (e.g. week 35 of year 1988) in which the relevant information was published. The European Patent Bulletin publications from 01.2002 onwards are hyperlinked so that by clicking on the link you can go straight to the relevant issue of the European Patent Bulletin.&lt;/p&gt;">What do the digits in square brackets refer to?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.5&amp;lng=en" title="&lt;h4&gt;What does N/P stand for?&lt;/h4&gt;&lt;p&gt;The letters N/P between square brackets stand for &amp;#034;not published&amp;#034;.&lt;/p&gt;">What does N/P stand for?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.6&amp;lng=en" title="&lt;h4&gt;What does the letter in square brackets stand for in the &#034;Documents cited&#034; part?&lt;/h4&gt;&lt;p&gt;The letter in square brackets stands for the category of document. For a list of categories click on &amp;#034;more...&amp;#034;.&lt;/p&gt;">What does the letter in square brackets stand for in the "Documents cited" part?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.7&amp;lng=en" title="&lt;h4&gt;Is it possible to navigate in the result list?&lt;/h4&gt;&lt;p&gt;Click on the &amp;#034;Search results&amp;#034; tab in the horizontal toolbar and you will be sent back to the latest result list displayed. To scroll forward to the next 20 results, simply click on the right arrow below the printer icon.&lt;/p&gt;">Is it possible to navigate in the result list?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.8&amp;lng=en" title="&lt;h4&gt;What kind of information can be found under “Lapses during opposition”?&lt;/h4&gt;&lt;p&gt;This section shows the date of lapse of the European patent in a designated contracting state during the opposition period, and, where appropriate, pending a final decision on opposition (Rule 143.1(p) EPC). Lapses taking place after this period will be displayed under “Legal status”, in the “INPADOC data” section. “INPADOC data” provides information on events during the lifetime of an EP patent generated during both the EP grant procedure and the post-grant phase. Lapses referring to extension or validation states are displayed in the “INPADOC data” section only.&lt;/p&gt;">What kind of information can be found under “Lapses during opposition”?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.9&amp;lng=en" title="&lt;h4&gt;What are validation states?&lt;/h4&gt;&lt;p&gt;Validation states are countries that are non-member states which have validation agreements with the EPO, allowing applicants to request the validation of a European patent to these countries.&lt;/p&gt;">What are validation states?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.10&amp;lng=en" title="&lt;h4&gt;What are extension states?&lt;/h4&gt;&lt;p&gt;Extension states are countries that are non-- member states  which have extension agreements with the EPO, allowing applicants to request the extension of a European patent or patent application to these countries.&lt;/p&gt;">What are extension states?</a>
+                                 </li>
+                              
+                           </ul>
+                </div>
+            
+      
+		
+		
+		<div class="dijitAccordionTitle">
+			<span class="dijitInline dijitAccordionArrow"></span>
+			<img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+			<span class="dijitAccordionText">Maintenance news</span>
+		</div>
+			 
+		<div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+			
+				
+				
+                 
+				
+				
+				
+				
+				 
+                <p>
+<b>Scheduled maintenance</b>
+<span style="float:right;">
+<a title="Maintenance news" href="maintenance?lng=en">
+<img src="images/rss.gif"/>
+</a>
+</span>
+</p><p>Regular maintenance outages:<br/>
+between 05.00 and 05.15 hrs CET (Monday to Sunday).<br/>
+<br/>
+<b>Other outages</b>
+<br/>
+<a href="https://www.epo.org/service-support/availability-of-online-services.html" target="_blank">Availability</a>
+<br/>
+</p><p>2022.02.11</p>
+
+
+				<a class="int" href="news?type=NEWS_MAINTENANCE&amp;lng=en">More...</a>
+			
+
+			
+		</div>
+
+		
+		
+		<div class="dijitAccordionTitle">
+			<span class="dijitInline dijitAccordionArrow"></span>
+			<img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+			<span class="dijitAccordionText">News flashes</span>
+		</div>
+		<div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+			
+				
+				
+                 
+				
+				
+				
+				
+                 
+				<p>
+<b>Italy joins the Federated Register</b>
+<span style="float:right;">
+<a title="News flashes" href="flashnews?lng=en">
+<img src="images/rss.gif"/>
+</a>
+</span>
+</p><p>Click <a href="https://register.epo.org/help?lng=en&amp;topic=federated" target="_blank">here</a> for more information on the Federated Register.</p><p>2025-06-12</p>
+
+				<a class="int" href="news?type=NEWSFLASH&amp;lng=en">More...</a>
+			
+
+			
+		</div>
+
+
+          <div class="dijitAccordionTitle">
+                  <span class="dijitInline dijitAccordionArrow"></span>
+                  <img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+                  <span class="dijitAccordionText">Related links</span>
+          </div>
+          <div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+           
+		        
+		        
+		
+		        
+    <p xmlns:editorial="http://espacenet.com/maintenance/editorial">
+        
+            <a href="https://www.epo.org/searching-for-patents/legal/register/archive.html" target="_blank" class="ext">Release notes
+            </a>
+        <br/>
+        
+            <a href="https://e-courses.epo.org/wbts/europeanpatentregisterassistant/index.html" target="_blank" class="ext">European Patent Register Assistant
+            </a>
+        <br/>
+        
+            <a href="https://link.epo.org/web/legal/register/en-european-patent-register-user-manual.pdf" target="_blank" class="ext">European Patent Register User Manual
+            </a>
+        <br/>
+        
+            <a href="http://documents.epo.org/projects/babylon/eponet.nsf/0/61E49C570C2441DDC12581AF00494F04/$File/european_patent_register-pocket_guide_en.pdf" target="_blank" class="ext">European Patent Register – pocket guide
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/searching-for-patents/legal/register/faq.html" target="_blank" class="ext">FAQ - European Patent Register
+            </a>
+        <br/>
+        
+            <a href="http://documents.epo.org/projects/babylon/eponet.nsf/0/B7C67A1394E42810C1257EC300537D68/$File/federated_register_flyer_en.pdf" target="_blank" class="ext">Federated Register (Flyer)
+            </a>
+        <br/>
+        
+            <a href="http://documents.epo.org/projects/babylon/eponet.nsf/0/9D94DCA14F468A24C1257EC300536856/$File/global_dossier_flyer2016_en.pdf" target="_blank" class="ext">Global Dossier (Flyer)
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/searching-for-patents/legal/register/documentation/events.html" target="_blank" class="ext">Register events
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/searching-for-patents/legal/register/documentation/data-coverage.html" target="_blank" class="ext">Deep link coverage
+            </a>
+        <br/>
+        
+            <a href="https://www.epo.org/searching-for-patents/legal/register/documentation/federated-register.html" target="_blank" class="ext">Federated Register content
+            </a>
+        <br/>
+        
+            <a href="https://e-courses.epo.org/wbts/pi_tour_2025/EN/" target="_blank" class="ext">The Patent Information Tour
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/service-support/ordering/fair-use.html" target="_blank" class="ext">Fair use charter
+            </a>
+        <br/>
+    </p>
+
+		   
+		   
+          </div>
+      </div>
+
+    </div></div>
+    <div class="epoContentWrap clearfix">
+		<div id="pagebody" >
+			<a name="Content"></a>
+			
+			<div class="printTitle printIt">
+			<h3>Extract from the Register of European Patents</h3>
+			</div>
+			<h1>
+				EP About this file: EP3478286</h1>
+			<div id="body" class="clearfix">
+					<div class="epoToolBar firstChildToolbar">
+						<ul class="clearfix">
+							<li class="separator separatorFirst"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="rfnLst" title="Refine search" href="simpleSearch?lng=en">Refine search</a></li>
+							
+							<li style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+									<li style="padding-right: 0.4em;"><a class="download" title="Download ST36 data" href='javascript:downloadXML("/download?number=EP17821262&amp;tab=main&amp;xml=st36", "")'>ST36</a></li>
+								<li id="histSeparator" style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+								<li style="padding-right: 0.4em;"><a class="showHist" title="Show/Hide history" id="historyButton" href="#" onclick="showDetails(); return false;">Show history</a></li>
+							<li style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="ext" title="Open in Espacenet" href="https://worldwide.espacenet.com/patent/search?q=pn%3DEP3478286&called_by=EuropeanRegister" target="_blank">Espacenet</a></li>
+								<li style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="thirdParty" title="Third Party Observation" href="https://tpo.apps.epo.org/tpo/ui/prod/?subject.publicationNumber=EP3478286" target="_blank">Submit observations</a></li>
+								<li style="padding-right: 0.4em;"class="separator"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="reportErr" title="Send us your questions or feedback" href="http://www.epo.org/service-support/contact-us/contact2-form.html?number=EP17821262&subject=EPRegister" target="_blank">Report error</a></li>
+							
+							<li style="padding-right: 0.4em;" class="floatRight prt line"><a href="javascript:window.print();" class="prt" title="Print">Print</a></li>
+							<li style="padding-right: 0.4em;" class="floatRight separator"><span class="firstFollow">|</span></li>
+						</ul>
+					</div>
+					<script>
+	$(document).ready(function() {
+		// CPC
+	    $(".cpc_data_toggle_minus a.cpc_data_toggle").click();
+	    $(".cset_data_toggle_minus a.cset_data_toggle").click();
+	    
+	    
+	 	/** Here's the W3C standards on calculating the width of table columns. Basically it is left up to the implementing browser/agent.
+		/*  That's why we opted for 1500px as a conventional value for C-Set after. Therefore, any C-set width having width greater than it
+		/*  is considered as a "Too long C-Set"
+		/*  For more information, please refer to W3C official documentation: https://www.w3.org/TR/html401/struct/tables.html#h-11.2.4.4
+		 */
+	    const getElementWidth = elem => elem.getBoundingClientRect().width;
+	 	
+		const checkOverflow = (elem) => {
+			const elemWidth = getElementWidth(elem);
+			const defaultWidth = 1500;
+			return elemWidth > defaultWidth;
+		}
+		
+		const breakElement = (element) => {
+			let middleIndex = Math.ceil(element.innerHTML.length/2);
+			let indexOfComma = element.innerHTML.indexOf(", ", middleIndex);
+			if (indexOfComma !== -1) {
+				element.innerHTML = element.innerHTML.substring(0, indexOfComma + 2) + "<br/>" + element.innerHTML.substring(indexOfComma + 2);
+			}else{
+				element.innerHTML = element.innerHTML.substring(0, middleIndex) + "<br/>" + element.innerHTML.substring(middleIndex);
+			}
+		}
+		
+		const breakCsetIfTooLong = (csetDivs) => {
+			for(let i = 0; i < csetDivs.length; i++) {
+		        isCsetDataItemTooLong = checkOverflow(csetDivs[i]);
+		        if(isCsetDataItemTooLong) {
+		            breakElement(csetDivs[i]);
+		        }
+		    }
+		}
+
+		var csetDataItemNoHideDivs = document.getElementsByClassName("cset_data_item_no_hide");
+		var csetDataItemDivs = document.getElementsByClassName("cset_data_item");
+		var isCsetDataItemTooLong = false;
+		
+		breakCsetIfTooLong(csetDataItemNoHideDivs);
+		breakCsetIfTooLong(csetDataItemDivs);
+	});
+</script>
+
+</b><table class="tableType3 printTable"><td class="t2" colspan="4"><b><font size=3><a href="https://register.epo.org/espacenet/regviewer?AP=17821262&amp;CY=EP&amp;LG=en&amp;DB=REG"  >EP3478286 - METHODS OF TREATING OVARIAN CANCER</a></font></b>
+			
+				[Right-click to bookmark this link]
+			</td></tr><td class="th">Status</td><td class="t2" colspan="3">The patent has been granted<br/>
+	<font size="1"><i><i>Status updated on &nbsp;01.12.2023</i></font>
+<br/>
+				<font size="1"><i>Database last updated on&nbsp;13.06.2026</i></font>
+			</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Grant of patent is intended<br/>
+	<font size="1"><i><i>Status updated on &nbsp;20.09.2023</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Examination is in progress<br/>
+	<font size="1"><i><i>Status updated on &nbsp;18.08.2023</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Grant of patent is intended<br/>
+	<font size="1"><i><i>Status updated on &nbsp;18.04.2023</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Examination is in progress<br/>
+	<font size="1"><i><i>Status updated on &nbsp;15.03.2023</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Grant of patent is intended<br/>
+	<font size="1"><i><i>Status updated on &nbsp;23.11.2022</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Examination is in progress<br/>
+	<font size="1"><i><i>Status updated on &nbsp;07.05.2021</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Request for examination was made<br/>
+	<font size="1"><i><i>Status updated on &nbsp;05.04.2019</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">The international publication has been made<br/>
+	<font size="1"><i><i>Status updated on &nbsp;06.01.2018</i></font>
+</td></tr><td class="th">Most recent event&nbsp;&nbsp;&nbsp;<b><span title="Please note that the ’’Most recent event’’ date shown first is the date on which the event was processed and so may differ from the effective legal date of the event concerned or the date of the related decision. Please refer to the information under ’’All documents’’ for the event’s effective legal date. " class="tooltipActuator noPrint">Tooltip</span></b></td><td class="t2">10.09.2025</td><td class="t3">New entry: Date of oral proceedings</td><td class="t4">&nbsp;</td></tr><td class="th" rowspan="2">Applicant(s)</td><td class="t2" colspan="3">For all designated states<br/>
+	Tesaro, Inc.<br/>
+	Corporation Service Company<br/>
+	251 Little Falls Drive<br/>
+	Wilmington, DE 19808
+	  / US<br/>
+</td></tr><td class="t2" colspan="3">[2023/28]</td></tr><tr class="former " ><td class="t1">Former [2020/02]</td><td class="t2" colspan="3">For all designated states<br/>
+	Tesaro, Inc.<br/>
+	1000 Winter Street North<br/>
+	Suite 3300<br/>
+	Waltham, Massachusetts 02451
+	  / US<br/>
+</td></tr><tr class="former " ><td class="t1">Former [2019/19]</td><td class="t2" colspan="3">For all designated states<br/>
+	Tesaro Inc.<br/>
+	1000 Winter Street<br/>
+	Suite 3300<br/>
+	Waltham, MA 02451
+	  / US<br/>
+</td></tr><td class="th" rowspan="3">Inventor(s)</td><td class="t2" colspan="3">01&nbsp;/
+	HEDLEY, Mary Lynne<br/>
+	c/o Tesaro Inc.<br/>
+	1000 Winter Street North Suite 3300<br/>
+	Waltham Massachusetts 02451
+	  / US<br/>
+</td></tr><td class="t2" colspan="3">02&nbsp;/
+	MARTELL, Robert<br/>
+	c/o Tesaro Inc.<br/>
+	1000 Winter Street North Suite 3300<br/>
+	Waltham Massachusetts 02451
+	  / US<br/>
+</td></tr><td class="t2" colspan="3">&nbsp;<a href="https://www.epo.org/bulletin/downloads/2019/bulletin1919.pdf" target="_blank" class="ext" >[2019/19]</a></td></tr><td class="th" rowspan="2">Representative(s)</td><td class="t2" colspan="3">J A Kemp LLP<br/>
+	80 Turnmill Street<br/>
+	London EC1M 5QU
+	  / GB<br/>
+</td></tr><td class="t2" colspan="3">[2024/01]</td></tr><tr class="former " ><td class="t1">Former [2019/19]</td><td class="t2" colspan="3">Garner, Stephen, et al<br/>
+	Mathys & Squire LLP The Shard<br/>
+	32 London Bridge Street<br/>
+	London SE1 9SG
+	  / GB<br/>
+</td></tr><td class="th" rowspan="3">Application number, filing date</td><td class="t2">17821262.7</td><td class="t3" colspan="2">29.06.2017</td></tr><td class="t2" colspan="3">[2019/19]</td></tr><td class="t2" colspan="3">WO2017US40039</td></tr><td class="th" rowspan="4">Priority number, date</td><td class="t2">US201662356461P</td><td class="t3" colspan="2">29.06.2016
+	               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	               Original&nbsp;published&nbsp;format:&nbsp;US&nbsp;201662356461&nbsp;P</td></tr><td class="t2">US201662402427P</td><td class="t3" colspan="2">30.09.2016
+	               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	               Original&nbsp;published&nbsp;format:&nbsp;US&nbsp;201662402427&nbsp;P</td></tr><td class="t2">US201762470141P</td><td class="t3" colspan="2">10.03.2017
+	               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	               Original&nbsp;published&nbsp;format:&nbsp;US&nbsp;201762470141&nbsp;P</td></tr><td class="t2" colspan="3">[2019/19]</td></tr><td class="th">Filing language</td><td class="t2" colspan="3">EN</td></tr><td class="th">Procedural language</td><td class="t2" colspan="3">EN</td></tr><td class="th" rowspan="16">Publication</td><td class="th">Type:
+   </td><td class="t2" colspan="2">A1&nbsp;Application with search report</td></tr><td class="th">No.:</td><td class="t2" colspan="2">WO2018005818</td></tr><td class="th">Date:</td><td class="t2" colspan="2">04.01.2018</td></tr><td class="th">Language:</td><td class="t2" colspan="2">EN</td></tr><td class="t2" colspan="3"> [2018/01] </td></tr><td class="th">Type:
+   </td><td class="t2" colspan="2"><a href="https://data.epo.org/publication-server/result-page?iAction=3&amp;pn=3478286&amp;ki=A1&amp;cc=EP&amp;pd=20190508" target="_blank" class="ext" style="" >A1&nbsp;Application with search report&nbsp;</a></td></tr><td class="th">No.:</td><td class="t2" colspan="2">EP3478286</td></tr><td class="th">Date:</td><td class="t2" colspan="2">08.05.2019</td></tr><td class="th">Language:</td><td class="t2" colspan="2">EN</td></tr><td class="t2" colspan="3">The application published by WIPO in one of the EPO official languages on 04.01.2018 takes the place of the <a href="https://www.epo.org/en/legal/epc/2020/a153.html" target="_blank">publication of the European patent application</a>.</td></tr><td class="t2" colspan="3"> [2019/19] </td></tr><td class="th">Type:
+   </td><td class="t2" colspan="2"><a href="https://data.epo.org/publication-server/pdf-document?pn=3478286&amp;ki=B1&amp;cc=EP&amp;pd=20240103" target="_blank" class="ext" style="" >B1&nbsp;Patent specification&nbsp;</a></td></tr><td class="th">No.:</td><td class="t2" colspan="2">EP3478286</td></tr><td class="th">Date:</td><td class="t2" colspan="2">03.01.2024</td></tr><td class="th">Language:</td><td class="t2" colspan="2">EN</td></tr><td class="t2" colspan="3"> [2024/01] </td></tr><td class="th" rowspan="2">Search report(s)</td><td class="th">International search report - published on:</td><td class="t2">US</td><td class="t3">04.01.2018</td></tr><td class="th">(Supplementary) European search report - dispatched on:</td><td class="t2">EP</td><td class="t3">14.02.2020</td></tr><td class="th" rowspan="3">Classification</td><td class="th">IPC:</td><td class="t2">A61K31/454, A61K31/4745, C12Q1/68, A61P35/00<br/>
+								</td><td class="t3">[2020/12]</td></tr><td class="th">CPC:</td><td class="t2" colspan="2"><div class="cpc_data_no_hide" style="white-space: nowrap; ">
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K31/454 (EP,IL,KR,US);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>C12Q1/6886 (EP,IL,US);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K31/4745 (EP,IL,US);</b>
+												</span>
+										
+										</div>
+										<div class="cpc_data_no_hide" style="white-space: nowrap; ">
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K31/4985 (IL,KR);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K9/48 (IL,US);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61P35/00 (EP,IL,KR,US);</b>
+												</span>
+										
+										<span class="cpc_data_toggle_plus" style="display: none; ">
+												<a class="cpc_data_toggle" style="text-decoration: none;" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='white'">(+)</a>
+											</span>
+										</div>
+										<div class="cpc_data" style="white-space: nowrap; ">
+										<span class="cpc_data_item" style="white-space: nowrap;">
+											C12Q2600/106 (EP,IL,US);</span>
+										
+										<span class="cpc_data_item" style="white-space: nowrap;">
+											C12Q2600/156 (EP,IL,US)</span>
+										
+										<span class="cpc_data_toggle_minus" style="">
+												<a class="cpc_data_toggle" style="text-decoration: none;" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='white'">(-)</a>
+											</span>
+										</div>
+										</td></tr><td class="th">C-Set:</td><td class="t2" colspan="2"><div class="cset_data_no_hide" style="white-space: nowrap; ">
+										<span class="cset_data_item_no_hide" style="white-space: nowrap; ">
+											<b>A61K31/454, A61K2300/00 (EP,US);</b>
+												</span><br/>
+										
+										<span class="cset_data_item_no_hide" style="white-space: nowrap; ">
+											<b>A61K31/4745, A61K2300/00 (US,EP)</b>
+												</span><br/>
+										
+										</div>
+										</td></tr><tr class="former " ><td class="t1"> </td><td class="t2">Former IPC [2019/19]</td><td class="t2" colspan="2">A61K31/454, A61K31/4745, C12Q1/68</td></tr><td class="th">Designated contracting states</td><td class="t2" colspan="3">AL, &nbsp; AT, &nbsp; BE, &nbsp; BG, &nbsp; CH, &nbsp; CY, &nbsp; CZ, &nbsp; DE, &nbsp; DK, &nbsp; EE, &nbsp; ES, &nbsp; FI, &nbsp; FR, &nbsp; GB, &nbsp; GR, &nbsp; HR, &nbsp; HU, &nbsp; IE, &nbsp; IS, &nbsp; IT, &nbsp; LI, &nbsp; LT, &nbsp; LU, &nbsp; LV, &nbsp; MC, &nbsp; MK, &nbsp; MT, &nbsp; NL, &nbsp; NO, &nbsp; PL, &nbsp; PT, &nbsp; RO, &nbsp; RS, &nbsp; SE, &nbsp; SI, &nbsp; SK, &nbsp; SM, &nbsp; TR&nbsp;[2019/19]</td></tr><td class="th" rowspan="2">Extension states</td><td class="t2">BA</td><td class="t3" colspan="2">25.01.2019</td></tr><td class="t2">ME</td><td class="t3" colspan="2">25.01.2019</td></tr><td class="th" rowspan="2">Validation states</td><td class="t2">MA</td><td class="t3" colspan="2">25.01.2019</td></tr><td class="t2">MD</td><td class="t3" colspan="2">25.01.2019</td></tr><td class="th" rowspan="3">Title</td><td class="th">German:</td><td class="t2">VERFAHREN ZUR BEHANDLUNG VON EIERSTOCKKREBS</td><td class="t3">[2019/19]</td></tr><td class="th">English:</td><td class="t2">METHODS OF TREATING OVARIAN CANCER</td><td class="t3">[2019/19]</td></tr><td class="th">French:</td><td class="t2">M&Eacute;THODES DE TRAITEMENT DU CANCER DE L'OVAIRE</td><td class="t3">[2019/19]</td></tr><td class="th" rowspan="4">Entry into regional phase</td><td class="t2">25.01.2019</td><td class="t3">National basic fee paid</td><td class="t4">&nbsp;</td></tr><td class="t2">25.01.2019</td><td class="t3">Search fee paid</td><td class="t4">&nbsp;</td></tr><td class="t2">25.01.2019</td><td class="t3">Designation fee(s) paid</td><td class="t4">&nbsp;</td></tr><td class="t2">25.01.2019</td><td class="t3">Examination fee paid</td><td class="t4">&nbsp;</td></tr><td class="th" rowspan="13">Examination procedure</td><td class="t2">deleted</td><td class="t3" colspan="2">Date on which the examining division has become responsible</td></tr><td class="t2">25.01.2019</td><td class="t3" colspan="2">Examination requested&nbsp;
+			[2019/19]</td></tr><td class="t2">02.07.2020</td><td class="t3" colspan="2">Amendment by applicant (claims and/or description)</td></tr><td class="t2">06.05.2021</td><td class="t3" colspan="2">Despatch of a communication from the examining division (Time limit: M06)</td></tr><td class="t2">16.11.2021</td><td class="t3" colspan="2">Reply to a communication from the examining division</td></tr><td class="t2">24.11.2022</td><td class="t3" colspan="2">Communication of intention to grant the patent</td></tr><td class="t2">14.03.2023</td><td class="t3" colspan="2">Disapproval of the communication of intention to grant the patent by the applicant or resumption of examination proceedings by the EPO</td></tr><td class="t2">19.04.2023</td><td class="t3" colspan="2">Communication of intention to grant the patent</td></tr><td class="t2">17.08.2023</td><td class="t3" colspan="2">Disapproval of the communication of intention to grant the patent by the applicant or resumption of examination proceedings by the EPO</td></tr><td class="t2">21.09.2023</td><td class="t3" colspan="2">Communication of intention to grant the patent</td></tr><td class="t2">29.11.2023</td><td class="t3" colspan="2">Fee for grant paid</td></tr><td class="t2">29.11.2023</td><td class="t3" colspan="2">Fee for publishing/printing paid</td></tr><td class="t2">29.11.2023</td><td class="t3" colspan="2">Receipt of the translation of the claim(s)</td></tr><td class="th">Divisional application(s)</td><td class="t2" colspan="3">EP23211450.4
+			&nbsp;/
+		<a title='<a href="https://worldwide.espacenet.com/patent/search?q=pn%3DEP4302835&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >Open in Espacenet</a><a href="/regviewer?PN=EP4302835&amp;lng=en" class="ext" style=""  >Open in the European Patent Register</a>' class="tooltipWithLinks ext">EP4302835</a>
+			</td></tr><td class="th" rowspan="8">Opposition(s)</td><td class="th">Opponent(s)</td><td class="t2" colspan="2">01&nbsp;
+			18.09.2024&nbsp;
+			19.09.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Sandoz AG<br/>
+
+Centralbahnstrasse 4<br/>
+	4051 Basel
+	  / CH<br/>
+Opponent's representative<br/>
+				Elkington and Fife LLP<br/>
+
+Prospect House<br/>
+	8 Pembroke Road<br/>
+	Sevenoaks, Kent TN13 1XR
+	  / GB<br/>
+</td></tr><td class="th">&nbsp;</td><td class="t2" colspan="2">02&nbsp;
+			01.10.2024&nbsp;
+			02.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Kraus & Lederer PartGmbB<br/>
+
+Thomas-Wimmer-Ring 15<br/>
+	80539 München
+	  / DE<br/>
+Opponent's representative<br/>
+				Kraus & Lederer PartGmbB<br/>
+
+Thomas-Wimmer-Ring 15<br/>
+	80539 München
+	  / DE<br/>
+</td></tr><td class="th">&nbsp;</td><td class="t2" colspan="2">03&nbsp;
+			01.10.2024&nbsp;
+			01.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Teva Pharmaceutical Industries Ltd<br/>
+
+124 Dvora HaNevi'a St.<br/>
+	6944020 Tel Aviv
+	  / IL<br/>
+Opponent's representative<br/>
+				D Young & Co LLP<br/>
+
+3 Noble Street<br/>
+	London EC2V 7BQ
+	  / GB<br/>
+</td></tr><td class="th">&nbsp;</td><td class="t2" colspan="2">04&nbsp;
+			02.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Stada-Arzneimittel Aktiengesellschaft<br/>
+
+Stadastrasse 2-18<br/>
+	61118 Bad Vilbel
+	  / DE<br/>
+Opponent's representative<br/>
+				Hamm&Wittkopp Patentanwälte PartmbB<br/>
+
+Jungfernstieg 38<br/>
+	20354 Hamburg
+	  / DE<br/>
+</td></tr><td class="th">&nbsp;</td><td class="t2" colspan="2">05&nbsp;
+			02.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Alfred E. Tiefenbacher (GmbH & Co. KG)<br/>
+
+Van-der-Smissen-Straße 1<br/>
+	22767 Hamburg
+	  / DE<br/>
+Opponent's representative<br/>
+				Hamm&Wittkopp Patentanwälte PartmbB<br/>
+
+Jungfernstieg 38<br/>
+	20354 Hamburg
+	  / DE<br/>
+</td></tr><td class="th">&nbsp;</td><td class="t2" colspan="2">06&nbsp;
+			02.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			STRAWMAN LIMITED<br/>
+
+Orchard Lea<br/>
+	Horns Lane<br/>
+	Combe<br/>
+	Witney, Oxfordshire OX29 8NH
+	  / GB<br/>
+Opponent's representative<br/>
+				Brand Murray Fuller LLP<br/>
+
+50 Eastcastle Street<br/>
+	London W1W 8EA
+	  / GB<br/>
+</td></tr><td class="th">&nbsp;</td><td class="t2" colspan="2">07&nbsp;
+			03.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Generics (U.K.) Limited<br/>
+
+Building 4, Trident Place<br/>
+	Mosquito Way<br/>
+	Hatfield Herts AL 10 9UL
+	  / GB<br/>
+Opponent's representative<br/>
+				Russell, Tim<br/>
+
+Venner Shipley LLP<br/>
+	TIDE Bankside<br/>
+	8 Emerson Street<br/>
+	London SE1 9DU
+	  / GB<br/>
+</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[N/P]</td></tr><tr class="former " ><td class="t1" rowspan="8"> </td><td class="t2" colspan="3">Former [2024/46]</td></tr><tr class="former" ><td class="t3">Opponent(s)</td><td class="t2" colspan="2">01&nbsp;
+			18.09.2024&nbsp;
+			19.09.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Sandoz AG<br/>
+
+Centralbahnstrasse 4<br/>
+	4051 Basel
+	  / CH<br/>
+Opponent's representative<br/>
+				Elkington and Fife LLP<br/>
+
+Prospect House<br/>
+	8 Pembroke Road<br/>
+	Sevenoaks, Kent TN13 1XR
+	  / GB<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">02&nbsp;
+			01.10.2024&nbsp;
+			02.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Kraus & Lederer PartGmbB<br/>
+
+Thomas-Wimmer-Ring 15<br/>
+	80539 München
+	  / DE<br/>
+Opponent's representative<br/>
+				Kraus & Lederer PartGmbB<br/>
+
+Thomas-Wimmer-Ring 15<br/>
+	80539 München
+	  / DE<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">03&nbsp;
+			01.10.2024&nbsp;
+			01.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Teva Pharmaceutical Industries Ltd<br/>
+
+124 Dvora HaNevi'a St.<br/>
+	6944020 Tel Aviv
+	  / IL<br/>
+Opponent's representative<br/>
+				D Young & Co LLP<br/>
+
+3 Noble Street<br/>
+	London EC2V 7BQ
+	  / GB<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">04&nbsp;
+			02.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Stada-Arzneimittel Aktiengesellschaft<br/>
+
+Stadastrasse 2-18<br/>
+	61118 Bad Vilbel
+	  / DE<br/>
+Opponent's representative<br/>
+				Hamm&Wittkopp Patentanwälte PartmbB<br/>
+
+Jungfernstieg 38<br/>
+	20354 Hamburg
+	  / DE<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">05&nbsp;
+			02.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Alfred E. Tiefenbacher (GmbH & Co. KG)<br/>
+
+Van-der-Smissen-Straße 1<br/>
+	22767 Hamburg
+	  / DE<br/>
+Opponent's representative<br/>
+				Hamm&Wittkopp Patentanwälte PartmbB<br/>
+
+Jungfernstieg 38<br/>
+	20354 Hamburg
+	  / DE<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">06&nbsp;
+			02.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			STRAWMAN LIMITED<br/>
+
+Orchard Lea<br/>
+	Horns Lane<br/>
+	Combe<br/>
+	Witney, Oxfordshire OX29 8NH
+	  / GB<br/>
+Opponent's representative<br/>
+				Brand Murray Fuller LLP<br/>
+
+50 Eastcastle Street<br/>
+	London W1W 8EA
+	  / GB<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">07&nbsp;
+			03.10.2024&nbsp;
+			04.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Generics (U.K.) Limited<br/>
+
+Building 4, Trident Place<br/>
+	Mosquito Way<br/>
+	Hatfield Herts AL 10 9UL
+	  / GB<br/>
+Opponent's representative<br/>
+				Russell, Tim<br/>
+
+Venner Shipley LLP<br/>
+	200 Aldersgate<br/>
+	London EC1A 4HD
+	  / GB<br/>
+</td></tr><tr class="former " ><td class="t1" rowspan="6"> </td><td class="t2" colspan="3">Former [2024/45]</td></tr><tr class="former" ><td class="t3">Opponent(s)</td><td class="t2" colspan="2">01&nbsp;
+			18.09.2024&nbsp;
+			19.09.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Sandoz AG<br/>
+
+Centralbahnstrasse 4<br/>
+	4051 Basel
+	  / CH<br/>
+Opponent's representative<br/>
+				Elkington and Fife LLP<br/>
+
+Prospect House<br/>
+	8 Pembroke Road<br/>
+	Sevenoaks, Kent TN13 1XR
+	  / GB<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">02&nbsp;
+			01.10.2024&nbsp;
+			02.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Kraus & Lederer PartGmbB<br/>
+
+Thomas-Wimmer-Ring 15<br/>
+	80539 München
+	  / DE<br/>
+Opponent's representative<br/>
+				Kraus & Lederer PartGmbB<br/>
+
+Thomas-Wimmer-Ring 15<br/>
+	80539 München
+	  / DE<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">03&nbsp;
+			01.10.2024&nbsp;
+			01.10.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Teva Pharmaceutical Industries Ltd<br/>
+
+124 Dvora HaNevi'a St.<br/>
+	6944020 Tel Aviv
+	  / IL<br/>
+Opponent's representative<br/>
+				D Young & Co LLP<br/>
+
+3 Noble Street<br/>
+	London EC2V 7BQ
+	  / GB<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">04&nbsp;
+			02.10.2024&nbsp;
+			&nbsp;
+			<br/>
+
+			Stada-Arzneimittel Aktiengesellschaft<br/>
+
+Stadastrasse 2-18<br/>
+	61118 Bad Vilbel
+	  / DE<br/>
+Opponent's representative<br/>
+				Hamm&Wittkopp Patentanwälte PartmbB<br/>
+
+Jungfernstieg 38<br/>
+	20354 Hamburg
+	  / DE<br/>
+</td></tr><tr class="former" ><td class="t3">&nbsp;</td><td class="t2" colspan="2">05&nbsp;
+			02.10.2024&nbsp;
+			&nbsp;
+			<br/>
+
+			Alfred E. Tiefenbacher (GmbH & Co. KG)<br/>
+
+Van-der-Smissen-Straße 1<br/>
+	22767 Hamburg
+	  / DE<br/>
+Opponent's representative<br/>
+				Hamm&Wittkopp Patentanwälte PartmbB<br/>
+
+Jungfernstieg 38<br/>
+	20354 Hamburg
+	  / DE<br/>
+</td></tr><tr class="former " ><td class="t1" rowspan="2"> </td><td class="t2" colspan="3">Former [2024/43]</td></tr><tr class="former" ><td class="t3">Opponent(s)</td><td class="t2" colspan="2">01&nbsp;
+			18.09.2024&nbsp;
+			19.09.2024&nbsp;
+			ADMISSIBLE<br/>
+
+			Sandoz AG<br/>
+
+Centralbahnstrasse 4<br/>
+	4051 Basel
+	  / CH<br/>
+Opponent's representative<br/>
+				Elkington and Fife LLP<br/>
+
+Prospect House<br/>
+	8 Pembroke Road<br/>
+	Sevenoaks, Kent TN13 1XR
+	  / GB<br/>
+</td></tr><td class="th" rowspan="3"> </td><td class="t2">06.11.2024</td><td class="t3" colspan="2">Invitation to proprietor to file observations on the notice of opposition</td></tr><td class="t2">02.05.2025</td><td class="t3" colspan="2">Reply of patent proprietor to notice(s) of opposition</td></tr><td class="t2">15.06.2026</td><td class="t3" colspan="2">Date of oral proceedings</td></tr><td class="th" rowspan="6">Fees paid</td><td class="th" colspan="3">Renewal fee</td></tr><td class="t2">10.06.2019</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;03</td></tr><td class="t2">31.03.2020</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;04</td></tr><td class="t2">23.06.2021</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;05</td></tr><td class="t2">21.06.2022</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;06</td></tr><td class="t2">20.06.2023</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;07</td></tr><tr class="optoutCls " ><td class="th optout-label" rowspan="2">Opt-out from the exclusive &nbsp;<b><span title="Follow the hyperlink to access the opt-out information recorded in the Register of the Unified Patent Court" class="tooltipActuator noPrint">Tooltip</span></b><br/>competence of the Unified <br/>Patent Court</td><td class="t2" colspan="3"><span id="optoutTextTop">
+						<a href='https://www.unifiedpatentcourt.org/en/registry/opt-out/results?case_type&patent_number=EP3478286'>See the Register of the Unified Patent Court for opt-out data</a>	
+					</span>
+				</td></tr><tr class="optoutCls" ><td class="t2" colspan="3"><span id="optoutDisclaimer">
+						Responsibility for the accuracy, completeness or quality of the data displayed under the link provided lies entirely with the Unified Patent Court.</span>
+				</td></tr><td class="th" rowspan="5">Documents cited:</td><td class="th">Search</td><td class="t2" colspan="2">[X] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2014052550&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >WO2014052550</a>
+					&nbsp;(UNIV JEFFERSON et al.)  </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[X] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015108986&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >WO2015108986</a>
+					&nbsp;(CLOVIS ONCOLOGY INC et al.)  </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[X] &nbsp;&nbsp;JONATHAN LEDERMANN ET AL: "Olaparib Maintenance Therapy in Platinum-Sensitive Relapsed Ovarian Cancer", NEW ENGLAND JOURNAL OF MEDICINE, vol. 366, no. 15, 12 April 2012 (2012-04-12), pages 1382 - 1392, XP055075393, ISSN: 0028-4793, DOI: 10.1056/NEJMoa1105535 * 1382-1392 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1056/NEJMoa1105535" target="_blank" class="ext" >http://dx.doi.org/10.1056/NEJMoa1105535</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[X] &nbsp;&nbsp;SHAOJUN ZHANG ET AL: "A Genomic Instability Score in Discriminating Nonequivalent Outcomes of BRCA1/2 Mutations and in Predicting Outcomes of Ovarian Cancer Treated with Platinum-Based Chemotherapy", PLOS ONE, vol. 9, no. 12, 1 December 2014 (2014-12-01), pages e113169, XP055418698, DOI: 10.1371/journal.pone.0113169 * 1-16 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1371/journal.pone.0113169" target="_blank" class="ext" >http://dx.doi.org/10.1371/journal.pone.0113169</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[X] &nbsp;&nbsp;SHAHNEEN K SANDHU ET AL: "The poly(ADP-ribose) polymerase inhibitor niraparib (MK4827) in BRCA mutation carriers and patients with sporadic cancer: a phase 1 dose-escalation trial", THE LANCET ONCOLOGY, vol. 14, no. 9, 1 August 2013 (2013-08-01), AMSTERDAM, NL, pages 882 - 892, XP055407449, ISSN: 1470-2045, DOI: 10.1016/S1470-2045(13)70240-7 * 882-892 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/S1470-2045(13)70240-7" target="_blank" class="ext" >http://dx.doi.org/10.1016/S1470-2045(13)70240-7</a></td></tr><td class="th" rowspan="2"> </td><td class="th">International search</td><td class="t2" colspan="2">[Y] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS2009123419&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >US2009123419</a>
+					&nbsp;(SHERMAN BARRY M et al.)  [Y]  22, 82 * . Especially para [0048], claims 1-2. *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[XY] &nbsp;&nbsp;AUDEH: "Novel treatment strategies in triple-negative breast cancer: specific role of poly(adenosine diphosphate-ribose) polymerase inhibition", PHARMGENOMICS PERS MED OCTOBER, vol. 7, 2014, pages 307 - 316, XP055451834 [X]  1-7 * . Especially pg 310 col 1 para 4, pg 312 col 1 para 2, pg 313 col 2 para 2. *[Y]  22, 82<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.2147/PGPM.S39765" target="_blank" class="ext" >http://dx.doi.org/10.2147/PGPM.S39765</a></td></tr><td class="th" rowspan="21"> </td><td class="th">by applicant</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS2011040953&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US2011040953</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2011160063&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2011160063</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS2011048427&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US2011048427</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2012027224&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2012027224</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008084261&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2008084261</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2009087381&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2009087381</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;POPOVA ET AL.: "Ploidy and large-scale genomic instability consistently identify basal-like breast carcinomas with BRCA1/2 inactivation", CANCER RES, vol. 72, 2012, pages 5454 - 5462, XP055341888, DOI: 10.1158/0008-5472.CAN-12-1470 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/0008-5472.CAN-12-1470" target="_blank" class="ext" >http://dx.doi.org/10.1158/0008-5472.CAN-12-1470</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;E.A. EISENHAUER ET AL.: "New response evaluation criteria in solid tumors: Revised RECIST guideline (version 1.1.", EUR. J. OF CANCER, vol. 45, 2009, pages 228 - 247 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;S. M. BERGE ET AL., J. PHARMACEUTICAL SCIENCES, vol. 66, 1977, pages 1 - 19 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;"Poly ADP Ribosylation", 2006, LANDS BIOSCIENCE AND SPRINGER BIOSCIENCE, article "Parp Inhibitors and Cancer Therapy. Curtin N.", pages: 218 - 233 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;WIGGINS ET AL.: "Poly(ADP-ribose) polymerase (PARP) inhibitors for the treatment of ovarian cancer", COCHRANE DATABASE OF SYSTEMATIC REVIEWS, 2015 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;LEDERMANN ET AL., NEW ENGLAND JOURNAL OF MEDICINE, vol. 366, 2012, pages 15 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;LANCET ONCOL, vol. 15, no. 8, pages 852 - 61 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;E.A. EISENHAUER ET AL.: "New response evaluation criteria in solid tumors: Revised RECIST guideline (version 1.1.", EUR. J OF CANCER, vol. 45, 2009, pages 228 - 247 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TURNER, N.A. TUTTA. ASHWORTH: "Hallmarks of 'BRCAness' in sporadic cancers", NAT. REV. CANCER, vol. 4, no. 10, 2004, pages 814 - 9, XP055085873, DOI: 10.1038/nrc1457 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1038/nrc1457" target="_blank" class="ext" >http://dx.doi.org/10.1038/nrc1457</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;HENNESSY, B. T. ET AL.: "Somatic mutations in BRCA1 and BRCA2 could expand the number of patients that benefit from poly (ADP ribose) polymerase inhibitors in ovarian cancer", JOURNAL OF CLINICAL ONCOLOGY: OFFICIAL JOURNAL OF THE AMERICAN SOCIETY OF CLINICAL ONCOLOGY, vol. 28, 2010, pages 3570 - 3576, XP055070076, DOI: 10.1200/JCO.2009.27.2997 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1200/JCO.2009.27.2997" target="_blank" class="ext" >http://dx.doi.org/10.1200/JCO.2009.27.2997</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TCGA: "Integrated genomic analyses of ovarian carcinoma", NATURE, vol. 474, no. 7353, 2011, pages 609 - 615 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;DANN RBDELOIA JATIMMS KMZORN KKPOTTER JFLAKE DD 2NDLANCHBURY JSKRIVAK TC: "BRCA 1/2 mutations and expression: Response to platinum chemotherapy in patients with advanced stage epithelial ovarian cancer", GYNECOL ONCOL, vol. 125, no. 3, 2012, pages 677 - 82, XP028488681, DOI: 10.1016/j.ygyno.2012.03.006 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.ygyno.2012.03.006" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.ygyno.2012.03.006</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;RUSTIN ET AL., INT J GYNECOL CANCER, vol. 21, 2011, pages 419 - 423 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;N ENGL J MED, vol. 366, no. 15, 2012, pages 1382 - 1392 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;PFISTERER, J.M. PLANTEI. VERGOTEA. DU BOISH. HIRTEA. J. LACAVEU. WAGNERA. STAHLEG. STUARTR. KIMMIG: "Gemcitabine plus carboplatin compared with carboplatin in patients with platinum-sensitive recurrent ovarian cancer: an intergroup trial of the AGO-OVAR, the NCIC CTG, and the EORTC GCG", J CLIN ONCOL, vol. 24, no. 29, 2006, pages 4699 - 4707 </td></tr><td class="th" rowspan="56"> </td><td class="th">Opposition</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2014052550&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2014052550</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015108986&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2015108986</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008084261&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2008084261</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;JONATHAN LEDERMANN, PHILIPP LEDERMANN, CHARLIE HARTER, MICHAEL GOURLEY, IGNACE FRIEDLANDER, GORDON VERGOTE, CLARE RUSTIN, WERNER S: "Olaparib Maintenance Therapy in Platinum-Sensitive Relapsed Ovarian Cancer", NEW ENGLAND JOURNAL OF MEDICINE, NEW ENGLAND JOURNAL OF MEDICINE, vol. 366, no. 15, 12 April 2012 (2012-04-12), pages 1382 - 1392, XP055075393, ISSN: 00284793, DOI: 10.1056/NEJMoa1105535 * 1382-1392 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1056/NEJMoa1105535" target="_blank" class="ext" >http://dx.doi.org/10.1056/NEJMoa1105535</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SHAOJUN ZHANG, YUAN YUAN, HAO DAPENG, CHAUDHURI GAUTAM: "A Genomic Instability Score in Discriminating Nonequivalent Outcomes of BRCA1/2 Mutations and in Predicting Outcomes of Ovarian Cancer Treated with Platinum-Based Chemotherapy", PLOS ONE, PUBLIC LIBRARY OF SCIENCE, vol. 9, no. 12, 1 December 2014 (2014-12-01), pages e113169, XP055418698, DOI: 10.1371/journal.pone.0113169 * 1-16 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1371/journal.pone.0113169" target="_blank" class="ext" >http://dx.doi.org/10.1371/journal.pone.0113169</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SHAHNEEN K SANDHU, WILLIAM R SCHELMAN, GEORGE WILDING, VICTOR MORENO, RICHARD D BAIRD, SUSANA MIRANDA, LUCY HYLANDS, RUTH RIISNAES: "The poly(ADP-ribose) polymerase inhibitor niraparib (MK4827) in BRCA mutation carriers and patients with sporadic cancer: a phase 1 dose-escalation trial", THE LANCET ONCOLOGY, ELSEVIER, AMSTERDAM, NL, vol. 14, no. 9, 1 August 2013 (2013-08-01), AMSTERDAM, NL                                                                                                                                                                                           , pages 882 - 892, XP055407449, DOI: 10.1016/S1470-2045(13)70240-7 * 882-892 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/S1470-2045(13)70240-7" target="_blank" class="ext" >http://dx.doi.org/10.1016/S1470-2045(13)70240-7</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;NGOI N.Y.L., TAN D.S.P.: "The role of homologous recombination deficiency testing in ovarian cancer and its clinical implications: do we need it?", ESMO OPEN : CANCER HORIZONS, EUROPEAN SOCIETY FOR MEDICAL ONCOLOGY, LONDON, vol. 6, no. 3, 1 June 2021 (2021-06-01), London                                                                                                                                                                                                  , pages 100144 - 12, XP093222676, ISSN: 2059-7029, DOI: 10.1016/j.esmoop.2021.100144 * 1-12 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.esmoop.2021.100144" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.esmoop.2021.100144</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;EUAN A. STRONACH, JAMES PAUL, KIRSTEN M. TIMMS, ELISHA HUGHES, KRYSTAL BROWN, CHRISTOPHER NEFF, MICHAEL PERRY, ALEXANDER GUTIN, MO: "Biomarker Assessment of HR Deficiency, Tumor BRCA1/2 Mutations, and CCNE1 Copy Number in Ovarian Cancer: Associations with Clinical Outcome Following Platinum Monotherapy", MOLECULAR CANCER RESEARCH, AMERICAN ASSOCIATION FOR CANCER RESEARCH, US, vol. 16, no. 7, 1 July 2018 (2018-07-01), US                                                                                                                                                                                                      , pages 1103 - 1111, XP055539341, ISSN: 1541-7786, DOI: 10.1158/1541-7786.MCR-18-0034 * 1103-1111 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/1541-7786.MCR-18-0034" target="_blank" class="ext" >http://dx.doi.org/10.1158/1541-7786.MCR-18-0034</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;HOW JEFFREY A., JAZAERI AMIR A., FELLMAN BRYAN, DANIELS MOLLY S., PENN SUZANNA, SOLIMENO CARA, YUAN YING, SCHMELER KATHLEEN, LANCH: "Modification of Homologous Recombination Deficiency Score Threshold and Association with Long-Term Survival in Epithelial Ovarian Cancer", CANCERS, MDPI AG, CH, vol. 13, no. 5, 1 March 2021 (2021-03-01), CH                                                                                                                                                                                                      , pages 946 - 17, XP093222679, ISSN: 2072-6694, DOI: 10.3390/cancers13050946 * 1-17 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.3390/cancers13050946" target="_blank" class="ext" >http://dx.doi.org/10.3390/cancers13050946</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;AKAY MELEK, FUNINGANA IONUT-GABRIEL, PATEL GRISMA, MUSTAPHA RAMI, GJAFA ERNESE, NG TONY, NG KENRICK, FLYNN MICHAEL J.: "An In-Depth Review of Niraparib in Ovarian Cancer: Mechanism of Action, Clinical Efficacy and Future Directions", ONCOLOGY AND THERAPY, vol. 9, no. 2, 1 December 2021 (2021-12-01), pages 347 - 364, XP093222680, ISSN: 2366-1070, DOI: 10.1007/s40487-021-00167-z * 347-364 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1007/s40487-021-00167-z" target="_blank" class="ext" >http://dx.doi.org/10.1007/s40487-021-00167-z</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;KONSTANTINOPOULOS PANAGIOTIS A, MATULONIS URSULA A: "BRCA status in epithelial ovarian cancer: implications for management and future clinical trial design", CLINICAL INVESTIGATION, FUTURE SCIENCE, UK, vol. 3, no. 8, 1 August 2013 (2013-08-01), UK                                                                                                                                                                                                      , pages 777 - 790, XP093222682, ISSN: 2041-6792, DOI: 10.4155/cli.13.55 * 777-790 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.4155/cli.13.55" target="_blank" class="ext" >http://dx.doi.org/10.4155/cli.13.55</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;KONSTANTINOPOULOS PANAGIOTIS A., CECCALDI RAPHAEL, SHAPIRO GEOFFREY I., D'ANDREA ALAN D.: "Homologous Recombination Deficiency: Exploiting the Fundamental Vulnerability of Ovarian Cancer", CANCER DISCOVERY, AMERICAN ASSOCIATION FOR CANCER RESEARCH, US, vol. 5, no. 11, 1 November 2015 (2015-11-01), US                                                                                                                                                                                                      , pages 1137 - 1154, XP093222683, ISSN: 2159-8274, DOI: 10.1158/2159-8290.CD-15-0714 * 1137-1154 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/2159-8290.CD-15-0714" target="_blank" class="ext" >http://dx.doi.org/10.1158/2159-8290.CD-15-0714</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MIRZA M.R., MONK B.J., LEDERMANN J.A., OZA A.M., DEL CAMPO J.M., BEREK J.S., MAHNER S., WENHAM R.M., VERGOTE I.B., FABBRO M., MART: "Engot-Ov16/Nova: a Phase 3 Randomized Double-Blind Trial of Maintenance with Parp-Inhibitor Niraparib Versus Placebo in Patients with Platinum-Sensitive Ovarian Cancer", ANNALS OF ONCOLOGY, ELSEVIER, vol. 25, no. Suppl. 4, 1 September 2014 (2014-09-01) - 30 September 2014 (2014-09-30), pages iv325, XP093222689, ISSN: 0923-7534, DOI: 10.1093/annonc/mdu338.65 * iv325 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1093/annonc/mdu338.65" target="_blank" class="ext" >http://dx.doi.org/10.1093/annonc/mdu338.65</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;BRADLEY J. MONK, ROBERT L. COLEMAN: "Role of PARP Inhibitors in Advanced Ovarian Cancer", 30 May 2023 (2023-05-30), XP093222693, Retrieved from the Internet <URL:https://www.onclive.com/view/role-of-parp-inhibitors-in-advanced-ovarian-cancer> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "Treatment of HRD-Negative Ovarian Cancer", 24 October 2019 (2019-10-24), XP093222701, Retrieved from the Internet <URL:https://www.onclive.com/view/treatment-of-hrd-negative-ovarian-cancer> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "Zejula  International non-proprietary name: niraparib", ASSESSMENT REPORT EMA - PROCEDURE NO. EMEA/H/C/004249/0000, EUROPEAN MEDICINES AGENCY, GB, 14 September 2017 (2017-09-14), GB                                                                                                                                                                                                      , pages 1 - 122, XP009527811 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TESARO, INC.: "NCT01847274 | A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICALTRIALS.GOV, NLM, 11 May 2016 (2016-05-11), pages 1 - 17, XP093222711, Retrieved from the Internet <URL:https://clinicaltrials.gov/study/NCT01847274?cond=NCT01847274&rank=1&tab=history&a=32#version-content-panel> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TESARO, INC.: "NCT01847274 | A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICALTRIALS.GOV, NLM, 23 December 2014 (2014-12-23), pages 1 - 23, XP093222714, Retrieved from the Internet <URL:https://clinicaltrials.gov/study/NCT01847274?cond=NCT01847274&rank=1&tab=history&a=28#version-content-panel> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TIMMS KIRSTEN M, NEFF CHRISTOPHER, ABKEVICH VICTOR, JONES JOSHUA T, KOLQUIST KATHRYN, MIRZA MICHAEL, LANCHBURY JERRY S, MIKULE KEI: "DNA repair defi ciencies in ovarian cancer: Genomic analysis of high grade serous ovarian tumors from the NOVA study", EUROPEAN CANCER CONGRESS (ECC 2015); VIENNA, AUSTRIA, ECCO, ESMO, ESTRO, ESSO, EACR, EONS AND SIOPE, 26 September 2015 (2015-09-26) - 29 September 2015 (2015-09-29), pages 1 - 1, XP093222719 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SHAHNEEN K SANDHU ET AL: "The poly(ADP-ribose) polymerase inhibitor niraparib (MK4827) in BRCA mutation carriers and patients with sporadic cancer: a phase 1 dose-escalation trial", THE LANCET ONCOLOGY, ELSEVIER, AMSTERDAM, NL, vol. 14, no. 9, 1 August 2013 (2013-08-01), AMSTERDAM, NL                                                                                                                                                                                           , pages 882 - 892, XP055407449, DOI: 10.1016/S1470-2045(13)70240-7 * 1382-1392 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/S1470-2045(13)70240-7" target="_blank" class="ext" >http://dx.doi.org/10.1016/S1470-2045(13)70240-7</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TURNER NICHOLAS C ET AL: "A synthetic lethal siRNA screen identifying genes mediating sensitivity to a PARP inhibitor", THE EMBO JOURNAL / EUROPEAN MOLECULAR BIOLOGY ORGANIZATION, IRL PRESS, OXFORD, vol. 27, no. 9, 1 May 2008 (2008-05-01), Oxford                                                                                                                                                                                                  , pages 1368 - 1377, XP002498071, ISSN: 0261-4189, DOI: 10.1038/emboj.2008.61 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1038/emboj.2008.61" target="_blank" class="ext" >http://dx.doi.org/10.1038/emboj.2008.61</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;S. POSTEL-VINAY: "A high-throughput screen identifies PARP1/2 inhibitors as a potential therapy for ERCC1-deficient non-small cell lung cancer", ONCOGENE, vol. 32, 12 August 2013 (2013-08-12), XP037750554, DOI: 10.1038/onc.2013.311 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1038/onc.2013.311" target="_blank" class="ext" >http://dx.doi.org/10.1038/onc.2013.311</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;J. MURAI ET AL: "Trapping of PARP1 and PARP2 by Clinical PARP Inhibitors", CANCER RESEARCH, AMERICAN ASSOCIATION FOR CANCER RESEARCH, vol. 72, no. 21, 1 November 2012 (2012-11-01), pages 5588 - 5599, XP055094093, ISSN: 00085472, DOI: 10.1158/0008-5472.CAN-12-2753 * 1-16 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/0008-5472.CAN-12-2753" target="_blank" class="ext" >http://dx.doi.org/10.1158/0008-5472.CAN-12-2753</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TESARO, INC.: "NCT01847274 | A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICALTRIALS.GOV, NLM, 11 May 2016 (2016-05-11), pages 1 - 17, XP093222711, Retrieved from the Internet <URL:https://clinicaltrials.gov/study/NCT01847274?cond=NCT01847274&rank=1&tab=history&a=32#version-content-panel> * 882-892 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;JONATHAN LEDERMANN, PHILIPP LEDERMANN, CHARLIE HARTER, MICHAEL GOURLEY, IGNACE FRIEDLANDER, GORDON VERGOTE, CLARE RUSTIN, WERNER S: "Olaparib Maintenance Therapy in Platinum-Sensitive Relapsed Ovarian Cancer", NEW ENGLAND JOURNAL OF MEDICINE, NEW ENGLAND JOURNAL OF MEDICINE, vol. 366, no. 15, 12 April 2012 (2012-04-12), pages 1382 - 1392, XP055075393, ISSN: 00284793, DOI: 10.1056/NEJMoa1105535 * 1382-1392 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1056/NEJMoa1105535" target="_blank" class="ext" >http://dx.doi.org/10.1056/NEJMoa1105535</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SHAHNEEN K SANDHU, WILLIAM R SCHELMAN, GEORGE WILDING, VICTOR MORENO, RICHARD D BAIRD, SUSANA MIRANDA, LUCY HYLANDS, RUTH RIISNAES: "The poly(ADP-ribose) polymerase inhibitor niraparib (MK4827) in BRCA mutation carriers and patients with sporadic cancer: a phase 1 dose-escalation trial", THE LANCET ONCOLOGY, ELSEVIER, AMSTERDAM, NL, vol. 14, no. 9, 1 August 2013 (2013-08-01), AMSTERDAM, NL                                                                                                                                                                                           , pages 882 - 892, XP055407449, DOI: 10.1016/S1470-2045(13)70240-7 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/S1470-2045(13)70240-7" target="_blank" class="ext" >http://dx.doi.org/10.1016/S1470-2045(13)70240-7</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TESARO, INC.: "NCT01847274 | A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICALTRIALS.GOV, NLM, 11 May 2016 (2016-05-11), pages 1 - 17, XP093222711, Retrieved from the Internet <URL:https://clinicaltrials.gov/study/NCT01847274?cond=NCT01847274&rank=1&tab=history&a=32#version-content-panel> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MIRZA M.R., MONK B.J., LEDERMANN J.A., OZA A.M., DEL CAMPO J.M., BEREK J.S., MAHNER S., WENHAM R.M., VERGOTE I.B., FABBRO M., MART: "Engot-Ov16/Nova: a Phase 3 Randomized Double-Blind Trial of Maintenance with Parp-Inhibitor Niraparib Versus Placebo in Patients with Platinum-Sensitive Ovarian Cancer", ANNALS OF ONCOLOGY, ELSEVIER, vol. 25, no. Suppl. 4, 1 September 2014 (2014-09-01) - 30 September 2014 (2014-09-30), pages iv325, XP093222689, ISSN: 0923-7534, DOI: 10.1093/annonc/mdu338.65 * 1-16 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1093/annonc/mdu338.65" target="_blank" class="ext" >http://dx.doi.org/10.1093/annonc/mdu338.65</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;JONES PHILIP, WILCOXEN KEITH, ROWLEY MICHAEL, TONIATTI CARLO: "Niraparib: A Poly(ADP-ribose) Polymerase (PARP) Inhibitor for the Treatment of Tumors with Defective Homologous Recombination", JOURNAL OF MEDICINAL CHEMISTRY, AMERICAN CHEMICAL SOCIETY, US, vol. 58, no. 8, 23 April 2015 (2015-04-23), US                                                                                                                                                                                                      , pages 3302 - 3314, XP055855855, ISSN: 0022-2623, DOI: 10.1021/jm5018237 * 882-892 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1021/jm5018237" target="_blank" class="ext" >http://dx.doi.org/10.1021/jm5018237</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "OLAPARIB - MEDICAL REVIEW(S) - APPLICATION NUMBER: 206162Orig1s000", CENTER FOR DRUG EVALUATION AND RESEARCH, 1 January 2015 (2015-01-01), XP093231378 * 1-12 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SEHOULI J., BRAICU E., CHEKEROV R.: "PARP Inhibitors for Recurrent Ovarian Carcinoma: Current Treatment Options and Future Perspectives", GEBURTSHILFE UND FRAUENHEILKUNDE, GEORG THIEME VERLAG, DE, vol. 76, no. 02, DE                                                                                                                                                                                                      , pages 164 - 169, XP093231380, ISSN: 0016-5751, DOI: 10.1055/s-0035-1558185 * 1103-1111 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;LEDERMANN JONATHAN A; EL-KHOULY FATIMA: "PARP inhibitors in ovarian cancer: Clinical evidence for informed treatment decisions", BRITISH JOURNAL OF CANCER, NATURE PUBLISHING GROUP UK, LONDON, vol. 113, no. Suppl 1, 15 December 2015 (2015-12-15), London, pages S10 - S16, XP037796156, ISSN: 0007-0920, DOI: 10.1038/bjc.2015.395 * 1-17 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1038/bjc.2015.395" target="_blank" class="ext" >http://dx.doi.org/10.1038/bjc.2015.395</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;KAYE S.B.: "Progress in the treatment of ovarian cancerlessons from homologous recombination deficiencythe first 10 years", ANNALS OF ONCOLOGY, ELSEVIER, vol. 27, 1 April 2016 (2016-04-01), pages i1 - i3, XP093231382, ISSN: 0923-7534, DOI: 10.1093/annonc/mdw082 * 347-364 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1093/annonc/mdw082" target="_blank" class="ext" >http://dx.doi.org/10.1093/annonc/mdw082</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SYMEONIDES STEFAN, GOURLEY CHARLIE: "Ovarian Cancer Molecular Stratification and Tumor Heterogeneity: A Necessity and a Challenge", FRONTIERS IN ONCOLOGY, FRONTIERS MEDIA S.A., vol. 5, XP093231389, ISSN: 2234-943X, DOI: 10.3389/fonc.2015.00229 * 777-790 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.3389/fonc.2015.00229" target="_blank" class="ext" >http://dx.doi.org/10.3389/fonc.2015.00229</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;HILLI MARIAM AL, WEROHA S. JOHN, BECKER MARC, HOU XIAONAN, HARRINGTON SEAN, MCKINSTREY SARAH, KALLI KIMBERLY, GOODMAN KARIN, WILCO: "Abstract PR05: In vivo antitumor activity of the PARP inhibitor niraparib (MK-4827) in homologous recombination deficient and proficient ovarian cancer", CLINICAL CANCER RESEARCH, ASSOCIATION FOR CANCER RESEARCH, US, vol. 19, no. 19_Supplement, 1 October 2013 (2013-10-01), US, pages PR05 - PR05, XP093231391, ISSN: 1078-0432, DOI: 10.1158/1078-0432.OVCA13-PR05 * 1137-1154 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/1078-0432.OVCA13-PR05" target="_blank" class="ext" >http://dx.doi.org/10.1158/1078-0432.OVCA13-PR05</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;J. MURAI, S.-Y. N. HUANG, B. B. DAS, A. RENAUD, Y. ZHANG, J. H. DOROSHOW, J. JI, S. TAKEDA, Y. POMMIER: "Trapping of PARP1 and PARP2 by Clinical PARP Inhibitors", CANCER RESEARCH, AMERICAN ASSOCIATION FOR CANCER RESEARCH, vol. 72, no. 21, 1 November 2012 (2012-11-01), pages 5588 - 5599, XP055094093, ISSN: 00085472, DOI: 10.1158/0008-5472.CAN-12-2753 * iv325 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/0008-5472.CAN-12-2753" target="_blank" class="ext" >http://dx.doi.org/10.1158/0008-5472.CAN-12-2753</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;HALUSKA P; TIMMS K M; ALHILLI M; WANG Y; HARTMAN A M; JONES J; GUTIN A; SANGALE Z; NEFF C; LYNCHBURY J; RUDOLPH-OWEN L; BECKER M A: "Homologous recombination deficiency (HRD) score and niraparib efficacy in high grade ovarian cancer", EUROPEAN JOURNAL OF CANCER, ELSEVIER, 34TH EORTC-NCI-AACR SYMPOSIUM ON MOLECULAR TARGETS AND CANCER THERAPEUTICS, BARCELONA, SPAIN, vol. 50, no. Suppl. 6, 31 October 2014 (2014-10-31), 34th EORTC-NCI-AACR Symposium on Molecular Targets and Cancer Therapeutics, Barcelona, Spain, pages 72 - 73, XP009505142, ISSN: 0959-8049, DOI: 10.1016/S0959-8049(14)70340-5 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/S0959-8049(14)70340-5" target="_blank" class="ext" >http://dx.doi.org/10.1016/S0959-8049(14)70340-5</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;LEDERMANN J.A.: "PARP inhibitors in ovarian cancer", ANNALS OF ONCOLOGY, ELSEVIER, vol. 27, 1 April 2016 (2016-04-01), pages i40 - i44, XP093231420, ISSN: 0923-7534, DOI: 10.1093/annonc/mdw094 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1093/annonc/mdw094" target="_blank" class="ext" >http://dx.doi.org/10.1093/annonc/mdw094</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "myChoice HRD(TM) Test Identifies Breast Cancer Patients Likely to Respond to Platinum-Containing Therapies", MYRIAD, 10 December 2015 (2015-12-10), XP093231425, Retrieved from the Internet <URL:https://myriad.gcs-web.com/static-files/52c1eb87-b563-443a-a8d9-17fa04bf2e95> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;KAREN A GELMON; MARC TISCHKOWITZ; HELEN MACKAY; KENNETH SWENERTON; ANDR&#233; ROBIDOUX; KATIA TONKIN; HAL HIRTE; DAVID HUNTSMAN; M: "Olaparib in patients with recurrent high-grade serous or poorly differentiated ovarian carcinoma or triple-negative breast cancer: a phase 2, multicentre, open-label, non-randomised study", THE LANCET ONCOLOGY, ELSEVIER, AMSTERDAM, NL, vol. 12, no. 9, 1 September 2011 (2011-09-01), AMSTERDAM, NL                                                                                                                                                                                           , pages 852 - 861, XP009521893, DOI: 10.1016/S1470-2045(11)70214-5 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/S1470-2045(11)70214-5" target="_blank" class="ext" >http://dx.doi.org/10.1016/S1470-2045(11)70214-5</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TELLI MELINDA L.: " PARP inhibitors in cancer: moving beyond BRCA", THE LANCET ONCOLOGY, ELSEVIER, AMSTERDAM, NL, vol. 12, no. 9, 1 September 2011 (2011-09-01), AMSTERDAM, NL, pages 827 - 828, XP093231437, ISSN: 1470-2045, DOI: 10.1016/S1470-2045(11)70237-6 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MANSOOR R. MIRZA, BRADLEY J. MONK, JRN HERRSTEDT, AMIT M. OZA, SVEN MAHNER, ANDRS REDONDO, MICHEL FABBRO, JONATHAN A. LEDERMANN,: "Niraparib Maintenance Therapy in Platinum-Sensitive, Recurrent Ovarian Cancer", THE NEW ENGLAND JOURNAL OF MEDICINE, vol. 375, no. 22, 1 December 2016 (2016-12-01), US                                                                                                                                                                                                      , pages 2154 - 2164, XP055567829, ISSN: 0028-4793, DOI: 10.1056/NEJMoa1611310 * 1382-1392 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1056/NEJMoa1611310" target="_blank" class="ext" >http://dx.doi.org/10.1056/NEJMoa1611310</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "TESAROs Niraparib Significantly Improved Progression-Free Survival for Patients With Ovarian Cancer in Both Cohorts of the Phase 3 NOVA Trial", TESARO, 1 June 2016 (2016-06-01), pages 1 - 3, XP093231595 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ADAMS BEN: "Tesaros PARP ovarian cancer drug hits PhIII goal; prepares to file", FIERCE BIOTECH, 29 June 2016 (2016-06-29), pages 1 - 2, XP093231599, Retrieved from the Internet <URL:https://www.fiercebiotech.com/biotech/tesaro-s-parp-ovarian-cancer-drug-hits-phiii-goal-prepares-to-file> [retrieved on 20241205] </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TIMMS K., NEFF C., ABKEVICH V., JONES J.T., KOLQUIST K.A., MIRZA M., LANCHBURY J., MIKULE K., AGARWAL S., HARTMAN A.R., GUTIN A., : "458 DNA repair deficiencies in ovarian cancer: Genomic analysis of high grade serous ovarian tumors from the NOVA study", POSTER PRESENTED AT ESMO, 26 September 2015 (2015-09-26), pages 1 - 1, XP093231604 * 1-16 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "Niraparib", TESAROBIO, 22 June 2016 (2016-06-22), pages 1 - 4, XP093231617, Retrieved from the Internet <URL:https://web.archive.org/web/20160622232504/http://www.tesarobio.com:80/niraparib> [retrieved on 20241205] * 882-892 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;JONES PHILIP, WILCOXEN KEITH, ROWLEY MICHAEL, TONIATTI CARLO: "Niraparib: A Poly(ADP-ribose) Polymerase (PARP) Inhibitor for the Treatment of Tumors with Defective Homologous Recombination", JOURNAL OF MEDICINAL CHEMISTRY, AMERICAN CHEMICAL SOCIETY, US, vol. 58, no. 8, 23 April 2015 (2015-04-23), US                                                                                                                                                                                                      , pages 3302 - 3314, XP055855855, ISSN: 0022-2623, DOI: 10.1021/jm5018237 * 1382-1392 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1021/jm5018237" target="_blank" class="ext" >http://dx.doi.org/10.1021/jm5018237</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;TESARO, INC.: "NCT01847274 | A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICALTRIALS.GOV, NLM, 11 May 2016 (2016-05-11), pages 1 - 17, XP093222711, Retrieved from the Internet <URL:https://clinicaltrials.gov/study/NCT01847274?cond=NCT01847274&rank=1&tab=history&a=32#version-content-panel> </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;DREW YVETTE: "The development of PARP inhibitors in ovarian cancer: from bench to bedside", BRITISH JOURNAL OF CANCER, NATURE PUBLISHING GROUP UK, LONDON, vol. 113, no. Suppl 1, 15 December 2015 (2015-12-15), London, pages S3 - S9, XP037796159, ISSN: 0007-0920, DOI: 10.1038/bjc.2015.394 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1038/bjc.2015.394" target="_blank" class="ext" >http://dx.doi.org/10.1038/bjc.2015.394</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MANSOOR R. MIRZA, BRADLEY J. MONK, J&#248;RN HERRSTEDT, AMIT M. OZA, SVEN MAHNER, ANDR&#233;S REDONDO, MICHEL FABBRO, JONATHAN A. : "Niraparib Maintenance Therapy in Platinum-Sensitive, Recurrent Ovarian Cancer", THE NEW ENGLAND JOURNAL OF MEDICINE, MASSACHUSETTS MEDICAL SOCIETY, US, vol. 375, no. 22, 1 December 2016 (2016-12-01), US                                                                                                                                                                                                      , pages 2154 - 2164, XP055567829, ISSN: 0028-4793, DOI: 10.1056/NEJMoa1611310 * 882-892 *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1056/NEJMoa1611310" target="_blank" class="ext" >http://dx.doi.org/10.1056/NEJMoa1611310</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "Assessment report Zejula International non-proprietary name: niraparib Procedure No. EMEA/H/C/004249/0000", EUROPEAN MEDICINES AGENCY, 14 September 2017 (2017-09-14), pages 1 - 122, XP093232174 * 1382-1392 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;N. Y. L. NGOI: "The role of homologous recombination deficiency testing in ovarian cancer and its clinical implications: do we need it?", ESMO OPEN CANCER HORIZONS, vol. 6, 2021, XP093222676, DOI: 10.1016/j.esmoop.2021.100144 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.esmoop.2021.100144" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.esmoop.2021.100144</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICAL TRIALS.GOV, NCT01847274, 2 June 2023 (2023-06-02), pages 1 - 19, XP093232179 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "Assessment report Zejula International non-proprietary name: niraparib Procedure No. EMEA/H/C/004249/0000", EUROPEAN MEDICINES AGENCY, 14 September 2017 (2017-09-14), pages 1 - 122, XP093232174 * 1382-1392 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;N. Y. L. NGOI: "The role of homologous recombination deficiency testing in ovarian cancer and its clinical implications: do we need it?", ESMO OPEN CANCER HORIZONS, vol. 6, 2021, XP093222676, DOI: 10.1016/j.esmoop.2021.100144 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.esmoop.2021.100144" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.esmoop.2021.100144</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ANONYMOUS: "A Maintenance Study With Niraparib Versus Placebo in Patients With Platinum Sensitive Ovarian Cancer", CLINICAL TRIALS.GOV, NCT01847274, 2 June 2023 (2023-06-02), pages 1 - 19, XP093232179 </td></tr></table>The EPO accepts no responsibility for the accuracy of data originating from other authorities; in particular, it does not guarantee that it is complete, up to date or fit for specific purposes.</div>
+			</div>
+	</div>
+<div id="epoFooter" class="noPrint">
+				<ul>
+				<li>
+					<a href="https://www.epo.org/footer/legal-notice.html" target="_blank">Legal notice</a></li>
+					<li>
+					<a href="https://www.epo.org/footer/terms.html" target="_blank">Terms of use</a></li>
+					<li>25.1.4; 39p</li>
+					</ul>
+			</div>
+		</div>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0b1d4d6bf8003f3',t:'MTc4MTM2MTQyNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,494 @@
+
+--- PAGE 1 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+MAINREQUEST
+CLAIMS:
+1.
+A compound of Formula (lacl):
+R3S
+(R3s)0-2
+(Iac-1),
+or a solvate,or pharmaceutically acceptable salt thereof, wherein:
+R2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is 4- to 8-membered monocyclic
+heterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-Co alkenyl, C2-C6
+    
+alkyl)2, or oxo; and
+each R3s is independently C-C6 alkyl, Ci-C6 haloalkyl, Cs-Cs cycloalkyl, halo, or C3-Cs
+heterocycloalkyl wherein the C1-C6 alkyl, Ci-C6 haloalkyl, Cs-Cs cycloalkyl, or C3-Cs
+heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl), -N(C1-C6 alkyl)2, halo, or -CN.
+2.
+The compound of claim 1, wherein R2s is oxetanyl, azetidinyl, tetrahydrofuranyl,
+pyrrolidinyl, tetrahydropyranyl, piperidinyl, morpholinyl, or azepanyl, wherein the oxetanyl,
+azetidinyl, tetrahydrofuranyl, pyrolidinyl, tetrahydropyranyl, piperidinyl, morpholinyl, or azepanyl
+is optionally substituted with one or more Ci-C6 alkyl, Ci-Co haloalkyl, or oxo; or
+furtheroptionally
+290358595v1
+
+--- PAGE 2 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+3.
+The compound of claim 1 or claim 2,wherein at least one R3s is Ci-C6 alkyl, Ci-C6
+haloalkyl, Cs-Cs cycloalkyl, halo, or Cs-Cs heterocycloalkyl wherein the C-C6 alkyl, Ci-C6
+haloalkyl, C3-Cs cycloalkyl, or C3-Cs heterocycloalkyl is optionally substituted with -O(C-C6
+alkyl), -N(C1-C6 alkyl)2, halo, or -CN;
+optionally wherein at least one R3s is
+, methyl, ethyl, isopropyl, -
+CH2OCH3,-CH2CF3,-CHCH2OCH3,-CH2CN,CHCF2,0r -CH2CH2N(CH3)2.
+4.
+The compound of any one of the preceding claims, wherein the compound is of Formula
+(Iabc-1), (Iabc-1a), or (Iabc-1b):
+N-R3S
+N
+(R3s)0-2
+(R3s)0-2
+(Iabc-1);
+(Iabc-la);or
+290358595v1
+
+--- PAGE 3 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+(R3s)0-2
+(labc-1b)
+or a solvate,or pharmaceutically acceptable salt thereof, wherein R2s and R3s are as
+described inclaim1.
+5.
+The compound of any one of claims1 to 4,wherein the compound is ofFormula (Iabc-
+1a):
+N-R3S
+(R3s)0-2
+(Iabc-la)
+or a solvate, or pharmaceutically acceptable salt thereof, wherein R3s is as described in
+claim 1.
+6.
+The compound of any one of claims 1 to 5, being selected from:
+CompoundNo.
+Structure
+C
+0.0
+iV/
+S
+CH
+H
+Na
+290358595 v1
+
+--- PAGE 4 ---
+Cooley Ref.NODT-004/N01EP (330150-2065)
+O
+00
+V
+HO-N
+H
+Na
+CH
+00
+V
+CH
+Na
+CH3
+O
+00
+CH3
+S
+CH3
+o0
+CH
+S
+N
+N
+HO
+H
+Na
+CH3
+00
+H
+Na
+290358595v1
+
+--- PAGE 5 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+00
+CH
+N
+H
+Na
+CH
+00
+N-CH3
+S
+N
+N
+H
+Na
+O
+N
+CH3
+S
+10
+N
+H
+HO
+Na
+H;C
+O.
+O
+11
+H
+CH;
+Na
+N
+CH3
+N
+14
+H
+CH
+Na
+HO
+290358595v1
+
+--- PAGE 6 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+HC
+O
+O
+HO-N
+N
+15
+H
+CH3
+Na
+H
+16
+CH
+H
+Na
+0.
+0
+N
+22
+S
+H
+Na
+O
+O
+O
+S
+23
+H
+Na
+N
+CH3
+O
+CH
+24
+N
+H
+Na
+N
+CH3
+290358595v1
+
+--- PAGE 7 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+25
+Na
+00
+26
+Na
+00
+27
+Na
+00
+28
+H
+Na
+00
+29
+N
+Na
+00
+30
+N
+H
+Na
+N
+290358595v1
+
+--- PAGE 8 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+31
+Na
+32
+H
+Na
+00
+S
+33
+Na
+00
+34
+Na
+00
+35
+H
+Na
+00
+36
+H
+Na
+290358595v1
+
+--- PAGE 9 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+00
+37
+Na
+0.0
+38
+Na
+O
+39
+y
+Na
+00
+41
+N
+H
+Na
+290358595 v1
+
+--- PAGE 10 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+00
+42
+Na
+43
+H
+Na
+00
+44
+Na
+O
+45
+Na
+00
+S
+46
+Na
+00
+47
+Na
+10
+290358595v1
+
+--- PAGE 11 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+50
+Na
+51
+Na
+O
+O
+52
+H
+N
+Q
+55
+N
+Na
+56
+N
+Nat
+O
+57
+H
+N
+11
+290358595v1
+
+--- PAGE 12 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+O.
+59
+H
+Na
+O
+C
+60
+Na
+O
+O
+61
+Na
+Q
+O
+62
+Na
+63
+H
+Na
+Q
+64
+H
+Na
+290358595v1
+
+--- PAGE 13 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+N
+H
+65
+Na*
+67
+Na
+68
+H
+EN
+N
+74
+H
+Na
+O
+78
+H
+Na
+C
+79
+H
+N
+13
+290358595 v1
+
+--- PAGE 14 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+82
+N
+H
+Na
+O
+83
+H
+Na
+.0
+84
+H
+EN
+85
+EN
+O
+99
+H
+Na
+O
+103
+H
+EN
+14
+290358595v1
+
+--- PAGE 15 ---
+Cooley Ref.NODT-004/N01EP (330150-2065)
+107
+Na
+110
+H
+Na
+111
+Na
+118
+H
+Na
+O
+120
+N
+H
+Na
+O
+00
+S
+121
+H
+N
+O
+0.0
+122
+N
+H
+Na
+15
+290358595v1
+
+--- PAGE 16 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+00
+123
+N
+N
+H
+Na
+O
+135
+H
+Na
+136
+Na
+0
+O
+138
+H
+Na
+139
+N
+H
+N
+O
+O
+150
+N
+Na
+O
+151
+H
+Na
+16
+290358595v1
+
+--- PAGE 17 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+152
+Na
+7. A pharmaceutical composition comprising the compound of any one of claims 1 to 6 or a
+pharmaceutically acceptable salt thereof, and a pharmaceutically acceptablediluent or carrier.
+8.The compound of any one of claims 1 to 6, or the pharmaceutical composition of claim 7,
+for use in inhibiting inflammasome activity; optionally, the inflammasome is NLRP3
+inflammasome,and the activityis invitro or invivo.
+9.The compound of any one of claims 1 to 6, or the pharmaceutical composition of claim 7, for
+use in treating or preventing a disease or disorder; preferably wherein the disease or disorder is an
+inflammatory disorder, an autoinflammatory disorder,an autoimmune disorder, aneurodegenerative
+disease,or cancer.
+10. The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein the
+disease or disorder is aninflammatory disorder, an autoinflammatory disorder or an autoimmune
+disorder; optionally, the disease or disorder is selected from cryopyrin-associated
+autoinflammatory syndrome(CAPS;e.g.,familial cold autoinflammatory syndrome (FCAS),
+Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular
+(CINCA)syndrome/neonatal-onsetmultisystem inflammatory disease(NOMID)),familial
+Mediterranean fever (FMF), nonalcoholic fatty liver disease (NAFLD), non-alcoholic
+steatohepatitis (NASH),gout,rheumatoid arthritis,osteoarthritis,Crohn’s disease,chronic
+obstructive pulmonary disease (COPD), chronic kidney disease (CKD),fibrosis,obesity,type 2
+diabetes, multiple sclerosis, dermatological diseases (e.g., acne) and neuroinflammation
+occurringinprotein misfolding diseases(e.g.,Prion diseases).
+11.The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein
+disease or disorder is a neurodegenerative disease; optionally,the disease or disorder is
+17
+290358595v1
+
+--- PAGE 18 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+Parkinson’s disease or Alzheimer's disease.
+12.
+The compound or pharmaceutical composition for use of claim 8or claim9,wherein the
+disease or disorderis cancer; optionally,the cancer is metastasising cancer,gastrointestinal
+cancer, brain cancer, skin cancer, non-small-cell lung carcinoma, head and neck squamous cell
+carcinomaorcolorectaladenocarcinoma.
+18
+290358595v1

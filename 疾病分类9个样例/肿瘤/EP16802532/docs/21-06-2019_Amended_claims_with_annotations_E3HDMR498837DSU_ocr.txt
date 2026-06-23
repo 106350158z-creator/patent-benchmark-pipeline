@@ -1,0 +1,103 @@
+
+--- PAGE 1 ---
+EP16802532.8-21June2019
+Claims
+1. A compound of formula I or a pharmaceutical acceptable salt thereof:
+R
+(CH2)m
+R2
+R7
+wherein
+R+-is independently selected from a group consisting of a hydrogen, substituted or
+unsubstitutedC+-C+o-alkyl,C2-C6-alkenyl,C-C6-alkynyl,optionally-substituted-C-Cs
+cycloalkyl,substitutedorunsubstitutedaryl,substitutedorunsubstitutedbenzyl,
+substituted or-unsubstituted heterocyclyl, substituted or unsubstituted arylheterocyclyl;
+A is a divalent radical -(CRaRt)n-A'--or-absent, wherein Ra and R, are independently
+selected from a group consisting of H, a Ci-3 alkyl, a halogen, and n is an integer from 0
+to 3;
+A'is-a-benzene ring,a five--or six-membered heterocyele-or a Cs-Cs-cycloalkyl;
+R²-is independently selected from a group-consisting of a hydrogen, unsubstituted or
+halogen-substitutedC+-C4alkyl,nitro,amino,halogen,C+-Coalkoxy,optionally
+substituted acyloxy, optionally substituted acylamino, optionally substituted acyl; wherein,
+when-A'is-a-benzene-ring,-R²-is-meta-substituted;
+m is an integer from 0 to 3;
+R-is independently selected from a substituted-or-unsubstituted NH2, a substituted
+or-unsubstituted-heterocyclyl,a-substituted-or-unsubstituted arylheterocyclyl,a-substituted
+or-unsubstituted-C+-C+o-alkyl;
+R?,-R4, R^-and R′-are-independently selected from-a group consisting of H, a halogen,
+asubstitutedorunsubstitutedC-C—(preferablyC+-C)alkoxy,asubstitutedor
+unsubstitutedC-Co-(preferablyCC3)alkyl,NRRa;whereineachofReandRais
+independently-selected-from-C-Cz-alkyl;
+wherein, when-R*-is H and m is O, R*, R4, R-and R°-are not H at-the same time;
+nin
+when-R+-is-H, m-is-O,A'is-a-benzene-ring-and-R-is-
+,if-one-of R²-and-R-is-a
+methoxy, the other can not be H.
+2.The-compound-of formula Ior-a-pharmaceutical-acceptable-salt-thereof-of claim-1,
+wherein
+-1-
+
+--- PAGE 2 ---
+EP16802532.8-21June2019
+Rl is independently selected from a hydrogen, substituted or unsubstituted Ci-C10
+alkyl(preferablyC-C6—alkyl), substituted or unsubstituted phenyl, substitutedor
+unsubstituted benzyl, optionally substituted C3-Cs cycloalkyl;
+A'is a benzene ring, a five- or six-membered nitrogen-containing heterocycle;
+R² is independently selected from a-C+-C—alkyl, C2-C4 alkenyl substituted
+acylamino, substituted or unsubstituted C2-C4 alkenyl substituted acyl;
+R? is selected from a group consisting of:
+R’,R4,R′ and R° are independently selected from a group consisting of H,a
+substituted or unsubstituted C-C6 (preferably C+-Cs)alkoxy, a substituted or unsubstituted
+C}-C6(preferably C+-Cs)alkyl.
+2.The compound of claim 1,wherein the substituted or unsubstituted C-Cio alkylis
+a substitutedorunsubstituted Cj-C6alkyl:
+the substituted or unsubstituted C-C6 alkoxy is a C-C alkoxy: and
+the substituted or unsubstituted C-Co alkyl is a C-Calkyl.
+3.A compound or a pharmaceutical acceptable salt thereof selected from the
+followinggroup:
+
+--- PAGE 3 ---
+EP16802532.8-21June2019
+
+--- PAGE 4 ---
+EP16802532.8-21June2019
+
+--- PAGE 5 ---
+EP16802532.8-21June2019
+
+--- PAGE 6 ---
+EP16802532.8-21June2019
+4.The compound of claim 1, wherein
+R' is independently selected from a group consisting of a hydrogen, substituted or
+unsubstituted Ci-C6 alkyl, or substituted or unsubstituted phenyl;
+n=0;
+A'is a benzene ring, or a five-membered nitrogen-containing heterocycle;
+R2 is independently selected from a C2-C4 alkenyl substituted acylamino, or C2-C4
+alkenyl substituted acyl;
+m is an integer from 0 to 2;
+R7 is selected from:
+R3, R4, R and R° are independently selected from a group consisting of H, a
+substituted or unsubstituted C-C3alkoxy,a substituted or unsubstituted Cj-C3 alkyl.
+5.A compound or a pharmaceutical acceptable salt thereof selected from the
+following group:
+
+--- PAGE 7 ---
+EP16802532.8-21June2019
+6.A pharmaceutical composition, comprising the compound or a pharmaceutical
+acceptable salt thereof of any one of claims 1-5 and a pharmaceutically acceptable carrier
+orexcipient.
+7. Use oftThe compound of any one of claims 1-5 for-preparation-of a medicament
+for use in treating or preventing EGFR-mediated diseases, or inhibiting EGFR.
+8.Theuse of claim7,wherein theEGFR-mediateddisease is cancer.
+89. The_compound for use of claim 78, wherein the cancer is selected from a group
+consisting of non-small cell lung cancer, small cell lung cancer, lung adenocarcinoma,
+lung squamous cell carcinoma, breast cancer, prostate cancer, glioblastoma, ovarian
+cancer, squamous cell carcinoma of head and neck, cervical cancer, esophageal cancer,
+-7-
+
+--- PAGE 8 ---
+EP16802532.8-21June2019
+liver cancer, kidney cancer, pancreas cancer, colon cancer, skin cancer, leukemia,
+lymphoma, stomach cancer, multiple myeloma and solid tumors.
+10.Amethodfor treatingor preventing EGFR-mediateddiseases-byusing the
+compound-ofany-one-ofclaims-1-5.

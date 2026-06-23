@@ -1,0 +1,161 @@
+
+--- PAGE 1 ---
+EP17821262.7
+P60798EP-PCT
+CLAIMS
+1.
+A therapeutic agent that inhibits poly [ADP-ribose] polymerase ("anti-PARP therapy")
+for use in a method of treating a cancer patient, wherein the anti-PARP therapy is administered
+wherein the anti-PARP therapy is commenced prior to determining the DNA repair status
+of the patient or BRCA status of the patient, or
+wherein the anti-PARP therapy is commenced in the absenceof determining theDNA
+repairstatus ofthepatient orBRCA status of the patient.
+The therapeutic agent for use according to claim 1, wherein the patient is characterized
+by an absence ofa mutation inBRCA1 and/or BRCA2
+3.A therapeutic agent that inhibits poly [ADP-ribose] polymerase ("anti-PARP therapy")
+for use in a method of treating a cancer patient, wherein the patient is characterized by an
+absence ofa mutation in BRCA1 and/or BRCA2, and wherein the cancer is a gynecological
+cancer selected from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal
+cancer, and breast cancer, or
+wherein the cancer is characterizedby an absence ofa mutation inBRCAl orBRCA2,
+and wherein the cancer is a gynecological cancer selected from the group consisting of: ovarian
+cancer, fallopian tube cancer, peritoneal cancer and breast cancer.
+The therapeutic agent for use according to any one of claims 1-3, wherein the anti-PARP
+niraparib or a salt or derivative thereof.
+5.
+The therapeutic agent for use according to any one of claims 1-4, wherein the agent
+inhibitsPARP-1and/orPARP-2.
+6.The therapeutic agent for use according to claim 5, wherein the agent is niraparib or a salt
+orderivativethereof.
+80
+
+--- PAGE 2 ---
+EP17821262.7
+P60798EP-PCT
+7.The therapeutic agent for use according to claim 1 or claim 2, wherein the cancer is a
+gynecological cancer, optionally wherein the gynecological cancer is selected from the group
+consisting of: ovarian cancer, fallopian tube cancer, peritoneal cancer, and breast cancer.
+8.
+The therapeutic agent for use according to any one of claims 1-7, wherein the cancer is a
+recurrent cancer.
+9. The therapeutic agent for use according to any one of claims 1-8, wherein the method
+prolongsprogressionfreesurvivalascomparedtocontrol,and/or
+wherein the method reduces the hazard ratio for disease progression or death as compared
+to control, and/or
+wherein the method prolongs overall survival as compared to control, and/or
+wherein the method achieves an overall response rate ofat least 30%.
+10.A therapeutic agent for use in a method of treating a patient having a recurrent cancer
+selected from ovarian cancer, fallopian tube cancer, or peritoneal cancer, wherein the therapeutic
+agent is niraparib, the method comprising administering niraparib to the patient according to a
+regimen determined to achieve i) prolonged progression free survival as compared to control, i)
+a reduced hazard ratio for disease progression or death as compared to control, i) prolonged
+overall survival as compared to control,or iv)an overall response rate ofat least 30%.
+11. The therapeutic agent for use according to any one of claims 1-10, wherein the cancer is
+ovarian cancer (e.g. wherein the patient has high grade serous ovarian cancer or high grade
+predominantly serous histology ovarian cancer),optionally wherein the ovarian cancer is
+platinum sensitive at the commencement of treatment,or
+wherein the cancer is fallopian tube cancer, optionally wherein the fallopian tube cancer
+is platinum sensitive at the commencement of treatment,or
+wherein the cancer is peritoneal cancer, optionally wherein the peritoneal cancer is
+platinumsensitive at thecommencement of treatment.
+81
+
+--- PAGE 3 ---
+EP17821262.7
+P60798EP-PCT
+12. The therapeutic agent for use according to any one of claims 1-11, wherein the patient is
+characterizedby an absenceofa mutationinBRCA1 and/orBRCA2,optionallywherein the
+patient is characterized by an absence of a germline mutation in BRCA1 and/or BRCA2, or
+wherein the patient is characterized by an absence of a sporadic mutation in BRCA1 and/or
+BRCA2.
+13. The therapeutic agent for use according to any one of claims 1 and 4-11, wherein the
+patient has a tumor with a positive homologous recombination deficiency status.
+14. The therapeutic agent for use according to any one of claims 1-12, wherein the patient
+has a tumor with a negative homologous recombination deficiency status.
+15.The therapeutic agent for use according to any one of claims 10-14, wherein the regimen
+is determined to achieve a hazard ratio for disease progression ofless than about 0.5, optionally
+wherein the hazard ratio for disease progression is less than about 0.3, and/or
+wherein the regimen is determined to achieve prolonged progression free survival of at least 9
+months, optionally wherein the prolonged progression free survival is at least 12 months,
+especially wherein the prolonged progression free survival is at least 21 months.
+16. The therapeutic agent for use according to any one of claims 1-15, wherein the method
+comprises continued treatment until disease progression or unacceptable toxicity,optionally
+wherein the method comprises reducing the dose ofthe anti-PARPtherapy or niraparibin
+response to toxicity, especially wherein the method comprises reducing the dose of the anti-
+PARPtherapyfrom about a dose equivalent to about300mg toadose equivalent to about 200
+mg,or wherein the method comprises reducing the dose of niraparib from about 300 mg to about
+200 mg.
+17.The therapeutic agent for use according to any one of claims 1-16, wherein the method
+comprises administering a plurality of oral doses, optionally wherein the method comprises once
+daily (QD) dosing, and/or
+wherein themethod comprises at least one28daycycleof dosing,and/or
+82
+
+--- PAGE 4 ---
+EP17821262.7
+P60798EP-PCT
+wherein the oral dose is administered in one or more unit dosage forms, optionally
+wherein the one or more unit dosage forms are capsules.
+18. The therapeutic agent for use according to any of claims 1-3, 5-15, and 17, wherein the
+oral doseis an amountwithin a rangeequivalent to about5to about 400mg of niraparib,
+optionally wherein the amount is equivalent to about 5, about 10, about 25, about 50, about 100,
+about 150, about 200,about 250, about 300,about 350,or about 400 mg of niraparib,
+especially wherein the amount is equivalent to about 300 mg of niraparib,or wherein the
+amount is equivalent to about 2o0 mg of niraparib,or wherein each unit dosageform comprises
+an amount equivalent to about 100 mg, about 200 mg, or about 300 mg of niraparib.
+19.The therapeutic agent for use according to claim 17, wherein each QD dose is equivalent
+to about 100 mg, about 200 mg, or about 300 mg of niraparib, or
+wherein each QD dose is administered as three unit dosage forms equivalent to about 100
+mgof niraparib.
+20. The therapeutic agent for use according to any one of claims 9-19, wherein progression
+free survival is characterized by a complete response ofone or more target tumors,or
+wherein progression free survival is characterized by a partial response of one or more
+targettumors.
+21.The therapeutic agent for use according to any one of claims 1-20, wherein the method
+comprises administration to the patient in a fasted state, or
+wherein the method comprises administration to the patient in a fed state.
+22. The therapeutic agent for use according to any one of claims 9-21, wherein the prolonged
+progression free survival is at least 9 months, optionally wherein the prolonged progression free
+survival is at least 12 months,at least 15 months,at least 18 months,at least 21 months,at least
+24months,atleast 27months,at least30 months,atleast 33months,oratleast 36months.
+83
+
+--- PAGE 5 ---
+EP17821262.7
+P60798EP-PCT
+23. The therapeutic agent for use according to any one of claims 10-22, wherein the hazard
+ratiofor disease progression is about 0.3,or
+wherein the hazard ratio for disease progression is about 0.45, or
+wherein the hazard ratio for disease progression is about 0.5, 0r
+wherein the hazard ratio for disease progression is less than about 0.5, optionally
+wherein the hazard ratio for disease progression is less than about 0.45, less than about 0.4, less
+than about 0.35, or less than about 0.3.
+24. The therapeutic agent for use according to any one of claims 1-23, wherein anti-PARP
+therapy or niraparib is administered as a maintenance therapy.
+25.A therapeutic agent for use in a method of treating a patient lacking homologous repair
+deficiency and having a recurrent cancer selected from platinum-sensitive ovarian cancer,
+fallopian tube cancer, or primary peritoneal cancer, wherein the therapeutic agent is niraparib,
+the method comprising administering niraparib to the patient according to a regimen determined
+to achieve prolonged progression free survival as compared to control.
+26. The therapeutic agent for use according to any one of claims 1-22, wherein the method
+has further been determined to achieve improved progression free survival 2 as compared to
+control.
+27.The therapeutic agent for use according to any one of claims 1-26, wherein the method
+has further been determined to achieve improved chemotherapy free interval as compared to
+control,and/or
+wherein the method has further been determined to achieve improved time to first
+subsequent therapy as compared to control, and/or
+wherein the method has further been determined to achieve improved time to second
+subsequent therapy as compared to control, and/or
+wherein themethod hasbeendetermined to not have a detrimentaleffect onQuality of
+Life as determined byFOSI and/or EQ-5D-5L,and/or
+8
+
+--- PAGE 6 ---
+EP17821262.7
+P60798EP-PCT
+wherein the method has been determined to not impact the effectiveness of a subsequent
+treatment with a chemotherapeutic agent, optionally wherein the next chemotherapeutic agent is
+a platinum agent, especially wherein the platinum agent is selected from cisplatin, carboplatin,
+oxaliplatin, nedaplatin, triplatin tetranitrate, phenanthriplatin, picoplatin, or satraplatin.
+85

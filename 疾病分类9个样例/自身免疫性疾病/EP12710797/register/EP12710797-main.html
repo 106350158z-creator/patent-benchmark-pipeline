@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <title> EP About this file - European Patent Register</title>
+  <link rel="stylesheet" href="/theme/cssPrint.css"  media="print" type="text/css"/>
+  
+  <link rel="stylesheet" href="/theme/cssPrintLayout.css"  media="print" type="text/css"/>
+
+  <link rel="stylesheet" href="/theme/rplusPrint.css" media="print" type="text/css"/>
+  
+  <link rel="stylesheet" href="/theme/common.css"  media="screen" type="text/css"/>
+
+  <!--[if IE 8]>
+		<link rel="stylesheet" href="/theme/css_IE8.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/rplus_IE8.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/css_ie8_print.css" type="text/css"/>
+  <![endif]-->
+  <!--[if IE 7]>
+		<link rel="stylesheet" href="/theme/css_IE7.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/rplus_IE7.css" type="text/css"/>
+  <![endif]-->
+  <!--[if IE 6]>
+		<link rel="stylesheet" href="/theme/css_IE6.css" type="text/css"/>
+		<link rel="stylesheet" href="/theme/rplus_IE6.css" type="text/css"/>
+  <![endif]-->
+  <!--[if Opera]>
+		<link rel="stylesheet" href="/theme/rplus_opera.css" type="text/css"/>
+	<![endif]-->
+	
+  <link rel="stylesheet" href="/theme/rplus.css" type="text/css"/>
+  
+  <link rel="stylesheet" href="/theme/cssJQuery.css" type="text/css"/>
+
+<!--c:set var="jsStatic" value="/" scope="application" /--> <!-- AMF -->
+
+<script language="javascript" type="text/javascript" src = "/scripts/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/jquery.combobox.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/iutil.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/accordion.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/jquery.tools.min.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/jquery.expandableinput.js"></script>
+<script language="javascript" type="text/javascript" src = "/scripts/jquery.session.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/main.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/alert.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/rplus.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/jquery.blockUI.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/federated.js"></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/jquery.jsonp-2.4.0.min.js"></script>
+<script type='text/javascript' src='/dwr/engine.js'></script>
+<script type='text/javascript' src='/dwr/util.js'></script>
+<script type='text/javascript' src='/dwr/interface/MonitoredList.js'></script>
+<script type='text/javascript' src='/statusMap.js'></script>
+<script type='text/javascript' src='/txtMessages.js'></script>
+<script language="javascript" type="text/javascript" src=  "/scripts/bot.js"></script>
+<!-- Matomo Tag Manager -->
+
+<script>
+
+var container_ID = 'K4s1az21', env = '-i';
+var currentUrl = document.location.href;
+if (currentUrl.includes('register.epo.org')) {
+  env = '';
+  container_ID = '6yl2jF3T';
+}
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.async=true; g.src='https://matomo' + env + '.epo.org/js/container_' + container_ID + '.js'; s.parentNode.insertBefore(g,s);
+
+</script>
+
+<!-- End Matomo Tag Manager -->
+</head>
+
+<body lang="en" class="present">
+<script language="javascript" type="text/javascript">
+   $(document).ready(function() {
+          $('.hoverable').hover(
+             function() {
+                $(this).addClass('hovered');
+             }, function() {
+                $(this).removeClass('hovered');
+             }
+          );
+          var path = '';
+          var param = {clnrefer : ""}
+          if (path == '/regviewer') {
+        	  $('#smartSearchForm textarea[name="query"]').val('');
+          } else if (path == '/advancedSearch' && param.clnrefer == 'yes') {
+        	  $('#searchForm textarea[class="expandable"]').each(function() {
+        		  $(this).val('');
+        		  removeSessionAttr(getPage() + $(this).attr("name"));
+	      	  });
+          }
+
+       });
+</script>
+<div class="printGrid">
+	<div class="printIt">
+		<div class="printLogo">
+			<img alt="logo" src="/images/header/logo.gif" />
+		</div>
+	</div>
+	<div id="page" class="pageWrap">
+	<a name="toplink"></a>
+	<div class="epoHeader">
+	<div id="epoHeader" class="clearfix">
+	<a id="epoLogo" href="http://www.epo.org" name="epoLogo"><img alt="logo missing" src="/images/header/logo.gif"/></a>
+	
+	<div id="epoHeaderCenter"><img alt="logo center" src="/images/header/logo_patent_register_en.gif"/></div>
+	<div id="epoHeaderMetaNav">
+		<ul class="modLanguageNavi clearfix">
+			<li>
+				<a href="?lng=de&amp;number=EP12710797&amp;tab=main">
+   Deutsch</a>
+
+<a href="?lng=en&amp;number=EP12710797&amp;tab=main">
+   English</a>
+
+<a href="?lng=fr&amp;number=EP12710797&amp;tab=main">
+   Français</a>
+
+</li>
+		</ul>
+		<ul class="modServiceNavi clearfix">
+			<li class="navElem contact">
+				<a href="http://www.epo.org/service-support/contact-us.html" target="_blank">Contact</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div><div class="modAppFlyoutNavi noPrint">
+		<div class="lvl1ul clearfix">
+			<ul class="primary">
+				<li class="lvl1li"><a class="leftArrow" href="https://www.epo.org/searching-for-patents/legal/register.html">About European Patent Register</a></li>
+				
+				<li class="lvl1li">
+					<a class="hasSubMenu sel" href="#">Other EPO online services</a>
+					<div class="lvl2ul epoMenu" style="opacity: 1; visibility: hidden; display: none;">
+						<ul class="epoGrpList epoGrpLeft">
+							
+   
+    
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="http://worldwide.espacenet.com">Espacenet
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="https://register.epo.org/login">Register Alert
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="https://data.epo.org/publication-server/?hp=stages">European Publication Server
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="http://www.epo.org/searching/subscription/gpi.html">Global Patent Index
+            </a>
+</li>
+        
+        
+            <li xmlns:editorial="http://espacenet.com/maintenance/editorial">
+<a target="_blank" class="grpLink" href="http://www.epo.org/searching/free/bulletin.html">European Patent Bulletin
+            </a>
+</li>
+        
+    
+</ul>
+					</div>
+				</li>
+            </ul>
+			<ul class="secondary">
+				<li><a class="tooltipHeader registerAlertLogin" title="Subscribe to this email alert service to monitor patent applications throughout the EP grant procedure." href="authenticate">Register Alert (email alerts)</a></li>
+					</ul>
+		</div>			
+	</div>
+	<div id="content"></div>
+      <script language="JavaScript" type="text/javascript">
+
+<!--
+	var status = "false";
+	$(document).ready(function(){
+	$("div.pageWrap").addClass("screenWide");
+	$('a[href="#"]').click(function(e) { e.preventDefault ? e.preventDefault() : e.returnValue = false; });
+	$('<p class="tooltipForRSSApnsEmail"></p>').appendTo('body');
+	 
+	// email valid format
+	var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	//disable submit button
+	$("#okSubmit").attr('disabled', true);
+	$("#okSubmit").css("color","#C0C0C0");
+	$("#okSubmit").css("cursor","default");
+	
+	$("#alertSubscribeId").on('mouseover',function() {
+    var textarea_value = $("#emailadresse").val();
+	var valid = pattern.test(textarea_value);
+    if(textarea_value != '' && valid ) {
+		//enable submit button
+        $("#okSubmit").attr('disabled' , false);
+		$("#okSubmit").css("color","#000000");
+		$("#okSubmit").css("cursor","pointer");
+    }else{
+		//disable submit button
+        $("#okSubmit").attr('disabled' , true);
+		$("#okSubmit").css("color","#C0C0C0");
+		$("#okSubmit").css("cursor","default");
+    }
+	});
+	
+	}); 
+	 //To open the dialog box of RSS subscription alert
+	 function openAlert(){	 
+		var dialog = document.getElementById('alertSubscribeId');
+		var email = document.getElementById("emailId");
+		dialog.style.display = "block";
+		window.onclick = function(event) {
+		if (event.target == dialog) {
+        dialog.style.display = "none";
+			}
+		} 
+		 
+	 }
+	//To close the dialog box of RSS subscription alert
+	function closeAlert(){	 
+		var dialog = document.getElementById('alertSubscribeId');
+		var cancel = document.getElementById("cancel");
+        dialog.style.display = "none";
+	 }
+	 
+	 
+	function showDetails() {
+		if (status === "false") {
+			$("#historyButton").text('Hide history');
+            $("#historyButton").removeClass('showHist');
+            $("#historyButton").addClass('hideHist');
+            $(".former").show();
+			status = "true";
+		} else {
+			$("#historyButton").text('Show history');
+            $("#historyButton").removeClass('hideHist');
+            $("#historyButton").addClass('showHist');
+            $(".former").hide();
+			status = "false";
+		}
+	}
+
+	function downloadXML(href, message) {
+		if(message.length > 0){
+			alert(message);
+		}
+        window.open(href,"DownloadXML");     // Open in a new window
+         //window.open(href); self.focus();   // Background window
+         //window.location = href;            // Open in the current window
+	}
+
+	function refineSearch() {
+		window.location.href="application?lastSearch=advanced";
+	}
+
+	function filterDocs(number, lng) {
+		var filter = $("select").val();
+		window.location.href="application?lng="+lng+"&tab=doclist&number="+number+"&filter="+encodeURIComponent(filter);
+	}
+	function filterueDocs(number, lng) {
+		var filter = $("select").val();
+		window.location.href="application?lng="+lng+"&tab=ueDoclist&number="+number+"&filter="+encodeURIComponent(filter);
+	}
+-->
+
+
+</script>
+
+<div id="epoNavigation" class="epoNavigation">
+		<script type="text/javascript">
+$(document).ready(function(){
+   if (false) {
+      if ($("#").hasClass("bendr")) {
+         $("#").removeClass("bendr").addClass("bendractive");
+      }
+      if ($("#").hasClass("bendl")) {
+         $("#").removeClass("bendl").addClass("bendlactive");
+      }
+   }
+});
+</script>
+
+<spring:url var="rootCont" value="/"/>
+
+  <div class="modAppNav noScript">
+      <ul>
+		<li id="smartSearch" class="bendr"><a href="regviewer?lng=en">Smart search</a></li>
+        <li id="advancedSearch" class="bendr"><a href="advancedSearch?lng=en&amp;clnrefer=yes">Advanced search</a></li>
+        <li class="spacer"></li>
+        <li id="help" class="bendl last"><a href="help?topic=index&amp;lng=en">Help</a></li>
+        </ul>
+   </div>
+</div>
+
+	<div id="epoContentLeft" class="noPrint" >
+			<ul class="epoContentNav">
+				<span class="sel" style="padding-left: 6px;">EP2685976</span>
+				<span class="sel" style="padding-left: 16px;">European procedure</span>
+				<ul>
+					<li>
+						<a class="sel lastActiveElement" href='/application?number=EP12710797&amp;lng=en&amp;tab=main'>EP About this file</a>
+							</li>
+					<li>
+						<a href="/application?number=EP12710797&amp;lng=en&amp;tab=legal">EP Legal status</a>
+								</li>
+					<li>
+						<a href="/application?number=EP12710797&amp;lng=en&amp;tab=federated">EP Federated register</a>
+								</li>
+					<li>
+						<a href="/application?number=EP12710797&amp;lng=en&amp;tab=event">EP Event history</a>
+								</li>
+					<li>
+						<a href="/application?number=EP12710797&amp;lng=en&amp;tab=citations">EP Citations</a>
+								</li>
+					<li>
+						<a href="/application?number=EP12710797&amp;lng=en&amp;tab=family">EP Patent family</a>
+								</li>
+					<li>
+						<a href="/application?number=EP12710797&amp;lng=en&amp;tab=doclist">EP All documents</a>
+								</li>
+					</ul>
+				</ul>
+			<div style="clear: right;">&nbsp;</div>
+
+			<!-- only context menu for results page -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<script>
+$(document).ready(function() {
+  $('.dijitAccordionTitle').click(function() {
+    var accordionContainer = $('.epoAccordionContainer');
+    var contentContainer = $('.dijitContainer.dijitAccordionContainer.dijitLayoutContainer');
+    accordionContainer.css('height', 'auto');
+    contentContainer.css('height', 'auto');
+  });
+});
+</script>
+
+   <div class="epoAccordionContainer" style="height: auto;">
+       <div class="dijitContainer dijitAccordionContainer dijitLayoutContainer" style="overflow: hidden; height: auto;" >
+			
+            
+               
+            
+
+            
+            
+
+            
+               <div class="dijitAccordionTitle">
+                  <span class="dijitInline dijitAccordionArrow"></span>
+                  <img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+                  <span class="dijitAccordionText">Quick help</span>
+               </div>
+               <div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+                           <ul>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.1&amp;lng=en" title="&lt;h4&gt;What happens if I click on the &#034;XML&#034; or &#034;ST36&#034; buttons?&lt;/h4&gt;&lt;p&gt;You will be able to download the information from the &amp;#034;About this file&amp;#034; screen either as an XML or &amp;#034;Standard 36&amp;#034; file.&lt;/p&gt;">What happens if I click on the "XML" or "ST36" buttons?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.2&amp;lng=en" title="&lt;h4&gt;What kind of information can be found if I click on the &#034;Show history&#034; button?&lt;/h4&gt;&lt;p&gt;This button is only displayed if changes occured to bibliographic data published in the EP Bulletin during the application&amp;#039;s lifetime, from the date of first publication by the EPO onwards.&lt;/p&gt;">What kind of information can be found if I click on the "Show history" button?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.3&amp;lng=en" title="&lt;h4&gt;What kind of information can be found under &#034;Status&#034;?&lt;/h4&gt;&lt;p&gt;The list of legal events can be found under more...&lt;/p&gt;">What kind of information can be found under "Status"?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.4&amp;lng=en" title="&lt;h4&gt;What do the digits in square brackets refer to?&lt;/h4&gt;&lt;p&gt;The digits in square brackets refer to the issue of the European Patent Bulletin (e.g. week 35 of year 1988) in which the relevant information was published. The European Patent Bulletin publications from 01.2002 onwards are hyperlinked so that by clicking on the link you can go straight to the relevant issue of the European Patent Bulletin.&lt;/p&gt;">What do the digits in square brackets refer to?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.5&amp;lng=en" title="&lt;h4&gt;What does N/P stand for?&lt;/h4&gt;&lt;p&gt;The letters N/P between square brackets stand for &amp;#034;not published&amp;#034;.&lt;/p&gt;">What does N/P stand for?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.6&amp;lng=en" title="&lt;h4&gt;What does the letter in square brackets stand for in the &#034;Documents cited&#034; part?&lt;/h4&gt;&lt;p&gt;The letter in square brackets stands for the category of document. For a list of categories click on &amp;#034;more...&amp;#034;.&lt;/p&gt;">What does the letter in square brackets stand for in the "Documents cited" part?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.7&amp;lng=en" title="&lt;h4&gt;Is it possible to navigate in the result list?&lt;/h4&gt;&lt;p&gt;Click on the &amp;#034;Search results&amp;#034; tab in the horizontal toolbar and you will be sent back to the latest result list displayed. To scroll forward to the next 20 results, simply click on the right arrow below the printer icon.&lt;/p&gt;">Is it possible to navigate in the result list?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.8&amp;lng=en" title="&lt;h4&gt;What kind of information can be found under “Lapses during opposition”?&lt;/h4&gt;&lt;p&gt;This section shows the date of lapse of the European patent in a designated contracting state during the opposition period, and, where appropriate, pending a final decision on opposition (Rule 143.1(p) EPC). Lapses taking place after this period will be displayed under “Legal status”, in the “INPADOC data” section. “INPADOC data” provides information on events during the lifetime of an EP patent generated during both the EP grant procedure and the post-grant phase. Lapses referring to extension or validation states are displayed in the “INPADOC data” section only.&lt;/p&gt;">What kind of information can be found under “Lapses during opposition”?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.9&amp;lng=en" title="&lt;h4&gt;What are validation states?&lt;/h4&gt;&lt;p&gt;Validation states are countries that are non-member states which have validation agreements with the EPO, allowing applicants to request the validation of a European patent to these countries.&lt;/p&gt;">What are validation states?</a>
+                                 </li>
+                              
+                                 
+                                 
+                                 
+                                 
+
+                                 
+                                 <li>
+                                   <a class="int" href="help?quickHelpPage=main.10&amp;lng=en" title="&lt;h4&gt;What are extension states?&lt;/h4&gt;&lt;p&gt;Extension states are countries that are non-- member states  which have extension agreements with the EPO, allowing applicants to request the extension of a European patent or patent application to these countries.&lt;/p&gt;">What are extension states?</a>
+                                 </li>
+                              
+                           </ul>
+                </div>
+            
+      
+		
+		
+		<div class="dijitAccordionTitle">
+			<span class="dijitInline dijitAccordionArrow"></span>
+			<img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+			<span class="dijitAccordionText">Maintenance news</span>
+		</div>
+			 
+		<div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+			
+				
+				
+                 
+				
+				
+				
+				
+				 
+                <p>
+<b>Scheduled maintenance</b>
+<span style="float:right;">
+<a title="Maintenance news" href="maintenance?lng=en">
+<img src="images/rss.gif"/>
+</a>
+</span>
+</p><p>Regular maintenance outages:<br/>
+between 05.00 and 05.15 hrs CET (Monday to Sunday).<br/>
+<br/>
+<b>Other outages</b>
+<br/>
+<a href="https://www.epo.org/service-support/availability-of-online-services.html" target="_blank">Availability</a>
+<br/>
+</p><p>2022.02.11</p>
+
+
+				<a class="int" href="news?type=NEWS_MAINTENANCE&amp;lng=en">More...</a>
+			
+
+			
+		</div>
+
+		
+		
+		<div class="dijitAccordionTitle">
+			<span class="dijitInline dijitAccordionArrow"></span>
+			<img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+			<span class="dijitAccordionText">News flashes</span>
+		</div>
+		<div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+			
+				
+				
+                 
+				
+				
+				
+				
+                 
+				<p>
+<b>Italy joins the Federated Register</b>
+<span style="float:right;">
+<a title="News flashes" href="flashnews?lng=en">
+<img src="images/rss.gif"/>
+</a>
+</span>
+</p><p>Click <a href="https://register.epo.org/help?lng=en&amp;topic=federated" target="_blank">here</a> for more information on the Federated Register.</p><p>2025-06-12</p>
+
+				<a class="int" href="news?type=NEWSFLASH&amp;lng=en">More...</a>
+			
+
+			
+		</div>
+
+
+          <div class="dijitAccordionTitle">
+                  <span class="dijitInline dijitAccordionArrow"></span>
+                  <img style="vertical-align: middle;" alt="blank" src="/images/blank.gif"/>
+                  <span class="dijitAccordionText">Related links</span>
+          </div>
+          <div class="dijitContentPane dijitAccordionContainer-child dijitAccordionContainer-dijitContentPane">
+           
+		        
+		        
+		
+		        
+    <p xmlns:editorial="http://espacenet.com/maintenance/editorial">
+        
+            <a href="https://www.epo.org/searching-for-patents/legal/register/archive.html" target="_blank" class="ext">Release notes
+            </a>
+        <br/>
+        
+            <a href="https://e-courses.epo.org/wbts/europeanpatentregisterassistant/index.html" target="_blank" class="ext">European Patent Register Assistant
+            </a>
+        <br/>
+        
+            <a href="https://link.epo.org/web/legal/register/en-european-patent-register-user-manual.pdf" target="_blank" class="ext">European Patent Register User Manual
+            </a>
+        <br/>
+        
+            <a href="http://documents.epo.org/projects/babylon/eponet.nsf/0/61E49C570C2441DDC12581AF00494F04/$File/european_patent_register-pocket_guide_en.pdf" target="_blank" class="ext">European Patent Register – pocket guide
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/searching-for-patents/legal/register/faq.html" target="_blank" class="ext">FAQ - European Patent Register
+            </a>
+        <br/>
+        
+            <a href="http://documents.epo.org/projects/babylon/eponet.nsf/0/B7C67A1394E42810C1257EC300537D68/$File/federated_register_flyer_en.pdf" target="_blank" class="ext">Federated Register (Flyer)
+            </a>
+        <br/>
+        
+            <a href="http://documents.epo.org/projects/babylon/eponet.nsf/0/9D94DCA14F468A24C1257EC300536856/$File/global_dossier_flyer2016_en.pdf" target="_blank" class="ext">Global Dossier (Flyer)
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/searching-for-patents/legal/register/documentation/events.html" target="_blank" class="ext">Register events
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/searching-for-patents/legal/register/documentation/data-coverage.html" target="_blank" class="ext">Deep link coverage
+            </a>
+        <br/>
+        
+            <a href="https://www.epo.org/searching-for-patents/legal/register/documentation/federated-register.html" target="_blank" class="ext">Federated Register content
+            </a>
+        <br/>
+        
+            <a href="https://e-courses.epo.org/wbts/pi_tour_2025/EN/" target="_blank" class="ext">The Patent Information Tour
+            </a>
+        <br/>
+        
+            <a href="http://www.epo.org/service-support/ordering/fair-use.html" target="_blank" class="ext">Fair use charter
+            </a>
+        <br/>
+    </p>
+
+		   
+		   
+          </div>
+      </div>
+
+    </div></div>
+    <div class="epoContentWrap clearfix">
+		<div id="pagebody" >
+			<a name="Content"></a>
+			
+			<div class="printTitle printIt">
+			<h3>Extract from the Register of European Patents</h3>
+			</div>
+			<h1>
+				EP About this file: EP2685976</h1>
+			<div id="body" class="clearfix">
+					<div class="epoToolBar firstChildToolbar">
+						<ul class="clearfix">
+							<li class="separator separatorFirst"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="rfnLst" title="Refine search" href="simpleSearch?lng=en">Refine search</a></li>
+							
+							<li style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+									<li style="padding-right: 0.4em;"><a class="download" title="Download ST36 data" href='javascript:downloadXML("/download?number=EP12710797&amp;tab=main&amp;xml=st36", "")'>ST36</a></li>
+								<li id="histSeparator" style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+								<li style="padding-right: 0.4em;"><a class="showHist" title="Show/Hide history" id="historyButton" href="#" onclick="showDetails(); return false;">Show history</a></li>
+							<li style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="ext" title="Open in Espacenet" href="https://worldwide.espacenet.com/patent/search?q=pn%3DEP2685976&called_by=EuropeanRegister" target="_blank">Espacenet</a></li>
+								<li style="padding-right: 0.4em;" class="separator"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="thirdParty" title="Third Party Observation" href="https://tpo.apps.epo.org/tpo/ui/prod/?subject.publicationNumber=EP2685976" target="_blank">Submit observations</a></li>
+								<li style="padding-right: 0.4em;"class="separator"><span class="firstFollow">|</span></li>
+							<li style="padding-right: 0.4em;"><a class="reportErr" title="Send us your questions or feedback" href="http://www.epo.org/service-support/contact-us/contact2-form.html?number=EP12710797&subject=EPRegister" target="_blank">Report error</a></li>
+							
+							<li style="padding-right: 0.4em;" class="floatRight prt line"><a href="javascript:window.print();" class="prt" title="Print">Print</a></li>
+							<li style="padding-right: 0.4em;" class="floatRight separator"><span class="firstFollow">|</span></li>
+						</ul>
+					</div>
+					<script>
+	$(document).ready(function() {
+		// CPC
+	    $(".cpc_data_toggle_minus a.cpc_data_toggle").click();
+	    $(".cset_data_toggle_minus a.cset_data_toggle").click();
+	    
+	    
+	 	/** Here's the W3C standards on calculating the width of table columns. Basically it is left up to the implementing browser/agent.
+		/*  That's why we opted for 1500px as a conventional value for C-Set after. Therefore, any C-set width having width greater than it
+		/*  is considered as a "Too long C-Set"
+		/*  For more information, please refer to W3C official documentation: https://www.w3.org/TR/html401/struct/tables.html#h-11.2.4.4
+		 */
+	    const getElementWidth = elem => elem.getBoundingClientRect().width;
+	 	
+		const checkOverflow = (elem) => {
+			const elemWidth = getElementWidth(elem);
+			const defaultWidth = 1500;
+			return elemWidth > defaultWidth;
+		}
+		
+		const breakElement = (element) => {
+			let middleIndex = Math.ceil(element.innerHTML.length/2);
+			let indexOfComma = element.innerHTML.indexOf(", ", middleIndex);
+			if (indexOfComma !== -1) {
+				element.innerHTML = element.innerHTML.substring(0, indexOfComma + 2) + "<br/>" + element.innerHTML.substring(indexOfComma + 2);
+			}else{
+				element.innerHTML = element.innerHTML.substring(0, middleIndex) + "<br/>" + element.innerHTML.substring(middleIndex);
+			}
+		}
+		
+		const breakCsetIfTooLong = (csetDivs) => {
+			for(let i = 0; i < csetDivs.length; i++) {
+		        isCsetDataItemTooLong = checkOverflow(csetDivs[i]);
+		        if(isCsetDataItemTooLong) {
+		            breakElement(csetDivs[i]);
+		        }
+		    }
+		}
+
+		var csetDataItemNoHideDivs = document.getElementsByClassName("cset_data_item_no_hide");
+		var csetDataItemDivs = document.getElementsByClassName("cset_data_item");
+		var isCsetDataItemTooLong = false;
+		
+		breakCsetIfTooLong(csetDataItemNoHideDivs);
+		breakCsetIfTooLong(csetDataItemDivs);
+	});
+</script>
+
+</b></b></b></b><table class="tableType3 printTable"><td class="t2" colspan="4"><b><font size=3><a href="https://register.epo.org/espacenet/regviewer?AP=12710797&amp;CY=EP&amp;LG=en&amp;DB=REG"  >EP2685976 - QUINOLONE ANALOGS FOR TREATING AUTOIMMUNE DISEASES</a></font></b>
+			
+				[Right-click to bookmark this link]
+			</td></tr><td class="th">Status</td><td class="t2" colspan="3">No opposition filed within time limit<br/>
+	<font size="1"><i><i>Status updated on &nbsp;02.11.2018</i></font>
+<br/>
+				<font size="1"><i>Database last updated on&nbsp;13.06.2026</i></font>
+			</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">The patent has been granted<br/>
+	<font size="1"><i><i>Status updated on &nbsp;24.11.2017</i></font>
+</td></tr><tr class="former " ><td class="t1">Former</td><td class="null" colspan="3">Grant of patent is intended<br/>
+	<font size="1"><i><i>Status updated on &nbsp;23.03.2017</i></font>
+</td></tr><td class="th">Most recent event&nbsp;&nbsp;&nbsp;<b><span title="Please note that the ’’Most recent event’’ date shown first is the date on which the event was processed and so may differ from the effective legal date of the event concerned or the date of the related decision. Please refer to the information under ’’All documents’’ for the event’s effective legal date. " class="tooltipActuator noPrint">Tooltip</span></b></td><td class="t2">17.07.2020</td><td class="t3">Lapse of the patent in a contracting state<br/>
+				New state(s):&nbsp;AL</td><td class="t4">published on&nbsp;19.08.2020&nbsp;&nbsp;<a href="https://www.epo.org/bulletin/downloads/2020/bulletin2034.pdf" target="_blank" class="ext" >[2020/34]</a></td></tr><td class="th" rowspan="2">Applicant(s)</td><td class="t2" colspan="3">For all designated states<br/>
+	Tel HaShomer Medical Research Infrastructure and Services Ltd.<br/>
+	The Chaim Sheba Medical Center Tel HaShomer<br/>
+	52 621 Ramat Gan
+	  / IL<br/>
+</td></tr><td class="t2" colspan="3">[2014/04]</td></tr><td class="th" rowspan="3">Inventor(s)</td><td class="t2" colspan="3">01&nbsp;/
+	ACHIRON, Anat<br/>
+	4 Kafrisin Street<br/>
+	Tel Baruch<br/>
+	69016 Tel -Aviv
+	  / IL<br/>
+</td></tr><td class="t2" colspan="3">02&nbsp;/
+	GUREVICH, Michael<br/>
+	41 Mordechai Bashist Street<br/>
+	76276 Rechovot
+	  / IL<br/>
+</td></tr><td class="t2" colspan="3">&nbsp;<a href="https://www.epo.org/bulletin/downloads/2014/bulletin1404.pdf" target="_blank" class="ext" >[2014/04]</a></td></tr><td class="th" rowspan="2">Representative(s)</td><td class="t2" colspan="3">V.O.<br/>
+	P.O. Box 87930<br/>
+	2508 DH Den Haag
+	  / NL<br/>
+</td></tr><td class="t2" colspan="3">[2017/52]</td></tr><tr class="former " ><td class="t1">Former [2014/04]</td><td class="t2" colspan="3">Jansen, Cornelis Marinus, et al<br/>
+	V.O.<br/>
+	Johan de Wittlaan 7<br/>
+	2517 JR Den Haag
+	  / NL<br/>
+</td></tr><td class="th" rowspan="3">Application number, filing date</td><td class="t2">12710797.7</td><td class="t3" colspan="2">26.02.2012</td></tr><td class="t2" colspan="3">[2017/52]</td></tr><td class="t2" colspan="3">WO2012IL50061</td></tr><td class="th" rowspan="2">Priority number, date</td><td class="t2">US201161457396P</td><td class="t3" colspan="2">17.03.2011
+	               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	               Original&nbsp;published&nbsp;format:&nbsp;US&nbsp;201161457396&nbsp;P</td></tr><td class="t2" colspan="3">[2014/04]</td></tr><td class="th">Filing language</td><td class="t2" colspan="3">EN</td></tr><td class="th">Procedural language</td><td class="t2" colspan="3">EN</td></tr><td class="th" rowspan="16">Publication</td><td class="th">Type:
+   </td><td class="t2" colspan="2">A1&nbsp;Application with search report</td></tr><td class="th">No.:</td><td class="t2" colspan="2">WO2012123938</td></tr><td class="th">Date:</td><td class="t2" colspan="2">20.09.2012</td></tr><td class="th">Language:</td><td class="t2" colspan="2">EN</td></tr><td class="t2" colspan="3"> [2012/38] </td></tr><td class="th">Type:
+   </td><td class="t2" colspan="2"><a href="https://data.epo.org/publication-server/result-page?iAction=3&amp;pn=2685976&amp;ki=A1&amp;cc=EP&amp;pd=20140122" target="_blank" class="ext" style="" >A1&nbsp;Application with search report&nbsp;</a></td></tr><td class="th">No.:</td><td class="t2" colspan="2">EP2685976</td></tr><td class="th">Date:</td><td class="t2" colspan="2">22.01.2014</td></tr><td class="th">Language:</td><td class="t2" colspan="2">EN</td></tr><td class="t2" colspan="3">The application published by WIPO in one of the EPO official languages on 20.09.2012 takes the place of the <a href="https://www.epo.org/en/legal/epc/2020/a153.html" target="_blank">publication of the European patent application</a>.</td></tr><td class="t2" colspan="3"> [2014/04] </td></tr><td class="th">Type:
+   </td><td class="t2" colspan="2"><a href="https://data.epo.org/publication-server/pdf-document?pn=2685976&amp;ki=B1&amp;cc=EP&amp;pd=20171227" target="_blank" class="ext" style="" >B1&nbsp;Patent specification&nbsp;</a></td></tr><td class="th">No.:</td><td class="t2" colspan="2">EP2685976</td></tr><td class="th">Date:</td><td class="t2" colspan="2">27.12.2017</td></tr><td class="th">Language:</td><td class="t2" colspan="2">EN</td></tr><td class="t2" colspan="3"> [2017/52] </td></tr><td class="th">Search report(s)</td><td class="th">International search report - published on:</td><td class="t2">EP</td><td class="t3">20.09.2012</td></tr><td class="th" rowspan="2">Classification</td><td class="th">IPC:</td><td class="t2">A61K31/4375, A61K31/4745, A61K31/551, C12Q1/68, A61P37/06, A61P25/06<br/>
+								</td><td class="t3">[2014/04]</td></tr><td class="th">CPC:</td><td class="t2" colspan="2"><div class="cpc_data_no_hide" style="white-space: nowrap; ">
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K31/4375 (EP,US);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>C07D513/14 (US);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K31/4745 (EP,US);</b>
+												</span>
+										
+										</div>
+										<div class="cpc_data_no_hide" style="white-space: nowrap; ">
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61K31/551 (EP,US);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61P25/06 (EP);</b>
+												</span>
+										
+										<span class="cpc_data_item_no_hide" style="white-space: nowrap;">
+											<b>A61P37/06 (EP);</b>
+												</span>
+										
+										<span class="cpc_data_toggle_plus" style="display: none; ">
+												<a class="cpc_data_toggle" style="text-decoration: none;" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='white'">(+)</a>
+											</span>
+										</div>
+										<div class="cpc_data" style="white-space: nowrap; ">
+										<span class="cpc_data_item" style="white-space: nowrap;">
+											<b>C12Q1/6883 (EP,US);</b>
+												</span>
+										
+										<span class="cpc_data_item" style="white-space: nowrap;">
+											C12Q2600/158 (EP,US)</span>
+										
+										<span class="cpc_data_toggle_minus" style="">
+												<a class="cpc_data_toggle" style="text-decoration: none;" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='white'">(-)</a>
+											</span>
+										</div>
+										</td></tr><td class="th">Designated contracting states</td><td class="t2" colspan="3">AL, &nbsp; AT, &nbsp; BE, &nbsp; BG, &nbsp; CH, &nbsp; CY, &nbsp; CZ, &nbsp; DE, &nbsp; DK, &nbsp; EE, &nbsp; ES, &nbsp; FI, &nbsp; FR, &nbsp; GB, &nbsp; GR, &nbsp; HR, &nbsp; HU, &nbsp; IE, &nbsp; IS, &nbsp; IT, &nbsp; LI, &nbsp; LT, &nbsp; LU, &nbsp; LV, &nbsp; MC, &nbsp; MK, &nbsp; MT, &nbsp; NL, &nbsp; NO, &nbsp; PL, &nbsp; PT, &nbsp; RO, &nbsp; RS, &nbsp; SE, &nbsp; SI, &nbsp; SK, &nbsp; SM, &nbsp; TR&nbsp;[2014/04]</td></tr><td class="th" rowspan="2">Extension states</td><td class="t2">BA</td><td class="t3" colspan="2">Not yet paid</td></tr><td class="t2">ME</td><td class="t3" colspan="2">Not yet paid</td></tr><td class="th" rowspan="3">Title</td><td class="th">German:</td><td class="t2">CHINOLONANALOGA ZUR BEHANDLUNG VON AUTOIMMUNKRANKHEITEN</td><td class="t3">[2014/04]</td></tr><td class="th">English:</td><td class="t2">QUINOLONE ANALOGS FOR TREATING AUTOIMMUNE DISEASES</td><td class="t3">[2014/04]</td></tr><td class="th">French:</td><td class="t2">ANALOGUES DE QUINOLONE POUR LE TRAITEMENT DE MALADIES AUTO-IMMUNES</td><td class="t3">[2014/04]</td></tr><td class="th" rowspan="3">Entry into regional phase</td><td class="t2">20.09.2013</td><td class="t3">National basic fee paid</td><td class="t4">&nbsp;</td></tr><td class="t2">20.09.2013</td><td class="t3">Designation fee(s) paid</td><td class="t4">&nbsp;</td></tr><td class="t2">20.09.2013</td><td class="t3">Examination fee paid</td><td class="t4">&nbsp;</td></tr><td class="th" rowspan="9">Examination procedure</td><td class="t2">20.09.2013</td><td class="t3" colspan="2">Amendment by applicant (claims and/or description)</td></tr><td class="t2">20.09.2013</td><td class="t3" colspan="2">Examination requested&nbsp;
+			[2014/04]</td></tr><td class="t2">05.04.2016</td><td class="t3" colspan="2">Despatch of a communication from the examining division (Time limit: M06)</td></tr><td class="t2">13.10.2016</td><td class="t3" colspan="2">Reply to a communication from the examining division</td></tr><td class="t2">24.03.2017</td><td class="t3" colspan="2">Communication of intention to grant the patent</td></tr><td class="t2">15.09.2017</td><td class="t3" colspan="2">Despatch of communication that the application is deemed to be withdrawn, reason: fee for grant / fee for printing not paid in time</td></tr><td class="t2">15.11.2017</td><td class="t3" colspan="2">Fee for grant paid</td></tr><td class="t2">15.11.2017</td><td class="t3" colspan="2">Fee for publishing/printing paid</td></tr><td class="t2">15.11.2017</td><td class="t3" colspan="2">Receipt of the translation of the claim(s)</td></tr><td class="th">Divisional application(s)</td><td class="t2" colspan="3">The date of the Examining Division's first communication in respect of the earliest application for which a communication has been issued   is
+			&nbsp;05.04.2016</td></tr><td class="th">Opposition(s)</td><td class="t2">28.09.2018</td><td class="t3" colspan="2">No opposition filed within time limit [2018/49]</td></tr><td class="th" rowspan="4">Request for further processing for:</td><td class="" colspan="3">The application is deemed to be withdrawn due to failure to fulfill actions required for granting the patent<br/>
+			</td></tr><td class="">15.11.2017</td><td class="" colspan="2">Request for further processing filed</td></tr><td class="">15.11.2017</td><td class="" colspan="2">Full payment received (date of receipt of payment)<br/>Request granted</td></tr><td class="">27.11.2017</td><td class="" colspan="2">Decision despatched</td></tr><td class="th" rowspan="5">Fees paid</td><td class="th" colspan="3">Renewal fee</td></tr><td class="t2">17.02.2014</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;03</td></tr><td class="t2">30.01.2015</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;04</td></tr><td class="t2">22.02.2016</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;05</td></tr><td class="t2">17.02.2017</td><td class="t3" colspan="2">Renewal fee&nbsp;patent year&nbsp;06</td></tr><tr class="optoutCls " ><td class="th optout-label" rowspan="2">Opt-out from the exclusive &nbsp;<b><span title="Follow the hyperlink to access the opt-out information recorded in the Register of the Unified Patent Court" class="tooltipActuator noPrint">Tooltip</span></b><br/>competence of the Unified <br/>Patent Court</td><td class="t2" colspan="3"><span id="optoutTextTop">
+						<a href='https://www.unifiedpatentcourt.org/en/registry/opt-out/results?case_type&patent_number=EP2685976'>See the Register of the Unified Patent Court for opt-out data</a>	
+					</span>
+				</td></tr><tr class="optoutCls" ><td class="t2" colspan="3"><span id="optoutDisclaimer">
+						Responsibility for the accuracy, completeness or quality of the data displayed under the link provided lies entirely with the Unified Patent Court.</span>
+				</td></tr><td class="th" rowspan="36">Lapses during opposition &nbsp;<b><span title="This date corresponds to the date of lapse of the European patent in a contracting state or the Unitary Patent, during the opposition period, and where appropriate, pending a final decision on opposition (Rule 143(1)(p) EPC)." class="tooltipActuator noPrint">Tooltip</span></b></td><td class="t2">HU</td><td class="t3" colspan="2">26.02.2012</td></tr><td class="t2">AL</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">MK</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">PT</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">SE</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">TR</td><td class="t3" colspan="2">27.12.2017</td></tr><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><td class="t2">MT</td><td class="t3" colspan="2">26.02.2018</td></tr><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><td class="t2" colspan="3">[2020/34]</td></tr><tr class="former " ><td class="t1" rowspan="34">Former [2020/31]</td><td class="t2">HU</td><td class="t3" colspan="2">26.02.2012</td></tr><tr class="former" ><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">TR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">MT</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="33">Former [2020/29]</td><td class="t2">HU</td><td class="t3" colspan="2">26.02.2012</td></tr><tr class="former" ><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">TR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">MT</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="32">Former [2020/27]</td><td class="t2">HU</td><td class="t3" colspan="2">26.02.2012</td></tr><tr class="former" ><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">TR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">MT</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="30">Former [2020/16]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">TR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">MT</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="29">Former [2020/08]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">MT</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="28">Former [2019/12]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">BE</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="26">Former [2019/09]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IE</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="25">Former [2018/52]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LU</td><td class="t3" colspan="2">26.02.2018</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="24">Former [2018/51]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">DK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CH</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">LI</td><td class="t3" colspan="2">28.02.2018</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="21">Former [2018/44]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">MC</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="20">Former [2018/40]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RO</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="19">Former [2018/39]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">IT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="18">Former [2018/38]</td><td class="t2">AT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former" ><td class="t2">IS</td><td class="t3" colspan="2">27.04.2018</td></tr><tr class="former " ><td class="t1" rowspan="16">Former [2018/37]</td><td class="t2">CY</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">CZ</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">EE</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">ES</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">PL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SK</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">SM</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former " ><td class="t1" rowspan="9">Former [2018/34]</td><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NL</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former " ><td class="t1" rowspan="8">Former [2018/25]</td><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LV</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">BG</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former " ><td class="t1" rowspan="6">Former [2018/23]</td><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">HR</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">RS</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><tr class="former" ><td class="t2">GR</td><td class="t3" colspan="2">28.03.2018</td></tr><tr class="former " ><td class="t1" rowspan="3">Former [2018/22]</td><td class="t2">FI</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">LT</td><td class="t3" colspan="2">27.12.2017</td></tr><tr class="former" ><td class="t2">NO</td><td class="t3" colspan="2">27.03.2018</td></tr><td class="th" rowspan="5">Cited in</td><td class="th">International search</td><td class="t2" colspan="2">[X] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2007022474&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >WO2007022474</a>
+					&nbsp;(CYLENE PHARMACEUTICALS INC et al.)  [X]  1-5,17,22-28 * page  29, paragraph  76  - page  30, paragraph  78 * * page  38, paragraph  110 * * page  64, paragraph  189 * * page 139: compounds 6-9 * * claims 23,24 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[Y] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2010113096&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >WO2010113096</a>
+					&nbsp;(TEL HASHOMER MEDICAL RES INFRASTRUCTURE & SERVICES LTD et al.)  [Y]  1-43 * claims 3,5 *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[A] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2009046383&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >WO2009046383</a>
+					&nbsp;(CYLENE PHARMACEUTICALS INC et al.)  [A]  1-43 * abstract * * claim - *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[A] <a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008131134&amp;called_by=EuropeanRegister" target="_blank" class="ext" style="" >WO2008131134</a>
+					&nbsp;(CYLENE PHARMACEUTICALS INC et al.)  [A]  1-43 * abstract *</td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">[Y] &nbsp;&nbsp;DRYGIN DENIS ET AL: "Targeting RNA polymerase I with an oral small molecule CX-5461 inhibits ribosomal RNA synthesis and solid tumor growth.", CANCER RESEARCH 15 FEB 2011 LNKD- PUBMED:21159662, vol. 71, no. 4, 15 February 2011 (2011-02-15), pages 1418 - 1430, XP002678820, ISSN: 1538-7445 [Y]  1-43 * the whole document *<br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/0008-5472.CAN-10-1728" target="_blank" class="ext" >http://dx.doi.org/10.1158/0008-5472.CAN-10-1728</a></td></tr><td class="th" rowspan="68"> </td><td class="th">by applicant</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008081435&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2008081435</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2010113096&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2010113096</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DEP0983256&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >EP0983256</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS9808562&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US9808562</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO9852933&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO9852933</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO03081201&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO03081201</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS2009093455&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US2009093455</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS4666828&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US4666828</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS4683202&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US4683202</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS4801531&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US4801531</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS5192659&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US5192659</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS5272057&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US5272057</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3791932&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3791932</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3839153&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3839153</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3850752&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3850752</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3850578&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3850578</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3853987&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3853987</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3867517&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3867517</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3879262&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3879262</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3901654&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3901654</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3935074&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3935074</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3984533&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3984533</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS3996345&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US3996345</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS4034074&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US4034074</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS4098876&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US4098876</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS4879219&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US4879219</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS5011771&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US5011771</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DUS5281521&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >US5281521</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2"><a href="https://worldwide.espacenet.com/patent/search?q=pn%3DWO2009046383&amp;called_by=EuropeanRegister" target="_blank" class="int" style="" >WO2009046383</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;ACHIRON A ET AL., CLINICAL AND EXPERIMENTAL IMMUNOLOGY, vol. 149, 2007, pages 235 - 242 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;RUSSELL J; ZOMERDIJK JC: "RNA-polymerase-I-directed rDNA transcription, life and works", TRENDS BIOCHEM SCI, vol. 30, 2005, pages 87 - 96, XP004731283, DOI: doi:10.1016/j.tibs.2004.12.008 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.tibs.2004.12.008" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.tibs.2004.12.008</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;DRYGIN D ET AL.: "The RNA polymerase I transcription machinery: an emerging target for the treatment of cancer", ANNU REV PHARMACOL TOXICOL, vol. 50, 2010, pages 131 - 156 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;KALITA K ET AL.: "Inhibition of nucleolar transcription as a trigger for neuronal apoptosis", J NEUROCHEM, vol. 105, 2008, pages 2286 - 2299 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;DRYGIN D ET AL.: "Targeting RNA polymerase I with an oral small molecule CX-5461 inhibits ribosomal RNA synthesis and solid tumor growth", CANCER RES, vol. 71, 2011, pages 1418 - 1430, XP002678820, DOI: doi:10.1158/0008-5472.CAN-10-1728 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1158/0008-5472.CAN-10-1728" target="_blank" class="ext" >http://dx.doi.org/10.1158/0008-5472.CAN-10-1728</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;CAVANAUGH A ET AL.: "Mammalian Rm3 is required for the formation of a transcription competent preinitiation complex containing RNA polymerase I", GENE EXPR, vol. 14, 2008, pages 131 - 147 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;LEUENROTH SJ; CREWS CM: "Triptolide-induced transcriptional arrest is associated with changes in nuclear substructure", CANCER RES., vol. 68, 2008, pages 5257 - 5266 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;LIU Y ET AL.: "Triptolide, a component of Chinese herbal medicine, modulates the functional phenotype of dendritic cells", TRANSPLANTATION, vol. 84, 2007, pages 1517 - 1526 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;WANG Y ET AL.: "Triptolide modulates T-cell inflammatory responses and ameliorates experimental autoimmune encephalomyelitis", J NEUROSCI RES., vol. 86, 2008, pages 2441 - 2449, XP002585665 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;CAVANAUGH ET AL.: "Rrn3 Phosphorylation is a regulatory checkpoint for ribosome biogenesis", J. BIOL. CHEM., vol. 277, 2002, pages 27423 - 27432, XP002238557, DOI: doi:10.1074/jbc.M201232200 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1074/jbc.M201232200" target="_blank" class="ext" >http://dx.doi.org/10.1074/jbc.M201232200</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;REAGAN-SHAW S. ET AL., FASEB J., vol. 22, 2007, pages 659 - 661 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;POLMAN CH. ET AL.: "Diagnostic criteria for multiple sclerosis: 2010 revisions to the McDonald criteria", ANNALS OF NEUROLOGY, vol. 69, no. 2, 2011, pages 292 - 302 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;"Remington's Pharmaceutical Sciences", MACK PUBLISHING CO. </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;FINGL ET AL.: "The Pharmacological Basis of Therapeutics", 1975, pages: L </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;NUOVO GJ ET AL., AM J SURG PATHOL., vol. 17, 1993, pages 683 - 90 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;KOMMINOTH P ET AL., PATHOL RES PRACT., vol. 190, 1994, pages 1017 - 25 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;DIMRI GP; LEE X ET AL.: "A biomarker that identifies senescent human cells in culture and in aging skin in vivo", PROC NATL ACAD SCI U S A, vol. 92, 1995, pages 9363 - 9367, XP009065201, DOI: doi:10.1073/pnas.92.20.9363 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1073/pnas.92.20.9363" target="_blank" class="ext" >http://dx.doi.org/10.1073/pnas.92.20.9363</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SAMBROOK ET AL.: "Molecular Cloning: A laboratory Manual", 1989 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;AUSUBEL, R. M.,: "Current Protocols in Molecular Biology", vol. I-III, 1994 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;AUSUBEL ET AL.: "Current Protocols in Molecular Biology", 1989, JOHN WILEY AND SONS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;PERBAL: "A Practical Guide to Molecular Cloning", 1988, JOHN WILEY & SONS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;WATSON ET AL.: "Recombinant DNA", SCIENTIFIC AMERICAN BOOKS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;BIRREN ET AL.: "Genome Analysis: A Laboratory Manual Series", vol. 1-4, 1998, COLD SPRING HARBOR LABORATORY PRESS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;CELLIS, J. E.,: "Cell Biology: A Laboratory Handbook", vol. I-III, 1994 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;COLIGAN J. E.,: "Current Protocols in Immunology", vol. I-III, 1994 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;STITES ET AL.: "Basic and Clinical Immunology(8th Edition)", 1994, APPLETON & LANGE </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MISHELL AND SHIIGI: "Selected Methods in Cellular Immunology", 1980, W. H. FREEMAN AND CO. </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;GAIT, M. J.: "Oligonucleotide Synthesis", 1984 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;HAMES, B. D., AND HIGGINS S. J.,: "Nucleic Acid Hybridization", 1985 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;HAMES, B. D., AND HIGGINS S. J.,: "Transcription and Translation", 1984 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;FRESHNEY, R. I.,: "Animal Cell Culture", 1986 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;"Immobilized Cells and Enzymes", 1986, IRL PRESS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;PERBAL, B.: "A Practical Guide to Molecular Cloning", 1984 </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;"Methods in Enzymology", vol. 1-317, ACADEMIC PRESS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;"PCR Protocols: A Guide To Methods And Applications", 1990, ACADEMIC PRESS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MARSHAK ET AL.: "Strategies for Protein Purification and Characterization - A Laboratory Course Manual", 1996, CSHL PRESS </td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;CHUA PC ET AL.: "A novel and efficient synthesis of 3-carboxy-4-oxo-1,8-naphthyridines using magnesium chloride", TETRAHEDRON LETTERS, vol. 49, 2008, pages 4437 - 4442, XP022703737, DOI: doi:10.1016/j.tetlet.2008.05.005 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.tetlet.2008.05.005" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.tetlet.2008.05.005</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;SCHWAEBE MK ET AL.: "Facile and efficient generation of quinolone amides from esters using aluminum chloride", TETRAHEDRON LETTERS, vol. 52, 2011, pages 1096 - 1100, XP028272837, DOI: doi:10.1016/j.tetlet.2010.12.108 <br/><br/><b>DOI:</b>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1016/j.tetlet.2010.12.108" target="_blank" class="ext" >http://dx.doi.org/10.1016/j.tetlet.2010.12.108</a></td></tr><td class="t2">&nbsp;</td><td class="t2" colspan="2">&nbsp;&nbsp;MILLER, S; KARPUS WJ.: "Curr Protoc Immunol", 2007, article "Experimental autoimmune encephalomyelitis in the mouse" </td></tr></table>The EPO accepts no responsibility for the accuracy of data originating from other authorities; in particular, it does not guarantee that it is complete, up to date or fit for specific purposes.</div>
+			</div>
+	</div>
+<div id="epoFooter" class="noPrint">
+				<ul>
+				<li>
+					<a href="https://www.epo.org/footer/legal-notice.html" target="_blank">Legal notice</a></li>
+					<li>
+					<a href="https://www.epo.org/footer/terms.html" target="_blank">Terms of use</a></li>
+					<li>25.1.4; 39p</li>
+					</ul>
+			</div>
+		</div>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0b1efc27f30fba3',t:'MTc4MTM2MjUyOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

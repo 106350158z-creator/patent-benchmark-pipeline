@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import argparse
 import json
 import re
@@ -7,6 +9,8 @@ from typing import Any
 
 
 def normalize_text(value: str) -> str:
+    value = re.sub(r"---\s*PAGE\s+[0-9]+\s*---", " ", value, flags=re.I)
+    value = re.sub(r"^\s*SOURCE:.*$", " ", value, flags=re.I | re.M)
     value = value.replace("\u00a0", " ")
     value = re.sub(r"[\u2018\u2019]", "'", value)
     value = re.sub(r"[\u201c\u201d]", '"', value)
@@ -14,40 +18,57 @@ def normalize_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def compact_text(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", normalize_text(value))
+
+
 def iter_original_texts(data: dict[str, Any]) -> list[tuple[str, str]]:
     fields: list[tuple[str, str]] = []
-    scores = data.get("dimension_scores") or {}
-    for key, value in scores.items():
-        if key.endswith("_disc") and isinstance(value, dict):
-            fields.append((f"dimension_scores.{key}.original_text", str(value.get("original_text") or "")))
 
-    evidence = data.get("evidence_trace") or {}
-    for section in ["specification_support", "examination_material_evidence"]:
-        for index, item in enumerate(evidence.get(section) or []):
-            if isinstance(item, dict):
-                fields.append((f"evidence_trace.{section}[{index}].original_text", str(item.get("original_text") or "")))
+    def walk(value: Any, path: str) -> None:
+        if path.startswith("top_risk_reasons") or path.startswith("recommended_actions"):
+            return
+        if isinstance(value, dict):
+            for key, item in value.items():
+                child_path = f"{path}.{key}" if path else str(key)
+                if key == "original_text":
+                    fields.append((child_path, str(item or "")))
+                else:
+                    walk(item, child_path)
+        elif isinstance(value, list):
+            for index, item in enumerate(value):
+                walk(item, f"{path}[{index}]")
+
+    walk(data, "")
     return fields
 
 
-def source_documents(case_dir: Path) -> list[tuple[Path, str]]:
-    documents: list[tuple[Path, str]] = []
+def source_documents(case_dir: Path) -> list[tuple[Path, str, str]]:
+    documents: list[tuple[Path, str, str]] = []
     for path in sorted(case_dir.rglob("*.txt")):
         if path.name.startswith("_tmp") or path.name.endswith(".prompt.txt") or "dryrun.prompt" in path.name:
             continue
         text = path.read_text(encoding="utf-8-sig", errors="ignore")
         if text.strip():
-            documents.append((path, normalize_text(text)))
+            normalized = normalize_text(text)
+            if normalized:
+                documents.append((path, normalized, compact_text(text)))
     return documents
 
 
-def best_match(value: str, documents: list[tuple[Path, str]]) -> tuple[Path | None, float]:
+def best_match(value: str, documents: list[tuple[Path, str, str]]) -> tuple[Path | None, float]:
     query = normalize_text(value)
     if not query:
         return None, 0.0
+    if len(query) < 8:
+        return None, 0.0
 
-    for path, normalized in documents:
+    for path, normalized, compacted in documents:
         if query in normalized:
             return path, 1.0
+        compact_query = compact_text(value)
+        if len(compact_query) >= 30 and compact_query in compacted:
+            return path, 0.97
 
     words = query.split()
     anchors = []
@@ -56,7 +77,7 @@ def best_match(value: str, documents: list[tuple[Path, str]]) -> tuple[Path | No
 
     best_path: Path | None = None
     best_score = 0.0
-    for path, normalized in documents:
+    for path, normalized, compacted in documents:
         if anchors and all(anchor in normalized for anchor in anchors):
             return path, 0.92
         prefix = " ".join(words[:6])

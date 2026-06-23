@@ -1,0 +1,187 @@
+{
+  "application_number": "EP12710797",
+  "source_pdf": "docs/24-03-2017_Text_intended_for_grant_(clean_copy)_EZ69LH4F9917DSU.pdf",
+  "source_pdf_sha256": "27ad214921e011c92a5864c23a98c28c7a8c69493fe37bec619f5fe4a21db657",
+  "source_kind": "text_intended_for_grant_clean_copy",
+  "draft_text_source": "docs/13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+  "draft_text_pdf": "docs/13-10-2016_Claims_EZK6D2TL7828DSU.pdf",
+  "draft_generated_at": "2026-06-18T07:20:48.029334+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [
+    "Claim 5 is an OCR placeholder and must be filled from the authority PDF during review."
+  ],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "A compound of Formula (VI),\nNR7R8\nQ)m\nFormula (VI)\nor a pharmaceutically acceptable salt or ester thereof;\nwherein:\nX1 is CH or N;\nX2,X3,X4, X5,X6 and X7independently are NR4, CH2, CHQ or C(Q)2, provided\nthat: (i) zero, one or two of X2, X3,X4,X5, X6 and X7 are NR4; (ii) when X1 is N,\nboth of X2 and X7 are not NR4; (ii) when X1 is N,X3 and X6 are not NR4; and\n(iv) when X1is CH and two of X2, X3,X4, X5, X6 and X7 are NR4, the two NR4 are\nlocated at adjacent ring positions or are separated by two or more other ring\npositions;\nA and V independently are H,halo, azido, -CN, -CF3, -CONR1R2,-NR1R2,-SR2,\n-OR2,-R3,-W, -L-W,-W0, or -L-N(R)-Wo;\neach Q is independently halo, azido, -CN, -CF3, -CONR1R2,-NR1R2, -SR2, -OR2,\n-R3,-W,-L-W,-W0,or -L-N(R)-W0;\nin each —NR1R2, R1 and R2 together with N may form an optionally substituted\nazacyclic ring, optionally containing one additional heteroatom selected from N,\nO and S as a ring member;\nR1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or\n=0;\nR is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10\nhalogens, =O, or an optionally substituted 3-7 membered carbocyclic or\nheterocyclic ring;\nR3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or\nC6-C12 arylalkyl, or a heteroform of one of these, each of which may be\noptionally substituted with one or more halogens, =O, or an optionally\nsubstituted 3-6 membered carbocyclic or heterocyclic ring;\neach R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-\nWo;\neach R is independently H or C1-C6 alkyl;\nR7 is H and R8 is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10\nheteroalkenyl, each of which may be optionally substituted with one or more\nhalogens, =O, or an optionally substituted 3-7 membered carbocyclic or\nheterocyclic ring; or in —NR7R8, R7 and R8 together with N may form an\noptionally substituted azacyclic ring, optionally containing an additional\nheteroatom selected from N, O and S as a ring member;\nm is 0,1,2,3 or 4;\nnis 0,1,2,3,4,or 5;\nL is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10\nheteroalkenylene linker, each of which may be optionally substituted with one\nC1-C6 alkyl;\nW is an optionally substituted 4-7 membered azacyclic ring, optionally\ncontaining an additional heteroatom selected from N, O and S as a ring\nmember; and\nWo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl\n30group substituted with from 1 to 4 fluorine atoms,\nfor use in treating multiple sclerosis in a subject.",
+      "source_pages": [
+        1,
+        2,
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 2,
+      "text": "A compound of Formula (VIII),\nNR7R\nn(Q)\nFormula (VII1)\nor a pharmaceutically acceptable salt or ester thereof;\nwherein:\nA and V independently are H, halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -SR2,\n-OR2, -R3, -W, -L-W, -W0, or -L-N(R)-Wo,\neach Q is independently halo,azido, -CN,-CF3,-CONR1R2,-NR1R2, -SR2,-OR2,\n-R3, -W, -L-W, -Wo, or -L-N(R)-Wo;\nin each —NRiR2, R1 and R2 together with N may form an optionally substituted\nO and S as a ring member;\nR1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or\n=0;\nR2is H,or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10\nheteroalkenyl, each of which may be optionally substituted with one or more\nhalogens, =O, or an optionally substituted 3-7 membered carbocyclic or\nheterocyclic ring;\nR? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or\nC6-C12 arylalkyl, or a heteroform of one of these, each of which may be\noptionally substituted with one or more halogens, =O, or an optionally\nsubstituted 3-6 membered carbocyclic or heterocyclic ring;\neach R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-\nWo;\neach R is independently H or C1-C6 alkyl;\nR7 is H and R8 is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10\nheteroalkenyl, each of which may be optionally substituted with one or more\nhalogens,=O, or an optionally substituted 3-7 membered carbocyclic or\nheterocyclic ring; or in —NR7R8, R7 and R8 together with N may form an\noptionally substituted azacyclic ring, optionally containing an additional\nheteroatom selected from N, O and S as a ring member;\nm is 0,1,2,3 or 4;\nn is 0,1, 2,3, 4 or 5;\npis 0,1, 2 or 3;\nL is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10\nheteroalkenylene linker, each of which may be optionally substituted with one\nor more substituents selected from the group consisting of halogen, oxo (=O), or\nC1-C6 alkyl;\nW is an optionally substituted 4-7 membered azacyclic ring, optionally\ncontaining an additional heteroatom selected from N, O and S as a ring\nmember; and\nWo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl\ngroup substituted with from 1 to 4 fluorine atoms,\nfor use in treating multiple sclerosis in a subject.",
+      "source_pages": [
+        3,
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "A compound for use according to claim 1 or 2, wherein R7is H and R8\nis a Ci-4 alkyl substituted with an optionally substituted aromatic heterocyclic\nring.",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "A compound for use according to claim 3,wherein the optionally\nsubstituted aromatic heterocyclic ring is selected from pyridine,pyrimidine,\npyrazine, imidazole, pyrrolidine, and thiazole.\nA compound of Formula (VIl)\nn(Q)\n(Q）m\nFormula (VII)\nor a pharmaceutically acceptable salt or ester thereof;\nA and V independently are H, halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -\nSR2,-OR2,-R3,-W,-L-W,-W0,or -L-N(R)-Wo;\neach Q is independently halo, azido, -CN,-CF3, -CONR1R2,-NR1R2, -SR2, -OR2,\n-R3,-W,-L-W,-Wo,or -L-N(R)-W0;\nin each —NRiR2, R1 and R2 together with N may form an optionally substituted\nazacyclic ring, optionally containing an additional heteroatom selected from N,\nO and S as a ring member;\nR1 is H or C1-C6 alkyl, optionally substituted with one or more halogens, or\n=0;\nR2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10\nheteroalkenyl, each of which may be optionally substituted with one or more\nhalogens, =O, or an optionally substituted 3-7 membered carbocyclic or\nheterocyclicring;\nR3 is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or\noptionally substituted with one or more halogens, =O, or an optionally\nsubstituted 3-6 membered carbocyclic or heterocyclic ring;\neach R4is independently H,or C1-C6 alkyl;or R4 may be -W,-L-W or -L-N(R)-\nWo;\neach R is independently H or C1-C6 alkyl;\nm is 0, 1, 2, 3 or 4;\nn is 0,1, 2, 3,4 or 5;\np is 0,1,2 or 3;\nL is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10\nheteroalkenylene linker, each of which may be optionally substituted with one\nor more substituents selected from the group consisting of halogen,oxo (=O),or\nC1-C6 alkyl;\nWis an optionally substituted 4-7 membered azacyclic ring,optionally\ncontaining an additional heteroatom selected from N, O and S as a ring\nmember; and\nWo is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl\ngroup substituted with from 1 to 4 fluorine atoms,\n20 for use in treating multiple sclerosis in a subject.",
+      "source_pages": [
+        5,
+        6
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "",
+      "source_pages": [],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": "Draft placeholder: OCR did not expose a clear boundary for this claim number. Fill from the authority PDF during review."
+    },
+    {
+      "claim_number": 6,
+      "text": "A compound for use according to claim 5, wherein p is 0 or 1.",
+      "source_pages": [
+        6
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 7,
+      "text": "A compound for use according to any of claims 1 to 6, wherein A and V\n5are independently H or halo.",
+      "source_pages": [
+        6
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 8,
+      "text": "A compound for use according to any of claims 1 to 7, wherein R4 is H\nor C1-4 alkyl.",
+      "source_pages": [
+        6
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 9,
+      "text": "A compound for use according to any of claims 1 to 8, wherein m and n\nareacho.",
+      "source_pages": [
+        7
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 10,
+      "text": "A compound selected from the group consisting of:\nCH3\nCH3\nCH3\nCH3\nHC\nH\nH\nHC\nCH\n:and\nHN-\nCH\nor a pharmaceutically acceptable salt or ester thereof,\nfor use in treating multiple sclerosis in a subject.",
+      "source_pages": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 11,
+      "text": "A method of monitoring treatment efficiency of a subject having\nmultiple sclerosis,the method comprising:\ncomparing a level of expression of least one gene involved in the RNA\npolymerase I pathway in a cell of the subject who has been treatedwith said\ncompound of any one of claims 1-10to a level of expression of said at least one\ngene in a cell of the subject prior to being treated with said compound,\n(i)\nwherein a decrease above a predetermined threshold in said\nlevel of expression of said at least one gene following said treating with said\ncompound relative to said level of expression of said at least one gene prior to\nsaid treating with said compound indicates that said compound is efficient for\ntreating the subject;\n(i)\nwherein anincrease above apredetermined threshold in said\nlevel of expression of said at least one gene following said treating with said\ncompound relative to said level of expression of said at least one gene prior to\nsaid treating with said compound indicates that said compound is not efficient\nfor treating the subject;or\n(ii)\nwherein when alevel of expression of said atleast one gene\nfollowing said treating with said compound is identical or changed below a\npredetermined threshold as compared toprior to said treating withsaid\ncompound then thetreatmentis not efficientfor treating the subject\nthereby monitoring treatment efficiency of the subject having multiple\nsclerosis.",
+      "source_pages": [
+        11,
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 12,
+      "text": "A compound for use according to any one of claims 1-10,or the method\nof claim 11,wherein said compound is 2-(4-methyl-1,4-diazepan-1-yl)-N-(5-\nmethylpyrazin-2-yl)methyl)-5-oxo-5H-benzo[4,5]thiazolo[3,2-\na][1,8]naphthyridine-6-carboxamide as depicted in Formula",
+      "source_pages": [
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 13,
+      "text": "A compound for use according to any of claims 1-10 or the method of\nclaim 11 or 12, wherein said multiple sclerosis is a relapsing-remitting course of\nmultiple sclerosis.",
+      "source_pages": [
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 14,
+      "text": "A compound for use according to any of claims 1-10 or the method of\nclaim 11 or 12,wherein said multiple sclerosis is a progressive course of\nmultiplesclerosis.",
+      "source_pages": [
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 15,
+      "text": "A compound for use according to any of claims 1-10 or the method of\nclaim 11 or 12, wherein said multiple sclerosis is a benign multiple sclerosis.",
+      "source_pages": [
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

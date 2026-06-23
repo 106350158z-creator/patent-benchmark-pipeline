@@ -1,0 +1,44 @@
+{
+  "novelty_score": 80,
+  "novelty_disc": {
+    "analysis": "新颖性曾被审查程序中针对D4提出异议，焦点是原权利要求3和5中R1为氢的化合物4、5和12并入新权利要求1后是否被D4公开。申请人争辩称，D4至多一般性公开R1为氢，但未直接且明确公开并入权利要求1的具体化合物，并指出例如甲氧基位置不同。随后申请人文件记载审查部门已承认当前请求的新颖性，且案件最终进入拟授权并授权。因此，当前Art.54新颖性风险较低，但因历史上存在D4新颖性异议，评分不取满分。",
+    "original_text": "TheExaminingDivisionhas alreadyacknowledgednoveltyof the presently\nclaimedsubjectmatteraswellasaninventivestepforsubjectmatterwherein\n\"R1 is substituted or unsubstituted phenyl, optionally substituted C3-Cs cycloal-\nkyl\".",
+    "translation": "审查部门已经承认当前要求保护主题的新颖性，并且也承认其中“R1为取代或未取代苯基、任选取代的C3-C5环烷基”的主题具有创造性。",
+    "llm_evidence_explanation": "该连续原文直接记载审查部门已承认当前权利要求主题的新颖性，结合后续授权结论，支持新颖性异议已被克服。"
+  },
+  "affected_claims": [
+    1
+  ],
+  "evidence": [
+    {
+      "issue": "novelty",
+      "source": "22-03-2021_Reply_to_communication_from_the_Examining_Division_E50SR0V95329DSU_ocr.txt, pages 2-3",
+      "original_text": "Itwasobjectedtointheofficeactionthatthecompoundsofformerclaims3and\n5 with R1 being hydrogen (compounds 4,5 and 12 which are now part of claim 1)\nare not novel over D4. It is not agreed. While D4 in general may disclose R1 being\nhydrogen，thespecificcompoundsnowincorporatedintoclaim1arenotdirectly\nand unambiguously disclosed in D4.It is noted that e.g. the methoxy group of\ncompound 4 of the present application is in a different position than the methoxy\ngroupofcompound32ofD4.",
+      "translation": "审查意见曾认为原权利要求3和5中R1为氢的化合物，即现已成为权利要求1一部分的化合物4、5和12，相对于D4不具备新颖性。申请人不同意。尽管D4一般可能公开R1为氢，但现在并入权利要求1的具体化合物并未在D4中直接且明确公开。还指出，例如本申请化合物4的甲氧基位置不同于D4化合物32的甲氧基位置。",
+      "llm_evidence_explanation": "该证据显示新颖性异议的具体对象、引用的单一现有技术D4，以及申请人以“未直接且明确公开”作为EP新颖性标准下的抗辩。"
+    },
+    {
+      "issue": "novelty",
+      "source": "22-03-2021_Reply_to_communication_from_the_Examining_Division_E50SR0V95329DSU_ocr.txt, page 3",
+      "original_text": "Thethreecompoundsnewlyintroducedintoclaim1arenotanticipatedbyD4\nand the subject matter of claim 1 is novel.",
+      "translation": "新引入权利要求1的三个化合物未被D4预见，权利要求1的主题具备新颖性。",
+      "llm_evidence_explanation": "该连续原文体现申请人对权利要求1相对于D4的新颖性结论性争辩。"
+    },
+    {
+      "issue": "novelty",
+      "source": "21-03-2022_Communication_about_intention_to_grant_a_European_patent_L0MFXQWD1D5KGZ9_ocr.txt, page 1",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+      "translation": "兹通知你，审查部门拟基于上述申请以及下文所示的文本、附图和相关著录数据授予欧洲专利。",
+      "llm_evidence_explanation": "拟授权通知表明审查部门在最终文本基础上不再维持阻碍授权的新颖性异议。"
+    },
+    {
+      "issue": "novelty",
+      "source": "11-08-2022_Decision_to_grant_a_European_patent_L6FNAWHJ1M7IUKL_ocr.txt, page 1",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16802532.8aEuropeanpatentwiththetile\nand thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.03.22isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经对欧洲专利申请号16802532.8进行审查，现依据2022年3月21日根据EPC规则71(3)发出的通知或相关信息中所示的题名和支持文件，就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "最终授权决定确认案件已通过实质审查并授予专利，支持当前新颖性风险低的结论。"
+    }
+  ],
+  "risk_reason": "Novelty objection over D4 was argued and overcome before grant.",
+  "recommended_action": "Maintain the granted claim scope and preserve the D4 distinction arguments, especially the lack of direct and unambiguous disclosure."
+}

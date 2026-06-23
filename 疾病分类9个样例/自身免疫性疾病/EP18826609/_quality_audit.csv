@@ -1,0 +1,2 @@
+﻿category,application_number,claim_chars,source_docs,txt_files,ocr_files,useful_txt_files,docs_text_chars,analysis_outcome,grant_label,known_outcome,doclist_outcome,aggregate_score,evidence_total,evidence_exact_hits,evidence_compact_hits,quality_status,issues
+,EP18826609,431,27,59,27,27,190358,granted,yes,granted,granted,92,15,0,15,pass,

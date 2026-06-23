@@ -1,0 +1,148 @@
+
+--- PAGE 1 ---
+dompatent
+von Kreisler
+dompatent von Kreisler |P.0. Box 10 22 41 | 50462 Koln/Germany
+Koln
+EuropeanPatentOffice
+Patentanwalte |Patent Attorneys
+Bob-van-Benthem-Platz1
+Jochen Hilleringmann,
+80469Munich
+Dipl.-Ing.
+Dr.Hans-Peter Jonsson,
+Dipl.-Chem.
+Dr.Thomas Weber,
+Dipl.-Chem.
+Dr.Jorg Helbing.
+Dipl.-Chem.
+Alexander von Kirschbaum,
+Dipl.-Ing.
+Dr.Christoph Schreiber,
+Dipl.-Chem.
+Dr.Thomas Escher,
+Dipl.-Chem.
+Constantin Ruhland,
+Contact:
+Tel.:
+Dipl.-Ing.
+Dr.Christoph Schreiber
+cschreiber@dompatent.de
++49 221 91652-228
+Florian Kruger,
+Dipl.-Ing.
+Our Ref.:
+Kerstin Renner,
+172985EP CS-AM/vg
+8 November 2021
+Dipl-Ing.
+Andreas Gagidis,
+Dipl-Ing. (BA)
+EuropeanPatentApplication16802532.8
+Dr. Eva Bock,
+USEOFPTERIDINONEDERIVATIVESERVINGASEGFR
+Dipl.-Chem., LL.M.
+Dr.Marius Vieweg.
+INHIBITOR
+Dipl.-Phys.
+EastChinaUniversityofScienceandTechnology
+Dr.Anke Krebs,
+Dipl.-Chem., LL.M.
+Dr.Alan Stewart,
+B.Sc. (Hons) Chem.
+Responsivetothecommunicationdated28June2021:
+Dr.Alexander Schuld,
+Dipl.-Ing.
+Dr. Reza Ghadiri,
+Dipl.-Ing.
+Anamendedsetof8claimsissubmittedinmark-upandclean
+Thomas Henzler,
+M.Sc.RWTH,M.Sc.Tsinghua Ing.
+copywhichshouldbethebasisforthefurtherprosecution.
+Dr.TobiasTimmerscheidt,
+MSc ETH Chem., LL.B.
+Rechtsanwalte |Attorneys at Law
+Claims7and8havebeenrewordedinthe"secondmedicaluse"
+Dr. Felix Hauck, LL.M.
+Dr. Alexander Theis, LL.M.
+format,basedonPCTclaims7to9.Theclaims7and8were
+WanZe Zhang, LL.M.
+alreadyamendedtothisformatwiththeresponsedated21June
+OfCounsel
+2019, but apparently，the amendment was omitted in the
+Patentanwalte |Patent Attorneys
+GeorgDallmeyer,
+previousresponses.
+Dipl.-ing.
+Dr.Hans-Wilhelm Meyers,
+Dipl.-Chem.
+dompatent von Kreisler Selting Werner Partnerschaft von Patentanwalten und Rechtsanwalten mbB,Koln, Amtsgericht Essen, PR2531
+Kanzlei Koln: Deichmannhaus am Dom -Bahnhofsvorplatz 1-50667 Koln/Germany -Tel. +49 221 916520 ·Fax +49 221 134297
+Buro Munchen: Palais an der Oper - MaximilianstraBe 2 - 80539 Munchen/Germany - Tel. +49 89 2050085033
+mail@dompatent.de -www.dompatent.de
+
+--- PAGE 2 ---
+dompatent
+von Kreisler
+- 2 -
+Inventivestep
+TheExaminingDivisionhas alreadyacknowledgednoveltyof the presently
+claimedsubjectmatteraswellasaninventivestepforsubjectmatterwherein
+"R1 is substituted or unsubstituted phenyl, optionally substituted C3-Cs cycloal-
+kyl".
+However，itwas objectedtothat thethreeextracompounds，whichhavea
+hydrogen at the position of R1, and which were included in claim 1 with the
+previousresponse，arenotbasedonaninventivestep.
+Itisarguedthatthethreeextracompounds4，5and12areworseintheir
+inhibitory activity than the structurallyclosest compound32 of Table2 of D4.
+AccordingtotheExaminingDivision，thecompound32ofD4inhibitsthe
+proliferation of H1975 cells with an ICso value of 0.0039 μM.However, it appears
+that this argument is based on a misunderstanding of Table 2 of the Chinese
+publicationD4.Table2 onpages 30 and 31 of the Chinese document D4 shows
+the ICsovalues inμMonproliferationof H1975cells.As becomes clear frompage
+31, line 5 of D4, the ICso value of compound 32 on H1975 cells is 0.038 μM, and
+not0.0039μMasstatedintheofficeaction.
+Table 1 of thepresent applicationshowstheinhibitoryactivity onproliferation of
+H1975 cells of the compounds 4, 5 and 12 (which are the extra compounds of
+claim 1). The ICso values are 0.009, 0.006 and 0.006 μM, respectively. Therefore,
+thecompounds4,5and 12 aresignificantlybetterin theirinhibitory activity than
+compound 32 of D4.
+
+--- PAGE 3 ---
+dompatent
+von Kreisler
+3
+The compounds 4，5 and 12 show excellent EGFR inhibitory activity. The
+compounds show a significantly higher inhibitory activity on the proliferation of
+H1975 cells than the structurally related compound 32 of D4. Starting from D4, it
+wascompletelyunpredictable thatcompounds4，5and 12would show such
+excellentinhibitoryactivityonproliferationofH1975cells.
+NothinginD4orintheotherpriorartdocumentshintedatthesignificant
+increaseofinhibitoryactivityonproliferationofH1975cellswhichcouldbe
+obtained by the structural modifications of compounds 4, 5 and 12. Therefore,
+thethreeextracompoundsinclaim1arebasedonaninventivestep.
+The subject matter of the present set of claims isbased on an inventive step.
+Adaptionofthedescription
+Replacement pages of the complete description are submitted in mark-up and
+cleancopy.
+PriorartdocumentsD1toD4havebeenidentifiedandbrieflydiscussedon
+replacementpages2and3.
+Ithasbeenclarifiedonreplacementpage3thattheinventionisdefinedinthe
+claims and that aspects not falling within the scope of the claims are disclosed
+andforinformationonly.
+Embodiments notfalling within the scope of the claims have been labelled as"not
+
+--- PAGE 4 ---
+dompatent
+von Kreisler
+The statements "all references mentioned in the present application are
+incorporated herein by reference.." and "..such equivalent forms also fall within
+thescopeof the appended claims.."havebeendeleted.
+Thedescriptionwasbroad into conformitywith thepresentset of claims.
+It iskindlyrequested toissue thecommunicationpursuanttoRule71(3)EPC.
+Dr.Christoph Schreiber
+EuropeanPatentAttorney
+Enclosures:amended claims(mark-up)
+amended claims (clean copy)
+amended description (mark-up)
+amended description (clean copy)

@@ -62,6 +62,14 @@ param(
 
     [switch]$WriteAnalysisSteps,
 
+    [switch]$SkipRepairEvidence,
+
+    [switch]$ContinueOnVerifyError,
+
+    [double]$RepairMinScore = 0.55,
+
+    [double]$VerifyMinScore = 0.88,
+
     [int]$EpoRetryCount = 4,
 
     [int]$EpoRetryDelaySeconds = 3,
@@ -74,6 +82,16 @@ param(
 $ErrorActionPreference = "Stop"
 
 $projectRoot = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+
+function Assert-NativeSuccess {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Step
+    )
+    if ($LASTEXITCODE -ne 0) {
+        throw "$Step failed with exit code $LASTEXITCODE"
+    }
+}
 
 if ($ApplicationNumber -notmatch '^EP') {
     $ApplicationNumber = "EP$ApplicationNumber"
@@ -110,7 +128,7 @@ if ($EpoProxyUrl) {
 & (Join-Path $projectRoot "scripts\fetch-epo-doclist.ps1") @fetchArgs
 
 Write-Host "[2/8] Downloading benchmark-relevant EPO documents..."
-$titleRegex = "^(?!.*translation)(European search opinion|Supplementary European search report|Communication from the Examining Division|Annex to the communication$|Reply to communication from the Examining Division|Amended claims|Claims|Description|Published international application|Text intended for grant|Communication about intention to grant|Decision to grant|.*refus.*|.*withdrawn.*)"
+$titleRegex = "^(?!.*translation)(European search opinion|Supplementary European search report|Copy of the international search report|Written opinion of the ISA|Copy of the international preliminary report on patentability|Communication from the Examining Division|Annex to the communication$|Reply to communication from the Examining Division|Amended claims|Claims|Description|Published international application|Text intended for grant|Communication about intention to grant|Decision to grant|.*refus.*|.*withdrawn.*)"
 $downloadArgs = @{
     DocListCsv = $doclistCsv
     OutputDir = $docsDir
@@ -149,6 +167,7 @@ if ($EpoProxyUrl) {
 if ($ExtractPdfText) {
     Write-Host "[4/8] Extracting embedded text from downloaded PDFs before OCR..."
     python (Join-Path $projectRoot "scripts\extract_pdf_text.py") $docsDir
+    Assert-NativeSuccess "PDF text extraction"
 } elseif ($RunOcr) {
     Write-Host "[4/8] Embedded text extraction skipped. Running OCR directly."
 }
@@ -174,15 +193,18 @@ if ($RunOcr) {
         $ocrArgs += @("--exclude-regex", $OcrExcludeRegex)
     }
     python @ocrArgs
+    Assert-NativeSuccess "OCR"
 } else {
     Write-Host "[4/8] OCR skipped. Use -RunOcr when downloaded PDFs are scanned documents."
 }
 
 Write-Host "[5/8] Building benchmark input JSON..."
 python (Join-Path $projectRoot "scripts\build_benchmark_input.py") $caseDir --application-number $ApplicationNumber --top-k $TopK -o $benchmarkInput
+Assert-NativeSuccess "Benchmark input build"
 
 Write-Host "[6/8] Cropping Markush / Formula candidate images..."
 python (Join-Path $projectRoot "scripts\render_markush_pages.py") $benchmarkInput --max-pages 6 --candidate-limit 36 --selected-limit 3 --clear
+Assert-NativeSuccess "Markush page rendering"
 
 if ($SkipRefine) {
     Write-Host "[7/8] Refine skipped. Analysis stage can run refine later."
@@ -205,6 +227,7 @@ if ($SkipRefine) {
         $refineArgs += @("--base-url", $BaseUrl)
     }
     python @refineArgs
+    Assert-NativeSuccess "Benchmark preview refinement"
 }
 
 if ($GenerateAnalysis) {
@@ -262,6 +285,7 @@ if ($GenerateAnalysis) {
         $llmArgs += @("--base-url", $BaseUrl)
     }
     python @llmArgs
+    Assert-NativeSuccess "Analysis JSON generation"
 
     Write-Host "[9/10] Translating risk/action lists..."
     $translateArgs = @(
@@ -281,12 +305,37 @@ if ($GenerateAnalysis) {
         $translateArgs += @("--base-url", $BaseUrl)
     }
     python @translateArgs
+    Assert-NativeSuccess "Risk/action translation"
 }
 
 if ($AnalysisJson) {
-    Write-Host "[10/10] Rendering benchmark output HTML..."
+    if (-not $SkipRepairEvidence) {
+        Write-Host "[10/13] Repairing report evidence snippets against local OCR/text..."
+        python (Join-Path $projectRoot "scripts\repair_report_sources.py") $AnalysisJson --case-dir $caseDir --min-verified-score $VerifyMinScore --min-repair-score $RepairMinScore
+        Assert-NativeSuccess "Evidence repair"
+    }
+
+    Write-Host "[11/13] Ensuring final HTML fields are complete..."
+    python (Join-Path $projectRoot "scripts\ensure_html_field_completeness.py") $AnalysisJson
+    Assert-NativeSuccess "HTML field completeness"
+
+    Write-Host "[12/13] Verifying report evidence sources..."
+    python (Join-Path $projectRoot "scripts\verify_report_sources.py") $AnalysisJson --case-dir $caseDir --min-score $VerifyMinScore
+    if ($LASTEXITCODE -ne 0) {
+        if (-not $ContinueOnVerifyError) {
+            throw "Evidence source verification failed with exit code $LASTEXITCODE"
+        }
+        Write-Warning "Evidence source verification failed, continuing because -ContinueOnVerifyError was set."
+    }
+
+    Write-Host "[13/13] Rendering benchmark output HTML..."
     $htmlOut = [System.IO.Path]::ChangeExtension($AnalysisJson, ".html")
     python (Join-Path $projectRoot "scripts\json_to_html_report.py") $AnalysisJson -o $htmlOut --benchmark-input $benchmarkInput
+    Assert-NativeSuccess "HTML rendering"
+    python (Join-Path $projectRoot "scripts\audit_case_quality.py") $caseDir -o (Join-Path $caseDir "_quality_audit.csv")
+    Assert-NativeSuccess "Quality audit"
+    python (Join-Path $projectRoot "scripts\validate_case_set_completeness.py") $caseDir -o (Join-Path $caseDir "_completeness_validation.csv")
+    Assert-NativeSuccess "Completeness validation"
     Write-Host "Benchmark output HTML: $htmlOut"
 } else {
     Write-Host "[8/8] No analysis JSON supplied; benchmark output HTML not rendered."

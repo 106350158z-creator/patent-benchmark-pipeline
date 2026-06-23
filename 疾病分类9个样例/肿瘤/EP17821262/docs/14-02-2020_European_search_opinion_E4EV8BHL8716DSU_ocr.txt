@@ -1,0 +1,75 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+Application No:
+17821262.7
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-79
+as published
+Claims,Numbers
+1-27
+filedwithentryintotheregionalphasebeforetheEPO
+Drawings, Sheets
+1-20
+as published
+1).
+ s
+intheirorderofcitation.TheExaminingdivisionintendtorefertothesectionsofthese
+documentshighlightedinthesearchreport,unlessotherwisespecified.
+2).
+Claims1and 2areunclearunderArticle84EPC.
+Claim1definesthetreatmentbeforethedeterminationof theDNAorBRCAstatusof
+mutationinBRCA.Thepatientsofclaim2,havinghad theirBRCAstatus
+characterised, therefore do not fall within the scope of claim 1.
+3).
+DocumentD2discloses the treatment of breastcancerpatientswith aPARPinhibitor，
+including MK4827，with anymentionof previouscharacterisationof theDNA andBRCA
+status.
+Such a treatment falls within the scope of claims 1,5,7,9,10,12. 16 and 25 under
+Article54EPC.
+EPO Form 1703 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+2
+Application No:
+17821262.7
+Date
+Feuille
+Demande n°:
+4).
+Documents D1-D4 discloses thePARPinhibitor treatments of cancer patients"without
+BRCA mutations",no mention of BRCA mutations;"nonBRCA"and"regardless of
+BCRA1/2mutations".
+Suchtreatmentsfallwithinthescopeofclaims3,5,7and9underArt54EPC.
+5).
+The treatments of claims 4 and 6 appear to rely on theknown properties of known
+agents(D1-D4).As such theseclaims cannotberegarded as involving an inventive step
+underArticle56EPC.
+6)
+Claim 10 is unclear underArticle 84 EPC.This claims covers the (known) treatment of
+cancers with niraparib.Such treatments aresaid tobeimproved invarious ways by the
+selectionofa"regimen determined to achieve".Such a phrase merelyrepresents a
+7).
+it is also apparent fromD5 that one of theproposed solutions (300mg dose)has already
+been achieved Hence claims 10,16,18 and 19 are not regarded as being novel under e
+54 EPC.
+8).
+Thefeaturesof theremainingclaimswould appear torepresentknown techniques
+adoptedbytheskilledmaninordertoachievetheimprovedresultmentionedinclaim
+10(seeD5）HencenoinventivestepunderArticle56canberecognisedforthese
+claims.
+EPOForm 1703 01.91TRI

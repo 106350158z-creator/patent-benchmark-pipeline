@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patent Examination Benchmark Report</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1d2433;
+      --muted: #657084;
+      --line: #d9dee8;
+      --good: #15803d;
+      --good-bg: #dcfce7;
+      --warn: #a16207;
+      --warn-bg: #fef3c7;
+      --risk: #b91c1c;
+      --risk-bg: #fee2e2;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+    }
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 16px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(220px, 300px) 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      margin-bottom: 16px;
+    }
+    .jump-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .jump-nav a,
+    .jump-nav .nav-disabled {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .jump-nav .nav-disabled {
+      color: var(--muted);
+      background: #f1f3f6;
+      cursor: not-allowed;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 18px;
+    }
+    .preview-text {
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .preview-text.compact {
+      max-height: 140px;
+      margin-top: 6px;
+    }
+    .claims-list {
+      display: grid;
+      gap: 10px;
+    }
+    .claim-detail {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+    }
+    .claim-detail summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .claim-detail summary span {
+      margin-left: 8px;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .markush-images {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .markush-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .markush-figure img {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .markush-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 7px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .candidate-gallery {
+      margin: 10px 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .candidate-gallery summary {
+      cursor: pointer;
+      padding: 9px 11px;
+      font-weight: 650;
+      background: #f8fafc;
+    }
+    .candidate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      padding: 10px;
+    }
+    .candidate-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .candidate-figure img {
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .candidate-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 5px 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .link-list {
+      display: grid;
+      gap: 6px;
+      padding-left: 18px;
+    }
+    .link-list code {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      word-break: break-all;
+    }
+    .score-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 170px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .score-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .big-score {
+      font-size: 56px;
+      font-weight: 750;
+      line-height: 1;
+    }
+    .score-bar {
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+    .score-bar span {
+      display: block;
+      height: 100%;
+      background: currentColor;
+    }
+    .score-good { color: var(--good); }
+    .score-warn { color: var(--warn); }
+    .score-risk { color: var(--risk); }
+    .score-neutral { color: var(--accent); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .table-scroll {
+      overflow-x: auto;
+    }
+    .dimension-table {
+      min-width: 1500px;
+    }
+    .dimension-table th:nth-child(1),
+    .dimension-table td:nth-child(1) {
+      width: 150px;
+    }
+    .dimension-table th:nth-child(2),
+    .dimension-table td:nth-child(2) {
+      width: 220px;
+    }
+    .dimension-table th:nth-child(3),
+    .dimension-table td:nth-child(3) {
+      width: 320px;
+    }
+    .dimension-table th:nth-child(4),
+    .dimension-table td:nth-child(4),
+    .dimension-table th:nth-child(5),
+    .dimension-table td:nth-child(5) {
+      width: 340px;
+    }
+    .dimension-table th:nth-child(6),
+    .dimension-table td:nth-child(6) {
+      width: 260px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+      word-break: break-word;
+    }
+    th {
+      background: #f8fafc;
+      font-weight: 650;
+    }
+    .kv th {
+      width: 180px;
+    }
+    .dim-name {
+      width: 130px;
+      font-weight: 650;
+    }
+    .dim-desc {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .dim-score-box {
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+      display: grid;
+      gap: 6px;
+      justify-items: start;
+      min-height: 82px;
+    }
+    .dim-box-name {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .dim-box-score {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .pill {
+      display: inline-flex;
+      min-width: 48px;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-weight: 700;
+      background: #eef2ff;
+    }
+    .pill.score-good { background: var(--good-bg); }
+    .pill.score-warn { background: var(--warn-bg); }
+    .pill.score-risk { background: var(--risk-bg); }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .bilingual-list {
+      display: grid;
+      gap: 8px;
+    }
+    .source-sentence-list {
+      display: grid;
+      gap: 12px;
+    }
+    .source-sentence-list li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .source-sentence-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .source-line-meta,
+    .source-line-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .source-line-meta {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .source-line-note {
+      margin-top: 4px;
+    }
+    .translation-inline {
+      color: var(--muted);
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .tiny {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .small-link {
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tag-hit {
+      color: #166534;
+      background: #dcfce7;
+    }
+    .tag-semantic {
+      color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .evidence-original {
+      white-space: pre-wrap;
+    }
+    .source {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 820px) {
+      .grid, .columns, .preview-grid {
+        grid-template-columns: 1fr;
+      }
+      main {
+        padding: 20px 12px 32px;
+      }
+      .kv th {
+        width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Patent Examination Benchmark Report</h1>
+      <p class="subtitle">EP18712343.5 · PROCESSES FOR PREPARING ACC INHIBITORS AND SOLID FORMS THEREOF</p>
+      <p class="source">来源 JSON：EP18712343-analysis.json</p>
+    </header>
+
+    
+    <nav class="jump-nav">
+      <a href="#preview">Preview</a>
+      <a href="#case-info">Case</a>
+      <a href="#dimensions">Dimensions</a>
+      <a href="#risks">Risks</a>
+      <a href="#actions">Actions</a>
+      <a href="#evidence">Evidence</a>
+      <a href='../EP16823054/EP16823054-analysis.html'>上一个 HTML：EP16823054</a>
+      <a href='../EP20726962/EP20726962-analysis.html'>下一个 HTML：EP20726962</a>
+    </nav>
+    
+    
+    <section class="card" id="preview">
+      <h2>Application Preview</h2>
+      <div class="preview-grid">
+        <div>
+          <h3>Claim Draft Preview</h3><div class='preview-text'>1192.P2F
+37JD-246667-WO
+What is claimed is:
+A choline salt or co-crystal of CompoundI:
+having a crystalline form characterized by an X-ray powder diffractogram comprising peaks at</div><p class='source'>Draft claim 1 from claims review JSON; pages 1</p><p class='source'>Draft OCR claim only; verify against the authority PDF before using as legal text.</p><p class='source'>Review status: 0/40 verified · <a href="docs/31-03-2023_Text_intended_for_grant_%28clean_copy%29_LFLR7NGYRN09VWC.pdf">Authority PDF</a> <a href="EP18712343-claims-review.html">Claims review HTML</a> <a href="EP18712343-claims-verified.json">Claims draft JSON</a></p>
+        </div>
+        <div>
+          <h3>Markush / Formula</h3>
+          <div class='markush-images'><figure class='markush-figure'><img src='assets/markush-candidates/27-04-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E4PS6VI82341DSU_p002_c083.png' alt='Markush / Formula page image'><figcaption>score 1111.8 · 27-04-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E4PS6VI82341DSU.pdf, page 2</figcaption></figure></div>
+          <h3>Links</h3>
+          <ul class="link-list">
+            <li><a href="https://register.epo.org/application?number=EP18712343&amp;lng=en&amp;tab=main" target="_blank" rel="noopener noreferrer">EPO Register Main</a></li><li><a href="https://register.epo.org/application?number=EP18712343&amp;lng=en&amp;tab=doclist" target="_blank" rel="noopener noreferrer">EPO Register Documents</a></li><li><a href="https://worldwide.espacenet.com/patent/search?q=EP18712343" target="_blank" rel="noopener noreferrer">Espacenet Search</a></li>
+            <li><span>Local main HTML</span><a href="register/EP18712343-main.html">EP18712343-main.html</a></li><li><span>Local doclist CSV</span><a href="register/EP18712343-doclist.csv">EP18712343-doclist.csv</a></li>
+          </ul>
+          <h3>Original Application Files</h3>
+          <ul class="link-list">
+            <li><a href="original-application/19-03-2018_Abstract_E1NQ5OFH2011DSU.pdf">Abstract (19.03.2018 · 1 pages)</a></li><li><a href="original-application/19-03-2018_Claims_E1NQ5OFG6074DSU.pdf">Claims (19.03.2018 · 12 pages)</a></li><li><a href="original-application/19-03-2018_Description_E1NQ5OFG3137DSU.pdf">Description (19.03.2018 · 118 pages)</a></li><li><a href="original-application/19-03-2018_Drawings_E1NQ5OFG9036DSU.pdf">Drawings (19.03.2018 · 17 pages)</a></li><li><a href="original-application/31-03-2023_Bibliographic_data_of_the_European_patent_application_LFKTH8PQ1FEWXZS.pdf">Bibliographic data of the European patent application (31.03.2023 · 2 pages)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="card" id="case-info">
+      <h2>案件元数据</h2>
+      <table class="kv"><tr><th>法域</th><td>EP</td></tr><tr><th>申请号</th><td>EP18712343.5</td></tr><tr><th>发明名称</th><td>PROCESSES FOR PREPARING ACC INHIBITORS AND SOLID FORMS THEREOF</td></tr><tr><th>申请人</th><td>Gilead Sciences, Inc.</td></tr><tr><th>申请日</th><td>2018-03-02</td></tr><tr><th>审查意见日期</th><td>2023-08-18</td></tr><tr><th>授权结果</th><td>granted</td></tr></table>
+    </section>
+    
+    
+    <section class="card" id="dimensions">
+      <h2>审查维度评分</h2>
+      <div class="table-scroll">
+        <table class="dimension-table">
+          <thead><tr><th>维度/分数</th><th>字段描述</th><th>分析</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>
+          <tbody><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>新颖性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否被单一现有技术直接公开，未被质疑通常为高分。</td><td>审查材料中没有显示针对新颖性的否定意见。相反，审查员在2021年9月21日附件中明确认定，权利要求主题符合Art.54 EPC的新颖性要求，理由至少在于当前步骤c)以及式(L)中间体。后续问题集中在说明书适应权利要求等清楚性/形式事项，申请人于2022年1月31日提交了修改后的说明书并表示案件已具备授权条件。2023年3月31日发出拟授权通知，2023年8月18日作出授权决定。因此，当前新颖性风险很低。</td><td><div class='evidence-original'>2. The claimed subject-matter is novel (Article 54 EPC)at least due to present step c)
+and totheintermediateofformula(L).</div></td><td>2. 所要求保护的主题是新的（《欧洲专利公约》第54条），至少是由于当前步骤c)以及式(L)的中间体。</td><td>该段为审查员对Art.54 EPC的直接结论，明确说明权利要求主题具备新颖性，并给出区别点为步骤c)和式(L)中间体。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>创造性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>按 EPO problem-solution/COMVIK 判断区别特征是否贡献技术效果。</td><td>审查意见已按EP problem-solution approach 明确认可创造性：审查员以D1作为最接近现有技术，因为D1公开式(J)产物；区别在于本申请采用不同合成路线，包括从式(R)格氏试剂出发、式(O)α-酮酸不对称还原为式(N)α-羟基酸，并涉及式(L)中间体。客观技术问题被表述为提供制备式(J)化合物的替代工艺，审查员基于说明书实施例6-8认为该问题已解决。D2虽公开式(N)α-羟基酸但经手性拆分获得，D3虽公开式(O)α-酮酸的不对称还原但得到不同对映体，式(L)中间体未被公开；因此即使结合现有技术，技术人员也不会得到权利要求工艺。后续仅有清楚性/说明书适配问题，申请人提交了修改说明书并最终授权。因此当前创造性风险很低。COMVIK不适用，因为权利要求涉及化学制备工艺的技术特征而非非技术特征。</td><td><div class='evidence-original'>Thetechnicalproblemunderlyingthepresent applicationistheprovisionofalternative
+processes to prepare the compound of formula (J).
+Inviewoftheinformationprovidedinthedescription(examples6-8),itcanbeassumed
+that this problem has been solved. D2 discloses the a-hydroxy acid of formula (N) but it
+is obtained by chiral resolution of an o-methoxymandelic acid (D2, page 4013 -
+experimentalpart).D3disclosestheasymmetricreductionofthea-ketoacidofformula
+(O)butit leadstoadifferentenantiomericform(D3,table2entry4).Theintermediateof
+formula(L)has never beendisclosed(eveninaracemicform).Therefore，even
+combiningtheteachingofthepriorart,theskilledpersonwouldnotarriveattheclaimed
+processes. Consequently, it is considered that the present application involves an
+inventivestep(Article56EPC).</div></td><td>本申请所基于的技术问题是提供制备式(J)化合物的替代工艺。鉴于说明书中提供的信息（实施例6-8），可以认为该问题已经得到解决。D2公开了式(N)的α-羟基酸，但其是通过邻甲氧基扁桃酸的手性拆分获得的（D2，第4013页，实验部分）。D3公开了式(O)的α-酮酸的不对称还原，但其导致不同的对映体形式（D3，表2，条目4）。式(L)中间体从未被公开过（即使以外消旋形式也未公开）。因此，即使结合现有技术的教导，技术人员也不会得到所要求保护的工艺。因此，认为本申请具备创造性（EPC第56条）。</td><td>该连续原文直接给出了最接近现有技术后的客观技术问题、问题已解决的依据、D2/D3及未公开中间体(L)的区别分析，并明确得出符合Article 56 EPC的结论。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>充分公开/支持</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>说明书是否足以实施，权利要求是否有原始公开和技术支撑。</td><td>本维度未见审查员提出Art.83充分公开异议，也未见明确的Art.123(2)新增事项否定意见。审查过程中存在Art.84支持/清楚性问题：审查员要求说明书适应权利要求、删除与权利要求不一致或未覆盖的实施方式及claim-like clauses。申请人随后提交修改说明书，并主张说明书已适应修改后权利要求且未加入新 matter。EPO随后发出拟授权通知并最终授权，说明该Art.84支持问题已通过说明书修改克服。当前风险较低，但授权文本应继续确保说明书与权利要求1-4一致。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>经对欧洲专利申请号18712343.5进行审查，依据2023年3月31日根据EPC规则71(3)发出的通知或信息中所列标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>该最终授权决定表明审查部门接受了拟授权文本；结合此前Art.84说明书适应性问题，可判断支持/公开相关问题已被克服。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>清楚性</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>权利要求术语、边界、简洁性和 Art.84 问题。</td><td>审查员在Rule 71(3)通知对应的附件中明确提出了Art.84清楚性/适应性问题，要求说明书适应权利要求、删除与权利要求不一致的说明书内容，并删除第119-130页的claim-like clauses。随后申请人提交了修订后的说明书并表示与修订权利要求一致，最终EPO作出授予决定，说明该清楚性问题已被克服。当前总体风险较低，但后续如仍存在未完全清除的类权利要求表述或与权利要求不一致的说明书段落，仍可能引发Art.84争议。</td><td><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the claims have tobe supported bythedescription.Any disclosure in the description inconsistentwiththeclaimsshouldbeexcised.Referencetoembodimentsnotcoveredbytheclaimsshouldbedeleted，unlesstheseembodimentscanreasonably be considered tobeusefulfor highlighting specific aspects of the claimed subject-matter.In suchcase,thefactthatanembodimentisnotcoveredbytheclaimsmust be prominently stated (the mere replacement of the word &quot;invention&quot;by &quot;disclosure&quot; or similarwordsisnotsufficient).</div></td><td>说明书应当与权利要求相适应（Article 84 EPC）。谨提醒，为满足Article 84 EPC的要求（另见Guidelines F-IV, 4.3），权利要求必须得到说明书的支持。说明书中任何与权利要求不一致的公开都应删除。对未被权利要求涵盖的实施方式的引用应删除，除非这些实施方式可合理地视为有助于突出所要求保护主题的特定方面。在这种情况下，必须显著说明该实施方式不在权利要求范围内（仅将“invention”一词替换为“disclosure”或类似词语是不够的）。</td><td>该原文直接点明了Article 84下的清楚性/支持性问题，并要求删除不一致和未涵盖内容，表明曾存在但已在后续程序中被处理的清楚性风险。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>适格性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否落入 EP Art.52 排除主题，是否具有进一步技术效果。</td><td>权利要求1限定的是化学合成/制备方法，包含特定底物、base、reductant 和 catalyst 的具体接触步骤，属于明显的技术性主题，不落入EP Art.52常见排除主题。审查记录中可见的争议集中在新颖性、创造性和清楚性，而不是适格性；随后EPO发出 intention to grant，并最终作出 grant decision，说明该维度已通过。当前适格性风险极低，主要只剩后续若再改写权利要求时不要把具体化学步骤抽象成纯结果或概念性表述。</td><td><div class='evidence-original'>Following examination of European patent application No.18712343.5 a European patent with the title and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请号 18712343.5 后，题为……的欧洲专利，以及在 31.03.23 的第71(3)条EPC通信中指明的支持文件，现已授予并适用于指定缔约国。</td><td>该段原文直接表明该申请已被EPO授予欧洲专利，说明在审查中未被Art.52适格性问题阻却；结合本案为化学制备方法，支持高分。</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    
+
+    <section class="card" id="risks">
+      <h2>风险原因</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>support · 21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</div><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin
+ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the
+claims have tobe supported by thedescription.Any disclosure in the description
+inconsistentwiththeclaimsshouldbeexcised.</div><div class='translation-inline'>说明书应当适应权利要求（EPC第84条）。提醒申请人，为满足EPC第84条的要求（另见指南F-IV,4.3），权利要求必须得到说明书支持。说明书中任何与权利要求不一致的公开均应删除。</div><div class='source-line-note'>该段明确显示审查员曾就Art.84支持性/说明书一致性提出异议，但性质是说明书适应权利要求的可修改问题。</div></li><li><div class='source-line-meta'>support · 31-01-2022_Reply_to_communication_from_the_Examining_Division_KZ2S33RG179A0ER_ocr.txt</div><div class='evidence-original'>Anamendeddescriptionisfiledherewithtoreplace thedescriptionpresentlyonfile.
+Thedescriptionis adapted toconform totheamendedclaims.Theclausesonpages119-
+NonewmatterisaddedbythepresentamendmentsandtherequirementsofArt.123(2)
+EPCarethereforemet.</div><div class='translation-inline'>随函提交修改后的说明书以替换当前在案说明书。说明书已修改以符合修改后的权利要求。本次修改未加入新内容，因此满足EPC第123(2)条的要求。</div><div class='source-line-note'>该段显示申请人通过提交修改说明书回应Art.84支持问题，并明确主张不存在Art.123(2)新增事项。</div></li><li><div class='source-line-meta'>support · 31-03-2023_Communication_about_intention_to_grant_a_European_patent_LFKTH86419T52LQ_ocr.txt</div><div class='evidence-original'>You areinformedthat theexaminingdivisionintendstogrant aEuropeanpatentonthebasisof theabove
+application,withthetext anddrawings and therelatedbibliographicdataasindicatedbelow.</div><div class='translation-inline'>兹通知，审查部门拟基于上述申请，按照下列文本、附图及相关著录数据授予欧洲专利。</div><div class='source-line-note'>拟授权通知说明审查部门已接受修改后的文本，支持/说明书适应性问题不再阻碍授权。</div></li><li><div class='source-line-meta'>support · support_disc</div><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div><div class='translation-inline'>经对欧洲专利申请号18712343.5进行审查，依据2023年3月31日根据EPC规则71(3)发出的通知或信息中所列标题及支持文件，现就指定缔约国授予欧洲专利。</div><div class='source-line-note'>该最终授权决定表明审查部门接受了拟授权文本；结合此前Art.84说明书适应性问题，可判断支持/公开相关问题已被克服。</div></li><li><div class='source-line-meta'>clarity · 21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</div><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the claims have tobe supported bythedescription.Any disclosure in the description inconsistentwiththeclaimsshouldbeexcised.Referencetoembodimentsnotcoveredbytheclaimsshouldbedeleted，unlesstheseembodimentscanreasonably be considered tobeusefulfor highlighting specific aspects of the claimed subject-matter.</div><div class='translation-inline'>说明书应当与权利要求相适应（Article 84 EPC）。谨提醒，为满足Article 84 EPC的要求（另见Guidelines F-IV, 4.3），权利要求必须得到说明书的支持。说明书中任何与权利要求不一致的公开都应删除。对未被权利要求涵盖的实施方式的引用应删除，除非这些实施方式可合理地视为有助于突出所要求保护主题的特定方面。</div><div class='source-line-note'>这是审查员对清楚性/说明书支持性的直接质疑，表明存在Art.84相关修改要求。</div></li></ul>
+    </section>
+    <section class="card" id="actions">
+      <h2>建议依据原文</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>support · 21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</div><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin
+ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the
+claims have tobe supported by thedescription.Any disclosure in the description
+inconsistentwiththeclaimsshouldbeexcised.</div><div class='translation-inline'>说明书应当适应权利要求（EPC第84条）。提醒申请人，为满足EPC第84条的要求（另见指南F-IV,4.3），权利要求必须得到说明书支持。说明书中任何与权利要求不一致的公开均应删除。</div><div class='source-line-note'>该段明确显示审查员曾就Art.84支持性/说明书一致性提出异议，但性质是说明书适应权利要求的可修改问题。</div></li><li><div class='source-line-meta'>support · 31-01-2022_Reply_to_communication_from_the_Examining_Division_KZ2S33RG179A0ER_ocr.txt</div><div class='evidence-original'>Anamendeddescriptionisfiledherewithtoreplace thedescriptionpresentlyonfile.
+Thedescriptionis adapted toconform totheamendedclaims.Theclausesonpages119-
+NonewmatterisaddedbythepresentamendmentsandtherequirementsofArt.123(2)
+EPCarethereforemet.</div><div class='translation-inline'>随函提交修改后的说明书以替换当前在案说明书。说明书已修改以符合修改后的权利要求。本次修改未加入新内容，因此满足EPC第123(2)条的要求。</div><div class='source-line-note'>该段显示申请人通过提交修改说明书回应Art.84支持问题，并明确主张不存在Art.123(2)新增事项。</div></li><li><div class='source-line-meta'>support · 31-03-2023_Communication_about_intention_to_grant_a_European_patent_LFKTH86419T52LQ_ocr.txt</div><div class='evidence-original'>You areinformedthat theexaminingdivisionintendstogrant aEuropeanpatentonthebasisof theabove
+application,withthetext anddrawings and therelatedbibliographicdataasindicatedbelow.</div><div class='translation-inline'>兹通知，审查部门拟基于上述申请，按照下列文本、附图及相关著录数据授予欧洲专利。</div><div class='source-line-note'>拟授权通知说明审查部门已接受修改后的文本，支持/说明书适应性问题不再阻碍授权。</div></li><li><div class='source-line-meta'>support · support_disc</div><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div><div class='translation-inline'>经对欧洲专利申请号18712343.5进行审查，依据2023年3月31日根据EPC规则71(3)发出的通知或信息中所列标题及支持文件，现就指定缔约国授予欧洲专利。</div><div class='source-line-note'>该最终授权决定表明审查部门接受了拟授权文本；结合此前Art.84说明书适应性问题，可判断支持/公开相关问题已被克服。</div></li><li><div class='source-line-meta'>clarity · 21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</div><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the claims have tobe supported bythedescription.Any disclosure in the description inconsistentwiththeclaimsshouldbeexcised.Referencetoembodimentsnotcoveredbytheclaimsshouldbedeleted，unlesstheseembodimentscanreasonably be considered tobeusefulfor highlighting specific aspects of the claimed subject-matter.</div><div class='translation-inline'>说明书应当与权利要求相适应（Article 84 EPC）。谨提醒，为满足Article 84 EPC的要求（另见Guidelines F-IV, 4.3），权利要求必须得到说明书的支持。说明书中任何与权利要求不一致的公开都应删除。对未被权利要求涵盖的实施方式的引用应删除，除非这些实施方式可合理地视为有助于突出所要求保护主题的特定方面。</div><div class='source-line-note'>这是审查员对清楚性/说明书支持性的直接质疑，表明存在Art.84相关修改要求。</div></li></ul>
+    </section>
+
+    
+    <section class="card" id="evidence">
+      <h2>证据链</h2>
+      <table class="kv">
+        <tr><th>受影响权利要求</th><td>1, 2, 3, 4</td></tr>
+        <tr><th>审查轮次</th><td>1</td></tr>
+      </table>
+      <h3>引用先文 / 官网相关专利</h3>
+      <table><thead><tr><th>序号</th><th>引用/相关专利</th><th>来源标记</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>1</td><td>D1 US20130123231A1<div class='small-link'><a href="https://patents.google.com/patent/US20130123231A1/en" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。</td></tr><tr><td>2</td><td>WO2017151816<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2017151816" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr></tbody></table>
+      <h3>说明书/支持证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td></td><td>support_disc</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>经对欧洲专利申请号18712343.5进行审查，依据2023年3月31日根据EPC规则71(3)发出的通知或信息中所列标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>该最终授权决定表明审查部门接受了拟授权文本；结合此前Art.84说明书适应性问题，可判断支持/公开相关问题已被克服。</td></tr><tr><td></td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin
+ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the
+claims have tobe supported by thedescription.Any disclosure in the description
+inconsistentwiththeclaimsshouldbeexcised.</div></td><td>说明书应当适应权利要求（EPC第84条）。提醒申请人，为满足EPC第84条的要求（另见指南F-IV,4.3），权利要求必须得到说明书支持。说明书中任何与权利要求不一致的公开均应删除。</td><td>该段明确显示审查员曾就Art.84支持性/说明书一致性提出异议，但性质是说明书适应权利要求的可修改问题。</td></tr><tr><td></td><td>31-01-2022_Reply_to_communication_from_the_Examining_Division_KZ2S33RG179A0ER_ocr.txt</td><td><div class='evidence-original'>Anamendeddescriptionisfiledherewithtoreplace thedescriptionpresentlyonfile.
+Thedescriptionis adapted toconform totheamendedclaims.Theclausesonpages119-
+NonewmatterisaddedbythepresentamendmentsandtherequirementsofArt.123(2)
+EPCarethereforemet.</div></td><td>随函提交修改后的说明书以替换当前在案说明书。说明书已修改以符合修改后的权利要求。本次修改未加入新内容，因此满足EPC第123(2)条的要求。</td><td>该段显示申请人通过提交修改说明书回应Art.84支持问题，并明确主张不存在Art.123(2)新增事项。</td></tr><tr><td></td><td>31-03-2023_Communication_about_intention_to_grant_a_European_patent_LFKTH86419T52LQ_ocr.txt</td><td><div class='evidence-original'>You areinformedthat theexaminingdivisionintendstogrant aEuropeanpatentonthebasisof theabove
+application,withthetext anddrawings and therelatedbibliographicdataasindicatedbelow.</div></td><td>兹通知，审查部门拟基于上述申请，按照下列文本、附图及相关著录数据授予欧洲专利。</td><td>拟授权通知说明审查部门已接受修改后的文本，支持/说明书适应性问题不再阻碍授权。</td></tr></tbody></table>
+      <h3>审查材料证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>novelty</td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>2. The claimed subject-matter is novel (Article 54 EPC)at least due to present step c)
+and totheintermediateofformula(L).</div></td><td>2. 所要求保护的主题是新的（《欧洲专利公约》第54条），至少是由于当前步骤c)以及式(L)的中间体。</td><td>该证据直接表明审查员未以单一现有技术否定新颖性，而是确认权利要求主题相对于现有技术具备新颖性。</td></tr><tr><td>novelty</td><td>18-08-2023_Decision_to_grant_a_European_patent_LL5RV7HT17OSPIK_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请号18712343.5，依据2023年3月31日根据EPC规则71(3)发出的通知中所示文本和支持文件，现就指定缔约国授予欧洲专利。</td><td>最终授权决定支持案件整体已通过实质审查；结合前述明确的新颖性认可，说明新颖性障碍已不存在。</td></tr><tr><td>inventive_step</td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>D1 is the closest prior art to the claimed subject-matter because it discloses thepresent
+product of formula (J). In D1, said product is prepared by ring opening of a benzyl
+epoxide and chiral resolution with a chiral preparative HPLC (D1, pages 173-174</div></td><td>D1是权利要求主题的最接近现有技术，因为其公开了本申请的式(J)产物。在D1中，该产物通过苄基环氧化物开环并使用手性制备型HPLC进行手性拆分来制备（D1，第173-174页）。</td><td>该证据支持审查员采用问题-解决方案方法，并确定D1为最接近现有技术。</td></tr><tr><td>inventive_step</td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>Thetechnicalproblemunderlyingthepresent applicationistheprovisionofalternative
+processes to prepare the compound of formula (J).
+Inviewoftheinformationprovidedinthedescription(examples6-8),itcanbeassumed
+that this problem has been solved.</div></td><td>本申请所基于的技术问题是提供制备式(J)化合物的替代工艺。鉴于说明书中提供的信息（实施例6-8），可以认为该问题已经得到解决。</td><td>该证据说明审查员认可客观技术问题为替代制备工艺，并认可说明书实施例足以证明问题已解决。</td></tr><tr><td>inventive_step</td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>Theintermediateof
+formula(L)has never beendisclosed(eveninaracemicform).Therefore，even
+combiningtheteachingofthepriorart,theskilledpersonwouldnotarriveattheclaimed
+processes. Consequently, it is considered that the present application involves an
+inventivestep(Article56EPC).</div></td><td>式(L)中间体从未被公开过（即使以外消旋形式也未公开）。因此，即使结合现有技术的教导，技术人员也不会得到所要求保护的工艺。因此，认为本申请具备创造性（EPC第56条）。</td><td>该证据直接表明审查员认为现有技术组合不能导向权利要求工艺，并明确认可Article 56 EPC创造性。</td></tr><tr><td>inventive_step</td><td>18-08-2023_Decision_to_grant_a_European_patent_LL5RV7HT17OSPIK_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请号18712343.5，现依据2023年3月31日根据EPC规则71(3)的通知中所示文本和支持文件，就指定缔约国授予欧洲专利。</td><td>最终授权决定佐证创造性问题没有成为未解决的驳回障碍。</td></tr><tr><td>support</td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin
+ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the
+claims have tobe supported by thedescription.Any disclosure in the description
+inconsistentwiththeclaimsshouldbeexcised.</div></td><td>说明书应当适应权利要求（EPC第84条）。提醒申请人，为满足EPC第84条的要求（另见指南F-IV,4.3），权利要求必须得到说明书支持。说明书中任何与权利要求不一致的公开均应删除。</td><td>该段明确显示审查员曾就Art.84支持性/说明书一致性提出异议，但性质是说明书适应权利要求的可修改问题。</td></tr><tr><td>support</td><td>31-01-2022_Reply_to_communication_from_the_Examining_Division_KZ2S33RG179A0ER_ocr.txt</td><td><div class='evidence-original'>Anamendeddescriptionisfiledherewithtoreplace thedescriptionpresentlyonfile.
+Thedescriptionis adapted toconform totheamendedclaims.Theclausesonpages119-
+NonewmatterisaddedbythepresentamendmentsandtherequirementsofArt.123(2)
+EPCarethereforemet.</div></td><td>随函提交修改后的说明书以替换当前在案说明书。说明书已修改以符合修改后的权利要求。本次修改未加入新内容，因此满足EPC第123(2)条的要求。</td><td>该段显示申请人通过提交修改说明书回应Art.84支持问题，并明确主张不存在Art.123(2)新增事项。</td></tr><tr><td>support</td><td>31-03-2023_Communication_about_intention_to_grant_a_European_patent_LFKTH86419T52LQ_ocr.txt</td><td><div class='evidence-original'>You areinformedthat theexaminingdivisionintendstogrant aEuropeanpatentonthebasisof theabove
+application,withthetext anddrawings and therelatedbibliographicdataasindicatedbelow.</div></td><td>兹通知，审查部门拟基于上述申请，按照下列文本、附图及相关著录数据授予欧洲专利。</td><td>拟授权通知说明审查部门已接受修改后的文本，支持/说明书适应性问题不再阻碍授权。</td></tr><tr><td>clarity</td><td>21-09-2021_Annex_to_the_communication_E6P72X4A1242DSU_ocr.txt</td><td><div class='evidence-original'>Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the claims have tobe supported bythedescription.Any disclosure in the description inconsistentwiththeclaimsshouldbeexcised.Referencetoembodimentsnotcoveredbytheclaimsshouldbedeleted，unlesstheseembodimentscanreasonably be considered tobeusefulfor highlighting specific aspects of the claimed subject-matter.</div></td><td>说明书应当与权利要求相适应（Article 84 EPC）。谨提醒，为满足Article 84 EPC的要求（另见Guidelines F-IV, 4.3），权利要求必须得到说明书的支持。说明书中任何与权利要求不一致的公开都应删除。对未被权利要求涵盖的实施方式的引用应删除，除非这些实施方式可合理地视为有助于突出所要求保护主题的特定方面。</td><td>这是审查员对清楚性/说明书支持性的直接质疑，表明存在Art.84相关修改要求。</td></tr><tr><td>clarity</td><td>18-08-2023_Decision_to_grant_a_European_patent_LL5RV7HT17OSPIK_ocr.txt</td><td><div class='evidence-original'>DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC FollowingexaminationofEuropeanpatentapplicationNo.18712343.5aEuropeanpatentwiththetitle and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>依据Article 97(1) EPC授予欧洲专利。经审查欧洲专利申请第18712343.5号后，标题及在Rule 71(3) EPC通信（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJEPO 2015,A52）中指明的支持文件，现已授予在所指定缔约国有效的欧洲专利。</td><td>授予决定表明审查已完成且申请最终获准，支持清楚性问题已被克服。</td></tr><tr><td>eligibility</td><td>27-04-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E4PS6VI82341DSU_ocr.txt</td><td><div class='evidence-original'>A method for preparingcompound of formula(J): (J), comprising the steps of: (a) contacting a compound of formula (R): OR4 MgBr (R) with a compound of formula (S): (S) under conditions sufficient toform acompound of formula (P): OR4 (P) or asolvate or a hydrate thereof,</div></td><td>一种用于制备式(J)化合物的方法，包括以下步骤：(a) 将式(R)化合物 OR4 MgBr 与式(S)化合物在足以形成式(P)化合物 OR4(P)或其溶剂化物或水合物的条件下接触，</td><td>该权利要求文本清楚限定了具体化学反应步骤、底物和条件，体现技术性制备方法，不是抽象规则或排除主题。</td></tr><tr><td>eligibility</td><td>18-08-2023_Decision_to_grant_a_European_patent_LL5RV7HT17OSPIK_ocr.txt</td><td><div class='evidence-original'>Following examination of European patent application No.18712343.5 a European patent with the title and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated31.03.23isherebygranted inrespect of thedesignatedContractingStates.</div></td><td>经审查欧洲专利申请号18712343.5后，题为……的欧洲专利以及在31.03.23第71(3)条EPC通信中指明的支持文件，现已授予并适用于指定缔约国。</td><td>最终授权决定表明该申请已通过EPO审查流程；若存在Art.52适格性障碍，通常不会以该状态获准授权。</td></tr></tbody></table>
+    </section>
+    
+  </main>
+</body>
+</html>

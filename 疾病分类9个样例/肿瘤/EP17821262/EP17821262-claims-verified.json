@@ -1,0 +1,101 @@
+{
+  "application_number": "EP17821262",
+  "source_pdf": "docs/21-09-2023_Text_intended_for_grant_(clean_copy)_LMIBSUC8NRS7XTU.pdf",
+  "source_pdf_sha256": "49b4f56d761bf9e1e8b420ecd21ff7fb574ffce8d5bf2aaf370f00fcb8ca7768",
+  "source_kind": "text_intended_for_grant_clean_copy",
+  "draft_text_source": "docs/14-03-2023_Claims_LF8FSGVB1QJX7B2_ocr.txt",
+  "draft_text_pdf": "docs/14-03-2023_Claims_LF8FSGVB1QJX7B2.pdf",
+  "draft_generated_at": "2026-06-18T07:20:47.473063+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "for use in treating cancer in a human patient, wherein the agent is niraparib, or a\npharmaceutically acceptablesalt thereof,\nwherein the patient is characterized by previous treatment with a platinum-based\ntherapy and an absence of a germline or a sporadic mutation in BRCA1 and/or BRCA2,\nwherein the niraparib, or a pharmaceutically acceptable salt thereof, is\nadministered as a maintenance therapy following complete or partial response to at least\none platinum-based therapy,and\nwherein the patient is further characterized by an absence of homologous\nrecombinationdeficiency(HRD).",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 2,
+      "text": "The therapeutic agent for use according to claim 1, wherein the patient has a tumor with a\nnegative HRD status.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "The therapeutic agent for use according to claim 1 or claim 2,wherein the niraparib, or a\npharmaceutically acceptable salt thereof,is administered as a maintenance therapy\nfollowing partial response to at least one platinum-based therapy.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "The therapeutic agent for use according to any one of claims 1-3, wherein the niraparib,\nor a pharmaceutically acceptable salt thereof,is prepared in the form of a tosylate\nmonohydrate.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "The therapeutic agent for use according to any one of claims 1-4, wherein the cancer is\nselected from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal\ncancer, and breast cancer.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 6,
+      "text": "The therapeutic agent for use according to claim 5, wherein the ovarian cancer is high",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 7,
+      "text": "The therapeutic agent for use according to any one of claims 1-6, wherein the cancer is a\nrecurrent cancer.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 8,
+      "text": "The therapeutic agent for use according to claim 7, wherein the cancer is selected from\nthe group consisting of: ovarian cancer,fallopian tube cancer or primary peritoneal\ncancer.\nThe therapeutic agent for use according to claim 8, wherein the ovarian cancer, fallopian\ntube cancer or primary peritoneal cancer is platinum sensitive at the commencement of\ntreatment.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

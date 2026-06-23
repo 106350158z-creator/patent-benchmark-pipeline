@@ -1,0 +1,100 @@
+
+--- PAGE 1 ---
+Claims
+1.A compound of formula I or a pharmaceutical acceptable salt thereof:
+HN
+(CH2)m
+R4
+R7
+5
+wherein
+R′ is independently selected from a group consisting of a hydrogen, substituted or
+unsubstituted C1-C1o alkyl, C2-C6 alkenyl, C2-C6 alkynyl, optionally substituted C3-Cs
+cycloalkyl, substituted or unsubstituted aryl, substituted or unsubstituted benzyl,
+substituted or unsubstituted heterocyclyl, substituted or unsubstituted arylheterocyclyl;
+10
+A is a divalent radical -(CRaRb)n-A'- or absent, wherein Ra and R, are independently
+selected from a group consisting of H, a Ci-3 alkyl, a halogen, and n is an integer from 0
+to 3;
+A'is a benzene ring,a five-or six-membered heterocycle or a C-Cs cycloalkyl;
+R? is independently selected from a group consisting of a hydrogen, unsubstituted or
+15
+halogen-substituted C-C4 alkyl,nitro,amino,halogen,C-C6 alkoxy,optionally
+substituted acyloxy, optionally substituted acylamino, optionally substituted acyl; wherein,
+when A'is a benzene ring,R²is meta-substituted;
+m is an integer from 0 to 3;
+R? is independently selected from a substituted or unsubstituted NH2, a substituted
+20
+or unsubstituted heterocyclyl, a substituted or unsubstituted arylheterocyclyl, a substituted
+or unsubstituted C-Cioalkyl;
+R’, R4, R and R° are independently selected from a group consisting of H, a halogen,
+a substituted or unsubstituted Ci-C6 (preferably Cj-C3)alkoxy，a substituted or
+unsubstituted C1-C6(preferably Ci-C3)alkyl,NRcRd;wherein each of Rcand Ra is
+25
+independently selectedfrom C-C3 alkyl;
+wherein, when R' is H and m is O, R, R4, R? and R° are not H at the same time;
+when R' is H, m is O, A'is a benzene ring and R′ is
+,if one of R² and R6is a
+methoxy, the other can not be H.
+2.The compound of formula I or a pharmaceutical acceptable salt thereof of claim 1,
+30
+wherein
+-68-
+
+--- PAGE 2 ---
+Rl is independently selected from a hydrogen, substituted or unsubstituted Ci-C10
+alkyl (preferably Ci-C6 alkyl), substituted or unsubstituted phenyl, substituted or
+unsubstituted benzyl, optionally substituted C3-Cs cycloalkyl;
+A'is a benzene ring, a five- or six-membered nitrogen-containing heterocycle;
+R² is independently selected from a Ci-Cs alkyl, C2-C4 alkenyl substituted
+acylamino, substituted or unsubstituted C2-C4 alkenyl substituted acyl;
+R? is selected from a group consisting of:
+10
+R’, R4, R′ and R° are independently selected from a group consisting of H, a
+substituted or unsubstituted C1-Co (preferably C1-Cs)alkoxy, a substituted or unsubstituted
+C-C6 (preferably C}-C3)alkyl.
+3.A compound or a pharmaceutical acceptable salt thereof selected from the
+followinggroup:
+69
+
+--- PAGE 3 ---
+
+--- PAGE 4 ---
+
+--- PAGE 5 ---
+
+--- PAGE 6 ---
+4.The compound of claim 1,wherein
+R1 is independently selected from a group consisting of a hydrogen, substituted or
+unsubstituted C-C6 alkyl, or substituted or unsubstituted phenyl;
+n=0;
+A' is a benzene ring, or a five-membered nitrogen-containing heterocycle;
+R² is independently selected from a C2-C4 alkenyl substituted acylamino, or C2-C4
+alkenyl substituted acyl;
+m is an integer from 0 to 2;
+R'is selected from:
+10
+R’, R, R? and R° are independently selected from a group consisting of H, a
+substituted or unsubstituted C-C3 alkoxy, a substituted or unsubstituted C-C3 alkyl.
+5.A compound or a pharmaceutical acceptable salt thereof selected from the
+following group:
+73
+
+--- PAGE 7 ---
+6.A pharmaceutical composition, comprising the compound or a pharmaceutical
+acceptable salt thereof of any one of claims 1-5 and a pharmaceutically acceptable carrier
+or excipient.
+7. Use of the compound of any one of claims 1-5 for preparation of a medicament
+for treating or preventing EGFR-mediated diseases, or inhibiting EGFR.
+8.The use of claim 7,wherein the EGFR-mediated disease is cancer.
+9. The use of claim 8,wherein the cancer is selected from a group consisting of
+non-small cell lung cancer, small cell lung cancer, lung adenocarcinoma, lung squamous
+cell carcinoma, breast cancer, prostate cancer, glioblastoma, ovarian cancer, squamous
+10
+cell carcinoma of head and neck, cervical cancer, esophageal cancer, liver cancer, kidney
+cancer, pancreas cancer, colon cancer, skin cancer, leukemia, lymphoma, stomach cancer,
+multiple myeloma and solid tumors.
+10.A method for treating or preventing EGFR-mediated diseases by using the
+compound of any one of claims1-5.
+15
+-74-

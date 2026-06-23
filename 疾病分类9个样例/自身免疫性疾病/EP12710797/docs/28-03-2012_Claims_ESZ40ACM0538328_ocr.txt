@@ -1,0 +1,595 @@
+
+--- PAGE 1 ---
+PCT/IL2012/050061
+85
+WHATISCLAIMEDIS:
+1.
+A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound of
+Formula (I),
+B
+Formula (I)
+ora pharmaceutically acceptable salt or ester thereof;
+wherein ---- indicates an optionally unsaturated bond;
+each of B, X, A or V is absent if Z', Z,Z² and Z*, respectively, is N; and
+each of B, X, A and V is independently H, halo, azido, —CN, —CF3, -—CONR'R?, —
+NR'R2, -SR², -OR?, -R3, -W, -L-W, -W", -L-N(R) -Wo, A² or A’, when each of Z', Z2, Z3
+and Z*, respectively, is C;
+Z is O, S, CR2, NR*CR4, CR*NR, CR4, NR* or N;
+each of Z', Z2, Z? and Z* is independently C or N, provided any three N are non-
+adjacent;
+Z is C; or Z may be N when Z is N;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+U' is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R°)-, -SO2-, or -
+SO3-, where T is O, S, or NH; or U' may be a bond when Z is N or U2 is H;
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl or C2-
+C10 heteroalkenyl group, each of which may be optionally substituted with one or more
+
+--- PAGE 2 ---
+PCT/IL2012/050061
+86
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic
+ring; or U²is -W,-L-W,-L-N(R)-W°, A²or A’;
+in each -NR'R?, R' and R2 together with N may form an optionally substituted azacyclic
+ring, optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R² is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+each R is independently H, or C1-C6 alkyl; or R may be -W, -L-W or -L-N(R)-W;
+each R and R? is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker, each of which may be optionally substituted with one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an
+additional heteroatom selected from N, O and S as a ring member;
+W is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substituted with from 1 to 4 fluorine atoms;
+provided one of U², V, A, X and B is a secondary amine A² or a tertiary amine A3,
+wherein
+the secondary amine A² is -NH-W°, and
+the tertiary amine A? is a fully saturated and optionally substituted six-membered or
+seven-membered azacyclic ring optionally containing an additional heteroatom selected
+from N, O or S as a ring member, or the tertiary amine A? is a partially unsaturated or
+aromatic optionally substituted five-membered azacyclic ring,optionally containing an
+additional heteroatomselectedfromN,O or S as a ringmember;
+thereby treating the autoimmune disease in the subject.
+
+--- PAGE 3 ---
+PCT/IL2012/050061
+87
+2. A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound of
+Formula (Il),
+Formula (Il)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein --- indicates an optionally unsaturated bond;
+each of A and X is independently H, halo, azido, -CN, -CF3, -CONR'R?, -NR'R?, -SR2, -
+OR², -R3, -W, -L-W, -W°, -L-N(R)-W°, A² or A3;
+Z is O,S, CR*2, NR*CR, CR*NR* or NR*;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+U' is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R)-, -SO2-, or -
+SO3-, where T is O, S, or NH; or U' may be a bond when U2 is H;
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl or C2-
+C10 heteroalkenyl group, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic
+ring; or U² is -W, -L-W, -L-N(R)-W°,A² or A3;
+in each -NR'R2, R' and R2 together with N may form an optionally substituted azacyclic
+ring, optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these,each of which may be optionally substituted
+
+--- PAGE 4 ---
+PCT/IL2012/050061
+88
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-WO;
+each R and R° is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker, each of whichmaybe optionally substituted with one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an
+additional heteroatom selected fromN,O andS asa ringmember;
+w is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substitutedwithfrom1 to 4fluorine atoms;
+provided that one of U2, A, and X is a secondary amine A² or a tertiary amine A3,
+wherein
+the secondary amine A²is -NH-w°,and
+the tertiary amine A3 is a fully saturated and optionally substituted six-membered or
+seven-membered azacyclic ring optionally containing an additional heteroatom selected
+from N, O or S as a ring member, or the tertiary amine A’is a partially unsaturated or
+aromatic optionally substituted five-membered azacyclic ring optionally containing an
+additional heteroatom selected from N,O or S as a ring member;
+thereby treating the autoimmune diseaseinthesubject.
+ 3. A method of treating an autoimmune disease in a subject, comprising:
+administeringtothesubjectatherapeuticallyeffectiveamountofacompoundof
+Formula (III),
+Formula (III)
+
+--- PAGE 5 ---
+PCT/IL2012/050061
+89
+or a pharmaceutically acceptable salt or ester thereof;
+wherein -- indicates an optionally unsaturated bond; and
+each of B, X, A or V is absent if Z', Z2,Z² and Z*, respectively, is N; and
+each of B, X, A and V is independently H, halo, azido, -CN, -CF3, -CONR'R?, -NR'R2, -
+SR2, -OR², -R’, -W, -L-W, -W", -L-N(R)-W°, A² or A², when each of Z', Z²,Z and Z,
+respectively, is C;
+each of Z', Z2, Z’ and Z is independently C or N, provided any three N are non-
+adjacent;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+U' is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R°)-, -SO2-, or -
+SO3-, where T is O, S, or NH; or U' may be a bond when Z is N or U2 is H;
+U² is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl or C2-
+C10 heteroalkenyl group, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic
+ring; or U² is -W, -L-W, -L-N(R) -wo, A² or A3;
+in each -NR'R?, R' and R² together with N may form an optionally substituted azacyclic
+ring, optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R² is H, or C1-C10 alkyl, Cl-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R may be -W, -L-W or -L-N(R)-wo;
+each R and R° is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker, each of which may be optionally substituted with one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+
+--- PAGE 6 ---
+PCT/IL2012/050061
+90
+W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an
+additional heteroatomselectedfromN,O and S as a ringmember;
+W° is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substituted with from 1 to 4 fluorine atoms;
+provided that one of U², V, A, X and B is a secondary amine A2 or a tertiary amine A3,
+wherein
+the secondary amine A² is -NH-w°, and
+the tertiary amine A? is a fully saturated and optionally substituted six-membered or
+seven-membered azacyclic ring optionally containing an additional heteroatom selected
+from N, O or S as a ring member, or the tertiary amine A’is a partially unsaturated or
+aromatic optionally substituted five-membered azacyclic ring, optionally containing an
+additional heteroatom selected from N,O or S as a ring member,
+thereby treating the autoimmune disease in the subject.
+4.A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound of
+Formula (IV),
+Formula (IV)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein ---- indicates an optionally unsaturated bond;
+each of B, X, A or V is absent ifZ',Z², Z? and Z* respectively, is N; and
+each of B, X, A and V is independently H, halo, azido, -CN, -CF3, -CONR'R?, -
+NR'R²,-SR²,-OR²,-R3,-W,-L-W, -W°,-L-N(R)-W°, A² or A²,when each ofZ',Z²,Z3
+and Z*, respectively, is C;
+
+--- PAGE 7 ---
+PCT/IL2012/050061
+91
+each of Z', Z’, Z’ and Z4 is independently C or N, provided any three N are non-
+adjacent;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+in each NR'R?, R' and R2 together with N may form an optionally substituted azacyclic
+ring, optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R² is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+R4 is -W, -L-W or -L-N(R)-WO; and
+each R is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker, each of which may be optionally substituted with one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+additional heteroatom selected from N, O and S as a ring member; and
+w? is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substitutedwithfrom1 to 4fluorine atoms,
+thereby treating the autoimmune disease in the subject.
+5.A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound of
+Formula (V),
+
+--- PAGE 8 ---
+PCT/IL2012/050061
+92
+Formula (V)
+or a pharmaceutically acceptable salt or ester thereof;
+-- indicates an optionally unsaturated bond;
+A and V independently are H, halo, azido, -CN, -CF3, -CONR'R?, -NR'R2, -SR?, -OR?, -
+R²,-W,-L-W,-W,-L-N(R)-W°,A² or A’;
+Zis O, S, CR2, NR*CR4, CR*NR4 or NR*;
+Y is an optionally substituted 5-6 membered carbocyclic or heterocyclic ring;
+U' is -C(=T)N(R)-, -C(=T)N(R)O-, -C(=T)-, -SO2N(R)-, -SO2N(R)N(R°)-, -SO2-, or -
+SO3-, where T is O, S, or NH; or U' may be a bond when U2 is H;
+U2 is H, or C3-C7 cycloalkyl, C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl or C2-
+C10 heteroalkenyl group, each of which may be optionally substituted with one or more
+halogens, =O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic
+ring; or U2 is -W, -L-W or -L-N(R)-Wo, A² or A3;
+in each -NR'R2, R' and R2 together with N may form an optionally substituted azacyclic
+ring, optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R² is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these,each of which maybe optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-Wo;
+
+--- PAGE 9 ---
+PCT/IL2012/050061
+93
+each R and R° is independently H or C1-C6 alkyl;
+L is a C1-C10 alkylene, Cl-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each ofwhich may be optionally substitutedwith one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring,optionally containing an
+additional heteroatom selected from N, O and S as a ring member;
+W° is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substituted with from 1 to 4 fluorine atoms;
+provided one of U², A, and V is a secondary amine A² or a tertiary amine A3, wherein
+the secondary amine A² is -NH-WO, and
+the tertiary amine A’ is a fully saturated and optionally substituted six-membered or
+seven-membered azacyclic ring optionally containing an additional heteroatom selected
+from N, O or S as a ring member, or the tertiary amine A? is a partially unsaturated or
+aromatic optionally substituted five-membered azacyclic ring optionally containing an
+additional heteroatom selected from N, O or S as a ringmember,
+thereby treating the autoimmune diseasein the subject.
+6.
+A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound of
+Formula (VI),
+NR7R8
+n(Q
+(Q）m
+Formula (VI)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein:
+X' is CH or N;
+
+--- PAGE 10 ---
+PCT/IL2012/050061
+94
+X’, X’, x*, X', X° and X? independently are NR*, CH2, CHQ or C(Q)2, provided that: (i)
+zero, one or two of X²,X”,X4,x’, x and X’ are NR*;(i) when X' is N, both ofX² and
+X' are not NR*; (ii) when X' is N, X? and X° are not NR*; and (iv) when X' is CH and
+two of X2, X’, X*, X', X° and X? are NR*, the two NR4 are located at adjacent ring
+positions or are separated by two or more other ring positions;
+A and V independently are H, halo, azido, -CN, -CF3, -CONR'R?, -NR'R2, -SR?, -OR2, -
+R3,-W,-L-W,-W°, or -L-N(R)-Wo;
+each Q is independently halo, azido, -CN, -CF3, -CONR'R?, -NR'R2, -SR?, -OR2, -R3, -
+W,-L-W,-W°,or-L-N(R)-W°;
+in each —NR'R?, R' and R² together with N may form an optionally substituted
+azacyclic ring, optionally containing one additional heteroatom selected from N, O and S
+as a ring member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10 heteroalkenyl,
+each of which may be optionally substituted with one or more halogens, =O, or an
+optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)- wo;
+each R is independently H or C1-C6 alkyl;
+R’ is H and R* is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring; or in —
+NR'R&, R? and R? together with N may form an optionally substituted azacyclic ring,
+optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+m is 0, 1,2,3 or 4;
+n is 0, 1,2,3,4,or 5;
+
+--- PAGE 11 ---
+PCT/IL2012/050061
+95
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each of which may be optionally substituted with one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring,optionally containing an
+additional heteroatom selected from N, O and S as a ring member; and
+W is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substitutedwithfrom1 to4fluorine atoms,
+thereby treating the autoimmune disease in the subject.
+7.
+A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound of
+Formula (VIII),
+NR7R8
+（Q）
+(Q)m
+Formula (VII)
+or a pharmaceutically acceptable salt or ester thereof;
+wherein:
+A and V independently are H, halo, azido, -CN, -CF3, -CONR'R?, -NR'R, -SR?, -OR2, -
+R3,-W,-L-W, -W,or -L-N(R)-W;
+each Q is independently halo, azido, -CN, -CF3, -CONR'R2, -NR'R2, -SR’, -OR?, -R’, -
+W, -L-W, -W°, or -L-N(R)-W;
+in each —NR'R², R' and R² together with N may form an optionally substituted
+azacyclic ring, optionally containing an additional heteroatom selected from N, O and S
+as a ring member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+
+--- PAGE 12 ---
+PCT/IL2012/050061
+96
+R² is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these,each of which maybe optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring:
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-wo;
+each R is independentlyH or C1-C6 alkyl;
+R? is H and R& is C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring; or in ---
+NR'R&, R? and R& together with N may form an optionally substituted azacyclic ring,
+optionally containing an additional heteroatom selected from N, O and S as a ring
+member;
+m is 0,1,2,3 or 4;
+n is 0,1,2,3,4 or 5;
+p is 0, 1,2 or 3;
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylenelinker,eachofwhichmaybe optionallysubstitutedwithoneormore
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an
+additional heteroatom selected from N, O and S as a ring member; and
+W is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substituted with from 1 to 4 fluorine atoms,
+thereby treating the autoimmune disease in the subject.
+8.  A method of treating an autoimmune disease in a subject, comprising:
+Formula (VII)
+
+--- PAGE 13 ---
+PCT/IL2012/050061
+97
+n(Q)
+(Q)m
+Formula (VII)
+or a pharmaceutically acceptable salt or ester thereof;
+A and V independently are H, halo, azido, -CN, -CF3, -CONR1R2, -NR1R2, -SR2, -OR2,
+-R3, -W, -L-W, -W°, or -L-N(R)-W;
+each Q is independently halo, azido, -CN, -CF3, -CONR'R?, -NR'R?, -SR?, -OR2, -R3, -
+W, -L-W, -W°, or -L-N(R)-Wo;
+in each -NR'R?, R' and R² together with N may form an optionally substituted
+azacyclic ring, optionally containing an additional heteroatom selected from N,O and S
+as a ring member;
+R' is H or C1-C6 alkyl, optionally substituted with one or more halogens, or =O;
+R2 is H, or C1-C10 alkyl, C1-C10 heteroalkyl, C2-C10 alkenyl, or C2-C10
+heteroalkenyl, each of which may be optionally substituted with one or more halogens,
+=O, or an optionally substituted 3-7 membered carbocyclic or heterocyclic ring;
+R? is an optionally substituted C1-C10 alkyl, C2-C10 alkenyl, C5-C10 aryl, or C6-C12
+arylalkyl, or a heteroform of one of these, each of which may be optionally substituted
+with one or more halogens, =O, or an optionally substituted 3-6 membered carbocyclic
+or heterocyclic ring;
+each R4 is independently H, or C1-C6 alkyl; or R4 may be -W, -L-W or -L-N(R)-Wo;
+each R is independently H or C1-C6 alkyl;
+m is 0,1,2,3 or 4;
+n is 0, 1, 2, 3, 4 or 5;
+p is 0, 1,2 or 3;
+
+--- PAGE 14 ---
+PCT/IL2012/050061
+98
+L is a C1-C10 alkylene, C1-C10 heteroalkylene, C2-C10 alkenylene or C2-C10
+heteroalkenylene linker,each of which may be optionally substituted with one or more
+substituents selected from the group consisting of halogen, oxo (=O), or C1-C6 alkyl;
+W is an optionally substituted 4-7 membered azacyclic ring, optionally containing an
+additional heteroatom selected from N, O and S as a ring member; and
+W is an optionally substituted 3-4 membered carbocyclic ring, or a C1-C6 alkyl group
+substituted with from 1 to 4 fluorine atoms,
+thereby treating the autoimmune disease in the subject
+9.
+A method of treating an autoimmune disease in a subject, comprising:
+administering to the subject a therapeutically effective amount of a compound
+selected from the group consisting of:
+
+--- PAGE 15 ---
+PCT/IL2012/050061
+99
+CH3;
+CH3
+
+--- PAGE 16 ---
+PCT/IL2012/050061
+100
+CH3
+CH3
+CH3
+HC
+
+--- PAGE 17 ---
+PCT/IL2012/050061
+101
+CH
+HC
+CH
+CH3
+CH3
+
+--- PAGE 18 ---
+PCT/IL2012/050061
+102
+CH
+CH
+HN
+
+--- PAGE 19 ---
+PCT/IL2012/050061
+103
+and
+HN
+CH3
+or a pharmaceutically acceptable salt or ester thereof,
+thereby treating the autoimmune disease in the subject.
+10.A method of monitoring treatment efficiency of a subject having an
+autoimmune disease,the method comprising:
+(a)
+treating the subject with said compound according to the method of any
+of claims 1-9, and
+(b)
+comparing a level of expression of least one gene involved in the RNA
+polymerase I pathway in a cell of the subject following said treating with said compound
+to a level of expression of said at least one gene in a cell of the subject prior to said
+treating the subject with said compound,
+(i)
+wherein a decrease above a predetermined threshold in said level of
+expression of said at least one gene following said treating with said compound relative
+to said level of expression of said at least one gene prior to said treating with said
+compound indicates that said compound is efficient for treating the subject;
+(i) wherein an increase above a predetermined threshold in said level of
+expression of said at least one gene following said treating with said compound relative
+to said level of expression of said at least one gene prior to said treating with said
+compound indicates that said compound is not efficient for treating the subject; or
+
+--- PAGE 20 ---
+PCT/IL2012/050061
+104
+(ii)
+wherein when a level of expression of said at least one gene following
+said treating with said compound is identical or changed below a predetermined
+threshold as compared to prior to said treating with said compound then the treatment is
+not efficient for treating the subject
+therebymonitoring treatmentefficiencyof thesubjecthaving an autoimmune
+disease.
+11.
+The method of any of claims 1-10, wherein said compound is 2-(4-
+methyl-1,4-diazepan-1-yl)-N-((5-methylpyrazin-2-yl)methyl)-5-oxo-5H-
+benzo[4,5]thiazolo[3,2-a][1,8]naphthyridine-6-carboxamide as depicted in Formula
+12.
+The method of any of claims 1-11,wherein the autoimmune disease is
+multiple sclerosis.
+13.
+The method of any of claims 1-10,wherein said compound is 2-(4-
+methyl-1,4-diazepan-1-yl)-N-((5-methylpyrazin-2-yl)methyl)-5-oxo-5H-
+benzo[4,5]thiazolo[3,2-a][1,8]naphthyridine-6-carboxamide as depicted in Formula
+0
+0
+and wherein the autoimmune diseaseis multiple sclerosis.
+
+--- PAGE 21 ---
+PCT/IL2012/050061
+105
+14. The method of claims 12 or 13, wherein said multiple sclerosis is a
+relapsing-remitting course ofmultiple sclerosis.
+15. The method of claims 12 or 13, wherein said multiple sclerosis is a
+progressive course of multiple sclerosis.
+16. The method of claim 12 or 13, wherein said multiple sclerosis is a benign
+multiple sclerosis.
+17. The method of any of claims 1-16, wherein said administering said
+compound is performed following diagnosis of said autoimmune disease.
+18. The method of claim 17, wherein said autoimmune disease is multiple
+sclerosis and whereas said diagnosis comprises appearance of brain lesions
+characteristics of said multiple sclerosis.
+19.The method of claim 13, wherein said compound is provided at a
+concentration range of about 0.081-1.62 mg/kg/day.
+20.The method of claim 13, wherein said compound is provided at a
+concentration range of about 0.81-1.215 mg/kg/day.
+21.The method of claim 13, wherein said compound is provided at a
+concentration of about 1.01 mg/kg/day.
+22.The method of claim 1, wherein Z' is N, and each of Z², Z? and Z4 is C.
+23. The method of any of claims 1, 12 and 14-18, wherein U is --W or -L-
+W,where W is an optionally substituted 5-6 membered unsaturated or aromatic
+azacyclic ring, optionally containing an additional heteroatom selected from N, O and
+S; or W is an optionally substituted 5-7 membered saturated azacyclic ring containing
+an additional heteroatom selected from N and S.
+
+--- PAGE 22 ---
+PCT/IL2012/050061
+106
+24.
+The method of any of claims 1, 12 and 14-18, wherein U2 is -L-N(R)
+wo.
+25.
+The method of any of claims 1, 12 and 14-18, wherein Y is an optionally
+substituted phenyl ring.
+The method of any of claims 2,12 and 14-18,wherein at least one of A
+and X is a tertiary amine A3.
+27. The method of any of claims 2, 12 and 14-18, wherein A3 is selected
+from the group consisting of imidazole, imidazoline, pyrroline, piperidine, piperazine,
+morpholine,thiomorpholine and homopiperazine.
+28.
+The method of any of claims 2, 12 and 14-18,wherein U′ is a -
+C(=T)N(R)--, T is O, and U2 is -L-W or -L-N(R)-- wo.
+29.The method of any of claims 6, 12 and 14-18, wherein X' is CH and two
+of X2, X', x4, x', x6 and X' are NR*.
+30.The method of any of claims 6, 12 and 14-18, wherein X' is CH and one
+ofX?, X', X4, X', x? and X' are NR4.
+31. The method of any of claims 6, 12 and 14-18, wherein X' is CH and
+none of X', x', X4, X', x° and X' are NR4.
+32. The method of any of claims 6, 12 and 14-18, wherein X' is N and none
+of X², x', x4, x', x and X' are NR4.
+33. The method of any of claims 6, 12 and 14-18, wherein X' is N and one
+of X4 or X' is NR4.
+34.
+The method of any of claims 7, 12 and 14-18, wherein R′ is H and R* is
+
+--- PAGE 23 ---
+PCT/IL2012/050061
+107
+a C14 alkyl substituted with an optionally substituted aromatic heterocyclic ring.
+35.T
+The method of any of claims 7, 12 and 14-18, wherein the optionally
+substituted aromatic heterocyclic ring is selected from pyridine,pyrimidine,pyrazine,
+imidazole,pyrrolidine,and thiazole.
+36. The method of any of claims 7, 12 and 14-18, wherein R′ and R&
+together with N in -NR'R& form an optionally substituted azacyclic ring selected from
+the group consisting of morpholine,thiomorpholine,piperidine or piperazinering.
+37.
+The method of any of claims 8, 12 and 14-18, wherein A and V are
+independentlyHor halo.
+38.
+The method of any of claims 8, 12 and 14-18,wherein R4 is H or C1-4
+alkyl.
+39.
+The method of any of claims 8,12 and 14-18, wherein m and n are each
+0.
+40.
+The method of any of claims 8,12 and 14-18,wherein pis 0 or 1.
+41.
+The method of any of claims 8, 12 and 14-18, wherein said compound
+having the structure:
+orapharmaceuticallyacceptable
+salt or ester thereof.
+42.
+The method of claim 1, with the proviso that when Z' is N, Z2 and Z* are
+
+--- PAGE 24 ---
+PCT/IL2012/050061
+108
+C, Z is C, U' is -C(O)NH-, U2 is -L-W, and L is an ethylene linker, one of V, A, and X
+is independently an optionally substituted aryl, heteroaryl, or 7-membered azacyclic
+ring, optionally containing an additional heteroatom selected from N, O and S as a ring
+member, if W is pyrrolidin-1-yl, N-methyl-pyrrolidin-2-yl, piperidin-1-yl or morpholin-
+1-yl.
+43.
+The method of claim 2, with the proviso that when U' is -C(O)NH-, U² is
+-L-W, and L is an ethylene linker, one of A and X is independently an optionally
+substituted aryl, heteroaryl, or 7-membered azacyclic ring, optionally containing an
+additional heteroatom selected from N, O and S as a ring member, if W is pyrrolidin-1-
+yl, N-methyl-pyrrolidin-2-yl, piperidin-1-yl or morpholin-1-yl.

@@ -1,0 +1,65 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+19.03.2020
+Sheet
+Application No:
+16 802 532.8
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-67
+filedwithentryintotheregionalphasebeforetheEPO
+Claims,Numbers
+1-8
+filed in electronic form on
+21-06-2019
+Drawings,Sheets
+1/4-4/4
+filedwithentryintotheregionalphasebefore theEPO
+Uponentryintheregionalphase,theapplicanthasfiledanewsetofclaims
+wherethesubjectmatteressentiallyhasbeenlimitedtooriginalclaim2.
+Superfluousclaimshavebeendeleted orrenumbered.
+In addition,theobjectedfunctionalfeatures aswellasthebracketshavebeen
+replacedorcorrected.
+Therefore,the present subject-matter meets therequirements of article 123(2)
+EPC.
+2
+In view of the fact that the present limitations (cf.e.g. R',R7or A),the present
+subjectmattercanbeconsideredasnoveloverD1toD3.
+However, looking at D4, compounds 19, 20, 31 and 32,it becomes clear that
+thesecompoundsstillfallunderthepresentscopeandthusthepresentsubject-
+matter cannot considered tobe novel withrespect to article54(1)(2)EPC.
+3
+As regardsinventive step,the applicant has argued that thepresent compounds
+have superiorpropertiesover theEGFRinhibitorAZD9291which itself is
+superioroverthepriorartcompounds.
+However,ithastobemadeclearthat,if compounds19,20,31and32would no
+representtheclosestpriorartfortheassessmentofinventivestepwithrespect
+to theDecisionof theBoardsofAppealT181/82.Therefore,comparativetests
+havetobecarriedoutviathesecompounds.Moreover,it hastobepointed out
+thatthatthesecompoundsonlyshowminorstructuraldifferencestothe
+exemplifiedcompounds4-6.Suchsmalldifferencesarewellwithinthe
+knowledgeofaskilledperson.
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+19.03.2020
+Sheet
+2
+Application No:
+16 802 532.8
+Date
+Feuille
+Demande n°:
+Therefore,the present subject-matter does not involve an inventive step with
+regardtoarticle56EPC.
+EPOForm290601.91TRI

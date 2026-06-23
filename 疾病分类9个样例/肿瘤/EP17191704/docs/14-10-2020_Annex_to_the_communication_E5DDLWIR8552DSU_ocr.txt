@@ -1,0 +1,133 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+14.10.2020
+Sheet
+Application No:
+17 191 704.0
+Date
+Feuille
+Demande n°:
+Description,Pages
+1-175
+as originally filed
+Claims, Numbers
+1-5
+filed in electronic form on
+27-03-2020
+Drawings, Sheets
+1/8-8/8
+as originally filed
+Referenceismadeto thefollowing documents;thenumberingwill be adhered to inthe
+rest of the procedure.
+D1
+WO2008/039218A2(PHARMACYCLICSINC[US];HONIGBERGLEE
+[US];VERNERERIK[US];PANZHEN)3April2008(2008-04-03)
+D2
+WO2007/136790A2(MANNKINDCORP[US];FLYNNGARYA[US];LEE
+SANDRAAEYOUNG[US];FARIS)29November2007(2007-11-29)
+D3
+AnnaSmith:"lmbruvica failsPhase Ill pancreatic cancer trial-
+PharmaTimes",
+,1 January 2019 (2019-01-01),pages 1-2,XP055593391,
+RetrievedfromtheInternet:
+URL:http://www.pharmatimes.com/news/
+imbruvica_fails_phase_ii_pancreatic_cancer_trial_1275758
+[retrieved on 2019-06-03]
+Thefollowingdocumentsarecited bytheExaminer.Acopyof thedocumentsis
+annexedtothecommunicationandthenumberingwillbeadheredtointherestofthe
+procedure.
+D4
+Sj Moschos ETAL:"NCI9922:Phase Il study of ibrutinib in treatment-
+refractory distant metastatic cutaneousmelanoma(DMCM)",
+Annals of Oncology,Volume 29, Supplement 8,1 October 2018
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+14.10.2020
+Sheet
+Application No:
+17191 704.0
+Date
+Feuille
+Demande n°:
+(2018-10-01),XP055738183,
+DOl:doi:10.1093/annonc/mdy289
+[retrievedon2020-10-08]
+D5
+W.GaoETAL:"SelectiveAntitumorActivityof IbrutinibinEGFR-Mutant
+Non-Small Cell Lung Cancer Cells",
+JOURNALOFTHENATIONALCANCERINSTITUTE,
+XP055221734,
+GB
+ISSN:0027-8874,DOl:10.1093/jnci/dju204
+Art. 83 EPC
+TheapplicantarguedwithrespecttoArt.56EPCthatthecitedartfailedtoprovidea
+motivationtoselectoneoftheclaimedcancertypes,inparticularastherewasno
+teaching thatBTKinhibitionwouldbesuccessful intreating coloncancer,SCLC,
+NSCLC or melanoma.
+The first examiner is inclined to accept these arguments,i.e. based on the teaching that
+ibrutinibisaninhibitorofBTK,andtoalesserextentalsoofSYKandLYN[00412],
+inhibits growth of DHL-6 cells [00157], inhibits pPLC-gamma and inhibits Ca2+ influx in
+Ramoscells(B-cells),theskilledpersonmightpossiblynothavededuced thatthis
+wouldtranslateintoananti-tumoreffectinsolid tumorsastaughtinD1asthelink
+between these mechanisms of action and the claimed tumor types had not been
+established in theprior art.
+XP55738183)thatibrutinibfailedtotreat melanoma,despiteof thefact thatpatients
+hadbeenselected thatwerebelieved tobeparticularlysusceptibletothedrugasthey
+overexpressed ITK. Thus, even years after the priority date, it is not known, which
+markers(e.g.overexpressionofBTK,ITK,LCK..)werenecessarytoidentifya
+that is susceptible to ibrutinib.
+Likewise,D5(Ga0etal.2014,XP055221734)teachesthatNSCLClungcancercells
+testedthereinwereresponsivetoibrutinib,but36outof39onlyathigh
+concentrations,i.e.withIC50valuesbetween2and30microM,whereas3ofthem,
+EPO Form 2906 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+14.10.2020
+Sheet
+3
+Application No:
+17191704.0
+Date
+Feuille
+Demande n°:
+mutatedcancertypesitwasquestioned if ibrutinibcouldbeused inclinic.Thus,even
+years aftertheprioritydate,it wasstilluncertainwhetherornotibrutinibwouldbe
+effetiveandsufficientlysafetotreatEGFR-mutatedNSCLC.Itisevenmoredoubtfulifit
+wouldbeeffectiveinNSCLCwithoutEGFRmutationsascoveredbythepresentclaims.
+Theapplicationiscompletelysilentastothespecificbiomarkertobeusedinorderto
+identifythoseNsCLCpatientspotentiallysusceptibletoibrutinibinvivo.
+The applicationdoesnotprovideevidencethatany of the claimedsolid cancers are
+indeedsusceptibletoibrutinib.Nodatahavebeenprovidedinthisrespectandno
+rationalehasbeenprovidedwhy theanti-cancereffectasdemonstratedforaspecific
+lymphomatypeasexemplifiedinthepresentapplicationcouldbeextrapolatedtoother
+solid tumors.
+TheEDis awareof thefact thatsomeofibrutinib's activitieshavebeenreportedonp.
+166/168,tables1and2.However,whathasnotbeendisclosedishowthese
+mechanismsarelinkedwiththerespectivesolidtumor.Asisapparentfromtheabove
+Moschos et al.,despite of these manifold mechanisms of action and the application
+doesnotexplainhowsuchfailuremightbeovercome.
+Thus,it appearsnotplausiblethattheclaimedcompound treatstheclaimedsolid
+cancers,atleastnotovertheentirescopeoftheclaims,forthesamereasonsaswhy
+theskilledpersonwouldnotdeducefromD1thatibrutinibiseffectiveinsolidcancers,in
+whichtargetof ibrutiniband asit requires aresearchprogram toidentifythosesolid
+cancersubtypessusceptibletothecompound.
+Incontrastthereto,thetreatmentofcoloncancerbyanEGFRinhibitorwasalready
+establishedandalsowell-knownatthefilingdate.Itappearsthatthecontributionofthe
+present applicationoverthepriorartwasthefinding thatibrutinibwasnotonlyeffective
+directedtosolidcancertypes(otherthanmelanomaorNSCLC)thatwerecommonly
+knowntobesusceptibletoEGFRinhibition,suchascoloncancer,thesubject-matteris
+consideredtobesufficientlydisclosed.
+EPOForm290601.91TRI

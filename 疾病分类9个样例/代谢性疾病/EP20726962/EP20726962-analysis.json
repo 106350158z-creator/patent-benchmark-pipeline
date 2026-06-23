@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "jurisdiction": "EP",
+    "application_number": "EP20726962.2",
+    "title": "COMBINATIONS COMPRISING BENZODIOXOL AS GLP-1R AGONISTS FOR USE IN THE TREATMENT OF NASH/NAFLD AND RELATED DISEASES",
+    "applicant": "Pfizer Inc.",
+    "filing_date": "2020-05-15",
+    "examination_date": "2025-06-20",
+    "outcome": "granted"
+  },
+  "grant_label": "yes",
+  "dimension_scores": {
+    "novelty_score": 80,
+    "novelty_disc": {
+      "analysis": "审查记录中，审查员在 2024-07 明确指出单一文献 D1 公开了本案所述 GLP-1R agonists 及其组合，并直接写明“Thus anticipating the subject-matter of the present claims.” 申请人随后在 2024-10 对权利要求作出回应，删除了被点名的 fatty liver 选项；到 2025-02 出现拟授权，2025-06 正式授权，说明该新颖性异议已在最终文本中被克服。当前风险因此较低，但由于来源中确实存在明确的 anticipation 表述，若后续重新放宽疾病限定，仍会回到新颖性风险。",
+      "original_text": "Therewith,thepresentpriorityisnotinvalidated. thepresentcombinationsforuse in thetreatmentofNASH.Saiddiseasesfall within the broader term\"fatty liver\".Thus anticipating the subject-matter of the present claims.",
+      "translation": "因此，当前优先权并未被破坏。上述用于治疗 NASH 的现有组合，这些疾病落入更宽泛的“fatty liver”术语之内。因此，现有技术已经预见了本申请权利要求的主题。",
+      "llm_evidence_explanation": "该段原文是审查员对单一现有技术的明确结论，直接使用了“anticipating”并说明相关疾病落入更宽术语，从而支持新颖性曾被否定但后续被修改克服。"
+    },
+    "inventive_step_score": 100,
+    "inventive_step_disc": {
+      "analysis": "源材料显示该案已进入Rule 71(3)拟授权并最终获得授权，说明审查员未坚持Art.56创造性异议。现有记录中未见对最接近现有技术、区别特征和客观技术问题的否定性problem-solution分析，也未见COMVIK下非技术特征导致的创造性缺陷。申请人后续修订主要是删除“fatty liver”选项以回应其他审查意见，但最终文本仍被批准，因此当前创造性风险基本不存在。",
+      "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC FollowingexaminationofEuropeanpatent applicationNo.20726962.2aEuropeanpatentwiththetitle 2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated 28.02.25ishereby granted inrespect of the designated Contracting States.",
+      "translation": "根据《欧洲专利公约》第一百零七条第一款作出授予欧洲专利的决定。在审查欧洲专利申请第20726962.2号后，现授予一项欧洲专利，适用于指定缔约国。",
+      "llm_evidence_explanation": "This grant decision is strong evidence that the examining division ultimately accepted the claims under EPC requirements, including Art.56 inventive step. It supports a top score because no surviving inventive-step objection appears in the record."
+    },
+    "support_score": 80,
+    "support_disc": {
+      "analysis": "审查材料中没有看到审查员对充分公开、说明书支持或原始公开作出明确否定；相反，审查员在附件意见中明确写明D1公开了所述GLP-1R激动剂及其与各抑制剂的组合，并且这些组合是在NASH语境下公开，认为现有优先权不被破坏。申请人随后又将部分权利要求中的“fatty liver”选项删除，显示其在原始公开/Article 123(2)边界上作了收窄性修改。最终案件进入Rule 71(3)并获得授权，说明当前文本已被接受。整体来看，充分公开/支持风险已基本化解，但若后续再恢复更宽的疾病表述或引入新的说明书措辞，仍可能产生新增内容或支持争议。",
+      "original_text": "theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor\nandFXR agonist(seelines 3-37 of page 36).The disclosure of these\ncombinationsismadeinthecontextofNASH.\nclaimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis,\nnonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholicsteatohepatitiswith\ncirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease.\nTherewith,thepresentpriorityisnotinvalidated.",
+      "translation": "文件D1（WO2019239319，链接至EP4219487）由同一申请人提交，并主张在20.05.2019（当前优先权日）之前的两个优先权；其公开了当前所主张的GLP-1R激动剂：见D1的实施例1-102以及它们与所主张的ACC抑制剂、DGAT2抑制剂、KHK抑制剂和FXR激动剂的组合（见第36页第3-37行）。这些组合的公开是在NASH的语境中进行的。所主张的疾病包括脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。因此，当前优先权未被破坏。",
+      "llm_evidence_explanation": "该段明确把D1中的实施例、组合方案和NASH疾病背景与当前主张对应起来，支持说明书/原始公开对组合用途和疾病范围的支撑；同时说明审查阶段已认可该公开基础。",
+      "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt"
+    },
+    "clarity_score": 100,
+    "clarity_disc": {
+      "analysis": "审查材料未显示Art.84清楚性被持续否定；相反，审查局在后续程序中将修订后的权利要求视为可授权，并最终授予欧洲专利。说明术语边界、权利要求限定和必要技术特征已被接受，当前清楚性风险很低。若后续比对或验证，主要注意的是OCR抽取文本中个别化学名称排版混乱，但这不是审查层面的清楚性缺陷。",
+      "original_text": "4 newlyfiledclaimsareconsideredtobeallowable.Theapplicantisthereforerequestedtobring thedescriptionintoconformitywiththeseclaims;",
+      "translation": "4项新提交的权利要求被认为是可授权的。因此，申请人被要求使说明书与这些权利要求一致；",
+      "llm_evidence_explanation": "该原文表明审查局已接受修订后的权利要求为可授权，结合最终授权决定，支持清楚性问题已被克服或不存在持续异议，因此该维度应评为满分。"
+    },
+    "eligibility_score": 100,
+    "eligibility_disc": {
+      "analysis": "审查材料未显示EP Art.52适格性被单独质疑。现有权利要求已经按Art.54(5) EPC写成医疗用途组合，即“for use in the treatment of a disease or condition”，其对象是特定GLP-1R agonist与其他化合物的治疗组合，属于EPO允许的医药用途格式，不落入Art.52/53(c)所排除的主题。申请人还在答复中将若干独立项里的“fatty liver”选项删除，使疾病范围进一步收窄到NASH相关病症；这更像是对其他审查意见的克服，而不是适格性风险的来源。最终EPO已作出授予决定，说明该维度在当前文本下已被接受，现阶段仅剩极低的后续解释风险。",
+      "original_text": "The present set of claims contains 4 independent claims, formulated according toArt.54(5)EPC as follows: Independent claim 1 relates to a combination comprising (1) a GLP-1R agonist aslistedthereinandanACCiinhibitorofthefollowingformula foruseinthetreatmentofadisease orconditionisselectedfromfattyliver, nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith cirrhosis,andnonalcoholicsteatohepatitiswith cirrhosis andwithhepatocellular carcinomaorwithametabolic-relateddisease.",
+      "translation": "本申请的权利要求组包含4项独立权利要求，并按EPC第54(5)条的形式撰写如下：独立权利要求1涉及一种组合物，包括（1）如其中所列的GLP-1R激动剂和一种ACCi抑制剂，其用于治疗一种疾病或病症，该疾病或病症选自脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。",
+      "llm_evidence_explanation": "该原文明确把权利要求限定为Art.54(5) EPC下的医疗用途组合，并直接写明“for use in the treatment of a disease or condition”，说明其属于EPO通常认可的医药用途技术主题，而非排除主题，支持高适格性评分。"
+    }
+  },
+  "aggregate_score": 92,
+  "top_risk_reasons": [
+    {
+      "original_text": "A prior-art document was expressly said to anticipate the claims, so some residual novelty uncertainty remains despite later grant.",
+      "translation": "一份现有技术文件被明确认为预见了权利要求，因此尽管后来获得授权，仍存在一定残余新颖性不确定性。"
+    },
+    {
+      "original_text": "The EPO ultimately granted the patent, so no live Art.56 inventive-step objection remains on record.",
+      "translation": "欧洲专利局最终授予了该专利，因此记录中已无有效的第56条创造性异议。"
+    },
+    {
+      "original_text": "Residual support risk is low, but broad disease wording and any future expansion could still trigger Article 123(2) objections.",
+      "translation": "残余支持性风险较低，但宽泛的疾病表述及任何未来扩展仍可能引发第123(2)条异议。"
+    },
+    {
+      "original_text": "The patent was granted, so no remaining clarity risk is apparent.",
+      "translation": "该专利已获授权，因此未见明显的剩余清楚性风险。"
+    },
+    {
+      "original_text": "Eligibility risk is low because the claims are medical-use combinations under Art.54(5) EPC and the patent was granted.",
+      "translation": "可专利性客体风险较低，因为权利要求属于《欧洲专利公约》第54(5)条下的医疗用途组合，且专利已获授权。"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "original_text": "Keep the granted disease limitation and prepare a D1 distinction chart before any broader refiled or divisional claims.",
+      "translation": "保留已授权的疾病限定，并在提交任何更宽的重新申请或分案权利要求前，准备一份相对于D1的区别对照表。"
+    },
+    {
+      "original_text": "Proceed on the granted claim set and keep the Rule 71(3) and grant decision documents as the inventive-step support record.",
+      "translation": "以已授权的权利要求组推进，并将Rule 71(3)通知及授权决定文件作为创造性支持记录保存。"
+    },
+    {
+      "original_text": "Keep the narrowed NASH-focused claim set and maintain a clear basis map tying each feature to the original disclosure before making any further edits.",
+      "translation": "保留聚焦于NASH的缩窄权利要求组，并在进一步修改前，维护一份将各特征对应至原始公开的清晰依据图。"
+    },
+    {
+      "original_text": "No clarity action is needed; rely on the granted claim text for any downstream validation or enforcement work.",
+      "translation": "无需采取清楚性措施；后续任何有效性确认或维权工作均以已授权权利要求文本为依据。"
+    },
+    {
+      "original_text": "Keep the granted Art.54(5) EPC medical-use wording and avoid reintroducing broader non-therapeutic or excluded-claim language.",
+      "translation": "保留已授权的EPC第54(5)条医疗用途措辞，并避免重新引入更宽的非治疗性或被排除的权利要求表述。"
+    }
+  ],
+  "evidence_trace": {
+    "prior_art_documents": [
+      {
+        "rank": 1,
+        "citation": "WO2019239319",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019239319",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 2,
+        "citation": "EP4219487",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP4219487/en",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      }
+    ],
+    "affected_claims": [
+      1,
+      2,
+      3,
+      5,
+      9,
+      16
+    ],
+    "specification_support": [
+      {
+        "location": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+        "original_text": "theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor\nandFXR agonist(seelines 3-37 of page 36).The disclosure of these\ncombinationsismadeinthecontextofNASH.\nclaimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis,\nnonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholicsteatohepatitiswith\ncirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease.\nTherewith,thepresentpriorityisnotinvalidated.",
+        "translation": "文件D1（WO2019239319，链接至EP4219487）由同一申请人提交，并主张在20.05.2019（当前优先权日）之前的两个优先权；其公开了当前所主张的GLP-1R激动剂：见D1的实施例1-102以及它们与所主张的ACC抑制剂、DGAT2抑制剂、KHK抑制剂和FXR激动剂的组合（见第36页第3-37行）。这些组合的公开是在NASH的语境中进行的。所主张的疾病包括脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。因此，当前优先权未被破坏。",
+        "llm_evidence_explanation": "该段明确把D1中的实施例、组合方案和NASH疾病背景与当前主张对应起来，支持说明书/原始公开对组合用途和疾病范围的支撑；同时说明审查阶段已认可该公开基础。"
+      },
+      {
+        "location": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+        "original_text": "In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16havebeen amendedbydeletingtheoptionforthediseasetreated tobefattyliver.",
+        "translation": "针对该通信第3段中的异议，权利要求1、5、9和16已通过删除“所治疗疾病为脂肪肝”的选项进行了修改。",
+        "llm_evidence_explanation": "该修改表明申请人通过收窄疾病范围来回应原始公开/123(2)边界相关的审查意见，降低了支持风险。"
+      },
+      {
+        "location": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+        "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC",
+        "translation": "依据EPC第97(1)条作出授予欧洲专利的决定",
+        "llm_evidence_explanation": "最终授权表明在审查终局中，现有文本已被接受，没有留下未解决的充分公开/支持障碍。"
+      }
+    ],
+    "examination_material_evidence": [
+      {
+        "issue": "novelty",
+        "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+        "original_text": "Therewith,thepresentpriorityisnotinvalidated. thepresentcombinationsforuse in thetreatmentofNASH.Saiddiseasesfall within the broader term\"fatty liver\".Thus anticipating the subject-matter of the present claims.",
+        "translation": "因此，当前优先权并未被破坏。上述用于治疗 NASH 的现有组合，这些疾病落入更宽泛的“fatty liver”术语之内。因此，现有技术已经预见了本申请权利要求的主题。",
+        "llm_evidence_explanation": "审查员将单一文献 D1 与本案权利要求对比后，直接认定其预见了本案主题，构成明确的新颖性否定依据。"
+      },
+      {
+        "issue": "novelty",
+        "source": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+        "original_text": "In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16havebeen amendedbydeletingtheoptionforthediseasetreated tobefattyliver.",
+        "translation": "针对该通知第 3 段中的异议，权利要求 1、5、9 和 16 已修改，删除了将所治疗疾病设为 fatty liver 的选项。",
+        "llm_evidence_explanation": "申请人通过删除被认为与现有技术冲突的疾病选项来回应新颖性异议，说明原始文本的风险点已被针对性收窄。"
+      },
+      {
+        "issue": "novelty",
+        "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+        "original_text": "ishereby granted inrespect of the designated Contracting States.",
+        "translation": "现就所指定的缔约国授予该欧洲专利。",
+        "llm_evidence_explanation": "最终授予表明经修改后的文本已获接受，新颖性障碍不再阻止授权。"
+      },
+      {
+        "issue": "inventive_step",
+        "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+        "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC FollowingexaminationofEuropeanpatent applicationNo.20726962.2aEuropeanpatentwiththetitle 2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52)dated 28.02.25ishereby granted inrespect of the designated Contracting States.",
+        "translation": "根据《欧洲专利公约》第一百零七条第一款作出授予欧洲专利的决定。在审查欧洲专利申请第20726962.2号后，现授予一项欧洲专利，适用于指定缔约国。",
+        "llm_evidence_explanation": "The grant decision shows the EPO concluded examination positively, which implies no outstanding Art.56 inventive-step refusal remained."
+      },
+      {
+        "issue": "inventive_step",
+        "source": "28-02-2025_Communication_about_intention_to_grant_a_European_patent_M7LLTWXI19N4W9D_ocr.txt",
+        "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof the Acopyoftherelevantdocumentsisenclosed",
+        "translation": "特此通知您，审查部门打算基于所附相关文件授予一项欧洲专利。",
+        "llm_evidence_explanation": "The intention-to-grant communication further confirms that the application had already cleared substantive objections, including any Art.56 issues."
+      },
+      {
+        "issue": "support",
+        "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+        "original_text": "theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor\nandFXR agonist(seelines 3-37 of page 36).The disclosure of these\ncombinationsismadeinthecontextofNASH.\nclaimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis,\nnonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholicsteatohepatitiswith\ncirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease.\nTherewith,thepresentpriorityisnotinvalidated.",
+        "translation": "文件D1（WO2019239319，链接至EP4219487）由同一申请人提交，并主张在20.05.2019（当前优先权日）之前的两个优先权；其公开了当前所主张的GLP-1R激动剂：见D1的实施例1-102以及它们与所主张的ACC抑制剂、DGAT2抑制剂、KHK抑制剂和FXR激动剂的组合（见第36页第3-37行）。这些组合的公开是在NASH的语境中进行的。所主张的疾病包括脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。因此，当前优先权未被破坏。",
+        "llm_evidence_explanation": "该原文直接说明相关组合和用途已在原始/优先权材料中公开，且审查员认为现有优先权有效，支持当前权利要求的公开基础。"
+      },
+      {
+        "issue": "support",
+        "source": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+        "original_text": "In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16havebeen amendedbydeletingtheoptionforthediseasetreated tobefattyliver.",
+        "translation": "针对该通信第3段中的异议，权利要求1、5、9和16已通过删除“所治疗疾病为脂肪肝”的选项进行了修改。",
+        "llm_evidence_explanation": "该修改表明申请人通过收窄疾病范围来回应原始公开/123(2)边界相关的审查意见，降低了支持风险。"
+      },
+      {
+        "issue": "support",
+        "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+        "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC",
+        "translation": "依据EPC第97(1)条作出授予欧洲专利的决定",
+        "llm_evidence_explanation": "最终授权表明在审查终局中，现有文本已被接受，没有留下未解决的充分公开/支持障碍。"
+      },
+      {
+        "issue": "clarity",
+        "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+        "original_text": "4 newlyfiledclaimsareconsideredtobeallowable.Theapplicantisthereforerequestedtobring thedescriptionintoconformitywiththeseclaims;",
+        "translation": "4项新提交的权利要求被认为是可授权的。因此，申请人被要求使说明书与这些权利要求一致；",
+        "llm_evidence_explanation": "审查局明确将修订后的权利要求视为可授权，没有留下Art.84清楚性未决问题的迹象。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+        "original_text": "The present set of claims contains 4 independent claims, formulated according toArt.54(5)EPC as follows: Independent claim 1 relates to a combination comprising (1) a GLP-1R agonist aslistedthereinandanACCiinhibitorofthefollowingformula foruseinthetreatmentofadisease orconditionisselectedfromfattyliver, nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith cirrhosis,andnonalcoholicsteatohepatitiswith cirrhosis andwithhepatocellular carcinomaorwithametabolic-relateddisease.",
+        "translation": "本申请的权利要求组包含4项独立权利要求，并按EPC第54(5)条的形式撰写如下：独立权利要求1涉及一种组合物，包括（1）如其中所列的GLP-1R激动剂和一种ACCi抑制剂，其用于治疗一种疾病或病症，该疾病或病症选自脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。",
+        "llm_evidence_explanation": "该段直接表明权利要求采用Art.54(5) EPC医疗用途格式，支持其属于可专利的技术性医疗用途主题。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+        "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC FollowingexaminationofEuropeanpatent applicationNo.20726962.2aEuropeanpatent",
+        "translation": "根据EPC第97(1)条作出授予欧洲专利的决定。经审查欧洲专利申请号20726962.2后，授予一项欧洲专利……",
+        "llm_evidence_explanation": "授予决定表明在最终审查结论中未残留足以阻却授权的适格性障碍，因此支持该维度已通过。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+        "original_text": "In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16have been amendedbydeleting theoptionforthediseasetreated tobefattyliver.",
+        "translation": "针对该通知第3段中的异议，权利要求1、5、9和16已作修改，删除了将所治疗疾病设为脂肪肝的选项。",
+        "llm_evidence_explanation": "该修改体现申请人收窄了治疗适用范围，进一步强化了医疗用途限定；虽然并非直接的适格性论证，但有助于降低排除主题争议。"
+      }
+    ],
+    "examination_rounds": 1
+  },
+  "risk_source_sentences": [
+    {
+      "issue": "novelty",
+      "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+      "original_text": "Therewith,thepresentpriorityisnotinvalidated. thepresentcombinationsforuse in thetreatmentofNASH.Saiddiseasesfall within the broader term\"fatty liver\".Thus anticipating the subject-matter of the present claims.",
+      "translation": "因此，当前优先权并未被破坏。上述用于治疗 NASH 的现有组合，这些疾病落入更宽泛的“fatty liver”术语之内。因此，现有技术已经预见了本申请权利要求的主题。",
+      "llm_evidence_explanation": "审查员将单一文献 D1 与本案权利要求对比后，直接认定其预见了本案主题，构成明确的新颖性否定依据。"
+    },
+    {
+      "issue": "novelty",
+      "source": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+      "original_text": "In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16havebeen amendedbydeletingtheoptionforthediseasetreated tobefattyliver.",
+      "translation": "针对该通知第 3 段中的异议，权利要求 1、5、9 和 16 已修改，删除了将所治疗疾病设为 fatty liver 的选项。",
+      "llm_evidence_explanation": "申请人通过删除被认为与现有技术冲突的疾病选项来回应新颖性异议，说明原始文本的风险点已被针对性收窄。"
+    },
+    {
+      "issue": "novelty",
+      "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+      "original_text": "ishereby granted inrespect of the designated Contracting States.",
+      "translation": "现就所指定的缔约国授予该欧洲专利。",
+      "llm_evidence_explanation": "最终授予表明经修改后的文本已获接受，新颖性障碍不再阻止授权。"
+    },
+    {
+      "issue": "support",
+      "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+      "original_text": "theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor\nandFXR agonist(seelines 3-37 of page 36).The disclosure of these\ncombinationsismadeinthecontextofNASH.\nclaimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis,\nnonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholicsteatohepatitiswith\ncirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease.\nTherewith,thepresentpriorityisnotinvalidated.",
+      "translation": "文件D1（WO2019239319，链接至EP4219487）由同一申请人提交，并主张在20.05.2019（当前优先权日）之前的两个优先权；其公开了当前所主张的GLP-1R激动剂：见D1的实施例1-102以及它们与所主张的ACC抑制剂、DGAT2抑制剂、KHK抑制剂和FXR激动剂的组合（见第36页第3-37行）。这些组合的公开是在NASH的语境中进行的。所主张的疾病包括脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。因此，当前优先权未被破坏。",
+      "llm_evidence_explanation": "该原文直接说明相关组合和用途已在原始/优先权材料中公开，且审查员认为现有优先权有效，支持当前权利要求的公开基础。"
+    },
+    {
+      "issue": "support",
+      "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+      "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC",
+      "translation": "依据EPC第97(1)条作出授予欧洲专利的决定",
+      "llm_evidence_explanation": "最终授权表明在审查终局中，现有文本已被接受，没有留下未解决的充分公开/支持障碍。"
+    }
+  ],
+  "action_basis_source_sentences": [
+    {
+      "issue": "novelty",
+      "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+      "original_text": "Therewith,thepresentpriorityisnotinvalidated. thepresentcombinationsforuse in thetreatmentofNASH.Saiddiseasesfall within the broader term\"fatty liver\".Thus anticipating the subject-matter of the present claims.",
+      "translation": "因此，当前优先权并未被破坏。上述用于治疗 NASH 的现有组合，这些疾病落入更宽泛的“fatty liver”术语之内。因此，现有技术已经预见了本申请权利要求的主题。",
+      "llm_evidence_explanation": "审查员将单一文献 D1 与本案权利要求对比后，直接认定其预见了本案主题，构成明确的新颖性否定依据。"
+    },
+    {
+      "issue": "novelty",
+      "source": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+      "original_text": "In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16havebeen amendedbydeletingtheoptionforthediseasetreated tobefattyliver.",
+      "translation": "针对该通知第 3 段中的异议，权利要求 1、5、9 和 16 已修改，删除了将所治疗疾病设为 fatty liver 的选项。",
+      "llm_evidence_explanation": "申请人通过删除被认为与现有技术冲突的疾病选项来回应新颖性异议，说明原始文本的风险点已被针对性收窄。"
+    },
+    {
+      "issue": "novelty",
+      "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+      "original_text": "ishereby granted inrespect of the designated Contracting States.",
+      "translation": "现就所指定的缔约国授予该欧洲专利。",
+      "llm_evidence_explanation": "最终授予表明经修改后的文本已获接受，新颖性障碍不再阻止授权。"
+    },
+    {
+      "issue": "support",
+      "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+      "original_text": "theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor\nandFXR agonist(seelines 3-37 of page 36).The disclosure of these\ncombinationsismadeinthecontextofNASH.\nclaimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis,\nnonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholicsteatohepatitiswith\ncirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease.\nTherewith,thepresentpriorityisnotinvalidated.",
+      "translation": "文件D1（WO2019239319，链接至EP4219487）由同一申请人提交，并主张在20.05.2019（当前优先权日）之前的两个优先权；其公开了当前所主张的GLP-1R激动剂：见D1的实施例1-102以及它们与所主张的ACC抑制剂、DGAT2抑制剂、KHK抑制剂和FXR激动剂的组合（见第36页第3-37行）。这些组合的公开是在NASH的语境中进行的。所主张的疾病包括脂肪肝、伴肝纤维化的非酒精性脂肪性肝炎、伴肝硬化的非酒精性脂肪性肝炎，以及伴肝细胞癌或代谢相关疾病的非酒精性脂肪性肝炎。因此，当前优先权未被破坏。",
+      "llm_evidence_explanation": "该原文直接说明相关组合和用途已在原始/优先权材料中公开，且审查员认为现有优先权有效，支持当前权利要求的公开基础。"
+    },
+    {
+      "issue": "support",
+      "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+      "original_text": "DecisiontograntaEuropeanpatentpursuanttoArticle97(1)EPC",
+      "translation": "依据EPC第97(1)条作出授予欧洲专利的决定",
+      "llm_evidence_explanation": "最终授权表明在审查终局中，现有文本已被接受，没有留下未解决的充分公开/支持障碍。"
+    }
+  ]
+}

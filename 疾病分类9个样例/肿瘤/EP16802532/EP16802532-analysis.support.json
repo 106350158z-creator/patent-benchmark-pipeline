@@ -1,0 +1,44 @@
+{
+  "support_score": 80,
+  "support_disc": {
+    "analysis": "SOURCE未显示审查员维持Art.83充分公开异议。案件中出现过与Art.84/Art.123(2)相关的修改和说明：申请人说明将原从属权利要求中的三个化合物并入新权利要求1并给出PCT权利要求和说明书页码作为原始依据；清楚性异议称已通过修改克服；随后还提交了适配说明书并使说明书与当前权利要求一致。最终EPO发出Rule 71(3)拟授权并作出授权决定，表明充分公开/支持/原始公开风险已被审查程序接受。当前风险主要是授权后若对新增具体化合物或说明书适配依据提出攻击，仍需依赖已记录的原始申请依据和说明书一致化修改。",
+    "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16802532.8aEuropeanpatentwiththetile\nand thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.03.22isherebygranted inrespect of thedesignatedContractingStates.",
+    "translation": "经对欧洲专利申请号16802532.8进行审查，现根据2022年3月21日依据EPC规则71(3)的通知中所示文本和支持文件，就指定缔约国授予欧洲专利。",
+    "llm_evidence_explanation": "该连续片段是最终授权决定，说明审查后以Rule 71(3)通知中的文本和支持文件授权，可支持本维度不存在未克服的充分公开、支持或新增内容障碍。"
+  },
+  "affected_claims": [
+    1
+  ],
+  "evidence": [
+    {
+      "issue": "support",
+      "source": "22-03-2021_Reply_to_communication_from_the_Examining_Division_E50SR0V95329DSU_ocr.txt",
+      "original_text": "Threecompoundsofformerclaim3havebeenincorporatedinto\nnewclaim1asalternativestothecompoundsofgeneralformula\nI. This amendment is based for example on PCT claim 3 for the\nfirsttwocompoundsandonpage30oftheEnglishtranslationof\nthe PCT application for compound 12.",
+      "translation": "原权利要求3中的三个化合物已作为通式I化合物的替代方案并入新的权利要求1。该修改例如基于PCT权利要求3中前两个化合物以及PCT申请英文译文第30页中的化合物12。",
+      "llm_evidence_explanation": "该片段直接说明权利要求1新增具体化合物的原始公开依据，涉及Art.123(2)和权利要求支持。"
+    },
+    {
+      "issue": "support",
+      "source": "22-03-2021_Reply_to_communication_from_the_Examining_Division_E50SR0V95329DSU_ocr.txt",
+      "original_text": "Theclarityobjectionregardingclaims3 and5isovercomeby the amendment\nindicated above.",
+      "translation": "关于权利要求3和5的清楚性异议已通过上述修改克服。",
+      "llm_evidence_explanation": "该片段显示Art.84清楚性问题曾存在但申请人通过修改处理；虽然对象是权利要求3和5，其修改依赖于新权利要求1结构。"
+    },
+    {
+      "issue": "support",
+      "source": "08-11-2021_Reply_to_communication_from_the_Examining_Division_KVQIPYC8152O3WN_ocr.txt",
+      "original_text": "Replacement pages of the complete description are submitted in mark-up and\ncleancopy.\nPriorartdocumentsD1toD4havebeenidentifiedandbrieflydiscussedon\nreplacementpages2and3.\nIthasbeenclarifiedonreplacementpage3thattheinventionisdefinedinthe\nclaims and that aspects not falling within the scope of the claims are disclosed\nandforinformationonly.",
+      "translation": "提交了完整说明书的替换页，包括带标记版本和清洁版本。现有技术文件D1至D4已在替换页第2和第3页中标识并简要讨论。替换页第3页已澄清本发明由权利要求限定，不落入权利要求范围的方面仅为公开和信息目的。",
+      "llm_evidence_explanation": "该片段说明说明书已被适配并限定发明由权利要求界定，有助于克服说明书与权利要求支持一致性风险。"
+    },
+    {
+      "issue": "support",
+      "source": "21-03-2022_Communication_about_intention_to_grant_a_European_patent_L0MFXQWD1D5KGZ9_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+      "translation": "兹通知，审查部拟基于上述申请，按照下文所示文本、附图及相关著录数据授予欧洲专利。",
+      "llm_evidence_explanation": "拟授权通知表明审查部接受了最终文本；结合后续授权决定，可支持充分公开/支持维度的剩余风险较低。"
+    }
+  ],
+  "risk_reason": "Minor historical clarity and basis issues were amended before grant; no unresolved sufficiency objection appears in the provided record.",
+  "recommended_action": "Maintain a file-history chart mapping each claim 1 alternative to the original PCT disclosure and keep the adapted description for post-grant defense."
+}

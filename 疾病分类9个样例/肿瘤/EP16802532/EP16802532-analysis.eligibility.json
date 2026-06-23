@@ -1,0 +1,30 @@
+{
+  "eligibility_score": 100,
+  "eligibility_disc": {
+    "analysis": "SOURCE中未显示审查员基于EP Art.52对适格性提出排除主题或缺乏技术性的异议。权利要求1涉及化合物或其药学可接受盐，并且材料中申请人说明其具有EGFR抑制活性，属于典型化学/医药技术主题。案件最终已获欧洲专利授权，因此当前适格性风险很低。",
+    "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16802532.8aEuropeanpatentwiththetile\nand thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.03.22isherebygranted inrespect of thedesignatedContractingStates.",
+    "translation": "经对欧洲专利申请号16802532.8进行审查，现根据2022年3月21日依据EPC规则71(3)发出的通知中所示的文本和支持文件，就指定缔约国授予欧洲专利。",
+    "llm_evidence_explanation": "该授权决定表明申请经实质审查后被授予欧洲专利；在SOURCE中未见Art.52适格性拒绝理由，故支持适格性维度通过。"
+  },
+  "affected_claims": [
+    1
+  ],
+  "evidence": [
+    {
+      "issue": "eligibility",
+      "source": "11-08-2022_Decision_to_grant_a_European_patent_L6FNAWHJ1M7IUKL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16802532.8aEuropeanpatentwiththetile\nand thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.03.22isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经对欧洲专利申请号16802532.8进行审查，现根据2022年3月21日依据EPC规则71(3)发出的通知中所示的文本和支持文件，就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "最终授权决定可作为未存在未克服适格性障碍的直接程序性证据。"
+    },
+    {
+      "issue": "eligibility",
+      "source": "08-11-2021_Reply_to_communication_from_the_Examining_Division_KVQIPYC8152O3WN_ocr.txt",
+      "original_text": "The compounds 4，5 and 12 show excellent EGFR inhibitory activity. The\ncompounds show a significantly higher inhibitory activity on the proliferation of\nH1975 cells than the structurally related compound 32 of D4.",
+      "translation": "化合物4、5和12显示出优异的EGFR抑制活性。这些化合物对H1975细胞增殖显示出显著高于D4中结构相关化合物32的抑制活性。",
+      "llm_evidence_explanation": "该段说明申请主题涉及具体生物化学活性和细胞增殖抑制效果，支持其具有技术性质和技术效果。"
+    }
+  ],
+  "risk_reason": "Eligibility risk is minimal because the granted claims concern technical chemical/pharmaceutical compounds with no Art.52 objection shown.",
+  "recommended_action": "Maintain the granted technical claim framing around compounds or pharmaceutically acceptable salts and EGFR inhibitory activity in any post-grant amendments."
+}

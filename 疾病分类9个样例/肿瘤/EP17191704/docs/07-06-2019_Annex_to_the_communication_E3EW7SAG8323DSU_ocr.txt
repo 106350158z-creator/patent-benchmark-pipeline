@@ -1,0 +1,123 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+07.06.2019
+Sheet
+1
+Application No: 17 191 704.0
+Date
+Feuille
+Demande n°:
+Theexaminationisbeing carriedoutonthefollowingapplicationdocuments
+Description,Pages
+1-175
+as originally filed
+Claims, Numbers
+1-4
+filed in electronic form on
+18-01-2019
+Drawings,Sheets
+1/8-8/8
+as originally filed
+Reference ismade to thefollowing documents;thenumbering will be adhered to in
+the rest of the procedure.
+D1
+WO 2008/039218A2(PHARMACYCLICSINC[US];HONIGBERGLEE
+[US];VERNER ERIK [US];PAN ZHEN)3 April 2008 (2008-04-03)
+D2
+WO2007/136790A2(MANNKINDCORP[US];FLYNNGARYA[US];
+LEE SANDRA AEYOUNG [US]; FARIS) 29 November 2007
+(2007-11-29)
+Thefollowing document is cited by the Examiner.A copy of the document is annexed
+tothecommunicationandthenumberingwillbeadheredtointherestofthe
+procedure.
+D3
+AnnaSmith:"lmbruvicafailsPhaseIll pancreaticcancertrial-
+PharmaTimes",
+，1January 2019(2019-01-01),pages 1-2,XP055593391,
+RetrievedfromtheInternet:
+URL:http://www.pharmatimes.com/news/
+imbruvica_fails_phase_ili_pancreatic_cancer_trial_1275758
+[retrievedon2019-06-03]
+D3 (Smith et al.2019)
+teachesthatibrutinibfailedtotreatmetastaticpancreaticcancerincombination
+therapy.
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+07.06.2019
+Sheet
+2
+Application No: 17 191 704.0
+Date
+Feuille
+Demande n°:
+Art.83 EPC
+D3 teachesthat ibrutinibfailedto treatmetastaticpancreatic cancer.Inviewof this
+teaching and inview of thefact that the present application does not provide any data
+demonstratingtheeffectivetreatmentofsolidcancers,inparticularpancreatic
+s
+overtheentirescopeoftheclaimsanditwouldrequirearesearchprogramtoidentify
+thespecificsolidcancerwhichissusceptibletoibrutinibtreatmentinvivo.
+Art.54 EPC
+The ED maintains the view that the subject-matter of claims 1,2,4 lacks novelty in
+view of D1.
+D1(WO2008039218) claims,in particular claim 8;s0041;compounds of $0205;
+$00412,table 3
+discloses compoundsof presentformulaI,preferablycompoundsofclaim8of D1,as
+inhibitorsofBtkforuseinthetreatmentof cancer,preferablyaB-cellproliferative
+disorder such as lymphoma (s0034),e.g. Burkitt's lymphoma (= a solid tumor). It is
+hematologicaltumors(S0041).Compound4,i.e.theracemateofibrutinibisthe
+preferred compound of theexamples,see examples3-5(s00412,table3).Ibrutinib
+(i.e.theR-enantiomer)thereof is disclosed ascompound 13 (example 1B+table 3).
+Ibrutinib (i.e. the R enantiomer) was furthermore demonstrated to be more active
+than its racemate compound 4 on Btk (table 3),compare compound 13 with 4.Thus,
+ibrutinib(racemate)andevenmoreibrutinib(R)enantiomerareparticularly
+highlighted.ItisconcludedthatnoselectionisrequiredtoarrivefromD1atthe
+specific combination of ibrutinibfor the treatment of solid tumors[disclosed in[0041]],
+Burkitt's lymphoma [0034]).
+In contrast thereto,D1 does not disclose the treatmentof sarcoma or carcinoma.
+Art.56EPC
+EPO Form 2906 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+07.06.2019
+3
+Application No: 17 191 704.0
+Date
+Feuille
+Demande n°:
+efficacyof ibrutinibfrom onesolid tumortoanotheronedespiteofthenegative
+teaching of D3, the following applies.
+D1maybe considered tobe the closest prior art asit discloses ibrutinibfor use in the
+(S0041).
+Presentclaims-inasfarasnovel-differtherefrominthattheyrelatetothepresently
+claimedsolidtumors.
+Thus,theproblemtobesolvedinviewofD1istofindanalternativetumorwhich
+mightbesusceptibletothetreatmentwithibrutinib.
+TheEDnotices that thepresent claims are not restricted tobreast cancer(forwhich
+the applicant provided STIN for the parent application), but relates to a variety of
+furthersolid tumors.Nodatahavebeenprovidedforanyoftheclaimed tumors.Thus,
+general usefulness of the compounds in treating the claimed solid tumors.
+Similarly,D1 explicitly teaches the usefulness of ibrutinib in the treatment of solid
+solidorhematologicaltumors(soo41).
+anti-tumor activity against solid tumors of the claimed compounds as suggested in D1
+totheusefulnessofsaidcompoundsinthetreatmentofthepresentlyclaimed tumors.
+Thus,thesubject-matterof theclaimsisobviousinviewofD1.
+whetherornottheskilledpersonwouldextrapolatefromtheusefulnessofibrutinib
+anothersolid tumor type (for which no data were provided in the application).The
+later provided data suggesting a potential usefulness of ibrutinib in certain mammary
+maybetreated by ibrutinib,however,they alsosupport theinitial teaching of D1 that
+ibrutinibindeedtreatssolidtumors.
+EPO Form 2906 01.91TRI

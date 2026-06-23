@@ -1,0 +1,276 @@
+
+--- PAGE 1 ---
+EP17821262.7
+P60798EP-PCT
+CLAIMS
+1.
+A therapeutic agent method of treating a cancer patient comprising administering to the
+patient a therapy-that inhibits poly [ADP-ribose] polymerase ("anti-PARP therapy") for use in a
+method of treating a cancerpatient,wherein the anti-PARP therapyis administeredindependent
+2.A method of treating a cancer patient comprising administering to the patient a therapy
+that inhibits poly [ADP-ribose] polymerase ('anti-PARP therapy"), wherein the anti-PARP
+therapy is commenced prior to determining theDNA repair status of the patient orBRCA status
+ofthepatient:,or
+3.A method of treating a cancer patient comprising administering to the patient a therapy
+that inhibits poly [ADP-ribose] polymerase (anti-PARP therapy"), wherein the anti-PARP
+therapy is commenced in the absence of determining the DNA repair status of the patient or
+BRCAstatusofthepatient.
+24.The therapeutic agent for use according to method of any one ofclaims 1-3, wherein the
+patient is characterized by an absence ofa mutation in BRCAl and/or BRCA2.
+5.The method of any one ofclaims 1 3, wherein the patient has at least one mutation in
+BRCA1 and/or BRCA2.
+63.A therapeutic agent method of treating a cancer patient comprising administering to the
+patient a therapy-that inhibits poly [ADP-ribose] polymerase ("anti-PARP therapy") for use in a
+method of treating a cancerpatient,wherein the patientischaracterized by an absence of a
+mutation inBRCA1 and/or BRCA2,andwherein the canceris agynecologicalcancer selected
+from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal cancer, and breast
+cancer.,or
+80
+
+--- PAGE 2 ---
+EP17821262.7
+P60798EP-PCT
+7.A method of treating a cancer patient comprising administering to the patient a
+therapy that inhibits poly [ADPribose] polymerase (anti-PARPtherapy"),wherein the cancer is
+characterized by an absence of a mutation in BRCA1 or BRCA2, and wherein the cancer is a
+gynecological cancer selected from the group consisting of: ovarian cancer, fallopian tube
+cancer,peritonealcancer,and breastcancer.
+48.The therapeutic agent for use according to method ofany one of claims 1-37, wherein the
+anti-PARP therapy is administered at a dose equivalent to about 100mg, about 200 mg,or about
+300 mg of niraparib or a salt or derivative thereof.
+59. The therapeutic agent for use according to method ofany one of claims 1-48, wherein
+the anti-PARP therapy comprises administration of an-agent that inhibits PARP-1 and/or PARP-
+2.
+10.The method of elaim 9, wherein the agent is a small moleeule, a nucleic acid, a
+polypeptide (e.g., an antibody), a carbohydrate, a lipid, a metal, or a toxin.
+11. The method of elaim 10, wherein the agent is seleeted from the group consisting of:
+ABT767,AZD2461,BGB-290,BGP15,CEP9722,E7016,E7449,fluz0parib,INO1001,JPI
+289, MP 124, niraparib, olaparib, ONO2231, rucaparib, SC 101914, talazoparib, veliparib, WW
+46, and salts or derivatives thereof.
+12.The method of claim 1l, wherein the agent is selected from the group consisting of:
+niraparib, olaparib, rucaparib, talazoparib, veliparib, and salts or derivatives thereof.
+136. The therapeutic agent for use according to method ofclaim 15, wherein the agent is
+niraparibor a salt or derivative thereof.
+147.The therapeutic agent for use according to method of any one ofclaims 1-13 or claim 2,
+wherein thecanceris agynecological cancer.,optionally
+81
+
+--- PAGE 3 ---
+EP17821262.7
+P60798EP-PCT
+15.The method ofclaim 14, wherein the gynecological cancer is selected from the group
+consisting of: ovarian cancer,fallopian tube cancer, peritoneal cancer, and breast cancer.
+168.  The therapeutic agent for use according to method ofany one of claims 1-715, wherein
+the cancer is a recurrent cancer.
+917. The therapeutic agent for use according to method ofany one of claims 1-168, wherein
+the method prolongsprogressionfree survival as compared to control.,and/or
+18.The method of any one ofclaims 1-17,wherein the method reduces the hazard
+ratio for disease progression or death as compared to control., and/or
+19.The method of any one ofclaims 118, wherein the method prolongs overall
+survival as compared to control.,and/or
+20.The method of any one ofclaims 119,wherein the method achieves an overall
+response rate of at least 30%.
+21.The method of any one of claims 1-16, wherein the anti PARP therapy is administered in
+a-regimendeterminedto-achieve-i)prolongedprogression-freesurvivalas-compared-to-control,
+ii) a reduced hazard ratio for disease progression or death as compared to control, ii) prolonged
+overall survival as compared to control, or iv) an overall response rate of at least 30%.
+1022. A therapeutic agent for use in a method of treating a patient having a recurrent cancer
+selected from ovarian cancer, fallopian tube cancer, or peritoneal cancer,wherein the therapeutic
+agent is niraparib, the method comprising administering niraparib to the patient according to a
+regimen determined to achieve i) prolonged progression free survival as compared to control, i)
+a reduced hazard ratiofor disease progression or death as compared to control,ii)prolonged
+overall survival as compared to control,or iv)an overall response rate ofat least 30%.
+82
+
+--- PAGE 4 ---
+EP17821262.7
+P60798EP-PCT
+1123. The therapeutic agent for use according to method ofany one of claims 1-1022, wherein
+the cancer is ovarian cancer (e.g. wherein the patient has high grade serous ovarian cancer or
+high grade predominantly serous histology ovarian cancer)-, optionally
+24.The method ofclaim 23, wherein the ovarian cancer is platinum sensitive at the
+commencementoftreatment.,or
+25.The method ofany one ofclaims 1-22, wherein the cancer is fallopian tube
+cancer-,optionally
+26.The method ofclaim 25, wherein the fallopian tube cancer is platinum sensitive at
+thecommencementoftreatment.,or
+27.The method of any one of claims 1 22, wherein the cancer is peritoneal cancer.,
+optionally
+28.The method ofelaim 27,wherein the peritoneal cancer is platinum sensitive at the
+commencementoftreatment.
+29.The method of any one of claims 1-3, 5, and 8 28, wherein the patient has at least one
+mutation selected from (i) a germline mutation in BRCA1 and/or BRCA2, or (i) a sporadie
+mutationinBRCAl and/orBRCA2.
+30.The method ofclaim 29, wherein the patient has a germline mutation in BRCA1 and/or
+BRCA2.
+31.The method ofclaim 29, wherein the patient has a sporadic mutation in BRCA1 and/or
+BRCA2.
+83
+
+--- PAGE 5 ---
+EP17821262.7
+P60798EP-PCT
+1232. The therapeutic agent for use according to method ofany one of claims 1-114 and 6-28,
+wherein the patient is characterized by an absence of a mutation in BRCAl and/or BRCA2-,
+optionally
+33.The method ofclaim 32, wherein the patient is characterized by an absence of a germline
+mutationinBRCA1 and/orBRCA2.,or
+34.The method ofclaim 32, wherein the patient is characterized by an absence of a sporadic
+mutationinBRCAland/orBRCA2.
+1335. The therapeutic agent for use according to method ofany one of claims 1-3, 5, and 48-
+113t, wherein the patient has a tumor with a positive homologous recombination deficiency
+status.
+1436. The therapeutic agent for use according to method ofany one of claims 1-124,6 28, and
+32-34, wherein the patient has a tumor with a negative homologous recombination deficiency
+status.
+1537. The therapeutic agent for use according to method ofany one of claims 1021-1436,
+wherein the regimen is determined to achieve a hazard ratio for disease progression ofless than
+about0.5-,optionally
+38.The method ofclaim 37,wherein the hazard ratio for disease progression is less than
+about0.3-,and/or
+39.The method of any one ofclaims 2138,wherein the regimen is determined to
+achieve prolonged progression free survival ofat least 9 months-, optionally
+40.The method ofelaim 39, wherein the prolonged progression free survival is at least 12
+months.,especially
+8
+
+--- PAGE 6 ---
+EP17821262.7
+P60798EP-PCT
+41.The method ofclaim 40, wherein the prolonged progression free survival is at least 21
+months.
+42. The method of claim 23 wherein the patient has high grade serous ovarian cancer or high
+grade predominantly serous histology ovarian cancer.
+1643. The therapeutic agent for use according to method ofany one of claims 1-1542, wherein
+the method comprises continued treatment until disease progression or unacceptable toxicity-
+optionally
+44.The method ofelaim 43, wherein the method comprises reducing the dose of the anti-
+PARPtherapy or niraparib in response to toxicity,especially
+45.The method ofclaim 44, wherein the method comprises reducing the dose of the anti-
+PARP therapy from about a dose equivalent to about 300 mg to a dose equivalent to about 200
+mg-,or
+46.The method ofelaim 44, wherein the method comprises reducing the dose of niraparib
+from about 300mgto about 200 mg.
+1747. The therapeutic agent for use according to method ofany one of claims 1-1644, wherein
+the method comprises administering a plurality oforal doses.,optionally
+48.The method ofelaim 47,wherein the method comprises once daily (QD) dosing-, and/or
+49.The method of any one ofclaims 148,wherein the method comprises at least one
+28day cycle of dosing-,and/or
+50.The method of any one of claims 47-49, wherein the oral dose is administered in
+one ormoreunit dosageforms.,optionally
+85
+
+--- PAGE 7 ---
+EP17821262.7
+P60798EP-PCT
+51.The method ofelaim 50, wherein the one or more unit dosage forms are capsules.
+1852. The therapeutic agent for use according to method ofany of claims 1-37, 59-1543, and
+174751, wherein the oral dose is an amount within a range equivalent to about 5 to about 400
+mg ofniraparib.,optionally
+53.The method ofelaim 52,wherein the amount is equivalent to about 5, about 10, about 25,
+about 50, about 100,about 150,about 200,about 250, about 300,about 350,or about 400 mg of
+niraparib-,
+54.The method of elaim 53,especially wherein the amount is equivalent to about 300
+mgof niraparib.,or
+55.The method ofelaim 53, wherein the amount is equivalent to about 200 mg of niraparib-,
+or
+56.The method ofelaim S53, wherein each unit dosage form comprises an amount equivalent
+to about 100 mg,about 200 mg,or about 300 mg of niraparib.
+1957. The therapeutic agent for use according to method ofclaim 1748 or claim 56, wherein
+each QD dose is equivalent to about 100 mg, about 200 mg, or about 300 mg of niraparib., 0r
+58.The method ofclaim 48, wherein each QD dose is administered as three unit
+dosage forms equivalent to about 100 mg of niraparib.
+2059. The therapeutic agent for use according to method ofany one of claims 917-1958,
+wherein progression free survival is characterized by a complete response of one or more target
+tumors-,or
+60.The method ofany one ofclaims 17-58,wherein progressionfree survival is
+characterized by a partial response of one or more target tumors.
+86
+
+--- PAGE 8 ---
+EP17821262.7
+P60798EP-PCT
+2161. The therapeutic agent for use according to method ofany one of claims 1-2060, wherein
+the method comprises administration to the patient in a fasted state.,or
+62.The method of any one of elaims 1-60, wherein the method comprises
+administration to the patient in a fed state.
+2263. The therapeutic agent for use according to method ofany one of claims 917-2162,
+wherein the prolonged progression free survival is at least 9 months-, optionally
+64.The method ofelaim 63, wherein the prolonged progression free survival is at least 12
+months-,
+65. The method ofelaim 64, wherein the prolonged progression free survival is-at least 15
+months
+66.The method ofclaim 65, wherein the prolonged progression free survival is-at least 18
+months-,
+67. The method of eclaim 66, wherein the prolonged progression free survival is-at least 21
+months-
+68.The method of claim 67, wherein the prolonged progression free survival is-at least 24
+months.,
+69.The method of claim 68, wherein the prolonged progression free survival is-at least 27
+months,
+70.The method of claim 69, wherein the prolonged progression free survival is-at least 30
+months.,
+87
+
+--- PAGE 9 ---
+EP17821262.7
+P60798EP-PCT
+71.The method of claim 70, wherein the prolonged progression free survival is-at least 33
+months.,or
+72. The method ofclaim 71, wherein the prolonged progression free survival is-at least 36
+months.
+2373. The therapeutic agent for use according to method ofany one of claims 1018-2272,
+wherein the hazard ratio for disease progression is about O.3., or
+74.The method ofclaim 18-72, wherein the hazard ratio for disease progression is
+about0.45-,or
+75.The method ofclaim 18-72, wherein the hazard ratio for disease progression is
+about 0.5-,or
+76.The method of claim 18-72, wherein the hazard ratio for disease progression is
+less than about 0.5., optionally
+77.The method ofelaim 76, wherein the hazard ratio for disease progression is less
+than about 0.45-,
+78.The method ofelaim 77, wherein the hazard ratio for disease progression is-less than
+about 0.4-,
+79.The method of elaim 78, wherein the hazard ratio for disease progression is less than
+about 0.35-0r
+80.The method of claim 79, wherein the hazard ratio for disease progression is-less than
+about 0.3.
+88
+
+--- PAGE 10 ---
+EP17821262.7
+P60798EP-PCT
+2481. The therapeutic agent for use according to method ofany one of claims 1-2380, wherein
+2582. A therapeutic agent for use in a method of treating_administering niraparib to-a patient
+lacking homologous repair deficiency and having a recurrent cancer selected from platinum-
+sensitive ovarian cancer, fallopian tube cancer, or primary peritoneal cancer, wherein the
+therapeutic agent is niraparib,the method comprising administering niraparib to the patient
+according to a regimen determined to achieve prolonged progression free survival as compared
+to control.
+2683. The therapeutic agent for use according to method ofany one of claims 1-2265, wherein
+the method has further been determined to achieve improved progression free survival 2 as
+comparedtocontrol.
+2784. The therapeutic agent for use according to method ofany one of claims 1-2683, wherein
+the method has further been determined to achieve improved chemotherapy free interval as
+comparedtocontrol.,and/or
+85.The-method of any one-ofclaims184,wherein the method has further been
+determined to achieve improved time to first subsequent therapy as compared to control., and/or
+86.Themethod ofany one ofclaims 185,wherein the method has further been
+determined to achieve improved time to second subsequent therapy as compared to control.,
+and/or
+87.The method ofany one ofclaims 1-86,wherein the method has been determined
+to not have a detrimental effect on Quality of Life as determined by FOSI and/or EQ-5D-5L.,
+and/or
+88.The method of any one ofclaims 1-87,wherein the method has been determined to not
+impact the effectiveness ofa subsequent treatment with a chemotherapeutic agent., optionally
+89
+
+--- PAGE 11 ---
+EP17821262.7
+P60798EP-PCT
+89.The method ofelaim 88, wherein the next chemotherapeutic agent is a platinum agent.,
+especially
+90.The method ofelaim 89,wherein the platinum agent is selected from cisplatin,
+carboplatin, oxaliplatin, nedaplatin, triplatin tetranitrate, phenanthriplatin, picoplatin, or
+satraplatin.
+90

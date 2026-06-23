@@ -1,0 +1,918 @@
+{
+  "application_number": "EP20726962.2",
+  "benchmark_input": {
+    "drug_structure": {
+      "markush_or_formula_snippets": [
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": ",Numbers 1-19 filed with entryinto theregional phasebefore the EPO Drawings,Sheets 1/25-25/25 as published Thepresentset of claims contains 4independent claims,formulated according toArt.54(5)EPC asfollows: Independent claim 1 relates to a combination comprising (1) a GLP-1R agonist aslistedthereinandanACCiinhibitorofthefollowingformula foruseinthetreatmentofadisease orconditionisselectedfromfattyliver, nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith cirrhosis,andnonalcoholicsteatohepatitiswit"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "arcinomaorwithametabolic-relateddisease. Independent claim5relates to a combination comprising(1)a GLP-1R agonist aslistedthereinandaKHKiinhibitorofthefollowingformula EPO Form 2906 01.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 15.07.2024 Sheet Application No: 20 726 962.2 Date Feuille Demande n°: for use in the treatment of a disease or condition is selected from fatty liver, nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith cirrhosis,andnonalcoholicsteatohepatitiswithcirrhosisandwithhe"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "omaorwithametabolic-relateddisease. Independent claim 9 relates to a combination comprising(1) a GLP-1R agonist aslistedthereinandaDGAt2iinhibitorofthefollowingformula foruseinthetreatmentofa diseaseorconditionisselectedfromfattyliver,nonalcoholicsteatohepatitiswith liverfibrosis,nonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholic steatohepatitiswithcirrhosisandwithhepatocellularcarcinomaorwitha metabolic-relateddisease. aslisted thereinandaFXRainhibitorofthefollowingformula, EPO Form 2906 01.91TRI --- PAGE 3 --- Da"
+        }
+      ],
+      "smiles": [],
+      "extraction_note": "先按 Formula/Markush OCR 上下文定位 PDF 页面，再用 OpenCV 连通域和线段特征切出候选结构图；markush_images 为自动筛选 Top 候选，markush_candidate_images 保留候选图库供人工复核。",
+      "markush_images": [
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c117.png",
+          "bbox_px": [
+            457,
+            966,
+            872,
+            1193
+          ],
+          "score": 562.4,
+          "image_score": 562.4,
+          "context_priority": 0,
+          "line_count": 63,
+          "slanted_line_count": 39,
+          "density": 0.08445,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c125.png",
+          "bbox_px": [
+            447,
+            1080,
+            717,
+            1292
+          ],
+          "score": 561.6,
+          "image_score": 311.6,
+          "context_priority": 250,
+          "line_count": 27,
+          "slanted_line_count": 16,
+          "density": 0.02341,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c118.png",
+          "bbox_px": [
+            297,
+            890,
+            650,
+            1193
+          ],
+          "score": 468.4,
+          "image_score": 468.4,
+          "context_priority": 0,
+          "line_count": 53,
+          "slanted_line_count": 23,
+          "density": 0.08344,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_candidate_images": [
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c117.png",
+          "bbox_px": [
+            457,
+            966,
+            872,
+            1193
+          ],
+          "score": 562.4,
+          "image_score": 562.4,
+          "context_priority": 0,
+          "line_count": 63,
+          "slanted_line_count": 39,
+          "density": 0.08445,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c125.png",
+          "bbox_px": [
+            447,
+            1080,
+            717,
+            1292
+          ],
+          "score": 561.6,
+          "image_score": 311.6,
+          "context_priority": 250,
+          "line_count": 27,
+          "slanted_line_count": 16,
+          "density": 0.02341,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c116.png",
+          "bbox_px": [
+            1088,
+            1372,
+            1329,
+            1471
+          ],
+          "score": 542.6,
+          "image_score": 292.6,
+          "context_priority": 250,
+          "line_count": 102,
+          "slanted_line_count": 0,
+          "density": 0.16665,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c118.png",
+          "bbox_px": [
+            297,
+            890,
+            650,
+            1193
+          ],
+          "score": 468.4,
+          "image_score": 468.4,
+          "context_priority": 0,
+          "line_count": 53,
+          "slanted_line_count": 23,
+          "density": 0.08344,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c116.png",
+          "bbox_px": [
+            433,
+            382,
+            810,
+            611
+          ],
+          "score": 468.2,
+          "image_score": 468.2,
+          "context_priority": 0,
+          "line_count": 44,
+          "slanted_line_count": 27,
+          "density": 0.06359,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c115.png",
+          "bbox_px": [
+            301,
+            337,
+            560,
+            553
+          ],
+          "score": 444.8,
+          "image_score": 444.8,
+          "context_priority": 0,
+          "line_count": 41,
+          "slanted_line_count": 24,
+          "density": 0.07137,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c112.png",
+          "bbox_px": [
+            677,
+            1172,
+            978,
+            1324
+          ],
+          "score": 411.2,
+          "image_score": 411.2,
+          "context_priority": 0,
+          "line_count": 199,
+          "slanted_line_count": 6,
+          "density": 0.16283,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c101.png",
+          "bbox_px": [
+            532,
+            1487,
+            791,
+            1549
+          ],
+          "score": 390.0,
+          "image_score": 140.0,
+          "context_priority": 250,
+          "line_count": 65,
+          "slanted_line_count": 0,
+          "density": 0.16079,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c113.png",
+          "bbox_px": [
+            837,
+            71,
+            1013,
+            179
+          ],
+          "score": 367.8,
+          "image_score": 117.8,
+          "context_priority": 250,
+          "line_count": 46,
+          "slanted_line_count": 3,
+          "density": 0.10653,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c084.png",
+          "bbox_px": [
+            701,
+            918,
+            894,
+            980
+          ],
+          "score": 345.0,
+          "image_score": 95.0,
+          "context_priority": 250,
+          "line_count": 40,
+          "slanted_line_count": 0,
+          "density": 0.1246,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c106.png",
+          "bbox_px": [
+            169,
+            650,
+            414,
+            716
+          ],
+          "score": 345.0,
+          "image_score": 95.0,
+          "context_priority": 250,
+          "line_count": 40,
+          "slanted_line_count": 0,
+          "density": 0.11521,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c110.png",
+          "bbox_px": [
+            392,
+            386,
+            599,
+            463
+          ],
+          "score": 342.2,
+          "image_score": 92.2,
+          "context_priority": 250,
+          "line_count": 34,
+          "slanted_line_count": 2,
+          "density": 0.06086,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c073.png",
+          "bbox_px": [
+            275,
+            1487,
+            446,
+            1549
+          ],
+          "score": 339.6,
+          "image_score": 89.6,
+          "context_priority": 250,
+          "line_count": 37,
+          "slanted_line_count": 0,
+          "density": 0.13243,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c088.png",
+          "bbox_px": [
+            855,
+            1595,
+            1032,
+            1663
+          ],
+          "score": 336.0,
+          "image_score": 86.0,
+          "context_priority": 250,
+          "line_count": 35,
+          "slanted_line_count": 0,
+          "density": 0.13252,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c120.png",
+          "bbox_px": [
+            156,
+            65,
+            482,
+            185
+          ],
+          "score": 334.0,
+          "image_score": 84.0,
+          "context_priority": 250,
+          "line_count": 25,
+          "slanted_line_count": 4,
+          "density": 0.04164,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c091.png",
+          "bbox_px": [
+            746,
+            550,
+            965,
+            613
+          ],
+          "score": 332.4,
+          "image_score": 82.4,
+          "context_priority": 250,
+          "line_count": 33,
+          "slanted_line_count": 0,
+          "density": 0.10575,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c093.png",
+          "bbox_px": [
+            276,
+            918,
+            473,
+            986
+          ],
+          "score": 330.6,
+          "image_score": 80.6,
+          "context_priority": 250,
+          "line_count": 32,
+          "slanted_line_count": 0,
+          "density": 0.13325,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c108.png",
+          "bbox_px": [
+            169,
+            337,
+            430,
+            402
+          ],
+          "score": 330.6,
+          "image_score": 80.6,
+          "context_priority": 250,
+          "line_count": 32,
+          "slanted_line_count": 0,
+          "density": 0.11618,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c112.png",
+          "bbox_px": [
+            155,
+            488,
+            423,
+            564
+          ],
+          "score": 330.6,
+          "image_score": 80.6,
+          "context_priority": 250,
+          "line_count": 32,
+          "slanted_line_count": 0,
+          "density": 0.08597,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c109.png",
+          "bbox_px": [
+            392,
+            699,
+            599,
+            776
+          ],
+          "score": 329.2,
+          "image_score": 79.2,
+          "context_priority": 250,
+          "line_count": 29,
+          "slanted_line_count": 1,
+          "density": 0.06167,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c082.png",
+          "bbox_px": [
+            1170,
+            824,
+            1333,
+            892
+          ],
+          "score": 327.4,
+          "image_score": 77.4,
+          "context_priority": 250,
+          "line_count": 28,
+          "slanted_line_count": 1,
+          "density": 0.11034,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001_c081.png",
+          "bbox_px": [
+            509,
+            550,
+            686,
+            613
+          ],
+          "score": 321.6,
+          "image_score": 71.6,
+          "context_priority": 250,
+          "line_count": 27,
+          "slanted_line_count": 0,
+          "density": 0.09183,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c106.png",
+          "bbox_px": [
+            1089,
+            624,
+            1329,
+            722
+          ],
+          "score": 311.2,
+          "image_score": 311.2,
+          "context_priority": 0,
+          "line_count": 99,
+          "slanted_line_count": 6,
+          "density": 0.16722,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c107.png",
+          "bbox_px": [
+            398,
+            250,
+            550,
+            417
+          ],
+          "score": 251.2,
+          "image_score": 251.2,
+          "context_priority": 0,
+          "line_count": 29,
+          "slanted_line_count": 21,
+          "density": 0.08245,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c091.png",
+          "bbox_px": [
+            275,
+            1323,
+            533,
+            1385
+          ],
+          "score": 143.6,
+          "image_score": 143.6,
+          "context_priority": 0,
+          "line_count": 67,
+          "slanted_line_count": 0,
+          "density": 0.14741,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c095.png",
+          "bbox_px": [
+            1047,
+            1205,
+            1271,
+            1273
+          ],
+          "score": 143.6,
+          "image_score": 143.6,
+          "context_priority": 0,
+          "line_count": 67,
+          "slanted_line_count": 0,
+          "density": 0.18697,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c092.png",
+          "bbox_px": [
+            532,
+            738,
+            791,
+            800
+          ],
+          "score": 141.8,
+          "image_score": 141.8,
+          "context_priority": 0,
+          "line_count": 66,
+          "slanted_line_count": 0,
+          "density": 0.16004,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c104.png",
+          "bbox_px": [
+            830,
+            68,
+            1020,
+            182
+          ],
+          "score": 118.8,
+          "image_score": 118.8,
+          "context_priority": 0,
+          "line_count": 51,
+          "slanted_line_count": 1,
+          "density": 0.09155,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c072.png",
+          "bbox_px": [
+            701,
+            846,
+            894,
+            908
+          ],
+          "score": 98.6,
+          "image_score": 98.6,
+          "context_priority": 0,
+          "line_count": 42,
+          "slanted_line_count": 0,
+          "density": 0.12251,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c069.png",
+          "bbox_px": [
+            275,
+            738,
+            446,
+            800
+          ],
+          "score": 90.0,
+          "image_score": 90.0,
+          "context_priority": 0,
+          "line_count": 35,
+          "slanted_line_count": 1,
+          "density": 0.13045,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c074.png",
+          "bbox_px": [
+            443,
+            1244,
+            641,
+            1306
+          ],
+          "score": 89.6,
+          "image_score": 89.6,
+          "context_priority": 0,
+          "line_count": 37,
+          "slanted_line_count": 0,
+          "density": 0.1415,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c079.png",
+          "bbox_px": [
+            872,
+            1431,
+            1049,
+            1499
+          ],
+          "score": 89.6,
+          "image_score": 89.6,
+          "context_priority": 0,
+          "line_count": 37,
+          "slanted_line_count": 0,
+          "density": 0.13293,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002_c109.png",
+          "bbox_px": [
+            156,
+            65,
+            482,
+            185
+          ],
+          "score": 79.6,
+          "image_score": 79.6,
+          "context_priority": 0,
+          "line_count": 27,
+          "slanted_line_count": 2,
+          "density": 0.04064,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_page_images": [
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p001.png",
+          "context_priority": 250,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "pdf": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT.pdf",
+          "page": 2,
+          "image_path": "assets/markush-pages/15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_p002.png",
+          "context_priority": 0,
+          "extraction_method": "keyword-scored page fallback"
+        }
+      ],
+      "markush_extraction_status": {
+        "status": "selected",
+        "reason": "At least one visual candidate passed the chemical-structure filters.",
+        "selected_count": 3,
+        "candidate_count": 33,
+        "page_count": 2,
+        "snippet_count": 3
+      }
+    },
+    "claim_text": {
+      "source": "17-02-2025_Claims_M796LN391FUSM8E_ocr.txt",
+      "source_type": "ocr_preview",
+      "claim_1": "tetrahydrospiro[indazole-5,4'-piperidine]-1'-carbonyl)-6-methoxypyridin-2-yl)benzoicacidora pharmaceuticallyacceptablesalt thereof,foruseinamethodfortreatingadiseaseorcondition inapatient inneed thereof,wherein: thediseaseorconditionisselectedfromnonalcoholicsteatohepatitiswithliverfibrosis, nonalcoholic steatohepatitis with cirrhosis,and nonalcoholic steatohepatitis with cirrhosis and theGLP-1Ragonistisselected from: oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-ylmethyl)-3- (1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid; [(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-4-ylmethyl)-1H-benzimidazole-6-carboxylicacid; (pyridin-3-ylmethyl)-1H-benzimidazole-6-carboxylicacid; (1,3-oxazol-5-ylmethyl)-1H-benzimidazole-6-carboxylic acid; 1 --- PAGE 2 --- 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(1-ethyl-1H-1,2,3-triazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- (1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-chloro-2-fluorophenyl)-7-fluoro-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- ylmethyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylic acid; yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; ylmethyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2S)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2R)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;and [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2; 2 --- PAGE 3 --- orphamaceuticallyacceptablesaltthereof. 2.A combination for use in a method of treating, as claimed in claim 1,wherein the GLP- 1Ragonist isselected from: [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylicacid; [(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; and [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2; orapharmaceuticallyacceptablesaltthereof. 3.A combination foruse in a method of treating,as claimed in claim 2, wherein the GLP- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid, DIAST-X2,or a pharmaceuticallyacceptablesaltthereof. 3 --- PAGE 4 --- 1R agonist is 2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,ora pharmaceutically acceptablesaltthereof. 5.A combination for use in a method of treating,as claimed in any one of claims 1 to 4, carbonyl)-6-methoxypyridin-2-yl)benzoicacidorpharmaceuticallyacceptablesaltthereofis",
+      "target_claims": [
+        {
+          "claim_number": 1,
+          "text": "tetrahydrospiro[indazole-5,4'-piperidine]-1'-carbonyl)-6-methoxypyridin-2-yl)benzoicacidora pharmaceuticallyacceptablesalt thereof,foruseinamethodfortreatingadiseaseorcondition inapatient inneed thereof,wherein: thediseaseorconditionisselectedfromnonalcoholicsteatohepatitiswithliverfibrosis, nonalcoholic steatohepatitis with cirrhosis,and nonalcoholic steatohepatitis with cirrhosis and theGLP-1Ragonistisselected from: oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-ylmethyl)-3- (1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid; [(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-4-ylmethyl)-1H-benzimidazole-6-carboxylicacid; (pyridin-3-ylmethyl)-1H-benzimidazole-6-carboxylicacid; (1,3-oxazol-5-ylmethyl)-1H-benzimidazole-6-carboxylic acid; 1 --- PAGE 2 --- 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(1-ethyl-1H-1,2,3-triazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- (1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(4-chloro-2-fluorophenyl)-7-fluoro-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- ylmethyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylic acid; yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; ylmethyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2S)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2R)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;and [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2; 2 --- PAGE 3 --- orphamaceuticallyacceptablesaltthereof. 2.A combination for use in a method of treating, as claimed in claim 1,wherein the GLP- 1Ragonist isselected from: [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; 2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1- [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylicacid; [(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; and [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2; orapharmaceuticallyacceptablesaltthereof. 3.A combination foruse in a method of treating,as claimed in claim 2, wherein the GLP- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid, DIAST-X2,or a pharmaceuticallyacceptablesaltthereof. 3 --- PAGE 4 --- 1R agonist is 2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1- yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,ora pharmaceutically acceptablesaltthereof. 5.A combination for use in a method of treating,as claimed in any one of claims 1 to 4, carbonyl)-6-methoxypyridin-2-yl)benzoicacidorpharmaceuticallyacceptablesaltthereofis"
+        }
+      ],
+      "claims_verified_json": "EP20726962-claims-verified.json",
+      "claims_review_status": "needs_human_review",
+      "claims_review_verified_count": 0,
+      "claims_review_total_count": 23
+    },
+    "jurisdiction": "EP",
+    "application_number": "EP20726962.2",
+    "title": "COMBINATIONS COMPRISING BENZODIOXOL AS GLP-1R AGONISTS FOR USE IN THE TREATMENT OF NASH/NAFLD AND RELATED DISEASES",
+    "applicant": "Pfizer Inc.",
+    "filing_date": "2020-05-15",
+    "priority_date": "2019-05-20",
+    "known_outcome": {
+      "outcome": "granted",
+      "grant_label": "yes",
+      "source": "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+      "date": ""
+    },
+    "specification_data": {
+      "examples": [
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "2019239319，linked to EP4219487)，filed by the same applicant and claiming twopriorities before 20.05.2019(present priority date), discloses the present claimed GLP-1R agonists: see examples 1-102 of D1 are EPO Form 2906 01.91TRI --- PAGE 4 --- Datum Blatt Anmelde-Nr: Date 15.07.2024 Sheet Application No: 20726962.2 Date Feuille Demande na: theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor andFXR agonist(seelines 3-37 of page 36).The disclosure of these combinationsismadeinthecontextofNASH. claimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis, nonalcoholicsteatoh"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "ntabilityorprominentlymarkedasnotbeingaccordingto the claimedinvention. Any statements of the general form“incorporated byreference\"should be deleted (see Guidelines F-ll, 8). For example lines 10-11 and 15 onpage 3, lines 12 onpage 5,line 20onpages 6 and 8,lines 6-7 onpage 9of the applicationasoriginallyfiled EPO Form 2906 01.91TRI --- PAGE 5 --- Datum Blatt Anmelde-Nr: Date 15.07.2024 Sheet 5 Application No: 20 726 962.2 Date Feuille Demande n°: TomeettherequirementsofR.42(1)(b)EPC,D1-D2shouldbeidentifiedinthe descriptionandtherelevantbackgrounddisclosedthereinshouldbebriefly discussed(seeGuidelin"
+        }
+      ],
+      "pharmacology_or_effect_data": [],
+      "synthesis_routes": [],
+      "use_descriptions": [
+        {
+          "source": "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+          "text": "tch thewordingof claim71in the originalapplication. In response to theobjection inparagraph3 of the communication,claims1,5,9 and 16havebeen amendedbydeletingtheoptionforthediseasetreated tobefattyliver. Please alsofind attached new description pages 1-50 and 275.New pages 1-50 are to replace original pages 1-105. New page 275 is to replace original page 275. Original pages 106-274 are unamended. Amendments havebeenmade asrequested inparagraph 4 of the communication.Please alsofind attached aversion of the description,forinformation only,inwhich all of the amendmentsmade havebeentracked. pursuant t"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "according toArt.54(5)EPC asfollows: Independent claim 1 relates to a combination comprising (1) a GLP-1R agonist aslistedthereinandanACCiinhibitorofthefollowingformula foruseinthetreatmentofadisease orconditionisselectedfromfattyliver, nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith cirrhosis,andnonalcoholicsteatohepatitiswith cirrhosis andwithhepatocellular carcinomaorwithametabolic-relateddisease. Independent claim5relates to a combination comprising(1)a GLP-1R agonist aslistedthereinandaKHKiinhibitorofthefollowingformula EPO Form 2906 01.91TRI --- PAGE 2 --- Datum"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "Blatt Anmelde-Nr: Date 15.07.2024 Sheet Application No: 20 726 962.2 Date Feuille Demande n°: for use in the treatment of a disease or condition is selected from fatty liver, nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith cirrhosis,andnonalcoholicsteatohepatitiswithcirrhosisandwithhepatocellular carcinomaorwithametabolic-relateddisease. Independent claim 9 relates to a combination comprising(1) a GLP-1R agonist aslistedthereinandaDGAt2iinhibitorofthefollowingformula foruseinthetreatmentofa diseaseor"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "906 01.91TRI --- PAGE 3 --- Datum Blatt Anmelde-Nr: Date 15.07.2024 Sheet Application No: 20 726 962.2 Date Feuille Demande n°: Rla=-OCF3 Tropifexor ，namedtropifexor,foruse in thetreatmentofadiseaseorconditionisselectedfromfattyliver,nonalcoholic steatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswithcirrhosis,and nonalcoholicsteatohepatitiswithcirrhosisandwithhepatocellularcarcinoma or withametabolic-relateddisease. Asa note,thecompounds defined asGLP-1R agonist in the above claimshave thiscorestructure: wherein A is N or C. 2 Withitsletterdated18.11.2021，theapplicantindicatedthatclaim14"
+        },
+        {
+          "source": "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "text": "coholicsteatohepatitiswith cirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease. Therewith,thepresentpriorityisnotinvalidated. thepresentcombinationsforuse in thetreatmentofNASH.Saiddiseasesfall within the broader term\"fatty liver\".Thus anticipating the subject-matter of the present claims. 4 newlyfiledclaimsareconsideredtobeallowable.Theapplicantistherefore requestedtobring thedescriptionintoconformitywiththeseclaims;careshould beyondthecontentoftheapplicationasoriginallyfiled(Article123(2)EPC). Wordings such as\"the present invention\"or\"the compounds/use/process/ which is actuall"
+        },
+        {
+          "source": "18-11-2021_Amended_claims_filed_after_receipt_of_(European)_search_report_KW4PT8LJ1WB8FNB_ocr.txt",
+          "text": "acid;and [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2; --- PAGE 3 --- 278 orpharmaceuticallyacceptablesalt thereof. 2.A combination for use in a method of treating, as claimed in claim 1,wherein the GLP- 1R agonist isselected from: 5 [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; 10 [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; (1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid; 15 [(1-ethyl-1H-imidazol-5-yl)"
+        },
+        {
+          "source": "18-11-2021_Amended_claims_filed_after_receipt_of_(European)_search_report_KW4PT8LJ1WB8FNB_ocr.txt",
+          "text": "-6-carboxylic acid; and 25 [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid, DIAST-X2; orapharmaceuticallyacceptablesalt thereof. 3.A combination for use in a method of treating, as claimed in claim 2,wherein the GLP- 30 1R agonist is 2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)- 1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid, DIAST-X2,ora pharmaceuticallyacceptablesaltthereof. --- PAGE 4 --- 279 4.A combinationfor use in a method of treating,as claimed in anyoneof claims1to 3, carbonyl)-6-methoxypyridin-2-yl)benzoicacidorpharmaceut"
+        },
+        {
+          "source": "18-11-2021_Amended_claims_filed_after_receipt_of_(European)_search_report_KW4PT8LJ1WB8FNB_ocr.txt",
+          "text": "icallyacceptablesaltthereofisthe 2-amino-2-(hydroxymethyl)propane-1,3-diol salt of 4-(4-(1-lsopropyl-7-oxo-1,4,6,7- pharmaceuticallyacceptablesaltthereof，foruseinamethodoftreatingadiseaseorcondition, 10 wherein: the diseaseorconditionselectedfromfattyliver,nonalcoholicsteatohepatitiswithliver cirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease;and theGLP-1Ragonistisselectedfrom: 15 2-({4-[2-(4-chloro-2-fluorophenyl)-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-[(2S)- oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid; [(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carbox"
+        }
+      ],
+      "comparative_data": []
+    },
+    "prior_art_docs": [
+      {
+        "rank": 1,
+        "citation": "WO2019239319",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019239319",
+        "mentions": 2,
+        "sources": [
+          "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+          "EP20726962-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 2,
+        "citation": "EP4219487",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP4219487/en",
+        "mentions": 1,
+        "sources": [
+          "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt"
+        ]
+      },
+      {
+        "rank": 3,
+        "citation": "WO2018109607",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018109607",
+        "mentions": 1,
+        "sources": [
+          "EP20726962-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 4,
+        "citation": "WO2019102311",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019102311",
+        "mentions": 1,
+        "sources": [
+          "EP20726962-main.html#documents_cited"
+        ]
+      }
+    ]
+  },
+  "source_trace": {
+    "path_base": "benchmark_input_dir",
+    "case_dir": ".",
+    "main_html": "register/EP20726962-main.html",
+    "doclist_csv": "register/EP20726962-doclist.csv",
+    "docs_dir": "docs",
+    "original_application_dir": "original-application",
+    "original_application_files": [
+      {
+        "title": "Claims",
+        "date": "30.10.2024",
+        "document_id": "M2W13QJTLGZDWGD",
+        "pages": "13",
+        "path": "original-application/30-10-2024_Claims_M2W13QJTLGZDWGD.pdf",
+        "file_name": "30-10-2024_Claims_M2W13QJTLGZDWGD.pdf",
+        "source_url": "https://register.epo.org/application?documentId=M2W13QJTLGZDWGD&appnumber=EP20726962&showPdfPage=all&proc="
+      },
+      {
+        "title": "Description",
+        "date": "30.10.2024",
+        "document_id": "M2W133YN1IQ7UM8",
+        "pages": "51",
+        "path": "original-application/30-10-2024_Description_M2W133YN1IQ7UM8.pdf",
+        "file_name": "30-10-2024_Description_M2W133YN1IQ7UM8.pdf",
+        "source_url": "https://register.epo.org/application?documentId=M2W133YN1IQ7UM8&appnumber=EP20726962&showPdfPage=all&proc="
+      },
+      {
+        "title": "Bibliographic data of the European patent application",
+        "date": "06.02.2025",
+        "document_id": "M6QKIHK8150398X",
+        "pages": "3",
+        "path": "original-application/06-02-2025_Bibliographic_data_of_the_European_patent_application_M6QKIHK8150398X.pdf",
+        "file_name": "06-02-2025_Bibliographic_data_of_the_European_patent_application_M6QKIHK8150398X.pdf",
+        "source_url": "https://register.epo.org/application?documentId=M6QKIHK8150398X&appnumber=EP20726962&showPdfPage=all&proc="
+      }
+    ],
+    "text_documents_used": [
+      "20-06-2025_Decision_to_grant_a_European_patent_MBU01FLA1M4AJJR_ocr.txt",
+      "28-02-2025_Communication_about_intention_to_grant_a_European_patent_M7LLTWXI19N4W9D_ocr.txt",
+      "06-02-2025_Communication_about_intention_to_grant_a_European_patent_M6QKIHK47MJ1FBY_ocr.txt",
+      "30-10-2024_Reply_to_communication_from_the_Examining_Division_M2W1392V1P5Q0UV_ocr.txt",
+      "15-07-2024_Communication_from_the_Examining_Division_LYFIQ4H517HT8SM_ocr.txt",
+      "15-07-2024_Annex_to_the_communication_LYFIQ4HAZLUODRT_ocr.txt",
+      "18-11-2021_Amended_claims_filed_after_receipt_of_(European)_search_report_KW4PT8LJ1WB8FNB_ocr.txt",
+      "17-02-2025_Claims_M796LN391FUSM8E_ocr.txt",
+      "30-10-2024_Claims_M2W13QJTLGZDWGD_ocr.txt"
+    ],
+    "register_status": "No opposition filed within time limit",
+    "quality": {
+      "source_text_documents": 9,
+      "claim_1_meaningful_chars": 3845,
+      "source_meaningful_chars": 67074
+    }
+  }
+}

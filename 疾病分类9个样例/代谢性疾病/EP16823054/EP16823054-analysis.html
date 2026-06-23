@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patent Examination Benchmark Report</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1d2433;
+      --muted: #657084;
+      --line: #d9dee8;
+      --good: #15803d;
+      --good-bg: #dcfce7;
+      --warn: #a16207;
+      --warn-bg: #fef3c7;
+      --risk: #b91c1c;
+      --risk-bg: #fee2e2;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+    }
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 16px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(220px, 300px) 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      margin-bottom: 16px;
+    }
+    .jump-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .jump-nav a,
+    .jump-nav .nav-disabled {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .jump-nav .nav-disabled {
+      color: var(--muted);
+      background: #f1f3f6;
+      cursor: not-allowed;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 18px;
+    }
+    .preview-text {
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .preview-text.compact {
+      max-height: 140px;
+      margin-top: 6px;
+    }
+    .claims-list {
+      display: grid;
+      gap: 10px;
+    }
+    .claim-detail {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+    }
+    .claim-detail summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .claim-detail summary span {
+      margin-left: 8px;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .markush-images {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .markush-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .markush-figure img {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .markush-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 7px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .candidate-gallery {
+      margin: 10px 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .candidate-gallery summary {
+      cursor: pointer;
+      padding: 9px 11px;
+      font-weight: 650;
+      background: #f8fafc;
+    }
+    .candidate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      padding: 10px;
+    }
+    .candidate-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .candidate-figure img {
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .candidate-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 5px 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .link-list {
+      display: grid;
+      gap: 6px;
+      padding-left: 18px;
+    }
+    .link-list code {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      word-break: break-all;
+    }
+    .score-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 170px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .score-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .big-score {
+      font-size: 56px;
+      font-weight: 750;
+      line-height: 1;
+    }
+    .score-bar {
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+    .score-bar span {
+      display: block;
+      height: 100%;
+      background: currentColor;
+    }
+    .score-good { color: var(--good); }
+    .score-warn { color: var(--warn); }
+    .score-risk { color: var(--risk); }
+    .score-neutral { color: var(--accent); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .table-scroll {
+      overflow-x: auto;
+    }
+    .dimension-table {
+      min-width: 1500px;
+    }
+    .dimension-table th:nth-child(1),
+    .dimension-table td:nth-child(1) {
+      width: 150px;
+    }
+    .dimension-table th:nth-child(2),
+    .dimension-table td:nth-child(2) {
+      width: 220px;
+    }
+    .dimension-table th:nth-child(3),
+    .dimension-table td:nth-child(3) {
+      width: 320px;
+    }
+    .dimension-table th:nth-child(4),
+    .dimension-table td:nth-child(4),
+    .dimension-table th:nth-child(5),
+    .dimension-table td:nth-child(5) {
+      width: 340px;
+    }
+    .dimension-table th:nth-child(6),
+    .dimension-table td:nth-child(6) {
+      width: 260px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+      word-break: break-word;
+    }
+    th {
+      background: #f8fafc;
+      font-weight: 650;
+    }
+    .kv th {
+      width: 180px;
+    }
+    .dim-name {
+      width: 130px;
+      font-weight: 650;
+    }
+    .dim-desc {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .dim-score-box {
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+      display: grid;
+      gap: 6px;
+      justify-items: start;
+      min-height: 82px;
+    }
+    .dim-box-name {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .dim-box-score {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .pill {
+      display: inline-flex;
+      min-width: 48px;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-weight: 700;
+      background: #eef2ff;
+    }
+    .pill.score-good { background: var(--good-bg); }
+    .pill.score-warn { background: var(--warn-bg); }
+    .pill.score-risk { background: var(--risk-bg); }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .bilingual-list {
+      display: grid;
+      gap: 8px;
+    }
+    .source-sentence-list {
+      display: grid;
+      gap: 12px;
+    }
+    .source-sentence-list li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .source-sentence-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .source-line-meta,
+    .source-line-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .source-line-meta {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .source-line-note {
+      margin-top: 4px;
+    }
+    .translation-inline {
+      color: var(--muted);
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .tiny {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .small-link {
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tag-hit {
+      color: #166534;
+      background: #dcfce7;
+    }
+    .tag-semantic {
+      color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .evidence-original {
+      white-space: pre-wrap;
+    }
+    .source {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 820px) {
+      .grid, .columns, .preview-grid {
+        grid-template-columns: 1fr;
+      }
+      main {
+        padding: 20px 12px 32px;
+      }
+      .kv th {
+        width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Patent Examination Benchmark Report</h1>
+      <p class="subtitle">EP16823054.8 · SUBSTITUTED 3-AZABICYCLO[3.1.0]HEXANES AS KETOHEXOKINASE INHIBITORS</p>
+      <p class="source">来源 JSON：EP16823054-analysis.json</p>
+    </header>
+
+    
+    <nav class="jump-nav">
+      <a href="#preview">Preview</a>
+      <a href="#case-info">Case</a>
+      <a href="#dimensions">Dimensions</a>
+      <a href="#risks">Risks</a>
+      <a href="#actions">Actions</a>
+      <a href="#evidence">Evidence</a>
+      <span class="nav-disabled">上一个 HTML</span>
+      <a href='../EP18712343/EP18712343-analysis.html'>下一个 HTML：EP18712343</a>
+    </nav>
+    
+    
+    <section class="card" id="preview">
+      <h2>Application Preview</h2>
+      <div class="preview-grid">
+        <div>
+          <h3>Claim Draft Preview</h3><div class='preview-text'>AcompoundofFormulal
+P
+(I)
+Y is N or C-CN;
+Z is N or CH;
+Xis N or CR3;
+provided that at least one of Y,Z,orX is N;
+R1isC3-7cycloalkyl ora 4-to7-memberedheterocyclicmoiety,wherein the
+heterocyclic moiety contains 1to 2 atoms independently selected from nitrogen, oxygen and
+independently selected from-C1-3alkyl，and -OH,provided that there is nomore than one -
+OH substituent;or
+substitutedwith0to1OH;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORs, -L-(CH2)nSO2NHCONH2, or -
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+Rs is H or -C1-3alkyl;
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+R3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1.3alkyl substituted with1 to 3halogen
+atoms,or-C3-4cycloalkyl;and
+R4 is cyclopropyl, cyclobutyl, or -C1-3alkyl substituted with 0 to 5 halogen atoms as
+valency allows.</div><p class='source'>Draft claim 1 from claims review JSON; pages 87</p><p class='source'>Draft OCR claim only; verify against the authority PDF before using as legal text.</p><p class='source'>Review status: 0/26 verified · <a href="docs/19-11-2020_Text_intended_for_grant_%28clean_copy%29_E5H5RZ7G0050DSU.pdf">Authority PDF</a> <a href="EP16823054-claims-review.html">Claims review HTML</a> <a href="EP16823054-claims-verified.json">Claims draft JSON</a></p>
+        </div>
+        <div>
+          <h3>Markush / Formula</h3>
+          <div class='markush-images'><figure class='markush-figure'><img src='assets/markush-candidates/13-06-2018_Amended_claims_filed_after_receipt_of_(European)_search_report_E1Z097BI3726DSU_p001_c134.png' alt='Markush / Formula page image'><figcaption>score 1086.4 · 13-06-2018_Amended_claims_filed_after_receipt_of_(European)_search_report_E1Z097BI3726DSU.pdf, page 1</figcaption></figure></div>
+          <h3>Links</h3>
+          <ul class="link-list">
+            <li><a href="https://register.epo.org/application?number=EP16823054&amp;lng=en&amp;tab=main" target="_blank" rel="noopener noreferrer">EPO Register Main</a></li><li><a href="https://register.epo.org/application?number=EP16823054&amp;lng=en&amp;tab=doclist" target="_blank" rel="noopener noreferrer">EPO Register Documents</a></li><li><a href="https://worldwide.espacenet.com/patent/search?q=EP16823054" target="_blank" rel="noopener noreferrer">Espacenet Search</a></li>
+            <li><span>Local main HTML</span><a href="register/EP16823054-main.html">EP16823054-main.html</a></li><li><span>Local doclist CSV</span><a href="register/EP16823054-doclist.csv">EP16823054-doclist.csv</a></li>
+          </ul>
+          <h3>Original Application Files</h3>
+          <ul class="link-list">
+            <li><a href="original-application/18-12-2018_Claims_E2QX6V6C2729DSU.pdf">Claims (18.12.2018 · 7 pages)</a></li><li><a href="original-application/19-06-2020_Bibliographic_data_of_the_European_patent_application_E4V18TW87271DSU.pdf">Bibliographic data of the European patent application (19.06.2020 · 2 pages)</a></li><li><a href="original-application/14-10-2020_Description_E5D2P46T2704DSU.pdf">Description (14.10.2020 · 1 pages)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="card" id="case-info">
+      <h2>案件元数据</h2>
+      <table class="kv"><tr><th>法域</th><td>EP</td></tr><tr><th>申请号</th><td>EP16823054.8</td></tr><tr><th>发明名称</th><td>SUBSTITUTED 3-AZABICYCLO[3.1.0]HEXANES AS KETOHEXOKINASE INHIBITORS</td></tr><tr><th>申请人</th><td>Pfizer Inc.</td></tr><tr><th>申请日</th><td>2016-12-16</td></tr><tr><th>审查意见日期</th><td>2021-03-12</td></tr><tr><th>授权结果</th><td>granted</td></tr></table>
+    </section>
+    
+    
+    <section class="card" id="dimensions">
+      <h2>审查维度评分</h2>
+      <div class="table-scroll">
+        <table class="dimension-table">
+          <thead><tr><th>维度/分数</th><th>字段描述</th><th>分析</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>
+          <tbody><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>新颖性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否被单一现有技术直接公开，未被质疑通常为高分。</td><td>SOURCE中未显示审查员依据单一现有技术对权利要求1提出Art.54新颖性异议；相反，最终决定明确在审查后授予欧洲专利，且授权文本包含19-08-2020提交的1-26项权利要求。因此，就当前授权记录而言，新颖性维度已通过审查，现阶段风险很低。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查后，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>该连续原文来自最终授权决定，表明申请经审查后已被授予欧洲专利；SOURCE未提供任何未克服的新颖性否定意见，因此支持新颖性评分为完全通过。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>创造性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>按 EPO problem-solution/COMVIK 判断区别特征是否贡献技术效果。</td><td>给定SOURCE中未显示针对创造性/Art.56 EPC的实质性否定意见、最接近现有技术选择、区别特征、客观技术问题或显而易见性攻击。案件最终在审查后作出授权决定，且此前已有Rule 71(3)拟授权通知，说明审查部门接受了授权文本。该申请涉及化合物/医药用途的技术特征，未见非技术特征问题，因此COMVIK逻辑不适用。当前创造性风险很低。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查，欧洲专利局现依据2020年11月19日根据EPC规则71(3)发出的通知中所列的标题和支持文件，在指定缔约国范围内授予欧洲专利。</td><td>该连续原文来自最终授权决定，表明申请经实质审查后被授权；在未见创造性异议的SOURCE记录下，可支持创造性维度已通过审查的结论。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>充分公开/支持</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>说明书是否足以实施，权利要求是否有原始公开和技术支撑。</td><td>本案已作出欧洲专利授权决定，SOURCE 未显示针对权利要求1存在未克服的充分公开、原始公开或支持性异议。审查过程中曾对权利要求17中的“substantially”提出清楚性相关修改，理由是该表述会使权利要求范围产生疑问，并同时要求说明书适应权利要求；该问题已通过删除和文本适配在拟授权文本中克服。因此，本维度总体风险较低，但因曾存在小的 Art.84 清楚性/支持性文本问题，评分为80而非100。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>该授权决定表明审查部门最终接受了拟授权文本，未在SOURCE中留下未解决的充分公开、原始公开或支持性障碍。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>清楚性</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>权利要求术语、边界、简洁性和 Art.84 问题。</td><td>清楚性方面，审查材料显示审查部曾对权利要求17中的“substantially”提出清楚性问题，认为该表述会使权利要求范围产生疑问，并在拟授权文本中删除。材料未显示申请人就该清楚性问题进行实质争辩；随后案件基于19-08-2020提交的权利要求文本进入拟授权并最终授权。因此，Art.84风险属于曾有小问题但已通过修改克服；对于目标权利要求1，SOURCE未显示单独的清楚性否定意见，当前风险较低。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查，具有该标题并以2020年11月19日根据EPC规则71(3)通信中所示支持文件为基础的欧洲专利，现就指定缔约国予以授权。</td><td>该最终授权决定表明审查部在拟授权文本基础上授予专利，支持清楚性问题已不再阻碍授权。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>适格性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否落入 EP Art.52 排除主题，是否具有进一步技术效果。</td><td>SOURCE中未显示依据EP Art.52对适格性提出任何排除主题或非技术性异议。权利要求1涉及化合物及其药学上可接受的盐，属于具有技术性质的化学/医药主题；最终审查结果为授予欧洲专利。因此，适格性风险很低，当前可视为已通过审查。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请No.16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示的文本和支持文件，现就指定缔约国授予一项欧洲专利。</td><td>该连续原文明确记载申请经审查后被授予欧洲专利；在SOURCE未出现Art.52适格性异议的情况下，最终授权事实支持适格性维度已通过。</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    
+
+    <section class="card" id="risks">
+      <h2>风险原因</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>support · 12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</div><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div><div class='translation-inline'>经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</div><div class='source-line-note'>最终授权是本维度通过审查的直接程序性证据。</div></li><li><div class='source-line-meta'>support · 19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</div><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.
+Acopyoftherelevantdocumentsisenclosed.</div><div class='translation-inline'>现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。</div><div class='source-line-note'>拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。</div></li><li><div class='source-line-meta'>support · 19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</div><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim
+description:adaptedtoclaims</div><div class='translation-inline'>权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。</div><div class='source-line-note'>该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。</div></li><li><div class='source-line-meta'>clarity · 19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</div><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim</div><div class='translation-inline'>权利要求17：“substantially”被删除，因为该表述会使权利要求的范围产生疑问。</div><div class='source-line-note'>该原文直接显示审查部基于清楚性/范围不确定性删除了一个模糊术语，属于Art.84清楚性问题。</div></li><li><div class='source-line-meta'>clarity · 19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</div><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.</div><div class='translation-inline'>兹通知你，审查部拟基于上述申请，并按照下列文本、附图及相关著录数据授予欧洲专利。</div><div class='source-line-note'>该拟授权通知表明在修改后文本基础上，审查部已准备授权，说明此前清楚性障碍已被克服。</div></li></ul>
+    </section>
+    <section class="card" id="actions">
+      <h2>建议依据原文</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>support · 12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</div><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div><div class='translation-inline'>经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</div><div class='source-line-note'>最终授权是本维度通过审查的直接程序性证据。</div></li><li><div class='source-line-meta'>support · 19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</div><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.
+Acopyoftherelevantdocumentsisenclosed.</div><div class='translation-inline'>现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。</div><div class='source-line-note'>拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。</div></li><li><div class='source-line-meta'>support · 19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</div><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim
+description:adaptedtoclaims</div><div class='translation-inline'>权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。</div><div class='source-line-note'>该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。</div></li><li><div class='source-line-meta'>clarity · 19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</div><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim</div><div class='translation-inline'>权利要求17：“substantially”被删除，因为该表述会使权利要求的范围产生疑问。</div><div class='source-line-note'>该原文直接显示审查部基于清楚性/范围不确定性删除了一个模糊术语，属于Art.84清楚性问题。</div></li><li><div class='source-line-meta'>clarity · 19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</div><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.</div><div class='translation-inline'>兹通知你，审查部拟基于上述申请，并按照下列文本、附图及相关著录数据授予欧洲专利。</div><div class='source-line-note'>该拟授权通知表明在修改后文本基础上，审查部已准备授权，说明此前清楚性障碍已被克服。</div></li></ul>
+    </section>
+
+    
+    <section class="card" id="evidence">
+      <h2>证据链</h2>
+      <table class="kv">
+        <tr><th>受影响权利要求</th><td>1, 17</td></tr>
+        <tr><th>审查轮次</th><td>1</td></tr>
+      </table>
+      <h3>引用先文 / 官网相关专利</h3>
+      <table><thead><tr><th>序号</th><th>引用/相关专利</th><th>来源标记</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>1</td><td>WO2012019188<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2012019188" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr><tr><td>2</td><td>WO2009049165<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009049165" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr></tbody></table>
+      <h3>说明书/支持证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td></td><td>support_disc</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>该授权决定表明审查部门最终接受了拟授权文本，未在SOURCE中留下未解决的充分公开、原始公开或支持性障碍。</td></tr><tr><td></td><td>19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</td><td><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.
+Acopyoftherelevantdocumentsisenclosed.</div></td><td>现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。</td><td>拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。</td></tr><tr><td></td><td>19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</td><td><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim
+description:adaptedtoclaims</div></td><td>权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。</td><td>该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。</td></tr></tbody></table>
+      <h3>审查材料证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>novelty</td><td>12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查后，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>最终授权决定证明审查程序结束并授予专利；在给定材料中没有单一现有技术直接、明确公开而破坏新颖性的审查事实。</td></tr><tr><td>novelty</td><td>19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</td><td><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.</div></td><td>兹通知你，审查部拟基于上述申请，并以如下所示文本、附图及相关著录项目授予欧洲专利。</td><td>拟授权通知显示审查部已准备授予专利，支持权利要求文本在授权前未因新颖性问题被否定。</td></tr><tr><td>inventive_step</td><td>12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查，欧洲专利局现依据2020年11月19日根据EPC规则71(3)发出的通知中所列的标题和支持文件，在指定缔约国范围内授予欧洲专利。</td><td>最终授权决定显示审查后授予专利，支持包括创造性在内的授权性要求已被审查部门接受。</td></tr><tr><td>inventive_step</td><td>19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</td><td><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.</div></td><td>现通知你，审查部门拟基于上述申请，并按照下文所示的文本、附图及相关著录数据授予欧洲专利。</td><td>Rule 71(3)拟授权通知表明审查部门认为当时文本可授权；SOURCE未显示创造性仍有未克服的异议。</td></tr><tr><td>support</td><td>12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。</td><td>最终授权是本维度通过审查的直接程序性证据。</td></tr><tr><td>support</td><td>19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</td><td><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.
+Acopyoftherelevantdocumentsisenclosed.</div></td><td>现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。</td><td>拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。</td></tr><tr><td>support</td><td>19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</td><td><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim
+description:adaptedtoclaims</div></td><td>权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。</td><td>该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。</td></tr><tr><td>clarity</td><td>19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt</td><td><div class='evidence-original'>claim17:&quot;substantially&quot;deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim</div></td><td>权利要求17：“substantially”被删除，因为该表述会使权利要求的范围产生疑问。</td><td>该原文直接显示审查部基于清楚性/范围不确定性删除了一个模糊术语，属于Art.84清楚性问题。</td></tr><tr><td>clarity</td><td>19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</td><td><div class='evidence-original'>YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove
+application,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.</div></td><td>兹通知你，审查部拟基于上述申请，并按照下列文本、附图及相关著录数据授予欧洲专利。</td><td>该拟授权通知表明在修改后文本基础上，审查部已准备授权，说明此前清楚性障碍已被克服。</td></tr><tr><td>clarity</td><td>19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt</td><td><div class='evidence-original'>Claims, Numbers
+1-26
+filedinelectronicformon
+19-08-2020</div></td><td>权利要求，编号1-26，于2020年8月19日以电子形式提交。</td><td>该原文说明最终拟授权所依据的是19-08-2020提交的1-26项权利要求文本。</td></tr><tr><td>eligibility</td><td>12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.</div></td><td>经对欧洲专利申请No.16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示的文本和支持文件，现就指定缔约国授予一项欧洲专利。</td><td>最终授权决定表明审查程序结束并授予专利；SOURCE未记载适格性被拒或被质疑，因此该证据支持适格性通过。</td></tr></tbody></table>
+    </section>
+    
+  </main>
+</body>
+</html>

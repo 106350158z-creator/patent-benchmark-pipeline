@@ -1,0 +1,221 @@
+
+--- PAGE 1 ---
+V.O.
+Patents&Trademarks
+EuropeanPatent Office
+Vereenigde OctrooibureauxN.V.
+D-80298Munich
+Carnegieplein5
+P.O.Box 87930
+Germany
+2508 DH The Hague
+The Netherlands
+Telephone +31 70 416 67 11
+Telefax +31 70 416 67 99
+K.Bijvank@vo.eu
+www.vo.eu
+Your ref.12710797.7/1453
+The Hague,
+Our ref.KB/P102705EP00
+13 October 2016
+Re:
+EuropeanpatentapplicationNo.12710797.7
+TelHaShomerMedicalResearchInfrastructureandServicesLtd.
+In response to your communication dated 5 April 2016, I herewith file amended claims.
+Foryour convenience,botha versionshowing amendmentshighlighted anda clean
+version are enclosed. In addition,I observe the following.
+5
+Amendments:
+Claims 1, 2, 5 and 10-15 correspond to previous claims 6-11 and 13-15, respectively.
+Claim 1 finds basis in claims 6 and 12 as originally filed (and as published in
+WO2012/123938).
+10
+Claim 2 finds basis in claims 7 and 12 as originally filed.
+Claim 3 finds basis in claims 1, 12 and 34 as originally filed. Claim 34 depends on
+claim 12,which claim refers to (amongst others) claims 6 and 7.
+15
+
+--- PAGE 2 ---
+Page
+2
+V.O.
+Your ref.
+12710797.7/1453
+Our ref.
+KB/P102705EP00
+Date
+13 October 2016
+Patents & Trademariks
+Claim 4 finds basis in claims 35 as originally filed and further on page 17, lines 4-8 of
+the application as originally filed.
+Claim 5 finds basis in claims 8 and 12 as originally filed.
+5
+Claim 6 finds basis in claim 40 as originally filed.
+Claim 7 finds basis in claim 37 as originally filed, as well as on page 18,lines 22-23 of
+the application as originallyfiled.
+10
+Claim 8 finds basis in claim 38 as originally filed, as well as on page 18, line 24 of the
+application as originally filed.
+Claim 9 finds basis in claim 39 as originally filed, as well as on page 18, line 25, of the
+15
+application as originally filed.
+Claim10 findsbasis in claims 9 and 12 as originally filed.
+Claim 11 finds basis in claims 10 and 12 as originally filed.
+20
+Claim 12 finds basis in claims 11 and 13 as originally filed.
+Claims 13-15 find basis in claims 14-16 as originally filed, respectively.
+25
+Previous claims 1-5 and 12 have been deleted. Accordingly, the objections against
+claims 1-5 based on clarity and lack of support raised in the international search report
+arenolongerrelevant.
+
+--- PAGE 3 ---
+3
+V.O.
+Page
+Your ref.
+12710797.7/1453
+Our ref.
+KB/P102705EP00
+Date
+13 October2016
+Patents & Trademariks
+Novelty:
+Claims 1-15 are novel over WO 2007/022474 (D1),because they are directed to a
+compound for use in multiple sclerosis. In contrast,D1 is directed to a composition
+comprising a nucleic acid and a quinolone analog of formulas (I)-(V) for use in the
+5
+treatment of psoriasis.
+Inventive Step:
+Claims 1-15 alsoinvolve an inventive step in view of WO 2010/113096(D2) and the
+publication by Drygin Denis (D3)for the following reasons.
+10
+According to the written opinion of the IPRP, D2 would represent the most relevant
+state of the art.D2would disclose thatcompoundswhich decrease the expressionlevel
+of at least one gene involved in the RNA polymerase I pathway are efficient drugs in
+the treatmentof multiplesclerosis (MS).
+15
+Further, according to the written opinion, D3 would provide an alternative anti MS
+drug, because D3 would describe analog CX-5461 as a potent and selective inhibitor of
+RNA polymerase I.Accordingly,the combination of D2 and D3would makeit obvious
+for a skilled person to try CX-5461 for treating MS.
+20
+It is disagreed with the IPRP that the skilled person would combine the teachings of
+D2 andD3to arrive atthepresentinvention.
+First of all, when considering D2, the skilled person would have no reason to consult
+25D3 for alternative MS drugs, as D3 does not relate to the treatment of MS.
+Second,even when consultingD3,the skilled person would not conclude based on D3
+that analog CX-5461 would be a potent alternative MS drug, as explained below.
+
+--- PAGE 4 ---
+Page
+4
+V.O.
+Your ref.
+12710797.7/1453
+Our ref.
+KB/P102705EP00
+Date
+13 October 2016
+Patents & Trademarks
+If anything,D3 teaches away of such use.D3explicitly teaches that CX-5461
+specifically affects cancerous cells (transformed cells)while having no effect on non-
+transformed cells, as explained in the description of Figure 4 on page 1424 of D3, which
+states that"CX-5461exhibitsbroad anti-proliferative potencyinapanel of cancer cell
+5
+linesinp53-independentmanner,buthasminimaleffectonviabilityofnon-
+transformed human cells" and in D3, page 1429, first column, which states"..CX-5461
+takesadvantageoftheequivalentqualitiesofcancercellsandelicitspotentandselective
+antitumor activity,whereashavinga minimaleffect onnon-transformed cells."D3also
+disclosesthat"CX-5461waswelltoleratedatalltestedschedulesasjudgedbythe
+10
+absence of significant changes in animal body weight"(see page1425,second column,
+lastparagraph,therein).
+As an autoimmune disease in general, and MS in particular, does not involve
+transformed cells,the skilled person startingfromD2 and lookingfor alternative MS
+15
+drugs,would be deterred by D3 from using CX-5461 in order to affect non-transformed
+cells.
+This is in sharpcontrast to theinstant applicationwhich provides unprecedented
+evidence that CX-5461 can reduce the viability of non-transformed immune cells from
+20
+both healthy and MS subjects (see,for example,Examples 2-4,Figures 5,6 and 7A-B of
+the application as filed).
+Furthermore, the skilled person would not expect based on the mechanism of action of
+analog CX-5461 described in D3 that it would also be suitable as an MS drug. The
+25
+mere reason that CX-5461is ableto disruptthebindingof theSL1 transcriptionfactor
+to the rDNA promoter does not automaticallymake it a suitable as an MS drug,as
+explainedbelow.
+
+--- PAGE 5 ---
+Page
+5
+V.O.
+Your ref.
+12710797.7/1453
+Our ref.
+KB/P102705EP00
+Date
+13 October 2016
+Patents & Trademarks
+D3 discloses that the mechanism of action of CX-5461 is disruption of binding of the
+SL1 transcription factor to the rDNA promoter.Such disruption inhibitsinitiation of
+rRNA synthesis by the PolI multi-protein complex (see D3,page 1427,first column,
+first paragraph).
+5
+In contrast, D2 does not refer to activity of an RNA polymerase I enzyme itself, but
+rather to the expression of a specifically defined network of genes involved in the RNA
+polymerase I pathway (see D2, Table 3, pages 120-121). Specifically, D2 discloses that
+anefficientdrugmoleculeforthetreatmentofRRMSisa"drugmoleculewhich
+10
+downregulatesalevelofexpressionofatleastonegeneinvolvedintheRNApolymerase
+I pathway" (see, e.g.,claim 9 in D2).
+However, SL1 (i.e. the gene targeted by CX-5461 of D3) is not one of the genes defined
+as a"gene involved in the RNA polymerase I pathway"according toD2.None of the
+15genes mentioned in D2 that are considered relevant with respect to MS include SL1.
+Therefore,based on the mechanism of CX-5461 described in D3,the skilled person
+would not expect that CX-5461 would have an activity similar to the activity described
+forthecompoundsofD2.
+20
+Furthermore,D2 teaches the use of expression inhibitors,whereas D3 teaches that
+CX-5461 selectively inhibits RNA polymerase I activity (i.e., in the synthesis of rRNA)
+while not affecting the levels of mRNA and protein synthesis.Thus, CX-5461 cannot be
+considered as an expression inhibitor based on the teachings of D3,which describes
+25thecompoundas“apotentandselectiveinhibitorofPolImediatedrRNA synthesisin
+cancer cellsthat doesnotinhibitDNA,mRNAorprotein synthesis"(seeD3,page 4118,
+secondcolumn,secondparagraph).
+
+--- PAGE 6 ---
+Page
+6
+V.O.
+Your ref.
+12710797.7/1453
+Our ref.
+KB/P102705EP00
+Date
+13 October 2016
+Patents & Trademarks
+Therefore, the skilled person starting from D2 and looking for MS drug alternatives,
+wouldnotexpectthatthe activityinhibitordescribedinD3wouldhavethesame
+activity on MS as the expression inhibitor described in D2,especially considering that
+D3explicitlymentions thatthe activityinhibitor of D3donotinhibit mRNA expression
+5
+or protein synthesis.
+Summarizing,the skilled person would not arrive at the present invention based on D2
+and D3. First of all, the skilled person would not consider consulting D3 when trying to
+find alternativeMS drugs from those described inD2.Furthermore,based on the
+10
+mechanism of action,the skilled person would not expect that compound CX-5461
+would also work as a potent MS drug.
+Therefore, the present claims are inventive in view of D2 and D3.
+15
+Based on the above, I believe that the present application meets all the requirements of
+the EPC.In case any objections remain, it is requested thatyou issue another
+communication.In case the ExaminingDivision intends to refuse the present
+application,OralProceedings in accordancewithArticle116EPC are requested.
+The professional representative,
+K.M.L. Bijvank
+Enclosures:
+Amendedclaims(clean andmarked-upversion)

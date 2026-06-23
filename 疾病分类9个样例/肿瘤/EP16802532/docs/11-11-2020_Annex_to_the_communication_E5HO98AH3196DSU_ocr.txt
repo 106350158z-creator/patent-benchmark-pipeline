@@ -1,0 +1,84 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+11.11.2020
+Sheet
+Application No:
+16 802 532.8
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-67
+filedwithentryintotheregionalphasebeforetheEPO
+Claims,Numbers
+1-8
+filedinelectronicformon
+06-08-2020
+Drawings,Sheets
+1/4-4/4
+filedwithentryintotheregionalphasebeforetheEPO
+By letter of 06-08-2020, the applicant has filed a newset of claims where R1 has
+substituted C3-Cgcycloalkyl.
+Inaddition,inindependentclaims3and5somespecificcompoundshavebeen
+added whichwereoriginallydisclosed(see compound numbers within the
+descriptionasalsospecifiedinclaims3and5).
+Therefore,thepresentsubject-mattermeets therequirementsofarticle123(2)
+EPC.
+2
+Inviewof thefact thatR1hasbeenrestricted to optionallysubstituted or
+unsubstituted phenyl or optionally substituted C3-Cg cycloalkyl, the compounds
+compounds at that thepositionof R1 thereis onlyhydrogen.
+Therefore,the subject matter of present claims 1,2,4 and 6-8 is novel pursuant
+to article 54(1)(2) EPC.
+3
+However,looking atpresent claims3 and 5it becomesclear thatwithin these
+claimscompoundsareclaimedwithR1beinghydrogenwhichnomorefall
+underthepresentscope.Inclaim3thesearethefirsttwocompoundsandalso
+the last compound,whereas in claim 5 only the first two compounds are
+affected.
+Therefore,the subject matterof present claims3 and5isstill not novel and thus
+does not meet the requirements of article 54(1)(2) EPC.
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+11.11.2020
+Sheet
+2
+Application No:
+16 802 532.8
+Date
+Feuille
+Demande n°:
+In addition, the applicant is requested to make claims 3 and 5 dependent from
+claim 1forreasons of conciseness (article 84EPC).
+4
+Asregardsinventivestep,theapplicantcouldshowthatthepresentcompounds
+inhibition thanthecompounds19,20,31and32ofD4.In addition,it hastobe
+notedthatthecompoundsofD4andthepresentonessignificantlydifferinthe
+substituentcorrespondingtopresentR1sincethecompoundsofD4onlyhave
+hydrogenormethylatthispositionwhereasthepresentcompoundshave
+carbonbasedcycleatthisposition.
+subjectmatterofpresentclaims1,2,4and6-8aswellasthenovelsubject
+matterofpresentclaims3and5involvesaninventivesteppursuanttoarticle
+56EPC.
+5
+If theabovementionedobjectionscouldbeovercomeforanexactly
+characterised anddulylimitedsubject-matterthefollowing itemswould need
+attention:
+(a)In any amendments Article 123(2) EPC should be taken into
+consideration.TheApplicant isrequested toindicate thebasisof the
+amendments.
+complemented by a discussion of D1 to D4 (rule 42(1)(b) EPC).
+(c）Inaddition the applicant isrequested to delete thelastparagraphonpage
+67inviewof thefact that it comprises theexpression"incorporatedby
+reference"(see guidelines F-ll, 8) as wellthe expression
+"equivalent"(GuidelinesF-IV,4.4).
+EPO Form 2906 01.91TRI

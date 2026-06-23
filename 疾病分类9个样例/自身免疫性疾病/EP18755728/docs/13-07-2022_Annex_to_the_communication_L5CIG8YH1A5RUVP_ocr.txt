@@ -1,0 +1,85 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+13.07.2022
+Sheet
+Application No:
+18 755 728.5
+Date
+Feuille
+Demande n°:
+The examination isbeing carried out on thefollowing application documents
+Description, Pages
+1-207
+filed in electronicform on
+14-03-2022
+Claims,Numbers
+1-22
+filed inelectronicform on
+14-03-2022
+1.Amendments
+The amendments as filed with letter on 14.3.2022 are admissible under Art.123 (2)
+EPC:inclaim2onlyatypographicalerrorhasbeencorrected.
+2.Claims
+It has come tothe attention of ExaminingDivision that the objection concerning theterm
+"or prodrug thereof" has not fully been met by the Applicant: Although this term term has
+been deleted form the claims, there are several passages in the adapted specification
+Theterm"orathereof"throughouttheclaimsisnotadmissibleaccordingtotheEPC
+Examination Guidelines, Section IV, C Ill, 4.7, since it is a functional expression
+attemptingtodefinethesubjectmatterintermsofadesiredproperty.Accordingtothis
+Guidelines,claims,which attempt to define the invention or features thereof by a result
+to be achieved should be,as a general rule,objected to. There is no indication of the
+technicalfeaturenecessary todefinethesubjectmatterinordertobeabletosolvethe
+problem.Functionaltermswouldonlybeallowableiftheresultisonewhichcanbe
+directly and positivelyverified bytestsorprocedures adequatelyspecified in the
+description and involving nothing more than trial and error. Thisrequirement is not
+fulfilled,since already anyin vivo test which is necessary in order to determine if a
+compound could be considered as a prodrug,would mean an undue experimentation,
+i.e.an undue burden for the public.Thus,this term is not admissibleunderArt.83 and
+84EPC.
+In this context theApplicant's attentionisdrawnto theDecisionof theBoardsofAppeal
+T0279/07wheretheBoardcametotheconclusionthatclaim1didnotfulfilthe
+requirementofArt.84EPCduetothetheterm"orprodrug thereof"(seeespecially
+Reasons for the Decision. 2.1.):
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+13.07.2022
+Sheet
+Application No:
+18 755 728.5
+Date
+Feuille
+Demande n°:
+Theboardhad no doubt that the skilled person isperfectlyable inmost cases todecide
+whetherornotasteroidderivativewillbeconvertedtothe5-diolinvivoinparticular
+whenthechemicalentitydiffersfromthe5-diolskeletonmerelybythepresenceof
+usualhydrolysablehydroxylprotectinggroups,suchas...
+HowevertheBoardwasalsoconvincedthatinordertoestablishwhetherastructurally
+moreremotederivativeconstitutesaprodrugofthe5-diol;inordertoclearlyestablish
+thescopeoftheclaims,theskilledpersonwouldsometimeshavenootherchoicethan
+to synthesise alabeled sample tobe tested and tofollow its biochemical
+transformationsinvivotodeterminewhetherornotthechemicalstructureunder
+considerationisabiologicalprecursor,whichisexactlywhattheApplicanthasstated in
+paragraph).
+claritydemandsnotonlythataskilledpersonbeabletounderstand theteachingof the
+claimbutalsothathebeabletoimplementit.Inotherwords,thefeaturemustprovide
+instructionswhicharesufficientlyclearfortheexperttoreducethemtopracticewithout
+unreasonable burden, if necessary with routine experiments.
+Theclarityrequirementwasthereforenotmet in thiscasesince,asshown above,the
+skilledpersonwouldhavetofindoutinsomecasesmerelybytrialanderrorwhethera
+steroid derivativemeetsthefunctionalrequirementsetoutintheclaim,i.e.bymaking
+his own investigations, similar to a research programme. Under these
+circumstances,theBoardconcludedthatclaim1ofthemainrequestdidnotfulfillthe
+requirementofArticle84EPC.
+3.Since the present case is analogous to the one as cited above,the Applicant can
+expecttheExaminingDivisiontotakethesamedecision.ThustheApplicantisinformed
+duetoinfringementofArt.84EPC.
+EPOForm 2906 01.91TRI

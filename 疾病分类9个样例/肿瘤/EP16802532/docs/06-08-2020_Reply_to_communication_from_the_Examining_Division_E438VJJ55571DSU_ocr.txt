@@ -1,0 +1,117 @@
+
+--- PAGE 1 ---
+dompatent
+von Kreisler
+dompatent von Kreisler | P.0. Box 10 22 41 | 50462 Koln/Germany
+Koln
+EuropeanPatent Office
+Bob-van-Benthem-Platz1
+Patentanwalte | Patent Attorneys
+80469Munich
+Jochen Hilleingman, Dipllin.
+Dr. Hans-Peter Jonsson, Dipl-Chem.
+Dr. Thomas Weber, Dipl.-Chem.
+Dr. Jorg Helbing, Dipl-Chem.
+Alexandervon Kirschbaum, Dipl-Ing.
+Dr. Christoph Schreiber, Dipl.-Chem.
+Dr. Thomas Escher, Dipl.-Chem.
+Contact:
+Tel.:
+Constantin Ruhland, Dipl.-ng.
+Dr. Christoph Schreiber
+cschreiber@dompatent.de
++49 221 91652-228
+Florian Kruger, Dipl.-Ing.
+Our Ref.:
+Kerstin Renner, Dipl.-ng.
+172985EP CS/vg
+6 August 2020
+Andreas Gagidis, Dipl.-ng. (BA)
+Dr. Eva Bock, Dipl.-Chem., LL.M.
+EuropeanPatentApplication16802532.8
+Dr. Marius Vieweg, Dipl.-Phys.
+USEOFPTERIDINONEDERIVATIVESERVINGASEGFR
+INHIBITOR
+Dr. Anke Krebs, Dipl.-Chem., LL.M.
+EastChinaUniversityofScienceandTechnology
+Dr. Alan Stewart, B.Sc. (Hons) Chem.
+Dr. Alexander Schuld, Dipl.-Ing.
+Dr. Reza Ghadiri, Dipl.-Ing.
+Responsivetothecommunicationdated19March2020:
+Rechtsanwalte |Attorneys at Law
+Dr. Felix Hauck, LL.M.
+A newsetof 8claims is submitted inmark-up andcleancopy
+Dr. Alexander Theis, LL.M.
+whichshouldbethebasisfor thefurtherprosecution.
+WanZe Zhang, LL.M.
+Of Counsel
+Patentanwalte|Patent Attorneys
+unsubstitutedphenyl,optionallysubstitutedC3-Cscycloalkyl".
+Georg Dallmeyer, Dipl-Ing.
+Dr. Hans-Wilhelm Meyers, Dipl.-Chem.
+Thedependentclaimswereadapted.
+InClaim3someadditionalcompoundswereadded,disclosedin
+the application. These compounds are identified by the number
+used in the specification.
+dompatent onKreisler Selting WernerPartnerschaft von Patentanwaltenund RechtsanwaltenmbB,Koln,Amtsgericht Essen,PR531
+KanzleiKoln: Deichmannhaus am Dom - Bahnhofsvorplatz 1 -50667 Koln/Germany - Tel. +49 221 91652 0 ·Fax +49 221 134297
+Buro Munchen: Palais an der Oper - MaximilianstralBe 2 - 80539 Munchen/Germany - Tel. +49 89 2050085033
+mail@dompatent.de-www.dompatent.de
+
+--- PAGE 2 ---
+-2-
+Ontheotherhand，somecompoundsweredeletedwhichnolongerbelongtothe
+invention.Thisalsoappliestoclaim5.
+Basedonthese amendments,compounds19,20,31 and 32of D4arenolonger
+covered.
+Regrading inventive step,the compounds of the present invention differ
+significantlyfromthoseofD4.
+Regarding compound 19 of D4, this compound is not a good EGFR inhibiting
+compound.ItsIC50valueofinhibitoryactivityonT790M/L858R-EGFRis738nM,
+and itsIC50valueof inhibitoryactivityon theproliferationof H1975 (whichis a
+thiscompounddoes not exhibit goodselectivitybetweenWTEGFR and
+T790M/L858R-EGFR. For example, the ratio of the IC50 value of inhibitory
+Regarding compound 20 of D4, this compound does not exhibit better inhibitory
+activityontheproliferationofH1975thanthecontrolcompound，anditiswell-
+knownfor a skilledperson that the inhibitoryactivity onproliferationof cellsis
+moreimportantthanthatonkinase.Moreover，thiscompounddoes notexhibit
+goodselectivity betweenWTEGFR and T790M/L858R-EGFR.For example，the
+ratiooftheIC50valueofinhibitoryactivityonEGFRofwild-typetothaton
+mutant EGFR is merely 1.78.
+Regarding compound 031 of D4，this compound does not have better EGFR
+inhibitory activitythan thecontrol compoundWZ4002 anddoes notexhibit good
+selectivitybetweenWTEGFRandT790M/L858R-EGFR.Forexample,theratioof
+
+--- PAGE 3 ---
+-3-
+the IC50value of inhibitoryactivity onEGFRofwild-type to that onmutantEGFR
+is merely1.87.
+Regarding compound 032 of D4，this compound exhibits comparable inhibitory
+activityontheproliferationofH1975tothecontrolcompoundWZ4002，andthe
+ratio of the IC50 value of inhibitory activity onEGFR of wild-typeto that on
+mutantEGFRis3.14.
+Compared with the compounds of D4, the compounds of the inventionexhibit a
+significantlybetter activity in at least one of thefollowing aspects:
+1）excellent EGFR inhibitory activity.For example, the IC50 values of inhibitory
+activity on proliferation of cells (H1975) of compounds 4, 5, 12 and 42 are 0.009,
+0.006,0.006and0.003μM,respectively;
+2)excellentselectivitybetweenWTEGFRandT790M/L858R-EGFR,orbetween
+cells with WT EGFR and cells with T790M/L858R-EGFR. For example,the IC50
+0.016μM,however,theratioof theIC50valueofinhibitoryactivityonEGFRof
+wild-typetothatonmutantEGFRis43.4ZandtheratiooftheIC50valueof
+cells(mutantEGFR)is109.38.Foranotherexample，theIC50valuesof
+inhibitory activity on proliferation of cells(H1975)of compound 53-2(S)is 0.062
+μM, however, this compound exhibits excellent selectivity between cells with WT
+EGFR(>10μM)and cellswithT790M/L858R-EGFR(0.062μM).
+3)significantlydifferentstructures.Forexample，R1of formulaIor R1of the
+invention,forexamplecompounds 43，47，48，55-57，is a substitutedphenylor
+
+--- PAGE 4 ---
+cycloalkyl，however,in thecompounds of D4，thesubstituents corresponding to
+R1of thecompoundsasclaimed intheamendedclaims areHormethyl.
+It iskindly requested to confirmallowability of the set of claims.An adapted
+descriptionwillsubsequentlybesubmitted.
+Dr.ChristophSchreiber
+EuropeanPatentAttorney
+Enclosures:amended claims(mark-up)
+amendedclaims(cleancopy)

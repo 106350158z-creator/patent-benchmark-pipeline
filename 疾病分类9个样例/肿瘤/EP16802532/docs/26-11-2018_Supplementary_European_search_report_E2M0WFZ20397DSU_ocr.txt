@@ -1,0 +1,71 @@
+
+--- PAGE 1 ---
+Europaisches
+Patentamt
+European
+Patent Office
+SUPPLEMENTARY
+Application Number
+office europeen
+EP 16 80 2532
+des brevets
+EUROPEANSEARCHREPORT
+DOCUMENTSCONSIDEREDTOBERELEVANT
+Category
+Citation of document withindication,where appropriate,
+Relevant
+CLASSIFICATION OF THE
+ofrelevant passages
+to claim
+APPLICATION (IPC)
+X
+1-10
+INV.
+Pteridin-7(8H)-one-Based Irreversible
+C07D475/00
+Inhibitors TargetingtheEpidermalGrowth
+A61K31/519
+FactorReceptor（EGFR)Kinase T790M/L858R
+A61P35/00
+Mutant",
+A61P35/02
+JOURNAL OF MEDICINAL CHEMISTRY,
+vol.56,no.20,
+ADD.
+24 0ctober 2013_(2013-10-24),pages
+CO7D487/04
+7821-7837，XP055096868，
+ISSN:0022-2623，D0I:10.1021/jm401045n
+* page 7822,"results and discussion,
+Discovery of Novel Irreversible EGFR
+Inhibitors";
+compounds 3w,3x *
+TECHNICALFIELDS
+SEARCHED
+(IPC)
+C07D
+A61K
+A61P
+The supplementarysearchreport hasbeenbased onthelast
+set of claims valid and available at the start of the search.
+Place of search
+Date of completion of the search
+Examiner
+EPO FORM 1503 03.82 (P04C04)
+Munich
+15 November2018
+Schmid,Arnold
+CATEGORYOFCITEDDOCUMENTS
+T:theory orprincipleunderlying theinvention
+E:earlier patent document,but published on,or
+X:partioularly relevant if taken alone
+after the filing date
+Y:particularly relevant if combined with another
+D:dooument cited in the application
+document of the same category
+L : document cited for other reasons
+A:technological background
+O:non-written disclosure
+&：memberof the same patentfamily,corresponding
+P : intermediate document
+document

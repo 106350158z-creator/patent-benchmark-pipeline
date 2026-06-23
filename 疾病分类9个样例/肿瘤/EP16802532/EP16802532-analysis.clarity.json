@@ -1,0 +1,38 @@
+{
+  "clarity_score": 80,
+  "clarity_disc": {
+    "analysis": "SOURCE 中未显示审查员关于清楚性异议的详细理由页，但申请人回复明确承认曾存在针对权利要求3和5的清楚性异议，并表示通过将原权利要求3和5改为从属于新权利要求1等修改已克服该异议。随后EPO发出授权意向并最终作出授权决定，说明清楚性障碍在授权文本中已被接受。当前风险较低，但由于原审查意见的具体Art.84理由未在SOURCE中展示，评分不作满分。",
+    "original_text": "Former claims 3 and 5have beenmadedependent onnew claim1.These\namendments are based at least on the particular embodiment starting on page\nEnglishtranslationof thePCTapplication,respectively.\nClarity\nTheclarityobjectionregardingclaims3 and5isovercomeby the amendment\nindicated above.",
+    "translation": "原权利要求3和5已被改为从属于新的权利要求1。这些修改至少基于PCT申请英文译文中相应页开始的具体实施方式。\n清楚性\n关于权利要求3和5的清楚性异议已通过上述修改克服。",
+    "llm_evidence_explanation": "该连续原文直接表明存在清楚性异议，且申请人通过修改权利要求从属关系等方式主张已克服；结合后续授权，支持“有问题但已通过修改克服”的评分。"
+  },
+  "affected_claims": [
+    3,
+    5
+  ],
+  "evidence": [
+    {
+      "issue": "clarity",
+      "source": "22-03-2021_Reply_to_communication_from_the_Examining_Division_E50SR0V95329DSU_ocr.txt",
+      "original_text": "Former claims 3 and 5have beenmadedependent onnew claim1.These\namendments are based at least on the particular embodiment starting on page\nEnglishtranslationof thePCTapplication,respectively.\nClarity\nTheclarityobjectionregardingclaims3 and5isovercomeby the amendment\nindicated above.",
+      "translation": "原权利要求3和5已被改为从属于新的权利要求1。这些修改至少基于PCT申请英文译文中相应页开始的具体实施方式。\n清楚性\n关于权利要求3和5的清楚性异议已通过上述修改克服。",
+      "llm_evidence_explanation": "该证据证明清楚性问题曾被提出，涉及权利要求3和5，并且申请人通过修改认为该异议已被克服。"
+    },
+    {
+      "issue": "clarity",
+      "source": "21-03-2022_Communication_about_intention_to_grant_a_European_patent_L0MFXQWD1D5KGZ9_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.\nAcopyoftherelevantdocumentsisenclosed.",
+      "translation": "兹通知你方，审查部拟基于上述申请授予一项欧洲专利，其文本、附图及相关著录数据如下所示。随函附上相关文件副本。",
+      "llm_evidence_explanation": "授权意向通知表明审查部已准备基于当时文本授权，支持清楚性异议在最终授权文本中不再阻碍授权。"
+    },
+    {
+      "issue": "clarity",
+      "source": "11-08-2022_Decision_to_grant_a_European_patent_L6FNAWHJ1M7IUKL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16802532.8aEuropeanpatentwiththetile\nand thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.03.22isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经审查欧洲专利申请号16802532.8，现依据2022年3月21日根据EPC规则71(3)发出的通知或相关信息中所示的名称及支持文件，就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "最终授权决定确认该申请已通过审查并授权，说明包括清楚性在内的授权障碍已被克服。"
+    }
+  ],
+  "risk_reason": "Earlier clarity objections were amended away; final grant indicates low residual Article 84 risk.",
+  "recommended_action": "Maintain the granted claim wording and dependency structure; avoid broadening or reintroducing former unclear claim formulations in future proceedings."
+}

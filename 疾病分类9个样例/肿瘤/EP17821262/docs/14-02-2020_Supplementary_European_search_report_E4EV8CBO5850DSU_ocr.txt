@@ -1,0 +1,193 @@
+
+--- PAGE 1 ---
+Europaisches
+Patentamt
+European
+Patent Office
+SUPPLEMENTARY
+Application Number
+Office europeen
+des brevets
+EUROPEANSEARCHREPORT
+EP 17 82 1262
+DOCUMENTSCONSIDEREDTOBERELEVANT
+Category
+Citation of document withindication,where appropriate,
+Relevant
+CLASSIFICATION OF THE
+ofrelevant passages
+to claim
+APPLICATION (IPC)
+X
+JONATHAN LEDERMANN ET AL:"Olaparib
+1-27
+INV.
+MaintenanceTherapyinPlatinum-Sensitive
+A61K31/454
+Relapsed OvarianCancer"
+A61K31/4745
+NEW ENGLAND JOURNAL OF MEDICINE,
+C12Q1/68
+vol.366,no.15,
+A61P35/00
+12 Apri1'2012 (2012-04-12),pages
+1382-1392，XP55075393,
+ISSN:0028-4793,D0I:
+10.1056/NEJMoa1105535
+* Background,Discussion.;
+figure 1 *
+X
+WO 2014/052550 A1 (UNIV JEFFERSON [US];
+1-27
+LISANTI MICHAEL P [GB])
+3 April 2014 (2014-04-03)
+* page 9, paragraph 1; claims 1-16 *
+X
+WO 2015/108986 A1 (CL0VIS 0NC0L0GY INC
+1-27
+[US]) 23 July_2015_(2015-07-23)
+* paragraphs[0070]'-[0074]; table 5 *
+TECHNICALFIELDS
+X
+SHAOJUN ZHANG ET AL:"A Genomic
+1-27
+SEARCHED
+(IPC)
+Instability Score inDiscriminating
+A61K
+NonequivalentOutcomesofBRCA1/2
+Mutationsand inPredictingOutcomes of
+Ovarian Cancer Treated with Platinum-Based
+Chemotherapy",
+PLOS ONE,
+vol.9,no.12，
+1 December 2014 (2014-12-01),page
+e113169，XP55418698，
+D01:10.1371/journal.pone.0113169
+* page e113178 *
+The supplementarysearchreporthasbeenbased onthelast
+set of claims valid and available at the start of the search.
+1
+Place of search
+Date of completion of the search
+Examiner
+EPO FORM 1503 0G.82 (P04C04)
+Munich
+6 February 2020
+Cattell, James
+CATEGORYOFCITEDDOCUMENTS
+T:theory orprinciple underlying theinvention
+E:earlier patent document,but published on,or
+X:partioularly relevant if taken alone
+after the filing date
+Y : particularly relevant if combined with another
+D : document cited in the application
+document of the same category
+L : document cited for other reasons
+A:technological background
+O:non-written disclosure
+&:member of the same patent family, corresponding
+P:intermediatedocument
+document
+page 1 of 2
+
+--- PAGE 2 ---
+Europaisches
+Patentamt
+European
+Patent Office
+SUPPLEMENTARY
+Application Number
+office europeen
+EP 17 82 1262
+des brevets
+EUROPEANSEARCHREPORT
+DOCUMENTSCONSIDEREDTOBERELEVANT
+Category
+Citation of document withindication,where appropriate,
+Relevant
+CLASSIFICATION OF THE
+ofrelevantpassages
+to claim
+APPLICATION (IPC)
+X
+SHAHNEEN K SANDHU ET AL:"The
+1-27
+poly(ADP-ribose)polymerase inhibitor
+niraparib（MK4827）inBRCAmutation
+carriers and patientswithsporadic
+cancer:a phase 1dose-escalation trial",
+THE LANCET ONCOLOGY,
+vol.14,no.9,1 August 2013 (2013-08-01)
+，pages 882-892，XP55407449,
+AMSTERDAM, NL
+ISSN:1470-2045,D0I:
+10.1016/S1470-2045(13)70240-7
+*tables 2-5 *
+TECHNICALFIELDS
+SEARCHED
+(IPC)
+The supplementary searchreporthasbeenbased onthelast
+set of claims valid and available at the start of the search.
+Place of search
+Date of completion of the search
+Examiner
+EPO FORM 1503 03.82 (P04C04)
+Munich
+6 February 2020
+Cattell, James
+CATEGORYOFCITEDDOCUMENTS
+T:theory orprincipleunderlying the invention
+E:earlier patent document,but published on,or
+X:partioularly relevant if taken alone
+after the filing date
+Y : particularly relevant if combined with another
+D:document cited in the appliation
+document of the same category
+L : document cited for other reasons
+A:technological background
+O:non-written disclosure
+&：memberof the same patent family,corresponding
+P : intermediate document
+document
+page 2 of 2
+
+--- PAGE 3 ---
+ANNEXTOTHEEUROPEANSEARCHREPORT
+ONEUROPEANPATENTAPPLICATIONNO.
+EP 17 82 1262
+This annexlists thepatent family membersrelating to the patent documents cited inthe above-mentioned European searchreport.
+Themembers are as contained intheEuropeanPatentOfficeEDPfile on
+The European Patent Office is in no way liable for these particulars which are merely given for the purpose of information.
+06-02-2020
+Patent document
+Publication
+Patent family
+Publication
+cited insearchreport
+date
+member(s)
+date
+W02014052550
+A1
+03-04-2014
+NONE
+W02015108986
+A1
+23-07-2015
+CN
+105917007 A
+31-08-2016
+EP
+3094752 A1
+23-11-2016
+JP
+2017504623 A
+09-02-2017
+US
+2018163271 A1
+14-06-2018
+wo
+2015108986 A1
+23-07-2015
+FORM P0459

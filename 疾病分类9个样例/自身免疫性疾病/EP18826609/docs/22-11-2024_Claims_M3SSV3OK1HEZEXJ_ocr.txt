@@ -1,0 +1,174 @@
+
+--- PAGE 1 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+AUXILIARYREQUEST2
+CLAIMS:
+1.
+A compound of Formula (Iacl):
+(R3s)0-2
+(Iac-1),
+or a solvate, or pharmaceutically acceptable salt thereof, wherein:
+R2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is unsubstituted 5 or 6 membered
+monocyclic heterocycloalkyl; and
+each R3s is independently C-C6 alkyl, Ci-C6 haloalkyl, Cs-Cs cycloalkyl, halo, or Cs-Cs
+heterocycloalkyl wherein the C-C6 alkyl, Ci-Co haloalkyl, C3-Cs cycloalkyl, or C3-Cs
+heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl), -N(C1-C6 alkyl)2,halo,or -CN.
+2.
+The compound of claim 1, wherein Rzs is tetrahydrofuranyl, pyrrolidinyl,
+tetrahydropyranyl, piperidinyl, or morpholinyl; or
+furtheroptionally
+3.
+The compound of claim 1 or claim 2, wherein at least one R3s is Ci-Co alkyl, Ci-C6
+haloalkyl, Cs-Cs cycloalkyl, halo, or Cs-Cg heterocycloalkyl wherein the C-C6 alkyl, C-C6
+haloalkyl, C3-Cs cycloalkyl, or C3-Cs heterocycloalkyl is optionally substituted with -O(Ci-C6
+alkyl), -N(C1-C6 alkyl)2, halo, or -CN;
+optionallywherein at least oneR3sis
+, methyl, ethyl, isopropyl, -
+CH2OCH3, -CHCF3,-CH2CH2OCH3,-CH2CN, CHCF2, Or -CH2CH2N(CH3)2.
+4.
+The compound of any one of the preceding claims, wherein the compound is of Formula
+(Iabc-1),or(Iabc-la):
+290358595 v1
+
+--- PAGE 2 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+Q
+N-R3S
+N
+(R3s)0-2
+N-R3S
+N
+(R3s)0-2
+R2S
+(Iabc-1);
+(Iabc-la);
+or a solvate, or pharmaceutically acceptable salt thereof,wherein R2s and R3s are as
+describedinclaim1.
+5.
+The compound of any one of claims 1 to 4,wherein the compound is ofFormula (Iabc-
+la):
+(R3s)0-2
+H
+(Iabc-la)
+or a solvate,or pharmaceutically acceptable salt thereof, wherein R3s is as described in
+claim 1.
+6.
+The compound of any one of claims1 to 5,being selectedfrom:
+Compound No.
+Structure
+0.0
+1V
+CH3
+Na*
+290358595 v1
+
+--- PAGE 3 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+O
+00
+CH3
+S
+N
+CH3
+Na
+CH
+H
+Na
+O
+V
+CH3
+H
+Na
+N
+S
+10
+N
+N
+2
+H
+CH3
+Na
+HC
+N-CH3
+11
+N
+H
+CH3
+Na
+290358595v1
+
+--- PAGE 4 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+0
+N
+-CHg
+22
+H
+Na
+O
+00
+25
+H
+Na
+O
+O
+26
+Na
+27
+H
+Na
+00
+29
+H
+Na
+00
+30
+N
+H
+Na
+290358595v1
+
+--- PAGE 5 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+35
+Q
+41
+43
+46
+99
+Na
+and pharmaceutically acceptable salts thereof.
+7.
+A pharmaceutical composition comprising the compound of any one of claims1 to 6 or a
+pharmaceutically acceptablesalt thereof,and a pharmaceuticallyacceptablediluent or carrier.
+8.
+The compound of any one of claims 1 to 6,or the pharmaceutical composition of claim 7,
+for use in inhibiting inflammasome activity; optionally,the inflammasome is NLRP3
+inflammasome,and the activityisinvitroorinvivo.
+290358595v1
+
+--- PAGE 6 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+9. The compound of any one of claims 1 to 6, or the pharmaceutical composition of claim 7, for
+use in treating or preventing a disease or disorder; preferably wherein the disease or disorder is an
+inflammatorydisorder,an autoinflammatory disorder,an autoimmune disorder,aneurodegenerative
+disease,or cancer.
+10.The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein the
+disease or disorderis aninflammatory disorder,anautoinflammatorydisorder or an autoimmune
+disorder; optionally, the disease or disorder is selected from cryopyrin-associated
+autoinflammatorysyndrome(CAPS;e.g.,familialcold autoinflammatory syndrome(FCAS),
+Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular
+(CINCA) syndrome/ neonatal-onset multisystem inflammatory disease (NOMID), familial
+Mediterraneanfever(FMF),nonalcoholicfattyliver disease(NAFLD),non-alcoholic
+steatohepatitis(NASH),gout,rheumatoid arthritis,osteoarthritis,Crohn’s disease,chronic
+obstructive pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2
+diabetes, multiple sclerosis, dermatological diseases (e.g., acne) and neuroinflammation
+occurring in protein misfolding diseases(e.g.,Prion diseases)
+disease or disorder is a neurodegenerative disease; optionally,the disease or disorder is
+Parkinson's disease orAlzheimer's disease.
+12.The compound or pharmaceutical composition for use of claim 8 or claim 9, wherein the
+disease or disorder is cancer; optionally, the cancer is metastasising cancer, gastrointestinal
+cancer, brain cancer, skin cancer, non-small-cell lung carcinoma,head and neck squamous cell
+carcinomaorcolorectaladenocarcinoma.
+6
+290358595v1

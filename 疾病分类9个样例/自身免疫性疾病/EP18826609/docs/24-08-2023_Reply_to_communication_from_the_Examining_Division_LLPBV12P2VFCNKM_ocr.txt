@@ -1,0 +1,79 @@
+
+--- PAGE 1 ---
+Cooley
+OliverWare
++44 (0) 20 7556 4433
+oware@cooley.com
+EuropeanPatentOffice
+80298
+Munich
+Germany
+24 August 2023
+OurRef:NODT-004/N01EP330150-2065
+DearEuropeanPatentOffice
+Re.
+Europeanpatentapplicationno.18826609.2
+SULPHONYLUREADERIVATIVESASNLRP3INFLAMMASOMEMODULATORS
+NodTheraLimited
+WerefertothecommunicationpursuanttoArticle94(3)EPCdated17April2023and totheabove-
+identified application.
+Welodgeherewithan amended set of claims tobe substitutedforthe claimsaspresently onfile.For
+theconvenienceof theExaminer,afurther copy of the amended claimsshowingthe amendments in
+track-changesformatisalsoenclosed.
+Theapplicantrespectfullyrequeststhat anyamendmentofthedescriptionbe deferred until suchtime
+asanallowableclaimset hasbeen agreed upon.
+Amendments
+Claim 1 has been amended to specifythat theCs-Ce aryl of Ris aphenyl substituted with two or three
+Ris. This amendment finds basis in paragraphs [0151] and [0153] of the application as filed.
+Claim1 hasbeenfurther amended tospecify that at least one Risis C-Csalkyl,Ci-Cshaloalkyl,orhalo.
+Claim 1 has alsobeen amended to specify that Rzs is a 4-to 8-membered monocyclic heterocycloalkyl.
+This amendment finds basis in paragraph[045] of the application as filed.
+Finally, claim 1 has been amended to fix the antecedent basis of "the C3-Cs monocyclic cycloalkyl,
+polycyclic cycloalkyl" by specifying that the C3-C16 cycloalkyl is a C3-Cg monocyclic cycloalkyl or
+polycyclic cycloalkyl.
+Claims 2,4,and 9 havebeen amended tobring them intoline withamended claim 1.
+The claims are otherwise unamended.
+COOLEY (UK) LLP 22 BISHOPSGATE LONDON EC2N 4BQ, UK
+T: +44 (O) 20 7583 4055 F: +44 (O) 20 7785 9355 COOLEY.COM
+Cooley {UK) LP is a Iimited liability partnership and is registered in England and Wales with registered number OC395270. Our registered office is at
+the address above. Cooley (UK) LLP is authorised and regulated by the Solicitors Regulation Authority (SRA number 617791). A list of the members of
+Cooley (UK) LLP and their professional qualifications is open to inspection at its registered office.The word partner' used in relation to Cooley (UK)
+LLP,refersto a member of Cooley (UK) LP or an employee or consultant of Cooley (UK) LP (or any affliated frm) of equivalent standing.
+290358781 v1
+
+--- PAGE 2 ---
+Cooley
+24August2023
+Page Two
+Inventive step
+TheExaminerhasmaintained theirobjection that thesubjectmatterof the claimsasonfilelacksan
+inventive step over D1. This is because the Examiner appears to consider some of the exemplified
+compoundsnottodisplaytheimprovementevidencedbythe comparativedata discussed aspart of
+71, and 90 ashavinganICsoin therange of10 to50μM.
+Assetoutabove,claim1hasbeen amended morecloselyintolinewiththeexemplified compounds
+which provide ICso values<10μM-i.e.superiorto the>10 μM value of the comparative compound
+<10μMfallwithinthescopeof amendedclaim1.Allof theexemplifiedcompoundswhichhaveICso
+values>10μMhave been excluded from the scope of amended claim 1.This includeseach of
+compounds58,71,and90,whichwerespecificallyidentified bytheExaminer.
+Accordingly,thepreviously-discussed comparativedata supportsthe claimed scope of amended claim
+1.Furthermore,given the ICso values for all exemplified compounds within the scope of amended
+claim 1, it is credible thatcompounds throughout the scope of the claim would possess the claimed
+improvement.
+objectionbewithdrawn.Theremainingclaimseitherdependuponclaim1orincorporateitssubject
+matterbyreferenceandthereforelikewiseinvolveaninventivestepatleastbyvirtuethereof.
+The Applicant submits that this response overcomes all objections raised in the Examination Report.
+If,however,the Examiner disagrees,they arerequested toissue another Official Communication,or
+tocontact the undersignedbytelephonefor any minor outstandingmatters.Purely as aprecaution,
+should theExaminerbemindedtorefuse this application,oralproceedingsviavideoconferenceare
+requestedunderArticle116EPCbeforeanysuchdecisionistaken.
+Yoursfaithfully
+WARE,OliverJames
+For and onbehalf of Cooley(UK) LLP
+Associationno.676
+COOLEY (UK) LLP 22 BISHOPSGATE LONDON EC2N 4BQ, UK
+T: +44 (0) 20 7583 4055 F: +44 (0) 20 7785 9355 COOLEY.COM
+Cooley {UK) LP is a Iimited liability partnership and is registered in England and Wales with registered number OC395270. Our registered office is at
+the address above. Cooley (UK) LLP is authorised and regulated by the Solicitors Regulation Authority (SRA number 617791). A list of the members of
+Cooley (UK) LLP and their professional qualifications is open to inspection at itsregistered office.The word partner' used in relation to Cooley (UK)
+LLP,refersto a member of Cooley (UK) LP or an employee or consultant of Cooley (UK) LP (or any aflited firm) of equivalent standing.
+290358781 v1

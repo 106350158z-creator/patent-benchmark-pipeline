@@ -1,0 +1,333 @@
+
+--- PAGE 1 ---
+Claims
+1.
+tetrahydrospiro[indazole-5,4'-piperidine]-1'-carbonyl)-6-methoxypyridin-2-yl)benzoicacidora
+pharmaceuticallyacceptablesalt thereof,foruseinamethodfortreatingadiseaseorcondition
+inapatient inneed thereof,wherein:
+thediseaseorconditionisselectedfromnonalcoholicsteatohepatitiswithliverfibrosis,
+nonalcoholic steatohepatitis with cirrhosis,and nonalcoholic steatohepatitis with cirrhosis and
+theGLP-1Ragonistisselected from:
+oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-ylmethyl)-3-
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-4-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+(pyridin-3-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+(1,3-oxazol-5-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+1
+
+--- PAGE 2 ---
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(1-ethyl-1H-1,2,3-triazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-7-fluoro-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+ylmethyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+ylmethyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2R)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;and
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2;
+2
+
+--- PAGE 3 ---
+orphamaceuticallyacceptablesaltthereof.
+2.A combination for use in a method of treating, as claimed in claim 1,wherein the GLP-
+1Ragonist isselected from:
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylicacid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid; and
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2;
+orapharmaceuticallyacceptablesaltthereof.
+3.A combination foruse in a method of treating,as claimed in claim 2, wherein the GLP-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid, DIAST-X2,or a
+pharmaceuticallyacceptablesaltthereof.
+3
+
+--- PAGE 4 ---
+1R agonist is 2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,ora pharmaceutically
+acceptablesaltthereof.
+5.A combination for use in a method of treating,as claimed in any one of claims 1 to 4,
+carbonyl)-6-methoxypyridin-2-yl)benzoicacidorpharmaceuticallyacceptablesaltthereofisthe
+tetrahydrospiro[indazole-5,4'-piperidine]-1'-carbonyl)-6-methoxypyridin-2-yl)benzoic acid.
+6.A combination comprising (1) GLP-1R agonist and (2) [(1R,5S,6R)-3-{2-[(2S)-2-
+methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0jhex-6-yl]aceticacidora
+wherein:
+thediseaseorconditionisselectedfromnonalcoholicsteatohepatitiswithliverfibrosis,
+nonalcoholicsteatohepatitiswithcirrhosis,andnonalcoholicsteatohepatitiswithcirrhosisand
+withhepatocellular carcinoma or witha metabolic-related disease;and
+theGLP-1Ragonist isselectedfrom:
+oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl]methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+4
+
+--- PAGE 5 ---
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+(1,3-oxazol-4-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+(pyridin-3-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-5-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(1-ethyl-1H-1,2,3-triazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-7-fluoro-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6- carboxylic acid;
+yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-(4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-ylpiperidin-1-
+yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+ylmethyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+5
+
+--- PAGE 6 ---
+2-({4-[(2R)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;and
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid,DlAST-X2
+orphamaceuticallyacceptablesaltthereof.
+7.A combination for use in a method of treating, as claimed in claim 6, wherein the GLP-
+1Ragonist isselectedfrom:
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;and
+6
+
+--- PAGE 7 ---
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2;
+orapharmaceuticallyacceptablesaltthereof.
+8.A combination for use in a method of treating, as claimed in claim 7, wherein the GLP-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid,DlAST-X2,ora
+pharmaceuticallyacceptablesalt thereof.
+9.A combination for use in a method of treating,as claimed in claim 7, wherein the GLP-
+1R agonist is 2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid,orapharmaceutically
+acceptablesaltthereof.
+10.A combination for use in a method of treating,as claimed in any one of claims 6 to 9,
+wherein the [(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-
+11.A combination comprising (1) a GLP-1R agonist and (2) (S)-2-(5-((3-ethoxypyridin-2-
+yl)oxy)pyridin-3-yl)-N-(tetrahydrofuran-3-yl)pyrimidine-5-carboxamide orapharmaceutically
+acceptablesalt thereof,foruseinamethodfortreatingadiseaseorconditioninapatientin
+needthereof,wherein:
+the disease or condition isselected from nonalcoholic steatohepatitiswith liverfibrosis,
+withhepatocellularcarcinomaorwithametabolic-relateddisease;and
+the GLP-1R agonist isselected from:
+oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-7-fluoro-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+7
+
+--- PAGE 8 ---
+fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-ylpiperidin-1-yl}methyl)-3-
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylicacid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6- carboxylic acid;
+(1,3-oxazol-4-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+(pyridin-3-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+(1,3-oxazol-5-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+[(1-ethyl-1H-1,2,3-triazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+2-((4-[2-(4-chloro-2-fluorophenyl)-7-fluoro-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+ylmethyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+8
+
+--- PAGE 9 ---
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,and
+2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2;
+orphammaceuticallyacceptablesaltthereof.
+12.A combinationfor use in a method of treating,as claimed in claim 11,wherein the
+diseaseorconditionisnonalcoholicsteatohepatitiswithliverfibrosis.
+13.A combinationfor use in a method of treating,as claimed in claim 11,wherein the
+disease or condition is nonalcoholic steatohepatitis with cirrhosis.
+14.A combination for use in a method of treating,as claimed in any one of claims 11 to 13,
+whereintheGLP-1Ragonistisselectedfrom:
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+6
+
+--- PAGE 10 ---
+2-({4-[2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6- carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;and
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid,DIAST-X2;
+orapharmaceuticallyacceptablesalt thereof.
+15.A combination for use in a method of treating, as claimed in claim 14, wherein the GLP-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2,ora
+pharmaceuticallyacceptablesaltthereof.
+1R agonist is 2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid,orapharmaceutically
+acceptablesaltthereof.
+17.Acombinationforuseinamethodof treating,asclaimed inclaim15orclaim16
+whereinthepharmaceuticallyacceptablesaltisatrissalt.
+18.A combination for use in a method of treating,as claimed in any one of claims 11 to 17,
+wherein the (S)-2-(5-((3-ethoxypyridin-2-yl)oxy)pyridin-3-yl)-N-(tetrahydrofuran-3-yl)pyrimidine-
+10
+
+--- PAGE 11 ---
+yl)-N-(tetrahydrofuran-3-yl)pyrimidine-5-carboxamide.
+19.A combination comprising (1) GLP-1R agonist and (2)2-[(1R,3R,5S)-3-((5-cyclopropyl-3-
+1,3-benzothiazole-6-carboxylic acid ora pharmaceutically acceptable salt thereof,foruseina
+methodfortreatingadiseaseorconditioninapatient inneedthereof,wherein:
+thediseaseorconditionselectedfromnonalcoholicsteatohepatitiswithliverfibrosis,
+nonalcoholicsteatohepatitiswithcirrhosis,andnonalcoholicsteatohepatitiswithcirrhosisand
+withhepatocellularcarcinomaorwithametabolic-relateddisease;and
+the GLP-1Ragonist isselected from:
+(-(x(o)-)
+oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-7-fluoro-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-3-
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylicacid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylicacid;
+(1,3-oxazol-4-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+(pyridin-3-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+11
+
+--- PAGE 12 ---
+2-({4-[2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+(1,3-oxazol-5-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+[(1-ethyl-1H-1,2,3-triazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylicacid;
+2-({4-[2-(4-chloro-2-fluorophenyl)-7-fluoro-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-1-
+(1,3-oxazol-2-ylmethyl)-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+ylmethyl)-7-fluoro-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-ylpiperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+yl}methyl)-1-[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;
+2-({4-[(2R)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,and
+12
+
+--- PAGE 13 ---
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DIAST-X2;
+orphammaceuticallyacceptablesaltthereof.
+20.A combination for use in a method of treating,as claimed in claim 19, wherein the GLP-
+1R agonist is selected from:
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+(1,3-oxazol-2-ylmethyl)-3H-imidazo[4,5-b]pyridine-5-carboxylic acid;
+[(1-ethyl-1H-imidazol-5-yl)methyl]-1H-benzimidazole-6- carboxylic acid;
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(4-cyano-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+2-({4-[(2S)-2-(5-chloropyridin-2-yl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-yl}methyl)-
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid;
+1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylicacid;and
+[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,DlAST-X2;
+21．A combination for use in a method of treating, as claimed in claim 20, wherein the GLP-
+pharmaceuticallyacceptablesaltthereof.
+13
+
+--- PAGE 14 ---
+22.A combination for use in a method of treating,as claimed in claim 20,wherein the GLP-
+1R agonist is 2-({4-[(2S)-2-(4-chloro-2-fluorophenyl)-2-methyl-1,3-benzodioxol-4-yl]piperidin-1-
+yl}methyl)-1-[(2S)-oxetan-2-ylmethyl]-1H-benzimidazole-6-carboxylic acid,or a pharmaceutically
+acceptablesaltthereof.
+23.A combination foruse in a method of treating,as claimed in any one of claims 19 to 22,
+yl}methoxy)-8-azabicyclo[3.2.1]octan-8-yl]-4-fluoro-1,3-benzothiazole-6-carboxylic acid or salt
+yl}methoxy)-8-azabicyclo[3.2.1]octan-8-yl]-4-fluoro-1,3-benzothiazole-6-carboxylic acid.
+14

@@ -1,0 +1,1233 @@
+{
+  "application_number": "EP17821262.7",
+  "benchmark_input": {
+    "drug_structure": {
+      "markush_or_formula_snippets": [],
+      "smiles": [],
+      "extraction_note": "先按 Formula/Markush OCR 上下文定位 PDF 页面，再用 OpenCV 连通域和线段特征切出候选结构图；markush_images 为自动筛选 Top 候选，markush_candidate_images 保留候选图库供人工复核。",
+      "markush_images": [],
+      "markush_candidate_images": [
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p001_c282.png",
+          "bbox_px": [
+            387,
+            327,
+            1041,
+            393
+          ],
+          "score": 602.2,
+          "image_score": 442.2,
+          "context_priority": 160,
+          "line_count": 99,
+          "slanted_line_count": 0,
+          "density": 0.17709,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p001_c280.png",
+          "bbox_px": [
+            387,
+            327,
+            1041,
+            393
+          ],
+          "score": 600.4,
+          "image_score": 440.4,
+          "context_priority": 160,
+          "line_count": 98,
+          "slanted_line_count": 0,
+          "density": 0.17698,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p005_c224.png",
+          "bbox_px": [
+            149,
+            1377,
+            399,
+            1444
+          ],
+          "score": 378.8,
+          "image_score": 218.8,
+          "context_priority": 160,
+          "line_count": 61,
+          "slanted_line_count": 0,
+          "density": 0.09773,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p003_c190.png",
+          "bbox_px": [
+            474,
+            471,
+            634,
+            532
+          ],
+          "score": 328.4,
+          "image_score": 168.4,
+          "context_priority": 160,
+          "line_count": 33,
+          "slanted_line_count": 0,
+          "density": 0.10256,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004_c124.png",
+          "bbox_px": [
+            149,
+            1646,
+            309,
+            1707
+          ],
+          "score": 319.4,
+          "image_score": 159.4,
+          "context_priority": 160,
+          "line_count": 28,
+          "slanted_line_count": 0,
+          "density": 0.10031,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004_c193.png",
+          "bbox_px": [
+            762,
+            519,
+            1064,
+            586
+          ],
+          "score": 307.6,
+          "image_score": 147.6,
+          "context_priority": 160,
+          "line_count": 72,
+          "slanted_line_count": 0,
+          "density": 0.09583,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p004_c205.png",
+          "bbox_px": [
+            590,
+            1654,
+            882,
+            1721
+          ],
+          "score": 304.0,
+          "image_score": 144.0,
+          "context_priority": 160,
+          "line_count": 70,
+          "slanted_line_count": 0,
+          "density": 0.10039,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p004_c206.png",
+          "bbox_px": [
+            980,
+            1655,
+            1280,
+            1721
+          ],
+          "score": 296.8,
+          "image_score": 136.8,
+          "context_priority": 160,
+          "line_count": 66,
+          "slanted_line_count": 0,
+          "density": 0.09646,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 6,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p006_c190.png",
+          "bbox_px": [
+            145,
+            1383,
+            451,
+            1451
+          ],
+          "score": 291.4,
+          "image_score": 131.4,
+          "context_priority": 160,
+          "line_count": 63,
+          "slanted_line_count": 0,
+          "density": 0.08756,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p005_c242.png",
+          "bbox_px": [
+            149,
+            1742,
+            400,
+            1809
+          ],
+          "score": 291.0,
+          "image_score": 131.0,
+          "context_priority": 160,
+          "line_count": 60,
+          "slanted_line_count": 0,
+          "density": 0.09829,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p003_c265.png",
+          "bbox_px": [
+            349,
+            1425,
+            642,
+            1492
+          ],
+          "score": 289.6,
+          "image_score": 129.6,
+          "context_priority": 160,
+          "line_count": 62,
+          "slanted_line_count": 0,
+          "density": 0.09653,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004_c190.png",
+          "bbox_px": [
+            590,
+            1549,
+            881,
+            1616
+          ],
+          "score": 289.6,
+          "image_score": 129.6,
+          "context_priority": 160,
+          "line_count": 62,
+          "slanted_line_count": 0,
+          "density": 0.09884,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p005_c229.png",
+          "bbox_px": [
+            714,
+            547,
+            1009,
+            615
+          ],
+          "score": 289.6,
+          "image_score": 129.6,
+          "context_priority": 160,
+          "line_count": 62,
+          "slanted_line_count": 0,
+          "density": 0.08415,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 8,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p008_c177.png",
+          "bbox_px": [
+            435,
+            1086,
+            735,
+            1153
+          ],
+          "score": 289.6,
+          "image_score": 129.6,
+          "context_priority": 160,
+          "line_count": 62,
+          "slanted_line_count": 0,
+          "density": 0.09592,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 6,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p006_c196.png",
+          "bbox_px": [
+            405,
+            1502,
+            655,
+            1568
+          ],
+          "score": 289.2,
+          "image_score": 129.2,
+          "context_priority": 160,
+          "line_count": 59,
+          "slanted_line_count": 0,
+          "density": 0.10303,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p003_c255.png",
+          "bbox_px": [
+            514,
+            450,
+            766,
+            517
+          ],
+          "score": 287.4,
+          "image_score": 127.4,
+          "context_priority": 160,
+          "line_count": 58,
+          "slanted_line_count": 0,
+          "density": 0.10033,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p001_c269.png",
+          "bbox_px": [
+            970,
+            857,
+            1283,
+            925
+          ],
+          "score": 286.0,
+          "image_score": 126.0,
+          "context_priority": 160,
+          "line_count": 60,
+          "slanted_line_count": 0,
+          "density": 0.08739,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 6,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p006_c200.png",
+          "bbox_px": [
+            145,
+            1211,
+            451,
+            1279
+          ],
+          "score": 286.0,
+          "image_score": 126.0,
+          "context_priority": 160,
+          "line_count": 60,
+          "slanted_line_count": 0,
+          "density": 0.08675,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p003_c257.png",
+          "bbox_px": [
+            256,
+            374,
+            528,
+            441
+          ],
+          "score": 285.6,
+          "image_score": 125.6,
+          "context_priority": 160,
+          "line_count": 57,
+          "slanted_line_count": 0,
+          "density": 0.09125,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p007_c202.png",
+          "bbox_px": [
+            144,
+            1077,
+            456,
+            1146
+          ],
+          "score": 284.2,
+          "image_score": 124.2,
+          "context_priority": 160,
+          "line_count": 59,
+          "slanted_line_count": 0,
+          "density": 0.08408,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p005_c241.png",
+          "bbox_px": [
+            806,
+            374,
+            1056,
+            441
+          ],
+          "score": 283.8,
+          "image_score": 123.8,
+          "context_priority": 160,
+          "line_count": 56,
+          "slanted_line_count": 0,
+          "density": 0.10101,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p005_c220.png",
+          "bbox_px": [
+            311,
+            741,
+            554,
+            808
+          ],
+          "score": 283.8,
+          "image_score": 123.8,
+          "context_priority": 160,
+          "line_count": 56,
+          "slanted_line_count": 0,
+          "density": 0.10343,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p001_c270.png",
+          "bbox_px": [
+            149,
+            519,
+            466,
+            586
+          ],
+          "score": 282.4,
+          "image_score": 122.4,
+          "context_priority": 160,
+          "line_count": 58,
+          "slanted_line_count": 0,
+          "density": 0.09181,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p001_c271.png",
+          "bbox_px": [
+            970,
+            856,
+            1283,
+            925
+          ],
+          "score": 282.4,
+          "image_score": 122.4,
+          "context_priority": 160,
+          "line_count": 58,
+          "slanted_line_count": 0,
+          "density": 0.08413,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p005_c222.png",
+          "bbox_px": [
+            829,
+            1598,
+            1076,
+            1665
+          ],
+          "score": 280.2,
+          "image_score": 120.2,
+          "context_priority": 160,
+          "line_count": 54,
+          "slanted_line_count": 0,
+          "density": 0.09656,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004_c189.png",
+          "bbox_px": [
+            400,
+            1598,
+            695,
+            1664
+          ],
+          "score": 278.8,
+          "image_score": 118.8,
+          "context_priority": 160,
+          "line_count": 56,
+          "slanted_line_count": 0,
+          "density": 0.09723,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 8,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p008_c176.png",
+          "bbox_px": [
+            305,
+            990,
+            601,
+            1056
+          ],
+          "score": 278.8,
+          "image_score": 118.8,
+          "context_priority": 160,
+          "line_count": 56,
+          "slanted_line_count": 0,
+          "density": 0.09802,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p002_c277.png",
+          "bbox_px": [
+            275,
+            664,
+            517,
+            731
+          ],
+          "score": 278.4,
+          "image_score": 118.4,
+          "context_priority": 160,
+          "line_count": 53,
+          "slanted_line_count": 0,
+          "density": 0.10035,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p002_c266.png",
+          "bbox_px": [
+            764,
+            1660,
+            1052,
+            1723
+          ],
+          "score": 277.0,
+          "image_score": 117.0,
+          "context_priority": 160,
+          "line_count": 55,
+          "slanted_line_count": 0,
+          "density": 0.09783,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004_c188.png",
+          "bbox_px": [
+            981,
+            1424,
+            1282,
+            1489
+          ],
+          "score": 277.0,
+          "image_score": 117.0,
+          "context_priority": 160,
+          "line_count": 55,
+          "slanted_line_count": 0,
+          "density": 0.08822,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p004_c208.png",
+          "bbox_px": [
+            272,
+            691,
+            584,
+            757
+          ],
+          "score": 277.0,
+          "image_score": 117.0,
+          "context_priority": 160,
+          "line_count": 55,
+          "slanted_line_count": 0,
+          "density": 0.08683,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p002_c275.png",
+          "bbox_px": [
+            669,
+            616,
+            913,
+            682
+          ],
+          "score": 276.6,
+          "image_score": 116.6,
+          "context_priority": 160,
+          "line_count": 52,
+          "slanted_line_count": 0,
+          "density": 0.10612,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p002_c263.png",
+          "bbox_px": [
+            669,
+            616,
+            914,
+            683
+          ],
+          "score": 276.6,
+          "image_score": 116.6,
+          "context_priority": 160,
+          "line_count": 52,
+          "slanted_line_count": 0,
+          "density": 0.10344,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p005_c235.png",
+          "bbox_px": [
+            311,
+            934,
+            554,
+            1000
+          ],
+          "score": 276.6,
+          "image_score": 116.6,
+          "context_priority": 160,
+          "line_count": 52,
+          "slanted_line_count": 0,
+          "density": 0.10469,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 7,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p007_c194.png",
+          "bbox_px": [
+            569,
+            1626,
+            831,
+            1690
+          ],
+          "score": 276.6,
+          "image_score": 116.6,
+          "context_priority": 160,
+          "line_count": 52,
+          "slanted_line_count": 0,
+          "density": 0.10437,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p004_c210.png",
+          "bbox_px": [
+            145,
+            934,
+            463,
+            1002
+          ],
+          "score": 275.6,
+          "image_score": 115.6,
+          "context_priority": 160,
+          "line_count": 52,
+          "slanted_line_count": 1,
+          "density": 0.08763,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 8,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p008_c168.png",
+          "bbox_px": [
+            986,
+            893,
+            1253,
+            954
+          ],
+          "score": 275.2,
+          "image_score": 115.2,
+          "context_priority": 160,
+          "line_count": 54,
+          "slanted_line_count": 0,
+          "density": 0.10769,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p001_c262.png",
+          "bbox_px": [
+            905,
+            1437,
+            1158,
+            1504
+          ],
+          "score": 274.8,
+          "image_score": 114.8,
+          "context_priority": 160,
+          "line_count": 51,
+          "slanted_line_count": 0,
+          "density": 0.09427,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p003_c254.png",
+          "bbox_px": [
+            867,
+            1694,
+            1105,
+            1761
+          ],
+          "score": 274.8,
+          "image_score": 114.8,
+          "context_priority": 160,
+          "line_count": 51,
+          "slanted_line_count": 0,
+          "density": 0.09683,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p003_c262.png",
+          "bbox_px": [
+            1007,
+            326,
+            1283,
+            394
+          ],
+          "score": 274.8,
+          "image_score": 114.8,
+          "context_priority": 160,
+          "line_count": 51,
+          "slanted_line_count": 0,
+          "density": 0.0788,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004_c180.png",
+          "bbox_px": [
+            306,
+            1010,
+            566,
+            1074
+          ],
+          "score": 274.8,
+          "image_score": 114.8,
+          "context_priority": 160,
+          "line_count": 51,
+          "slanted_line_count": 0,
+          "density": 0.10126,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p001_c265.png",
+          "bbox_px": [
+            145,
+            1147,
+            447,
+            1213
+          ],
+          "score": 273.4,
+          "image_score": 113.4,
+          "context_priority": 160,
+          "line_count": 53,
+          "slanted_line_count": 0,
+          "density": 0.07506,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p005_c243.png",
+          "bbox_px": [
+            1015,
+            1057,
+            1284,
+            1126
+          ],
+          "score": 273.0,
+          "image_score": 113.0,
+          "context_priority": 160,
+          "line_count": 50,
+          "slanted_line_count": 0,
+          "density": 0.08265,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 5,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p005_c244.png",
+          "bbox_px": [
+            138,
+            1103,
+            401,
+            1177
+          ],
+          "score": 271.6,
+          "image_score": 111.6,
+          "context_priority": 160,
+          "line_count": 47,
+          "slanted_line_count": 1,
+          "density": 0.06788,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p002_c260.png",
+          "bbox_px": [
+            149,
+            616,
+            384,
+            683
+          ],
+          "score": 271.2,
+          "image_score": 111.2,
+          "context_priority": 160,
+          "line_count": 49,
+          "slanted_line_count": 0,
+          "density": 0.09692,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p002_c264.png",
+          "bbox_px": [
+            288,
+            956,
+            540,
+            1023
+          ],
+          "score": 271.2,
+          "image_score": 111.2,
+          "context_priority": 160,
+          "line_count": 49,
+          "slanted_line_count": 0,
+          "density": 0.10187,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/16-11-2021_Description_KW2B2H8AY7SPCWZ_p003_c259.png",
+          "bbox_px": [
+            145,
+            1307,
+            425,
+            1375
+          ],
+          "score": 271.2,
+          "image_score": 111.2,
+          "context_priority": 160,
+          "line_count": 49,
+          "slanted_line_count": 0,
+          "density": 0.08188,
+          "extraction_method": "OpenCV visual fallback crop"
+        },
+        {
+          "source": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "pdf": "17-08-2023_Description_LLF2ANZL5YH3EJB.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/17-08-2023_Description_LLF2ANZL5YH3EJB_p003_c264.png",
+          "bbox_px": [
+            145,
+            1646,
+            426,
+            1714
+          ],
+          "score": 271.2,
+          "image_score": 111.2,
+          "context_priority": 160,
+          "line_count": 49,
+          "slanted_line_count": 0,
+          "density": 0.0818,
+          "extraction_method": "OpenCV visual fallback crop"
+        }
+      ],
+      "markush_page_images": [
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p001.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p001.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 2,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p002.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 2,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p002.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 3,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p003.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 3,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p003.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "Description",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        },
+        {
+          "source": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "pdf": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+          "page": 4,
+          "image_path": "assets/markush-pages/16-11-2021_Description_KW2B2H8AY7SPCWZ_p004.png",
+          "context_priority": 160,
+          "extraction_method": "visual fallback from original application"
+        }
+      ],
+      "markush_extraction_status": {
+        "status": "candidates_rejected",
+        "reason": "Visual candidates were generated, but none passed the chemical-structure filters (for example slanted bond lines, density, size, and score thresholds).",
+        "selected_count": 0,
+        "candidate_count": 48,
+        "page_count": 24,
+        "snippet_count": 0
+      }
+    },
+    "claim_text": {
+      "source": "14-03-2023_Claims_LF8FSGVB1QJX7B2_ocr.txt",
+      "source_type": "ocr_preview",
+      "claim_1": "for use in treating cancer in a human patient, wherein the agent is niraparib, or a pharmaceutically acceptablesalt thereof, wherein the patient is characterized by previous treatment with a platinum-based therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or BRCA2, wherein the niraparib, or a pharmaceutically acceptable salt thereof, is administered as a maintenance therapy following complete or partial response to at least one platinum-based therapy,and wherein the patient is further characterized by an absence of homologous recombinationdeficiency(HRD).",
+      "target_claims": [
+        {
+          "claim_number": 1,
+          "text": "for use in treating cancer in a human patient, wherein the agent is niraparib, or a pharmaceutically acceptablesalt thereof, wherein the patient is characterized by previous treatment with a platinum-based therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or BRCA2, wherein the niraparib, or a pharmaceutically acceptable salt thereof, is administered as a maintenance therapy following complete or partial response to at least one platinum-based therapy,and wherein the patient is further characterized by an absence of homologous recombinationdeficiency(HRD)."
+        }
+      ],
+      "claims_verified_json": "EP17821262-claims-verified.json",
+      "claims_review_status": "needs_human_review",
+      "claims_review_verified_count": 0,
+      "claims_review_total_count": 8
+    },
+    "jurisdiction": "EP",
+    "application_number": "EP17821262.7",
+    "title": "METHODS OF TREATING OVARIAN CANCER",
+    "applicant": "Tesaro, Inc.",
+    "filing_date": "2017-06-29",
+    "priority_date": "2016-06-29",
+    "known_outcome": {
+      "outcome": "granted",
+      "grant_label": "yes",
+      "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+      "date": ""
+    },
+    "specification_data": {
+      "examples": [
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "application explains that: “theolaparibclinicaldatademonstratedthatPARPinhibitorswouldnotbe beneficialtoprolongprogressionfreesurvivalinthetreatmentofcancer added). Incontrast,theexamplesofthepresentapplicationdemonstratethatniraparibis effectiveintreatingcancerinpatientswhohaveanabsenceofamutationinBRCA1 free survival (PFS) was significantly longerforpatients whoreceived niraparibthan for patients who received placebo across all patient groups (paragraph [00223]). --- PAGE 3 --- JA·KEMP 3 theoverallnon-germlineBRCAmutantcohortwherethemedianPFSforpatients treatedwithniraparibwas9.3monthscomparedwit"
+        }
+      ],
+      "pharmacology_or_effect_data": [
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "date of the present application,it was clearly established intheartthatolaparibwasnottobeusedinthetreatmentofcancerinpatients havinganabsenceofBRCA1and/orBRCA2mutation.Thedeficientactivityof paragraph[00150]of the application explains that: “theolaparibclinicaldatademonstratedthatPARPinhibitorswouldnotbe beneficialtoprolongprogressionfreesurvivalinthetreatmentofcancer added). Incontrast,theexamplesofthepresentapplicationdemonstratethatniraparibis effectiveintreatingcancerinpatientswhohaveanabsenceofamutationinBRCA1 free survival (PFS) was significantly longerforpatients whoreceived niraparibthan for p"
+        },
+        {
+          "source": "14-02-2020_Supplementary_European_search_report_E4EV8CBO5850DSU_ocr.txt",
+          "text": "2012 (2012-04-12),pages 1382-1392，XP55075393, ISSN:0028-4793,D0I: 10.1056/NEJMoa1105535 * Background,Discussion.; figure 1 * X WO 2014/052550 A1 (UNIV JEFFERSON [US]; 1-27 LISANTI MICHAEL P [GB]) 3 April 2014 (2014-04-03) * page 9, paragraph 1; claims 1-16 * X WO 2015/108986 A1 (CL0VIS 0NC0L0GY INC 1-27 [US]) 23 July_2015_(2015-07-23) * paragraphs[0070]'-[0074]; table 5 * TECHNICALFIELDS X SHAOJUN ZHANG ET AL:\"A Genomic 1-27 SEARCHED (IPC) Instability Score inDiscriminating A61K NonequivalentOutcomesofBRCA1/2 Mutationsand inPredictingOutcomes of Ovarian Cancer Treated with Platinum-Based Chemothe"
+        }
+      ],
+      "synthesis_routes": [
+        {
+          "source": "14-03-2023_Amended_claims_with_annotations_LF8FSH8KL9DERYU_ocr.txt",
+          "text": "to at least one platinum-based therapy. 4. The therapeutic agent for use according to any one of claims 1-3, wherein the niraparib or a pharmaceutically acceptable salt thereof is prepared in the form of a tosylate monohydrate. The therapeutic agent for use according to any one of claims 1 4, wherein the niraparib is administered as a maintenance therapy following complete or partial response to at least one platinum-based therapy 79 --- PAGE 2 --- 56. The therapeutic agent for use according to any one of claims1-45,wherein the cancer is selected from the group consisting of: ovarian cancer, fallopia"
+        },
+        {
+          "source": "16-11-2021_Amended_claims_with_annotations_KW2B23ADLWSS7WZ_ocr.txt",
+          "text": "101914, talazoparib, veliparib, WW 46, and salts or derivatives thereof. 4s. The therapeutic agentfor use according toelaim 4any oneof claims 1-3,wherein the agent is-niraparib is prepared in the form of a tosylate monohydrate. 56. The therapeutic agent for use according to any one of claims 14-45, wherein the niraparib is administered as a maintenance therapy following complete or partial response to at least one platinum-based therapy 67. The therapeutic agent for use according to any one of claims 1- 56, wherein the cancer is selected from the group consisting of: ovarian cancer, fallopian tube can"
+        },
+        {
+          "source": "02-07-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E4Y8KAXT5605DSU_ocr.txt",
+          "text": "aparib, ONO2231,rucaparib,SC101914,talazoparib,veliparib,WW46,and saltsorderivatives thereof. 5. The therapeutic agent for use according to claim 4, wherein the agent is niraparib prepared in the form of a tosylate monohydrate. 6. The therapeutic agent for use according to claims 4-5, wherein the niraparib is administered as a maintenance therapy following complete or partial response to at least oneplatinum-basedtherapy 7. The therapeutic agent for use according to any one of claims 1-6, wherein the cancer is selected from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal can"
+        },
+        {
+          "source": "02-07-2020_Amended_claims_with_annotations_E4Y8KATT0423DSU_ocr.txt",
+          "text": "b, olaparib, rucaparib, talazoparib, veliparib, and salts-or-derivatives-thereof. 135.The method-therapeutic agent for use according to of claim 154, wherein the agent is niraparibpreparedintheformofatosylatemonohydrateor-a salt-or-derivativethereof. Page 2 of 10 8195414v1 --- PAGE 3 --- TES00006 EP The therapeuticagentforuse according to claims4-5.whereintheniraparibis administeredasamaintenancetherapyfollowingcompleteorpartialresponsetoatleast oneplatinum-basedtherapy 14.The method of any one of elaims-1-13, wherein the cancer-is a gynecological cancer; 157.The therapeutic agent for use according t"
+        },
+        {
+          "source": "14-03-2023_Claims_LF8FSGVB1QJX7B2_ocr.txt",
+          "text": "o at least one platinum-based therapy. 4. The therapeutic agent for use according to any one of claims 1-3, wherein the niraparib, or a pharmaceutically acceptable salt thereof,is prepared in the form of a tosylate monohydrate. 5. The therapeutic agent for use according to any one of claims 1-4, wherein the cancer is selected from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal cancer, and breast cancer. 6. The therapeutic agent for use according to claim 5, wherein the ovarian cancer is high 79 --- PAGE 2 --- 7. The therapeutic agent for use according to any one of claims"
+        },
+        {
+          "source": "16-11-2021_Claims_KW2B2BU310CEUQK_ocr.txt",
+          "text": "for use of claims 1 or 2, wherein the patient has a tumor with a negative HRD status. 4 The therapeutic agent for use according to any one of claims 1-3, wherein the niraparib is preparedintheformofatosylatemonohydrate. 5. The therapeutic agent for use according to any one of claims 1-4,wherein the niraparib is administered as a maintenance therapyfollowing complete or partialresponsetoat least oneplatinum-basedtherapy 6. The therapeutic agent for use according to any one of claims 1- 5, wherein the cancer is selected from the group consisting of: ovarian cancer, fallopian tube cancer, peritoneal can"
+        }
+      ],
+      "use_descriptions": [
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "ve, the present application differsfromD1inatleasttheuseofniraparib,rather than olaparib. Thetechnicaleffectofthisdifferenceisthatuseofthespecificdrugniraparib enablesefficacyinthetreatmentofpatientshaving an absence ofBRCA1and/or BRCA2mutation.Thisisarecalcitrantpatientgroupwhichhadnotbeen showntobe effectivelytreatedwiththedrugdisclosedinD1. Inthisregard,thoseofskillintheartwouldbewellawareattheprioritydateofthe present application thatolaparibwasnot approvedfor thetreatment of cancer patientshavinganabsenceofmutationinBRCA1and/orBRCA2,asrequired by the present claims.In this regard,we attach the"
+        },
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "l response)toplatinum-basedchemotherapy.(emphasisadded) Therefore,at the priority date of the present application,it was clearly established intheartthatolaparibwasnottobeusedinthetreatmentofcancerinpatients havinganabsenceofBRCA1and/orBRCA2mutation.Thedeficientactivityof paragraph[00150]of the application explains that: “theolaparibclinicaldatademonstratedthatPARPinhibitorswouldnotbe beneficialtoprolongprogressionfreesurvivalinthetreatmentofcancer added). Incontrast,theexamplesofthepresentapplicationdemonstratethatniraparibis effectiveintreatingcancerinpatientswhohaveanabsenceofamutationinBRCA1 fr"
+        },
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "bthan for patients who received placebo across all patient groups (paragraph [00223]). --- PAGE 3 --- JA·KEMP 3 theoverallnon-germlineBRCAmutantcohortwherethemedianPFSforpatients treatedwithniraparibwas9.3monthscomparedwith3.9monthsforcontrol. Further,we attach the EuropeanPublic Assessment Report(EPAR) published by the EuropeanMedicinesAgencyforZejula(niraparib).Incontrast,totheEPARfor olaparib,thecorrespondingsection4.1of theEPARforZejula(niraparib)doesnot containanylimitationontheBRCAmutationstatusofthepatientstobetreated: Zejulaisindicated: ·asmonotherapyforthemaintenancetreatmentofadultpatien"
+        },
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "tswith orprimaryperitonealcancerwhoareinresponse(completeorpartial) followingcompletionoffirst-lineplatinum-basedchemotherapy. ·asmonotherapyforthemaintenancetreatmentofadultpatientswith platinum-sensitiverelapsedhighgradeserousepithelialovarian,fallopian toplatinum-basedchemotherapy. TheeffectivetreatmentofpatientswithoutmutationsinBRCA1orBRCA2by niraparib,ascomparedwitholaparibisreferencedintheapplicationasfiled. Paragraph[00224] of the description explains that that the“results[with niraparib] 366(15):1382-1392)\".“Study19\"is document D1(Ledermann et al)on filein these proce"
+        },
+        {
+          "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+          "text": "of a mutation in BRCA1 and/or BRCA2.The solution is niraparib for use assetoutintheclaimsofthepresentapplication. Obviousness ThereisnothinginD1whichremotelysuggeststhataneffectivetreatment against be achieved by use of niraparib in place of olaparib.The claimed subject matter doesthereforeinvolveaninventivestep. Clarity Previousclaim4hasbeendeleted,sotheobjectionwithrespecttothisclaimno longer applies. Conclusion Itisbelievedthatallthepointsraisedintheexaminationreporthavebeenmetand thatthis applicationisnowin allowableform.Accordingly,I lookforward to receivinga communication underRule71(3)EPCin"
+        },
+        {
+          "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt",
+          "text": "D1 does no mention theHRD status of the patients.Their selection,in claims 2 and 3, can thereforeberegarded asnovel underArticle54EPC.The application,paragraph 260states that the treatment outcomes wereregardless ofHRDstatus.Hence no technicaleffectcanbeassociatedwiththisselection,whichcannotthereforebe regardedasinventiveunderArticle54EPC. EPOForm290601.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 06.05.2021 Sheet 2 Application No: 17821262.7 Date Feuille Demande n°: 3). Claims5and6relateto thereplacementof thecompound ofD12withniraparib.There appears tobe no evidence in the application com"
+        },
+        {
+          "source": "14-03-2023_Amended_claims_with_annotations_LF8FSH8KL9DERYU_ocr.txt",
+          "text": "--- PAGE 1 --- CLAIMS 1. for use in treating cancer in a human patient, wherein the agent is niraparib,or a pharmaceutically acceptablesaltthereof and-wherein the patient is characterized by previous treatment with a platinum- based therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or BRCA2, wherein the niraparib, or a pharmaceutically acceptable salt thereof, is administeredasamaintenancetherapyfollowingcompleteorpartialresponsetoatl"
+        },
+        {
+          "source": "14-03-2023_Amended_claims_with_annotations_LF8FSH8KL9DERYU_ocr.txt",
+          "text": "the group consisting of:ovarian cancer,fallopian tube cancer or primary peritoneal cancer. 98. tube cancer or primaryperitoneal canceris platinum sensitive at the commencement of treatment. 80"
+        }
+      ],
+      "comparative_data": [
+        {
+          "source": "14-02-2020_European_search_opinion_E4EV8BHL8716DSU_ocr.txt",
+          "text": "with niraparib.Such treatments aresaid tobeimproved invarious ways by the selectionofa\"regimen determined to achieve\".Such a phrase merelyrepresents a 7). it is also apparent fromD5 that one of theproposed solutions (300mg dose)has already been achieved Hence claims 10,16,18 and 19 are not regarded as being novel under e 54 EPC. 8). Thefeaturesof theremainingclaimswould appear torepresentknown techniques adoptedbytheskilledmaninordertoachievetheimprovedresultmentionedinclaim 10(seeD5）HencenoinventivestepunderArticle56canberecognisedforthese claims. EPOForm 1703 01.91TRI"
+        }
+      ]
+    },
+    "prior_art_docs": [
+      {
+        "rank": 1,
+        "citation": "WO2014052550",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014052550",
+        "mentions": 2,
+        "sources": [
+          "14-02-2020_Supplementary_European_search_report_E4EV8CBO5850DSU_ocr.txt",
+          "EP17821262-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 2,
+        "citation": "WO2015108986",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2015108986",
+        "mentions": 2,
+        "sources": [
+          "14-02-2020_Supplementary_European_search_report_E4EV8CBO5850DSU_ocr.txt",
+          "EP17821262-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 3,
+        "citation": "EP3094752A1",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP3094752A1/en",
+        "mentions": 1,
+        "sources": [
+          "14-02-2020_Supplementary_European_search_report_E4EV8CBO5850DSU_ocr.txt"
+        ]
+      },
+      {
+        "rank": 4,
+        "citation": "US20090123419A1",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/US20090123419A1/en",
+        "mentions": 1,
+        "sources": [
+          "EP17821262-main.html#documents_cited"
+        ]
+      }
+    ]
+  },
+  "source_trace": {
+    "path_base": "benchmark_input_dir",
+    "case_dir": ".",
+    "main_html": "register/EP17821262-main.html",
+    "doclist_csv": "register/EP17821262-doclist.csv",
+    "docs_dir": "docs",
+    "original_application_dir": "original-application",
+    "original_application_files": [
+      {
+        "title": "Published international application - A1",
+        "date": "04.01.2018",
+        "document_id": "E1DRYHT50853DSU",
+        "pages": "110",
+        "path": "original-application/04-01-2018_Published_international_application_-_A1_E1DRYHT50853DSU.pdf",
+        "file_name": "04-01-2018_Published_international_application_-_A1_E1DRYHT50853DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E1DRYHT50853DSU&appnumber=EP17821262&showPdfPage=all&proc="
+      },
+      {
+        "title": "Claims",
+        "date": "16.11.2021",
+        "document_id": "KW2B2BU310CEUQK",
+        "pages": "1",
+        "path": "original-application/16-11-2021_Claims_KW2B2BU310CEUQK.pdf",
+        "file_name": "16-11-2021_Claims_KW2B2BU310CEUQK.pdf",
+        "source_url": "https://register.epo.org/application?documentId=KW2B2BU310CEUQK&appnumber=EP17821262&showPdfPage=all&proc="
+      },
+      {
+        "title": "Description",
+        "date": "16.11.2021",
+        "document_id": "KW2B2H8AY7SPCWZ",
+        "pages": "78",
+        "path": "original-application/16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+        "file_name": "16-11-2021_Description_KW2B2H8AY7SPCWZ.pdf",
+        "source_url": "https://register.epo.org/application?documentId=KW2B2H8AY7SPCWZ&appnumber=EP17821262&showPdfPage=all&proc="
+      },
+      {
+        "title": "Bibliographic data of the European patent application",
+        "date": "24.11.2022",
+        "document_id": "LAJSRSW8150CQMF",
+        "pages": "2",
+        "path": "original-application/24-11-2022_Bibliographic_data_of_the_European_patent_application_LAJSRSW8150CQMF.pdf",
+        "file_name": "24-11-2022_Bibliographic_data_of_the_European_patent_application_LAJSRSW8150CQMF.pdf",
+        "source_url": "https://register.epo.org/application?documentId=LAJSRSW8150CQMF&appnumber=EP17821262&showPdfPage=all&proc="
+      }
+    ],
+    "text_documents_used": [
+      "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+      "21-09-2023_Communication_about_intention_to_grant_a_European_patent_LMHJJNDJVIBSBFZ_ocr.txt",
+      "19-04-2023_Communication_about_intention_to_grant_a_European_patent_LGC7NX99BYLEO9M_ocr.txt",
+      "24-11-2022_Communication_about_intention_to_grant_a_European_patent_LAJSRS7XEWG7RQI_ocr.txt",
+      "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+      "06-05-2021_Communication_from_the_Examining_Division_E56CWG7F0075DSU_ocr.txt",
+      "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt",
+      "14-03-2023_Amended_claims_with_annotations_LF8FSH8KL9DERYU_ocr.txt",
+      "16-11-2021_Amended_claims_with_annotations_KW2B23ADLWSS7WZ_ocr.txt",
+      "02-07-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E4Y8KAXT5605DSU_ocr.txt",
+      "02-07-2020_Amended_claims_with_annotations_E4Y8KATT0423DSU_ocr.txt",
+      "25-01-2019_Amended_claims_filed_after_receipt_of_(European)_search_report_E2WDRFMZ6611DSU_ocr.txt",
+      "25-01-2019_Amended_claims_with_annotations_E2WDRFY80022DSU_ocr.txt",
+      "14-03-2023_Claims_LF8FSGVB1QJX7B2_ocr.txt",
+      "16-11-2021_Claims_KW2B2BU310CEUQK_ocr.txt",
+      "14-02-2020_European_search_opinion_E4EV8BHL8716DSU_ocr.txt",
+      "14-02-2020_Supplementary_European_search_report_E4EV8CBO5850DSU_ocr.txt"
+    ],
+    "register_status": "The patent has been granted",
+    "quality": {
+      "source_text_documents": 17,
+      "claim_1_meaningful_chars": 489,
+      "source_meaningful_chars": 70477
+    }
+  }
+}

@@ -1,0 +1,2 @@
+﻿category,application_number,claim_chars,source_docs,txt_files,ocr_files,useful_txt_files,docs_text_chars,analysis_outcome,grant_label,known_outcome,doclist_outcome,aggregate_score,evidence_total,evidence_exact_hits,evidence_compact_hits,quality_status,issues
+,EP17191704,356,12,25,12,12,50689,withdrawn,no,withdrawn,withdrawn,39,22,0,10,needs_review,weak_evidence_match

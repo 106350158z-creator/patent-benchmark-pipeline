@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "jurisdiction": "EP",
+    "application_number": "EP16823054.8",
+    "title": "SUBSTITUTED 3-AZABICYCLO[3.1.0]HEXANES AS KETOHEXOKINASE INHIBITORS",
+    "applicant": "Pfizer Inc.",
+    "filing_date": "2016-12-16",
+    "examination_date": "2021-03-12",
+    "outcome": "granted"
+  },
+  "grant_label": "yes",
+  "dimension_scores": {
+    "novelty_score": 100,
+    "novelty_disc": {
+      "analysis": "SOURCE中未显示审查员依据单一现有技术对权利要求1提出Art.54新颖性异议；相反，最终决定明确在审查后授予欧洲专利，且授权文本包含19-08-2020提交的1-26项权利要求。因此，就当前授权记录而言，新颖性维度已通过审查，现阶段风险很低。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请号16823054.8进行审查后，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "该连续原文来自最终授权决定，表明申请经审查后已被授予欧洲专利；SOURCE未提供任何未克服的新颖性否定意见，因此支持新颖性评分为完全通过。"
+    },
+    "inventive_step_score": 100,
+    "inventive_step_disc": {
+      "analysis": "给定SOURCE中未显示针对创造性/Art.56 EPC的实质性否定意见、最接近现有技术选择、区别特征、客观技术问题或显而易见性攻击。案件最终在审查后作出授权决定，且此前已有Rule 71(3)拟授权通知，说明审查部门接受了授权文本。该申请涉及化合物/医药用途的技术特征，未见非技术特征问题，因此COMVIK逻辑不适用。当前创造性风险很低。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请号16823054.8进行审查，欧洲专利局现依据2020年11月19日根据EPC规则71(3)发出的通知中所列的标题和支持文件，在指定缔约国范围内授予欧洲专利。",
+      "llm_evidence_explanation": "该连续原文来自最终授权决定，表明申请经实质审查后被授权；在未见创造性异议的SOURCE记录下，可支持创造性维度已通过审查的结论。"
+    },
+    "support_score": 80,
+    "support_disc": {
+      "analysis": "本案已作出欧洲专利授权决定，SOURCE 未显示针对权利要求1存在未克服的充分公开、原始公开或支持性异议。审查过程中曾对权利要求17中的“substantially”提出清楚性相关修改，理由是该表述会使权利要求范围产生疑问，并同时要求说明书适应权利要求；该问题已通过删除和文本适配在拟授权文本中克服。因此，本维度总体风险较低，但因曾存在小的 Art.84 清楚性/支持性文本问题，评分为80而非100。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "该授权决定表明审查部门最终接受了拟授权文本，未在SOURCE中留下未解决的充分公开、原始公开或支持性障碍。"
+    },
+    "clarity_score": 80,
+    "clarity_disc": {
+      "analysis": "清楚性方面，审查材料显示审查部曾对权利要求17中的“substantially”提出清楚性问题，认为该表述会使权利要求范围产生疑问，并在拟授权文本中删除。材料未显示申请人就该清楚性问题进行实质争辩；随后案件基于19-08-2020提交的权利要求文本进入拟授权并最终授权。因此，Art.84风险属于曾有小问题但已通过修改克服；对于目标权利要求1，SOURCE未显示单独的清楚性否定意见，当前风险较低。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请号16823054.8进行审查，具有该标题并以2020年11月19日根据EPC规则71(3)通信中所示支持文件为基础的欧洲专利，现就指定缔约国予以授权。",
+      "llm_evidence_explanation": "该最终授权决定表明审查部在拟授权文本基础上授予专利，支持清楚性问题已不再阻碍授权。"
+    },
+    "eligibility_score": 100,
+    "eligibility_disc": {
+      "analysis": "SOURCE中未显示依据EP Art.52对适格性提出任何排除主题或非技术性异议。权利要求1涉及化合物及其药学上可接受的盐，属于具有技术性质的化学/医药主题；最终审查结果为授予欧洲专利。因此，适格性风险很低，当前可视为已通过审查。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请No.16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示的文本和支持文件，现就指定缔约国授予一项欧洲专利。",
+      "llm_evidence_explanation": "该连续原文明确记载申请经审查后被授予欧洲专利；在SOURCE未出现Art.52适格性异议的情况下，最终授权事实支持适格性维度已通过。"
+    }
+  },
+  "aggregate_score": 95,
+  "top_risk_reasons": [
+    {
+      "original_text": "No novelty objection is shown; the application proceeded to grant after examination.",
+      "translation": "未显示新颖性异议；该申请经审查后获得授权。"
+    },
+    {
+      "original_text": "Granted after examination; no Art.56 objection appears in the provided record.",
+      "translation": "经审查后获得授权；所提供记录中未出现第56条异议。"
+    },
+    {
+      "original_text": "Minor clarity/support issue was corrected; no unresolved sufficiency or added-matter objection appears before grant.",
+      "translation": "轻微的清楚性/支持性问题已更正；授权前未出现未解决的充分公开或新增内容异议。"
+    },
+    {
+      "original_text": "Minor clarity issue was expressly corrected before grant; no unresolved Art.84 objection remains.",
+      "translation": "轻微的清楚性问题已在授权前明确更正；不存在未解决的第84条异议。"
+    },
+    {
+      "original_text": "No Article 52 eligibility objection appears in the provided record, and the application was granted.",
+      "translation": "所提供记录中未出现第52条可专利性主题异议，且该申请已获授权。"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "original_text": "Maintain the granted claim set and monitor any third-party opposition alleging lack of novelty under Art.54 EPC.",
+      "translation": "维持授权权利要求组，并监控任何第三方依据《欧洲专利公约》第54条主张缺乏新颖性的异议。"
+    },
+    {
+      "original_text": "Maintain the granted claim scope and preserve prosecution records for any future opposition or validity defense.",
+      "translation": "维持授权权利要求范围，并保存审查过程记录，以备未来异议或有效性抗辩使用。"
+    },
+    {
+      "original_text": "Maintain the granted claim wording and description alignment; avoid reintroducing terms such as “substantially” without explicit basis and scope definition.",
+      "translation": "保持授权权利要求措辞与说明书一致；避免在缺乏明确依据和范围界定的情况下重新引入“基本上”等术语。"
+    },
+    {
+      "original_text": "Maintain the granted wording and avoid reintroducing vague qualifiers such as “substantially” in amendments or validations.",
+      "translation": "维持授权文本措辞，并避免在修改或生效程序中重新引入“基本上”等模糊限定语。"
+    },
+    {
+      "original_text": "Maintain the granted technical claim framing for chemical compounds and pharmaceutical salts; monitor only post-grant eligibility challenges if raised.",
+      "translation": "维持针对化合物和药用盐的授权技术权利要求表述；仅在提出授权后适格性挑战时进行监控。"
+    }
+  ],
+  "evidence_trace": {
+    "prior_art_documents": [],
+    "affected_claims": [
+      1,
+      17
+    ],
+    "specification_support": [
+      {
+        "location": "support_disc",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+        "translation": "经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "该授权决定表明审查部门最终接受了拟授权文本，未在SOURCE中留下未解决的充分公开、原始公开或支持性障碍。"
+      },
+      {
+        "location": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+        "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.\nAcopyoftherelevantdocumentsisenclosed.",
+        "translation": "现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。",
+        "llm_evidence_explanation": "拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。"
+      },
+      {
+        "location": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+        "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim\ndescription:adaptedtoclaims",
+        "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。",
+        "llm_evidence_explanation": "该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。"
+      }
+    ],
+    "examination_material_evidence": [
+      {
+        "issue": "novelty",
+        "source": "12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+        "translation": "经对欧洲专利申请号16823054.8进行审查后，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "最终授权决定证明审查程序结束并授予专利；在给定材料中没有单一现有技术直接、明确公开而破坏新颖性的审查事实。"
+      },
+      {
+        "issue": "novelty",
+        "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+        "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+        "translation": "兹通知你，审查部拟基于上述申请，并以如下所示文本、附图及相关著录项目授予欧洲专利。",
+        "llm_evidence_explanation": "拟授权通知显示审查部已准备授予专利，支持权利要求文本在授权前未因新颖性问题被否定。"
+      },
+      {
+        "issue": "inventive_step",
+        "source": "12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+        "translation": "经对欧洲专利申请号16823054.8进行审查，欧洲专利局现依据2020年11月19日根据EPC规则71(3)发出的通知中所列的标题和支持文件，在指定缔约国范围内授予欧洲专利。",
+        "llm_evidence_explanation": "最终授权决定显示审查后授予专利，支持包括创造性在内的授权性要求已被审查部门接受。"
+      },
+      {
+        "issue": "inventive_step",
+        "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+        "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+        "translation": "现通知你，审查部门拟基于上述申请，并按照下文所示的文本、附图及相关著录数据授予欧洲专利。",
+        "llm_evidence_explanation": "Rule 71(3)拟授权通知表明审查部门认为当时文本可授权；SOURCE未显示创造性仍有未克服的异议。"
+      },
+      {
+        "issue": "support",
+        "source": "12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+        "translation": "经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "最终授权是本维度通过审查的直接程序性证据。"
+      },
+      {
+        "issue": "support",
+        "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+        "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.\nAcopyoftherelevantdocumentsisenclosed.",
+        "translation": "现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。",
+        "llm_evidence_explanation": "拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。"
+      },
+      {
+        "issue": "support",
+        "source": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+        "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim\ndescription:adaptedtoclaims",
+        "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。",
+        "llm_evidence_explanation": "该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。"
+      },
+      {
+        "issue": "clarity",
+        "source": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+        "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim",
+        "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求的范围产生疑问。",
+        "llm_evidence_explanation": "该原文直接显示审查部基于清楚性/范围不确定性删除了一个模糊术语，属于Art.84清楚性问题。"
+      },
+      {
+        "issue": "clarity",
+        "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+        "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+        "translation": "兹通知你，审查部拟基于上述申请，并按照下列文本、附图及相关著录数据授予欧洲专利。",
+        "llm_evidence_explanation": "该拟授权通知表明在修改后文本基础上，审查部已准备授权，说明此前清楚性障碍已被克服。"
+      },
+      {
+        "issue": "clarity",
+        "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+        "original_text": "Claims, Numbers\n1-26\nfiledinelectronicformon\n19-08-2020",
+        "translation": "权利要求，编号1-26，于2020年8月19日以电子形式提交。",
+        "llm_evidence_explanation": "该原文说明最终拟授权所依据的是19-08-2020提交的1-26项权利要求文本。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+        "translation": "经对欧洲专利申请No.16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示的文本和支持文件，现就指定缔约国授予一项欧洲专利。",
+        "llm_evidence_explanation": "最终授权决定表明审查程序结束并授予专利；SOURCE未记载适格性被拒或被质疑，因此该证据支持适格性通过。"
+      }
+    ],
+    "examination_rounds": 1
+  },
+  "risk_source_sentences": [
+    {
+      "issue": "support",
+      "source": "12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "最终授权是本维度通过审查的直接程序性证据。"
+    },
+    {
+      "issue": "support",
+      "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.\nAcopyoftherelevantdocumentsisenclosed.",
+      "translation": "现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。",
+      "llm_evidence_explanation": "拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。"
+    },
+    {
+      "issue": "support",
+      "source": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+      "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim\ndescription:adaptedtoclaims",
+      "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。",
+      "llm_evidence_explanation": "该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。"
+    },
+    {
+      "issue": "clarity",
+      "source": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+      "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim",
+      "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求的范围产生疑问。",
+      "llm_evidence_explanation": "该原文直接显示审查部基于清楚性/范围不确定性删除了一个模糊术语，属于Art.84清楚性问题。"
+    },
+    {
+      "issue": "clarity",
+      "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+      "translation": "兹通知你，审查部拟基于上述申请，并按照下列文本、附图及相关著录数据授予欧洲专利。",
+      "llm_evidence_explanation": "该拟授权通知表明在修改后文本基础上，审查部已准备授权，说明此前清楚性障碍已被克服。"
+    }
+  ],
+  "action_basis_source_sentences": [
+    {
+      "issue": "support",
+      "source": "12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle\nand thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm\n2015,A52) dated 19.11.20ishereby granted in respect of the designated Contracting States.",
+      "translation": "经对欧洲专利申请号16823054.8进行审查，依据2020年11月19日根据EPC规则71(3)发出的通知中所示标题及支持文件，现就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "最终授权是本维度通过审查的直接程序性证据。"
+    },
+    {
+      "issue": "support",
+      "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.\nAcopyoftherelevantdocumentsisenclosed.",
+      "translation": "现通知你，审查部门拟基于上述申请以及下列文本、附图和相关著录数据授予欧洲专利。随附相关文件副本。",
+      "llm_evidence_explanation": "拟授权通知说明审查部门已接受申请文本进入授权阶段，支持不存在未克服的充分公开/支持性拒绝。"
+    },
+    {
+      "issue": "support",
+      "source": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+      "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim\ndescription:adaptedtoclaims",
+      "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求范围产生疑问；说明书：适应权利要求。",
+      "llm_evidence_explanation": "该证据显示存在一个小的清楚性/支持性文本问题，但已通过删除表述和适配说明书克服。"
+    },
+    {
+      "issue": "clarity",
+      "source": "19-06-2020_Communication_about_intention_to_grant_a_European_patent_E4V18TVG9442DSU_ocr.txt",
+      "original_text": "claim17:\"substantially\"deleted,sincethisexpressionwouldcastdoubtonthescopeoftheclaim",
+      "translation": "权利要求17：“substantially”被删除，因为该表述会使权利要求的范围产生疑问。",
+      "llm_evidence_explanation": "该原文直接显示审查部基于清楚性/范围不确定性删除了一个模糊术语，属于Art.84清楚性问题。"
+    },
+    {
+      "issue": "clarity",
+      "source": "19-11-2020_Communication_about_intention_to_grant_a_European_patent_E5H16G0Q2909DSU_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+      "translation": "兹通知你，审查部拟基于上述申请，并按照下列文本、附图及相关著录数据授予欧洲专利。",
+      "llm_evidence_explanation": "该拟授权通知表明在修改后文本基础上，审查部已准备授权，说明此前清楚性障碍已被克服。"
+    }
+  ]
+}

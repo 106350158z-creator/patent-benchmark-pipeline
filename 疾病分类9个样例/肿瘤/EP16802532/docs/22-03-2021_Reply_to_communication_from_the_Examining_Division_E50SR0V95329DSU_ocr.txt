@@ -1,0 +1,132 @@
+
+--- PAGE 1 ---
+dompatent
+von Kreisler
+dompatent von Kreisler |P.0. Box 10 22 41 | 50462 Koln/Germany
+Koln
+EuropeanPatentOffice
+Patentanwalte |Patent Attorneys
+Bob-van-Benthem-Platz1
+Jochen Hilleringmann,
+80469Munich
+Dipl.-Ing.
+Dr.Hans-Peter Jonsson,
+Dipl.-Chem.
+Dr.Thomas Weber,
+Dipl.-Chem.
+Dr.Jorg Helbing.
+Dipl.-Chem.
+Alexander von Kirschbaum,
+Dipl.-Ing.
+Dr.Christoph Schreiber,
+Dipl.-Chem.
+Contact:
+Tel.:
+Dr.Thomas Escher,
+Dr.Christoph Schreiber
+cschreiber@dompatent.de
++49 221 91652-228
+Dipl.-Chem.
+Constantin Ruhland,
+Our Ref.:
+Dipl.-Ing.
+172985EP CS-AM/vg
+22 March 2021
+Florian Kruger,
+Dipl.-Ing.
+Kerstin Renner,
+EuropeanPatentApplication16802532.8
+Dipl-Ing.
+USEOFPTERIDINONEDERIVATIVESERVINGASEGFR
+Andreas Gagidis,
+INHIBITOR
+Dipl-Ing. (BA)
+EastChinaUniversityofScienceandTechnology
+Dr. Eva Bock,
+Dipl.-Chem., LL.M.
+Dr. Marius Vieweg.
+Dipl.-Phys.
+Dr.Anke Krebs,
+Responsivetothecommunicationdated11November2020:
+Dipl.-Chem., LL.M.
+Dr.Alan Stewart,
+B.Sc. (Hons) Chem.
+Dr.Alexander Schuld,
+Anamendedsetof8claimsissubmittedinmark-upandclean
+Dipl.-Ing.
+Dr. Reza Ghadiri,
+copywhichshouldbethebasisforthefurtherprosecution.
+Dipl.-Ing.
+Thomas Henzler,
+M.Sc.RWTH,M.Sc.Tsinghua Ing.
+Dr.TobiasTimmerscheidt,
+Amendments
+MSc ETH Chem., LL.B.
+Rechtsanwalte |Attorneys at Law
+Dr. Felix Hauck, LL.M.
+Threecompoundsofformerclaim3havebeenincorporatedinto
+Dr. Alexander Theis, LL.M.
+WanZe Zhang, LL.M.
+newclaim1asalternativestothecompoundsofgeneralformula
+I. This amendment is based for example on PCT claim 3 for the
+OfCounsel
+Patentanwalte |Patent Attorneys
+firsttwocompoundsandonpage30oftheEnglishtranslationof
+Georg Dallmeyer,
+Dipl.-ing.
+the PCT application for compound 12.
+Dr.Hans-Wilhelm Meyers,
+Dipl.-Chem.
+dompatent von Kreisler Selting Werner Partnerschaft von Patentanwalten und Rechtsanwalten mbB,Koln, Amtsgericht Essen, PR2531
+Kanzlei Koln: Deichmannhaus am Dom -Bahnhofsvorplatz 1-50667 Koln/Germany -Tel. +49 221 916520 ·Fax +49 221 134297
+Buro Munchen: Palais an der Oper - MaximilianstraBe 2 - 80539 Munchen/Germany - Tel. +49 89 2050085033
+mail@dompatent.de -www.dompatent.de
+
+--- PAGE 2 ---
+dompatent
+von Kreisler
+Former claims 3 and 5have beenmadedependent onnew claim1.These
+amendments are based at least on the particular embodiment starting on page
+Englishtranslationof thePCTapplication,respectively.
+Clarity
+Theclarityobjectionregardingclaims3 and5isovercomeby the amendment
+indicated above.
+Unity
+Amended claim 1 fulfils the requirements of unity， because all compounds
+claimed inclaim1 are alternatives having commonactivityandacommon
+structure.As already indicated in the response dated 6 August 2020，the
+compounds of general formula I andcompounds 4，5 and 12(which are the
+compounds nowintroduced into claim 1)show excellent EGFR inhibitory activity.
+Novelty
+Itwasobjectedtointheofficeactionthatthecompoundsofformerclaims3and
+5 with R1 being hydrogen (compounds 4,5 and 12 which are now part of claim 1)
+are not novel over D4. It is not agreed. While D4 in general may disclose R1 being
+hydrogen，thespecificcompoundsnowincorporatedintoclaim1arenotdirectly
+and unambiguously disclosed in D4.It is noted that e.g. the methoxy group of
+compound 4 of the present application is in a different position than the methoxy
+groupofcompound32ofD4.
+
+--- PAGE 3 ---
+dompatent
+von Kreisler
+Thethreecompoundsnewlyintroducedintoclaim1arenotanticipatedbyD4
+and the subject matter of claim 1 is novel.
+Inventivestep
+As already indicated in the previous response dated 6 August 2020,the
+compounds4，5and12showexcellentEGFRinhibitoryactivity.Forexample,the
+ICso values of inhibitory activity on proliferation on cells(H1975)of compounds 4,
+5 and 12 are 0.009, 0.006, and 0.006 μM, respectively. This was completely
+unpredictablewhenstartingfromthecompoundsofD4.Forexample，compound
+19 of D4shows anICso value of inhibitory activity on the proliferation of H1975 of
+only 8.87 μM.
+Therefore，providing the compounds newly introduced into claim 1 was not
+obviousforthepersonskilledintheartandthesubjectmatterofnewclaim1is
+basedonaninventivestep.
+It is kindly requested to indicate the patentability of the present set of claims.An
+adapteddescriptionwillsubsequentlybesubmitted.
+Asaprecaution，just incasetheExaminingDivisionintendstorefusethe
+application,oral proceedings arerequested.
+Dr.Christoph Schreiber
+European Patent Attorney
+Enclosures:amended claims(mark-up)
+amendedclaims(cleancopy)

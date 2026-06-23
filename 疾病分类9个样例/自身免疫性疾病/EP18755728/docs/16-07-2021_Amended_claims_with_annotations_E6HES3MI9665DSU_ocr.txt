@@ -1,0 +1,945 @@
+
+--- PAGE 1 ---
+CooleyRef.NODT-003/N01EP
+CLAIMS
+A compound ofFormula (I):
+R
+(I);
+or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein:
+R1is:
+(a) Cs-C16 polycyclic cycloalkyl, optionally substituted by one or more R6;
+(b) benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or
+dihydrobenzofuranyl is optionally substituted by one or more R6;
+C
+(d)
+or
+(e)
+253273670V1
+
+--- PAGE 2 ---
+CooleyRef.NODT-003/N01EP
+CN
+CN
+CN
+CN
+CN
+CF3
+CF3
+C
+CN
+JO
+R3 is H, methyl. or C4-C4-alkylethyl, wherein the methyl or ethyl is optionally substituted
+with one or more R7;
+R4 is H, C1-C6 alkyl, -(CH2)o-3-(C3-C6 cycloalky1), 0r -(CH2)o-3-Cs-C6 aryl;
+R6 is C1-C6 alkyl, C2-C6 alkenyl, C1-C6 alkoxy, C3-Cs cycloalkyl, halo, oxo, -OH, -CN, -
+NH2, -NH(C1-C6 alky1), -N(C1-C6 alkyl)2, -CH2F, -CHF2, or -CF3;
+R7 is -ORs, Cs-C1o aryl, or 5- to 10- membered heteroaryl, wherein the Cs-Cio aryl or 5-
+to 10-membered heteroaryl is optionally substituted by one or more R7s,wherein each R7s is
+independently Ci-C6 alkyl, Ci-C6 alkoxy, 5- to 10-membered heteroaryl, halo, -OH, -CN, -
+253273670v1
+
+--- PAGE 3 ---
+CooleyRef.NODT-003/N01EP
+(CH2)0-3-NH2, -(CH2)0-3-NH(C1-C6 alkyl), -(CH2)0-3-N(C1-C6 alkyl)2, -CH2F, -CHF2, or -CF3; and
+Rsis Ci-C6 alkyl or5-to 7-membered heterocycloalkyl,wherein the Ci-C6 alkyl or 5-to
+7-membered heterocycloalkyl is optionally substituted by one or more R7s.
+2.
+The compound of claim,wherein R1 is Cs-C16 polycyclic cycloalkyl substituted by one or
+moreR6.
+3.
+The compound of any one of claims 1-2, wherein R1 is adamantyl, norbornyl, or
+bicyclo[2.2.2]octanyl,wherein the adamantyl, norbornyl, or bicyclo[2.2.2]octanyl is optionally
+substituted by one ormore R6.
+4.
+The compound of any one of claims 1-2, wherein R1 is Ci2-Ci6 tricyclic saturated
+cycloalkyl optionally substituted by one or moreR6;
+optionally wherein the Ci2-Ci6 tricyclic saturated cycloalkyl is hexahydroindacenyl;
+further optionally wherein the hexahydroindacenyl is substituted by one,two,three,or
+four substituents independently selected from Ci-C4 alkyl, Ci-C6 alkoxy, halo, oxo, -OH, and -
+CF3.
+5.
+The compound of any one of claims 1-2 and 4,wherein R is
+orwhereinR1is
+or
+wherein n and na each independently are 0, 1, 2, or 3.
+253273670V1
+
+--- PAGE 4 ---
+CooleyRef.NODT-003/N01EP
+6.
+The compound of any one of claims 1-5, wherein R3 is H.
+7.
+The compoundof anyone of claims1-5,whereinR3isC4-C4-ally4methyl or ethyl.
+wherein themethyl or ethylisoptionallysubstitutedwith oneormoreR7.
+8.
+The compound of any one of claims 1-5 and 7,whereinR3is methyl or ethyl.
+9.
+The compound of claim 8, wherein R3 is methyl substituted with:
+(a) one or more Ci-C6 alkoxy, wherein the Ci-C6 alkoxy is optionally substituted with
+one or more Ci-C6 alkoxy;
+optionally,whereinR3is
+(b) one ormore-O-(5-to 7-membered heterocycloalkyl);
+optionally, wherein R3 is 
+(c) one or more Cs-Cio aryl, wherein the Cs-Cio aryl is optionally substituted with one or
+more 5-to 10-membered heteroaryl or -CN;
+optionally, wherein Rs is 
+253273670 v1
+
+--- PAGE 5 ---
+Cooley Ref.NODT-003/N01EP
+or
+(d) one or more 5- to 10-membered heteroaryl, wherein the 5- to 10-membered heteroaryl
+is optionally substituted with one or more Ci-C6 alkyl, Ci-C6 alkoxy, halo, -CN, -(CH2)o-3-N(C1-
+C6 alkyl)2, or -CF3;
+(e) one or more pyridinyl, wherein the pyridinyl is optionally substituted with one or
+more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3;
+optionally,wherein R3 is
+(f) one or more pyrazolyl, wherein the pyrazolyl is optionally substituted with one or
+more methyl, methoxy, F, Cl, -CN, -CH2-N(CH3)2, or -CF3;
+optionally wherein R3is
+253273670v1
+
+--- PAGE 6 ---
+Cooley Ref.NODT-003/N01EP
+(g)one or more imidazolyl,wherein the imidazolyl is optionally substituted with one or
+more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3;
+optionally, wherein R is 
+N
+(h) one or more pyridazinyl, wherein the pyridazinyl is optionally substituted with one or
+more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)0-3-N(C1-C6 alkyl)2, or -CF3;
+optionally, wherein R3 is 
+(i) one or more pyrimidinyl, wherein the pyrimidinyl is optionally substituted with one or
+more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(C1-C6 alkyl)2, or -CF3;
+optionally,whereinRis 
+253273670v1
+
+--- PAGE 7 ---
+CooleyRef.NODT-003/N01EP
+N
+OI
+G) one or more pyrazinyl, wherein the pyrazinylis optionally substituted with one or
+more C1-C6 alkyl, C1-C6 alkoxy,halo, -CN, -(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3;
+optionally, wherein R is
+(k) one or more triazolyl, wherein the triazolylis optionally substituted with one or more
+C1-C6 alkyl,C1-C6 alkoxy,halo,-CN,-(CH2)o-3-N(C1-C6 alkyl)2,Or-CF3;
+optionally, wherein R3 is 
+10.
+The compound of claim 8,wherein R3is ethyl substituted with one or more Cs-Cio aryl;
+253273670v1
+
+--- PAGE 8 ---
+Cooley Ref.NODT-003/N01EP
+optionally, wherein R3 is 
+11.
+The compound of any one of claims 1-10,wherein R4is H.
+12.
+The compound of any one of claims 1-10, wherein R4is:
+(a) Ci-C6 alkyl, optionally wherein R4 is methyl, ethyl, propyl, or butyl;
+(b) -(CH2)o-3-(C3-C6 cycloalkyl);
+optionally wherein R4is
+；or
+(c) -(CH2)0-3-C5s-C6 aryl;
+optionally wherein R4 is
+13.
+The compound of any one of claims 1-12,wherein at least one R6 is Ci-C6 alkyl,C2-C6
+alkenyl, C1-C6 alkoxy, or C3-Cs cycloalkyl;
+or wherein at least one R6 is halo, oxo, -OH, -CN, -NH2, -NH(C1-C6 alkyl), -N(C1-C6
+alkyl)2,-CH2F,-CHF2,Or -CF3.
+14.
+The compound of any one of claims 1-13, wherein:
+(a) at least one R7 is -ORs, optionally wherein at least one R7is Ci-C6 alkoxy optionally
+substituted by one or more R7s, or at least one R7 is -O-(5- to 7-membered heterocycloalkyl)
+optionally substituted with one or more R7s;
+(b) at least one R7 is Cs-C1o aryl optionally substituted by one or more R7s; or
+(c) at least one R7 is 5- to 10-membered heteroaryl optionally substituted by one or more
+8
+253273670 v1
+
+--- PAGE 9 ---
+CooleyRef.NODT-003/N01EP
+R7s.
+15.
+The compound of any one of claims 1-14, wherein at least one R7s is Ci-C6 alkyl, Ci-C6
+alkoxy, or 5- to 10-membered heteroaryl;
+or wherein at least one R7s is halo, -OH, -CN, -(CH2)o-3-NH2, -(CH2)o-3-NH(C1-C6 alkyl),
+-(CH2)0-3-N(C1-C6 alky1)2,-CH2F, -CHF2, Or -CF3.
+16.
+The compound of any one of claims 1-15, wherein Rs is Ci-C6 alkyl optionally
+substituted by one or more R7s;
+or wherein Rs is 5-to 7-membered heterocycloalkyl optionally substitutedwith one or
+moreR7s.
+17.
+The compound of any one of claims 1-16, being of:
+(a) Formula (Ila) or (Ib):
+O
+R3
+(la);
+(Ib);
+or a hydrate, solvate, or pharmaceutically acceptable salt thereof;
+(b) any one of Formulae (Il), (Ila), and (IIb):
+(I);
+0
+(lIla);
+(IIb);
+or a hydrate,solvate,or pharmaceutically acceptable salt thereof;
+(c) any one of Formulae (III), (IIla), and (IIIb):
+253273670v1
+
+--- PAGE 10 ---
+Cooley Ref.NODT-003/N01EP
+(II);
+(lla);
+(IIb);
+or a hydrate, solvate, or pharmaceutically acceptable salt thereof;
+(d)any one ofFormulae(IV),(IVa),and (IVb):
+(IV);
+(IVa);
+(IVb);
+or a hydrate,solvate,or pharmaceutically acceptable salt thereof;
+(e) any one of Formulae (V), (Va), (Vb), (VI), (VIa), and (VIb):
+R3
+(V);
+O
+R3
+O
+R3
+(Va);
+(Vb);
+10
+253273670v1
+
+--- PAGE 11 ---
+CooleyRef.NODT-003/N01EP
+R
+(VI);
+0
+(VIa);
+(VIb);
+or a hydrate,solvate,or pharmaceutically acceptable salt thereof;
+(f) any one of Formulae (VII), (VIla), (VIIb), (VIII), (VIIla), and (VIIIb):
+R7
+(VII);
+(VIla);
+(VIIb);
+R
+(VIII);
+(VIlla);
+(VIIb);
+or a hydrate,solvate,or pharmaceutically acceptable salt thereof; or
+(g) any one of Formulae (IX), (IXa), (IXb), (X), (Xa), and (Xb):
+253273670V1
+
+--- PAGE 12 ---
+CooleyRef.NODT-003/N01EP
+(IX);
+R
+O
+(IXa);
+(IXb);
+H
+(X);
+O
+O
+(Xa);
+(Xb);
+or a hydrate, solvate, or pharmaceutically acceptable salt thereof.
+253273670V1
+
+--- PAGE 13 ---
+CooleyRef.NODT-003/N01EP
+18.
+The compound of any one of claims 1-17, being selected from Compound Nos. 1-8, 10-
+52,55, 57-86,88-117, 119-121,123-128 and 130 and pharmaceutically acceptable salts thereof:
+Compound
+Structure
+Name
+No.
+Ethyl2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}acetate
+Ethyl 2-{[(2,6-
+difluorophenyl)carbamoylJoxy}acetate
+Ethyl 2-{[(2,6-
+dichlorophenyl)carbamoylloxy}acetate
+Ethyl 2-{[(naphthalen-1-
+yl)carbamoylloxy}acetate
+O
+Ethyl 2-{[(2,2-dimethyl-2,3-dihydro-1-
+benzofuran-7-yl)carbamoyl]oxy}acetate
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+6
+yl)carbamoylloxy}-3-methoxypropanoate
+Ethyl 2-({[2-fluoro-5-
+(trifluoromethyl)phenyl]carbamoyl}oxy)aceta
+te
+Ethyl 2-{[(2,6-
+8
+dimethylphenyl)carbamoylloxy}acetate
+O
+13
+253273670 v1
+
+--- PAGE 14 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 2-({[2-(chloro-6-
+10
+methylphenyl)carbamoylloxy}acetate
+CI
+Ethyl 2-{[(2-
+11
+cyanophenyl)carbamoylloxy}acetate
+CN
+O
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+12
+yl)carbamoyl]oxy}-3-(pyridin-3-
+yl)propanoate
+Ethyl 2-{[(2-tert-
+13
+butylphenyl)carbamoylJoxy}acetate
+14
+Ethyl 2-((mesitylcarbamoyl)oxy)acetate
+Ethyl 2-(2-
+15
+isopropylphenyl)carbamoyl)oxy)acetate
+Ethyl 2-((2-ethyl-6-
+16
+methylphenyl)carbamoyl)oxy)acetate
+Ethy1 2-(((1,2,3,5,6,7-hexahydro-s-indacen-4-
+17
+yl)carbamoyl)oxy)-3-phenylpropanoate
+14
+253273670v1
+
+--- PAGE 15 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethy1 2-(1,2,3,5,6,7-hexahydro-s-indacen-4-
+18
+yl)carbamoyl)oxy)-3-(pyridin-2-
+yl)propanoate
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+19
+indacen-4-yl)carbamoylloxy}propanoate
+O
+Propan-2-yl 2-{[(1,2,3,5,6,7-hexahydro-s-
+20
+indacen-4-y1l)carbamoyl]oxy}acetate
+2-{[(1,2,3,5,6,7-Hexahydro-s-indacen-4-
+21
+yl)carbamoylloxy}acetate
+O
+Cyclopropylmethyl 2-{[(1,2,3,5,6,7-
+22
+hexahydro-s-indacen-4-
+yl)carbamoylloxy}acetate
+Cyclobutyl 2-{[(1,2,3,5,6,7-hexahydro-s-
+23
+indacen-4-yl)carbamoyl]oxy}acetate
+2-methylpropy1 2-{[(1,2,3,5,6,7-hexahydro-s-
+24
+indacen-4-yl)carbamoyl]oxy}acetate
+15
+253273670v1
+
+--- PAGE 16 ---
+Cooley Ref.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 3-(4-cyanophenyl)-2-{[(1,2,3,5,6,7-
+hexahydro-s-indacen-4-
+25
+yl)carbamoylloxy}propanoate
+Ethyl 2-( {[2-methyl-6-(propan-2-
+26
+yl)phenyl]carbamoyl}oxy)acetate
+2-{[(1,2,3,5,6,7-Hexahydro-s-indacen-4-
+27
+OH
+yl)carbamoyl]oxy}acetic acid
+Ethyl 2-{[(2,6-diethyl-4-
+28
+methylphenyl)carbamoylJoxy}acetate
+Methy1 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-
+29
+4-yl)carbamoylloxy}acetate
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+30
+indacen-4-yl)carbamoylJoxy}-4-
+phenylbutanoate
+Ethyl 2- {[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+31
+yl)carbamoyl]oxy}-3-(1H-pyrazol-1-
+yl)propanoate
+O
+16
+253273670 v1
+
+--- PAGE 17 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Cyclopentyl 2-{[(1,2,3,5,6,7-hexahydro-s-
+32
+indacen-4-yl)carbamoyl]oxy}acetate
+Ethy1 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+33
+yl)carbamoyl]oxy}-3-(1H-imidazol-1-
+yl)propanoate
+Ethyl 2-({[2,6-bis(propan-2-
+34
+yl)phenyllcarbamoyl}oxy)acetate
+Ethyl 2-({[2-chloro-5-
+35
+(trifluoromethyl)phenyl]carbamoyl}oxy)aceta
+te
+Ethyl 2-{[(2-tert-butyl-6-
+36
+methylphenyl)carbamoylloxy}acetate
+O
+Ethyl 2-{[(2,5-
+37
+dimethylphenyl)carbamoylloxy}acetate
+O
+2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+38
+OH
+yl)carbamoylJoxy}-3-methoxypropanoic acid
+H
+cyclopropyl 2-{[(1,2,3,5,6,7-hexahydro-s-
+39
+indacen-4-yl)carbamoylJoxy}acetate
+17
+253273670 v1
+
+--- PAGE 18 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+40
+yl)carbamoyl]oxy}-3-(1H-pyrazol-1-
+yl)propanoic acid
+Ethyl (2R)-3-(3-cyanophenyl)-2-
+41
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+42
+yl)carbamoyl]oxy}-3-[3-(1H-pyrazol-1-
+yl)phenyllpropanoate
+Ethy1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+43
+indacen-4-yl)carbamoyl]oxy}-3-[3-(1H-
+pyrazol-1-yl)phenyllpropanoate
+Ethyl 2-{[(2,6-
+44
+difluorophenyl)carbamoylJoxy}-3-1H-
+pyrazol-1-yl)propanoate
+Ethyl 2-[(phenylcarbamoyl)oxy]-3-(1H-
+45
+pyrazol-1-yl)propanoate
+Q
+Ethyl 2-{[(2-ethyl-6-
+46
+methylphenyl)carbamoyl]oxy}-3-(1H-
+pyrazol-1-yl)propanoate
+18
+253273670 v1
+
+--- PAGE 19 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 2-{[(2,6-
+47
+dimethylphenyl)carbamoylJoxy}-3-(1H-
+pyrazol-1i-yl)propanoate
+Ethyl 2-{[(2,6-
+48
+diethylphenyl)carbamoylloxy}-3-(1H-
+pyrazol-1-yl)propanoate
+Ethyl 2-{[(2-fluoro-6-
+49
+methylphenyl)carbamoylJoxy}-3-(1H-
+pyrazol-1-yl)propanoate
+Ethyl 2-{[(2-chloro-6-
+50
+fluorophenyl)carbamoylJoxy}-3-(1H-pyrazol-
+1-yl)propanoate
+Ethyl2-{[(2-chloro-6-
+51
+methylphenyl)carbamoylJoxy}-3-(1H-
+pyrazol-1-yl)propanoate
+Ethyl 2-{[(2,6-
+52
+dichlorophenyl)carbamoylJoxy}-3-(1H-
+pyrazol-1-yl)propanoate
+Ethyl 3-(4-cyano-1H-pyrazol-1-yl)-2-
+55
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Ethyl 2-{[(2-cyano-6-
+57
+methylphenyl)carbamoyl]oxy}-3-(1H-
+pyrazol-1-yl)propanoate
+N
+19
+253273670 v1
+
+--- PAGE 20 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 2-{[(2-cyano-6-
+58
+ethylphenyl)carbamoylJoxy}-3-(1H-pyrazol-
+1-yl)propanoate
+N
+Ethyl 2-{[(2-chloro-6-
+59
+cyanophenyl)carbamoylloxy}-3-(1H-pyrazol-
+1-yl)propanoate
+N
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylJoxy}-3-(pyrazin-2-
+60
+yl)propanoate
+(2R)-2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+61
+yl)carbamoylJoxy}-3-(1H-pyrazol-1-
+OH
+yl)propanoic acid
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+62
+yl)carbamoylloxy}-3-(pyridazin-3-
+yl)propanoate
+Ethyl 3-(1H-pyrazol-1-yl)-2-{[(2,3,6-
+63
+trifluorophenyl)carbamoylJoxy}propanoate
+H
+Benzy1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+64
+indacen-4-yl)carbamoylloxy}-3-(1H-pyrazol-
+1-yl)propanoate
+Ethyl (2R)-2- {[(1,2,3,5,6,7-hexahydro-s-
+65
+indacen-4-yl)carbamoylloxy}-3-(1H-pyrazol-
+1-yl)propanoate
+H
+20
+253273670 v1
+
+--- PAGE 21 ---
+Cooley Ref.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 2-{[(2-ethyl-6-
+66
+fluorophenyl)carbamoylloxy}-3-(1H-pyrazol-
+1-yl)propanoate
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+67
+indacen-4-yl)carbamoylJoxy}-3-(1H-
+imidazol-1-yl)propanoate
+H
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+68
+indacen-4-yl)carbamoylJoxy}-3-
+methoxypropanoate
+H
+C
+(2R)-2- {[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+69
+OH
+yl)carbamoylJoxy}-3-methoxypropanoic acid
+H
+Ethyl 2-({[2-chloro-3-
+70
+(trifluoromethyl)phenyl]carbamoyl}oxy)-3-
+(1H-pyrazol-1-yl)propanoate
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+71
+yl)carbamoylJoxy}-3-(1H-1,2,4-triazol-1-
+yl)propanoate
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+72
+yl)carbamoyl]oxy}-3-(3-methyl-1H-pyrazol-
+1-yl)propanoate
+H
+Ethyl 3-(1H-pyrazol-1-yl)-2-{[(2,4,6-
+73
+trifluorophenyl)carbamoylJoxy}propanoate
+H
+21
+253273670 v1
+
+--- PAGE 22 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 2-({[2-methyl-6-(propan-2-
+74
+yl)phenyl]carbamoyl}oxy)-3-(1H-pyrazol-1-
+yl)propanoate
+Ethyl 2-{[(3-chloro-2,6-
+75
+difluorophenyl)carbamoyl]oxy}-3-(1H-
+pyrazol-1-yl)propanoate
+Ethyl (2R)-3-(4-cyano-1H-pyrazol-1-yl)-2-
+76
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Benzyl (2R)-3-(4-cyano-1H-pyrazol-1-yl)-2-
+77
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylJoxy}propanoate
+Ethyl 2-{[(2,6-
+78
+dimethylphenyl)carbamoyl]oxy}-3-
+(pyrimidin-2-yl)propanoate
+H
+O
+(2R)-2- {[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+79
+yl)carbamoylloxy}-3-(1H-imidazol-1-
+yl)propanoic acid
+Ethyl 3-(4-fluoro-1H-pyrazol-1-yl)-2-
+80
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy/propanoate
+H
+O
+22
+253273670v1
+
+--- PAGE 23 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+81
+yl)carbamoyl]oxy}-3-(5-methyl-1H-imidazol-
+1-yl)propanoate
+(2R)-3-(4-cyano-1H-pyrazol-1-yl)-2-
+82
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoic acid
+Q
+Ethy1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+83
+indacen-4-yl)carbamoyl]oxy}-3-(1H-1,2,4-
+triazol-1-yl)propanoate
+Ethy1 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+84
+yl)carbamoyl]oxy}-3-(2-methyl-1H-imidazol-
+1-yl)propanoate
+H
+Ethyl 2-{[(2-chloro-6-
+85
+ethylphenyl)carbamoyl]oxy}-3-(1H-pyrazol-
+1-yl)propanoate
+H
+O
+Ethyl 2-{[(2-methylnaphthalen-1-
+86
+yl)carbamoyl]oxy}-3-(1H-pyrazol-1-
+yl)propanoate
+H
+CI
+Ethyl (2R)-3-(4-chloro-1H-pyrazol-1-yl)-2-
+88
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+23
+253273670v1
+
+--- PAGE 24 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+N
+Ethyl (2R)-3-(4-cyano-1H-imidazol-1-yl)-2-
+89
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Ethyl (2R)-3-(5-cyano-1H-imidazol-1-yl)-2-
+90
+[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Ethyl 2-({[2,6-dimethyl-4-
+91
+(trifluoromethyl)phenyl]lcarbamoyl}oxy)-3-
+(1H-pyrazol-1-yl)propanoate
+Ethy1 2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+92
+yl)carbamoyl]oxy}-3-(4-methoxy-1H-
+pyrazol-1-yl)propanoate
+Ethy1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+93
+indacen-4-yl)carbamoyl]oxy}-3-(pyrimidin-2-
+yl)propanoate
+H
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+94
+indacen-4-yl)carbamoylloxy}-3-(pyrazin-2-
+yl)propanoate
+Ethyl (2R)-3-ethoxy-2-{[(1,2,3,5,6,7-
+95
+hexahydro-s-indacen-4-
+yl)carbamoylloxy} propanoate
+H
+24
+253273670v1
+
+--- PAGE 25 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl (2R)-3-(3-cyano-1H-pyrazol-1-yl)-2-
+96
+[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+97
+indacen-4-yl)carbamoyl]oxy}-3-[4-
+(trifluoromethyl)-1H-pyrazol-1-yllpropanoate
+H
+CP
+(2R)-3-{4-[(dimethylamino)methyl]-1H-
+pyrazol-1-yl}-2-{[(1,2,3,5,6,7-hexahydro-s-
+98
+indacen-4-yl)carbamoylloxy} propanoic acid
+OH
+hydrochloride
+H
+O
+Ethyl 2-{[(2,4-dimethylthiophen-3-
+99
+yl)carbamoyl]oxy}-3-(1H-pyrazol-1-
+yl)propanoate
+Ethyl 2-[({4,10-
+dioxatricyclo[7.3.0.03-7]dodeca-
+100
+1,3(7),8-trien-2-yl}carbamoyl)oxy]-3-(1H-
+pyrazol-1-yl)propanoate
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+101
+indacen-4-yl)carbamoyl]oxy}-3-(2-
+methoxyethoxy)propanoate
+25
+253273670v1
+
+--- PAGE 26 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+102
+indacen-4-yl)carbamoylJoxy}-3-(oxan-4-
+yloxy)propanoate
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+103
+indacen-4-yl)carbamoylloxy}-3-(5-methyl-
+1H-1,2,4-triazol-1-yl)propanoate
+H
+Ethyl (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+104
+indacen-4-yl)carbamoyl]oxy}-3-(propan-2-
+yloxy)propanoate
+H
+Ethy1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-s-
+105
+indacen-4-yl)carbamoylloxy}-3-(3-methyl-
+1H-1,2,4-triazol-1-yl)propanoate
+O
+(2R)-2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+106
+yl)carbamoyl]oxy}-3-(pyrimidin-2-
+OH
+yl)propanoic acid
+日
+Propan-2-y1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-
+107
+s-indacen-4-yl)carbamoylJoxy}-3-(pyrimidin-
+2-yl)propanoate
+Cyclopenty1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-
+108
+s-indacen-4-yl)carbamoyl]oxy}-3-(pyrimidin-
+2-yl)propanoate
+26
+253273670 v1
+
+--- PAGE 27 ---
+Cooley Ref.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+(2R)-2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+109
+yl)carbamoyl]oxy}-3-(pyrazin-2-yl)propanoic
+acid
+Propan-2-y1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-
+110
+s-indacen-4-yl)carbamoyl]oxy}-3-(pyrazin-2-
+yl)propanoate
+H
+Cyclopenty1 (2R)-2-{[(1,2,3,5,6,7-hexahydro-
+111
+s-indacen-4-yl)carbamoy1l]Joxy}-3-(pyrazin-2-
+yl)propanoate
+Propan-2-yl (2R)-3-(4-cyano-1H-pyrazol-1-
+112
+yl)-2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylJoxy}propanoate
+Cyclopentyl (2R)-3-(4-cyano-1H-pyrazol-1-
+113
+yl)-2-{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylJoxy}propanoate
+(2R)-2- {[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+114
+yl)carbamoyl]oxy}-3-(1H-1,2,4-triazol-1-
+yl)propanoic acid
+Q
+Propan-2-y1(2R)-2-{[(1,2,3,5,6,7-hexahydro-
+115
+s-indacen-4-yl)carbamoyl]oxy}-3-(1H-1,2,4-
+triazol-1-yl)propanoate
+H
+27
+253273670v1
+
+--- PAGE 28 ---
+Cooley Ref.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Cyclopenty1 (2R)-2- {[(1,2,3,5,6,7-hexahydro-
+116
+s-indacen-4-yl)carbamoyl]Joxy}-3-(1H-1,2,4-
+triazol-1-yl)propanoate
+Propan-2-yl 2-{[(1,2,3,5,6,7-hexahydro-s-
+117
+indacen-4-yl)carbamoylJoxy}-3-(6-
+methylpyrazin-2-yl)propanoate
+Propan-2-yl 3-(5-cyanopyrazin-2-yl)-2-
+119
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+Propan-2-yl 2-{[(1,2,3,5,6,7-hexahydro-s-
+120
+indacen-4-yl)carbamoyl]oxy}-3-(2-
+methylpyrimidin-4-yl)propanoate
+H
+Propan-2-yl 2-{[(1,2,3,5,6,7-hexahydro-s-
+121
+indacen-4-yl)carbamoyl]oxy}-3-(5-
+methylpyrazin-2-yl)propanoate
+H
+Propan-2-yl 2-{[(2-chloro-6-
+123
+fluorophenyl)carbamoylloxy}-3-(pyrimidin-
+2-yl)propanoate
+H
+Propan-2-yl 2-{[(2,6-
+124
+difluorophenyl)carbamoylloxy}-3-(pyrimidin-
+2-yl)propanoate
+Propan-2-yl 2-{[(2,6-
+125
+dichlorophenyl)carbamoyl]oxy}-3-
+(pyrimidin-2-yl)propanoate
+CI
+H
+O
+28
+253273670 v1
+
+--- PAGE 29 ---
+CooleyRef.NODT-003/N01EP
+Compound
+Structure
+Name
+No.
+Propan-2-yl (2R)-3-(3-cyano-1H-1,2,4-
+126
+triazol-1-yl)-2-{[(1,2,3,5,6,7-hexahydro-s-
+indacen-4-yl)carbamoyl]oxy}propanoate
+Propan-2-yl 2-[({bicyclo[2.2.2]octan-1-
+127
+yl}carbamoyl)oxy]-3-(pyrimidin-2-
+yl)propanoate
+O
+Propan-2-yl 2-{[(1,2,3,5,6,7-hexahydro-s-
+128
+indacen-4-yl)carbamoylJoxy}-3-(pyridazin-4-
+yl)propanoate
+Propan-2-yl 3-(5-cyanopyrimidin-2-yl)-2-
+130
+{[(1,2,3,5,6,7-hexahydro-s-indacen-4-
+yl)carbamoylloxy}propanoate
+19.
+A compound being an isotopic derivative of the compound of any one of claims 1-18;
+optionallywherein the compound is a deuteriumlabeled compound.
+20.
+A pharmaceutical composition comprising the compound of any one of claims 1-19 or a
+pharmaceutically acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier.
+21.
+The compound of any one of claims 1-19, or the pharmaceutical composition of claim 20,
+for usein treating orpreventing a disease or disorder.
+22.
+The compound or pharmaceutical compositionfor use of claim 21,wherein the disease or
+disorder is:
+29
+253273670 v1
+
+--- PAGE 30 ---
+CooleyRef.NODT-003/N01EP
+(a) an autoinflammatory disorder or an autoimmune disorder,
+optionally wherein the disease or disorderis selectedfrom cryopyrin-associated
+autoinflammatory syndrome(CAPS;e.g.,familial cold autoinflammatory syndrome(FCAS)),
+Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular
+(CINCA) syndrome/ neonatal-onset multisystem inflammatory disease (NOMID),familial
+Mediterraneanfever and nonalcoholicfattyliver disease(NAFLD),non-alcoholic steatohepatitis
+(NASH),gout,rheumatoid arthritis,osteoarthritis, Crohn’s disease, chronic obstructive
+pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2 diabetes,
+multiple sclerosis and neuroinflammation occurring in protein misfolding diseases (e.g., Prion
+diseases);
+(b) a neurodegenerative disease;
+optionally wherein the disease or disorder is Parkinson’s disease or Alzheimer's disease;
+or
+(c) cancer;
+optionally wherein the cancer is metastasising cancer,gastrointestinal cancer, skin
+cancer, non-small-cell lung carcinoma, or colorectal adenocarcinoma.
+30
+253273670 v1

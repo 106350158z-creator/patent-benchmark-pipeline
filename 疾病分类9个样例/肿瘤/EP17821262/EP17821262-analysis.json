@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "jurisdiction": "EP",
+    "application_number": "EP17821262.7",
+    "title": "METHODS OF TREATING OVARIAN CANCER",
+    "applicant": "Tesaro, Inc.",
+    "filing_date": "2017-06-29",
+    "examination_date": "2023-12-07",
+    "outcome": "granted"
+  },
+  "grant_label": "yes",
+  "dimension_scores": {
+    "novelty_score": 80,
+    "novelty_disc": {
+      "analysis": "审查员曾以D1对新颖性提出异议，理由是D1公开了卵巢/输卵管癌患者在铂类治疗后的olaparib维持治疗，并指出部分患者无BRCA1/2突变，因此当时的修改文本看起来落入D1范围。申请人随后明确答复D1不公开niraparib，并据此主张权利要求主题具有新颖性；结合后续Rule 71(3)意向授予以及最终授予决定，可以判断该新颖性问题已被克服。当前权利要求1限定于niraparib，整体新颖性风险较低，但若解释被不当地放宽到更一般的PARP抑制剂方案，D1仍是最近的对比文献。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经审查欧洲专利申请第17821262.7号后，现就所指明的指定缔约国，依据Rule 71(3) EPC通信（EPO Form 2004C）或信息（EPO Form 2004W，参见2015年6月8日EPO通知，OJ EPO 2015, A52）中所述文本和附图所对应的欧洲专利，特此授予。",
+      "llm_evidence_explanation": "该原文表明最终程序结果是授予专利，说明此前的新颖性质疑已经在审查中被克服，因此支撑较高的新颖性评分。"
+    },
+    "inventive_step_score": 80,
+    "inventive_step_disc": {
+      "analysis": "该案最终已进入准予授权，说明现有来源材料中与创造性相关的异议已被申请人通过限缩权利要求并提交论证所克服。较早阶段审查员曾对更早/更宽的权利要求提出创造性担忧，尤其是将HRD状态作为选择特征时，审查意见明确指出其没有可归属的技术效果；申请人随后将权利要求收窄到niraparib、铂类治疗后维持治疗、BRCA1/2无突变以及HRD阴性等组合，并主张相对于D1的区别在于改用niraparib，且该区别带来在BRCA1/2缺失患者中的疗效。按COMVIK逻辑，HRD阴性本身更像患者分层/非技术限定，能否支撑创造性仍取决于其与可信技术效果的结合；不过从最终Decision to grant看，EPO已接受该文本进入授权，因此当前创造性风险较低。",
+      "original_text": "You areinformed that theexaminingdivisionintendstogrant a Europeanpatent onthebasisof theabove\napplication,withthetextanddrawings and therelatedbibliographicdataasindicatedbelow.",
+      "translation": "已告知您，审查部拟基于上述申请及下述文本和附图以及相关书目信息授予欧洲专利。经对欧洲专利申请第17821262.7号进行审查后，现依据《欧洲专利公约》规则71(3)所通信的文本（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52），兹就所指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "The grant/intention-to-grant wording shows the EPO accepted the application after examination, so no unresolved Art.56 objection remained in the final record.",
+      "source": "21-09-2023_Communication_about_intention_to_grant_a_European_patent_LMHJJNDJVIBSBFZ_ocr.txt"
+    },
+    "support_score": 100,
+    "support_disc": {
+      "analysis": "该案在可见材料中没有出现针对 Art.83、Art.84 或 Art.123(2) 的明确不利结论。相反，申请人在答复中明确说明了 claim 1 中“niraparib”限定的原始依据，并在后续程序中收到 Rule 71(3) 意向授权，最终也直接作出授权决定。基于这些连续程序材料，可以判断当前充分公开/支持维度已通过，剩余风险很低。",
+      "original_text": "Following examination of European patent application No.17821262.7 a European patent with the tile and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC (EPO Form 2004C) or in the information (EPO Form 2004W, cf. Notice from the EPO dated 8 June 2015, OJEPO 2015, A52) dated 21.09.23 is hereby granted in respect of the designated Contracting States.",
+      "translation": "经审查欧洲专利申请第17821262.7号后，依据 71(3) 规则通知中所指明的文本及附图，以及 21.09.23 日期的信息（EPO Form 2004W，参见 EPO 2015 年 6 月 8 日通知，OJEPO 2015, A52），现就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "该句是最终授权决定，说明审查程序已结束且文本获准，未体现仍存在未解决的充分公开、支持或新增内容问题，因此适合作为高分依据。"
+    },
+    "clarity_score": 80,
+    "clarity_disc": {
+      "analysis": "该案的清楚性风险已基本被克服。SOURCE中明确出现过Art.84清楚性异议，针对的是claim 4里的“derivative”术语；随后申请人对权利要求作了修改，并且最终收到Rule 71(3)后的授权决定，说明现有授权文本已被EPO接受。就当前目标claim 1而言，未见直接的清楚性驳回，术语和边界风险较低，但权利要求仍较长，若后续再改动患者特征或治疗步骤，仍需保持定义一致。",
+      "original_text": "According to the Board of Appeal, T1898/06, the term\"derivative\"in claims 4 is unclear underArticle84EPC.",
+      "translation": "根据上诉委员会 T1898/06 案例，权利要求4中的“derivative”一词在《欧洲专利公约》第84条下不清楚。",
+      "llm_evidence_explanation": "这段原文直接表明审查过程中曾有明确的Art.84清楚性问题，因此维度上不能给满分；但该问题指向claim 4而非当前claim 1，且后续申请已进入授权阶段，说明该清楚性缺陷已被处理或不再阻碍授权。"
+    },
+    "eligibility_score": 100,
+    "eligibility_disc": {
+      "analysis": "从SOURCE看，没有出现EP Art.52下的排除主题异议；相反，EPO已经发出准予授权决定，说明该案在适格性上已被接受。权利要求1明确写成“for use in treating cancer in a human patient”的医疗用途形式，属于针对人类患者癌症治疗的技术/医疗用途，不是纯粹的抽象方法、商业方法或其他排除主题。结合最终授权结果，当前适格性风险很低。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetileand thesupportingdocuments indicated inthecommunication pursuant toRule71(3)EPC (EPOForm 2004C)orintheinformation (EPOForm 2004W,cf.Notice from the EPO dated 8 June 2015,OJEPO 2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经审查欧洲专利申请第17821262.7号后，依据《欧洲专利公约》第71(3)条通信中所示的文本和附图，以及相关书目信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJEPO 2015，A52），现就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "该连续原文直接表明EPO已决定授予专利，说明在审查终局阶段未见阻却授权的适格性问题。"
+    }
+  },
+  "aggregate_score": 87,
+  "top_risk_reasons": [
+    {
+      "original_text": "D1 does no mention theHRD status of the patients.Their selection,in claims 2 and 3,",
+      "translation": "新颖性残余风险较低，但若权利要求范围扩展至尼拉帕利之外，D1仍是最接近的现有技术。",
+      "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt"
+    },
+    {
+      "original_text": "pharmaceutically acceptablesalt thereof,\nwherein the patient is characterized by previous treatment with a platinum-based",
+      "translation": "若HRD阴性筛选被视为非技术特征且缺乏疗效数据支持，已获准权利要求在COMVIK下仍可能存在脆弱性。",
+      "source": "14-03-2023_Claims_LF8FSGVB1QJX7B2_ocr.txt"
+    },
+    {
+      "original_text": "Sheet2\nApplication No.:17821262.7\nDESCRIPTION",
+      "translation": "该申请最终获准，且未见悬而未决的第83、84或123(2)条异议。",
+      "source": "19-04-2023_Communication_about_intention_to_grant_a_European_patent_LGC7NX99BYLEO9M_ocr.txt"
+    },
+    {
+      "original_text": "Y : particularly relevant if combined with another\nD : document cited in the application\ndocument of the same category",
+      "translation": "权利要求1经修改后获准，且现行表述未见仍有效的第84条异议。",
+      "source": "14-02-2020_Supplementary_European_search_report_E4EV8CBO5850DSU_ocr.txt"
+    },
+    {
+      "original_text": "3.\nThe therapeutic agent of claims 1 or 2, wherein the patient has a tumor with a negative",
+      "translation": "风险较低：权利要求1为治疗用途权利要求，且该申请获准时未见明显的第52条异议。",
+      "source": "02-07-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E4Y8KAXT5605DSU_ocr.txt"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "original_text": "the cancer is ovarian cancer (e.g. wherein the patient has high grade serous ovarian cancer or",
+      "translation": "将权利要求1限定于尼拉帕利，并保留用于区分D1中奥拉帕利公开内容的修改历史。",
+      "source": "25-01-2019_Amended_claims_with_annotations_E2WDRFY80022DSU_ocr.txt"
+    },
+    {
+      "original_text": "free survival (PFS) was significantly longerforpatients whoreceived niraparibthan\nfor patients who received placebo across all patient groups (paragraph [00223]).",
+      "translation": "保留尼拉帕利在BRCA/HRD阴性患者中的维持疗效数据，并围绕该已证实的治疗效果来界定客观技术问题。",
+      "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt"
+    },
+    {
+      "original_text": "22. The therapeutic agent for use according to any one of claims 9-21, wherein the prolonged",
+      "translation": "保持授权文本措辞，并在审查记录中保留权利要求1的修改依据对应关系。",
+      "source": "25-01-2019_Amended_claims_filed_after_receipt_of_(European)_search_report_E2WDRFMZ6611DSU_ocr.txt"
+    },
+    {
+      "original_text": "Thisprotocol would appeartofall within the scope of amended claims 1,4,7，8 and 9\nunderArticle54EPC.\n2).\nD1 does no mention theHRD status of the patients.Their selection,in claims 2 and 3,",
+      "translation": "保留授权权利要求措辞，避免重新引入已删除的“衍生物”表述，或在没有明确定义的情况下引入更宽泛的患者选择表述。",
+      "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt"
+    },
+    {
+      "original_text": "CLAIMS\n1.\nfor use in treating cancer in a human patient, wherein the agent is niraparib,or a",
+      "translation": "将权利要求1保持为针对人类患者的治疗用途权利要求，避免将其改写为纯诊断或抽象指示。",
+      "source": "14-03-2023_Amended_claims_with_annotations_LF8FSH8KL9DERYU_ocr.txt"
+    }
+  ],
+  "evidence_trace": {
+    "prior_art_documents": [
+      {
+        "rank": 1,
+        "citation": "WO2014052550",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014052550",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 2,
+        "citation": "WO2015108986",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2015108986",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 3,
+        "citation": "EP3094752A1",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP3094752A1/en",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 4,
+        "citation": "US20090123419A1",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/US20090123419A1/en",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 5,
+        "citation": "US20110040953A1",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/US20110040953A1/en",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 6,
+        "citation": "WO2011160063",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2011160063",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 7,
+        "citation": "US20110048427A1",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/US20110048427A1/en",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 8,
+        "citation": "WO2012027224",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2012027224",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 9,
+        "citation": "WO2008084261",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2008084261",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 10,
+        "citation": "WO2009087381",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009087381",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      }
+    ],
+    "affected_claims": [
+      1
+    ],
+    "specification_support": [
+      {
+        "location": "support_disc",
+        "original_text": "Following examination of European patent application No.17821262.7 a European patent with the tile and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC (EPO Form 2004C) or in the information (EPO Form 2004W, cf. Notice from the EPO dated 8 June 2015, OJEPO 2015, A52) dated 21.09.23 is hereby granted in respect of the designated Contracting States.",
+        "translation": "经审查欧洲专利申请第17821262.7号后，依据 71(3) 规则通知中所指明的文本及附图，以及 21.09.23 日期的信息（EPO Form 2004W，参见 EPO 2015 年 6 月 8 日通知，OJEPO 2015, A52），现就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "该句是最终授权决定，说明审查程序已结束且文本获准，未体现仍存在未解决的充分公开、支持或新增内容问题，因此适合作为高分依据。"
+      },
+      {
+        "location": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+        "original_text": "Claim1has been amended to specify that the therapeuticagent is niraparib.Basis for this amendment may be found in previous claim 4,and at line8 of paragraph[00o8]onpage3oftheapplicationasfiled.",
+        "translation": "第1项权利要求已修改为明确治疗剂为 niraparib。该修改的依据可见于原第4项权利要求，以及申请文件第3页段落[0008]第8行。",
+        "llm_evidence_explanation": "这直接表明 claim 1 的关键限定有原始公开依据，支持 Art.123(2) 的正面判断，也有助于支撑说明书/权利要求一致性。"
+      }
+    ],
+    "examination_material_evidence": [
+      {
+        "issue": "novelty",
+        "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt",
+        "original_text": "D1discloses inFig1theuseof olaparibinovarian and fallopian tube cancerwhohave undergoneplatinumbasedtherapy. D1,Table1 shows that 31%of thepatients selected had neitheraBRCA1notBCRA2 mutation. Thisprotocol would appeartofall within the scope of amended claims 1,4,7，8 and 9 underArticle54EPC.",
+        "translation": "D1在图1中公开了在接受铂类治疗的卵巢癌和输卵管癌患者中使用olaparib。D1的表1显示，所选患者中有31%既没有BRCA1也没有BRCA2突变。该方案似乎落入经修改后的权利要求1、4、7、8和9的范围，因此构成《欧洲专利公约》第54条下的新颖性质疑。",
+        "llm_evidence_explanation": "这是审查员对D1提出的新颖性异议，说明当时认为先前技术已公开了接近权利要求的治疗方案。"
+      },
+      {
+        "issue": "novelty",
+        "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+        "original_text": "D1 does not disclose niraparib.The claimed subject matter is therefore novel.",
+        "translation": "D1并未公开niraparib。因此，所要求保护的主题具有新颖性。",
+        "llm_evidence_explanation": "这是申请人对新颖性异议的直接反驳，核心论点是D1缺少权利要求1的关键药物niraparib。"
+      },
+      {
+        "issue": "novelty",
+        "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+        "translation": "经审查欧洲专利申请第17821262.7号后，现就所指明的指定缔约国，依据Rule 71(3) EPC通信（EPO Form 2004C）或信息（EPO Form 2004W，参见2015年6月8日EPO通知，OJ EPO 2015, A52）中所述文本和附图所对应的欧洲专利，特此授予。",
+        "llm_evidence_explanation": "最终授予决定表明审查程序已完成且专利获准，支持新颖性异议已被克服。"
+      },
+      {
+        "issue": "inventive_step",
+        "source": "14-03-2023_Amended_claims_with_annotations_LF8FSGVB1QJX7B2_ocr.txt",
+        "original_text": "for use in treating cancer in a human patient, wherein the agent is niraparib,or a\npharmaceutically acceptablesaltthereof\nand-wherein the patient is characterized by previous treatment with a platinum-\nbased therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or\nBRCA2,\nwherein the niraparib, or a pharmaceutically acceptable salt thereof, is\nadministeredasamaintenancetherapyfollowingcompleteorpartialresponsetoatleast\none platinum-based therapy, and",
+        "translation": "用于治疗人类患者中的癌症，其中所述药剂为niraparib或其药学上可接受的盐，并且该患者的特征在于先前接受过基于铂的治疗且BRCA1和/或BRCA2不存在胚系或体细胞突变，其中niraparib或其药学上可接受的盐作为维持治疗，在对至少一种基于铂的治疗获得完全或部分反应后给药，并且",
+        "llm_evidence_explanation": "This is the final narrowed claim language. It ties the inventive-step discussion to niraparib maintenance in BRCA-negative patients, which is the technical distinction relied on by the applicant."
+      },
+      {
+        "issue": "inventive_step",
+        "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+        "translation": "经对欧洲专利申请第17821262.7号进行审查后，现依据《欧洲专利公约》规则71(3)所通信的文本（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52），兹就所指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "The final grant decision is direct evidence that the inventive-step issue was overcome in examination."
+      },
+      {
+        "issue": "support",
+        "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+        "original_text": "Claim1has been amended to specify that the therapeuticagent is niraparib.Basis for this amendment may be found in previous claim 4,and at line8 of paragraph[00o8]onpage3oftheapplicationasfiled.",
+        "translation": "第1项权利要求已修改为明确治疗剂为 niraparib。该修改的依据可见于原第4项权利要求，以及申请文件第3页段落[0008]第8行。",
+        "llm_evidence_explanation": "这直接表明 claim 1 的关键限定有原始公开依据，支持 Art.123(2) 的正面判断，也有助于支撑说明书/权利要求一致性。"
+      },
+      {
+        "issue": "support",
+        "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+        "original_text": "Following examination of European patent application No.17821262.7 a European patent with the tile and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC (EPO Form 2004C) or in the information (EPO Form 2004W, cf. Notice from the EPO dated 8 June 2015, OJEPO 2015, A52) dated 21.09.23 is hereby granted in respect of the designated Contracting States.",
+        "translation": "经审查欧洲专利申请第17821262.7号后，依据 71(3) 规则通知中所指明的文本及附图，以及 21.09.23 日期的信息（EPO Form 2004W，参见 EPO 2015 年 6 月 8 日通知，OJEPO 2015, A52），现就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "最终授权表明审查员未坚持可见的充分公开、支持或新增内容异议；在本维度上应视为已通过。"
+      },
+      {
+        "issue": "clarity",
+        "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt",
+        "original_text": "According to the Board of Appeal, T1898/06, the term\"derivative\"in claims 4 is unclear underArticle84EPC.",
+        "translation": "根据上诉委员会 T1898/06 案例，权利要求4中的“derivative”一词在《欧洲专利公约》第84条下不清楚。",
+        "llm_evidence_explanation": "这是直接的清楚性异议证据，说明审查员曾以Art.84质疑权利要求的术语明确性。"
+      },
+      {
+        "issue": "clarity",
+        "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+        "original_text": "Claim1has been amended to specify that the therapeuticagent is niraparib.Basis\nfor this amendment may be found in previous claim 4,and at line8 of paragraph\n[00o8]onpage3oftheapplicationasfiled.",
+        "translation": "权利要求1已被修改为明确限定治疗剂为 niraparib。该修改的依据可见于先前的权利要求4，以及原始申请第3页第[00o8]段第8行。",
+        "llm_evidence_explanation": "申请人通过把claim 1具体限定为niraparib来收窄和明确术语范围，有助于消除不必要的泛化和边界不清风险。"
+      },
+      {
+        "issue": "clarity",
+        "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+        "translation": "在审查欧洲专利申请第17821262.7号后，依据Rule 71(3) EPC通信中所示的文本及随附文件，或依据相关信息，该欧洲专利现已就指定缔约国获准授予。",
+        "llm_evidence_explanation": "最终授权决定表明现有文本已通过EPO审查，说明剩余清楚性问题未阻止授权。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "14-03-2023_Amended_claims_with_annotations_LF8FSH8KL9DERYU_ocr.txt",
+        "original_text": "for use in treating cancer in a human patient, wherein the agent is niraparib,or a pharmaceutically acceptablesaltthereof\nand-wherein the patient is characterized by previous treatment with a platinum-based therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or BRCA2,\nwherein the niraparib, or a pharmaceutically acceptable salt thereof, is administered as a maintenancetherapy following complete or partial response to at least one platinum-based therapy, and",
+        "translation": "用于治疗人类患者癌症，其中该药剂为尼拉帕利或其药学上可接受的盐；其中该患者的特征在于先前接受过铂类治疗，并且BRCA1和/或BRCA2不存在胚系或体细胞突变；其中该尼拉帕利或其药学上可接受的盐在对至少一种铂类治疗完全或部分应答后作为维持治疗给药，且……",
+        "llm_evidence_explanation": "该权利要求以治疗人类患者癌症的医疗用途形式撰写，体现明确技术/医疗用途，不是EP Art.52意义上的排除主题。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetileand thesupportingdocuments indicated inthecommunication pursuant toRule71(3)EPC (EPOForm 2004C)orintheinformation (EPOForm 2004W,cf.Notice from the EPO dated 8 June 2015,OJEPO 2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+        "translation": "经审查欧洲专利申请第17821262.7号后，依据《欧洲专利公约》第71(3)条通信中所示的文本和附图，以及相关书目信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJEPO 2015，A52），现就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "EPO最终授权决定表明该案已通过审查，未见适格性障碍阻止授权。"
+      }
+    ],
+    "examination_rounds": 1
+  },
+  "risk_source_sentences": [
+    {
+      "issue": "novelty",
+      "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt",
+      "original_text": "D1discloses inFig1theuseof olaparibinovarian and fallopian tube cancerwhohave undergoneplatinumbasedtherapy. D1,Table1 shows that 31%of thepatients selected had neitheraBRCA1notBCRA2 mutation. Thisprotocol would appeartofall within the scope of amended claims 1,4,7，8 and 9 underArticle54EPC.",
+      "translation": "D1在图1中公开了在接受铂类治疗的卵巢癌和输卵管癌患者中使用olaparib。D1的表1显示，所选患者中有31%既没有BRCA1也没有BRCA2突变。该方案似乎落入经修改后的权利要求1、4、7、8和9的范围，因此构成《欧洲专利公约》第54条下的新颖性质疑。",
+      "llm_evidence_explanation": "这是审查员对D1提出的新颖性异议，说明当时认为先前技术已公开了接近权利要求的治疗方案。"
+    },
+    {
+      "issue": "novelty",
+      "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+      "original_text": "D1 does not disclose niraparib.The claimed subject matter is therefore novel.",
+      "translation": "D1并未公开niraparib。因此，所要求保护的主题具有新颖性。",
+      "llm_evidence_explanation": "这是申请人对新颖性异议的直接反驳，核心论点是D1缺少权利要求1的关键药物niraparib。"
+    },
+    {
+      "issue": "novelty",
+      "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经审查欧洲专利申请第17821262.7号后，现就所指明的指定缔约国，依据Rule 71(3) EPC通信（EPO Form 2004C）或信息（EPO Form 2004W，参见2015年6月8日EPO通知，OJ EPO 2015, A52）中所述文本和附图所对应的欧洲专利，特此授予。",
+      "llm_evidence_explanation": "最终授予决定表明审查程序已完成且专利获准，支持新颖性异议已被克服。"
+    },
+    {
+      "issue": "inventive_step",
+      "source": "14-03-2023_Amended_claims_with_annotations_LF8FSGVB1QJX7B2_ocr.txt",
+      "original_text": "for use in treating cancer in a human patient, wherein the agent is niraparib,or a\npharmaceutically acceptablesaltthereof\nand-wherein the patient is characterized by previous treatment with a platinum-\nbased therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or\nBRCA2,\nwherein the niraparib, or a pharmaceutically acceptable salt thereof, is\nadministeredasamaintenancetherapyfollowingcompleteorpartialresponsetoatleast\none platinum-based therapy, and",
+      "translation": "用于治疗人类患者中的癌症，其中所述药剂为niraparib或其药学上可接受的盐，并且该患者的特征在于先前接受过基于铂的治疗且BRCA1和/或BRCA2不存在胚系或体细胞突变，其中niraparib或其药学上可接受的盐作为维持治疗，在对至少一种基于铂的治疗获得完全或部分反应后给药，并且",
+      "llm_evidence_explanation": "This is the final narrowed claim language. It ties the inventive-step discussion to niraparib maintenance in BRCA-negative patients, which is the technical distinction relied on by the applicant."
+    },
+    {
+      "issue": "inventive_step",
+      "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经对欧洲专利申请第17821262.7号进行审查后，现依据《欧洲专利公约》规则71(3)所通信的文本（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52），兹就所指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "The final grant decision is direct evidence that the inventive-step issue was overcome in examination."
+    }
+  ],
+  "action_basis_source_sentences": [
+    {
+      "issue": "novelty",
+      "source": "06-05-2021_Annex_to_the_communication_E56CWG9M8399DSU_ocr.txt",
+      "original_text": "D1discloses inFig1theuseof olaparibinovarian and fallopian tube cancerwhohave undergoneplatinumbasedtherapy. D1,Table1 shows that 31%of thepatients selected had neitheraBRCA1notBCRA2 mutation. Thisprotocol would appeartofall within the scope of amended claims 1,4,7，8 and 9 underArticle54EPC.",
+      "translation": "D1在图1中公开了在接受铂类治疗的卵巢癌和输卵管癌患者中使用olaparib。D1的表1显示，所选患者中有31%既没有BRCA1也没有BRCA2突变。该方案似乎落入经修改后的权利要求1、4、7、8和9的范围，因此构成《欧洲专利公约》第54条下的新颖性质疑。",
+      "llm_evidence_explanation": "这是审查员对D1提出的新颖性异议，说明当时认为先前技术已公开了接近权利要求的治疗方案。"
+    },
+    {
+      "issue": "novelty",
+      "source": "16-11-2021_Reply_to_communication_from_the_Examining_Division_KW2B22NXIEP713W_ocr.txt",
+      "original_text": "D1 does not disclose niraparib.The claimed subject matter is therefore novel.",
+      "translation": "D1并未公开niraparib。因此，所要求保护的主题具有新颖性。",
+      "llm_evidence_explanation": "这是申请人对新颖性异议的直接反驳，核心论点是D1缺少权利要求1的关键药物niraparib。"
+    },
+    {
+      "issue": "novelty",
+      "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经审查欧洲专利申请第17821262.7号后，现就所指明的指定缔约国，依据Rule 71(3) EPC通信（EPO Form 2004C）或信息（EPO Form 2004W，参见2015年6月8日EPO通知，OJ EPO 2015, A52）中所述文本和附图所对应的欧洲专利，特此授予。",
+      "llm_evidence_explanation": "最终授予决定表明审查程序已完成且专利获准，支持新颖性异议已被克服。"
+    },
+    {
+      "issue": "inventive_step",
+      "source": "14-03-2023_Amended_claims_with_annotations_LF8FSGVB1QJX7B2_ocr.txt",
+      "original_text": "for use in treating cancer in a human patient, wherein the agent is niraparib,or a\npharmaceutically acceptablesaltthereof\nand-wherein the patient is characterized by previous treatment with a platinum-\nbased therapy and an absence of a germline or a sporadic mutation in BRCA1 and/or\nBRCA2,\nwherein the niraparib, or a pharmaceutically acceptable salt thereof, is\nadministeredasamaintenancetherapyfollowingcompleteorpartialresponsetoatleast\none platinum-based therapy, and",
+      "translation": "用于治疗人类患者中的癌症，其中所述药剂为niraparib或其药学上可接受的盐，并且该患者的特征在于先前接受过基于铂的治疗且BRCA1和/或BRCA2不存在胚系或体细胞突变，其中niraparib或其药学上可接受的盐作为维持治疗，在对至少一种基于铂的治疗获得完全或部分反应后给药，并且",
+      "llm_evidence_explanation": "This is the final narrowed claim language. It ties the inventive-step discussion to niraparib maintenance in BRCA-negative patients, which is the technical distinction relied on by the applicant."
+    },
+    {
+      "issue": "inventive_step",
+      "source": "07-12-2023_Decision_to_grant_a_European_patent_LPLULCMM1XCLGXL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.17821262.7aEuropeanpatentwiththetile\nand thesupportingdocuments indicated inthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.09.23isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经对欧洲专利申请第17821262.7号进行审查后，现依据《欧洲专利公约》规则71(3)所通信的文本（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52），兹就所指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "The final grant decision is direct evidence that the inventive-step issue was overcome in examination."
+    }
+  ]
+}

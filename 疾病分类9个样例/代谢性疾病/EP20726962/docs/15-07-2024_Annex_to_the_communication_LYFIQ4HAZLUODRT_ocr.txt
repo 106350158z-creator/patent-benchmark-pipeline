@@ -1,0 +1,153 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+15.07.2024
+Sheet
+Application No:
+20726962.2
+Date
+Feuille
+Demande n°:
+Theexaminationisbeing carried outonthefollowing applicationdocuments
+Description,Pages
+1-275
+as published
+Claims,Numbers
+1-19
+filed with entryinto theregional phasebefore the EPO
+Drawings,Sheets
+1/25-25/25
+as published
+Thepresentset of claims contains 4independent claims,formulated according
+toArt.54(5)EPC asfollows:
+Independent claim 1 relates to a combination comprising (1) a GLP-1R agonist
+aslistedthereinandanACCiinhibitorofthefollowingformula
+foruseinthetreatmentofadisease orconditionisselectedfromfattyliver,
+nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith
+cirrhosis,andnonalcoholicsteatohepatitiswith cirrhosis andwithhepatocellular
+carcinomaorwithametabolic-relateddisease.
+Independent claim5relates to a combination comprising(1)a GLP-1R agonist
+aslistedthereinandaKHKiinhibitorofthefollowingformula
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+15.07.2024
+Sheet
+Application No:
+20 726 962.2
+Date
+Feuille
+Demande n°:
+for use in the treatment of a disease or condition is selected from fatty liver,
+nonalcoholicsteatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswith
+cirrhosis,andnonalcoholicsteatohepatitiswithcirrhosisandwithhepatocellular
+carcinomaorwithametabolic-relateddisease.
+Independent claim 9 relates to a combination comprising(1) a GLP-1R agonist
+aslistedthereinandaDGAt2iinhibitorofthefollowingformula
+foruseinthetreatmentofa
+diseaseorconditionisselectedfromfattyliver,nonalcoholicsteatohepatitiswith
+liverfibrosis,nonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholic
+steatohepatitiswithcirrhosisandwithhepatocellularcarcinomaorwitha
+metabolic-relateddisease.
+aslisted thereinandaFXRainhibitorofthefollowingformula,
+EPO Form 2906 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+15.07.2024
+Sheet
+Application No:
+20 726 962.2
+Date
+Feuille
+Demande n°:
+Rla=-OCF3
+Tropifexor
+，namedtropifexor,foruse in
+thetreatmentofadiseaseorconditionisselectedfromfattyliver,nonalcoholic
+steatohepatitiswithliverfibrosis,nonalcoholicsteatohepotitiswithcirrhosis,and
+nonalcoholicsteatohepatitiswithcirrhosisandwithhepatocellularcarcinoma or
+withametabolic-relateddisease.
+Asa note,thecompounds defined asGLP-1R agonist in the above claimshave
+thiscorestructure:
+wherein A is N or C.
+2
+Withitsletterdated18.11.2021，theapplicantindicatedthatclaim14hasfor
+present thewordingofclaim14isconsidered unclear.
+3
+Priority/D1
+ThepresentprioritydocumentUS62/850,133filedon20.05.2019supports the
+subject-matterofthepresentclaims.
+Document D1 (WO2019239319，linked to EP4219487)，filed by the same
+applicant and claiming twopriorities before 20.05.2019(present priority date),
+discloses the present claimed GLP-1R agonists: see examples 1-102 of D1 are
+EPO Form 2906 01.91TRI
+
+--- PAGE 4 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+15.07.2024
+Sheet
+Application No:
+20726962.2
+Date
+Feuille
+Demande na:
+theircombinationwiththeclaimedACCinhibitor,DGAT2inhibitor,KHKinhibitor
+andFXR agonist(seelines 3-37 of page 36).The disclosure of these
+combinationsismadeinthecontextofNASH.
+claimeddiseasesfattyliver，nonalcoholicsteatohepatitiswithliverfibrosis,
+nonalcoholicsteatohepotitiswithcirrhosis,andnonalcoholicsteatohepatitiswith
+cirrhosisandwithhepatocellularcarcinomaorwithametabolic-relateddisease.
+Therewith,thepresentpriorityisnotinvalidated.
+thepresentcombinationsforuse in thetreatmentofNASH.Saiddiseasesfall
+within the broader term"fatty liver".Thus anticipating the subject-matter of the
+present claims.
+4
+newlyfiledclaimsareconsideredtobeallowable.Theapplicantistherefore
+requestedtobring thedescriptionintoconformitywiththeseclaims;careshould
+beyondthecontentoftheapplicationasoriginallyfiled(Article123(2)EPC).
+Wordings such as"the present invention"or"the compounds/use/process/
+which is actuallyclaimed.
+AccordingtoRule42(1)(c)EPCthedescriptionmustdisclosetheinventionas
+claimed and non-claimedembodiments canremainonlywhen this isclearly
+clarifying the invention (see F-IV. 4.3(ii)in the Guidelines).
+Subject-matterinthedescriptionbeingexcludedfrompatentabilityunderArticle
+53EPCneedstobeexcised,rewordedsuchthatitdoesnotfallunderthe
+exceptions topatentabilityorprominentlymarkedasnotbeingaccordingto the
+claimedinvention.
+Any statements of the general form“incorporated byreference"should be
+deleted (see Guidelines F-ll, 8). For example lines 10-11 and 15 onpage 3,
+lines 12 onpage 5,line 20onpages 6 and 8,lines 6-7 onpage 9of the
+applicationasoriginallyfiled
+EPO Form 2906 01.91TRI
+
+--- PAGE 5 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+15.07.2024
+Sheet
+5
+Application No:
+20 726 962.2
+Date
+Feuille
+Demande n°:
+TomeettherequirementsofR.42(1)(b)EPC,D1-D2shouldbeidentifiedinthe
+descriptionandtherelevantbackgrounddisclosedthereinshouldbebriefly
+discussed(seeGuidelinesF-ll4.3).
+EPOForm 290601.91TRI

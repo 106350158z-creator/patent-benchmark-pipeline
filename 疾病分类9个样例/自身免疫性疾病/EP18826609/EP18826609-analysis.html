@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patent Examination Benchmark Report</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1d2433;
+      --muted: #657084;
+      --line: #d9dee8;
+      --good: #15803d;
+      --good-bg: #dcfce7;
+      --warn: #a16207;
+      --warn-bg: #fef3c7;
+      --risk: #b91c1c;
+      --risk-bg: #fee2e2;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+    }
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 16px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(220px, 300px) 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      margin-bottom: 16px;
+    }
+    .jump-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .jump-nav a,
+    .jump-nav .nav-disabled {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .jump-nav .nav-disabled {
+      color: var(--muted);
+      background: #f1f3f6;
+      cursor: not-allowed;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 18px;
+    }
+    .preview-text {
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .preview-text.compact {
+      max-height: 140px;
+      margin-top: 6px;
+    }
+    .claims-list {
+      display: grid;
+      gap: 10px;
+    }
+    .claim-detail {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+    }
+    .claim-detail summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .claim-detail summary span {
+      margin-left: 8px;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .markush-images {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .markush-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .markush-figure img {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .markush-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 7px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .candidate-gallery {
+      margin: 10px 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .candidate-gallery summary {
+      cursor: pointer;
+      padding: 9px 11px;
+      font-weight: 650;
+      background: #f8fafc;
+    }
+    .candidate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      padding: 10px;
+    }
+    .candidate-figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .candidate-figure img {
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .candidate-figure figcaption {
+      border-top: 1px solid var(--line);
+      padding: 5px 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .link-list {
+      display: grid;
+      gap: 6px;
+      padding-left: 18px;
+    }
+    .link-list code {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      word-break: break-all;
+    }
+    .score-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 170px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .score-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .big-score {
+      font-size: 56px;
+      font-weight: 750;
+      line-height: 1;
+    }
+    .score-bar {
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+    .score-bar span {
+      display: block;
+      height: 100%;
+      background: currentColor;
+    }
+    .score-good { color: var(--good); }
+    .score-warn { color: var(--warn); }
+    .score-risk { color: var(--risk); }
+    .score-neutral { color: var(--accent); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .table-scroll {
+      overflow-x: auto;
+    }
+    .dimension-table {
+      min-width: 1500px;
+    }
+    .dimension-table th:nth-child(1),
+    .dimension-table td:nth-child(1) {
+      width: 150px;
+    }
+    .dimension-table th:nth-child(2),
+    .dimension-table td:nth-child(2) {
+      width: 220px;
+    }
+    .dimension-table th:nth-child(3),
+    .dimension-table td:nth-child(3) {
+      width: 320px;
+    }
+    .dimension-table th:nth-child(4),
+    .dimension-table td:nth-child(4),
+    .dimension-table th:nth-child(5),
+    .dimension-table td:nth-child(5) {
+      width: 340px;
+    }
+    .dimension-table th:nth-child(6),
+    .dimension-table td:nth-child(6) {
+      width: 260px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+      word-break: break-word;
+    }
+    th {
+      background: #f8fafc;
+      font-weight: 650;
+    }
+    .kv th {
+      width: 180px;
+    }
+    .dim-name {
+      width: 130px;
+      font-weight: 650;
+    }
+    .dim-desc {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .dim-score-box {
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+      display: grid;
+      gap: 6px;
+      justify-items: start;
+      min-height: 82px;
+    }
+    .dim-box-name {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .dim-box-score {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .pill {
+      display: inline-flex;
+      min-width: 48px;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-weight: 700;
+      background: #eef2ff;
+    }
+    .pill.score-good { background: var(--good-bg); }
+    .pill.score-warn { background: var(--warn-bg); }
+    .pill.score-risk { background: var(--risk-bg); }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .bilingual-list {
+      display: grid;
+      gap: 8px;
+    }
+    .source-sentence-list {
+      display: grid;
+      gap: 12px;
+    }
+    .source-sentence-list li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .source-sentence-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .source-line-meta,
+    .source-line-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .source-line-meta {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .source-line-note {
+      margin-top: 4px;
+    }
+    .translation-inline {
+      color: var(--muted);
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .tiny {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .small-link {
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tag-hit {
+      color: #166534;
+      background: #dcfce7;
+    }
+    .tag-semantic {
+      color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .evidence-original {
+      white-space: pre-wrap;
+    }
+    .source {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 820px) {
+      .grid, .columns, .preview-grid {
+        grid-template-columns: 1fr;
+      }
+      main {
+        padding: 20px 12px 32px;
+      }
+      .kv th {
+        width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Patent Examination Benchmark Report</h1>
+      <p class="subtitle">EP18826609.2 · SULPHONYL UREA DERIVATIVES AS NLRP3 INFLAMMASOME MODULATORS</p>
+      <p class="source">来源 JSON：EP18826609-analysis.json</p>
+    </header>
+
+    
+    <nav class="jump-nav">
+      <a href="#preview">Preview</a>
+      <a href="#case-info">Case</a>
+      <a href="#dimensions">Dimensions</a>
+      <a href="#risks">Risks</a>
+      <a href="#actions">Actions</a>
+      <a href="#evidence">Evidence</a>
+      <a href='../EP18755728/EP18755728-analysis.html'>上一个 HTML：EP18755728</a>
+      <span class="nav-disabled">下一个 HTML</span>
+    </nav>
+    
+    
+    <section class="card" id="preview">
+      <h2>Application Preview</h2>
+      <div class="preview-grid">
+        <div>
+          <h3>Claim Draft Preview</h3><div class='preview-text'>A compound of Formula (Iacl):
+R3S
+(R3s)0-2
+(lac-1),
+or a solvate,or pharmaceutically acceptable salt thereof, wherein:
+R2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is 4- to 8-membered monocyclic
+heterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-C6 alkenyl, C2-C6
+alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6 alkyl), -N(C1-C6
+alkyl)2, or oxo; and
+each R3s is independently Ci-C6 alkyl, Ci-Co haloalkyl, C3-Cs cycloalkyl, halo, or Cs-Cs
+heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl),-N(Ci-C6 alkyl)2, halo, or -CN.</div><p class='source'>Draft claim 1 from claims review JSON; pages 1</p><p class='source'>Draft OCR claim only; verify against the authority PDF before using as legal text.</p><p class='source'>Review status: 0/12 verified · <a href="docs/14-01-2025_Text_intended_for_grant_%28clean_copy%29_M5PTWVQZ1EWVBWD.pdf">Authority PDF</a> <a href="EP18826609-claims-review.html">Claims review HTML</a> <a href="EP18826609-claims-verified.json">Claims draft JSON</a></p>
+        </div>
+        <div>
+          <h3>Markush / Formula</h3>
+          <div class='markush-images'><figure class='markush-figure'><img src='assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c171.png' alt='Markush / Formula page image'><figcaption>score 2496.4 · 17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf, page 1</figcaption></figure></div>
+          <h3>Links</h3>
+          <ul class="link-list">
+            <li><a href="https://register.epo.org/application?number=EP18826609&amp;lng=en&amp;tab=main" target="_blank" rel="noopener noreferrer">EPO Register Main</a></li><li><a href="https://register.epo.org/application?number=EP18826609&amp;lng=en&amp;tab=doclist" target="_blank" rel="noopener noreferrer">EPO Register Documents</a></li><li><a href="https://worldwide.espacenet.com/patent/search?q=EP18826609" target="_blank" rel="noopener noreferrer">Espacenet Search</a></li>
+            <li><span>Local main HTML</span><a href="register/EP18826609-main.html">EP18826609-main.html</a></li><li><span>Local doclist CSV</span><a href="register/EP18826609-doclist.csv">EP18826609-doclist.csv</a></li>
+          </ul>
+          <h3>Original Application Files</h3>
+          <ul class="link-list">
+            <li><a href="original-application/18-12-2018_Abstract_E2QXUDU76913DSU.pdf">Abstract (18.12.2018 · 1 pages)</a></li><li><a href="original-application/18-12-2018_Claims_E2QXUDU73532DSU.pdf">Claims (18.12.2018 · 25 pages)</a></li><li><a href="original-application/18-12-2018_Description_E2QXUDU71221DSU.pdf">Description (18.12.2018 · 305 pages)</a></li><li><a href="original-application/27-06-2019_Published_international_application_-_A1_E3I3OI3A6347DSU.pdf">Published international application - A1 (27.06.2019 · 331 pages)</a></li><li><a href="original-application/14-01-2025_Bibliographic_data_of_the_European_patent_application_M5QOWNYGYX5M67F.pdf">Bibliographic data of the European patent application (14.01.2025 · 2 pages)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="card" id="case-info">
+      <h2>案件元数据</h2>
+      <table class="kv"><tr><th>法域</th><td>EP</td></tr><tr><th>申请号</th><td>EP18826609.2</td></tr><tr><th>发明名称</th><td>SULPHONYL UREA DERIVATIVES AS NLRP3 INFLAMMASOME MODULATORS</td></tr><tr><th>申请人</th><td>Nodthera Limited</td></tr><tr><th>申请日</th><td>2018-12-18</td></tr><tr><th>审查意见日期</th><td>2025-05-22</td></tr><tr><th>授权结果</th><td>granted</td></tr></table>
+    </section>
+    
+    
+    <section class="card" id="dimensions">
+      <h2>审查维度评分</h2>
+      <div class="table-scroll">
+        <table class="dimension-table">
+          <thead><tr><th>维度/分数</th><th>字段描述</th><th>分析</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>
+          <tbody><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>新颖性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否被单一现有技术直接公开，未被质疑通常为高分。</td><td>现有材料中没有看到针对Art.54新颖性的单一现有技术公开质疑；程序记录显示争议主要集中在inventive step和clarity。最终Decision to grant已明确授予欧洲专利，结合申请人回函中“claims on file are novel”的表述，当前可判断新颖性已获接受，风险很低。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>经审查欧洲专利申请第18826609.2号后，依据Rule 71(3) EPC通信中所述的文本及支持文件（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015，A52），该申请现已就指定缔约国获准授予欧洲专利。</td><td>该段来自最终授权决定，说明申请已通过审查并被授予专利；在可见材料中未见Art.54新颖性被单一现有技术直接、明确否定，因此支持新颖性维度高分。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>创造性</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>按 EPO problem-solution/COMVIK 判断区别特征是否贡献技术效果。</td><td>从PSA看，EPO已将D1确认为最接近现有技术，并把当前权利要求1视为相对于D1通式化合物的选择发明。审查员在2024年仍认为该选择可能缺乏预期的技术效果，尤其担心比较数据不能覆盖全部范围；申请人则将claim 1收窄到与示例活性更一致的化合物，并主张比较数据对修正后的范围具有支持性。随后Rule 71(3)通知及最终授权表明，审查组已接受当前文本符合Articles 54 and 56 EPC。该案主要是技术化学结构选择问题，没有明显非技术特征，因此COMVIK逻辑不构成核心争点。当前创造性风险较低，但后续无效阶段仍可能围绕D1选择起点、比较数据外推性和整个范围的效果一致性提出挑战。</td><td><div class='evidence-original'>Afterconsideringthelimitationsfromthesubject-matterclaimedbycurrentMR
+procedure the subject-matted claimed by the MR filed on 22.11.2025 appears to
+fulfiltherequirementsofArticles54and56EPC.</div></td><td>在考虑了当前主请求所限定的主题内容后，2025年11月22日提交的主请求所要求保护的主题似乎符合《欧洲专利公约》第54条和第56条的要求。</td><td>这段原文直接表明审查组已认为当前请求满足56条创造性要求，说明经修改后创造性异议已被克服。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>充分公开/支持</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>说明书是否足以实施，权利要求是否有原始公开和技术支撑。</td><td>审查记录中没有看到针对充分公开/支持或Art.123(2)的明确否定意见。相反，14.01.2025的Rule 71(3)沟通已将说明书和权利要求1-12列为拟授权文本，并在22.05.2025作出授权决定。早期答复中，申请人还明确说明若干权利要求修改有原申请基础，表明修改与原始公开存在对应支撑。虽然18.12.2024附件提到Art.84下说明书与权利要求一致性问题，但这属于清晰性/一致性而非充分公开，且未见持续的支持性异议。综合看，当前充分公开/支持风险很低。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>在审查欧洲专利申请第18826609.2号之后，依据Rule 71(3) EPC通信中所指明的文本和支持文件，或依据相关信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJEPO 2015, A52），该欧洲专利现就所指定的缔约国授予。</td><td>该句表明审查后已直接授权，说明审查程序中未保留未解决的充分公开/支持问题；结合前序Rule 71(3)文本，反映最终授权文本已被接受。</td></tr><tr><td><div class='dim-score-box score-warn'><div class='dim-box-name'>清楚性</div><div class='dim-box-score'>80</div></div></td><td class='dim-desc'>权利要求术语、边界、简洁性和 Art.84 问题。</td><td>审查中曾出现Article 84相关的清楚性/一致性问题，主要表现为权利要求1被申请人进一步限定以消除术语边界和前言基础问题；随后审查程序继续推进并最终授权，说明现行claim 1已被接受。当前风险主要只剩下历史上的说明书-权利要求一致性记录，未见仍会阻碍授权的明确清楚性缺陷。</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>经审查欧洲专利申请号18826609.2后，依据14.01.25通信中所指文件的文本，已就指定缔约国授予欧洲专利。</td><td>该原文来自最终授权决定，表明审查员最终接受了文本并授予专利，支持清楚性问题已被克服、当前维度风险较低。</td></tr><tr><td><div class='dim-score-box score-good'><div class='dim-box-name'>适格性</div><div class='dim-box-score'>100</div></div></td><td class='dim-desc'>是否落入 EP Art.52 排除主题，是否具有进一步技术效果。</td><td>从审查材料看，没有看到针对EP Art.52的排除主题异议；本案被最终授予欧洲专利，说明当前文本已通过可专利性审查。现有往来主要集中在创造性和清楚性修改，申请人也围绕这些问题提交了修订和论证，而不是围绕适格性进行实质争辩。因此，基于现有记录，适格性风险很低，后续若再被挑战，风险主要来自对“化合物/治疗用途”技术属性的抽象化解读，但现阶段授权结果已经提供了强支撑。</td><td><div class='evidence-original'>Following examination of European patent applicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicated in thecommunication pursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>经审查欧洲专利申请号18826609.2后，依据第71(3)规则通信中所示的文件以及信息（EPO Form 2004W，参见2015年6月8日EPO通知，OJ EPO 2015, A52）中所述文本，现就指定缔约国授予欧洲专利。</td><td>该原文直接表明该申请在审查后已被授予欧洲专利，说明未见足以阻碍授权的Art.52排除主题问题；因此适格性评分应为满分。</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    
+
+    <section class="card" id="risks">
+      <h2>风险原因</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>inventive_step · 27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt</div><div class='evidence-original'>D1 (WO 2017/140778),which is regarded asbeing the closest prior art,
+discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses
+asthepresentones.
+Formulta (1)
+Thesubject-matterof currentclaim1can beconsideredasaselectionfrom the
+compounds of formulaI or V disclosed in D1(claims1and 7).</div><div class='translation-inline'>D1（WO 2017/140778）被视为最接近的现有技术，其披露了具有与当前方案相同用途的式(l)（权利要求1）或式(V)（权利要求7）化合物。当前权利要求1的主题可被视为D1（权利要求1和7）所公开的式I或式V化合物中的一个选择。</div><div class='source-line-note'>该段清楚给出PSA起点：D1是最接近现有技术，且当前权利要求被评价为对D1化合物的选择，直接支撑创造性争点的技术路线。</div></li><li><div class='source-line-meta'>inventive_step · 24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</div><div class='evidence-original'>Accordingly,thepreviously-discussed comparativedata supportsthe claimed scope of amended claim
+1.Furthermore,given the ICso values for all exemplified compounds within the scope of amended
+claim 1, it is credible thatcompounds throughout the scope of the claim would possess the claimed
+improvement.</div><div class='translation-inline'>因此，前述比较数据支持修正后权利要求1的保护范围。此外，鉴于落入修正后权利要求1范围内的所有实施例化合物的IC50数值，可以认为该权利要求范围内的化合物都可信地具有所主张的改进效果。</div><div class='source-line-note'>这段体现了申请人用比较数据和缩小后的权利要求范围来回应创造性异议，核心是证明修正后的范围具有可预期的技术效果。</div></li><li><div class='source-line-meta'>inventive_step · 22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt</div><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orin theinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div><div class='translation-inline'>经审查欧洲专利申请第18826609.2号后，现就所指定缔约国授予一项欧洲专利，其文本为Rule 71(3) EPC沟通中所指明的文件以及信息文件（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）中所载内容，日期为14.01.25。</div><div class='source-line-note'>最终授予直接表明审查程序已结束且授权文本被接受，作为创造性维度的强支撑证据。</div></li><li><div class='source-line-meta'>inventive_step · inventive_step_disc</div><div class='evidence-original'>Afterconsideringthelimitationsfromthesubject-matterclaimedbycurrentMR
+procedure the subject-matted claimed by the MR filed on 22.11.2025 appears to
+fulfiltherequirementsofArticles54and56EPC.</div><div class='translation-inline'>在考虑了当前主请求所限定的主题内容后，2025年11月22日提交的主请求所要求保护的主题似乎符合《欧洲专利公约》第54条和第56条的要求。</div><div class='source-line-note'>这段原文直接表明审查组已认为当前请求满足56条创造性要求，说明经修改后创造性异议已被克服。</div></li><li><div class='source-line-meta'>clarity · 24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</div><div class='evidence-original'>Claim 1 has been amended to specifythat theCs-Ce aryl of Ris aphenyl substituted with two or three Ris. This amendment finds basis in paragraphs [0151] and [0153] of the application as filed. Claim1 hasbeenfurther amended tospecify that at least one Risis C-Csalkyl,Ci-Cshaloalkyl,orhalo. Claim 1 has alsobeen amended to specify that Rzs is a 4-to 8-membered monocyclic heterocycloalkyl. This amendment finds basis in paragraph[045] of the application as filed. Finally, claim 1 has been amended to fix the antecedent basis of &quot;the C3-Cs monocyclic cycloalkyl, polycyclic cycloalkyl&quot; by specifying that the C3-C16 cycloalkyl is a C3-Cg monocyclic cycloalkyl or polycyclic cycloalkyl.</div><div class='translation-inline'>权利要求1已作修改，以明确R的Cs-Ce芳基为带有两个或三个R取代基的苯基；进一步明确至少一个R为C1-C6烷基、C1-C6卤代烷基或卤素；又明确Rzs为4至8元单环杂环烷基；最后通过将C3-C16环烷基限定为C3-C9单环环烷基或多环环烷基，修正了“the C3-Cs monocyclic cycloalkyl, polycyclic cycloalkyl”的前言基础。</div><div class='source-line-note'>该段显示申请人对claim 1进行了具体限定并修正前言基础，直接对应EP Art.84所关心的术语边界与清楚性。</div></li></ul>
+    </section>
+    <section class="card" id="actions">
+      <h2>建议依据原文</h2>
+      <ul class='source-sentence-list'><li><div class='source-line-meta'>inventive_step · 27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt</div><div class='evidence-original'>D1 (WO 2017/140778),which is regarded asbeing the closest prior art,
+discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses
+asthepresentones.
+Formulta (1)
+Thesubject-matterof currentclaim1can beconsideredasaselectionfrom the
+compounds of formulaI or V disclosed in D1(claims1and 7).</div><div class='translation-inline'>D1（WO 2017/140778）被视为最接近的现有技术，其披露了具有与当前方案相同用途的式(l)（权利要求1）或式(V)（权利要求7）化合物。当前权利要求1的主题可被视为D1（权利要求1和7）所公开的式I或式V化合物中的一个选择。</div><div class='source-line-note'>该段清楚给出PSA起点：D1是最接近现有技术，且当前权利要求被评价为对D1化合物的选择，直接支撑创造性争点的技术路线。</div></li><li><div class='source-line-meta'>inventive_step · 24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</div><div class='evidence-original'>Accordingly,thepreviously-discussed comparativedata supportsthe claimed scope of amended claim
+1.Furthermore,given the ICso values for all exemplified compounds within the scope of amended
+claim 1, it is credible thatcompounds throughout the scope of the claim would possess the claimed
+improvement.</div><div class='translation-inline'>因此，前述比较数据支持修正后权利要求1的保护范围。此外，鉴于落入修正后权利要求1范围内的所有实施例化合物的IC50数值，可以认为该权利要求范围内的化合物都可信地具有所主张的改进效果。</div><div class='source-line-note'>这段体现了申请人用比较数据和缩小后的权利要求范围来回应创造性异议，核心是证明修正后的范围具有可预期的技术效果。</div></li><li><div class='source-line-meta'>inventive_step · 22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt</div><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orin theinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div><div class='translation-inline'>经审查欧洲专利申请第18826609.2号后，现就所指定缔约国授予一项欧洲专利，其文本为Rule 71(3) EPC沟通中所指明的文件以及信息文件（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）中所载内容，日期为14.01.25。</div><div class='source-line-note'>最终授予直接表明审查程序已结束且授权文本被接受，作为创造性维度的强支撑证据。</div></li><li><div class='source-line-meta'>inventive_step · inventive_step_disc</div><div class='evidence-original'>Afterconsideringthelimitationsfromthesubject-matterclaimedbycurrentMR
+procedure the subject-matted claimed by the MR filed on 22.11.2025 appears to
+fulfiltherequirementsofArticles54and56EPC.</div><div class='translation-inline'>在考虑了当前主请求所限定的主题内容后，2025年11月22日提交的主请求所要求保护的主题似乎符合《欧洲专利公约》第54条和第56条的要求。</div><div class='source-line-note'>这段原文直接表明审查组已认为当前请求满足56条创造性要求，说明经修改后创造性异议已被克服。</div></li><li><div class='source-line-meta'>clarity · 24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</div><div class='evidence-original'>Claim 1 has been amended to specifythat theCs-Ce aryl of Ris aphenyl substituted with two or three Ris. This amendment finds basis in paragraphs [0151] and [0153] of the application as filed. Claim1 hasbeenfurther amended tospecify that at least one Risis C-Csalkyl,Ci-Cshaloalkyl,orhalo. Claim 1 has alsobeen amended to specify that Rzs is a 4-to 8-membered monocyclic heterocycloalkyl. This amendment finds basis in paragraph[045] of the application as filed. Finally, claim 1 has been amended to fix the antecedent basis of &quot;the C3-Cs monocyclic cycloalkyl, polycyclic cycloalkyl&quot; by specifying that the C3-C16 cycloalkyl is a C3-Cg monocyclic cycloalkyl or polycyclic cycloalkyl.</div><div class='translation-inline'>权利要求1已作修改，以明确R的Cs-Ce芳基为带有两个或三个R取代基的苯基；进一步明确至少一个R为C1-C6烷基、C1-C6卤代烷基或卤素；又明确Rzs为4至8元单环杂环烷基；最后通过将C3-C16环烷基限定为C3-C9单环环烷基或多环环烷基，修正了“the C3-Cs monocyclic cycloalkyl, polycyclic cycloalkyl”的前言基础。</div><div class='source-line-note'>该段显示申请人对claim 1进行了具体限定并修正前言基础，直接对应EP Art.84所关心的术语边界与清楚性。</div></li></ul>
+    </section>
+
+    
+    <section class="card" id="evidence">
+      <h2>证据链</h2>
+      <table class="kv">
+        <tr><th>受影响权利要求</th><td>1</td></tr>
+        <tr><th>审查轮次</th><td>4</td></tr>
+      </table>
+      <h3>引用先文 / 官网相关专利</h3>
+      <table><thead><tr><th>序号</th><th>引用/相关专利</th><th>来源标记</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>1</td><td>WO2017140778<div class='small-link'><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2017140778" target="_blank" rel="noopener noreferrer">Document link</a></div></td><td><span class='tag tag-hit'>Examined text</span><div class='muted tiny'>examined_text</div></td><td>Extracted from verified patent publication references in the benchmark input.</td></tr></tbody></table>
+      <h3>说明书/支持证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td></td><td>support_disc</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>在审查欧洲专利申请第18826609.2号之后，依据Rule 71(3) EPC通信中所指明的文本和支持文件，或依据相关信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJEPO 2015, A52），该欧洲专利现就所指定的缔约国授予。</td><td>该句表明审查后已直接授权，说明审查程序中未保留未解决的充分公开/支持问题；结合前序Rule 71(3)文本，反映最终授权文本已被接受。</td></tr><tr><td></td><td>24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</td><td><div class='evidence-original'>Claim 1 has been amended to specifythat theCs-Ce aryl of Ris aphenyl substituted with two or three Ris. This amendment finds basis in paragraphs [0151] and [0153] of the application as filed. Claim1 hasbeenfurther amended tospecify that at least one Risis C-Csalkyl,Ci-Cshaloalkyl,orhalo. Claim 1 has alsobeen amended to specify that Rzs is a 4-to 8-membered monocyclic heterocycloalkyl. This amendment finds basis in paragraph[045] of the application as filed.</div></td><td>权利要求1已修改为：R的Cs-Ce芳基为带有两个或三个R基取代的苯基。该修改以原申请第[0151]和[0153]段为依据。权利要求1还进一步修改为：至少一个R基为C1-C5烷基、C1-C5卤代烷基或卤素。权利要求1还修改为：Rzs为4至8元单环杂环烷基。该修改以原申请第[045]段为依据。</td><td>这是申请人对权利要求修改所作的明确原始公开依据说明，直接对应Art.123(2)/support审查要点，表明修改并非无基础添加。</td></tr></tbody></table>
+      <h3>审查材料证据</h3>
+      <table><thead><tr><th>议题</th><th>位置/来源</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead><tbody><tr><td>novelty</td><td>22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>经审查欧洲专利申请第18826609.2号后，依据Rule 71(3) EPC通信中所述的文本及支持文件（EPO Form 2004C）或信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015，A52），该申请现已就指定缔约国获准授予欧洲专利。</td><td>授权决定表明该申请已通过实质审查流程；在所给材料中没有单一现有技术对claim 1作出新颖性否定。</td></tr><tr><td>novelty</td><td>07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt</td><td><div class='evidence-original'>We are pleased tonote that the Examinerhas recognised that theclaims onfileare novel.The Examinerhas,however,objected that the subject matter of the claims onfilelacks an inventive step in view of D1.</div></td><td>我们很高兴注意到审查员已认可现有权利要求具有新颖性。审查员不过是认为现有权利要求相对于D1缺乏创造性。</td><td>该段虽来自申请人陈述，但清楚显示当时程序争点在创造性而非新颖性，支持新颖性未被单独否定。</td></tr><tr><td>inventive_step</td><td>27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt</td><td><div class='evidence-original'>D1 (WO 2017/140778),which is regarded asbeing the closest prior art,
+discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses
+asthepresentones.
+Formulta (1)
+Thesubject-matterof currentclaim1can beconsideredasaselectionfrom the
+compounds of formulaI or V disclosed in D1(claims1and 7).</div></td><td>D1（WO 2017/140778）被视为最接近的现有技术，其披露了具有与当前方案相同用途的式(l)（权利要求1）或式(V)（权利要求7）化合物。当前权利要求1的主题可被视为D1（权利要求1和7）所公开的式I或式V化合物中的一个选择。</td><td>该段清楚给出PSA起点：D1是最接近现有技术，且当前权利要求被评价为对D1化合物的选择，直接支撑创造性争点的技术路线。</td></tr><tr><td>inventive_step</td><td>24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</td><td><div class='evidence-original'>Accordingly,thepreviously-discussed comparativedata supportsthe claimed scope of amended claim
+1.Furthermore,given the ICso values for all exemplified compounds within the scope of amended
+claim 1, it is credible thatcompounds throughout the scope of the claim would possess the claimed
+improvement.</div></td><td>因此，前述比较数据支持修正后权利要求1的保护范围。此外，鉴于落入修正后权利要求1范围内的所有实施例化合物的IC50数值，可以认为该权利要求范围内的化合物都可信地具有所主张的改进效果。</td><td>这段体现了申请人用比较数据和缩小后的权利要求范围来回应创造性异议，核心是证明修正后的范围具有可预期的技术效果。</td></tr><tr><td>inventive_step</td><td>22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile
+and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm
+2004C)orin theinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO
+2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>经审查欧洲专利申请第18826609.2号后，现就所指定缔约国授予一项欧洲专利，其文本为Rule 71(3) EPC沟通中所指明的文件以及信息文件（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJ EPO 2015, A52）中所载内容，日期为14.01.25。</td><td>最终授予直接表明审查程序已结束且授权文本被接受，作为创造性维度的强支撑证据。</td></tr><tr><td>support</td><td>24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</td><td><div class='evidence-original'>Claim 1 has been amended to specifythat theCs-Ce aryl of Ris aphenyl substituted with two or three Ris. This amendment finds basis in paragraphs [0151] and [0153] of the application as filed. Claim1 hasbeenfurther amended tospecify that at least one Risis C-Csalkyl,Ci-Cshaloalkyl,orhalo. Claim 1 has alsobeen amended to specify that Rzs is a 4-to 8-membered monocyclic heterocycloalkyl. This amendment finds basis in paragraph[045] of the application as filed.</div></td><td>权利要求1已修改为：R的Cs-Ce芳基为带有两个或三个R基取代的苯基。该修改以原申请第[0151]和[0153]段为依据。权利要求1还进一步修改为：至少一个R基为C1-C5烷基、C1-C5卤代烷基或卤素。权利要求1还修改为：Rzs为4至8元单环杂环烷基。该修改以原申请第[045]段为依据。</td><td>这是申请人对权利要求修改所作的明确原始公开依据说明，直接对应Art.123(2)/support审查要点，表明修改并非无基础添加。</td></tr><tr><td>support</td><td>22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt</td><td><div class='evidence-original'>FollowingexaminationofEuropeanpatentapplicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>在审查欧洲专利申请第18826609.2号之后，依据Rule 71(3) EPC通信中所指明的文本和支持文件，或依据相关信息（EPO Form 2004W，参见EPO于2015年6月8日发布的通知，OJEPO 2015, A52），该欧洲专利现就所指定的缔约国授予。</td><td>最终授权决定表明审查机关已接受最终文本，未留下未克服的支持/充分公开缺陷。</td></tr><tr><td>clarity</td><td>24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt</td><td><div class='evidence-original'>Claim 1 has been amended to specifythat theCs-Ce aryl of Ris aphenyl substituted with two or three Ris. This amendment finds basis in paragraphs [0151] and [0153] of the application as filed. Claim1 hasbeenfurther amended tospecify that at least one Risis C-Csalkyl,Ci-Cshaloalkyl,orhalo. Claim 1 has alsobeen amended to specify that Rzs is a 4-to 8-membered monocyclic heterocycloalkyl. This amendment finds basis in paragraph[045] of the application as filed. Finally, claim 1 has been amended to fix the antecedent basis of &quot;the C3-Cs monocyclic cycloalkyl, polycyclic cycloalkyl&quot; by specifying that the C3-C16 cycloalkyl is a C3-Cg monocyclic cycloalkyl or polycyclic cycloalkyl.</div></td><td>权利要求1已作修改，以明确R的Cs-Ce芳基为带有两个或三个R取代基的苯基；进一步明确至少一个R为C1-C6烷基、C1-C6卤代烷基或卤素；又明确Rzs为4至8元单环杂环烷基；最后通过将C3-C16环烷基限定为C3-C9单环环烷基或多环环烷基，修正了“the C3-Cs monocyclic cycloalkyl, polycyclic cycloalkyl”的前言基础。</td><td>该段显示申请人对claim 1进行了具体限定并修正前言基础，直接对应EP Art.84所关心的术语边界与清楚性。</td></tr><tr><td>clarity</td><td>14-01-2025_Communication_about_intention_to_grant_a_European_patent_M5QOWNYD1Q6S6C9_ocr.txt</td><td><div class='evidence-original'>Page3:Article84EPC Page 169:Embodiment nolongercovered by (amended) claims(Art.84EPC) See also the comments in enclosed EPO Form 2906.</div></td><td>第3页：Article84EPC；第169页：实施例已不再被（修改后的）权利要求覆盖（Art.84 EPC）。另见随附EPO Form 2906中的意见。</td><td>该段表明在授权前仍有Article 84相关的说明书/权利要求一致性调整需求，但并非对最终权利要求文字的否定，说明问题已通过修改处理。</td></tr><tr><td>eligibility</td><td>22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt</td><td><div class='evidence-original'>Following examination of European patent applicationNo.18826609.2aEuropeanpatentwiththetile and thesupportingdocuments indicated in thecommunication pursuant toRule71(3)EPC(EPOForm 2004C)orin theinformation(EPOForm 2004W,cf.Noticefrom theEPOdated8June2015,OJEPO 2015,A52) dated 14.01.25is hereby granted inrespect of the designated Contracting States.</div></td><td>经审查欧洲专利申请号18826609.2后，依据第71(3)规则通信中所示的文件以及信息（EPO Form 2004W，参见2015年6月8日EPO通知，OJ EPO 2015, A52）中所述文本，现就指定缔约国授予欧洲专利。</td><td>该连续原文显示申请已经通过审查并被授予，足以支持没有Art.52适格性障碍的结论。</td></tr></tbody></table>
+    </section>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,215 @@
+
+--- PAGE 1 ---
+Cooley Ref.NODT-004/N01EP (330150-2065)
+CLAIMS:
+1.
+A compound of Formula (I):
+(I),
+or asolvate,or pharmaceutically acceptablesalt thereof,wherein:
+R1 is C3-C16 cycloalkyl, or Cs-C1o aryl, wherein the C3-Cs monocyclic cycloalkyl,
+polycyclic cycloalkyl, or Cs-C6 aryl is optionally substituted by one or more Ris; wherein each
+Ris is independently C1-C6 alkyl, C1-C6 haloalkyl, C1-C6 alkoxy, C1-C6 haloalkoxy, or halo;
+R2 is -(CX2X2)n-R2s, wherein n is 0, 1, or 2, and each X2 is independently H, C1-C6 alkyl,
+C2-C6 alkenyl, or C2-C6 alkynyl, wherein the C1-C6 alkyl, C2-C6 alkenyl, or C2-C6 alkynyl is
+optionally substituted with one or more halo,-CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6
+alkyl), -N(C1-C6 alkyl)2, or oxo;
+R2s is 4-to 8-membered heterocycloalkyl optionally substituted with one or more C1-C6 alkyl,
+C2-C6 alkenyl, C2-C6 alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-
+C6 alkyl), -N(C1-C6 alkyl)2, or oxo; and
+R3 is 7- to 12-membered heterocycloalkyl or 5- or 6-membered heteroaryl optionally
+substituted with one or more R3s,wherein each R3s is independently C1-C6 alkyl, C1-C6
+haloalkyl, C3-Cs cycloalkyl, halo, or C3-Cs heterocycloalkyl wherein the Ci-C6 alkyl, C1-C6
+haloalkyl, C3-Cs cycloalkyl, or C3-Cs heterocycloalkyl is optionally substituted with -O(Ci-C6
+alkyl), -N(C1-C6 alkyl)2, halo, or -CN
+2. The compound of any one of the preceding claims, wherein R1 is C3-C7 monocyclic
+cycloalkyl, C9-C1o bicyclic cycloalkyl, Ci2-C16 tricyclic cycloalkyl, or Cs-C1o aryl, wherein the
+C3-C7 monocyclic cycloalkyl, C9-C1o bicyclic cycloalkyl, C12-C16 tricyclic cycloalkyl, or C5-C10
+aryl, is optionally substituted by one or more Ris;
+optionally wherein:
+306
+243732012 v1
+
+--- PAGE 2 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+(a) the C3-C7 monocyclic cycloalkyl is cyclopentyl, cyclohexyl, or cycloheptyl, wherein
+the cyclopentyl, cyclohexyl, or cycloheptyl is optionally substituted by one or more Ris; further
+optionally wherein the C3-C7monocyclic cycloalkylis
+of
+(b) the Cg-Cio bicyclic cycloalkyl is
+whereinn
+is 0, 1, or 2; optionally Ris
+ ; further optionally
+(c)the C12-C16 tricyclic cycloalkyl is
+of
+, wherein n and na
+each independently are 0, 1, 2, or 3; further optionally
+; and/or
+(d) the Cs-Cio aryl is phenyl is substituted by one, two, or three Ris; optionally
+R1S
+307
+243732012v1
+
+--- PAGE 3 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+orfurther optionally
+3.
+The compound of claim 1 or 2, wherein R2 is -R2s, -(CX2X2)-R2s, Or -(CX2X2)2-R2s.
+4.
+The compound of any one of claims 1 to 3, wherein R2s is 4- to 8-membered
+heterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-C6 alkenyl, C2-C6
+alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6 alkyl), -N(C1-C6
+alkyl)2, or ox0;
+optionally oxetanyl, azetidinyl, tetrahydrofuranyl, pyrrolidinyl, tetrahydropyranyl,
+piperidinyl, morpholinyl, azepanyl, 2-azaspiro[3.3]heptane, 2-oxaspiro[3.3]heptane, or bridged
+quinuclidinyl, wherein the oxetanyl, azetidinyl, tetrahydrofuranyl, pyrrolidinyl,
+tetrahydropyranyl, piperidinyl, morpholinyl, azepanyl, 2-azaspiro[3.3]heptane, 2-
+308
+243732012 v1
+
+--- PAGE 4 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+Oxaspiro[3.3]heptane, or bridged quinuclidinyl is optionally substituted with one or more C1-C6
+alkyl, C1-C6 haloalkyl, or oxo; or
+furtheroptionally
+5.
+The compound of any one of claims 1 to 4,wherein R3 is 7-to 12-membered
+heterocycloalkyl optionally substituted with one or moreR3s;
+optionally wherein R3 is pyrrolyl, pyrazolyl, imidazolyl, triazolyl, tetrazolyl, isoxazolyl,
+furanyl, oxazolyl, isothiazolyl, thiadiazolyl, pyridinyl, pyrimidinyl, pyridazinyl, or 4,5,6,7-
+tetrahydrobenzo[cJisoxazole, wherein the pyrrolyl, pyrazolyl, imidazolyl, triazolyl, tetrazolyl,
+309
+243732012v1
+
+--- PAGE 5 ---
+Cooley Ref NODT-004/N01EP (330150-2065)
+isoxazolyl, furanyl, oxazolyl, isothiazolyl, thiadiazolyl, pyridinyl, pyrimidinyl, pyridazinyl, or
+4,5,6,7-tetrahydrobenzo[cJisoxazole is optionally substituted with one or more R3s; or
+further optionally wherein R3 is
+6.
+The compound of any one of claims 1 to 5, wherein at least one R3s is Ci-C6 alkyl, Ci-C6
+haloalkyl, C3-Cs cycloalkyl, halo, or C3-Cs heterocycloalkyl wherein the C1-C6 alkyl, C1-C6
+haloalkyl, C3-Cs cycloalkyl, or C3-Cs heterocycloalkyl is optionally substituted with -O(Ci-C6
+alkyl), -N(C1-C6 alkyl)2, halo, or -CN;
+310
+243732012v1
+
+--- PAGE 6 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+optionallywherein at least oneR3sis
+,methyl, ethyl, isopropyl, -
+CH2OCH3,-CH2CF3,-CH2CH2OCH3,-CH2CN,CH2CF2,Or-CH2CH2N(CH3)2.
+7.
+The compound of any one of the preceding claims, wherein the compound is of Formula
+(Ia-1), (Ia-2), (Ib-1), (Ib-2), (Ib-3), (Ib-1a), (Ib-1b), (Ib-1c), (Ic-1), (Ic-2), (Ic-3), (Ic-4), (Ic-5),
+(Ic-6), (Ic-7), (Ic-8), (Iab-1), (Iab-2), (Iac-1), (Iac-2), (Iac-3), (Iac-4), (Ibc-1), (Ibc-2), (Iabc-1),
+(labc-1a),or (Iabc-1b):
+R1S
+(la-1);
+(Ia-2)
+R2S
+R2s (Ib-2);
+R2s (Ib-3),
+(Ib-1);
+(Ib-1a);
+(Ib-1b);
+(Ib-1c);
+N
+R2
+(Ic-1);
+R2
+(Ic-2);
+0
+R3S
+(R3S)2
+R
+(Ic-3);
+(Ic-4);
+311
+243732012v1
+
+--- PAGE 7 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+(Ic-5);
+R
+(Ic-6);
+(Ic-7);
+(Ic-8),
+R
+R2S
+R2S
+(Iab-1);
+(Iab-2);
+R1S
+(R3s)0-2
+R
+(R3s)0-2
+R2
+(Iac-1);
+(Iac-2);
+R
+(Ilac-3);
+(Iac-4),
+(R3S)0-2
+R2S
+(Ibc-1);
+(Ibc-2),
+（
+(R3s)0-2
+(R3S)0-2
+(Iabc-1);
+(Iabc-1a); or
+312
+243732012v1
+
+--- PAGE 8 ---
+CooleyRef.NODT-004/N01EP(330150-2065)
+-R3S
+(R3s)0-2
+(labc-1b)
+Or a solvate,or pharmaceutically acceptable salt thereof,wherein R1,R2s,R2,and R are
+asdescribedherein.
+8.
+The compound of any one of claims 1 to 7, wherein the compound is of Formula (Iabc-
+la):
+N-R3S
+(R3s)0-2
+(Iabc-1a)
+or a solvate,or pharmaceutically acceptable salt thereof,whereinR3s is as described
+herein.
+9.
+The compound of any one of the claims 1 to 8, being selected from Compound Nos. 1-166
+and pharmaceutically acceptable salts thereof.
+10.A pharmaceutical composition comprising the compound of any one of claims 1 to 9 or a
+11.The compound of any one of claims 1 to 9, or the pharmaceutical composition of claim 10,
+for use in inhibiting inflammasome activity; optionally, the inflammasome is NLRP3
+inflammasome,and the activityisinvitroor invivo.
+12.
+.The compound of any one of claims 1 to 9, or the pharmaceutical composition of claim 10,
+for useintreating or preventing a disease or disorder;preferablywherein the disease or disorder
+313
+243732012v1
+
+--- PAGE 9 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+is an inflammatory disorder,an autoinflammatory disorder,an autoimmune disorder,a
+neurodegenerative disease, or cancer.
+13.The compound or pharmaceutical composition for use of claim 11 or 12,wherein the
+disease or disorderis aninflammatory disorder,an autoinflammatory disorder or an autoimmune
+disorder; optionally, the disease or disorder is selected from cryopyrin-associated
+autoinflammatory syndrome (CAPS; e.g., familial cold autoinflammatory syndrome (FCAS),
+Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and articular
+(CINCA) syndrome/ neonatal-onset multisystem inflammatory disease (NOMID)), familial
+Mediterraneanfever (FMF),nonalcoholicfatty liver disease (NAFLD),non-alcoholic
+steatohepatitis (NASH), gout, rheumatoid arthritis, osteoarthritis, Crohn's disease, chronic
+obstructive pulmonary disease (COPD), chronic kidney disease (CKD), fibrosis, obesity, type 2
+diabetes, multiple sclerosis, dermatological diseases (e.g., acne) and neuroinflammation
+occurring in protein misfolding diseases (e.g.,Prion diseases).
+14.The compound or pharmaceutical composition for use of claims 11 or 12, wherein disease
+or disorder is a neurodegenerative disease; optionally, the disease or disorder is Parkinson's
+disease orAlzheimer's disease.
+15.The compound or pharmaceutical composition for use of claims 11 or 12,wherein the
+disease or disorder is cancer; optionally, the cancer is metastasising cancer, gastrointestinal
+cancer, brain cancer, skin cancer, non-small-cell lung carcinoma,head and neck squamous cell
+carcinoma or colorectal adenocarcinoma.
+314
+243732012v1

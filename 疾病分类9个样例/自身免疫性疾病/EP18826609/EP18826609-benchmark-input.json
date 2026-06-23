@@ -1,0 +1,1382 @@
+{
+  "application_number": "EP18826609.2",
+  "benchmark_input": {
+    "drug_structure": {
+      "markush_or_formula_snippets": [
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "text": "A compound of Formula (Iacl): R3S (R3s)0-2 (lac-1), or a solvate,or pharmaceutically acceptable salt thereof, wherein: R2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is 4- to 8-membered monocyclic heterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-C6 alkenyl, C2-C6 alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6 alkyl), -N(C1-C6 alkyl)2, or oxo; and each R3s is independently Ci-C6 alkyl, Ci-Co haloalkyl, C3-Cs cycloalkyl, halo, or Cs-Cs heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl),-N(Ci-C6 alkyl)2, halo, or -CN."
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "videoconference. 2 The main aspects tobe discussed during the oral proceedings are: 2.1 Inventivestep(Article84EPC) The present application claims compounds of formula (l): R wherein: - R1 is a cycloalkyl or a bi or tri substituted phenyl, EPO Form 2906 01.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 27.06.2024 Sheet 2 ApplicationNo: 18 826 609.2 Date Feuille Demande n°: -R2 is -(CX1X2)n-R2s with n=0-2 and R2s=heterocycloalkyl -R3isaheterocycloalkylorheterocycloaryl usefultotreatdiseasesconnectedtotheinhibitionofthe"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "vationinperipheral blood mononuclearcells (PBMC). Closest prior art D1 (WO 2017/140778),which is regarded asbeing the closest prior art, discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses asthepresentones. Formulta (1) Thesubject-matterofcurrentclaim1canbeconsideredasaselectionfrom the compounds of formulaI or V disclosed in D1(claims1and 7).Forexample startingfromthecompoundsofformula(l)ofD1forarrivingatthepresent claimed compounds it has to be selected J to be S, W to be -N (R1)2 (e.g. claims"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "2, 5 of D1), R1 to be an aryl or heteroalkyl, Q=O and W2R2 a ring. Furtherinorder to arrivefrom thecompoundsof formula(V)of D1at the present claimed ones,then the single selection tobedone is the substituent R1W1,whichhasbeone of thefollowingpreferred groups disclosed inclaim6 of D1: whereinthismoietyisa-N(heterocycle)R3structureandR3isaheterocyclylor heteroaryl. As regards the specific examples disclosed in D1, compounds 17,19,35 and 39 appear tobetheclosest structural one"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "improved inhibitory activity. Inviewof thesefacts it is considered that the abovetechnical problemwasnot solvedoverthewholeclaimedscope.Consequently,ithastobereformulated connected to the inhibition of NLRP3. Since thepresent compounds of claim 1 samelevelofactivityismaintained. Thus,inordertofulfil therequirementsofArticle56EPCeitherexperimental data will beprovided supporting that substantially all the claimed compounds haveanunexpected propertyorimproved activityover the structurallyclosest priorartcompounds(D1),whichi"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "rm on 07-10-2022 Amendments(Article123(2)EPC) requirementsofArticle123(2)EPC. 2 Inventivestep(Article56EPC) are maintained. 2.1 Thepresent claimed compounds of formula(l)are useful to treat diseases connected to the inhibitionof theNLRP3 activation. N R3 R2 (I), wherein R1 is a cycloalkyl or aryl, R2 is -(CX1X2)n-R2s with n=0-2 and 2.2 Closest prior art D1, which is regarded as being the closest prior art, discloses compounds of formula (l) (claim 1) or (V)(claim 7) with the same uses as the present ones. Formula (1) Fomu"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "la V from the compounds of formulaIor Vdisclosed in this document(claims 1 and 7) for the same use.The main selection which appears to be the core of the EPOForm 2906 01.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 17.04.2023 Sheet 2 Application No: 18 826 609.2 Date Feuille Demande n°: currentclaimedsubject-matterisrepresentedbythedefinitionsofthepresent R2and R3whichcontainbothaheter"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "ingDivisionwouldliketounderline thatareseveral examplesinD1containingadirectlyattachedheterocycle activity. Thus,it is considered that since thepresent general formula claimed by claim 1 is a selection over the structure (l) of D1 and D1 discloses examples having a heterocycledirectlylinkedonthenitrogencorrespondingtothepresentNR2R3 as well as compounds wherein the nitrogen corresponding to the present NR2R3isbisubstituted,the skilled personwould expect thesame level of activity for the present claimed compounds. Combinin"
+        }
+      ],
+      "smiles": [],
+      "extraction_note": "先按 Formula/Markush OCR 上下文定位 PDF 页面，再用 OpenCV 连通域和线段特征切出候选结构图；markush_images 为自动筛选 Top 候选，markush_candidate_images 保留候选图库供人工复核。",
+      "markush_images": [
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c171.png",
+          "bbox_px": [
+            609,
+            1417,
+            855,
+            1643
+          ],
+          "score": 2496.4,
+          "image_score": 346.4,
+          "context_priority": 2150,
+          "line_count": 53,
+          "slanted_line_count": 13,
+          "density": 0.06044,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c203.png",
+          "bbox_px": [
+            278,
+            477,
+            589,
+            644
+          ],
+          "score": 2289.8,
+          "image_score": 389.8,
+          "context_priority": 1900,
+          "line_count": 86,
+          "slanted_line_count": 9,
+          "density": 0.10239,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c185.png",
+          "bbox_px": [
+            619,
+            714,
+            801,
+            865
+          ],
+          "score": 2121.8,
+          "image_score": 221.8,
+          "context_priority": 1900,
+          "line_count": 26,
+          "slanted_line_count": 15,
+          "density": 0.04126,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_candidate_images": [
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c173.png",
+          "bbox_px": [
+            200,
+            1270,
+            587,
+            1437
+          ],
+          "score": 2518.2,
+          "image_score": 368.2,
+          "context_priority": 2150,
+          "line_count": 134,
+          "slanted_line_count": 2,
+          "density": 0.11103,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c171.png",
+          "bbox_px": [
+            609,
+            1417,
+            855,
+            1643
+          ],
+          "score": 2496.4,
+          "image_score": 346.4,
+          "context_priority": 2150,
+          "line_count": 53,
+          "slanted_line_count": 13,
+          "density": 0.06044,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c203.png",
+          "bbox_px": [
+            278,
+            477,
+            589,
+            644
+          ],
+          "score": 2289.8,
+          "image_score": 389.8,
+          "context_priority": 1900,
+          "line_count": 86,
+          "slanted_line_count": 9,
+          "density": 0.10239,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c146.png",
+          "bbox_px": [
+            392,
+            543,
+            730,
+            616
+          ],
+          "score": 2276.0,
+          "image_score": 126.0,
+          "context_priority": 2150,
+          "line_count": 60,
+          "slanted_line_count": 0,
+          "density": 0.06712,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c128.png",
+          "bbox_px": [
+            841,
+            97,
+            1009,
+            178
+          ],
+          "score": 2271.0,
+          "image_score": 121.0,
+          "context_priority": 2150,
+          "line_count": 50,
+          "slanted_line_count": 2,
+          "density": 0.13867,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c126.png",
+          "bbox_px": [
+            1057,
+            924,
+            1288,
+            986
+          ],
+          "score": 2259.4,
+          "image_score": 109.4,
+          "context_priority": 2150,
+          "line_count": 48,
+          "slanted_line_count": 0,
+          "density": 0.11151,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c132.png",
+          "bbox_px": [
+            956,
+            1266,
+            1194,
+            1333
+          ],
+          "score": 2259.4,
+          "image_score": 109.4,
+          "context_priority": 2150,
+          "line_count": 48,
+          "slanted_line_count": 0,
+          "density": 0.12091,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c141.png",
+          "bbox_px": [
+            271,
+            1726,
+            571,
+            1795
+          ],
+          "score": 2256.2,
+          "image_score": 106.2,
+          "context_priority": 2150,
+          "line_count": 49,
+          "slanted_line_count": 0,
+          "density": 0.1099,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c127.png",
+          "bbox_px": [
+            275,
+            762,
+            481,
+            830
+          ],
+          "score": 2252.2,
+          "image_score": 102.2,
+          "context_priority": 2150,
+          "line_count": 44,
+          "slanted_line_count": 0,
+          "density": 0.11351,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c101.png",
+          "bbox_px": [
+            798,
+            1057,
+            964,
+            1118
+          ],
+          "score": 2241.4,
+          "image_score": 91.4,
+          "context_priority": 2150,
+          "line_count": 38,
+          "slanted_line_count": 0,
+          "density": 0.13046,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c142.png",
+          "bbox_px": [
+            155,
+            487,
+            423,
+            563
+          ],
+          "score": 2241.4,
+          "image_score": 91.4,
+          "context_priority": 2150,
+          "line_count": 38,
+          "slanted_line_count": 0,
+          "density": 0.08508,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c115.png",
+          "bbox_px": [
+            324,
+            964,
+            509,
+            1026
+          ],
+          "score": 2239.6,
+          "image_score": 89.6,
+          "context_priority": 2150,
+          "line_count": 37,
+          "slanted_line_count": 0,
+          "density": 0.12738,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c135.png",
+          "bbox_px": [
+            169,
+            337,
+            430,
+            402
+          ],
+          "score": 2239.6,
+          "image_score": 89.6,
+          "context_priority": 2150,
+          "line_count": 37,
+          "slanted_line_count": 0,
+          "density": 0.11482,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c158.png",
+          "bbox_px": [
+            156,
+            64,
+            483,
+            185
+          ],
+          "score": 2239.4,
+          "image_score": 89.4,
+          "context_priority": 2150,
+          "line_count": 28,
+          "slanted_line_count": 4,
+          "density": 0.04089,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c116.png",
+          "bbox_px": [
+            481,
+            1226,
+            641,
+            1294
+          ],
+          "score": 2232.4,
+          "image_score": 82.4,
+          "context_priority": 2150,
+          "line_count": 33,
+          "slanted_line_count": 0,
+          "density": 0.14329,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c110.png",
+          "bbox_px": [
+            409,
+            392,
+            581,
+            455
+          ],
+          "score": 2223.4,
+          "image_score": 73.4,
+          "context_priority": 2150,
+          "line_count": 28,
+          "slanted_line_count": 0,
+          "density": 0.08841,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c092.png",
+          "bbox_px": [
+            870,
+            1732,
+            1012,
+            1795
+          ],
+          "score": 2219.8,
+          "image_score": 69.8,
+          "context_priority": 2150,
+          "line_count": 26,
+          "slanted_line_count": 0,
+          "density": 0.1233,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c113.png",
+          "bbox_px": [
+            980,
+            722,
+            1159,
+            784
+          ],
+          "score": 2219.8,
+          "image_score": 69.8,
+          "context_priority": 2150,
+          "line_count": 26,
+          "slanted_line_count": 0,
+          "density": 0.12534,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001_c122.png",
+          "bbox_px": [
+            571,
+            70,
+            674,
+            179
+          ],
+          "score": 2219.6,
+          "image_score": 69.6,
+          "context_priority": 2150,
+          "line_count": 17,
+          "slanted_line_count": 4,
+          "density": 0.08854,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c185.png",
+          "bbox_px": [
+            619,
+            714,
+            801,
+            865
+          ],
+          "score": 2121.8,
+          "image_score": 221.8,
+          "context_priority": 1900,
+          "line_count": 26,
+          "slanted_line_count": 15,
+          "density": 0.04126,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c178.png",
+          "bbox_px": [
+            289,
+            1298,
+            418,
+            1447
+          ],
+          "score": 2077.8,
+          "image_score": 177.8,
+          "context_priority": 1900,
+          "line_count": 16,
+          "slanted_line_count": 10,
+          "density": 0.04656,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c198.png",
+          "bbox_px": [
+            277,
+            746,
+            595,
+            904
+          ],
+          "score": 2044.2,
+          "image_score": 144.2,
+          "context_priority": 1900,
+          "line_count": 34,
+          "slanted_line_count": 15,
+          "density": 0.03374,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c182.png",
+          "bbox_px": [
+            830,
+            68,
+            1020,
+            182
+          ],
+          "score": 2034.4,
+          "image_score": 134.4,
+          "context_priority": 1900,
+          "line_count": 53,
+          "slanted_line_count": 4,
+          "density": 0.09224,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c176.png",
+          "bbox_px": [
+            762,
+            247,
+            1071,
+            315
+          ],
+          "score": 2033.2,
+          "image_score": 133.2,
+          "context_priority": 1900,
+          "line_count": 64,
+          "slanted_line_count": 0,
+          "density": 0.11384,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c170.png",
+          "bbox_px": [
+            382,
+            301,
+            624,
+            368
+          ],
+          "score": 2014.8,
+          "image_score": 114.8,
+          "context_priority": 1900,
+          "line_count": 51,
+          "slanted_line_count": 0,
+          "density": 0.12156,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c175.png",
+          "bbox_px": [
+            582,
+            1459,
+            853,
+            1526
+          ],
+          "score": 2014.8,
+          "image_score": 114.8,
+          "context_priority": 1900,
+          "line_count": 51,
+          "slanted_line_count": 0,
+          "density": 0.11797,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c167.png",
+          "bbox_px": [
+            629,
+            301,
+            860,
+            368
+          ],
+          "score": 2002.2,
+          "image_score": 102.2,
+          "context_priority": 1900,
+          "line_count": 44,
+          "slanted_line_count": 0,
+          "density": 0.10848,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c153.png",
+          "bbox_px": [
+            760,
+            1054,
+            944,
+            1121
+          ],
+          "score": 1996.8,
+          "image_score": 96.8,
+          "context_priority": 1900,
+          "line_count": 41,
+          "slanted_line_count": 0,
+          "density": 0.14901,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c190.png",
+          "bbox_px": [
+            156,
+            65,
+            482,
+            185
+          ],
+          "score": 1990.8,
+          "image_score": 90.8,
+          "context_priority": 1900,
+          "line_count": 31,
+          "slanted_line_count": 3,
+          "density": 0.04218,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c127.png",
+          "bbox_px": [
+            1095,
+            394,
+            1228,
+            462
+          ],
+          "score": 1990.4,
+          "image_score": 90.4,
+          "context_priority": 1900,
+          "line_count": 33,
+          "slanted_line_count": 2,
+          "density": 0.16984,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c144.png",
+          "bbox_px": [
+            1102,
+            1133,
+            1281,
+            1195
+          ],
+          "score": 1987.8,
+          "image_score": 87.8,
+          "context_priority": 1900,
+          "line_count": 36,
+          "slanted_line_count": 0,
+          "density": 0.12498,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c148.png",
+          "bbox_px": [
+            275,
+            394,
+            438,
+            462
+          ],
+          "score": 1982.4,
+          "image_score": 82.4,
+          "context_priority": 1900,
+          "line_count": 33,
+          "slanted_line_count": 0,
+          "density": 0.14336,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c126.png",
+          "bbox_px": [
+            800,
+            355,
+            951,
+            417
+          ],
+          "score": 1977.0,
+          "image_score": 77.0,
+          "context_priority": 1900,
+          "line_count": 30,
+          "slanted_line_count": 0,
+          "density": 0.13192,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c135.png",
+          "bbox_px": [
+            614,
+            434,
+            773,
+            496
+          ],
+          "score": 1975.2,
+          "image_score": 75.2,
+          "context_priority": 1900,
+          "line_count": 29,
+          "slanted_line_count": 0,
+          "density": 0.14222,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c142.png",
+          "bbox_px": [
+            691,
+            581,
+            844,
+            649
+          ],
+          "score": 1973.4,
+          "image_score": 73.4,
+          "context_priority": 1900,
+          "line_count": 28,
+          "slanted_line_count": 0,
+          "density": 0.14398,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002_c162.png",
+          "bbox_px": [
+            457,
+            394,
+            644,
+            462
+          ],
+          "score": 1971.6,
+          "image_score": 71.6,
+          "context_priority": 1900,
+          "line_count": 27,
+          "slanted_line_count": 0,
+          "density": 0.16515,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p001_c159.png",
+          "bbox_px": [
+            145,
+            1231,
+            1062,
+            1416
+          ],
+          "score": 1271.0,
+          "image_score": 671.0,
+          "context_priority": 600,
+          "line_count": 245,
+          "slanted_line_count": 23,
+          "density": 0.07201,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p003_c042.png",
+          "bbox_px": [
+            217,
+            1173,
+            971,
+            1241
+          ],
+          "score": 1123.2,
+          "image_score": 523.2,
+          "context_priority": 600,
+          "line_count": 144,
+          "slanted_line_count": 0,
+          "density": 0.12715,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p001_c158.png",
+          "bbox_px": [
+            411,
+            456,
+            924,
+            677
+          ],
+          "score": 1094.0,
+          "image_score": 494.0,
+          "context_priority": 600,
+          "line_count": 65,
+          "slanted_line_count": 24,
+          "density": 0.07013,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p001_c213.png",
+          "bbox_px": [
+            271,
+            1784,
+            956,
+            1854
+          ],
+          "score": 1087.2,
+          "image_score": 487.2,
+          "context_priority": 600,
+          "line_count": 124,
+          "slanted_line_count": 0,
+          "density": 0.14006,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p001_c155.png",
+          "bbox_px": [
+            649,
+            1610,
+            1052,
+            1808
+          ],
+          "score": 1080.2,
+          "image_score": 480.2,
+          "context_priority": 600,
+          "line_count": 54,
+          "slanted_line_count": 40,
+          "density": 0.04467,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p003_c047.png",
+          "bbox_px": [
+            156,
+            695,
+            378,
+            942
+          ],
+          "score": 1067.6,
+          "image_score": 467.6,
+          "context_priority": 600,
+          "line_count": 47,
+          "slanted_line_count": 27,
+          "density": 0.04889,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p001_c148.png",
+          "bbox_px": [
+            727,
+            1236,
+            1044,
+            1411
+          ],
+          "score": 1050.2,
+          "image_score": 450.2,
+          "context_priority": 600,
+          "line_count": 84,
+          "slanted_line_count": 22,
+          "density": 0.08431,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p001_c154.png",
+          "bbox_px": [
+            141,
+            1438,
+            535,
+            1635
+          ],
+          "score": 1042.4,
+          "image_score": 442.4,
+          "context_priority": 600,
+          "line_count": 53,
+          "slanted_line_count": 31,
+          "density": 0.04565,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p003_c048.png",
+          "bbox_px": [
+            747,
+            1343,
+            1012,
+            1571
+          ],
+          "score": 1010.2,
+          "image_score": 410.2,
+          "context_priority": 600,
+          "line_count": 44,
+          "slanted_line_count": 30,
+          "density": 0.06966,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/19-12-2024_Claims_M4VHIAB219BEKRC_p001_c133.png",
+          "bbox_px": [
+            1079,
+            1190,
+            1260,
+            1411
+          ],
+          "score": 977.8,
+          "image_score": 377.8,
+          "context_priority": 600,
+          "line_count": 56,
+          "slanted_line_count": 18,
+          "density": 0.0703,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p003_c298.png",
+          "bbox_px": [
+            837,
+            70,
+            1013,
+            179
+          ],
+          "score": 976.0,
+          "image_score": 126.0,
+          "context_priority": 850,
+          "line_count": 55,
+          "slanted_line_count": 1,
+          "density": 0.10603,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 3,
+          "image_path": "assets/markush-candidates/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p003_c292.png",
+          "bbox_px": [
+            386,
+            1097,
+            606,
+            1165
+          ],
+          "score": 972.4,
+          "image_score": 122.4,
+          "context_priority": 850,
+          "line_count": 53,
+          "slanted_line_count": 1,
+          "density": 0.15762,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_page_images": [
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p001.png",
+          "context_priority": 2150,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 2,
+          "image_path": "assets/markush-pages/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p002.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "pdf": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787.pdf",
+          "page": 3,
+          "image_path": "assets/markush-pages/17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_p003.png",
+          "context_priority": 850,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/19-12-2024_Claims_M4VHIAB219BEKRC_p001.png",
+          "context_priority": 600,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+          "pdf": "19-12-2024_Claims_M4VHIAB219BEKRC.pdf",
+          "page": 3,
+          "image_path": "assets/markush-pages/19-12-2024_Claims_M4VHIAB219BEKRC_p003.png",
+          "context_priority": 600,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p001.png",
+          "context_priority": 600,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "pdf": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T.pdf",
+          "page": 5,
+          "image_path": "assets/markush-pages/27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_p005.png",
+          "context_priority": 250,
+          "extraction_method": "keyword-scored page fallback"
+        }
+      ],
+      "markush_extraction_status": {
+        "status": "selected",
+        "reason": "At least one visual candidate passed the chemical-structure filters.",
+        "selected_count": 3,
+        "candidate_count": 48,
+        "page_count": 7,
+        "snippet_count": 8
+      }
+    },
+    "claim_text": {
+      "source": "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+      "source_type": "ocr_preview",
+      "claim_1": "A compound of Formula (Iacl): R3S (R3s)0-2 (lac-1), or a solvate,or pharmaceutically acceptable salt thereof, wherein: R2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is 4- to 8-membered monocyclic heterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-C6 alkenyl, C2-C6 alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6 alkyl), -N(C1-C6 alkyl)2, or oxo; and each R3s is independently Ci-C6 alkyl, Ci-Co haloalkyl, C3-Cs cycloalkyl, halo, or Cs-Cs heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl),-N(Ci-C6 alkyl)2, halo, or -CN.",
+      "target_claims": [
+        {
+          "claim_number": 1,
+          "text": "A compound of Formula (Iacl): R3S (R3s)0-2 (lac-1), or a solvate,or pharmaceutically acceptable salt thereof, wherein: R2 is -(CH2)n-R2s, wherein n is 0, 1, or 2, and R2s is 4- to 8-membered monocyclic heterocycloalkyl optionally substituted with one or more Ci-C6 alkyl, C2-C6 alkenyl, C2-C6 alkynyl, C1-C6 haloalkyl, halo, -CN, -OH, -O(C1-C6 alkyl), -NH2, -NH(C1-C6 alkyl), -N(C1-C6 alkyl)2, or oxo; and each R3s is independently Ci-C6 alkyl, Ci-Co haloalkyl, C3-Cs cycloalkyl, halo, or Cs-Cs heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl),-N(Ci-C6 alkyl)2, halo, or -CN."
+        }
+      ],
+      "claims_verified_json": "EP18826609-claims-verified.json",
+      "claims_review_status": "needs_human_review",
+      "claims_review_verified_count": 0,
+      "claims_review_total_count": 12
+    },
+    "jurisdiction": "EP",
+    "application_number": "EP18826609.2",
+    "title": "SULPHONYL UREA DERIVATIVES AS NLRP3 INFLAMMASOME MODULATORS",
+    "applicant": "Nodthera Limited",
+    "filing_date": "2018-12-18",
+    "priority_date": "2017-12-18",
+    "known_outcome": {
+      "outcome": "granted",
+      "grant_label": "yes",
+      "source": "22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt",
+      "date": ""
+    },
+    "specification_data": {
+      "examples": [
+        {
+          "source": "07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt",
+          "text": "claims onfileare novel.The Examinerhas,however,objected that the subject matter of the claims onfilelacks an inventive step in view of D1.The Examiner has particularly highlighted Examples17, 35, and 39 of D1. theApplicanthasnowsynthesisedandtestedthecompoundofExample17fromD1inthePBMC assay described in thepresent application as filed(seepages 294to 295 of the application as filed) and the majority of tests returned an IC50 value of >10 μM. The compound ofExample17hasthefollowingstructure: By contrast,fromareviewof all compoundswithinthepresentapplication,wesubmit thattheclosest ） H Na Example 46of t"
+        },
+        {
+          "source": "07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt",
+          "text": "hepresent applicationdiffersfromExample 17of D1byvirtue of containing a 1- It canbeseen that thecorrespondingPBMCIC50of Example46of thepresent applicationreturneda value of“++++\"(see Table A on page 297 of the application as filed) which corresponds to an IC50 value of<1μM(seepage295of the application asfiled). COOLEY (UK) LLP 22 BISHOPSGATE LONDON EC2N 4BQ, UK T: +44 (0) 20 7583 4055 F: +44 (0) 20 7785 9355 COOLEY.COM s ayjo pelasibano ose eqwnu paesiba um sepm puo pu(ug u peesie s puo dlysieuod pew o sl dmn (n) eloo the address above. Co"
+        },
+        {
+          "source": "07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt",
+          "text": "mindednottoagreethatthiscomparativedataiscompellingevidenceofthe presenceof aninventivestep,we alsosubmit thatthepresentcaseisinventiveduetostructural non- obviousness over D1.For example, there are only8 compounds inD1whichhave bis-substituted nitrogen atoms (see Examples3,17-20,29 and 31-32 of D1).None of these compounds in D1contain present claim 1 requires the corresponding nitrogen atom tobe bis-substituted (i.e.neither R² nor R3 canbehydrogen)and the R?substituent(the groupwhichcorrespondstoR1in D1)mustbe directly attached.Thus,wesubmitthattheskilledpersonwouldnothavebeenmotivated toremovetheli"
+        },
+        {
+          "source": "18-12-2024_Annex_to_the_communication_M4SL5G5B18RI5JG_ocr.txt",
+          "text": "o that defined by the claims,therebyresulting in lackof clarity of the claims (Article84EPC)whenused to interpret them (see the Guidelines,C-Ill,4.3(ii)). It shouldbemadeclearwhichexamplesareintended toillustrate the invention andwhichones aresynthesisintermediatesorbackgroundart notrepresenting theinvention. 3 AslongtheExaminingDivisionisnotprovidedwithapplicationdocuments whichwouldovercometheaboveobjectionsraisedunderArticle84EPC,the oral proceedings are maintained. EPO Form 2906 01.91TRI"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": ") with the same uses asthepresentones. Formulta (1) Thesubject-matterofcurrentclaim1canbeconsideredasaselectionfrom the compounds of formulaI or V disclosed in D1(claims1and 7).Forexample startingfromthecompoundsofformula(l)ofD1forarrivingatthepresent claimed compounds it has to be selected J to be S, W to be -N (R1)2 (e.g. claims 2, 5 of D1), R1 to be an aryl or heteroalkyl, Q=O and W2R2 a ring. Furtherinorder to arrivefrom thecompoundsof formula(V)of D1at the present claimed ones,then the single selection tobedone is the substituent R1W1,whichhasbeone of thefollowingpreferred groups disclosed incla"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "im6 of D1: whereinthismoietyisa-N(heterocycle)R3structureandR3isaheterocyclylor heteroaryl. As regards the specific examples disclosed in D1, compounds 17,19,35 and 39 appear tobetheclosest structural ones. EPO Form 2906 01.91TRI --- PAGE 3 --- Datum Blatt Anmelde-Nr: Date 27.06.2024 Sheet Application No: 18826 609.2 Date Feuille Demande n°: -{(fusan-2-y/methyi)[2-(morpholin- yl)ethyljsulfamoyl]-3-(1,2.3.5,6,7-hexahydro0-s- 3-{1.2,3 indacen-4-yl}-1-{(6- indacen-4-yfjurea methoxy-4-methyloyridin-3-y4])suifamoyf]ures -[2,4-dimethyipyriin-"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "hydro-s-indfacen-4-yljurea (1,2,3.5,6,7-hexahydro s-indacen-4- yl)ure8 With the letter of 07.10.2022,theApplicant filed comparative data between uas2 compound 17 of D1 and present example 46: 001jf-p-uscsp Example17ofD1hasinthePBMCassayanIC50higherthan10umwhilethe present example 46 has an IC50 lower than 1μm. Thetwotestedcompoundsdifferbetweenthemthroughthefactthat the methylpyrazol(example17of D1doesnotcontainadirectlylinked heterocycle (mandatoryfor thepresent R3) and additionally the nature of this heteroaryl ring is different(furan instead ofpyrazol).Moreover,the two compared examples differalso"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "50intherangeof10to50um: comp58 comp 71 comp 90 10 μm: comp 73 comp69 comp 74 c) compound 93 has an IC50 less than 1um: At thefirstglancecomparing the activityreportedforthepresent example46 andexample17of D1anddisregardingthefact thattheydifferinmorethanone structuralfeature(presentcompoundwastestedasasodiumsaltandnotas freebaseand thenatureofthe5-memberedhetoroarylisdifferent)an improvementof10 timesof theIC50mightbeconsidered unexpected. The question tobe answer is if theclaimed breadth could beseen as a fair generalisation over the comparison data provided with theletter of 07.10.2023. EPO Form 29"
+        }
+      ],
+      "pharmacology_or_effect_data": [
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "terocycloalkyl -R3isaheterocycloalkylorheterocycloaryl usefultotreatdiseasesconnectedtotheinhibitionoftheNLRP3activation.In particular,the compoundswere tested fortheir inhibitory activity against IL-1 betareleaseuponNLRP3activationinperipheral blood mononuclearcells (PBMC). Closest prior art D1 (WO 2017/140778),which is regarded asbeing the closest prior art, discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses asthepresentones. Formulta (1) Thesubject-matterofcurrentclaim1canbeconsideredasaselectionfrom the compounds of formulaI or V disclosed in D1(claims1and 7).Forexample"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "oreover,the two compared examples differalsothroughthefactthatthepresentcompoundistestedassodiumsalt while theoneof D1asfreebase(thesodiumsaltcouldalsohave animpact on the claimed activity). Technical effect and problem to be solved present compoundsrepresent anovel selectionfrom the general structures disclosed in D1, the technical problem underlying the present application is to beseenintheprovisionoffurthersulfonureasderivativesusefultotreat diseasesconnectedtoinhibitionofNLRP3activationandhavingunexpected effectsoverthecloseststructuralcompoundsdisclosedinthepriorart. Solution EPO Form 2906 01.91T"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "on No: 18 826 609.2 Date Feuille Demande n°: Thespecific combination of thepresent substituentsR2andR3 and theformof sodiumsalt leadingforsome of thepresent compounds toanimproved activity re thecompounds disclosed inD1. The obviousness of thesolution D1 compounds are disclosed to have,depending on their structure,an inhibitory activity ranging between less than 1μm to less than 50um (the same range as in thepresentcase). Looking to the specific data provided on pages 301 to 116of the present specification,it canbeconcluded that thelevelof activityappearstobehighly dependent on the specific structure"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "a)compounds58,71and90haveanIC50intherangeof10to50um: comp58 comp 71 comp 90 10 μm: comp 73 comp69 comp 74 c) compound 93 has an IC50 less than 1um: At thefirstglancecomparing the activityreportedforthepresent example46 andexample17of D1anddisregardingthefact thattheydifferinmorethanone structuralfeature(presentcompoundwastestedasasodiumsaltandnotas freebaseand thenatureofthe5-memberedhetoroarylisdifferent)an improvementof10 timesof theIC50mightbeconsidered unexpected. The question tobe answer is if theclaimed breadth could beseen as a fair generalisation over the comparison data provided with thelett"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "ple 17 of D1. Moreover,the application disclosescompoundshaving thesame NR2R3moiety andwhereinsubstituentsplacedindifferentpartsofthemoleculecouldhavean importantimpactontheclaimedactivity.Compounds58and21differonlyon 90,73 and93which differamong themonlyon the natureof thesecond differentlevels. Consequently,considering all the biological data provided in the present table4ofD1itcannotbeconcludedthatallthecompoundsencompassedby thecurrentclaim1wouldpossessthesamelevelofimprovementoverthe closest structural compound disclosed in D1 (a 10 times improvement). In addition,since it is general knowledge th"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "at thesalts are in general moresoluble thanthecorrespondingfreeacids,itisexpected thatanimprovement in solubility isconnected to an improved inhibitory activity. Inviewof thesefacts it is considered that the abovetechnical problemwasnot solvedoverthewholeclaimedscope.Consequently,ithastobereformulated connected to the inhibition of NLRP3. Since thepresent compounds of claim 1 samelevelofactivityismaintained. Thus,inordertofulfil therequirementsofArticle56EPCeitherexperimental data will beprovided supporting that substantially all the claimed compounds haveanunexpected prope"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "rtyorimproved activityover the structurallyclosest priorartcompounds(D1),whichisattributabletothedistinguishingfeatureof the invention or the scope of claim 1 will berestricted to thevery specific EPOForm290601.91TRI --- PAGE 6 --- Datum Blatt Anmelde-Nr: Date 27.06.2024 Sheet 6 Application No: 18 826 609.2 Date Feuille Demande n°: 2.2 Article84EPC 2.2.1 Someofthedefinitionsprovidedintheclaimscoverstructureswhicharenot examplegroupsasalk"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "allstructuraldifferencesbetweenthecompound58,71 compounds66,73,81,and69whichhaveanlC50lowerthan10umitcannot beconcludedwhich is thedifferentiatingfeatureresponsiblefor theimproved activity. Thesamevariationinactivityduetosmallstructuraldifferencescouldalsobe seen from the data provided for the D1 compounds on pages 128-129. AsregardtheargumentprovidedbytheApplicantwiththeletterof07.10.2022 that none of the specific examples disclosed in D1 contains a directly attached heterocycleonthenitrogenatom,theExaminingDivisionwouldliketounderline thatareseveral examplesinD1containingadirectlyattachedheterocycle"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "activity. Thus,it is considered that since thepresent general formula claimed by claim 1 is a selection over the structure (l) of D1 and D1 discloses examples having a heterocycledirectlylinkedonthenitrogencorrespondingtothepresentNR2R3 as well as compounds wherein the nitrogen corresponding to the present NR2R3isbisubstituted,the skilled personwould expect thesame level of activity for the present claimed compounds. Combini"
+        },
+        {
+          "source": "29-03-2022_Annex_to_the_communication_L14OYB2K141V599_ocr.txt",
+          "text": "ltotreatdiseasesconnectedtothe inhibitionofNLRP3wouldexpectthatintroducingofasubstituentasdefinedfor thepresentR2(inparticularinviewofexample17ofD1)wouldnotinterfere withtheclaimedactivity. Thus,theabove-mentionedtechnical ofprovidingfurthersulfamoylureea derivativesusefultotreatdiseasesconnectedtotheinhibitionofNLRP3is reformulatedastheprovisionoffurthersulfamoylureeaderivativesusefulto treatdiseasesconnectedtotheinhibitionofNLRP3andhavingunexpected properties overtheclosest structural compounds disclosed inD1,namely the compounds17,35and/or39. Sincenosucheffectsorproperties areindicated and supporte"
+        }
+      ],
+      "synthesis_routes": [
+        {
+          "source": "07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt",
+          "text": "bjected that the subject matter of the claims onfilelacks an inventive step in view of D1.The Examiner has particularly highlighted Examples17, 35, and 39 of D1. theApplicanthasnowsynthesisedandtestedthecompoundofExample17fromD1inthePBMC assay described in thepresent application as filed(seepages 294to 295 of the application as filed) and the majority of tests returned an IC50 value of >10 μM. The compound ofExample17hasthefollowingstructure: By contrast,fromareviewof all compoundswithinthepresentapplication,wesubmit thattheclosest ） H Na Example 46of thepresent applicationdiffersfromExample 17of D1byv"
+        },
+        {
+          "source": "18-12-2024_Annex_to_the_communication_M4SL5G5B18RI5JG_ocr.txt",
+          "text": "'sRepresentative(Mr.Oliver Ware)was contacted todiscuss the complianceofthesubject-matteroftheMainrequest(MR)and thethree auxiliaryrequestsfiledwiththeletterof22.11.2024inviewofthepreparationfor theoralproceedingsscheduledon21.01.2025. 2 Afterconsideringthelimitationsfromthesubject-matterclaimedbycurrentMR procedure the subject-matted claimed by the MR filed on 22.11.2025 appears to fulfiltherequirementsofArticles54and56EPC. InorderthatacommunicationunderRule71(3)EPCisissuedand theoral proceedingstobecancelled theApplicant has to amend the applicationsuch -amendclaim3of theMRbydeletingthefirstparagraphdi"
+        },
+        {
+          "source": "18-12-2024_Annex_to_the_communication_M4SL5G5B18RI5JG_ocr.txt",
+          "text": "of the claims (Article84EPC)whenused to interpret them (see the Guidelines,C-Ill,4.3(ii)). It shouldbemadeclearwhichexamplesareintended toillustrate the invention andwhichones aresynthesisintermediatesorbackgroundart notrepresenting theinvention. 3 AslongtheExaminingDivisionisnotprovidedwithapplicationdocuments whichwouldovercometheaboveobjectionsraisedunderArticle84EPC,the oral proceedings are maintained. EPO Form 2906 01.91TRI"
+        },
+        {
+          "source": "05-02-2021_Amended_claims_with_annotations_E5UDSQ4F7745DSU_ocr.txt",
+          "text": "pound- of any-one-of Compound Nos.1A-166A. 98.-A compound obtainable by, or obtained by, a method described herein; optionally, the method comprises one or more steps described in Schemes 1 2. 99.-A compound, by-an- intermediate obtained by-a method for preparing-the-compound-of any one of claims 1 93; 331 243731902v1 --- PAGE 27 --- CooleyRef.NODT-004/N01EP(330150-2065) optionally, the-intermediateis-selected-from-the-intermediates-described-in-Examples-1- 166. 100.10 to 101 159 or a pharmaceutically acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier. 101.The-pharmaceuti"
+        },
+        {
+          "source": "18-12-2018_Claims_E2QXUDU73532DSU_ocr.txt",
+          "text": "ompound of any one of CompoundNos.1A-166A. 100.A compound obtainable by, or obtained by, a method described herein; optionally, the method comprises one or more steps described in Schemes 1-2. 101.A compound, by an intermediate obtained by a method for preparing the compound of any one of claims 1-93; optionally,the intermediate is selected from the intermediates described in Examples 1- 166. 102. A pharmaceutical composition comprising the compound of any one of claims 1-101 or a pharmaceutically acceptablesalt thereof,and a pharmaceutically acceptablediluent or carrier. 103. The pharmaceutical com"
+        }
+      ],
+      "use_descriptions": [
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "te 27.06.2024 Sheet 2 ApplicationNo: 18 826 609.2 Date Feuille Demande n°: -R2 is -(CX1X2)n-R2s with n=0-2 and R2s=heterocycloalkyl -R3isaheterocycloalkylorheterocycloaryl usefultotreatdiseasesconnectedtotheinhibitionoftheNLRP3activation.In particular,the compoundswere tested fortheir inhibitory activity against IL-1 betareleaseuponNLRP3activationinperipheral blood mononuclearcells (PBMC). Closest prior art D1 (WO 2017/140778),which is regarded asbeing the closest prior art, discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses asthepresentones. Formulta (1) Thesubject-matt"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "vel selectionfrom the general structures disclosed in D1, the technical problem underlying the present application is to beseenintheprovisionoffurthersulfonureasderivativesusefultotreat diseasesconnectedtoinhibitionofNLRP3activationandhavingunexpected effectsoverthecloseststructuralcompoundsdisclosedinthepriorart. Solution EPO Form 2906 01.91TRI --- PAGE 4 --- Datum Blatt Anmelde-Nr: Date 27.06.2024 Sheet Application No: 18 826 609.2 Date Feuille Demande n°: Thespecific combination of thepresent substituentsR2andR3 and theformof sodiumsalt leadingforsome of thepresent compounds toanimproved activi"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "n 07-10-2022 Amendments(Article123(2)EPC) requirementsofArticle123(2)EPC. 2 Inventivestep(Article56EPC) are maintained. 2.1 Thepresent claimed compounds of formula(l)are useful to treat diseases connected to the inhibitionof theNLRP3 activation. N R3 R2 (I), wherein R1 is a cycloalkyl or aryl, R2 is -(CX1X2)n-R2s with n=0-2 and 2.2 Closest prior art D1, which is regarded as being the closest prior art, discloses compounds of formula (l) (claim 1) or (V)(claim 7) with the same uses as the present ones. Formula (1) Fomula V from the compounds of formulaIor Vdisclosed in this document(claims 1 and 7)"
+        },
+        {
+          "source": "29-03-2022_Annex_to_the_communication_L14OYB2K141V599_ocr.txt",
+          "text": "URNALOFINFLAMMATIONRESEARCH,1January2015 (2015-01-01),page 15,XP055555633,DOI:10.2147/JIR.S51250 D3 REBECCA C COLL ET AL:\"A small-molecule inhibitor of the NLRP3inflammasomeforthe treatmentof inflammatory diseases\", NATURE MEDICINE,16February 2015(2015-02-16), XP055303035,NewYorkISSN:1078-8956,DOl:10.1038/nm.3806 2 Independent claims -compounds of formula (l)(claim 1) -theirpharmaceutical compositions(claim10) -their pharmaceutical uses (claims 11-12) 3 Amendments(Article 123(2)EPC) Thepresent set of claims is based on the original application asfollows: -claim1 corresponds to original claim1 -newc"
+        },
+        {
+          "source": "29-03-2022_Annex_to_the_communication_L14OYB2K141V599_ocr.txt",
+          "text": "1TRI --- PAGE 3 --- Datum Blatt Anmelde-Nr: Date 29.03.2022 Sheet 3 Application No: 18826 609.2 Date Feuille Demande n°: 5.1 Thepresent claimed compoundsof formula(l) areusefulto treatdiseases connectedtotheinhibitionoftheNLRP3activation. R2 wherein R1is a cycloalkyl oraryl,R2 is-(CX1x2)n-R2s with n=0-2 and Rs=heterocycloalkyl andR3isaheterocycloalkylorheterocycloaryl 5.2 D1,which is regarded as being the closest prior art,discloses compounds of formula (l) with the same uses as the present ones. Formula () Thesubject-matterof claim 1canbeconsidered as a selection ofaformula(l) from the compounds"
+        },
+        {
+          "source": "29-03-2022_Annex_to_the_communication_L14OYB2K141V599_ocr.txt",
+          "text": "nde n°: Thus,thepresentcompoundsofclaim1representanovelselectionfromthe from examples35,39andhaving inmind the technicalproblemof providing furthersulfamoylureeaderivativesusefultotreatdiseasesconnectedtothe inhibitionofNLRP3wouldexpectthatintroducingofasubstituentasdefinedfor thepresentR2(inparticularinviewofexample17ofD1)wouldnotinterfere withtheclaimedactivity. Thus,theabove-mentionedtechnical ofprovidingfurthersulfamoylureea derivativesusefultotreatdiseasesconnectedtotheinhibitionofNLRP3is reformulatedastheprovisionoffurthersulfamoylureeaderivativesusefulto treatdiseasesconnectedtotheinhibition"
+        },
+        {
+          "source": "29-03-2022_Annex_to_the_communication_L14OYB2K141V599_ocr.txt",
+          "text": "heet 5 Application No: 18 826 609.2 Date Feuille Demande n°: pages. For each amendment the Applicant is asked to indicate the support in bedeletedfromthedescfriptionandthemethodsoftreatmenthavetobe rewordedtocomplywiththerequirementsofArticle53(c)EPC. EPO Form 2906 01.91TRI"
+        },
+        {
+          "source": "19-12-2024_Amended_claims_with_annotations_M4VHI8ADVPJPKN5_ocr.txt",
+          "text": "lammasome is NLRP3 inflammasome, and the activity is in vitro or in vivo. 129.The compound of any one of claims 1 to 96, or the pharmaceutical composition of claim 107, for use in treating or preventing a disease or disorder; preferably wherein the disease or disorder is an inflammatory disorder, an autoinflammatory disorder, an autoimmune disorder, a neurodegenerative disease, or cancer. 1310. The compound or pharmaceutical composition for use of claim 11-8or claim 129, wherein the disease or disorder is an inflammatory disorder, an autoinflammatory disorder or an autoimmune disorder; optionally,t"
+        }
+      ],
+      "comparative_data": [
+        {
+          "source": "24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt",
+          "text": "tterof the claimsasonfilelacksan inventive step over D1. This is because the Examiner appears to consider some of the exemplified compoundsnottodisplaytheimprovementevidencedbythe comparativedata discussed aspart of 71, and 90 ashavinganICsoin therange of10 to50μM. Assetoutabove,claim1hasbeen amended morecloselyintolinewiththeexemplified compounds which provide ICso values<10μM-i.e.superiorto the>10 μM value of the comparative compound <10μMfallwithinthescopeof amendedclaim1.Allof theexemplifiedcompoundswhichhaveICso values>10μMhave been excluded from the scope of amended claim 1.This includeseach of com"
+        },
+        {
+          "source": "24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt",
+          "text": "pounds58,71,and90,whichwerespecificallyidentified bytheExaminer. Accordingly,thepreviously-discussed comparativedata supportsthe claimed scope of amended claim 1.Furthermore,given the ICso values for all exemplified compounds within the scope of amended claim 1, it is credible thatcompounds throughout the scope of the claim would possess the claimed improvement. objectionbewithdrawn.Theremainingclaimseitherdependuponclaim1orincorporateitssubject matterbyreferenceandthereforelikewiseinvolveaninventivestepatleastbyvirtuethereof."
+        },
+        {
+          "source": "07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt",
+          "text": "uivalent standing. 275460174 v1 --- PAGE 3 --- Cooley 07 October 2022 Page Three Therefore,theeffectofsuch a substitutionisgreaterthan10fold(i.e.from<1μM to>10μM. Wesubmitthatthiscomparativedataclearlydemonstratesthattheskilledpersonwouldbesurprised thatsuchasubstitutionwouldhavesuchaprofoundandmeasurableeffectonthepotencyof the resultantcompounds(i.e.greaterthana10fold increaseinpotency). EveniftheExaminerismindednottoagreethatthiscomparativedataiscompellingevidenceofthe presenceof aninventivestep,we alsosubmit thatthepresentcaseisinventiveduetostructural non- obviousness over D1.For example, there are"
+        },
+        {
+          "source": "18-12-2024_Annex_to_the_communication_M4SL5G5B18RI5JG_ocr.txt",
+          "text": "erconsideringthelimitationsfromthesubject-matterclaimedbycurrentMR procedure the subject-matted claimed by the MR filed on 22.11.2025 appears to fulfiltherequirementsofArticles54and56EPC. InorderthatacommunicationunderRule71(3)EPCisissuedand theoral proceedingstobecancelled theApplicant has to amend the applicationsuch -amendclaim3of theMRbydeletingthefirstparagraphdirected exactlytothe same definitionsfor Rssas the onesprovided inclaim1(inother words delete thefirstparagraphandlimitthisclaimtotheoptionalalternative) -to adapt the description strictly to the scope of the amended claims. Atthemom"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "tionoftheNLRP3activation.In particular,the compoundswere tested fortheir inhibitory activity against IL-1 betareleaseuponNLRP3activationinperipheral blood mononuclearcells (PBMC). Closest prior art D1 (WO 2017/140778),which is regarded asbeing the closest prior art, discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses asthepresentones. Formulta (1) Thesubject-matterofcurrentclaim1canbeconsideredasaselectionfrom the compounds of formulaI or V disclosed in D1(claims1and 7).Forexample startingfromthecompoundsofformula(l)ofD1forarrivingatthepresent claimed compounds it has to be selected"
+        },
+        {
+          "source": "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "text": "1-{benzy(1,3-thiazol-2-ymethyl)suifa:oy]-3 (1.2,3,5,6,7-hexahydro-s-indfacen-4-yljurea (1,2,3.5,6,7-hexahydro s-indacen-4- yl)ure8 With the letter of 07.10.2022,theApplicant filed comparative data between uas2 compound 17 of D1 and present example 46: 001jf-p-uscsp Example17ofD1hasinthePBMCassayanIC50higherthan10umwhilethe present example 46 has an IC50 lower than 1μm. Thetwotestedcompoundsdifferbetweenthemthroughthefactthat the methylpyrazol(example17of D1doesnotcontainadirectlylinked heterocycle (mandatoryfor thepresent R3) and additionally the nature of this heteroaryl ring is different(furan instead"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "f formula(l)are useful to treat diseases connected to the inhibitionof theNLRP3 activation. N R3 R2 (I), wherein R1 is a cycloalkyl or aryl, R2 is -(CX1X2)n-R2s with n=0-2 and 2.2 Closest prior art D1, which is regarded as being the closest prior art, discloses compounds of formula (l) (claim 1) or (V)(claim 7) with the same uses as the present ones. Formula (1) Fomula V from the compounds of formulaIor Vdisclosed in this document(claims 1 and 7) for the same use.The main selection which appears to be the core of the EPOForm 2906 01.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 17.04.2023 Sheet 2 Applicat"
+        },
+        {
+          "source": "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+          "text": "yl]sulfamoyl3-(1,2,3,5,6,7-hexahycrs 1-[(furan-2-ylmethyl)sulfamoyl]-3-(1,2,3,5,6,7- indacen-4-yf)jurea hexahydiro-s-indacen-4-ylurea With theletterof07.10.2022,theApplicant filed comparativedatabetween compound17ofD1andpresentexample46: The Applicant argued that example 17of D1 has in thePBMC assay higher than 10um while the present example 46has anIC50 lower than 1μm.This argumentmightberelevantforassessinginventivestepifwould havebeen crediblethatallclaimedcompoundspossestheclaimedimprovement. Considering the specific data provided onpages 301 to116 of the current therangeof10to50um: comp58 comp 71 co"
+        }
+      ]
+    },
+    "prior_art_docs": [
+      {
+        "rank": 1,
+        "citation": "WO2017140778",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2017140778",
+        "mentions": 2,
+        "sources": [
+          "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+          "EP18826609-main.html#documents_cited"
+        ]
+      }
+    ]
+  },
+  "source_trace": {
+    "path_base": "benchmark_input_dir",
+    "case_dir": ".",
+    "main_html": "register/EP18826609-main.html",
+    "doclist_csv": "register/EP18826609-doclist.csv",
+    "docs_dir": "docs",
+    "original_application_dir": "original-application",
+    "original_application_files": [
+      {
+        "title": "Abstract",
+        "date": "18.12.2018",
+        "document_id": "E2QXUDU76913DSU",
+        "pages": "1",
+        "path": "original-application/18-12-2018_Abstract_E2QXUDU76913DSU.pdf",
+        "file_name": "18-12-2018_Abstract_E2QXUDU76913DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E2QXUDU76913DSU&appnumber=EP18826609&showPdfPage=all&proc="
+      },
+      {
+        "title": "Claims",
+        "date": "18.12.2018",
+        "document_id": "E2QXUDU73532DSU",
+        "pages": "25",
+        "path": "original-application/18-12-2018_Claims_E2QXUDU73532DSU.pdf",
+        "file_name": "18-12-2018_Claims_E2QXUDU73532DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E2QXUDU73532DSU&appnumber=EP18826609&showPdfPage=all&proc="
+      },
+      {
+        "title": "Description",
+        "date": "18.12.2018",
+        "document_id": "E2QXUDU71221DSU",
+        "pages": "305",
+        "path": "original-application/18-12-2018_Description_E2QXUDU71221DSU.pdf",
+        "file_name": "18-12-2018_Description_E2QXUDU71221DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E2QXUDU71221DSU&appnumber=EP18826609&showPdfPage=all&proc="
+      },
+      {
+        "title": "Published international application - A1",
+        "date": "27.06.2019",
+        "document_id": "E3I3OI3A6347DSU",
+        "pages": "331",
+        "path": "original-application/27-06-2019_Published_international_application_-_A1_E3I3OI3A6347DSU.pdf",
+        "file_name": "27-06-2019_Published_international_application_-_A1_E3I3OI3A6347DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E3I3OI3A6347DSU&appnumber=EP18826609&showPdfPage=all&proc="
+      },
+      {
+        "title": "Bibliographic data of the European patent application",
+        "date": "14.01.2025",
+        "document_id": "M5QOWNYGYX5M67F",
+        "pages": "2",
+        "path": "original-application/14-01-2025_Bibliographic_data_of_the_European_patent_application_M5QOWNYGYX5M67F.pdf",
+        "file_name": "14-01-2025_Bibliographic_data_of_the_European_patent_application_M5QOWNYGYX5M67F.pdf",
+        "source_url": "https://register.epo.org/application?documentId=M5QOWNYGYX5M67F&appnumber=EP18826609&showPdfPage=all&proc="
+      }
+    ],
+    "text_documents_used": [
+      "22-05-2025_Decision_to_grant_a_European_patent_MAQ0WGCZ13NTH8W_ocr.txt",
+      "14-01-2025_Communication_about_intention_to_grant_a_European_patent_M5QOWNYD1Q6S6C9_ocr.txt",
+      "24-08-2023_Reply_to_communication_from_the_Examining_Division_LLPBV12P2VFCNKM_ocr.txt",
+      "17-04-2023_Communication_from_the_Examining_Division_LGDQA3X3CWX482I_ocr.txt",
+      "07-10-2022_Reply_to_communication_from_the_Examining_Division_L8YNFQZTDQBW27X_ocr.txt",
+      "29-03-2022_Communication_from_the_Examining_Division_L14OYB2H13CQU9W_ocr.txt",
+      "18-12-2024_Annex_to_the_communication_M4SL5G5B18RI5JG_ocr.txt",
+      "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
+      "17-04-2023_Annex_to_the_communication_LGDQA3X51DEL787_ocr.txt",
+      "29-03-2022_Annex_to_the_communication_L14OYB2K141V599_ocr.txt",
+      "19-12-2024_Amended_claims_with_annotations_M4VHI8ADVPJPKN5_ocr.txt",
+      "22-11-2024_Amended_claims_with_annotations_M3SSUY961LKYC9H_ocr.txt",
+      "22-11-2024_Amended_claims_with_annotations_M3SSV1I91QSYLVE_ocr.txt",
+      "22-11-2024_Amended_claims_with_annotations_M3SSV44RIWFASBH_ocr.txt",
+      "22-11-2024_Amended_claims_with_annotations_M3SSV6T81UAF6BM_ocr.txt",
+      "24-08-2023_Amended_claims_with_annotations_LLPBV3PPA6368CK_ocr.txt",
+      "07-10-2022_Amended_claims_with_annotations_L8YNFNRLLXXUM4Q_ocr.txt",
+      "05-02-2021_Amended_claims_filed_after_receipt_of_(European)_search_report_E5UDSRGJ8116DSU_ocr.txt",
+      "05-02-2021_Amended_claims_with_annotations_E5UDSQ4F7745DSU_ocr.txt",
+      "19-12-2024_Claims_M4VHIAB219BEKRC_ocr.txt",
+      "22-11-2024_Claims_M3SSUXBV1MK8GVV_ocr.txt",
+      "22-11-2024_Claims_M3SSV0DSIMRVO8D_ocr.txt",
+      "22-11-2024_Claims_M3SSV3OK1HEZEXJ_ocr.txt",
+      "22-11-2024_Claims_M3SSV6BX1U5F6XU_ocr.txt",
+      "24-08-2023_Claims_LLPBV8VZD5GFWS1_ocr.txt",
+      "07-10-2022_Claims_L8YNFKA71276FYY_ocr.txt",
+      "18-12-2018_Claims_E2QXUDU73532DSU_ocr.txt"
+    ],
+    "register_status": "No opposition filed within time limit",
+    "quality": {
+      "source_text_documents": 27,
+      "claim_1_meaningful_chars": 431,
+      "source_meaningful_chars": 190358
+    }
+  }
+}

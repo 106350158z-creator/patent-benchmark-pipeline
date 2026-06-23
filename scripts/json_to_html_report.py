@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import argparse
 import json
 import os
@@ -178,7 +180,7 @@ def render_local_link(path_value: Any, current_path: Path | None, label: str | N
     href_text = str(label or raw.name or path_value)
     href_path = str(path_value).replace("\\", "/")
     if current_path:
-        target = raw if raw.is_absolute() else (Path.cwd() / raw)
+        target = raw if raw.is_absolute() else (current_path.parent / raw)
         try:
             href_path = os.path.relpath(target.resolve(), current_path.parent.resolve()).replace("\\", "/")
         except OSError:
@@ -209,6 +211,105 @@ def register_number(meta: dict[str, Any], benchmark: dict[str, Any] | None = Non
     return value if value.startswith("EP") else f"EP{value}" if value else ""
 
 
+def load_claims_review(current_path: Path | None) -> dict[str, Any] | None:
+    if not current_path:
+        return None
+    app = current_path.parent.name
+    path = current_path.parent / f"{app}-claims-verified.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        return None
+
+
+def claim_number_value(item: dict[str, Any]) -> int:
+    try:
+        return int(item.get("claim_number") or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def render_claims_block(benchmark: dict[str, Any], meta: dict[str, Any], current_path: Path | None = None) -> str:
+    bench_input = benchmark.get("benchmark_input") or {}
+    claim = bench_input.get("claim_text") or {}
+    review = load_claims_review(current_path)
+    review_claims = (review or {}).get("claims") or []
+    verified_claims = [
+        item
+        for item in review_claims
+        if isinstance(item, dict)
+        and str(item.get("status") or "").lower() == "verified"
+        and str(item.get("text") or "").strip()
+    ]
+    all_verified = bool(review_claims) and len(verified_claims) == len(review_claims)
+    if all_verified:
+        details = []
+        for item in sorted(verified_claims, key=claim_number_value):
+            number = item.get("claim_number")
+            text = item.get("text") or ""
+            pages = ", ".join(str(page) for page in item.get("source_pages") or [])
+            details.append(
+                f"<details class='claim-detail' {'open' if claim_number_value(item) == 1 else ''}>"
+                f"<summary>Claim {h(number)}<span>{h('pages ' + pages if pages else '')}</span></summary>"
+                f"<div class='preview-text'>{h(text)}</div>"
+                "</details>"
+            )
+        source_pdf = render_local_link((review or {}).get("source_pdf"), current_path, "Authority PDF")
+        review_json = render_local_link(f"{current_path.parent.name}-claims-verified.json" if current_path else "", current_path, "Claims JSON")
+        return (
+            "<h3>Verified Claims</h3>"
+            f"<p class='source'>{source_pdf} {review_json}</p>"
+            "<div class='claims-list'>"
+            + "".join(details)
+            + "</div>"
+        )
+
+    draft_claim_1 = next(
+        (
+            item
+            for item in review_claims
+            if isinstance(item, dict) and claim_number_value(item) == 1 and str(item.get("text") or "").strip()
+        ),
+        None,
+    )
+    if draft_claim_1:
+        claim_text = str(draft_claim_1.get("text") or "")
+        pages = ", ".join(str(page) for page in draft_claim_1.get("source_pages") or [])
+        source = f"Draft claim 1 from claims review JSON{'; pages ' + pages if pages else ''}"
+        claim_title = "Claim Draft Preview"
+        claim_notice = "Draft OCR claim only; verify against the authority PDF before using as legal text."
+    else:
+        claim_text = claim.get("claim_1") or ""
+        source = f"Source: {claim.get('source')}" if claim.get("source") else ""
+        claim_title = "Claim OCR Preview"
+        claim_notice = "OCR preview only; use the authority PDF and verified claims JSON for legal text."
+    claim_html = (
+        f"<div class='preview-text'>{h(claim_text)}</div><p class='source'>{h(source)}</p>"
+        if claim_text
+        else "<p class='muted'>No claim text extracted.</p>"
+    )
+    review_links = ""
+    if review:
+        app = current_path.parent.name if current_path else ""
+        review_html = render_local_link(f"{app}-claims-review.html", current_path, "Claims review HTML")
+        review_json = render_local_link(f"{app}-claims-verified.json", current_path, "Claims draft JSON")
+        source_pdf = render_local_link(review.get("source_pdf"), current_path, "Authority PDF")
+        total = len(review_claims)
+        verified = len(verified_claims)
+        review_links = (
+            f"<p class='source'>Review status: {verified}/{total} verified · "
+            f"{source_pdf} {review_html} {review_json}</p>"
+        )
+    return (
+        f"<h3>{claim_title}</h3>"
+        f"{claim_html}"
+        f"<p class='source'>{h(claim_notice)}</p>"
+        f"{review_links}"
+    )
+
+
 def render_bilingual_list(items: Any) -> str:
     if not items:
         return '<p class="muted">无</p>'
@@ -222,6 +323,30 @@ def render_bilingual_list(items: Any) -> str:
             text = h(item)
         rows.append(f"<li>{text}</li>")
     return "<ul class='bilingual-list'>" + "".join(rows) + "</ul>"
+
+
+def render_source_sentence_list(items: Any, fallback_items: Any = None) -> str:
+    if not items:
+        return render_bilingual_list(fallback_items)
+    rows = []
+    for item in items:
+        if not isinstance(item, dict):
+            rows.append(f"<li>{h(item)}</li>")
+            continue
+        issue = str(item.get("issue") or "")
+        source = str(item.get("source") or "")
+        original = str(item.get("original_text") or "")
+        translation = str(item.get("translation") or "")
+        explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")
+        rows.append(
+            "<li>"
+            f"<div class='source-line-meta'>{h(issue)} · {h(source)}</div>"
+            f"<div class='evidence-original'>{h(original)}</div>"
+            f"<div class='translation-inline'>{h(translation)}</div>"
+            f"<div class='source-line-note'>{h(explanation)}</div>"
+            "</li>"
+        )
+    return "<ul class='source-sentence-list'>" + "".join(rows) + "</ul>"
 
 
 def render_disc(value: Any) -> str:
@@ -270,7 +395,7 @@ def render_meta(meta: dict[str, Any], grant_label: str, aggregate_score: Any) ->
     body = "".join(f"<tr><th>{h(label)}</th><td>{h(value)}</td></tr>" for label, value in rows)
     return f"""
     <section class="card" id="case-info">
-      <h2>基本信息</h2>
+      <h2>案件元数据</h2>
       <table class="kv">{body}</table>
     </section>
     """
@@ -280,7 +405,6 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], curre
     benchmark = benchmark or {}
     bench_input = benchmark.get("benchmark_input") or {}
     trace = benchmark.get("source_trace") or {}
-    claim = bench_input.get("claim_text") or {}
     structure = bench_input.get("drug_structure") or {}
     markush_images = structure.get("markush_images") or []
     page_images = structure.get("markush_page_images") or []
@@ -309,12 +433,6 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], curre
             label = f"{title} ({suffix})" if suffix else str(title)
             original_links.append(f"<li>{render_local_link(item.get('path'), current_path, label)}</li>")
 
-    claim_text = claim.get("claim_1") or ""
-    claim_html = (
-        f"<div class='preview-text'>{h(claim_text)}</div><p class='source'>Source: {h(claim.get('source'))}</p>"
-        if claim_text
-        else "<p class='muted'>No claim text extracted.</p>"
-    )
     image_html = ""
     display_images = markush_images
     if display_images:
@@ -340,8 +458,7 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], curre
       <h2>Application Preview</h2>
       <div class="preview-grid">
         <div>
-          <h3>Claim</h3>
-          {claim_html}
+          {render_claims_block(benchmark, meta, current_path)}
         </div>
         <div>
           <h3>Markush / Formula</h3>
@@ -383,7 +500,7 @@ def render_dimensions(scores: dict[str, Any]) -> str:
         )
     return f"""
     <section class="card" id="dimensions">
-      <h2>维度评分</h2>
+      <h2>审查维度评分</h2>
       <div class="table-scroll">
         <table class="dimension-table">
           <thead><tr><th>维度/分数</th><th>字段描述</th><th>分析</th><th>原文</th><th>翻译</th><th>LLM证据说明</th></tr></thead>
@@ -491,7 +608,7 @@ def render_evidence(evidence: dict[str, Any]) -> str:
       </table>
       <h3>引用先文 / 官网相关专利</h3>
       {render_prior_art(evidence.get('prior_art_documents'))}
-      <h3>说明书支持证据</h3>
+      <h3>说明书/支持证据</h3>
       {render_evidence_table(evidence.get('specification_support'))}
       <h3>审查材料证据</h3>
       {render_evidence_table(evidence.get('examination_material_evidence'))}
@@ -583,11 +700,13 @@ def render_report_nav(current_path: Path | None = None) -> str:
 
 def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any] | None = None, current_path: Path | None = None) -> str:
     meta = data.get("meta") or {}
-    title = "Benchmark Data Preview"
+    title = "Patent Examination Benchmark Report"
     app_no = meta.get("application_number") or ""
     aggregate = data.get("aggregate_score", "")
-    risks = data.get("top_risk_reasons") or []
-    actions = data.get("recommended_actions") or []
+    risks = data.get("risk_source_sentences") or []
+    actions = data.get("action_basis_source_sentences") or []
+    fallback_risks = data.get("top_risk_reasons") or []
+    fallback_actions = data.get("recommended_actions") or []
     evidence = merge_benchmark_prior_art(data.get("evidence_trace") or {}, benchmark)
 
     return f"""<!doctype html>
@@ -595,7 +714,7 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Benchmark Data Preview</title>
+  <title>{h(title)}</title>
   <style>
     :root {{
       --bg: #f6f7f9;
@@ -698,6 +817,26 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     .preview-text.compact {{
       max-height: 140px;
       margin-top: 6px;
+    }}
+    .claims-list {{
+      display: grid;
+      gap: 10px;
+    }}
+    .claim-detail {{
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8fafc;
+    }}
+    .claim-detail summary {{
+      cursor: pointer;
+      font-weight: 700;
+    }}
+    .claim-detail summary span {{
+      margin-left: 8px;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 12px;
     }}
     .markush-images {{
       display: grid;
@@ -907,6 +1046,30 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
       display: grid;
       gap: 8px;
     }}
+    .source-sentence-list {{
+      display: grid;
+      gap: 12px;
+    }}
+    .source-sentence-list li {{
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }}
+    .source-sentence-list li:last-child {{
+      border-bottom: 0;
+      padding-bottom: 0;
+    }}
+    .source-line-meta,
+    .source-line-note {{
+      color: var(--muted);
+      font-size: 13px;
+    }}
+    .source-line-meta {{
+      font-weight: 700;
+      margin-bottom: 4px;
+    }}
+    .source-line-note {{
+      margin-top: 4px;
+    }}
     .translation-inline {{
       color: var(--muted);
     }}
@@ -985,12 +1148,12 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     {render_dimensions(data.get("dimension_scores") or {})}
 
     <section class="card" id="risks">
-      <h2>主要风险</h2>
-      {render_bilingual_list(risks)}
+      <h2>风险原因</h2>
+      {render_source_sentence_list(risks, fallback_risks)}
     </section>
     <section class="card" id="actions">
-      <h2>建议动作</h2>
-      {render_bilingual_list(actions)}
+      <h2>建议依据原文</h2>
+      {render_source_sentence_list(actions, fallback_actions)}
     </section>
 
     {render_evidence(evidence)}

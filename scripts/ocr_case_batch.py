@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import argparse
 import csv
 import re
@@ -7,9 +9,31 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 
+PAGE_MARKER_PATTERN = re.compile(r"---\s*PAGE\s+[0-9]+\s*---", re.IGNORECASE)
+
+
+def meaningful_char_count(text: str) -> int:
+    cleaned = PAGE_MARKER_PATTERN.sub(" ", text or "")
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return len(re.findall(r"[A-Za-z0-9\u4e00-\u9fff]", cleaned))
+
+
 def valid_text_for(pdf: Path) -> bool:
     out = pdf.with_name(pdf.stem + "_ocr.txt")
-    return out.exists() and out.stat().st_size > 80
+    if not out.exists() or out.stat().st_size <= 80:
+        return False
+    return meaningful_char_count(out.read_text(encoding="utf-8", errors="ignore")) > 80
+
+
+def discover_case_dirs(root: Path) -> list[Path]:
+    if root.name.startswith("EP") and ((root / "docs").exists() or (root / "original-application").exists()):
+        return [root]
+    case_dirs = [
+        path
+        for path in root.rglob("EP*")
+        if path.is_dir() and ((path / "docs").exists() or (path / "original-application").exists())
+    ]
+    return sorted(case_dirs)
 
 
 def run_one(pdf: Path, script: Path, zoom: float, timeout: int, overwrite: bool) -> dict[str, str]:
@@ -79,10 +103,7 @@ def main() -> None:
     if args.scope == "original":
         scopes = ["original-application"]
 
-    if root.name.startswith("EP"):
-        case_dirs = [root]
-    else:
-        case_dirs = sorted(path for path in root.iterdir() if path.is_dir() and path.name.startswith("EP"))
+    case_dirs = discover_case_dirs(root)
 
     for case_dir in case_dirs:
         for scope in scopes:

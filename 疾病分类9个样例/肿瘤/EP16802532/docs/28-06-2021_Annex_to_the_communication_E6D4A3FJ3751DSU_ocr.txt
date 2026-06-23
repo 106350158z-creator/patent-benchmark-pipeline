@@ -1,0 +1,68 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+28.06.2021
+Sheet
+Application No:
+16 802 532.8
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-67
+filedwithentryintotheregionalphasebeforetheEPO
+Claims,Numbers
+1-8
+filed inelectronic form on
+22-03-2021
+Drawings,Sheets
+1/4-4/4
+filedwithentryintotheregionalphasebeforetheEPO
+Byletterof22-03-2021,theapplicanthasfiledanewsetofclaimswherethe
+claim1.Alsoclaims3 and5havebeenmadedependentfromclaim1as
+requestedbytheexaminer.
+Inviewof thefact thattheabovementioned compounds areknownfromthe
+originaldescriptionasalreadyacknowledgedinthepreviouscommunication,
+the present subject-matter meets the requirements of article 123(2) EPC.
+2
+As regardsnovelty,theexaminer agrees to the applicant'sanalysis.Compound
+4 differs from D4,compound 32 in a different position of the methoxy group,
+compounds 5 shows a methyl instead of a methoxy group and the wrong
+position and compound 12 has a piperidine ring instead of the known piperazine
+ring.
+Therefore,thepresent subject-matter is novel pursuant to article 54(1)(2)EPC.
+3
+As regards inventive step of these three extra compounds,which have a
+compound19ofD4.Intheapplicant'sopinion,thecompoundsunderdiscussion
+the compound 19 of D4.
+another compound whichhasaverylow inhibitory activity.
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+28.06.2021
+Sheet
+2
+Application No:
+16802532.8
+Date
+Feuille
+Demande n°:
+Looking at the results in D4,table 2 for the compound 32 (inhibition of H1975), it
+becomesclearthatthiscompoundhasanICsovalueof0.0039μMwhereas
+present compounds 4,5 and 12(see extra compounds in claim 1)have values
+of 0.009,0.006 and 0.009 μM.Therefore,it is clear that present compounds 4,5
+and12 areworse in theinhibitory activity than the structurally closest
+compounds.
+Therefore,noinventivestepcanbeacknowledgedforthenewlyintroduced
+compoundsof claim1and thus thepresentsubject-matterdoesnot meet the
+requirementsofarticle56EPC.
+AsregardscompoundswithR1beingphenylorcycloalkyl,aninventivestepcan
+be acknowledged as alreadymentioned in thepreviouscommunication.
+EPOForm290601.91TRI

@@ -1,0 +1,242 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+1
+Application
+17 191 704.0
+Feuille
+No:
+Date
+Demanden°
+The examination isbeing carried out on the following application documents
+Description,Pages
+1-175
+as originally filed
+Drawings, Sheets
+1/8-8/8
+as originally filed
+Cited documents
+Reference is made to the following documents;the numbering will be adhered to in
+therestoftheprocedure.
+D1
+WO2008/039218A2(PHARMACYCLICSINC[US];HONIGBERGLEE
+[US]; VERNER ERIK [US];PAN ZHEN)3 April 2008 (2008-04-03)
+D2
+LEE SANDRAAEYOUNG[US];FARIS)29November2007
+(2007-11-29)
+The prior art
+D1 (WO2008039218) claims,in particular claim 8; s0041; compounds of s0205;
+$00412,table 3
+discloses compounds of present formulaI,preferablycompounds of claim8of D1,as
+inhibitorsofBtkforuseinthetreatmentofcancer,preferablyaB-cellproliferative
+disorder such as lymphoma (s0034),e.g. Burkitt's lymphoma (= a solid tumor). It is
+hematological tumors (s0041). Compound 4,falling under formulaI was shown to
+inhibit also further tyrosine kinases, e.g. Lck, Lyn, Itk (s00412, table 3). Anticipates
+the subject-matter of claims 1-6,8-13,15-18,22 and possibly claims 23-26.
+D2(WO2007136790)claims;[55],[110]
+disclosesirreversibleTKIinhibitors,preferablyofinhibitorsofBTKandITK.The
+irreversibleinhibitionisachievedviaattachmentperMichaelreactiononcysteineat
+the active site, see e.g.[0142],[0146]. The compounds are disclosed to treat inter alia
+EPO Form 1703 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Anmelde-Nr:
+Blatt
+Date
+cf Form 1507
+Sheet
+2
+Application
+17191 704.0
+Date
+No:
+Feuille
+Demande.n°
+solid tumors [07], such as lymphomas (i.e. solid tumors), such as Non-Hodgkin
+kinase (e.g., Jak3), see [55]. Compounds were shown to inhibit ITK, Btk and LCK
+(table 2,p. 71). Anticipates the subject-matter of claims 1,6, 9,15-18, 22.
+Art. 82EPC-Lack of unity of invention
+features.Thepresent application is considered torelate to 3 inventionsfor the
+followingreasons.
+I:Claims 1-14 and partial claims 15-26 directed to a method of treatment wherein a
+composition is used comprising a compound that forms a covalent bond with a
+cysteine sidechainof aBtkorBtkhomologorBTKcysteine homolog.
+Il:Partial claims 15-26 directed to a method of treatment wherein a composition is
+usedcomprisingacompoundthatformsacovalentbondwithacysteinesidechainof
+HER4.
+Ill:Partialclaims15-26directedtoamethodoftreatmentwhereinacomposition is
+used comprising a compound thatforms a covalentbond with a cysteine sidechain of
+anACKotherthanthatofinventionsIandIl.
+44 EPC)for the followingreasons.
+Theproblemsunderlying thepresent inventionsI toIll is the treatment ofoneor more
+solidtumorsordevelopingsolidtumorinapatient.
+Thesolutionsproposed arethefollowing:
+ad I)thetherapeuticuseofacompositioncomprisingacompoundthatformsa
+homolog insaid diseases.
+ad ll)thetherapeuticuseofacompositioncomprisingacompoundthatformsa
+covalentbondwithacysteinesidechainofHER4insaiddiseases.
+EPO Form 1703 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+3
+Application
+17191704.0
+Date
+No:
+Feuille
+Demande.n°
+adlll)thetherapeuticuseofacompositioncomprisingacompoundthatformsa
+covalentbondwithacysteinesidechainofanACKotherthanthatofinventionsIand
+I1.
+The common concept linking all inventions I-ll is that a composition comprising a
+compound thatformsacovalentbondwithacysteinesidechainofanACK(suchas
+usedtotreatasolidtumororadevelopingsolidtumor.
+Thisconceptisnotnovelforthefollowingreasons:
+D1(WO2008039218) claims,in particular claim 18-21;s0041;compounds of s0205;
+s00412,table3
+discloses compounds of present formulaI, compounds of claim 8 of D1or table on p.
+74/75of D1:compounds 4-15,asirreversible inhibitors of Btkforuse in the treatment
+of cancer,preferably a B-cell proliferative disordersuch aslymphoma (s0034,a solid
+tumor).It isfurthermoreexplicitlydisclosed thatsaidcompoundsalsotreat
+irreversibleBtkinhibitorspreferablybindcovalentlytoacystein481residueof the
+inhibited by the compounds of D1 [00139], [00155].
+Likewise,D2(WO2007136790:claims;[55],[110],[0142],[0146], table 2) discloses
+irreversible TKI inhibitors,preferably of inhibitors of BTK and ITK. The irreversible
+inhibitionisachievedviaattachmentperMichaelreactiononcysteineattheactive
+site, see e.g. [0142], [0146]. The compounds are disclosed to treat inter alia solid
+tumors[07], such as lymphomas (i.e.solid tumors), such as Non-Hodgkin
+lymphoma[110].ThecompoundsalsoseemtoinhibitEGFRl,Her2,Her4,andJak
+kinase (e.g., Jak3), see [55]. Compounds were shown to inhibit ITK, Btk and LCK
+(table2,p.71).
+In lightof anyof thesedocuments,thecommonconcept identified above isnot novel.
+EPO Form 1703 01.91TRI
+
+--- PAGE 4 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+4
+Application
+17191 704.0
+Date
+No:
+Feuille
+Demanden°
+Thus,inview of D1 and D2,cited above,the inventions I-lll are not so linked as to
+form a single general inventive concept,i.e.Art. 82 and Rule 44 EPC have not been
+fulfilled.As a consequence,the applicationis considered torelate to3separate
+inventions asidentified above,of whichthefirst hasbeenexamined withthefollowing
+remarks madeherebelow.
+Art.76EPC
+The applicant is kindlyrequested to provide a basis for the presently claimed subject-
+matter(orthatofthelateramendedclaimset)intheparentapplication.
+Art.83 EPC
+1.) Claims 1-6-8,15arenot sufficiently disclosed and unclear as they relate to
+tyrosinekinase ora Btkcysteinehomolog"or"ACK"or"HER4".The skilled person is
+experimentationwouldberequiredtoscreencompoundshavingthesoughtactivity
+randomly(Art.83EPC)ortotestpotentialMichaelreactantsiftheyactuallycovalently
+bind totheclaimedproteins.Similarly,thefeatureofclaim3"[thesubstituent] is a
+moiety thatbinds tothe activesiteofBtk"leaves theskilled personindoubt which
+asastartingpointforthescreeningofsuchmoieties(Art.83EPC).
+onlybyreferencetoadesiredfunctional activity,namelythecompoundsbeing
+'prodrugs".Thisfunctionaltermdoesnotgiveaspecifictechnicalguidanceforthe
+ascertainmentofthescopeoftheclaimastowhichderivativesaresuitable
+'prodrugs"havingthedesiredfunctionwithoutimposinganunreasonableburden,and
+thuscanbeseenasamereinvitationtotheskilledpersontoperformaresearch
+programinorder tofind the suitablevariants incontraventionofArticle84EPC(cf.T
+279/07,point 2.1 of the decision).Further,there is no general common knowledge of
+thiskind available to the skilled person,and the application does not provide sufficient
+disclosure(Article83EPC).
+Art.84EPC (Clarity)
+EPO Form 1703 01.91TRI
+
+--- PAGE 5 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+5
+Application
+17191 704.0
+Date
+No:
+Feuille
+Demande n°
+The drawing defining formula (Vll) is illegible throughout the claims and description. It
+isaccordinglynotclearhowthesubstituentsY,Z,R6toR8areattached tocircle
+drawntherein.Sinceclaims24-26seemtobedependentthereon,eveniftheclaim
+numbersofclaims24-25wronglyreferbacktoclaims21or22,noreasonable
+opinion may expressed in respect of these claims.
+Art.54(1)and(2)EPC(Novelty)
+Thepresent applicationdoes not meet the requirements of Article52(1)EPC,
+seecommentabove)isnotnewinthesenseofArticle54(1)and(2)EPCinviewof
+D1 and D2, see above.
+Inrespect of independentclaim9 it isnoted that D1doesnotexplicitlydisclose the
+mechanismofactionofinhibitingHER4.However,theclaimneitherrequiresthatthe
+solidtumorisaHer4-dependentsolidtumornorthattheactivityonsolidtumor
+requiresinhibitionofHer4.Thus,itappearsthatthediscoveryofnovelmechanismof
+actiondoesnottranslateintoa novel therapeuticuse,at leastnotforthewholescope
+respectiveclaims.
+Art.56EPC(Inventivestep)
+Thepresent application does not meet the requirements ofArticle52(1)EPC,
+becausethesubject-matterofclaims7and14doesnotinvolveaninventivestepin
+thesenseofArticle56EPC.
+D1maybeconsideredtobetheclosestpriorartasitdisclosescompoundsofpresent
+claimsfor usein the treatment of solid tumors,e.g.Burkitt's lymphoma(s0029) or
+pancreatic cancer(s0041). Claims 7,14 differ therefrom in that they relate to certain
+specificsolid cancerssuchascarcinomaormelanoma.
+Thus,theproblemtobesolvedinviewofD1istofindanalternativetumorwhich
+mightbesusceptibletothetreatmentwithanirreversibleBtkinhibitor.
+In this context it is noted that nodata or other evidencewereprovided showing that a
+compoundofformulaIoranyotherBtkinhibitoractuallytreatstheclaimedsolid
+inhibitors against a varietyof B-cells(Fig.1A of present application) to the anti-tumor
+activity of said compounds to othersolid cancertypes,inparticular those of claims7
+and 14.
+EPO Form 1703 01.91TRI
+
+--- PAGE 6 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+cf Form 1507
+Sheet
+6
+Application
+17191704.0
+Date
+Feuille
+No:
+Demande_n?
+By applying thesamelevel of skill,the skilled personwould extrapolatefrom the anti-
+tumor activity of the claimed compounds as disclosed in D1to the usefulness of said
+compoundsinthetreatmentofmelanomaorcarcinoma,whicharebothcommonly
+knownsolidtumors.
+withtheteachingofD2thatBtkand/orHER4-inhibitiontreatssolidtumorsmentioned
+in D2.
+Finalremarks
+Whenfilingamended claimstheapplicantshould atthesametimebringthe
+descriptioninto conformitywith the amended claims.Careshould be takenduring
+revision,especially of theintroductoryportion and of any statements of problem or
+advantage,nottoaddsubject-matterwhichextendsbeyondthecontentofthe
+Amendments should be madeby filing replacement pages.Unnecessaryrecasting of
+applicantshouldalsotakeaccountoftherequirementsofRule5o(1)EPC.If
+handwritten amendments are submitted, they should be clearly legible to the printer.
+EPO Form 1703 01.91TRI

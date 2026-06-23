@@ -1,0 +1,203 @@
+
+--- PAGE 1 ---
+Claims
+1
+A compound of Formulal
+(1)
+orapharmaceuticallysalt thereof,wherein
+Y is N or C-CN;
+Z is N or CH;
+X is N or CR3;
+provided that at least one of Y,Z,orX is N;
+R1 is C3-zcycloalkyl or a 4- to 7-membered heterocyclic moiety, wherein the
+heterocyclic moiety contains1to 2 atoms independently selected from nitrogen,oxygen and
+sulfur,andwherein thecycloalkyl orheterocyclicmoietyhas0 to3substitutuents
+independently selected from -C1-3alkyl, and -OH, provided that there is no more than one -
+OH substituent; or
+N(C1-3alkyl)2,NH(C1-3alkyl), or NH(C3-4Cycloalkyl),wherein each C1-3alkyl is
+substitutedwith0to1OH;
+R2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2R,-L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2R",-L-(CH2)nSO2NHCOR", -L-(CH2)nSO2NHCONH2, Or -
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+R$ is H or -C1-3alkyl;
+L is CH2, CHF, or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1.
+4alkyloxy;
+R? is H, halogen, -CN, -C1-3alkyl, -OC1-3alkyl, -C1-3alkyl substituted with 1 to 3 halogen
+atoms, or -C3-4cycloalkyl; and
+R* is cyclopropyl, cyclobutyl, or -C13alkyl substituted with 0 to 5 halogen atoms as
+valency allows.
+87
+
+--- PAGE 2 ---
+2.
+Thecompound of claim 1,orapharmaceutically acceptablesalt thereof,wherein
+Y is N or C-CN;
+Z is N or CH;
+X is CR3;
+provided that at least one of YorZis N;
+R1 is C3.7cycloalkyl or a 4- to 7-membered heterocyclic moiety, wherein the
+sulfur,andwherein thecycloalkyl orheterocyclicmoiety has0 to3substitutuents
+independently selected from-C1-3alkyl,and-OH,provided that there isnomore than one-
+OH substituent; or
+N(C1-3alkyl)2, NH(C1-3alkyl), or NH(C3-4cycloalkyl), wherein each C1-3alkyl is
+substitutedwith0to1OH;
+R² is -(L)m-CON(RN)2, -(L)m-SO2R", -L-(CH2)nSO2R", -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)nCONHSO2R", -L-(CH2)nSO2NHCOR", -L-(CH2)nSO2NHCONH2, Or -
+L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+R$ is H or -C1-3alkyl;
+L is CH2,CHF,or CF2;
+RC is -C14alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1.
+4alkyloxy;
+R3 is H, halogen, -CN, -C1-3alkyl, -OC1-3alkyl, -C1-3alkyl substituted with 1 to 3 halogen
+atoms,or-C3-4cycloalkyl;and
+R* is -C1-3alkyl substituted with 0 to 5 halogen atoms as valency allows.
+3.
+Thecompound of claim1orclaim2,orapharmaceuticallysalt thereof,wherein
+Y is C-CN;
+Z is N;
+X is CR3;
+R1 is C3-7cycloalkyl or a 4- to 7-membered heterocyclic moiety, wherein the
+sulfur, and wherein the cycloalkyl orheterocyclicmoiety has 0 to3substitutuents
+independently selected from-C1-3alkyl, and-OH,provided that there is nomore than one -
+OH substituent;
+R² is -(L)m-CON(RN)2, -(L)m-SO2R, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2)nC(O)RC, -L-(CH2)CONHSO2R", -L-(CH2)nSO2NHCOR, or -L-(CH2)ntetrazOl-5-yl;
+m is 0 or 1;
+88
+
+--- PAGE 3 ---
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+R$ is H or -C1-3alkyl;
+Lis CH2,CHF,or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+atoms,or-C3-4cycloalkyl;and
+R4 is -C1-3alkyl substituted with 0 to 5 halogen atoms as valency allws.
+4.
+The compound of any one of claims 1 to 2, or a pharmaceutically acceptable salt
+thereof,wherein
+Yis N;
+Z is N;
+X is CR3;
+R1 is C3.7cycloalkyl or a 4-to 7-membered heterocyclic moiety,wherein the
+sulfur, andwherein thecyclalkyl or heterocyclicmoietyhas0to3substitutuents
+independently selected from-C1-3alkyl, and-OH, provided that there is no more than one -
+OH substituent;
+R² is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-
+(CH2),C(O)RC, -L-(CH2)CONHSO2R, -L-(CH2),SO2NHCOR, or -L-(CH2)ntetrazol-5-yl;
+m is 0 or 1;
+n is 0 or 1;
+RN is H or -C1-3alkyl;
+R is H or -C1-3alkyl;
+Lis CH2,CHF,or CF2;
+RC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-
+4alkyloxy;
+atoms,or-C3-4cycloalkyl;and
+R4 is -C1-3alkyl substituted with 0 to 5 halogen atoms as valency allows.
+The compound of any one of claims 1 to 4, or a pharmaceutically acceptable salt
+thereof,whereinR is H or-CH3.
+6.
+The compoundof any oneof claims1to5,orapharmaceutically acceptablesalt
+thereof,wherein R² is-CH2CO2H,-CH2CO2CH3,Or-CH2CO2CH2CH3.
+7.
+The compound of any one of claims1 to 6,or a pharmaceuticallyacceptable salt
+thereof, wherein R3 is H, -CI, -CH3,-CH2CH3, -O-CH3, Cyclopropyl, or CN.
+89
+
+--- PAGE 4 ---
+8.
+Thecompoundofanyoneofclaims1to7,orapharmaceuticallyacceptablesalt
+thereof,wherein R4 is-CF3,-CHF2,Or-CF2CH3.
+9.
+The compoundof any one of claims 1to8,orapharmaceutically acceptable salt
+thereof, wherein R1 is the 4- to 7-membered heterocyclic moiety selected from azetidin-1-yl,
+pyrrolidin-1-yl, and piperidin-1-yl having 0 to 3 substitutuents independently selected from -
+CHs and -OH, provided that there is no more than one -OH substituent.
+10.
+Thecompound of any oneof claims 1 to9,ora pharmaceutically acceptable salt
+thereof, wherein R1 is azetidin-1-yl, having 1 to 2-CHs substituents and having 0 to 1-OH
+substituent,and whereinYis C-CN and ZisN,orYand Z areeach N.
+11.
+The compound of any one of claims 1 to 8,ora pharmaceutically acceptable salt
+thereof,whereinR1iscyclobutyl having0 to3substitutuents independently selected from-
+CH3 and -OH,provided that there is no more than one -OH substituent.
+12.
+The compound of claim 1,or pharmaceutically acceptable salt thereof,wherein the
+compoundisselectedfrom
+OH
+OH
+H
+HO
+OMe
+OH
+OH
+OH
+and
+OH
+OH
+H
+H
+90
+
+--- PAGE 5 ---
+compound isselectedfrom
+(2S,3R)-2,3-dimethyl-1-[4-{(1R,5S,6S)-6-[(methylsulfonyl)methyl]-3-
+azabicyclo[3.1.0]hex-6-yl]-N-(methylsulfonyl)acetamide; and
+(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-6-(1H-
+tetrazol-5-ylmethyl)-3-azabicyclo[3.1.0]hexane.
+compound isselected from
+[(1R,5S,6R)-3-{5-cyano-6-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-4-
+[(1R,5S,6R)-3-{3-chloro-5-cyano-6-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-4-
+(trifluoromethyl)pyridin-2-yl}-3-azabicyclo[3.1.0]hex-6-yl]aceticacid;
+[(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-
+azabicyclo[3.1.0jhex-6-yl]aceticacid;
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetic acid;
+[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-5-methyl-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]acetic acid; and
+[(1R,5S,6R)-3-{5-cyano-4-(1,1-difluoroethyl)-3-fluoro-6-[(2S,3R)-3-hydroxy-2-
+15. A compound of claim 1, or pharmaceutically acceptable salt thereof, wherein the
+compound is[(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-
+3-azabicyclo[3.1.0]hex-6-yl]acetic acid.
+azabicyclo[3.1.0]hex-6-yl]acetic acid.
+17.The compound of claim 16,wherein the crystalline form is characterized substantially
+by the following principal powder x-ray diffraction pattern peaks expressed in terms of 2θ as
+18. A compound of claim 1, or pharmaceutically acceptable salt thereof, wherein the
+compound is [(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-
+(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]aceticacid.
+19.A pharmaceutical composition comprising the compound of FormulaI of any of
+claims1to18,ora pharmaceutically acceptable salt thereof,and a pharmaceutically
+acceptableexcipient.
+91
+
+--- PAGE 6 ---
+20.A compound of Formula I of any one of claims 1 to18,ora pharmaceutically
+acceptable salt thereof,for use in a method of treating a disease,wherein the disease is
+MODY,malnutrition-relateddiabetes,gestationaldiabetes,hyperglycemia,insulin
+resistance,hepaticinsulinresistance,impairedglucosetolerance,diabeticneuropathy,
+diabetic nephropathy,kidney disease, acute kidney disorder, tubular dysfunction,
+proinflammatorychangestotheproximaltubules,diabeticretinopathy,adipocyte
+dysfunction,visceraladiposedeposition,obesity,eatingdisorders,excessivesugarcraving,
+dyslipidemia,hyperlipidemia,hypertriglyceridemia,increasedtotalcholesterol,highLDL
+cholesterol, low HDL cholesterol,hyperinsulinemia,NAFLD, steatosis,NASH,fibrosis,
+cirrhosis,hepatocellularcarcinoma,HFl,coronaryarterydisease,peripheralvascular
+disease,hypertension,endothelial dysfunction,impaired vascular compliance, congestive
+heart failure,myocardial infarction, stroke,hemorrhagic stroke, ischemic stroke,pulmonary
+hypertension,restenosisafterangioplasty,intermittentclaudication,post-prandiallipemia
+metabolicacidosis,ketosis,arthritis,osteoporosis,leftventricularhypertrophy,peripheral
+arterialdisease,maculardegeneration,cataract,glomerulosclerosis,chronicrenalfailure,
+metabolic syndrome, syndrome X, premenstrual syndrome,angina pectoris, thrombosis,
+atherosclerosis,transientischemicattacks,vascularrestenosis,impairedglucose
+metabolism,conditionsofimpairedfastingplasmaglucose,hyperuricemia,gout,erectile
+dysfunction,skinandconnectivetissuedisorders,footulcerations,ulcerativecolitis,hyper
+apo B lipoproteinemia,Alzheimer's Disease, schizophrenia,impaired cognition,inflammatory
+bowel disease,ulcerative colitis, Crohn's disease,and irritable bowel syndrome.
+92

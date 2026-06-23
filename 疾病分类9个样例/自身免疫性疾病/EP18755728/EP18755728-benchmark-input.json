@@ -1,0 +1,1476 @@
+{
+  "application_number": "EP18755728.5",
+  "benchmark_input": {
+    "drug_structure": {
+      "markush_or_formula_snippets": [
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "text": "--- PAGE 1 --- CooleyRef.NODT-003/N01EP CLAIMS A compound ofFormula(I): O R (I); or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein: R1 is: (a) Cs-Ci6 polycyclic cycloalkyl, optionally substituted by one or more R6; (b)benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or dihydrobenzofuranyl is optionally substituted by one or more R6; (d) (e) 253732927v1 --- PAGE 2 --- CooleyRef.NODT-003/N01EP CN CN CN CF CI CI R3is H, methyl, or ethyl, wherein the methyl or ethyl is optionally substituted with one or moreR; R4 is H, C1-C6 alkyl, -(CH2)o-3-(C3-C6 cycloalkyl), or -(CH2)o-3-Cs-C6 aryl; R6 is C-C6 alkyl, C2-C6 alkenyl, C1-C6 alkoxy, C3-Cs cycloalkyl, halo, oxo, -OH, -CN, - NH2,-NH(C1-C6 alkyl),-N(C1-C6 alkyl)2, -CH2F,-CHF2, Or -CF3; R7 is -ORs, Cs-Cio aryl, or 5-to 10- membered heteroaryl, wherein the Cs-C1o aryl or 5- to 10-membered heteroaryl is option"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "text": "--- PAGE 1 --- CooleyRef.NODT-003/N01EP CLAIMS A compound ofFormula (I): R (I); or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein: R1 is: (a) Cs-Ci6 polycyclic cycloalkyl, optionally substituted by one or more R6; (b) benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or dihydrobenzofuranylis optionally substituted by one or more R6; (d) (e) 253732927V1 --- PAGE 2 --- CooleyRef.NODT-003"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "text": "ore R7s; or wherein Rs is 5-to 7-membered heterocycloalkyl optionally substitutedwith one or moreR7s. 17. The compound of any one of claims 1-16, being of: (a) Formula (Ila) or (Ib): O R3 (la); (Ib); or a hydrate, solvate, or pharmaceutically acceptable salt thereof; (b) any one of Formulae (Il), (Ila), and (IIb): R3 (I); (Ila); (IIb); or a hydrate,solvate,or pharmaceutically acceptable salt thereof; (c) any one of Formulae (III), (IIla), and (IIIb): 253732927v1 --- PAGE 10 --- CooleyRef.NODT-003/N01EP (II); (Illa); (III"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "text": "b); or a hydrate,solvate, or pharmaceutically acceptable salt thereof; (d) any one ofFormulae (IV),(IVa),and (IVb): (IV); (IVa); (IVb); or a hydrate, solvate, or pharmaceutically acceptable salt thereof; (e) any one of Formulae (V), (Va), (Vb), (VI), (VIa), and (VIb): R3 O (V); R3 O R3 (Va); (Vb); 10 253732927V1 --- PAGE 11 --- CooleyRef.NODT-003/N01EP R (VI); 0 R3 (VIa); (VIb); or a hydrate,solvate,or pharmaceutically acceptable salt thereof; (f)"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "text": "any one of Formulae (VII), (VIla), (VIIb), (VIII), (VIIIa), and (VIIIb): R7 (VII); (VIla); (VIIb); (VII); (VIlla); (VIIb); or a hydrate, solvate, or pharmaceutically acceptable salt thereof; or (g) any one of Formulae (IX), (IXa), (IXb), (X), (Xa), and (Xb): 253732927V1 --- PAGE 12 --- CooleyRef.NODT-003/N01EP 日 (IX); R O (IXa); O (IXb); H (X); (Xa); (Xb); or a hydrate, solv"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "text": "--- PAGE 1 --- CooleyRef.NODT-003/N01EP CLAIMS A compound ofFormula (I): R (I); or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein: R1is: (a) Cs-C16 polycyclic cycloalkyl, optionally substituted by one or more R6; (b) benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or dihydrobenzofuranyl is optionally substituted by one or more R6; C (d) or (e) 253273670V1 --- PAGE 2 --- CooleyRef.NOD"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "text": "ore R7s; or wherein Rs is 5-to 7-membered heterocycloalkyl optionally substitutedwith one or moreR7s. 17. The compound of any one of claims 1-16, being of: (a) Formula (Ila) or (Ib): O R3 (la); (Ib); or a hydrate, solvate, or pharmaceutically acceptable salt thereof; (b) any one of Formulae (Il), (Ila), and (IIb): (I); 0 (lIla); (IIb); or a hydrate,solvate,or pharmaceutically acceptable salt thereof; (c) any one of Formulae (III), (IIla), and (IIIb): 253273670v1 --- PAGE 10 --- Cooley Ref.NODT-003/N01EP (II); (lla); (IIb"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "text": "); or a hydrate, solvate, or pharmaceutically acceptable salt thereof; (d)any one ofFormulae(IV),(IVa),and (IVb): (IV); (IVa); (IVb); or a hydrate,solvate,or pharmaceutically acceptable salt thereof; (e) any one of Formulae (V), (Va), (Vb), (VI), (VIa), and (VIb): R3 (V); O R3 O R3 (Va); (Vb); 10 253273670v1 --- PAGE 11 --- CooleyRef.NODT-003/N01EP R (VI); 0 (VIa); (VIb); or a hydrate,solvate,or pharmaceutically acceptable salt thereof; (f) any o"
+        }
+      ],
+      "smiles": [],
+      "extraction_note": "先按 Formula/Markush OCR 上下文定位 PDF 页面，再用 OpenCV 连通域和线段特征切出候选结构图；markush_images 为自动筛选 Top 候选，markush_candidate_images 保留候选图库供人工复核。",
+      "markush_images": [
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c087.png",
+          "bbox_px": [
+            222,
+            805,
+            624,
+            1040
+          ],
+          "score": 2528.2,
+          "image_score": 628.2,
+          "context_priority": 1900,
+          "line_count": 74,
+          "slanted_line_count": 55,
+          "density": 0.06062,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c085.png",
+          "bbox_px": [
+            364,
+            768,
+            683,
+            1032
+          ],
+          "score": 2460.0,
+          "image_score": 560.0,
+          "context_priority": 1900,
+          "line_count": 85,
+          "slanted_line_count": 33,
+          "density": 0.07835,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c083.png",
+          "bbox_px": [
+            237,
+            855,
+            516,
+            1119
+          ],
+          "score": 2448.8,
+          "image_score": 548.8,
+          "context_priority": 1900,
+          "line_count": 71,
+          "slanted_line_count": 35,
+          "density": 0.07589,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_candidate_images": [
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c087.png",
+          "bbox_px": [
+            222,
+            805,
+            624,
+            1040
+          ],
+          "score": 2528.2,
+          "image_score": 628.2,
+          "context_priority": 1900,
+          "line_count": 74,
+          "slanted_line_count": 55,
+          "density": 0.06062,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c085.png",
+          "bbox_px": [
+            364,
+            768,
+            683,
+            1032
+          ],
+          "score": 2460.0,
+          "image_score": 560.0,
+          "context_priority": 1900,
+          "line_count": 85,
+          "slanted_line_count": 33,
+          "density": 0.07835,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c083.png",
+          "bbox_px": [
+            237,
+            855,
+            516,
+            1119
+          ],
+          "score": 2448.8,
+          "image_score": 548.8,
+          "context_priority": 1900,
+          "line_count": 71,
+          "slanted_line_count": 35,
+          "density": 0.07589,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c119.png",
+          "bbox_px": [
+            445,
+            1201,
+            929,
+            1434
+          ],
+          "score": 2444.2,
+          "image_score": 544.2,
+          "context_priority": 1900,
+          "line_count": 64,
+          "slanted_line_count": 37,
+          "density": 0.04804,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c121.png",
+          "bbox_px": [
+            445,
+            1200,
+            929,
+            1435
+          ],
+          "score": 2441.0,
+          "image_score": 541.0,
+          "context_priority": 1900,
+          "line_count": 60,
+          "slanted_line_count": 38,
+          "density": 0.04732,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c082.png",
+          "bbox_px": [
+            531,
+            1340,
+            830,
+            1586
+          ],
+          "score": 2436.0,
+          "image_score": 536.0,
+          "context_priority": 1900,
+          "line_count": 55,
+          "slanted_line_count": 39,
+          "density": 0.05226,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c121.png",
+          "bbox_px": [
+            175,
+            1424,
+            660,
+            1658
+          ],
+          "score": 2433.0,
+          "image_score": 533.0,
+          "context_priority": 1900,
+          "line_count": 60,
+          "slanted_line_count": 36,
+          "density": 0.04754,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c120.png",
+          "bbox_px": [
+            700,
+            1424,
+            1185,
+            1658
+          ],
+          "score": 2430.8,
+          "image_score": 530.8,
+          "context_priority": 1900,
+          "line_count": 61,
+          "slanted_line_count": 35,
+          "density": 0.04735,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c074.png",
+          "bbox_px": [
+            943,
+            1299,
+            1219,
+            1466
+          ],
+          "score": 2429.6,
+          "image_score": 529.6,
+          "context_priority": 1900,
+          "line_count": 57,
+          "slanted_line_count": 38,
+          "density": 0.07546,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c082.png",
+          "bbox_px": [
+            531,
+            1428,
+            831,
+            1673
+          ],
+          "score": 2424.0,
+          "image_score": 524.0,
+          "context_priority": 1900,
+          "line_count": 55,
+          "slanted_line_count": 36,
+          "density": 0.052,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c072.png",
+          "bbox_px": [
+            941,
+            1211,
+            1217,
+            1378
+          ],
+          "score": 2417.6,
+          "image_score": 517.6,
+          "context_priority": 1900,
+          "line_count": 57,
+          "slanted_line_count": 35,
+          "density": 0.07865,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c091.png",
+          "bbox_px": [
+            216,
+            747,
+            1125,
+            1130
+          ],
+          "score": 2415.8,
+          "image_score": 515.8,
+          "context_priority": 1900,
+          "line_count": 146,
+          "slanted_line_count": 13,
+          "density": 0.06668,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c082.png",
+          "bbox_px": [
+            531,
+            1342,
+            830,
+            1587
+          ],
+          "score": 2403.0,
+          "image_score": 503.0,
+          "context_priority": 1900,
+          "line_count": 50,
+          "slanted_line_count": 33,
+          "density": 0.05268,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c119.png",
+          "bbox_px": [
+            176,
+            1424,
+            660,
+            1658
+          ],
+          "score": 2396.4,
+          "image_score": 496.4,
+          "context_priority": 1900,
+          "line_count": 53,
+          "slanted_line_count": 30,
+          "density": 0.04709,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c072.png",
+          "bbox_px": [
+            941,
+            1212,
+            1217,
+            1380
+          ],
+          "score": 2394.8,
+          "image_score": 494.8,
+          "context_priority": 1900,
+          "line_count": 51,
+          "slanted_line_count": 32,
+          "density": 0.07835,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c120.png",
+          "bbox_px": [
+            700,
+            1424,
+            1185,
+            1658
+          ],
+          "score": 2390.6,
+          "image_score": 490.6,
+          "context_priority": 1900,
+          "line_count": 52,
+          "slanted_line_count": 29,
+          "density": 0.04738,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c079.png",
+          "bbox_px": [
+            237,
+            1411,
+            462,
+            1673
+          ],
+          "score": 2367.8,
+          "image_score": 467.8,
+          "context_priority": 1900,
+          "line_count": 46,
+          "slanted_line_count": 26,
+          "density": 0.05425,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c084.png",
+          "bbox_px": [
+            576,
+            769,
+            881,
+            1032
+          ],
+          "score": 2366.0,
+          "image_score": 466.0,
+          "context_priority": 1900,
+          "line_count": 65,
+          "slanted_line_count": 20,
+          "density": 0.06171,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c063.png",
+          "bbox_px": [
+            267,
+            813,
+            450,
+            1029
+          ],
+          "score": 2358.8,
+          "image_score": 458.8,
+          "context_priority": 1900,
+          "line_count": 41,
+          "slanted_line_count": 29,
+          "density": 0.07142,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c079.png",
+          "bbox_px": [
+            237,
+            1323,
+            460,
+            1586
+          ],
+          "score": 2358.4,
+          "image_score": 458.4,
+          "context_priority": 1900,
+          "line_count": 43,
+          "slanted_line_count": 25,
+          "density": 0.05702,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c063.png",
+          "bbox_px": [
+            432,
+            897,
+            612,
+            1110
+          ],
+          "score": 2354.8,
+          "image_score": 454.8,
+          "context_priority": 1900,
+          "line_count": 41,
+          "slanted_line_count": 28,
+          "density": 0.06862,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c079.png",
+          "bbox_px": [
+            237,
+            1325,
+            460,
+            1587
+          ],
+          "score": 2354.4,
+          "image_score": 454.4,
+          "context_priority": 1900,
+          "line_count": 43,
+          "slanted_line_count": 24,
+          "density": 0.05713,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c062.png",
+          "bbox_px": [
+            627,
+            813,
+            810,
+            1027
+          ],
+          "score": 2346.8,
+          "image_score": 446.8,
+          "context_priority": 1900,
+          "line_count": 41,
+          "slanted_line_count": 26,
+          "density": 0.06728,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c073.png",
+          "bbox_px": [
+            394,
+            1140,
+            590,
+            1380
+          ],
+          "score": 2337.6,
+          "image_score": 437.6,
+          "context_priority": 1900,
+          "line_count": 37,
+          "slanted_line_count": 24,
+          "density": 0.05702,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c075.png",
+          "bbox_px": [
+            395,
+            1226,
+            591,
+            1466
+          ],
+          "score": 2331.8,
+          "image_score": 431.8,
+          "context_priority": 1900,
+          "line_count": 36,
+          "slanted_line_count": 23,
+          "density": 0.05449,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c073.png",
+          "bbox_px": [
+            394,
+            1139,
+            590,
+            1378
+          ],
+          "score": 2330.0,
+          "image_score": 430.0,
+          "context_priority": 1900,
+          "line_count": 35,
+          "slanted_line_count": 23,
+          "density": 0.05706,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c047.png",
+          "bbox_px": [
+            152,
+            1415,
+            302,
+            1583
+          ],
+          "score": 2299.4,
+          "image_score": 399.4,
+          "context_priority": 1900,
+          "line_count": 28,
+          "slanted_line_count": 20,
+          "density": 0.07111,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c047.png",
+          "bbox_px": [
+            152,
+            1417,
+            302,
+            1584
+          ],
+          "score": 2293.6,
+          "image_score": 393.6,
+          "context_priority": 1900,
+          "line_count": 27,
+          "slanted_line_count": 19,
+          "density": 0.07154,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c053.png",
+          "bbox_px": [
+            153,
+            1503,
+            302,
+            1670
+          ],
+          "score": 2289.6,
+          "image_score": 389.6,
+          "context_priority": 1900,
+          "line_count": 27,
+          "slanted_line_count": 18,
+          "density": 0.06945,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c084.png",
+          "bbox_px": [
+            577,
+            472,
+            882,
+            720
+          ],
+          "score": 2278.0,
+          "image_score": 378.0,
+          "context_priority": 1900,
+          "line_count": 65,
+          "slanted_line_count": 14,
+          "density": 0.06421,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c077.png",
+          "bbox_px": [
+            577,
+            390,
+            890,
+            574
+          ],
+          "score": 2267.2,
+          "image_score": 367.2,
+          "context_priority": 1900,
+          "line_count": 39,
+          "slanted_line_count": 23,
+          "density": 0.04987,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c077.png",
+          "bbox_px": [
+            576,
+            390,
+            890,
+            575
+          ],
+          "score": 2261.8,
+          "image_score": 361.8,
+          "context_priority": 1900,
+          "line_count": 36,
+          "slanted_line_count": 23,
+          "density": 0.04963,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c111.png",
+          "bbox_px": [
+            355,
+            922,
+            654,
+            1110
+          ],
+          "score": 2259.6,
+          "image_score": 359.6,
+          "context_priority": 1900,
+          "line_count": 37,
+          "slanted_line_count": 22,
+          "density": 0.05342,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c109.png",
+          "bbox_px": [
+            786,
+            922,
+            1084,
+            1110
+          ],
+          "score": 2240.4,
+          "image_score": 340.4,
+          "context_priority": 1900,
+          "line_count": 33,
+          "slanted_line_count": 19,
+          "density": 0.05191,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c046.png",
+          "bbox_px": [
+            277,
+            1016,
+            426,
+            1185
+          ],
+          "score": 2227.2,
+          "image_score": 327.2,
+          "context_priority": 1900,
+          "line_count": 29,
+          "slanted_line_count": 19,
+          "density": 0.06572,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c111.png",
+          "bbox_px": [
+            355,
+            922,
+            654,
+            1110
+          ],
+          "score": 2226.6,
+          "image_score": 326.6,
+          "context_priority": 1900,
+          "line_count": 32,
+          "slanted_line_count": 16,
+          "density": 0.05252,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c116.png",
+          "bbox_px": [
+            691,
+            914,
+            1112,
+            1118
+          ],
+          "score": 2171.8,
+          "image_score": 271.8,
+          "context_priority": 1900,
+          "line_count": 36,
+          "slanted_line_count": 23,
+          "density": 0.04187,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c041.png",
+          "bbox_px": [
+            427,
+            715,
+            737,
+            781
+          ],
+          "score": 2027.8,
+          "image_score": 127.8,
+          "context_priority": 1900,
+          "line_count": 61,
+          "slanted_line_count": 0,
+          "density": 0.09585,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c084.png",
+          "bbox_px": [
+            229,
+            867,
+            541,
+            934
+          ],
+          "score": 2015.2,
+          "image_score": 115.2,
+          "context_priority": 1900,
+          "line_count": 54,
+          "slanted_line_count": 0,
+          "density": 0.08271,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c044.png",
+          "bbox_px": [
+            390,
+            658,
+            651,
+            724
+          ],
+          "score": 2009.4,
+          "image_score": 109.4,
+          "context_priority": 1900,
+          "line_count": 48,
+          "slanted_line_count": 0,
+          "density": 0.09555,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Claims_L0QSTZLR14CECJ3_p001_c043.png",
+          "bbox_px": [
+            803,
+            802,
+            1030,
+            869
+          ],
+          "score": 2004.0,
+          "image_score": 104.0,
+          "context_priority": 1900,
+          "line_count": 45,
+          "slanted_line_count": 0,
+          "density": 0.09422,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c084.png",
+          "bbox_px": [
+            229,
+            867,
+            541,
+            934
+          ],
+          "score": 2002.6,
+          "image_score": 102.6,
+          "context_priority": 1900,
+          "line_count": 47,
+          "slanted_line_count": 0,
+          "density": 0.08156,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001_c037.png",
+          "bbox_px": [
+            891,
+            667,
+            1108,
+            730
+          ],
+          "score": 1993.2,
+          "image_score": 93.2,
+          "context_priority": 1900,
+          "line_count": 39,
+          "slanted_line_count": 0,
+          "density": 0.08807,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c077.png",
+          "bbox_px": [
+            312,
+            628,
+            540,
+            690
+          ],
+          "score": 1993.2,
+          "image_score": 93.2,
+          "context_priority": 1900,
+          "line_count": 39,
+          "slanted_line_count": 0,
+          "density": 0.08913,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c068.png",
+          "bbox_px": [
+            486,
+            578,
+            675,
+            639
+          ],
+          "score": 1991.4,
+          "image_score": 91.4,
+          "context_priority": 1900,
+          "line_count": 38,
+          "slanted_line_count": 0,
+          "density": 0.09758,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009_c076.png",
+          "bbox_px": [
+            233,
+            579,
+            440,
+            644
+          ],
+          "score": 1986.0,
+          "image_score": 86.0,
+          "context_priority": 1900,
+          "line_count": 35,
+          "slanted_line_count": 0,
+          "density": 0.09275,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-candidates/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009_c067.png",
+          "bbox_px": [
+            486,
+            820,
+            675,
+            881
+          ],
+          "score": 1986.0,
+          "image_score": 86.0,
+          "context_priority": 1900,
+          "line_count": 35,
+          "slanted_line_count": 0,
+          "density": 0.09585,
+          "extraction_method": "OpenCV connected-component crop"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-candidates/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001_c037.png",
+          "bbox_px": [
+            891,
+            669,
+            1108,
+            732
+          ],
+          "score": 1982.4,
+          "image_score": 82.4,
+          "context_priority": 1900,
+          "line_count": 33,
+          "slanted_line_count": 0,
+          "density": 0.08631,
+          "extraction_method": "OpenCV connected-component crop"
+        }
+      ],
+      "markush_page_images": [
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p001.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 9,
+          "image_path": "assets/markush-pages/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p009.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "pdf": "14-03-2022_Claims_L0QSTZLR14CECJ3.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/14-03-2022_Claims_L0QSTZLR14CECJ3_p001.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 1,
+          "image_path": "assets/markush-pages/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p001.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 9,
+          "image_path": "assets/markush-pages/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p009.png",
+          "context_priority": 1900,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 10,
+          "image_path": "assets/markush-pages/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p010.png",
+          "context_priority": 0,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "pdf": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G.pdf",
+          "page": 11,
+          "image_path": "assets/markush-pages/14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_p011.png",
+          "context_priority": 0,
+          "extraction_method": "keyword-scored page fallback"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "pdf": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU.pdf",
+          "page": 10,
+          "image_path": "assets/markush-pages/16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_p010.png",
+          "context_priority": 0,
+          "extraction_method": "keyword-scored page fallback"
+        }
+      ],
+      "markush_extraction_status": {
+        "status": "selected",
+        "reason": "At least one visual candidate passed the chemical-structure filters.",
+        "selected_count": 3,
+        "candidate_count": 48,
+        "page_count": 8,
+        "snippet_count": 8
+      }
+    },
+    "claim_text": {
+      "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+      "source_type": "ocr_preview",
+      "claim_1": "--- PAGE 1 --- CooleyRef.NODT-003/N01EP CLAIMS A compound ofFormula(I): O R (I); or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein: R1 is: (a) Cs-Ci6 polycyclic cycloalkyl, optionally substituted by one or more R6; (b)benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or dihydrobenzofuranyl is optionally substituted by one or more R6; (d) (e) 253732927v1 --- PAGE 2 --- CooleyRef.NODT-003/N01EP CN CN CN CF CI CI R3is H, methyl, or ethyl, wherein the methyl or ethyl is optionally substituted with one or moreR; R4 is H, C1-C6 alkyl, -(CH2)o-3-(C3-C6 cycloalkyl), or -(CH2)o-3-Cs-C6 aryl; R6 is C-C6 alkyl, C2-C6 alkenyl, C1-C6 alkoxy, C3-Cs cycloalkyl, halo, oxo, -OH, -CN, - NH2,-NH(C1-C6 alkyl),-N(C1-C6 alkyl)2, -CH2F,-CHF2, Or -CF3; R7 is -ORs, Cs-Cio aryl, or 5-to 10- membered heteroaryl, wherein the Cs-C1o aryl or 5- to 10-membered heteroaryl is optionally substituted by one or more Rzs, wherein each Rzs is independently Ci-C6 alkyl, Ci-C6 alkoxy, 5- to 10-membered heteroaryl, halo, -OH, -CN, - 253732927v1 --- PAGE 3 --- CooleyRef.NODT-003/N01EP (CH2)o-3-NH2, -(CH2)0-3-NH(C1-C6 alkyl), -(CH2)0-3-N(C1-C6 alky1)2, -CH2F, -CHF2, Or -CF3; and Rs is Ci-C6 alkyl or 5- to 7-membered heterocycloalkyl, wherein the Ci-C6 alkyl or 5- to 7-membered heterocycloalkyl is optionally substituted by one or more R7s. 2. The compound of claim 1, wherein Ri is Cs-C16 polycyclic cycloalkyl substituted by one ormoreR6. 3. The compound of any one of claims 1-2, wherein R1 is adamantyl, norbornyl, or bicyclo[2.2.2]octanyl, wherein the adamantyl, norbornyl, or bicyclo[2.2.2]octanyl is optionally substituted by one or moreR6. 4. The compound of any one of claims 1-2, wherein R1 is C12-C16 tricyclic saturated cycloalkyl optionally substituted by one or more R6; optionallywherein the Ci2-Ci6tricyclicsaturated cycloalkylis hexahydroindacenyl; further optionally wherein the hexahydroindacenyl is substituted by one, two, three, or four substituents independently selected from Ci-C4 alkyl, Ci-C6 alkoxy, halo, oxo, -OH, and - CF3. 5. The compound of any one of claims 1-2 and 4,wherein R is orwhereinRiis or wherein n and na each independently are 0, 1, 2, or 3. 253732927v1 --- PAGE 4 --- CooleyRef.NODT-003/N01EP 6. The compound of any one of claims1-5,whereinR3is H. 7. The compound of any one of claims 1-5, wherein R3is methyl or ethyl,wherein the methyl or ethyl is optionally substituted with one or more R7. 8. The compound of any one of claims 1-5 and 7, wherein Rsis methyl or ethyl. 9 The compound of claim 8, wherein R3is methyl substituted with: (a) one or more Ci-C6 alkoxy, wherein the Ci-C6 alkoxy is optionally substituted with one or more Ci-C6 alkoxy; optionally,whereinR3is (b) one or more -O-(5-to 7-membered heterocycloalkyl); optionally, wherein R3is (c) one or more Cs-Cio aryl, wherein the Cs-Cio aryl is optionally substituted with one or more5-to10-membered heteroaryl or-CN; optionally, wherein R3is 253732927v1 --- PAGE 5 --- C",
+      "target_claims": [
+        {
+          "claim_number": 1,
+          "text": "--- PAGE 1 --- CooleyRef.NODT-003/N01EP CLAIMS A compound ofFormula(I): O R (I); or a hydrate, solvate, or pharmaceutically acceptable salt thereof, wherein: R1 is: (a) Cs-Ci6 polycyclic cycloalkyl, optionally substituted by one or more R6; (b)benzofuranyl or dihydrobenzofuranyl, wherein the benzofuranyl or dihydrobenzofuranyl is optionally substituted by one or more R6; (d) (e) 253732927v1 --- PAGE 2 --- CooleyRef.NODT-003/N01EP CN CN CN CF CI CI R3is H, methyl, or ethyl, wherein the methyl or ethyl is optionally substituted with one or moreR; R4 is H, C1-C6 alkyl, -(CH2)o-3-(C3-C6 cycloalkyl), or -(CH2)o-3-Cs-C6 aryl; R6 is C-C6 alkyl, C2-C6 alkenyl, C1-C6 alkoxy, C3-Cs cycloalkyl, halo, oxo, -OH, -CN, - NH2,-NH(C1-C6 alkyl),-N(C1-C6 alkyl)2, -CH2F,-CHF2, Or -CF3; R7 is -ORs, Cs-Cio aryl, or 5-to 10- membered heteroaryl, wherein the Cs-C1o aryl or 5- to 10-membered heteroaryl is optionally substituted by one or more Rzs, wherein each Rzs is independently Ci-C6 alkyl, Ci-C6 alkoxy, 5- to 10-membered heteroaryl, halo, -OH, -CN, - 253732927v1 --- PAGE 3 --- CooleyRef.NODT-003/N01EP (CH2)o-3-NH2, -(CH2)0-3-NH(C1-C6 alkyl), -(CH2)0-3-N(C1-C6 alky1)2, -CH2F, -CHF2, Or -CF3; and Rs is Ci-C6 alkyl or 5- to 7-membered heterocycloalkyl, wherein the Ci-C6 alkyl or 5- to 7-membered heterocycloalkyl is optionally substituted by one or more R7s. 2. The compound of claim 1, wherein Ri is Cs-C16 polycyclic cycloalkyl substituted by one ormoreR6. 3. The compound of any one of claims 1-2, wherein R1 is adamantyl, norbornyl, or bicyclo[2.2.2]octanyl, wherein the adamantyl, norbornyl, or bicyclo[2.2.2]octanyl is optionally substituted by one or moreR6. 4. The compound of any one of claims 1-2, wherein R1 is C12-C16 tricyclic saturated cycloalkyl optionally substituted by one or more R6; optionallywherein the Ci2-Ci6tricyclicsaturated cycloalkylis hexahydroindacenyl; further optionally wherein the hexahydroindacenyl is substituted by one, two, three, or four substituents independently selected from Ci-C4 alkyl, Ci-C6 alkoxy, halo, oxo, -OH, and - CF3. 5. The compound of any one of claims 1-2 and 4,wherein R is orwhereinRiis or wherein n and na each independently are 0, 1, 2, or 3. 253732927v1 --- PAGE 4 --- CooleyRef.NODT-003/N01EP 6. The compound of any one of claims1-5,whereinR3is H. 7. The compound of any one of claims 1-5, wherein R3is methyl or ethyl,wherein the methyl or ethyl is optionally substituted with one or more R7. 8. The compound of any one of claims 1-5 and 7, wherein Rsis methyl or ethyl. 9 The compound of claim 8, wherein R3is methyl substituted with: (a) one or more Ci-C6 alkoxy, wherein the Ci-C6 alkoxy is optionally substituted with one or more Ci-C6 alkoxy; optionally,whereinR3is (b) one or more -O-(5-to 7-membered heterocycloalkyl); optionally, wherein R3is (c) one or more Cs-Cio aryl, wherein the Cs-Cio aryl is optionally substituted with one or more5-to10-membered heteroaryl or-CN; optionally, wherein R3is 253732927v1 --- PAGE 5 --- C"
+        }
+      ],
+      "claims_verified_json": "EP18755728-claims-verified.json",
+      "claims_review_status": "needs_human_review",
+      "claims_review_verified_count": 0,
+      "claims_review_total_count": 22
+    },
+    "jurisdiction": "EP",
+    "application_number": "EP18755728.5",
+    "title": "SELECTIVE INHIBITORS OF NLRP3 INFLAMMASOME",
+    "applicant": "Nodthera Limited",
+    "filing_date": "2018-07-31",
+    "priority_date": "2017-07-31",
+    "known_outcome": {
+      "outcome": "granted",
+      "grant_label": "yes",
+      "source": "21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt",
+      "date": ""
+    },
+    "specification_data": {
+      "examples": [
+        {
+          "source": "16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt",
+          "text": "1hasbeen amendedsoastorecite thatRisH,methyl,orethyl,whereinthemethylorethylis optionallysubstituted with one ormore Rz[emphasis added].Basis for this amendment can befound at,for example,original claims 27-29 and original paragraphs [0171], [0175],[0176], [0178] and [0241]. Basis for amended claim 1 can thus be found at original claims 1,17-19, 23, 24 and 26-30, and paragraphs [0171], [0175], [0176], [0178] and [0241]. In light of the above amendment, claim7has been amended so astorecite that R3 is methyl, orethyl, whereinthemethyl orethylisoptionallysubstitutedwithoneormoreR[emphasisadded].Basisfor"
+        },
+        {
+          "source": "09-03-2021_Annex_to_the_communication_E5X20HH29208DSU_ocr.txt",
+          "text": "lem underlying the present application is to be seen in the provision of furtherinhibitorsoftheactivationoftheNLRP3inflammasome.Thisproblemhas apparentlybeensolved asdemonstratedbyexample126giveninthedescription.The solution of thisproblem could inprinciplebe considered toinvolve an inventivestep, claimed carbamoyloxy-acetic acid derivativeswould show aninhibitory effecton the activation of the NLRP3inflammasome.Thus,as far asbeing novel, the subject matter 4.The Applicant is invited to file a new claims.It is brought to the Applicant's attention, that any amendments must strictly meet therequirement"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "ompound, by an-intermediate obtained by a method for preparingthe compound of any-one-of claims-1-70; optionally, the intermediate is selected from the intermediates described in Examples -1- 126. 74. The pharmaceutical- composition- of claim-73, wherein-the compound is- selected from Compound Nos. 1 130. 75.- A-method- of inhibiting inflammasome activity, comprising contacting a cell with an effective amount-of the compound of any-one of claims-1 72 or a pharmaceutically-acceptable salt thereof; optionally,theinflammasomeisNLRP3-inflammasome, and the-activity-is-in-vitro-or-in vivo. 76..A-method-of"
+        },
+        {
+          "source": "31-07-2018_Claims_E16YBRNZ3754DSU_ocr.txt",
+          "text": "ompound, by an intermediate obtained by a method for preparing the compound of any one of claims 1-70; optionally, the intermediate is selected from the intermediates described in Examples 1- 126. 73.A pharmaceutical composition comprising the compound of any one of claims 1-72 or a 74. The pharmaceutical composition of claim 73, wherein the compound is selected from 217 182236082 v1 --- PAGE 18 --- CooleyRef.NODT-003/001WO(330150-2003) Compound Nos. 1-130. 75.A method of inhibiting inflammasome activity, comprising contacting a cell with an effective amount of the compound of any one of claims 1-72"
+        }
+      ],
+      "pharmacology_or_effect_data": [
+        {
+          "source": "13-07-2022_Annex_to_the_communication_L5CIG8YH1A5RUVP_ocr.txt",
+          "text": "Demande n°: Theboardhad no doubt that the skilled person isperfectlyable inmost cases todecide whetherornotasteroidderivativewillbeconvertedtothe5-diolinvivoinparticular whenthechemicalentitydiffersfromthe5-diolskeletonmerelybythepresenceof usualhydrolysablehydroxylprotectinggroups,suchas... HowevertheBoardwasalsoconvincedthatinordertoestablishwhetherastructurally moreremotederivativeconstitutesaprodrugofthe5-diol;inordertoclearlyestablish thescopeoftheclaims,theskilledpersonwouldsometimeshavenootherchoicethan to synthesise alabeled sample tobe tested and tofollow its biochemical transformationsi"
+        },
+        {
+          "source": "13-07-2022_Annex_to_the_communication_L5CIG8YH1A5RUVP_ocr.txt",
+          "text": "nvivotodeterminewhetherornotthechemicalstructureunder considerationisabiologicalprecursor,whichisexactlywhattheApplicanthasstated in paragraph). claritydemandsnotonlythataskilledpersonbeabletounderstand theteachingof the claimbutalsothathebeabletoimplementit.Inotherwords,thefeaturemustprovide instructionswhicharesufficientlyclearfortheexperttoreducethemtopracticewithout unreasonable burden, if necessary with routine experiments. Theclarityrequirementwas"
+        },
+        {
+          "source": "09-03-2021_Annex_to_the_communication_E5X20HH29208DSU_ocr.txt",
+          "text": "or art, since this document is the onlyoneconcernedwithinhibitorsoftheactivationoftheNLRP3inflammasomeasis the present application.These compounds do show a completely differentchemical EPOForm290601.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 09.03.2021 Sheet 2 Application No: 18 755 728.5 Date Feuille Demande n°: structuretheyaresulfonyl ureaderivativeswhereasthepresentcompoundsare cycloalkyl-,hexhydroindacenyl-,phenyl-,naphtyl-,benzofuranyl- and thienyl- carbamoyloxy-aceticacidderivatives. Thus, the problem underlying the present application is to be seen in the provision of furtherinhi"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "cribed in Examples -1- 126. 74. The pharmaceutical- composition- of claim-73, wherein-the compound is- selected from Compound Nos. 1 130. 75.- A-method- of inhibiting inflammasome activity, comprising contacting a cell with an effective amount-of the compound of any-one of claims-1 72 or a pharmaceutically-acceptable salt thereof; optionally,theinflammasomeisNLRP3-inflammasome, and the-activity-is-in-vitro-or-in vivo. 76..A-method-of-treating-or preventing-a-disease-or disorder-in-a-subject-in-need-thereof, comprising-administering-to the-subject-a-therapeutically-effective-amount-of the-compound-of a"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "7 --- CooleyRef.NODT-003/001WO(330150-2003) composition-of claim-73-or-claim-74. 77.Themethod-ofclaim76,wherein-the-disease-or-disorderis-associatedwith-an-implicated inflammasome-activity; optionally,_ the disease or disorder-is-a disease or disorder in-which inflammasome aetivity is implicated. 78.The-method-of-claim-76-or-claim-77, wherein-the disease-ordisorder-is-an autoinflammatory disorder, an autoimmune disorder, a neurodegenerative disease, or cancer. 79.Themethod-of any-oneof claims76-.78,wherein-the-diseaseordisorderisan autoinflammatory disorder-or-an-autoimmune-disorder; Optionally, the d"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "s -1-72, or- the pharmaceutical- composition- of -claim- 69 37 233361337 v1 --- PAGE 38 --- CooleyRef.NODT-003/001WO(330150-2003) or claim 70, for -use in inhibiting inflammasome activity; -optionally, the-inflammasome-is-NLRP3-inflammasome, and-the-activity-is-in-vitro-or in vivo. 2183. The compound of any one of claims 1-1972, or the pharmaceutical composition of claim 2069-orclaim70,foruseintreatingorpreventingadiseaseordisorder. 84.Thecompound-or pharmaceuticalcomposition-of claim--83, wherein-the-disease-or disorder is associated with-an-implicated inflammasome activity; optionally,the disease-o"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": ", or colorectal adenocarcinoma. 89. Use of the compound- of any-one of claims-1.72- or a pharmaceutical salt thereof in the manufacture-of-a-medicament-for-inhibiting-inflammasome-activity; optionally, the inflammasome is NLRP3 inflammasome, and the activity-is-in-vitro-or-int vivo. 90.-Use-ofthe-compound-of-any-one-ofclaims-1-72-or-a-pharmaceutical-salt-thereof-inthe manufacture of a medicament for treating or preventing a disease or disorder. 91.The use-of claim--90, wherein-the disease-or-disorder is- associated with-animplicated inflammasome-aetivity, optionally, the disease or disorder is a dise"
+        },
+        {
+          "source": "31-07-2018_Claims_E16YBRNZ3754DSU_ocr.txt",
+          "text": "claim 73, wherein the compound is selected from 217 182236082 v1 --- PAGE 18 --- CooleyRef.NODT-003/001WO(330150-2003) Compound Nos. 1-130. 75.A method of inhibiting inflammasome activity, comprising contacting a cell with an effective amount of the compound of any one of claims 1-72 or a pharmaceutically acceptable salt thereof; optionally, the inflammasome is NLRP3 inflammasome, and the activity is in vitro or in vivo. 76. A method of treating or preventing a disease or disorder in a subject in need thereof, comprising administering to the subject a therapeutically effective amount of the compound"
+        },
+        {
+          "source": "31-07-2018_Claims_E16YBRNZ3754DSU_ocr.txt",
+          "text": "salt thereof, or the pharmaceutical composition of claim 73 or claim 74. 77. The method of claim 76, wherein the disease or disorder is associated with an implicated inflammasome activity; optionally, the disease or disorder is a disease or disorder in which inflammasome activity is implicated. 78.The method of claim 76 or claim 77,wherein the disease or disorder is an autoinflammatory disorder, an autoimmune disorder, a neurodegenerative disease,or cancer. 79.The method of any one of claims 76-78, wherein the disease or disorder is an autoinflammatory disorder or an autoimmune disorder; Optionally,"
+        },
+        {
+          "source": "31-07-2018_Claims_E16YBRNZ3754DSU_ocr.txt",
+          "text": "carcinoma, or colorectal adenocarcinoma. 82. The compound of any one of claims 1-72, or the pharmaceutical composition of claim 69 or claim 70, for use in inhibiting inflammasome activity; optionally, the inflammasome is NLRP3 inflammasome,and the activity is in vitro or in vivo. 83. The compound of any one of claims 1-72, or the pharmaceutical composition of claim 69 or claim 70, for use in treating or preventing a disease or disorder. 84. The compound or pharmaceutical composition of claim 83, wherein the disease or disorder is associated with an implicated inflammasome activity; optionally, the di"
+        }
+      ],
+      "synthesis_routes": [
+        {
+          "source": "13-07-2022_Annex_to_the_communication_L5CIG8YH1A5RUVP_ocr.txt",
+          "text": "tablishwhetherastructurally moreremotederivativeconstitutesaprodrugofthe5-diol;inordertoclearlyestablish thescopeoftheclaims,theskilledpersonwouldsometimeshavenootherchoicethan to synthesise alabeled sample tobe tested and tofollow its biochemical transformationsinvivotodeterminewhetherornotthechemicalstructureunder considerationisabiologicalprecursor,whichisexactlywhattheApplicanthasstated in paragraph). claritydemandsnotonlythataskilledpersonbeabletounderstand theteachingof the claimbutalsothathebeabletoimplementit.Inotherwords,thefeaturemustprovide instructionswhicharesufficientlyclearfortheexpertto"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "ound of any-one of Compound Nos.1-130. 71..A - compound obtainable by, or obtained by, a method deseribed herein; optionally, the method comprises- one-or more steps-described in-Schemes-1-5. 72.A- compound, by an-intermediate obtained by a method for preparingthe compound of any-one-of claims-1-70; optionally, the intermediate is selected from the intermediates described in Examples -1- 126. 74. The pharmaceutical- composition- of claim-73, wherein-the compound is- selected from Compound Nos. 1 130. 75.- A-method- of inhibiting inflammasome activity, comprising contacting a cell with an effective"
+        },
+        {
+          "source": "31-07-2018_Claims_E16YBRNZ3754DSU_ocr.txt",
+          "text": "ompound of any one of Compound Nos. 1-130. 71. A compound obtainable by, or obtained by, a method described herein; optionally, the method comprises one or more steps described in Schemes 1-5. 72.A compound, by an intermediate obtained by a method for preparing the compound of any one of claims 1-70; optionally, the intermediate is selected from the intermediates described in Examples 1- 126. 73.A pharmaceutical composition comprising the compound of any one of claims 1-72 or a 74. The pharmaceutical composition of claim 73, wherein the compound is selected from 217 182236082 v1 --- PAGE 18 --- Coo"
+        }
+      ],
+      "use_descriptions": [
+        {
+          "source": "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+          "text": "acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier. 21. The compound of any one of claims 1-19, or the pharmaceutical composition of claim 20, for usein treating orpreventing a disease or disorder. 22. The compound or pharmaceutical compositionfor use of claim 21,wherein the disease or disorder is: 29 253732927 v1 --- PAGE 30 --- CooleyRef.NODT-003/N01EP (a) an autoinflammatory disorder or an autoimmune disorder, optionally wherein the disease or disorderis selectedfrom cryopyrin-associated autoinflammatory syndrome(CAPS;e.g.,familial cold autoinflammatory syndrome(FCAS)"
+        },
+        {
+          "source": "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+          "text": "acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier. 21. The compound of any one of claims 1-19, or the pharmaceutical composition of claim 20, for usein treating orpreventing a disease or disorder. 22. The compound or pharmaceutical compositionfor use of claim 21,wherein the disease or disorder is: 29 253273670 v1 --- PAGE 30 --- CooleyRef.NODT-003/N01EP (a) an autoinflammatory disorder or an autoimmune disorder, optionally wherein the disease or disorderis selectedfrom cryopyrin-associated autoinflammatory syndrome(CAPS;e.g.,familial cold autoinflammatory syndrome(FCAS)"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E5A37VNV7471DSU_ocr.txt",
+          "text": "acceptable salt thereof,and a pharmaceutically acceptable diluent or carrier. 21. The compound of any one of claims 1-19, or the pharmaceutical composition of claim 20, for use in treating or preventing a disease or disorder. 22. The compound or pharmaceutical composition for use of claim 21, wherein the disease or disorder is: 29 234475623 v1 --- PAGE 30 --- CooleyRef.NODT-003/001WO(330150-2003) (a) an autoinflammatory disorder or an autoimmune disorder, optionally wherein the disease or disorder is selected from cryopyrin-associated autoinflammatory syndrome (CAPS; e.g., familial cold autoinflam"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "d of any-one of claims-1 72 or a pharmaceutically-acceptable salt thereof; optionally,theinflammasomeisNLRP3-inflammasome, and the-activity-is-in-vitro-or-in vivo. 76..A-method-of-treating-or preventing-a-disease-or disorder-in-a-subject-in-need-thereof, comprising-administering-to the-subject-a-therapeutically-effective-amount-of the-compound-of any- one of claims-1 72 or a pharmaceutically acceptable salt thereof, or the pharmaceutical 36 233361337 v1 --- PAGE 37 --- CooleyRef.NODT-003/001WO(330150-2003) composition-of claim-73-or-claim-74. 77.Themethod-ofclaim76,wherein-the-disease-or-disorderi"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "e-is-NLRP3-inflammasome, and-the-activity-is-in-vitro-or in vivo. 2183. The compound of any one of claims 1-1972, or the pharmaceutical composition of claim 2069-orclaim70,foruseintreatingorpreventingadiseaseordisorder. 84.Thecompound-or pharmaceuticalcomposition-of claim--83, wherein-the-disease-or disorder is associated with-an-implicated inflammasome activity; optionally,the disease-or disorder is-a disease or-disorderin-which-inflammasome aetivity is-implicated. 2285.The compound or pharmaceutical composition for use of claim 2183-or-claim-84, wherein the disease or disorderis: (a) an autoinfla"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "LRP3 inflammasome, and the activity-is-in-vitro-or-int vivo. 90.-Use-ofthe-compound-of-any-one-ofclaims-1-72-or-a-pharmaceutical-salt-thereof-inthe manufacture of a medicament for treating or preventing a disease or disorder. 91.The use-of claim--90, wherein-the disease-or-disorder is- associated with-animplicated inflammasome-aetivity, optionally, the disease or disorder is a disease or disorder in-which inflammasome aetivity is implicated. 92.The-use-of- claim-90-or-claim-9l, wherein-thedisease-or disorder-is-an-autoinflammatory disorder, an autoimmune disorder, a neurodegenerative disease, or c"
+        },
+        {
+          "source": "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+          "text": "cceptable salt thereof, and a pharmaceutically acceptable diluent or carrier. 21. The compound of any one of claims 1-19, or the pharmaceutical composition of claim 20, for use in treating or preventing a disease or disorder. 22. The compound or pharmaceutical composition for use of claim 21, wherein the disease or disorder is: 29 253732927v1 --- PAGE 30 --- Cooley Ref.NODT-003/N01EP (a) an autoinflammatory disorder or an autoimmune disorder, optionally wherein the disease or disorder is selected from cryopyrin-associated Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and ar"
+        },
+        {
+          "source": "16-07-2021_Claims_E6HES33O0569DSU_ocr.txt",
+          "text": "cceptable salt thereof, and a pharmaceutically acceptable diluent or carrier. 21. The compound of any one of claims 1-19, or the pharmaceutical composition of claim 20, for use in treating or preventing a disease or disorder. 22. The compound or pharmaceutical composition for use of claim 21, wherein the disease or disorder is: 29 253732927v1 --- PAGE 30 --- Cooley Ref.NODT-003/N01EP (a) an autoinflammatory disorder or an autoimmune disorder, optionally wherein the disease or disorder is selected from cryopyrin-associated Muckle-Wells syndrome (MWS), chronic infantile neurological cutaneous and ar"
+        }
+      ],
+      "comparative_data": [
+        {
+          "source": "09-03-2021_Annex_to_the_communication_E5X20HH29208DSU_ocr.txt",
+          "text": "following amendments as filed with entry into the regional phase are admissible under Art.123 (2) EPC: claim1 is based on claims 1,17-19,23,24 and 26 as originally filed,claims2and3onclaims5and6asoriginallyfiled,claims4and5onclaims7to 10 and11 to12as originallyfiled,claims6 to11onclaims 28to29,31 to 41,42 and 43 as originally filed,claims 12 to 16 are based on claims 44 to 47,48 to 49,50 to 52,53 to 54 and55to56Claim17isbaseduponclaims57to68asoriginally filedwithreference to claim 1. Claim 18 is based on claim 65 and table 1 as originally filed and claims 19 to 22 have their basis in claims 67"
+        },
+        {
+          "source": "09-03-2021_Annex_to_the_communication_E5X20HH29208DSU_ocr.txt",
+          "text": "to 68,73,83 and 85to88 as originally filed. 2.Novelty Due to the restrictions as made to residue R1in claim 1,documents D1 toD3 and documentsD5toD21arenolonger noveltydestroying,since theybearresiduesin the position corresponding to the position of present residue R1 which do no longer fall undertherestrictedscopeofclaim1. Nevertheless,thecompound(2-chlorophenyl)-carbamoyl-Leu-OHisdefinitelya compound falling under the scope of present claim 1: R1 is 2-chhlorophenyl (group e) in present claim 1), R3 is C4-alkyl and R4 is hydrogen. Thus claims 1, 7 and 11 do"
+        },
+        {
+          "source": "09-03-2021_Annex_to_the_communication_E5X20HH29208DSU_ocr.txt",
+          "text": "not fulfil therequirementsof noveltyaccording toArt.54EPC. 3.Inventive step Document D22 is to be considered to be the closest prior art, since this document is the onlyoneconcernedwithinhibitorsoftheactivationoftheNLRP3inflammasomeasis the present application.These compounds do show a completely differentchemical EPOForm290601.91TRI --- PAGE 2 --- Datum Blatt Anmelde-Nr: Date 09.03.2021 Sheet 2 Application No: 18 755 728.5 Date Feuille Demande n°: structuretheyaresulfonyl ureaderivativeswhereasthepresentcompoundsare cycloalkyl-,hexhydroindacenyl-,p"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "y substituted with one or more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN,-(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3; optionally, wherein R3 is f 36.Thecompoundof any-oneof claims-1-26,28,30,and34, whereinRzismethyl substituted with-one or more pyrazolyl, wherein the pyrazolyl is optionally substituted with one or more methyl, methoxy, F, Cl, -CN, -CH2-N(CH3)2, or -CF3; optionally;whereinR3is 233361337 v1 --- PAGE 10 --- Co0leyRef.NODT-003/001WO(330150-2003) (g) 37.Thecompoundof any-one-of claims-1-26,28,30,and34,whereinRzismethyl substituted-with-one or more imidazolyl, wherein the imidazolyl is optionally"
+        },
+        {
+          "source": "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+          "text": "ally substituted with one or more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3; optionally,whereinR3ish (i 40Thecompound-of-any-oneofclaims-126,28,30,and34,wherein-Rzismethyl substituted-with-one or more pyrazinyl, wherein the pyrazinylis optionally substituted with one or more C1-C6 alkyl, C1-C6 alkoxy, halo, -CN, -(CH2)o-3-N(C1-C6 alkyl)2, Or -CF3; optionally, wherein R3 is 233361337 v1 --- PAGE 12 --- CooleyRef.NODT-003/001WO(330150-2003) or (k) 41. The compound of any one-of claims-1-26, 28, 30, and 34, wherein- Rzis methyl substituted-with-one or more triazoly"
+        }
+      ]
+    },
+    "prior_art_docs": [
+      {
+        "rank": 1,
+        "citation": "WO9611927",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO1996011927",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 2,
+        "citation": "EP0555537",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP0555537/en",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 3,
+        "citation": "WO2014081856",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014081856",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 4,
+        "citation": "WO2015077451",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2015077451",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 5,
+        "citation": "WO0248099",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2002048099",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 6,
+        "citation": "WO0116093",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2001016093",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 7,
+        "citation": "WO2005079300",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2005079300",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 8,
+        "citation": "EP0520336",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP0520336/en",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 9,
+        "citation": "WO2004035039",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2004035039",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 10,
+        "citation": "EP0271251",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/EP0271251/en",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 11,
+        "citation": "DE1953431",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patents.google.com/patent/DE1953431/en",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      },
+      {
+        "rank": 12,
+        "citation": "WO2016131098",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2016131098",
+        "mentions": 1,
+        "sources": [
+          "EP18755728-main.html#documents_cited"
+        ]
+      }
+    ]
+  },
+  "source_trace": {
+    "path_base": "benchmark_input_dir",
+    "case_dir": ".",
+    "main_html": "register/EP18755728-main.html",
+    "doclist_csv": "register/EP18755728-doclist.csv",
+    "docs_dir": "docs",
+    "original_application_dir": "original-application",
+    "original_application_files": [
+      {
+        "title": "Abstract",
+        "date": "31.07.2018",
+        "document_id": "E16YBRNZ8600DSU",
+        "pages": "1",
+        "path": "original-application/31-07-2018_Abstract_E16YBRNZ8600DSU.pdf",
+        "file_name": "31-07-2018_Abstract_E16YBRNZ8600DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E16YBRNZ8600DSU&appnumber=EP18755728&showPdfPage=all&proc="
+      },
+      {
+        "title": "Claims",
+        "date": "31.07.2018",
+        "document_id": "E16YBRNZ3754DSU",
+        "pages": "21",
+        "path": "original-application/31-07-2018_Claims_E16YBRNZ3754DSU.pdf",
+        "file_name": "31-07-2018_Claims_E16YBRNZ3754DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E16YBRNZ3754DSU&appnumber=EP18755728&showPdfPage=all&proc="
+      },
+      {
+        "title": "Description",
+        "date": "31.07.2018",
+        "document_id": "E16YBRNZ0860DSU",
+        "pages": "200",
+        "path": "original-application/31-07-2018_Description_E16YBRNZ0860DSU.pdf",
+        "file_name": "31-07-2018_Description_E16YBRNZ0860DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E16YBRNZ0860DSU&appnumber=EP18755728&showPdfPage=all&proc="
+      },
+      {
+        "title": "Published international application - A1",
+        "date": "07.02.2019",
+        "document_id": "E2ZDY14O5312DSU",
+        "pages": "222",
+        "path": "original-application/07-02-2019_Published_international_application_-_A1_E2ZDY14O5312DSU.pdf",
+        "file_name": "07-02-2019_Published_international_application_-_A1_E2ZDY14O5312DSU.pdf",
+        "source_url": "https://register.epo.org/application?documentId=E2ZDY14O5312DSU&appnumber=EP18755728&showPdfPage=all&proc="
+      },
+      {
+        "title": "Bibliographic data of the European patent application",
+        "date": "11.05.2023",
+        "document_id": "LH68QE4YHUBSX91",
+        "pages": "2",
+        "path": "original-application/11-05-2023_Bibliographic_data_of_the_European_patent_application_LH68QE4YHUBSX91.pdf",
+        "file_name": "11-05-2023_Bibliographic_data_of_the_European_patent_application_LH68QE4YHUBSX91.pdf",
+        "source_url": "https://register.epo.org/application?documentId=LH68QE4YHUBSX91&appnumber=EP18755728&showPdfPage=all&proc="
+      }
+    ],
+    "text_documents_used": [
+      "21-09-2023_Decision_to_grant_a_European_patent_LMJRXZDLNYREI0I_ocr.txt",
+      "11-05-2023_Communication_about_intention_to_grant_a_European_patent_LH68QDD010AXE8Z_ocr.txt",
+      "13-12-2022_Reply_to_communication_from_the_Examining_Division_LBMB5GFX1JOJXPM_ocr.txt",
+      "13-07-2022_Communication_from_the_Examining_Division_L5CIG8YF1322AFQ_ocr.txt",
+      "14-03-2022_Reply_to_communication_from_the_Examining_Division_L0QSTIM0QP0K8YQ_ocr.txt",
+      "05-11-2021_Communication_from_the_Examining_Division_KVI5KSAG7P3K860_ocr.txt",
+      "16-07-2021_Reply_to_communication_from_the_Examining_Division_E6HES3ZX5769DSU_ocr.txt",
+      "09-03-2021_Communication_from_the_Examining_Division_E5X20HFE5931DSU_ocr.txt",
+      "13-07-2022_Annex_to_the_communication_L5CIG8YH1A5RUVP_ocr.txt",
+      "05-11-2021_Annex_to_the_communication_KVI5KSAJ181ZH6X_ocr.txt",
+      "09-03-2021_Annex_to_the_communication_E5X20HH29208DSU_ocr.txt",
+      "14-03-2022_Amended_claims_with_annotations_L0QSTJBSGV6RA5G_ocr.txt",
+      "16-07-2021_Amended_claims_with_annotations_E6HES3MI9665DSU_ocr.txt",
+      "23-09-2020_Amended_claims_filed_after_receipt_of_(European)_search_report_E5A37VNV7471DSU_ocr.txt",
+      "23-09-2020_Amended_claims_with_annotations_E5A37U8I8634DSU_ocr.txt",
+      "14-03-2022_Claims_L0QSTZLR14CECJ3_ocr.txt",
+      "16-07-2021_Claims_E6HES33O0569DSU_ocr.txt",
+      "31-07-2018_Claims_E16YBRNZ3754DSU_ocr.txt"
+    ],
+    "register_status": "No opposition filed within time limit",
+    "quality": {
+      "source_text_documents": 18,
+      "claim_1_meaningful_chars": 2245,
+      "source_meaningful_chars": 148720
+    }
+  }
+}

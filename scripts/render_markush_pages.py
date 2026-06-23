@@ -476,6 +476,40 @@ def is_likely_structure_candidate(item: dict[str, Any]) -> bool:
     return float(item.get("image_score") or item.get("score") or 0) >= 120
 
 
+def extraction_status(
+    snippets: list[Any],
+    page_jobs: dict[tuple[Path, int], dict[str, Any]],
+    candidates: list[dict[str, Any]],
+    selected: list[dict[str, Any]],
+) -> dict[str, Any]:
+    if selected:
+        status = "selected"
+        reason = "At least one visual candidate passed the chemical-structure filters."
+    elif candidates:
+        status = "candidates_rejected"
+        reason = (
+            "Visual candidates were generated, but none passed the chemical-structure filters "
+            "(for example slanted bond lines, density, size, and score thresholds)."
+        )
+    elif page_jobs:
+        status = "pages_no_candidates"
+        reason = "Likely pages were rendered, but no visual crop passed the candidate prefilter."
+    elif snippets:
+        status = "snippets_no_pages"
+        reason = "Formula/Markush text snippets existed, but no source PDF page could be resolved from them."
+    else:
+        status = "no_formula_context"
+        reason = "No Formula/Markush text context was found; the case may not contain a Markush/general formula claim."
+    return {
+        "status": status,
+        "reason": reason,
+        "selected_count": len(selected),
+        "candidate_count": len(candidates),
+        "page_count": len(page_jobs),
+        "snippet_count": len(snippets),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Crop and rank likely Markush/Formula images from source PDFs.")
     parser.add_argument("benchmark_input")
@@ -595,6 +629,7 @@ def main() -> None:
     structure["markush_images"] = selected[: args.selected_limit]
     structure["markush_candidate_images"] = deduped
     structure["markush_page_images"] = page_images[: args.max_pages]
+    structure["markush_extraction_status"] = extraction_status(snippets, page_jobs, deduped, structure["markush_images"])
     structure["extraction_note"] = (
         "先按 Formula/Markush OCR 上下文定位 PDF 页面，再用 OpenCV 连通域和线段特征切出候选结构图；"
         "markush_images 为自动筛选 Top 候选，markush_candidate_images 保留候选图库供人工复核。"

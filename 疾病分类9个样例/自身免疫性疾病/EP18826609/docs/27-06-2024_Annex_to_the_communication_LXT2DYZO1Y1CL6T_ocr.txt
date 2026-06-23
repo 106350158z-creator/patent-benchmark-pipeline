@@ -1,0 +1,242 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+27.06.2024
+Sheet
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-305
+as published
+Claims,Numbers
+1-15
+filedinelectronicformon
+24-08-2023
+With theletter of 24.08.2023,theApplicant filed a newset of claims and
+argumentsfor supporting thepatentability of the claimed subject-matter.After
+consideringtheamendmentsfromthecurrentsetofclaimsandthearguments
+provided during thewholewrittenprocedure,theExaminingDivisionisstill of
+the opinion that the EPC requirements are not fulfilled.
+Asrequestedbytheabove-mentionedlettertheApplicant isinvited toattend
+video-conferencein accordancewithArticle1(1)of thedecision of thePresident
+of the EPO dated 1 April 2020 and the members of the Examining Division may
+connecttotheoralproceedingsfromdifferentlocations(seeArticle2(2)ofthe
+aforementioneddecision).Therulesfororalproceedingsheldbyvideo-
+themembersof theexaminingdivisionmaydeliberateandvoteamong
+themselvesbyseparatevideoconference.
+2
+The main aspects tobe discussed during the oral proceedings are:
+2.1
+Inventivestep(Article84EPC)
+The present application claims compounds of formula (l):
+R
+wherein:
+- R1 is a cycloalkyl or a bi or tri substituted phenyl,
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+27.06.2024
+Sheet
+2
+ApplicationNo:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+-R2 is -(CX1X2)n-R2s with n=0-2 and R2s=heterocycloalkyl
+-R3isaheterocycloalkylorheterocycloaryl
+usefultotreatdiseasesconnectedtotheinhibitionoftheNLRP3activation.In
+particular,the compoundswere tested fortheir inhibitory activity against IL-1
+betareleaseuponNLRP3activationinperipheral blood mononuclearcells
+(PBMC).
+Closest prior art
+D1 (WO 2017/140778),which is regarded asbeing the closest prior art,
+discloses compounds of formula (l)(claim 1) or (V)(claim 7) with the same uses
+asthepresentones.
+Formulta (1)
+Thesubject-matterofcurrentclaim1canbeconsideredasaselectionfrom the
+compounds of formulaI or V disclosed in D1(claims1and 7).Forexample
+startingfromthecompoundsofformula(l)ofD1forarrivingatthepresent
+claimed compounds it has to be selected J to be S, W to be -N (R1)2 (e.g.
+claims 2, 5 of D1), R1 to be an aryl or heteroalkyl, Q=O and W2R2 a ring.
+Furtherinorder to arrivefrom thecompoundsof formula(V)of D1at the
+present claimed ones,then the single selection tobedone is the substituent
+R1W1,whichhasbeone of thefollowingpreferred groups disclosed inclaim6
+of D1:
+whereinthismoietyisa-N(heterocycle)R3structureandR3isaheterocyclylor
+heteroaryl.
+As regards the specific examples disclosed in D1, compounds 17,19,35 and
+39 appear tobetheclosest structural ones.
+EPO Form 2906 01.91TRI
+
+--- PAGE 3 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+27.06.2024
+Sheet
+Application No:
+18826 609.2
+Date
+Feuille
+Demande n°:
+-{(fusan-2-y/methyi)[2-(morpholin-
+yl)ethyljsulfamoyl]-3-(1,2.3.5,6,7-hexahydro0-s-
+3-{1.2,3
+indacen-4-yl}-1-{(6-
+indacen-4-yfjurea
+methoxy-4-methyloyridin-3-y4])suifamoyf]ures
+-[2,4-dimethyipyriin--yl]sullamoy]-3-
+1-{benzy(1,3-thiazol-2-ymethyl)suifa:oy]-3
+(1.2,3,5,6,7-hexahydro-s-indfacen-4-yljurea
+(1,2,3.5,6,7-hexahydro s-indacen-4- yl)ure8
+With the letter of 07.10.2022,theApplicant filed comparative data between
+uas2
+compound 17 of D1
+and present example 46:
+001jf-p-uscsp
+Example17ofD1hasinthePBMCassayanIC50higherthan10umwhilethe
+present example 46 has an IC50 lower than 1μm.
+Thetwotestedcompoundsdifferbetweenthemthroughthefactthat the
+methylpyrazol(example17of D1doesnotcontainadirectlylinked heterocycle
+(mandatoryfor thepresent R3) and additionally the nature of this heteroaryl ring
+is different(furan instead ofpyrazol).Moreover,the two compared examples
+differalsothroughthefactthatthepresentcompoundistestedassodiumsalt
+while theoneof D1asfreebase(thesodiumsaltcouldalsohave animpact on
+the claimed activity).
+Technical effect and problem to be solved
+present compoundsrepresent anovel selectionfrom the general structures
+disclosed in D1, the technical problem underlying the present application is to
+beseenintheprovisionoffurthersulfonureasderivativesusefultotreat
+diseasesconnectedtoinhibitionofNLRP3activationandhavingunexpected
+effectsoverthecloseststructuralcompoundsdisclosedinthepriorart.
+Solution
+EPO Form 2906 01.91TRI
+
+--- PAGE 4 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+27.06.2024
+Sheet
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+Thespecific combination of thepresent substituentsR2andR3 and theformof
+sodiumsalt leadingforsome of thepresent compounds toanimproved activity
+re thecompounds disclosed inD1.
+The obviousness of thesolution
+D1 compounds are disclosed to have,depending on their structure,an inhibitory
+activity ranging between less than 1μm to less than 50um (the same range as in
+thepresentcase).
+Looking to the specific data provided on pages 301 to 116of the present
+specification,it canbeconcluded that thelevelof activityappearstobehighly
+dependent on the specific structure of the compound, e.g:
+a)compounds58,71and90haveanIC50intherangeof10to50um:
+comp58
+comp 71
+comp 90
+10 μm:
+comp 73
+comp69
+comp 74
+c) compound 93 has an IC50 less than 1um:
+At thefirstglancecomparing the activityreportedforthepresent example46
+andexample17of D1anddisregardingthefact thattheydifferinmorethanone
+structuralfeature(presentcompoundwastestedasasodiumsaltandnotas
+freebaseand thenatureofthe5-memberedhetoroarylisdifferent)an
+improvementof10 timesof theIC50mightbeconsidered unexpected.
+The question tobe answer is if theclaimed breadth could beseen as a fair
+generalisation over the comparison data provided with theletter of 07.10.2023.
+EPO Form 2906 01.91TRI
+
+--- PAGE 5 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+27.06.2024
+Sheet
+5
+Application No:
+18826609.2
+Date
+Feuille
+Demande n°:
+crediblethatanycompoundencompassedbyclaim1(havingthespecific
+combinationofsubstituentsR/R3)wouldpossesanIC50lessthan1μm.For
+examplecompound 74contains thesamecombinationofsubstituentsR2/R3 as
+the one on which an inventive stepwas acknowledged for thepresent example
+46(overexample17of D1),but itsIC50lies intherangeof 3to10um,which
+could be considered tobe close to the onereported for example 17 of D1.
+Moreover,the application disclosescompoundshaving thesame NR2R3moiety
+andwhereinsubstituentsplacedindifferentpartsofthemoleculecouldhavean
+importantimpactontheclaimedactivity.Compounds58and21differonlyon
+90,73 and93which differamong themonlyon the natureof thesecond
+differentlevels.
+Consequently,considering all the biological data provided in the present
+table4ofD1itcannotbeconcludedthatallthecompoundsencompassedby
+thecurrentclaim1wouldpossessthesamelevelofimprovementoverthe
+closest structural compound disclosed in D1 (a 10 times improvement). In
+addition,since it is general knowledge that thesalts are in general moresoluble
+thanthecorrespondingfreeacids,itisexpected thatanimprovement in
+solubility isconnected to an improved inhibitory activity.
+Inviewof thesefacts it is considered that the abovetechnical problemwasnot
+solvedoverthewholeclaimedscope.Consequently,ithastobereformulated
+connected to the inhibition of NLRP3. Since thepresent compounds of claim 1
+samelevelofactivityismaintained.
+Thus,inordertofulfil therequirementsofArticle56EPCeitherexperimental
+data will beprovided supporting that substantially all the claimed compounds
+haveanunexpected propertyorimproved activityover the structurallyclosest
+priorartcompounds(D1),whichisattributabletothedistinguishingfeatureof
+the invention or the scope of claim 1 will berestricted to thevery specific
+EPOForm290601.91TRI
+
+--- PAGE 6 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+27.06.2024
+Sheet
+6
+Application No:
+18 826 609.2
+Date
+Feuille
+Demande n°:
+2.2
+Article84EPC
+2.2.1
+Someofthedefinitionsprovidedintheclaimscoverstructureswhicharenot
+examplegroupsasalkyl,cycloalkylaredefinedinthespecificationtocoveralso
+thepartiallyunsaturatedstructureswhichnormallytheskilledpersonwouldnot
+consider as falling under the terms alkyl/cycloalkyl.Thus, inview of these
+discrepanciestherequirementsofArticle84EPCareconsiderednottobe
+fulfilled.
+2.2.2
+TherequirementsofArticle84EPCareingeneralnotfulfilledwhenamended
+claims arefilled without the corresponding adapted description.
+3
+At theOralProceedingsafinal decisionwillbetaken.
+The Applicant is informed that failing to provide suitable amendments such as to
+overcome the above-mentioned objections,willmostprobablyresult in the
+refusalof theapplicationunderArticle97EPC.
+ShouldtheApplicantsubmitapplicationdocumentswhichcomplywiththe
+provisions of the EPC at the latest one month before the oral proceedings (Rule
+116EPC),theprocedurecould becontinued inwriting.
+EPOForm 2906 01.91TRI

@@ -1,0 +1,290 @@
+
+--- PAGE 1 ---
+AmendedClaims
+Acompoundofthestructure:
+NH2
+A method-for use in treating a disorder characterized by the presence or development ofone or
+more solid tumors comprising administering to an individual in need thereof a
+composition containing-a therapeutically effective amount of thea compound-that forms a
+covalent-bondwith-a cysteine sidechain ofaBruton's tyrosine kinase or aBruton's
+tyrosine kinase homolog.
+The method ofclaim 1, wherein the compound is a compound of Formula (l) having the
+structure:
+NH2
+Rz Formula (l)
+wherein:
+La-is CH2, O, NH or S;
+Ar is a substituted or unsubstituted aryl, or a substituted or unsubstituted heteroaryl; and either
+176
+
+--- PAGE 2 ---
+Y is an optionally substituted group selected from among alkylene, heteroalkylene,
+arylene, heteroarylene, alkylenearylene, alkyleneheteroarylene, allkylenecycloalkylene
+and alkyleneheterocycloalkylene;
+Z is C(=O), NHC(=O), NR"C(=O), NR"S(=O)x, where x is 1 or 2, and R"is H, substituted or
+unsubstituted alkyl, or substituted or unsubstituted cycloalkyl; and
+(a)Rz-and Rg-are H;
+Rg-is H, substituted or unsubstituted CC4alkyl, substituted or unsubstituted C+C4heteroalkyl,
+C+-Cgalkylaminoalkyl, C-Cghydroxyalkylaminoalkyl, C-Cgalkoxyalkylaminoalkyl,
+substituted or unsubstituted C3-Ceeycloalkyl, substituted or unsubstituted C-CgalkylC3-
+Cseycloalkyl, substituted or unsubstituted aryl, substituted or unsubstituted C2-
+Cgheterocycloalkyl, substituted or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+-
+C4alkyl(heteroaryl), C+-Csalkylethers, C-Csalkylamides, or C+-C4alkyl(C2-
+Csheterocycloalkyl); or
+(b)Re-and Rg-are H;
+Rz-is H, substituted or unsubstituted CC4alkyl, substituted or unsubstituted CC4heteroalkyl,
+C+-Cgalkylaminoalkyl, C+-Cshydroxyalkylaminoalkyl, C+-Cgalkoxyalkylaminoalkyl,
+substituted or unsubstituted C3-Cseycloalkyl, substituted or unsubstituted C-CgalkylC3-
+Cseyeloalkyl, substituted or unsubstituted aryl, substituted or unsubstituted Cz-
+Cgheterocycloalkyl, substituted or unsubstituted heteroaryl, C-C4alkyl(aryl), C-
+C4alkyl(heteroaryl), C+-Cgallkylethers, C+-Csalkylamides, or C+-C4alkyl(C-
+Cgheteroeycloalkyl); or
+(c)Rz-and Rg-taken together-form a bond;
+Rg-is H, substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C-C4heteroalkyl,
+C+-Cgalkylaminoalkyl, C-Cghydroxyalkylaminoalkyl, C+-Cgalkoxyalkylaminoalkyl,
+substituted or unsubstituted C3-Cseyeloalkyl, substituted or unsubstituted C-CgalkylC3-
+Cseycloalkyl, substituted or unsubstituted aryl, substituted or unsubstituted Cz-
+Cgheterocycloalkyl, substituted or unsubstituted heteroaryl, C-C4alkyl(aryl), C+-
+C4alkyl(heteroaryl), C+-Cgalkylethers, C+-Csalkylamides, or CC4alkyl(C2-
+Csheterocycloalkyl); oF
+(i)Y is an optionally substituted group selected from cycloalkylene or heterocycloalkylene;
+177
+
+--- PAGE 3 ---
+Z is C(=O), NHC(=O), NR"C(=O), NR*S(=O)x, where x is 1 or 2, and R"is H, substituted or
+unsubstituted alkyl, substituted or unsubstituted cycloallkyl; and either
+(a)Rz-and Rgare H;
+R6-is substituted or unsubstituted C-C4heteroalkyl, C+-Cghydroxyalkylaminoalkyl, C+-
+Cgalkoxyalkylaminoalkyl, substituted or unsubstituted C-Ceeycloalkyl, substituted or
+unsubstituted C-CgalkylCs-Cseycloalkyl, substituted or unsubstituted aryl, substituted or
+unsubstituted C-Cgheterocycloalkyl, substituted or unsubstituted heteroaryl, C-
+C4alkyl(aryl), C-C4alkyl(heteroaryl), C-Cgallkylethers, C-Cgallkylamides, or C-
+C4alkyl(C2-Csheterocycloalkyl);
+(b)R-and Rg-are H;
+Rz-is substituted or unsubstituted C-C4heteroalkyl, C+-Cghydroxyalkylaminoalkyl, C-
+Cgalkoxyalkylaminoallkyl, substituted or unsubstituted C-Ceeycloalkyl, substituted or
+unsubstituted C-CgalkylCs-Cseycloalkyl, substituted or unsubstituted aryl, substituted or
+unsubstituted C-Csheterocycloalkyl, substituted or unsubstituted heteroaryl, C-
+C4alkyl(aryl), C+-C4alkyl(heteroaryl), CCgalkylethers, C+Cgalkylamides, or C-
+C4alkyl(Cz-Csheterocycloalkyl); or
+(e) Rz-and Rg-taken together form a bond;
+R6-is substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C-C4heteroallkyl, C
+Cgalkylaminoalkyl, C-Cshydroxyalkylaminoalkyl, C-Cgalkoxyalkylaminoalkyl,
+substituted or unsubstituted C3-Cseycloallkyl, substituted or unsubstituted C+-CgalkylC3-
+Cseycloalkyl, substituted or unsubstituted aryl, substituted or unsubstituted C2-
+Cgheterocycloalkyl, substituted or unsubstituted heteroaryl, C-C4alkyl(aryl), C-
+C4allkyl(heteroaryl), C+Cgalkylethers, C+-Csalkylamides, or C+-C4alkyl(C-
+Cgheterocycloalkyl); or a
+pharmaceutically active metabolite, pharmaceutically acceptable solvate, pharmaceutically
+acceptable salt, or a pharmaceutically acceptable prodrug thereof.
+3.The method of Claim 2, wherein:
+La-is O;
+Ar is phenyl;
+Z is C(=O), NHC(=O),or NCHC(=O).
+178
+
+--- PAGE 4 ---
+The method ofclaim 3,wherein
+Y is alkyleneheterocycloalkylene;
+R6 and Rg are H; and
+Rz-is H, substituted or unsubstituted C-C4allkyl, substituted or unsubstituted C-
+C4heteroalkyl, C+-Cgalkylaminoalkyl, C+-Cshydroxyalkylaminoalkyl, C+-
+Cgalkoxyalkylaminoalkyl, substituted or unsubstituted C-Cseycloalkyl, substituted or
+unsubstituted C-CgallkylC3-Cseycloalkyl, substituted or unsubstituted aryl,
+substituted or unsubstituted C2-Csheterocycloalkyl, substituted or unsubstituted
+heteroaryl, C+-C4allkyl(aryl), C+-C4alkyl(heteroaryl), C+-Csalkylether, C+-
+Cgalkylamide, or C-C4alkyl(C2-Cgheterocycloalkyl).
+5.The method ofclaim 3, wherein:
+Y is an optionally substituted group selected from cycloalkylene or heterocycloalkylene; and
+R6-and Rg-are H; and
+Rz-is substituted or unsubstituted C+-C4heteroalkyl, C+-Cshydroxyalkylaminoalkyl, C+-
+Cgalkoxyalkylaminoalkyl, substituted or unsubstituted C3-Cseycloalkyl, substituted or
+unsubstituted C-CgalkylC3-Cseycloalkyl, substituted or unsubstituted aryl, substituted or
+unsubstituted C-Cgheterocycloallkyl, substituted or unsubstituted heteroaryl, C-C4allkyl(aryl),
+C+-C4alkyl(heteroaryl), C+-Cgalkylether, C+Cgalkylamide, or C+-C4alkyl(C2-Csheterocycloallkyl)
+62. The use methodcompound for use according ofto claim 1, wherein the disorder is a
+sarcoma, lymphoma, or carcinoma.
+179
+
+--- PAGE 5 ---
+37.The usecompound for use according to-method of claim 1, wherein the disorder is
+mammary ductal careinoma, lobular careinoma, an adenocarcinoma, small cell lung carcinoma,
+non-small cell lung carcinoma, a melanoma, or a combination thereof.
+48.The usemethodcompound for use according to-of claim 1, wherein the disorder is
+pancreaticcancer.
+9.A method for treating a disorder characterized by the presence or development of one of
+more solid tumors comprising administering to an individual in need thereof a composition
+containing a therapeutically effective amount ofa compound that forms a covalent bond with a
+cysteine sidechain of a HER4.
+10.The method ofclaim 9, wherein the compound is a compound of Formula (l) having the
+strueture:
+HN
+R
+R-Formula (I)
+wherein:
+Lais CH2, O, NH or S;
+Ar is a substituted or unsubstituted aryl, or a substituted or unsubstituted heteroaryl; and either
+Y is an optionally substituted group selected from among alkylene,
+heteroalkylene, arylene, heteroarylene, alkylenearylene, alkyleneheteroarylene,
+alkylenecycloalkylene and alkylencheterocycloalkylene;
+180
+
+--- PAGE 6 ---
+Z is C(=O), NHC(=O), NR"C(=O), NR*S(=O)x, where x is 1 or 2, and R"is H, substituted or
+unsubstituted alkyl, substituted or unsubstituted cycloalkyl; and either
+(e)
+Rz-and Rg-are H;
+Rg-is H, substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C-C4heteroalkyl,
+C+-Csalkylaminoalkyl, C+Cshydroxyalkylaminoalkyl, C+-Cgalkoxyalkylaminoalkyl, substituted
+or unsubstituted C-Cseycloalkyl, substituted or unsubstituted C-CgalkylCz-Cseycloalkyl,
+substituted or unsubstituted aryl, substituted or unsubstituted C-Cgheterocycloalkyl, substituted
+or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+-C4allyl(heteroaryl), C+-Cgalkylether, C+
+Cgalkylamide, or C+-C4alkyl(C2-Cgheterocycloalkyl);
+(q)
+R6-and Rgare H;
+Rzis H, substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C+-C4heteroalkyl,
+Ct-Cgalkylaminoalkyl, C-Cshydroxyalkylaminoalkyl, C-Csalkoxyalkylaminoalkyl, substituted
+or unsubstituted C3-Cseycloalkyl, substituted or unsubstituted C-CgalkylC3-Cseycloalkyl,
+substituted or unsubstituted aryl, substituted or unsubstituted C-Cgheterocycloalkyl, substituted
+or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+C4alkyl(heteroaryl), C+-Cgalkylether, C-
+Cgalkylamide, or C4-C4alkyl(C2-Csheterocycloalkyl); or
+(e)
+R7-and Rg taken together form a bond;
+Rg-is H, substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C+-C4heteroalkyl,
+Ct-C8alkylaminoalkyl, C-Cshydroxyalkylaminoalkyl, C+-Csalkoxyalkylaminoalkyl, substituted
+or unsubstituted C-Cceycloalkyl, substituted or unsubstituted C-CsalkylCs-Cseycloalkyl,
+substituted or unsubstituted aryl, substituted or unsubstituted C-Csheterocyeloalkyl, substituted
+181
+
+--- PAGE 7 ---
+or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+-C4alkyl(heteroaryl), C+-Cgalkylether, C+-
+Cgalkylamide, or C-C4allkyl(C2-Cgheterocycloalkyl); or
+(i) Y is an optionally substituted group selected from cycloalkylene or heterocycloalkylene;
+Z is C(=O), NHC(=O), NR"C(=O), NR"S(=O)x, where x is 1 or 2, and R"is H, substituted or
+unsubstituted alkyl, substituted or unsubstituted cyeloalkyl; and either
+(a)
+Rz-and Rg are H;
+R6-is substituted or unsubstituted C+-C4heteroalkyl, C+-Cshydroxyalkylaminoalkyl, C+-
+Cgalkoxyalkylaminoalkyl, substituted or unsubstituted C3-Cseycloallkyl, substituted or
+unsubstituted C-CsalkylCs-C6eycloalkyl, substituted or unsubstituted aryl, substituted or
+unsubstituted C2-Cgheterocycloalkyl, substituted or unsubstituted heteroaryl, C+-C4alkyl(aryl),
+C-C4alkyl(heteroaryl), C+-Csalkylethers, C-Csalkylamides, or C+-C4alkyl(C2-
+Cgheterocycloalkyl);
+(b)
+Rg-and Rg-are H;
+Rzis substituted or unsubstituted C-C4heteroalkyl, C+-Cshydroxyalkylaminoalkyl, C
+Cgalkoxyalkylaminoalkyl, substituted or unsubstituted C3-Cseycloalkyl, substituted or
+unsubstituted C-CgalkylC-C6eycloallkyl, substituted orunsubstituted aryl, substituted or
+unsubstituted C-Csheterocycloalkyl, substituted or unsubstituted heteroaryl, C+-C4alkyl(aryl),
+C+-C4alkyl(heteroaryl), C+-Cgalkylethers, C-Cgalkylamides, or C+-C4alkyl(C2
+Cgheterocyeloalkyl); or
+(c)
+Rz-and Rg taken together form a bond;
+Rg-is substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C-C4heteroalkyl, C-
+Cgalkylaminoalkyl, C+Cshydroxyalkylaminoalkyl, C-Cgalkoxyalkylaminoallkyl, substituted or
+182
+
+--- PAGE 8 ---
+unsubstituted C3-Cseycloalkyl, substituted or unsubstituted C+-CgalkylC3-Cseycloalkyl,
+substituted or-unsubstituted aryl, substituted or unsubstituted C-Cgheterocycloallkyl, substituted
+or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+-C4allkyl(heteroaryl), C+-Cgalkylethers, C+
+Cgalkylamides, or C4-C4alkyl(C2-Csheteroeycloalkyl); and
+pharmaceutically active metabolites, or pharmaceutically acceptable solvates, pharmaceutically
+aeceptable salts, or pharmaceutically acceptable prodrugs thereof.
+.
+The method of Claim 10, wherein:
+La is O;
+Ar is phenyl;
+Z is C(=O), NHC(=O), or NCH;C(=0).
+12.
+The method ofclaim 11, wherein
+Y is alkyleneheterocycloalkylene;
+R6-and Rg are H; and
+Rz-is H, substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C-C4heteroalkyl,
+C+-Csalkylaminoalkyl, C+-Cghydroxyalkylaminoalkyl, C+-Cgalkoxyalkylaminoalkyl, substituted
+or unsubstituted C3-C6eycloalkyl, substituted or unsubstituted C-CgalkylC3-Ceycloalkyl,
+substituted or unsubstituted aryl, substituted or unsubstituted C-Cgheterocycloalkyl, substituted
+or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+C4alkyl(heteroaryl), C+-Cgalkylether, C+
+Csalkylamide, or C-C4alkyl(C2-Csheteroeyeloalkyl).
+13.
+The method of claim 1l, wherein:
+Y is an optionally substituted group selected from cycloalkylene or heterocycloalkylene; and
+183
+
+--- PAGE 9 ---
+Rg-and Rg-are H; and
+Rzis substituted or unsubstituted C+-C4heteroalkyl, C+-Cshydroxyalkylaminoalkyl, C+-
+Cgalkoxyalkylaminoallkyl, substituted or unsubstituted C3-C6eycloalkyl, substituted or
+unsubstituted C-CgalkylC-Cseycloalkyl, substituted or unsubstituted aryl, substituted or
+unsubstituted Cz-Cgheterocycloallkyl, substituted or unsubstituted heteroaryl, C-C4alkyl(aryl),
+C+-C4alkyl(heteroaryl), C-Cgalkylethers, C-Cgalkylamides, or C+-C4alkyl(C2-
+Cgheterocycloalkyl).
+14.The method of claim 9, wherein the disorder is mammary ductal carcinoma, lobular
+carcinoma,or a combinationthereof.
+15.A method for treating a disorder characterized by the presence or development of one or
+more solid tumors comprising administering to an individual in need thereof a kinase inhibitor
+that selectively and irreversibly binds to a protein tyrosine kinase selected from Btk, a Btk
+homolog, an ACK, HER4, and a Btk kinase cysteine homolog, in which the kinase inhibitor
+reversibly and non-selectively binds to a multiplicity of protein tyrosine kinases, and further in
+which the plasma half life of the kinase inhibitor is less than about 4 hours.
+16.The method of claim 15, wherein the kinase inhibitor selectively and irreversibly binds to
+B账.
+17.Themethod ofclaim 15,wherein the kinaseinhibitor irreversibly binds toHER4.
+18.The method of claim 15, wherein the disorder is a sarcoma, lymphoma, and/or
+carcinoma.
+184
+
+--- PAGE 10 ---
+19.The method of claim 15, wherein the disorder is mammary ductal carcinoma, lobular
+careinoma, an adenocarcinoma, small cell lung careinoma, non small cell lung carcinoma, a
+melanoma, or a combination thereof.
+20.The method ofclaim 15,whereinthe disorderis mammary ductal carcinoma, lobular
+carcinoma, or a combination thereof.
+21.The method of claim 15, wherein the disorder is pancreatic cancer.
+22.The method ofclaim 15,in which the plasma half life of the kinase inhibitor is less than
+about 3 hours.
+23.The method of claim 15, wherein the kinase inhibitor has the structure ofFormula (VIH):
+Formula (VIH)
+wherein:
+is a moiety that binds to the active site of a kinase, ineluding a tyrosine kinase,
+further ineluding a Btk kinase cysteine homolog;
+Y is an optionally substituted group selected from among alkylene, heteroalkylene,
+arylene, heteroarylene, heterocycloalkylene, cycloalkylene, alkylenearylene,
+alkyleneheteroarylene, allkyleneeyeloallkylene, and alkyleneheterocycloalkylene;
+Z is C(=O), OC(=O), NHC(=O), NCHC(=O), C(=S), S(=O)x, OS(=O), NHS(=O)x
+where x is 1 or 2;
+185
+
+--- PAGE 11 ---
+R6-and Rg are independently selected from among H, unsubstituted C+-C4-allkyl,
+substituted C+-C4alkyl, unsubstituted C+-C4heteroalkyl, substituted C+-C4heteroallkyl,
+unsubstituted C-Cseycloalkyl, substituted C-Cseycloallkyl, unsubstituted C2-
+Csheterocycloalkyl, and substituted C2-Csheterocycloalkyl; or
+R6-and Rg-taken-together form a bond;
+Rz-is H, substituted or unsubstituted C-C4alkyl, substituted or unsubstituted C-
+C4heteroalkyl, C+-Ccalkoxyalkyl, C+-Cgalkylaminoalkyl, C-
+Cghydroxyalkylaminoalkyl, substituted or unsubstituted C-Cceycloalkyl, substituted
+or-unsubstituted aryl, substituted or unsubstituted C2-Csheterocycloalkyl, substituted
+or unsubstituted heteroaryl, C+-C4alkyl(aryl), C+-C4alkyl(heteroaryl), C+-C4alkyl(C3-
+Cseyeloalkyl), or C+-C4alkyl(C2-Csheterocyeloalkyl); or a
+pharmaceutically active metabolite, or pharmaceutically acceptable solvate,
+pharmaceutically acceptable salt, or pharmaceutically acceptable prodrug thereof.
+24.Themethod ofclaim 21,wherein
+is a substituted fused biaryl moiety selected from
+25.The method ofelaim 22,wherein:
+186
+
+--- PAGE 12 ---
+Z is C(=O), NHC(=O), NCH;C(=O), or S(=O)2;
+each of R6 and Rg is H; or
+Rg-and Rg-taken together form a bond.
+26.The method ofclaim 23,wherein:
+Y is a 4, 5 ,6 , or 7 membered cycloalkylene ring; or
+Y is a 4, 5 ,6 , or 7 membered heterocyeloalkylene ring; or
+Y is a C-C4-alkylene, or 4 , 5 , 6 , or 7 membered heterocycloalkylene ring;
+R7-is-H, substituted orunsubstituted C-C4allkyl, substituted or unsubstituted C-
+C4heteroalkyl, C+-Ccalkoxyalkyl, C+-Csalkylaminoalkyl, C+-
+Cghydroxyalkylaminoalkyl, C-Cgalkoxyallkylaminoallkyl, C+-C4alkyl(aryl), C-
+C4alkyl(heteroaryl), C+-C4alkyl(Cz-Cseycloalkyl), or CC4alkyl(C2-
+Cgheterocycloalkyl).
+187

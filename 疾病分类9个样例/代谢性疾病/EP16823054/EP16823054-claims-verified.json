@@ -1,0 +1,305 @@
+{
+  "application_number": "EP16823054",
+  "source_pdf": "docs/19-11-2020_Text_intended_for_grant_(clean_copy)_E5H5RZ7G0050DSU.pdf",
+  "source_pdf_sha256": "55ec0ad465482241bf0cdfb545491f2a3b5f7c0fd36c6fa4d8ed5a6b52b975d3",
+  "source_kind": "text_intended_for_grant_clean_copy",
+  "draft_text_source": "docs/07-10-2020_Text_intended_for_grant_(clean_copy)_E5BZ6AVL0357DSU_ocr.txt",
+  "draft_text_pdf": "docs/07-10-2020_Text_intended_for_grant_(clean_copy)_E5BZ6AVL0357DSU.pdf",
+  "draft_generated_at": "2026-06-18T07:20:45.817292+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [
+    "Claim 16 is an OCR placeholder and must be filled from the authority PDF during review.",
+    "Claim 22 is an OCR placeholder and must be filled from the authority PDF during review."
+  ],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "AcompoundofFormulal\nP\n(I)\nY is N or C-CN;\nZ is N or CH;\nXis N or CR3;\nprovided that at least one of Y,Z,orX is N;\nR1isC3-7cycloalkyl ora 4-to7-memberedheterocyclicmoiety,wherein the\nheterocyclic moiety contains 1to 2 atoms independently selected from nitrogen, oxygen and\nindependently selected from-C1-3alkyl，and -OH,provided that there is nomore than one -\nOH substituent;or\nsubstitutedwith0to1OH;\nR2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-\n(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORs, -L-(CH2)nSO2NHCONH2, or -\nL-(CH2)ntetrazol-5-yl;\nm is 0 or 1;\nn is 0 or 1;\nRN is H or -C1-3alkyl;\nRs is H or -C1-3alkyl;\nL is CH2, CHF, or CF2;\nRC is -C1-4alkyloxy, -C1-4alkyloxycarbonyloxy-C1-4alkyloxy, or -C1-4alkylcarbonyloxy-C1-\n4alkyloxy;\nR3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1.3alkyl substituted with1 to 3halogen\natoms,or-C3-4cycloalkyl;and\nR4 is cyclopropyl, cyclobutyl, or -C1-3alkyl substituted with 0 to 5 halogen atoms as\nvalency allows.",
+      "source_pages": [
+        87
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 2,
+      "text": "The compound of claim 1, or a pharmaceutically acceptable salt thereof, wherein\nY is N or C-CN;\nZ is N or CH;\nX is CR3;\nprovided that at least one ofYorZisN;\nR1isC3.7cycloalkyl ora 4-to7-membered heterocyclic moiety,wherein the\nsulfur,and wherein the cycloalkyl orheterocyclicmoietyhas 0 to3substitutuents\nindependentlyselectedfrom-C1-3alkyl，and-OH,providedthatthereisnomorethanone-\nOH substituent;or\nN(C1-3alkyl)2, NH(C1-3alkyl), or NH(C3.4cycloalkyl), wherein each C1-3alkyl is\nsubstitutedwith0 to1OH;\nR2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-\n(CH2)nC(O)RC, -L-(CH2)nCONHSO2RS, -L-(CH2)nSO2NHCORS, -L-(CH2)nSO2NHCONH2, Or -\nL-(CH2)ntetrazol-5-yl;\nm is 0 or 1;\nn is 0 or 1;\nRN is H or -C1-3alkyl;\nR$ is H or -C1-3alkyl;\nL is CH2, CHF, or CF2;\nRC is-C1-4alkyloxy,-C1-4alkyloxycarbonyloxy-C1-4alkyloxy,or-C1-4alkylcarbonyloxy-C1.\n4alkyloxy;\nR3is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1-3alkyl substituted with1 to 3halogen\natoms, or-C3-4cycloalkyl; and\nR4 is-C1-3alkyl substituted with0 to5 halogen atoms as valency allows.",
+      "source_pages": [
+        88
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "The compound of claim 1 or claim 2,or a pharmaceutically acceptable salt thereof,\nwherein\nYis C-CN;\nZ is N;\nX is CR3;\nR1isC3.7cycloalkyl ora 4-to7-membered heterocyclic moiety,wherein the\nsulfur,and wherein the cycloalkyl orheterocyclicmoietyhas0 to3substitutuents\nindependently selected from-C1-3alkyl， and-OH,provided that there is no more than one -\nOH substituent;\nR² is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-\n(CH2)nC(O)RC,-L-(CH2)nCONHSO2RS,-L-(CH2)nSO2NHCORS,or -L-(CH2)ntetrazol-5-yl;\nm is 0 or 1;\nn is 0 or 1;\nRN is H or -C1-3alkyl;\nRS is H or -C1-3alkyl;\nL is CH2, CHF, or CF2;\n4alkyloxy;\nR3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1-3alkyl substituted with 1 to 3 halogen\natoms,or-C3-4cycloalkyl;and\nR4is-C1-3alkyl substitutedwith0 to5halogen atoms asvalency allows.",
+      "source_pages": [
+        88,
+        89
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "The compound of any one of claims 1 to 2, or a pharmaceutically acceptable salt\nthereof,wherein\nY is N;\nZ is N;\nXis CR3;\nR1isC3-7cycloalkyl ora 4-to7-memberedheterocyclic moiety,wherein the\nindependentlyselected from-C1-3alkyl，and-OH,provided that there is no more than one-\nOH substituent;\nR2 is -(L)m-CON(RN)2, -(L)m-SO2RS, -L-(CH2)nSO2Rs, -L-(CH2)nCO2H, -L-\n(CH2)nC(O)RC,-L-(CH2)nCONHSO2RS,-L-(CH2)nSO2NHCORS, or-L-(CH2)ntetrazol-5-yl;\nm is 0 or 1;\nn is 0 or 1;\nRN is H or -C1-3alkyl;\nRS is H or -C1-3alkyl;\nL is CH2, CHF, or CF2;\n4alkyloxy;\nR3 is H,halogen,-CN,-C1-3alkyl,-OC1-3alkyl,-C1-3alkyl substituted with1 to 3 halogen\natoms,or-C3-4cycloalkyl;and",
+      "source_pages": [
+        89
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "Thecompoundofanyoneofclaims1to4,orapharmaceuticallyacceptablesalt\nthereof,whereinRisHor-CH3.",
+      "source_pages": [
+        89
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 6,
+      "text": "Thecompoundof anyoneof claims1to5,orapharmaceuticallyacceptablesalt\nthereof,wherein R² is-CH2CO2H,-CH2CO2CH3,Or-CH2CO2CH2CH3.",
+      "source_pages": [
+        89
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 7,
+      "text": "Thecompoundofanyoneofclaims1to6,orapharmaceuticallyacceptablesalt\nthereof,wherein R3 is H,-CI,-CHs,-CH2CHs,-O-CH3,cyclopropyl, or CN.",
+      "source_pages": [
+        90
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 8,
+      "text": "Thecompoundofanyoneofclaims1to7,orapharmaceuticallyacceptablesalt\nthereof,whereinR4is-CF3,-CHF2,or-CF2CH3.",
+      "source_pages": [
+        90
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 9,
+      "text": "The compound of any one of claims1to8,ora pharmaceutically acceptable salt\npyrrolidin-1-yl, and piperidin-1-ylhaving 0 to3 substitutuents independentlyselected from-\nCH3and-OH,provided thatthereisnomore thanone-OHsubstituent.",
+      "source_pages": [
+        90
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 10,
+      "text": "The compound of anyoneof claims 1to 9,ora pharmaceutically acceptable salt\nthereof,whereinR1isazetidin-1-yl,having 1to2-CHssubstituents andhaving 0to1-OH\nsubstituent,and whereinYis C-CN and Zis N,orYand Z are each N.",
+      "source_pages": [
+        90
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 11,
+      "text": "The compound of any one of claims1to8,ora pharmaceutically acceptable salt\nthereof,whereinR1iscyclobutylhaving0to3substitutuentsindependentlyselectedfrom-\nCH3and-OH,provided thatthereisnomore thanone-OHsubstituent.",
+      "source_pages": [
+        90
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 12,
+      "text": "Thecompoundofclaim1，orpharmaceuticallyacceptablesaltthereof,whereinthe\ncompound isselectedfrom\nOH\nOH\nOH\nOMe\nOH\nOH\nOH\nHO\nand\nOH",
+      "source_pages": [
+        90
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 13,
+      "text": "The compound of claim 1,or pharmacuetically acceptable salt thereof,wherein the\ncompoundisselectedfrom\n(2S,3R)-2,3-dimethyl-1-[4-{(1R,5S,6S)-6-[(methylsulfonyl)methyl]-3-\nazabicyclo[3.1.0]hex-3-yl}-6-(trifluoromethyl)pyrimidin-2-yl]azetidin-3-ol;\nazabicyclo[3.1.0]hex-6-yl]-N-(methylsulfonyl)acetamide; and\n(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-6-(1H-\ntetrazol-5-ylmethyl)-3-azabicyclo[3.1.0jhexane.",
+      "source_pages": [
+        91
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 14,
+      "text": "The compound of claim 1,or pharmacuetically acceptable salt thereof,wherein the\n10compound is selected from\n(trifluoromethyl)pyridin-2-yl}-3-azabicyclo[3.1.0jhex-6-yl]acetic acid;\nazabicyclo[3.1.0]hex-6-yl]aceticacid;\n[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-\n(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]aceticacid;\n[(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-5-methyl-6-",
+      "source_pages": [
+        91
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 15,
+      "text": "A compound of claim 1, or pharmaceutically acceptable salt thereof, wherein the\n3-azabicyclo[3.1.0]hex-6-yl]acetic acid.\n[(1R,5S,6R)-3-{2-[(2S)-2-methylazetidin-1-yl]-6-(trifluoromethyl)pyrimidin-4-yl}-3-\nazabicyclo[3.1.0]hex-6-yl]aceticacid.",
+      "source_pages": [
+        91
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 16,
+      "text": "",
+      "source_pages": [],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": "Draft placeholder: OCR did not expose a clear boundary for this claim number. Fill from the authority PDF during review."
+    },
+    {
+      "claim_number": 17,
+      "text": "The compound of claim 16,wherein the crystalline form ischaracterized by the",
+      "source_pages": [
+        91
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 18,
+      "text": "A compound of claim 1,or pharmaceutically acceptable salt thereof,wherein the\ncompound is [(1R,5S,6R)-3-{2-[(2S,3R)-3-hydroxy-2-methylazetidin-1-yl]-6-\n(trifluoromethyl)pyrimidin-4-yl}-3-azabicyclo[3.1.0]hex-6-yl]aceticacid",
+      "source_pages": [
+        91
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 19,
+      "text": "A pharmaceutical compositioncomprising thecompound of FormulaI of any of\nclaims 1 to 18, or a pharmaceutically acceptable salt thereof, and a pharmaceutically\nacceptable excipient.",
+      "source_pages": [
+        91
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 20,
+      "text": "AcompoundofFormulaIof anyoneofclaims1to18,orapharmaceutically\nacceptablesaltthereof,foruseasamedicament.",
+      "source_pages": [
+        92
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 21,
+      "text": "AcompoundofFormulaIofanyoneofclaims1to18,orapharmaceutically\nacceptablesaltthereof，foruseinamethodof treatingadisease,whereinthediseaseis\nselectedfromanyone orcombinationofT1D,T2D,idiopathicT1D,LADA,EOD,YOAD\nresistance,hepaticinsulinresistance,impairedglucosetolerance,diabeticneuropathy\ndiabeticnephropathy,kidneydisease,acutekidneydisorder,tubulardysfunction,\ncholesterol,lowHDLcholesterol,hyperinsulinemia,NAFLD,steatosis,NASH,fibrosis\ncirrhosis, hepatocellular carcinoma, HFl, coronary artery disease, peripheral vascular\nheart failure,myocardial infarction,stroke,hemorrhagic stroke,ischemic stroke,pulmonary\nhypertension,restenosisafterangioplasty,intermittentclaudication,post-prandiallipemia\narterialdisease,maculardegeneration,cataract,glomerulosclerosis,chronicrenalfailure\nmetabolic syndrome，syndromeX,premenstrualsyndrome,anginapectoris,thrombosis,\natherosclerosis,transientischemicattacks,vascularrestenosis,impairedglucose\ndysfunction,skinandconnectivetissue disorders,footulcerations,ulcerative colitis,hyper\nbowel disease,ulcerative colitis,Crohn'sdisease,and irritablebowel syndrome.\nwhereinthediseaseisNAFLD.",
+      "source_pages": [
+        92
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 22,
+      "text": "",
+      "source_pages": [],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": "Draft placeholder: OCR did not expose a clear boundary for this claim number. Fill from the authority PDF during review."
+    },
+    {
+      "claim_number": 23,
+      "text": "AcompoundofFormulaIofanyoneofclaims1to18,orapharmaceutically\nacceptablesalt thereof,foruse inamethodof treating a disease asclaimed inclaim21,\nwhereinthediseaseisNASH.",
+      "source_pages": [
+        92
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 24,
+      "text": "AcompoundofFormulaIofanyoneofclaims1to18,orapharmaceutically\nacceptablesalt thereof,for use ina method of treatinga diseaseas claimed in claim21,\nwhereinthediseaseisfibrosis.",
+      "source_pages": [
+        92
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 25,
+      "text": "A compound of FormulaI of any one of claims 1 to 18,or a pharmaceutically\nacceptablesaltthereof,foruseinamethodoftreatingadiseaseasclaimed inclaim21,\nwhereinthediseaseiscirrhosis.\n7→1/5",
+      "source_pages": [
+        92,
+        93
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 26,
+      "text": "A compound of FormulaI of any one of claims 1 to 18,or a pharmaceutically\nacceptable salt thereof,for use in a method of treating a disease as claimed in claim 21,\nwhereinthediseaseishepatocellularcarcinoma.\nDRAWING (06.07.2017)\n1/5 → 2/5\nWO2017/115205\nPCT/IB2016/057728\nM\n2 Theta Degrees\nL\n12000\n10000\n8000\n0009\n2000\nCounts\nDRAWING (06.07.2017)\n2/5 → 3/5\nWO2017/115205\nPCT/IB2016/057728\n2123\n2 Theta Degrees\n4000\n3000\n2000\nCounts\nDRAWING (06.07.2017)\n3/5 → 4/5\nWO2017/115205\nPCT/IB2016/057728\nFIG. 3\nStructuresofExamplesinTable4\nOH\nOH\nOH\nEx 14\nEx 15\nEx 16\nH\nN\nO\nOH\nCI\nC\nOH\nOH\nOH\nH\nOH\nH\nEx 17\nEx 18\nEx 19\nOH\nFHC\nOH\nH\nC\nHO\nOH\nHO\nOH\nH\nEx 20\nEx 21\nEx 22\nN\nN\nCI\nHO\nOH\nHO\nH\nH\nHO\nEx 23\nEx 24\nEx 25\nN\nF3C\nOH\nHO\n日\nOH\nH\nH\nEx 26\nEx 27\nEx 28\n日\nOH\nOH\nOH\nH\nH\nH\nContinued\nDRAWING (06.07.2017)\n4/5 → 5/5\nWO2017/115205\nPCT/IB2016/057728\nFIG. 3 continued\nOH\nHO\nEx31\nEx29\nEx30\nO\nF2HC\nOH\n工\nOH\nH\nOH\nOH\nOH\nEx32\nEx33\nEx34\nN\nH\nHO\nH\n工\nOH\nH\n/OH\nEx36\nEx35\nN\nEx37\nF2HC\nCI\nOH\nC\nOH\n工\nN\nEx38\nEx39\nEx 40\nN\nF2HC\nF2HC\nOH\nCI\nOH\n工\nH\nH\nEx 42\nEx 43\nEx 41\n日\n2H\nOH\nOH\n工\nContinued\nDRAWING (06.07.2017)\nWO2017/115205\nPCT/IB2016/057728\nFIG. 3 continued\nOH\nEx 46\nEx 44\nEx 45\nOH\nEx 47\nEx 49\nEx 48\nOH\n工\nCI\n工\n日\nEx50\nNH\nEx51\nH3CF\nOH\nH\nOH\nEx53\n日\nEx52\nHO\nN\nF3C\n工\nEx55\nN\nF2HC\nOH\nEx54\nOH\n工\nOH\n工",
+      "source_pages": [
+        93,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

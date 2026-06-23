@@ -1,0 +1,2 @@
+﻿category,application_number,status,started_at_utc,finished_at_utc,benchmark_input,analysis_json,analysis_html,error
+,EP12710797,ok,2026-06-18T04:41:49.832659+00:00,2026-06-18T04:46:27.154002+00:00,疾病分类9个样例/自身免疫性疾病/EP12710797/EP12710797-benchmark-input.json,疾病分类9个样例/自身免疫性疾病/EP12710797/EP12710797-analysis.json,疾病分类9个样例/自身免疫性疾病/EP12710797/EP12710797-analysis.html,

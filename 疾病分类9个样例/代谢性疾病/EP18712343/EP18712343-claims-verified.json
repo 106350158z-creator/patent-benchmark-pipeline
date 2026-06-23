@@ -1,0 +1,464 @@
+{
+  "application_number": "EP18712343",
+  "source_pdf": "docs/31-03-2023_Text_intended_for_grant_(clean_copy)_LFLR7NGYRN09VWC.pdf",
+  "source_pdf_sha256": "45a167f32b6b26a2c5e16b49dd90220b51031841ad29e8af9fb18f887dbd714b",
+  "source_kind": "text_intended_for_grant_clean_copy",
+  "draft_text_source": "docs/19-03-2018_Claims_E1NQ5OFG6074DSU_ocr.txt",
+  "draft_text_pdf": "docs/19-03-2018_Claims_E1NQ5OFG6074DSU.pdf",
+  "draft_generated_at": "2026-06-18T07:20:46.347634+00:00",
+  "draft_status": "needs_human_review",
+  "draft_warnings": [
+    "Claim 9 is an OCR placeholder and must be filled from the authority PDF during review."
+  ],
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "1192.P2F\n37JD-246667-WO\nWhat is claimed is:\nA choline salt or co-crystal of CompoundI:\nhaving a crystalline form characterized by an X-ray powder diffractogram comprising peaks at",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": "Draft claim 1 inferred from text before the first numbered dependent claim."
+    },
+    {
+      "claim_number": 2,
+      "text": "The choline salt or co-crystal of Compound I of claim 1, wherein the diffractogram",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 3,
+      "text": "The choline salt or co-crystal of Compound I of claim 1 or claim 2, wherein the\ndiffractogram further comprises peaks at 11.0, 16.4, and 20.5 ° 20 ± 0.2 °20.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 4,
+      "text": "The choline salt or co-crystal of Compound I of any one of claims 1-3,wherein the\ndiffractogram is substantially as shown in Figure 1.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 5,
+      "text": "The choline salt or co-crystal of Compound I of any one of claims 1-4, characterized by a\ndifferential scanning calorimetry (DsC) curve that comprises an endotherm at about 73 °C and\nan endotherm at about 195°C.",
+      "source_pages": [
+        1
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 6,
+      "text": "The choline salt or co-crystal of Compound I of any one of claims 1-5, wherein the DSC\ncurveissubstantiallyasshowninFigure2.\n1192.P2F\n37JD-246667-WO",
+      "source_pages": [
+        1,
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 7,
+      "text": "A diethylamine salt or co-crystal of Compound I:\nhaving a crystalline form characterized by anX-ray powder diffractogram comprising peaks at",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 8,
+      "text": "The diethylamine salt or co-crystal of Compound I of claim7, wherein the diffractogram\nThe diethylamine salt or co-crystalof Compound I of claim7or claim 8,wherein the\ndiffractogram further comprises peaks at 21.1,and 22.8, 27.7°20 ± 0.2 °20.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 9,
+      "text": "",
+      "source_pages": [],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": "Draft placeholder: OCR did not expose a clear boundary for this claim number. Fill from the authority PDF during review."
+    },
+    {
+      "claim_number": 10,
+      "text": "The diethylamine salt or co-crystal of Compound I of any one of claims 7-9, wherein the\ndiffractogram is substantially as shown in Figure 4.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 11,
+      "text": "The diethylamine salt or co-crystal of Compound I of any one of claims 7-10,\ncharacterized by a differential scanning calorimetry (DsC) curve that comprises an endotherm at\nabout 135°C and an endotherm at about 171°C.",
+      "source_pages": [
+        2
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 12,
+      "text": "The diethylamine salt or co-crystal of Compound I of any one of claims 7-11, wherein\nthe DsC curve is substantially as shown in Figure 6.\n1192.P2F\n37JD-246667-WO",
+      "source_pages": [
+        2,
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 13,
+      "text": "A N,N-dibenzylethylenediamine salt or co-crystal of Compound I:\nhaving a crystalline form characterized by an X-ray powder diffractogram comprising peaks at",
+      "source_pages": [
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 14,
+      "text": "The N,N-dibenzylethylenediamine salt or co-crystal of Compound I of claim 13,wherein\nthe diffractogram further comprises peaks at 7.0, 16.9, and 19.6°20 ± 0.2 °20.",
+      "source_pages": [
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 15,
+      "text": "The N,N-dibenzylethylenediamine salt or co-crystal of Compound I of claim 13 or claim\n14, wherein the diffractogram further comprises peaks at 8.7, 10.7, and 17.8 ° 20 ± 0.2 °20.",
+      "source_pages": [
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 16,
+      "text": "The N,N-dibenzylethylenediamine salt or co-crystal of Compound I of any one of claims\n13-15,wherein the diffractogram is substantially as shown in Figure 8.",
+      "source_pages": [
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 17,
+      "text": "The N,N-dibenzylethylenediamine salt or co-crystal of Compound I of any one of claims\n13-16,characterized by a differential scanning calorimetry (DsC) curve that comprises an\nendotherm at about 81 °C.",
+      "source_pages": [
+        3
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 18,
+      "text": "The N,N-dibenzylethylenediamine salt or co-crystal of Compound I of any one of claims\n13-17,wherein the DsC curve is substantially as shown in Figure 9.\n1192.P2F\n37JD-246667-WO",
+      "source_pages": [
+        3,
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 19,
+      "text": "An ethanolamine salt or co-crystal of Compound I:\nhaving a crystalline form characterized by an X-ray powder diffractogram comprising peaks at",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 20,
+      "text": "The ethanolamine salt or co-crystal of Compound I of claim 19 wherein the\ndiffractogram further comprises peaks at 15.4,19.1, and 20.7°20 ± 0.2 °20.",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 21,
+      "text": "The ethanolamine salt or co-crystal of Compound I of claim 19 or claim 20, wherein the\ndiffractogram further comprises peaks at 21.6, 23.4, and 28.3 ° 20 ± 0.2 °20.",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 22,
+      "text": "The ethanolamine salt or co-crystal of Compound I of any one of claims 19-21, wherein\nthe diffractogramis substantially as shown inFigure 11.",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 23,
+      "text": "The ethanolamine salt or co-crystal of Compound I of any one of claims 19-22,\ncharacterized by a differential scanning calorimetry (DsC) curve that comprises an endotherm at\nabout 22°C and an endotherm at about 133 °C.",
+      "source_pages": [
+        4
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 24,
+      "text": "The ethanolamine salt or co-crystal of Compound Iof any one of claims 19-23,wherein\nthe DsC curve is substantially as shown in Figure 12.\n1192.P2F\n37JD-246667-WO",
+      "source_pages": [
+        4,
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 25,
+      "text": "A crystalline form of Compound I:\n(Compound I Form IX) characterized by an X-ray powder diffractogram comprising peaks at",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 26,
+      "text": "The crystalline form of claim 25,wherein the diffractogram further comprises peaks at",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 27,
+      "text": "The crystalline form of claim 25 or claim 26,wherein the diffractogram further",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 28,
+      "text": "The crystalline form of any one of claims 25-27, wherein the diffractogram is\nsubstantially as shown inFigure14.",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 29,
+      "text": "The crystalline form of any one of claims 25-28, characterized by a differential scanning\ncalorimetry (DsC) curve that comprises an endotherm at about 85 °C.",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 30,
+      "text": "The crystalline form of any one of claims 25-29,wherein the DSC curve is substantially\nas shown in Figure 15.",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 31,
+      "text": "A pharmaceutical composition comprising the salt or co-crystal or crytalline form of\nCompound I of any one of claims 1-30 and a pharmaceutically acceptable carrier, adjuvant or\ndiluent.",
+      "source_pages": [
+        5
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 32,
+      "text": "A method of treating an ACC-mediated disorder comprising administering to a patient in\nneed thereof a therapeutically effective amount of the salt or co-crystal or crystalline form of\nCompound I of any one of claims 1-30 or a pharmaceutical composition of claim 31.\n1192.P2F\n37JD-246667-WO",
+      "source_pages": [
+        5,
+        6
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 33,
+      "text": "A method forpreparing compound of formula(J):\nOR\n(①),\ncomprising the steps of:\n(a)contacting acompoundofformula(R):\nOR4\nMgBr\n(R)\nwith a compound of formula (S):\n(S)\nunder conditions sufficient toform a compound of formula(P):\nOR4\n(P)\nor a solvate or a hydrate thereof,\n(b) contacting a compound of formula (P), or a solvate or a hydrate thereof, with a base under\nconditions sufficient toform a compound of formula(O):\nOR4\nOH\n(0)\nor asalt,asolvate,or a hydrate thereof,\n1192.P2F\n37JD-246667-WO\n(c) contacting a compound of formula (O), or a salt, a solvate, or a hydrate thereof, with a\nreductant and a catalyst under conditions sufficient to form a compound of formula (N):\nOR4OH\n(N);\n(d) contacting a compound of formula (N) with a compound of formula (M):\n(M)\nunder conditions sufficient to form a compound of formula (L):\n(L);\n(e) contacting a compound of formula (L) with a reductant under conditions sufficient to form a\ncompound offormula(K):\n(K);\nand (f) contacting a compound of formula (K) with a reductant under conditions sufficient to\nform acompoundof formula(J);\nwhereinR4is Ci-3 alkyl andeachRis independently an optionally substituted C1-6\nalkyl or an optionally substituted C1-6 aryl.\n1192.P2F\n37JD-246667-WO",
+      "source_pages": [
+        6,
+        7,
+        8
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 34,
+      "text": "A method forpreparing compound of formula(J):\nOR\n(①),\ncomprising the steps of:\n(a)contacting acompoundofformula(R):\nOR4\nMgBr\n(R)\nwith a compound of formula (S):\n(S)\nunder conditions sufficient toform a compound of formula(P):\nOR\n(P)\nor a solvate or a hydrate thereof,\n(b) contacting a compound of formula (P), or a solvate or a hydrate thereof, with a base under\nconditions sufficient toform a compound of formula(O):\nOR4\nOH\n(0)\nor asalt,asolvate,or a hydrate thereof,\n1192.P2F\n37JD-246667-WO\n(c) contacting a compound of formula (O), or a salt, a solvate, or a hydrate thereof, with a\nreductant and a catalyst under conditions sufficient to form a compound of formula (N):\nOR4OH\n(N);\n(d) contacting a compound of formula (N) with a compound of formula (M):\n(M)\nunder conditions sufficient toform a compound of formula (L):\n(L);\nand (g) contacting a compound of formula (L) with a reductant under conditions sufficient to\nform a compound of formula (J),\nwhereinR4is Ci-3 alkylandeachRis independentlyan optionally substituted C1-6\nalkyl or an optionally substituted C1-6 aryl.",
+      "source_pages": [
+        8,
+        9
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 35,
+      "text": "A method forpreparing a compound of formula(N):\nOR\nOH\n(N),\nwhereinR4 is C1-3 alkyl,comprising:\n(a) contactinga compound of formula (U):\n1192.P2F\n37JD-246667-WO\n(U)\nwith a hydroxynitrilase and a hydrogen cyanide source under conditions sufficient to form a\ncompound of formula(T):\nOR\nOH\n(T)\nand (b) contacting a compound of formula (T) with a nitrilase under conditions sufficient to\nform a compound of formula (N).",
+      "source_pages": [
+        9,
+        10
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 36,
+      "text": "A method forpreparing a compound of formula(N):\nOR4OH\n(N),\ncomprising:\n(a) contacting a compound of formula (P):\n(P)\nor asolvateorahydratethereof,\nwith a ketoreductase under conditions sufficient to form a compound of formula(V):\nHO\n(V)\n1192.P2F\n37JD-246667-WO\nand (b) contacting a compound of formula (V) with a base under conditions sufficient to form a\ncompound of formula (N),\nwherein R4 is C1-3 alkyl and R is an optionally substituted C1-6 alkyl or an optionally\nsubstituted C1-6 aryl.",
+      "source_pages": [
+        10,
+        11
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 37,
+      "text": "A method of preparing a compound of formula (L):\n(L),\nwhereinR+is C1-3 alkyl,\ncomprising contacting a compound of formula (N):\nOR\nOH\n(N),\nwith a compound of formula (M):\n(M),\nunder conditions sufficient to form a compound of formula (L).",
+      "source_pages": [
+        11
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 38,
+      "text": "A method of preparing a compound of formula(K):\n1192.P2F\n37JD-246667-WO\n(K),\nwhereinR+isCi-3alkyl,\ncomprising contacting a compound of formula (L):\n(L),\nwith a reductant under conditions sufficient to form a compound of formula (K).",
+      "source_pages": [
+        11,
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 39,
+      "text": "The method of any one of claims 33-38,wherein R+is methyl.",
+      "source_pages": [
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    },
+    {
+      "claim_number": 40,
+      "text": "The method of any one of claims 33-34 and 36,wherein R is ethyl.",
+      "source_pages": [
+        12
+      ],
+      "status": "draft",
+      "reviewer": "",
+      "reviewed_at": "",
+      "notes": ""
+    }
+  ]
+}

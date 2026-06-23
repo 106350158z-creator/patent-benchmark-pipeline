@@ -1,0 +1,81 @@
+
+--- PAGE 1 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+AUXILIARYREQUEST3
+CLAIMS:
+1.
+A compound of Formula (Ilacl):
+R3s)0-2
+(Iac-1),
+or a solvate, or pharmaceutically acceptable salt thereof, wherein:
+R2 is-(CH2)-R2s, wherein n is 0, 1, or 2, and R2s is unsubstituted 5 membered
+monocyclic heterocycloalkyl; and
+each R3s is independently C-C6 alkyl, Ci-Co haloalkyl, Cs-Cs cycloalkyl, halo, or Cs-Cs
+heterocycloalkyl wherein the C-C6 alkyl,C1-Cshaloalkyl, C3-Cs cycloalkyl, or C3-Cs
+heterocycloalkyl is optionally substituted with -O(Ci-C6 alkyl), -N(C1-C6 alkyl)2, halo, or -CN.
+2.
+The compound of claim 1, wherein R2s is tetrahydrofuranyl or pyrrolidinyl; or
+optionally
+3.
+The compound of claim 1 or claim 2,wherein at least one R3s is Ci-Co alkyl,Ci-C6
+haloalkyl, Cs-Cs cycloalkyl,halo,or C3-Cs heterocycloalkyl wherein the C1-C6 alkyl, C-C6
+haloalkyl, C3-Cs cycloalkyl, or C3-Cs heterocycloalkyl is optionally substituted with -O(C1-C6
+alkyl), -N(C1-C6 alkyl)2, halo, or -CN;
+optionallywherein at least oneR3sis
+, methyl, ethyl, isopropyl, -
+CH2OCH3,-CHCF3,-CH2CH2OCH3,-CH2CN,CHCF2,Or -CH2CH2N(CH3)2
+4.
+The compound of any one of the preceding claims, wherein the compound is of Formula
+(Iabc-1):
+290358595 v1
+
+--- PAGE 2 ---
+Cooley Ref. NODT-004/N01EP (330150-2065)
+N-R3S
+(R3s)0-2
+R2S
+(Iabc-1);
+Or a solvate, or pharmaceutically acceptable salt thereof, wherein R2s and R3s are as
+described in claim 1.
+5.
+The compound of any one of claims 1 to 4,being selected from:
+CompoundNo.
+Structure
+CH
+8
+Na
+and pharmaceutically acceptable salts thereof.
+6.A pharmaceutical composition comprising the compound of any one of claims1 to5 or a
+pharmaceutically acceptable salt thereof, and a pharmaceutically acceptable diluent or carrier.
+The compound of any one of claims1 to 5,or the pharmaceutical composition of claim 6,
+for use in inhibiting inflammasome activity; optionally, the inflammasome is NLRP3
+inflammasome,and the activityisinvitroor invivo.
+8.The compound of any one of claims 1 to 5, or the pharmaceutical composition of claim 6, for
+use in treating or preventing a disease or disorder; preferably wherein the disease or disorder is an
+inflammatory disorder,an autoinflammatory disorder,an autoimmune disorder,a neurodegenerative
+disease,or cancer.
+9.
+The compound or pharmaceutical composition for use of claim 7or claim 8, wherein the
+disease or disorder is an inflammatory disorder, an autoinflammatory disorder or an autoimmune
+disorder; optionally, the disease or disorder is selected from cryopyrin-associated
+autoinflammatory syndrome(CAPS;e.g.,familialcold autoinflammatory syndrome (FCAS),
+Muckle-Wells syndrome (MwS), chronic infantile neurological cutaneous and articular
+(CINCA) syndrome/neonatal-onset multisystem inflammatory disease (NOMID)),familial
+2
+290358595 v1
+
+--- PAGE 3 ---
+CooleyRef.NODT-004/N01EP (330150-2065)
+Mediterranean fever (FMF), nonalcoholic fatty liver disease (NAFLD), non-alcoholic
+steatohepatitis (NASH), gout, rheumatoid arthritis, osteoarthritis, Crohn’s disease, chronic
+obstructive pulmonary disease (COPD),chronic kidney disease (CKD),fibrosis,obesity,type 2
+diabetes, multiple sclerosis, dermatological diseases (e.g., acne) and neuroinflammation
+occurring in protein misfolding diseases (e.g.,Prion diseases).
+10.The compound or pharmaceutical composition for use of claim 7or claim 8,wherein
+disease or disorder is a neurodegenerative disease; optionally, the disease or disorder is
+Parkinson's disease orAlzheimer'sdisease.
+11.The compound or pharmaceutical composition for use of claim 7 or claim 8, wherein the
+disease or disorderis cancer; optionally,the cancer is metastasising cancer,gastrointestinal
+cancer,brain cancer, skin cancer, non-small-cell lung carcinoma,head and neck squamous cell
+carcinomaorcolorectaladenocarcinoma.
+290358595v1

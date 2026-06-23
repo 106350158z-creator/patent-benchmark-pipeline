@@ -1,0 +1,37 @@
+{
+  "inventive_step_score": 80,
+  "inventive_step_disc": {
+    "analysis": "创造性曾被审查阶段重点质疑，焦点在权利要求1中新加入、R1位为氢的化合物4、5和12是否相对于D4具备创造性。申请人按照接近问题-解决方案思路，以D4相关化合物为对比，主张审查员对D4表2中化合物32的H1975细胞增殖抑制IC50数值存在误解，并进一步指出本申请化合物4、5、12的IC50为0.009、0.006、0.006 μM，优于D4化合物32的0.038 μM，从而形成不可预期的技术效果。随后EPO发出Rule 71(3)拟授权通知并最终授权，说明该创造性异议已被克服。当前风险较低，但若在异议/无效中重新评价D4及技术效果可信度，化合物4、5、12的比较数据仍是核心防线。未见非技术特征问题，COMVIK逻辑不适用。",
+    "original_text": "TheExaminingDivisionhas alreadyacknowledgednoveltyof the presently\nclaimedsubjectmatteraswellasaninventivestepforsubjectmatterwherein\n\"R1 is substituted or unsubstituted phenyl, optionally substituted C3-Cs cycloal-\nkyl\".\nHowever，itwas objectedtothat thethreeextracompounds，whichhavea\nhydrogen at the position of R1, and which were included in claim 1 with the\npreviousresponse，arenotbasedonaninventivestep.",
+    "translation": "审查部门已经认可目前要求保护的主题的新颖性，以及其中“R1为取代或未取代苯基、任选取代的C3-C5环烷基”的主题的创造性。然而，对于前次答复中纳入权利要求1、且R1位为氢的三个额外化合物，审查部门提出其不具备创造性的异议。",
+    "llm_evidence_explanation": "该段直接显示创造性审查焦点：部分主题已获认可，但权利要求1中新加入的三个R1为氢的化合物曾被认为不具备创造性；结合后续拟授权/授权，可判断该异议最终已被克服。"
+  },
+  "affected_claims": [
+    1
+  ],
+  "evidence": [
+    {
+      "issue": "inventive_step",
+      "source": "08-11-2021_Reply_to_communication_from_the_Examining_Division_KVQIPYC8152O3WN_ocr.txt",
+      "original_text": "The compounds 4，5 and 12 show excellent EGFR inhibitory activity. The\ncompounds show a significantly higher inhibitory activity on the proliferation of\nH1975 cells than the structurally related compound 32 of D4. Starting from D4, it\nwascompletelyunpredictable thatcompounds4，5and 12would show such\nexcellentinhibitoryactivityonproliferationofH1975cells.\nNothinginD4orintheotherpriorartdocumentshintedatthesignificant\nincreaseofinhibitoryactivityonproliferationofH1975cellswhichcouldbe\nobtained by the structural modifications of compounds 4, 5 and 12. Therefore,\nthethreeextracompoundsinclaim1arebasedonaninventivestep.",
+      "translation": "化合物4、5和12显示出优异的EGFR抑制活性。这些化合物对H1975细胞增殖的抑制活性显著高于D4中结构相关的化合物32。从D4出发，完全无法预期化合物4、5和12会对H1975细胞增殖显示如此优异的抑制活性。D4或其他现有技术文件均未暗示通过化合物4、5和12的结构改造能够获得H1975细胞增殖抑制活性的显著提高。因此，权利要求1中的三个额外化合物具备创造性。",
+      "llm_evidence_explanation": "该证据体现申请人针对D4提出的技术效果和非显而易见性论证，是克服Art.56异议的核心事实基础。"
+    },
+    {
+      "issue": "inventive_step",
+      "source": "21-03-2022_Communication_about_intention_to_grant_a_European_patent_L0MFXQWD1D5KGZ9_ocr.txt",
+      "original_text": "YouareinformedthattheexaminingdivisionintendstograntaEuropeanpatentonthebasisof theabove\napplication,with thetext and drawings and therelatedbibliographicdata asindicatedbelow.",
+      "translation": "现通知你，审查部门拟基于上述申请，并按照下列文本、附图及相关著录项目授予一项欧洲专利。",
+      "llm_evidence_explanation": "该拟授权通知表明在申请人提交创造性答复及修改后，审查部门已准备授权，说明包括创造性在内的实质性障碍已被克服。"
+    },
+    {
+      "issue": "inventive_step",
+      "source": "11-08-2022_Decision_to_grant_a_European_patent_L6FNAWHJ1M7IUKL_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.16802532.8aEuropeanpatentwiththetile\nand thesupportingdocuments indicatedinthecommunicationpursuant toRule71(3)EPC(EPOForm\n2004C)orintheinformation(EPOForm2004W,cf.Noticefrom theEPOdated8June2015,OJEPO\n2015,A52)dated 21.03.22isherebygranted inrespect of thedesignatedContractingStates.",
+      "translation": "经对欧洲专利申请号16802532.8进行审查，现根据2022年3月21日依据EPC规则71(3)发出的通知中所示的题名及支持文件，就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "最终授权决定确认该申请经审查后被授予欧洲专利，支持创造性异议已在授权前得到解决。"
+    }
+  ],
+  "risk_reason": "Inventive-step objection over D4 was overcome, but D4 comparative efficacy remains the key post-grant vulnerability.",
+  "recommended_action": "Maintain a detailed D4-focused technical dossier proving corrected IC50 interpretation and unexpected H1975 inhibition for compounds 4, 5 and 12."
+}

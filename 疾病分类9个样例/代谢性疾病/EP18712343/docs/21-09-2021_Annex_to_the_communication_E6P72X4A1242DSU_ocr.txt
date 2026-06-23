@@ -1,0 +1,87 @@
+
+--- PAGE 1 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+21.09.2021
+Sheet
+Application No:
+18 712 343.5
+Date
+Feuille
+Demande n°:
+Description, Pages
+1-118
+as published
+119-130
+filedin electronicform on
+27-04-2020
+Claims,Numbers
+1-4
+filedinelectronicformon
+27-04-2020
+Drawings,Sheets
+1/17-17/17
+as published
+1.Reference is made to thefollowing documents:
+D1
+US2013/123231A1
+D2
+of acids,imidazolines,amidinium chlorides,and their copper complexes,
+related tomandelic acid",JOURNAL OFTHE CHEMICAL SOCIETY,1965,
+pages4007-4014,XP009504882
+D3
+Pu-ChaYanETAL:"Directasymmetrichydrogenationof [alpha]-keto acids
+by using the highly efficient chiral spiro iridium catalysts",
+Chemical Communications,vol.50,no.100,2014,pages 15987-15990,
+XP055436828
+2. The claimed subject-matter is novel (Article 54 EPC)at least due to present step c)
+and totheintermediateofformula(L).
+3.Inventive step
+D1 is the closest prior art to the claimed subject-matter because it discloses thepresent
+product of formula (J). In D1, said product is prepared by ring opening of a benzyl
+epoxide and chiral resolution with a chiral preparative HPLC (D1, pages 173-174
+EPO Form 2906 01.91TRI
+
+--- PAGE 2 ---
+Datum
+Blatt
+Anmelde-Nr:
+Date
+21.09.2021
+Sheet
+2
+Application No:
+18712 343.5
+Date
+Feuille
+Demande n°:
+route: they start with the phenyl magnesium bromide derivative of formula(R),they
+comprise theasymmetricreductionof thea-keto acidof formula(O)into the α-hydroxy
+acid of formula (N)(present step c)) and involve the intermediate of formula (L).
+Thetechnicalproblemunderlyingthepresent applicationistheprovisionofalternative
+processes to prepare the compound of formula (J).
+Inviewoftheinformationprovidedinthedescription(examples6-8),itcanbeassumed
+that this problem has been solved. D2 discloses the a-hydroxy acid of formula (N) but it
+is obtained by chiral resolution of an o-methoxymandelic acid (D2, page 4013 -
+experimentalpart).D3disclosestheasymmetricreductionofthea-ketoacidofformula
+(O)butit leadstoadifferentenantiomericform(D3,table2entry4).Theintermediateof
+formula(L)has never beendisclosed(eveninaracemicform).Therefore，even
+combiningtheteachingofthepriorart,theskilledpersonwouldnotarriveattheclaimed
+processes. Consequently, it is considered that the present application involves an
+inventivestep(Article56EPC).
+4. Clarity
+Thedescriptionshouldbeadapted totheclaims(Article84EPC).Itisremindedthatin
+ordertomeettherequirementsofArticle84EPC(seealsoGuidelinesF-IV,4.3),the
+claims have tobe supported by thedescription.Any disclosure in the description
+inconsistentwiththeclaimsshouldbeexcised.Referencetoembodimentsnotcovered
+bytheclaimsshouldbedeleted，unlesstheseembodimentscanreasonablybe
+considered tobeusefulfor highlighting specific aspects of the claimed subject-matter.In
+suchcase,thefactthatanembodimentisnotcoveredbytheclaimsmust be
+prominently stated (the mere replacement of the word "invention"by "disclosure" or
+similarwordsisnotsufficient).
+"Claim-like”clauses on pages 119-130 must be deleted(Guidelines F-IV,4.4).
+The literature cited in the description should not be“incorporated by
+reference"(Guidelines F-Ill,8).
+EPO Form 2906 01.91TRI

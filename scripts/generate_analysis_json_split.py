@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import argparse
 import json
 import os
@@ -12,6 +14,7 @@ from generate_analysis_json import (
     DEFAULT_API_KEY_ENV,
     DEFAULT_BASE_URL,
     DEFAULT_MODEL,
+    benchmark_quality_issues,
     collect_source_texts,
     extract_json_object,
     load_dotenv,
@@ -63,10 +66,94 @@ DIMENSIONS = [
     },
 ]
 
+DIMENSION_SOURCE_KEYS = [
+    ("novelty", "novelty_score", "novelty_disc"),
+    ("inventive_step", "inventive_step_score", "inventive_step_disc"),
+    ("support", "support_score", "support_disc"),
+    ("clarity", "clarity_score", "clarity_disc"),
+    ("eligibility", "eligibility_score", "eligibility_disc"),
+]
+
 
 SYSTEM_PROMPT = """你是专利审查报告分析专家。你必须只基于给定 benchmark input 和 SOURCE 审查材料输出合法 JSON。
 禁止编造审查事实、链接、先文或原文证据。original_text 必须从一个连续 SOURCE 片段中逐字摘录，不能改写、拼接、补词或使用省略号。
 只输出 JSON，不要输出 Markdown。"""
+
+
+def text_key(value: Any) -> str:
+    return " ".join(str(value or "").split()).lower()
+
+
+def evidence_source_item(issue: str, item: dict[str, Any], default_source: str) -> dict[str, str] | None:
+    original_text = str(item.get("original_text") or "").strip()
+    translation = str(item.get("translation") or "").strip()
+    if not original_text or not translation:
+        return None
+    return {
+        "issue": issue,
+        "source": str(item.get("source") or item.get("location") or default_source),
+        "original_text": original_text,
+        "translation": translation,
+        "llm_evidence_explanation": str(
+            item.get("llm_evidence_explanation")
+            or item.get("relevance")
+            or "该审查材料原文是风险判断的依据。"
+        ),
+    }
+
+
+def derive_source_sentence_lists(data: dict[str, Any], limit: int = 5) -> bool:
+    scores = data.get("dimension_scores") or {}
+    evidence = data.get("evidence_trace") or {}
+    evidence_by_issue: dict[str, list[dict[str, Any]]] = {}
+    for item in evidence.get("examination_material_evidence") or []:
+        if not isinstance(item, dict):
+            continue
+        issue = str(item.get("issue") or "").strip().lower()
+        if issue:
+            evidence_by_issue.setdefault(issue, []).append(item)
+
+    def score_value(score_key: str) -> float:
+        try:
+            return float(scores.get(score_key))
+        except (TypeError, ValueError):
+            return 101.0
+
+    candidates: list[dict[str, str]] = []
+    for issue, score_key, disc_key in sorted(DIMENSION_SOURCE_KEYS, key=lambda item: score_value(item[1])):
+        for evidence_item in evidence_by_issue.get(issue, []):
+            candidate = evidence_source_item(issue, evidence_item, "examination_material_evidence")
+            if candidate:
+                candidates.append(candidate)
+        disc = scores.get(disc_key)
+        if isinstance(disc, dict):
+            candidate = evidence_source_item(issue, disc, disc_key)
+            if candidate:
+                candidates.append(candidate)
+
+    seen: set[str] = set()
+    deduped: list[dict[str, str]] = []
+    for candidate in candidates:
+        key = text_key(candidate.get("original_text"))
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(candidate)
+        if len(deduped) >= limit:
+            break
+
+    action_basis = [
+        {
+            **item,
+            "llm_evidence_explanation": item.get("llm_evidence_explanation")
+            or "该审查材料原文是后续处理或维持权利要求文本的依据。",
+        }
+        for item in deduped
+    ]
+    changed = data.get("risk_source_sentences") != deduped or data.get("action_basis_source_sentences") != action_basis
+    data["risk_source_sentences"] = deduped
+    data["action_basis_source_sentences"] = action_basis
+    return changed
 
 
 def truncate_value(value: Any, max_chars: int) -> Any:
@@ -225,7 +312,7 @@ def build_dimension_prompt(benchmark: dict[str, Any], sources: str, dimension: d
     {{
       "issue": "{issue}",
       "source": "文件名或段落",
-      "original_text": "从 SOURCE 连续摘录的原文",
+      "original_text": "从 SOURCE 连续摘录的原文，不能使用 SOURCE 标题、文件名或页码标记",
       "translation": "中文翻译",
       "llm_evidence_explanation": "证据说明"
     }}
@@ -243,7 +330,10 @@ def build_dimension_prompt(benchmark: dict[str, Any], sources: str, dimension: d
 
 规则:
 - original_text 必须来自一个连续 SOURCE 片段，不能拼接、改写或使用省略号。
-- 如果 SOURCE 未显示该维度被质疑，给高分，并引用能说明未见该类异议或案件结论的原文。
+- original_text 不能只引用 SOURCE 标题、文件名、HTML title、页码标记或空白。
+- 如果 SOURCE 未显示该维度被质疑，给高分，并引用最终授权/拟授权/审查结论中能支撑案件通过的连续原文；不要编造“未质疑”的原文。
+- {score_key} 必须是 0-100 的数字，不能是 null、空字符串或缺失。
+- {disc_key}.original_text 必须非空；如果本维度没有专门异议，就引用 Decision to grant、intention to grant 或 withdrawal/refusal 决定中的连续原文。
 - 只输出上述 JSON。
 
 benchmark input:
@@ -280,12 +370,22 @@ def merge_results(
         score_key = dimension["score_key"]
         disc_key = dimension["disc_key"]
         result["dimension_scores"][score_key] = partial.get(score_key)
-        result["dimension_scores"][disc_key] = partial.get(disc_key) or {
+        disc_value = partial.get(disc_key) or {
             "analysis": "",
             "original_text": "",
             "translation": "",
             "llm_evidence_explanation": "",
         }
+        result["dimension_scores"][disc_key] = disc_value
+        if dimension["name"] == "support" and isinstance(disc_value, dict) and disc_value.get("original_text"):
+            result["evidence_trace"]["specification_support"].append(
+                {
+                    "location": disc_value.get("source") or "support_disc",
+                    "original_text": disc_value.get("original_text") or "",
+                    "translation": disc_value.get("translation") or "",
+                    "llm_evidence_explanation": disc_value.get("llm_evidence_explanation") or "",
+                }
+            )
 
         for claim in partial.get("affected_claims") or []:
             try:
@@ -305,11 +405,32 @@ def merge_results(
             for item in evidence_items:
                 if isinstance(item, dict):
                     result["evidence_trace"]["examination_material_evidence"].append(item)
+                    if dimension["name"] == "support" and item.get("original_text"):
+                        result["evidence_trace"]["specification_support"].append(
+                            {
+                                "location": item.get("source") or item.get("location") or "support evidence",
+                                "original_text": item.get("original_text") or "",
+                                "translation": item.get("translation") or "",
+                                "llm_evidence_explanation": item.get("llm_evidence_explanation") or "",
+                            }
+                        )
 
     result["evidence_trace"]["affected_claims"] = sorted(affected_claims)
     result["top_risk_reasons"] = result["top_risk_reasons"][:5]
     result["recommended_actions"] = result["recommended_actions"][:5]
-    return normalize_analysis_result(result, benchmark)
+    result = normalize_analysis_result(result, benchmark)
+    derive_source_sentence_lists(result)
+    return result
+
+
+def dimension_result_complete(dimension: dict[str, str], partial: dict[str, Any]) -> bool:
+    score = partial.get(dimension["score_key"])
+    disc = partial.get(dimension["disc_key"])
+    if score is None:
+        return False
+    if not isinstance(disc, dict):
+        return False
+    return bool(str(disc.get("original_text") or "").strip())
 
 
 def write_step(path: Path, name: str, data: dict[str, Any]) -> None:
@@ -334,10 +455,13 @@ def main() -> None:
     parser.add_argument("--reasoning-effort", default=os.environ.get("OPENAI_REASONING_EFFORT") or "low")
     parser.add_argument("--verbosity", default=os.environ.get("OPENAI_VERBOSITY") or "low")
     parser.add_argument("--max-chars-per-file", type=int, default=3000)
-    parser.add_argument("--max-source-files", type=int, default=3)
+    parser.add_argument("--max-source-files", type=int, default=8)
     parser.add_argument("--max-prior-art", type=int, default=12)
     parser.add_argument("--max-field-chars", type=int, default=3000)
+    parser.add_argument("--include-register-html", action="store_true", help="Allow EPO register HTML in SOURCE context. Default keeps SOURCE to examination text files.")
+    parser.add_argument("--allow-low-quality-source", action="store_true", help="Continue even when claim/source quality gates fail.")
     parser.add_argument("--only-dimensions", nargs="*", choices=[item["name"] for item in DIMENSIONS])
+    parser.add_argument("--retries", type=int, default=3, help="Retry each dimension call when required schema fields are missing.")
     parser.add_argument("--write-steps", action="store_true", help="Write one JSON file for each API sub-call.")
     parser.add_argument("--dry-run", action="store_true", help="Write split prompts next to output, but do not call the API.")
     args = parser.parse_args()
@@ -349,7 +473,16 @@ def main() -> None:
 
     benchmark = read_json(Path(args.benchmark_input))
     compact = compact_benchmark(benchmark, args.max_prior_art, args.max_field_chars)
-    sources = source_block(collect_source_texts(benchmark, args.max_chars_per_file, args.max_source_files))
+    source_texts = collect_source_texts(
+        benchmark,
+        args.max_chars_per_file,
+        args.max_source_files,
+        include_register_html=args.include_register_html,
+    )
+    quality_issues = benchmark_quality_issues(benchmark, source_texts)
+    if quality_issues and not args.allow_low_quality_source:
+        raise RuntimeError("Source quality gate failed: " + "; ".join(quality_issues))
+    sources = source_block(source_texts)
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -386,9 +519,17 @@ def main() -> None:
 
     dimension_results: list[tuple[dict[str, str], dict[str, Any]]] = []
     for dimension in selected_dimensions:
-        step_started = time.monotonic()
-        partial = call_json(prompts[dimension["name"]], max_tokens=args.max_tokens, **common)
-        print(f"{dimension['name']} call completed in {time.monotonic() - step_started:.1f}s")
+        partial: dict[str, Any] = {}
+        for attempt in range(args.retries + 1):
+            step_started = time.monotonic()
+            prompt = prompts[dimension["name"]]
+            if attempt:
+                prompt += "\n\n上一次输出缺少必需字段。请重新输出完整 JSON，必须包含评分字段和带有非空 original_text 的结构化 disc 字段。"
+            partial = call_json(prompt, max_tokens=args.max_tokens, **common)
+            print(f"{dimension['name']} call attempt {attempt + 1} completed in {time.monotonic() - step_started:.1f}s")
+            if dimension_result_complete(dimension, partial):
+                break
+            print(f"{dimension['name']} call attempt {attempt + 1} returned incomplete schema; retrying", flush=True)
         if args.write_steps:
             write_step(output_path, dimension["name"], partial)
         dimension_results.append((dimension, partial))

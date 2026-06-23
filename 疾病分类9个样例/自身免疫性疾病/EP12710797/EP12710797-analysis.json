@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "jurisdiction": "EP",
+    "application_number": "EP12710797.7",
+    "title": "QUINOLONE ANALOGS FOR TREATING AUTOIMMUNE DISEASES",
+    "applicant": "Tel HaShomer Medical Research Infrastructure and Services Ltd.",
+    "filing_date": "2012-02-26",
+    "examination_date": "2017-11-30",
+    "outcome": "granted"
+  },
+  "grant_label": "yes",
+  "dimension_scores": {
+    "novelty_score": 100,
+    "novelty_disc": {
+      "analysis": "从给定材料看，申请人曾就新颖性明确主张：权利要求1-15相对于D1（WO 2007/022474）是新的，因为本申请限定为“for use in multiple sclerosis”，而D1指向的是用于治疗银屑病的含核酸和喹诺酮类似物组合物。随后EPO发出拟授权并最终作出授予决定，说明单一现有技术下的新颖性异议没有在授权前持续存在。就当前记录而言，新颖性风险很低。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+      "translation": "在对欧洲专利申请第12710797.7号以及规则71(3) EPC 通信中所指明的标题和支持文件进行审查后，现就所指定的缔约国授予一项欧洲专利。",
+      "llm_evidence_explanation": "This is the final grant decision, which supports that no outstanding Art. 54 novelty objection survived to grant."
+    },
+    "inventive_step_score": 100,
+    "inventive_step_disc": {
+      "analysis": "本案就创造性而言，SOURCE 中没有看到审查员维持的 Art.56 否定结论；相反，程序后期先有 Rule 71(3) 意向授权，随后直接作出授权决定，说明 D2/D3 相关创造性争议已在审查中被克服。申请人在答复中专门围绕 D2 和 D3 论证“Claims 1-15 also involve an inventive step”，并主张 D3 反而 teach away，结合最终授权结果，当前创造性风险很低。该权利要求主要是针对特定化合物及其治疗多发性硬化用途，未见需要按 COMVIK 处理的明显非技术特征。唯一残余风险是：SOURCE 未展示审查员完整的 problem-solution reasoning，因此若未来被第三方挑战，仍可能围绕最接近现有技术、技术效果与显而易见性重新展开争辩。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+      "translation": "经审查欧洲专利申请第12710797.7号后，现依据2017年03月24日根据规则71(3) EPC发出的通知中所指明的标题和支持文件，就所指定的缔约国授予该欧洲专利。",
+      "llm_evidence_explanation": "这段原文表明申请经过审查后被直接授予欧洲专利，说明没有持续存在的创造性障碍；结合申请人对 D2/D3 的创造性抗辩，支持该维度高分。"
+    },
+    "support_score": 80,
+    "support_disc": {
+      "analysis": "从审查链条看，申请人在答复中明确把权利要求1对应到原始申请中的权利要求6和12，并说明先前基于支持性的异议已不再相关；随后EPO发出拟授权并最终授权，说明本案在充分公开/支持维度上已被接受。现有材料未显示仍有未克服的Art.83或Art.84支持性问题，当前风险较低，但若后续再引入新的限定，仍需重新核对原始公开基础以避免Art.123(2)风险。",
+      "original_text": "Following examination of European patent application No.12710797.7 a European patent with the title and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC(EPO Form 2015,A52)dated 24.03.17 is hereby granted in respect of the designated Contracting States.",
+      "translation": "经审查欧洲专利申请第12710797.7号后，现就所指定缔约国授予一项欧洲专利，其标题及根据EPC规则71(3)通信（EPO表格2015，A52）中所示的支持文件如上所列。",
+      "llm_evidence_explanation": "这段原文表明申请已基于Rule 71(3)通信中的文本和支持文件进入授权，说明审查员在最终阶段接受了说明书/权利要求的支持基础，因此支持性维度总体通过。"
+    },
+    "clarity_score": 100,
+    "clarity_disc": {
+      "analysis": "从 SOURCE 看，当前文本没有看到针对现行权利要求的 Art.84 清楚性否定结论。申请人在 2016 年回复中明确表示，先前针对旧权利要求 1-5 的 clarity 异议“are no longer relevant”，说明其已通过删减/改写权利要求予以回应。随后审查部在 Rule 71(3) 通知中给出拟授权文本，并在 2017 年 Decision to grant 中正式授权，表明当前权利要求文本已被接受。就清楚性而言，现阶段风险较低；但该权利要求为长 Markush 结构，后续若再修改，仍需注意术语边界、变量定义和 proviso 的一致性。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+      "translation": "经审查欧洲专利申请第 12710797.7 号后，现依据 2015 年 EPO Form 52 所述的 Rule 71(3) EPC 通知中指明的标题及支持文件，特此就指定缔约国授予欧洲专利。",
+      "llm_evidence_explanation": "该原文是最终授权决定，直接表明审查程序已通过并授予专利，通常意味着未留下未解决的清楚性障碍，因此支持高分。"
+    },
+    "eligibility_score": 100,
+    "eligibility_disc": {
+      "analysis": "材料中未显示针对EP Art.52的排除主题异议；申请人最终将权利要求整理为“for use in treating multiple sclerosis in a subject”的治疗用途限定表达，属于目的限定产品/第二医疗用途形式，而不是被排除的纯治疗方法。审查程序随后发出拟授予通知并最终授予欧洲专利，说明该维度已通过。当前适格性风险很低，主要残余风险只会出现在后续若把权利要求改成纯治疗步骤，或删除治疗用途限定时，才可能重新触发Art.52/53(c)问题。",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle\nand the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm\n2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+      "translation": "经审查后，欧洲专利申请号12710797.7及其在Rule 71(3) EPC通知中列明的支持文件，现已授予所指定缔约国的欧洲专利。",
+      "llm_evidence_explanation": "该原文表明申请在审查后直接进入授权，说明没有因适格性而被阻却；结合权利要求的治疗用途限定，可支持高适格性评分。"
+    }
+  },
+  "aggregate_score": 97,
+  "top_risk_reasons": [
+    {
+      "original_text": "Novelty risk is low because the application was granted and no surviving single-document novelty objection appears in the record.",
+      "translation": "新颖性风险较低，因为该申请已获授权，且记录中未见存续的单篇文献新颖性异议。"
+    },
+    {
+      "original_text": "Grant indicates Art.56 issues were overcome, but the file does not show the full problem-solution reasoning.",
+      "translation": "授权表明第56条问题已被克服，但案卷未显示完整的问题-解决方案推理。"
+    },
+    {
+      "original_text": "Residual support risk is low because the amended claim was expressly mapped to the original filing and the case was granted.",
+      "translation": "剩余支持风险较低，因为修改后的权利要求已明确对应原始申请，且该案已获授权。"
+    },
+    {
+      "original_text": "No outstanding clarity objection remains, and the application was ultimately granted after amendment.",
+      "translation": "不存在未决的清楚性异议，且该申请在修改后最终获得授权。"
+    },
+    {
+      "original_text": "No Art.52 exclusion is apparent; the allowed claim is a purpose-limited therapeutic-use product claim.",
+      "translation": "未见第52条排除情形；获准权利要求为用途限定的治疗用途产品权利要求。"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "original_text": "Keep the granted claim wording and cite the grant decision if novelty is later challenged.",
+      "translation": "保持授权权利要求措辞，如后续对新颖性提出挑战，可援引授权决定。"
+    },
+    {
+      "original_text": "Keep claim 1 aligned with the granted wording and retain the D2/D3 non-obviousness arguments for any future opposition.",
+      "translation": "使权利要求1与授权文本保持一致，并保留D2/D3的非显而易见性论点以应对未来异议。"
+    },
+    {
+      "original_text": "Keep the original-basis mapping on file and verify any future narrowing amendment against the as-filed disclosure before filing.",
+      "translation": "保存原始依据对应关系，并在提交前将任何后续限缩修改与原始申请公开内容核对。"
+    },
+    {
+      "original_text": "Keep the granted wording unchanged; if amending, define each Markush variable and proviso consistently to preserve Art.84 clarity.",
+      "translation": "保持授权措辞不变；如需修改，应一致地定义各Markush变量和限定条件，以维持第84条清楚性。"
+    },
+    {
+      "original_text": "Keep the claim in purpose-limited product-for-use form in any further amendments and avoid converting it into a treatment method claim.",
+      "translation": "在后续修改中保持该权利要求为用途限定产品形式，避免改成治疗方法权利要求。"
+    }
+  ],
+  "evidence_trace": {
+    "prior_art_documents": [
+      {
+        "rank": 1,
+        "citation": "WO2012123938",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2012123938",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 2,
+        "citation": "WO2007022474",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2007022474",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      },
+      {
+        "rank": 3,
+        "citation": "WO2010113096",
+        "mentioned_in_examined_text": true,
+        "retrieval_method": "examined_text",
+        "official_source": "Patent publication direct page",
+        "official_link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2010113096",
+        "llm_evidence_explanation": "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
+      }
+    ],
+    "affected_claims": [
+      1
+    ],
+    "specification_support": [
+      {
+        "location": "support_disc",
+        "original_text": "Following examination of European patent application No.12710797.7 a European patent with the title and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC(EPO Form 2015,A52)dated 24.03.17 is hereby granted in respect of the designated Contracting States.",
+        "translation": "经审查欧洲专利申请第12710797.7号后，现就所指定缔约国授予一项欧洲专利，其标题及根据EPC规则71(3)通信（EPO表格2015，A52）中所示的支持文件如上所列。",
+        "llm_evidence_explanation": "这段原文表明申请已基于Rule 71(3)通信中的文本和支持文件进入授权，说明审查员在最终阶段接受了说明书/权利要求的支持基础，因此支持性维度总体通过。"
+      },
+      {
+        "location": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Claim 1 finds basis in claims 6 and 12 as originally filed (and as published in WO2012/123938).",
+        "translation": "权利要求1的依据见原始提交的权利要求6和12（以及WO2012/123938中公开的内容）。",
+        "llm_evidence_explanation": "申请人直接给出权利要求1的原始基础，支持该权利要求并非新增内容，且有说明书/原始权利要求支撑。"
+      },
+      {
+        "location": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Previous claims 1-5 and 12 have been deleted. Accordingly, the objections against claims 1-5 based on clarity and lack of support raised in the international search report are no longer relevant.",
+        "translation": "先前的权利要求1-5和12已被删除。因此，国际检索报告中针对权利要求1-5提出的基于清楚性和缺乏支持的异议已不再相关。",
+        "llm_evidence_explanation": "这表明原先的支持性异议已通过删改克服，且审查程序继续推进到授权，降低当前支持风险。"
+      }
+    ],
+    "examination_material_evidence": [
+      {
+        "issue": "novelty",
+        "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Novelty:\nClaims 1-15 are novel over WO 2007/022474 (D1),because they are directed to a\ncompound for use in multiple sclerosis. In contrast,D1 is directed to a composition\ncomprising a nucleic acid and a quinolone analog of formulas (I)-(V) for use in the\n5",
+        "translation": "新颖性：权利要求1-15相对于WO 2007/022474（D1）具有新颖性，因为它们是针对用于治疗多发性硬化症的化合物。相较之下，D1是针对一种包含核酸和式(I)-(V)喹诺酮类似物的组合物，用于治疗银屑病。",
+        "llm_evidence_explanation": "This shows the applicant's novelty distinction over a single prior-art document, based on different therapeutic use."
+      },
+      {
+        "issue": "novelty",
+        "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+        "translation": "在对欧洲专利申请第12710797.7号以及规则71(3) EPC 通信中所指明的标题和支持文件进行审查后，现就所指定的缔约国授予一项欧洲专利。",
+        "llm_evidence_explanation": "The grant decision supports that the application proceeded to allowance, indicating no unresolved novelty objection remained."
+      },
+      {
+        "issue": "inventive_step",
+        "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+        "translation": "经审查欧洲专利申请第12710797.7号后，现依据2017年03月24日根据规则71(3) EPC发出的通知中所指明的标题和支持文件，就所指定的缔约国授予该欧洲专利。",
+        "llm_evidence_explanation": "授权决定是创造性争议已被克服的最强程序性证据，表明 Art.56 最终未阻止授权。"
+      },
+      {
+        "issue": "inventive_step",
+        "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Inventive Step:\nClaims 1-15 alsoinvolve an inventive step in view of WO 2010/113096(D2) and the publication by Drygin Denis (D3)for the following reasons.",
+        "translation": "创造性：就 WO 2010/113096（D2）和 Drygin Denis（D3）的公开而言，第1-15项权利要求同样具备创造性，理由如下。",
+        "llm_evidence_explanation": "该段显示申请人在审查中明确回应了 D2/D3 的创造性问题，并主张其方案相对于最接近现有技术并非显而易见。"
+      },
+      {
+        "issue": "support",
+        "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Claim 1 finds basis in claims 6 and 12 as originally filed (and as published in WO2012/123938).",
+        "translation": "权利要求1的依据见原始提交的权利要求6和12（以及WO2012/123938中公开的内容）。",
+        "llm_evidence_explanation": "申请人直接给出权利要求1的原始基础，支持该权利要求并非新增内容，且有说明书/原始权利要求支撑。"
+      },
+      {
+        "issue": "support",
+        "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Previous claims 1-5 and 12 have been deleted. Accordingly, the objections against claims 1-5 based on clarity and lack of support raised in the international search report are no longer relevant.",
+        "translation": "先前的权利要求1-5和12已被删除。因此，国际检索报告中针对权利要求1-5提出的基于清楚性和缺乏支持的异议已不再相关。",
+        "llm_evidence_explanation": "这表明原先的支持性异议已通过删改克服，且审查程序继续推进到授权，降低当前支持风险。"
+      },
+      {
+        "issue": "clarity",
+        "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+        "original_text": "Previous claims 1-5 and 12 have been deleted. Accordingly, the objections against claims 1-5 based on clarity and lack of support raised in the international search report are no longer relevant.",
+        "translation": "先前的权利要求 1-5 和 12 已被删除。因此，国际检索报告中针对权利要求 1-5 提出的关于清楚性和缺乏支持的异议已不再相关。",
+        "llm_evidence_explanation": "这段原文明确提到清楚性异议，并说明申请人通过删除旧权利要求予以回应，支持当前文本的清楚性风险已显著降低。"
+      },
+      {
+        "issue": "clarity",
+        "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+        "translation": "经审查欧洲专利申请第 12710797.7 号后，现依据 2015 年 EPO Form 52 所述的 Rule 71(3) EPC 通知中指明的标题及支持文件，特此就指定缔约国授予欧洲专利。",
+        "llm_evidence_explanation": "最终授权本身表明审查部接受了现行文本，没有留下未解决的清楚性拒绝理由，因此支持高分。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "13-10-2016_Claims_EZK6D2TL7828DSU_ocr.txt",
+        "original_text": "for use in treating multiple sclerosis in a subject.",
+        "translation": "用于在受试者中治疗多发性硬化症。",
+        "llm_evidence_explanation": "该表述显示权利要求采用治疗用途限定，而非被排除的纯治疗方法，支持EP Art.52适格性。"
+      },
+      {
+        "issue": "eligibility",
+        "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+        "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle\nand the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm\n2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+        "translation": "经审查后，欧洲专利申请号12710797.7及其在Rule 71(3) EPC通知中列明的支持文件，现已授予所指定缔约国的欧洲专利。",
+        "llm_evidence_explanation": "授权决定表明该申请在审查后获得通过，没有因适格性问题被拒绝，支持高分判断。"
+      }
+    ],
+    "examination_rounds": 1
+  },
+  "risk_source_sentences": [
+    {
+      "issue": "support",
+      "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "original_text": "Claim 1 finds basis in claims 6 and 12 as originally filed (and as published in WO2012/123938).",
+      "translation": "权利要求1的依据见原始提交的权利要求6和12（以及WO2012/123938中公开的内容）。",
+      "llm_evidence_explanation": "申请人直接给出权利要求1的原始基础，支持该权利要求并非新增内容，且有说明书/原始权利要求支撑。"
+    },
+    {
+      "issue": "support",
+      "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "original_text": "Previous claims 1-5 and 12 have been deleted. Accordingly, the objections against claims 1-5 based on clarity and lack of support raised in the international search report are no longer relevant.",
+      "translation": "先前的权利要求1-5和12已被删除。因此，国际检索报告中针对权利要求1-5提出的基于清楚性和缺乏支持的异议已不再相关。",
+      "llm_evidence_explanation": "这表明原先的支持性异议已通过删改克服，且审查程序继续推进到授权，降低当前支持风险。"
+    },
+    {
+      "issue": "support",
+      "source": "support_disc",
+      "original_text": "Following examination of European patent application No.12710797.7 a European patent with the title and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC(EPO Form 2015,A52)dated 24.03.17 is hereby granted in respect of the designated Contracting States.",
+      "translation": "经审查欧洲专利申请第12710797.7号后，现就所指定缔约国授予一项欧洲专利，其标题及根据EPC规则71(3)通信（EPO表格2015，A52）中所示的支持文件如上所列。",
+      "llm_evidence_explanation": "这段原文表明申请已基于Rule 71(3)通信中的文本和支持文件进入授权，说明审查员在最终阶段接受了说明书/权利要求的支持基础，因此支持性维度总体通过。"
+    },
+    {
+      "issue": "novelty",
+      "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "original_text": "Novelty:\nClaims 1-15 are novel over WO 2007/022474 (D1),because they are directed to a\ncompound for use in multiple sclerosis. In contrast,D1 is directed to a composition\ncomprising a nucleic acid and a quinolone analog of formulas (I)-(V) for use in the\n5",
+      "translation": "新颖性：权利要求1-15相对于WO 2007/022474（D1）具有新颖性，因为它们是针对用于治疗多发性硬化症的化合物。相较之下，D1是针对一种包含核酸和式(I)-(V)喹诺酮类似物的组合物，用于治疗银屑病。",
+      "llm_evidence_explanation": "This shows the applicant's novelty distinction over a single prior-art document, based on different therapeutic use."
+    },
+    {
+      "issue": "novelty",
+      "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+      "translation": "在对欧洲专利申请第12710797.7号以及规则71(3) EPC 通信中所指明的标题和支持文件进行审查后，现就所指定的缔约国授予一项欧洲专利。",
+      "llm_evidence_explanation": "The grant decision supports that the application proceeded to allowance, indicating no unresolved novelty objection remained."
+    }
+  ],
+  "action_basis_source_sentences": [
+    {
+      "issue": "support",
+      "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "original_text": "Claim 1 finds basis in claims 6 and 12 as originally filed (and as published in WO2012/123938).",
+      "translation": "权利要求1的依据见原始提交的权利要求6和12（以及WO2012/123938中公开的内容）。",
+      "llm_evidence_explanation": "申请人直接给出权利要求1的原始基础，支持该权利要求并非新增内容，且有说明书/原始权利要求支撑。"
+    },
+    {
+      "issue": "support",
+      "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "original_text": "Previous claims 1-5 and 12 have been deleted. Accordingly, the objections against claims 1-5 based on clarity and lack of support raised in the international search report are no longer relevant.",
+      "translation": "先前的权利要求1-5和12已被删除。因此，国际检索报告中针对权利要求1-5提出的基于清楚性和缺乏支持的异议已不再相关。",
+      "llm_evidence_explanation": "这表明原先的支持性异议已通过删改克服，且审查程序继续推进到授权，降低当前支持风险。"
+    },
+    {
+      "issue": "support",
+      "source": "support_disc",
+      "original_text": "Following examination of European patent application No.12710797.7 a European patent with the title and the supporting documents indicated in the communication pursuant to Rule 71(3) EPC(EPO Form 2015,A52)dated 24.03.17 is hereby granted in respect of the designated Contracting States.",
+      "translation": "经审查欧洲专利申请第12710797.7号后，现就所指定缔约国授予一项欧洲专利，其标题及根据EPC规则71(3)通信（EPO表格2015，A52）中所示的支持文件如上所列。",
+      "llm_evidence_explanation": "这段原文表明申请已基于Rule 71(3)通信中的文本和支持文件进入授权，说明审查员在最终阶段接受了说明书/权利要求的支持基础，因此支持性维度总体通过。"
+    },
+    {
+      "issue": "novelty",
+      "source": "13-10-2016_Reply_to_communication_from_the_Examining_Division_EZK6D15C9526DSU_ocr.txt",
+      "original_text": "Novelty:\nClaims 1-15 are novel over WO 2007/022474 (D1),because they are directed to a\ncompound for use in multiple sclerosis. In contrast,D1 is directed to a composition\ncomprising a nucleic acid and a quinolone analog of formulas (I)-(V) for use in the\n5",
+      "translation": "新颖性：权利要求1-15相对于WO 2007/022474（D1）具有新颖性，因为它们是针对用于治疗多发性硬化症的化合物。相较之下，D1是针对一种包含核酸和式(I)-(V)喹诺酮类似物的组合物，用于治疗银屑病。",
+      "llm_evidence_explanation": "This shows the applicant's novelty distinction over a single prior-art document, based on different therapeutic use."
+    },
+    {
+      "issue": "novelty",
+      "source": "30-11-2017_Decision_to_grant_a_European_patent_E069PW6Y9825DSU_ocr.txt",
+      "original_text": "FollowingexaminationofEuropeanpatentapplicationNo.12710797.7aEuropeanpatentwiththetitle and the supporting documents indicated in the communicationpursuant toRule71(3) EPC(EPOForm 2015,A52)dated 24.03.17ishereby granted inrespect of the designated ContractingStates.",
+      "translation": "在对欧洲专利申请第12710797.7号以及规则71(3) EPC 通信中所指明的标题和支持文件进行审查后，现就所指定的缔约国授予一项欧洲专利。",
+      "llm_evidence_explanation": "The grant decision supports that the application proceeded to allowance, indicating no unresolved novelty objection remained."
+    }
+  ]
+}
