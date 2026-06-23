@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>专利审查 Benchmark Pipeline 改进说明</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --ink: #182033;
+      --muted: #667085;
+      --line: #d9e0ec;
+      --blue: #1d4ed8;
+      --green: #15803d;
+      --amber: #a16207;
+      --red: #b91c1c;
+      --soft-blue: #eff6ff;
+      --soft-green: #ecfdf3;
+      --soft-amber: #fffbeb;
+      --soft-red: #fef2f2;
+      --code: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.58;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 24px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .hero,
+    .panel,
+    .improvement,
+    .summary-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.05);
+    }
+
+    .hero {
+      padding: 28px;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .hero .tagline {
+      margin-top: 18px;
+      padding: 12px 14px;
+      background: var(--soft-blue);
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+
+    .quick-stats {
+      display: grid;
+      gap: 10px;
+      padding: 18px;
+    }
+
+    .stat {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcff;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px 0 18px;
+      background: linear-gradient(to bottom, var(--bg) 70%, rgba(245, 247, 251, 0));
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: #344054;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .section-title {
+      margin: 28px 0 12px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .summary-card {
+      padding: 16px;
+    }
+
+    .summary-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .summary-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .improvements {
+      display: grid;
+      gap: 16px;
+    }
+
+    .improvement {
+      overflow: hidden;
+    }
+
+    .improvement-header {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: start;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcff;
+    }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: var(--soft-blue);
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .improvement h3 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.28;
+      letter-spacing: 0;
+    }
+
+    .why {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--soft-green);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .improvement-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+      gap: 18px;
+      padding: 20px;
+    }
+
+    .point-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .point-list li {
+      margin-bottom: 8px;
+    }
+
+    .example {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .example h4 {
+      margin: 0;
+      padding: 11px 13px;
+      background: var(--soft-amber);
+      border-bottom: 1px solid #fde68a;
+      color: #78350f;
+      font-size: 14px;
+    }
+
+    .example-body {
+      padding: 13px;
+      font-size: 14px;
+    }
+
+    .kv {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .kv th,
+    .kv td {
+      padding: 8px 9px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .kv th {
+      width: 132px;
+      color: #475467;
+      font-weight: 800;
+      background: #f8fafc;
+    }
+
+    .quote {
+      margin: 8px 0;
+      padding: 10px 12px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft-blue);
+      color: #1e3a8a;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+      white-space: pre-wrap;
+    }
+
+    code,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: #eef2f7;
+      color: var(--code);
+      font-size: 12px;
+    }
+
+    pre {
+      margin: 8px 0 0;
+      padding: 12px;
+      border-radius: 8px;
+      background: #101828;
+      color: #f9fafb;
+      font-size: 12px;
+      line-height: 1.5;
+      overflow-x: auto;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .link-row a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 9px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .status-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .mini {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fbfcff;
+    }
+
+    .mini strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    .mini span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .script-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: table;
+      font-size: 14px;
+    }
+
+    .script-table th,
+    .script-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .script-table th {
+      background: #f8fafc;
+      color: #475467;
+    }
+
+    .script-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .talk-track {
+      padding: 16px;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      background: var(--soft-blue);
+      color: #1e3a8a;
+    }
+
+    .talk-track h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .talk-track p {
+      margin: 0;
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      background: #fff;
+      font-size: 13px;
+    }
+
+    @media (max-width: 880px) {
+      header,
+      .improvement-body,
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .improvement-header {
+        grid-template-columns: auto minmax(0, 1fr);
+      }
+
+      .badge {
+        grid-column: 2;
+        justify-self: start;
+      }
+
+      .status-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .shell {
+        max-width: none;
+        padding: 0;
+      }
+
+      .improvement,
+      .summary-card,
+      .panel,
+      .hero {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <section class="hero">
+        <h1>专利审查 Benchmark Pipeline 改进说明</h1>
+        <p>这次改动的目标不是只把 HTML 做得更好看，而是让抓取、分析、证据、Claim 和最终展示都能被复核、能批量重跑、能说明为什么可靠。</p>
+        <div class="tagline">一句话：从“生成一个 demo”升级为“可复用、可回查、可交给标注人员检查的流程”。</div>
+      </section>
+      <aside class="quick-stats panel">
+        <div class="stat">
+          <strong>9 / 9</strong>
+          <span>疾病分类样例完整性校验通过</span>
+        </div>
+        <div class="stat">
+          <strong>14</strong>
+          <span>本次涉及新增或修改的 pipeline 脚本</span>
+        </div>
+        <div class="stat">
+          <strong>可回查</strong>
+          <span>HTML 里的原文证据可以回到本地 OCR/TXT</span>
+        </div>
+      </aside>
+    </header>
+
+    <nav>
+      <a href="#overview">总体思路</a>
+      <a href="#risk-source">风险原文</a>
+      <a href="#evidence">证据回查</a>
+      <a href="#claims">Claim 校对</a>
+      <a href="#batch">批量刷新</a>
+      <a href="#quality">质量门</a>
+      <a href="#source">输入稳定性</a>
+      <a href="#markush">Markush/引用先文</a>
+      <a href="#scripts">脚本索引</a>
+    </nav>
+
+    <h2 class="section-title" id="overview">总体思路</h2>
+    <section class="summary-grid">
+      <article class="summary-card">
+        <h3>1. 展示层少总结，多原文</h3>
+        <p>风险和建议不再默认展示模型写出来的英文总结，而是展示审查材料里的连续原文和中文翻译。</p>
+      </article>
+      <article class="summary-card">
+        <h3>2. 法律文本单独校对</h3>
+        <p>Claim 不再被默认视为 OCR 准确文本，而是生成草稿后人工对照 PDF 校对。</p>
+      </article>
+      <article class="summary-card">
+        <h3>3. 每一步都能批量验证</h3>
+        <p>增加完整性、证据匹配、质量审计和批量刷新脚本，减少手动操作导致的不稳定。</p>
+      </article>
+    </section>
+
+    <section class="improvements">
+      <article class="improvement" id="risk-source">
+        <div class="improvement-header">
+          <span class="num">01</span>
+          <div>
+            <h3>风险原因 / 建议依据改成“审查原文句子”</h3>
+            <p class="why">为什么做：原来的风险和建议更像模型摘要，给外部同学看时容易误解为 EPO 原文。现在展示层优先显示可回查的原始句子。</p>
+          </div>
+          <span class="badge">展示可信度提升</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li>新增 <code>risk_source_sentences</code>：风险依据原文列表。</li>
+              <li>新增 <code>action_basis_source_sentences</code>：建议依据原文列表。</li>
+              <li>HTML 标题从“建议动作”改成“建议依据原文”，避免把模型建议包装成官方建议。</li>
+              <li>老字段 <code>top_risk_reasons</code> 和 <code>recommended_actions</code> 仍保留，用于内部分析和旧文件兼容。</li>
+            </ul>
+            <div class="link-row">
+              <a href="scripts/generate_analysis_json_split.py">生成逻辑</a>
+              <a href="scripts/json_to_html_report.py">HTML 渲染</a>
+              <a href="疾病分类9个样例/代谢性疾病/EP16823054/EP16823054-analysis.html">EP16823054 HTML</a>
+            </div>
+          </div>
+          <aside class="example">
+            <h4>例子：EP16823054 的“风险原因”来自授权决定 OCR</h4>
+            <div class="example-body">
+              <table class="kv">
+                <tr><th>字段</th><td><code>risk_source_sentences[0]</code></td></tr>
+                <tr><th>维度</th><td>support</td></tr>
+                <tr><th>来源</th><td><code>12-03-2021_Decision_to_grant_a_European_patent_E5YA3YJI3435DSU_ocr.txt</code></td></tr>
+              </table>
+              <div class="quote">FollowingexaminationofEuropeanpatentapplicationNo.16823054.8aEuropeanpatentwiththetitle
+and thesupporting documentsindicated in thecommunicationpursuant toRule71(3) EPC(EPOForm
+2015,A52) dated 19.11.20ishereby granted...</div>
+              <p>展示时同时给中文翻译：“经对欧洲专利申请号16823054.8进行审查，依据 Rule 71(3) 通知中所示文件，现授予欧洲专利。”</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="improvement" id="evidence">
+        <div class="improvement-header">
+          <span class="num">02</span>
+          <div>
+            <h3>增加证据回查和自动修复</h3>
+            <p class="why">为什么做：模型可能生成“看起来像原文”的句子，但如果本地 OCR/TXT 找不到，就不能作为可交付证据。</p>
+          </div>
+          <span class="badge">减少幻觉证据</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li><code>verify_report_sources.py</code> 会扫描 JSON 中的 <code>original_text</code>，和本地文本做匹配。</li>
+              <li><code>repair_report_sources.py</code> 会把匹配较弱的片段替换成本地文件里的连续摘录。</li>
+              <li>旧的模型摘要字段不再作为“原文证据”检查对象，避免把总结句误判为原文。</li>
+              <li>批量刷新流程里默认先修复，再校验，最后才生成 HTML。</li>
+            </ul>
+            <pre>python scripts/verify_report_sources.py \
+  疾病分类9个样例/代谢性疾病/EP16823054/EP16823054-analysis.json \
+  --case-dir 疾病分类9个样例/代谢性疾病/EP16823054 \
+  --min-score 0.88</pre>
+          </div>
+          <aside class="example">
+            <h4>例子：EP16823054 证据命中情况</h4>
+            <div class="example-body">
+              <table class="kv">
+                <tr><th>证据总数</th><td>29</td></tr>
+                <tr><th>宽松归一化命中</th><td>29 / 29</td></tr>
+                <tr><th>质量状态</th><td>pass</td></tr>
+                <tr><th>来源</th><td><code>疾病分类9个样例/_quality_audit.csv</code></td></tr>
+              </table>
+              <p>这意味着 HTML 里展示的原文依据，不只是模型输出，而是可以在本地 OCR/TXT 里找回来的。</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="improvement" id="claims">
+        <div class="improvement-header">
+          <span class="num">03</span>
+          <div>
+            <h3>Claim 文本改成“PDF 权威来源 + 人工校对”工作流</h3>
+            <p class="why">为什么做：化学 Claim OCR 很容易出现空格、上下标、取代基、编号错误，不能当法律级准确文本。</p>
+          </div>
+          <span class="badge">法律文本风险隔离</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li>新增 <code>EPxxxx-claims-verified.json</code>，保存 Claim 编号、文本、页码、校对状态、来源 PDF SHA256。</li>
+              <li>新增 <code>EPxxxx-claims-review.html</code>，左侧是 OCR 草稿，右侧是 PDF 页面图片，方便人工对照。</li>
+              <li>HTML 中未校对时显示 <code>Claim OCR Preview</code> 或 <code>Claim Draft Preview</code>。</li>
+              <li>全部 Claim 标成 <code>verified</code> 后，HTML 才展示 <code>Verified Claims</code>。</li>
+            </ul>
+            <div class="link-row">
+              <a href="scripts/generate_claims_verified.py">Claim 校对脚本</a>
+              <a href="疾病分类9个样例/代谢性疾病/EP16823054/EP16823054-claims-review.html">EP16823054 Claim Review</a>
+              <a href="疾病分类9个样例/代谢性疾病/EP16823054/EP16823054-claims-verified.json">EP16823054 Claims JSON</a>
+            </div>
+          </div>
+          <aside class="example">
+            <h4>例子：EP16823054 当前 Claim 状态</h4>
+            <div class="example-body">
+              <table class="kv">
+                <tr><th>来源类型</th><td><code>ocr_preview</code></td></tr>
+                <tr><th>校对状态</th><td><code>needs_human_review</code></td></tr>
+                <tr><th>Claim 数</th><td>0 / 26 verified</td></tr>
+                <tr><th>草稿来源</th><td><code>19-08-2020_Claims_E453Q0P71436DSU_ocr.txt</code></td></tr>
+              </table>
+              <p>这不是说不能展示 Claim，而是明确告诉使用者：当前是 OCR 预览，法律文本要以 PDF 和校对后的 JSON 为准。</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="improvement" id="batch">
+        <div class="improvement-header">
+          <span class="num">04</span>
+          <div>
+            <h3>把多步手工流程封装成批量刷新脚本</h3>
+            <p class="why">为什么做：以前每一步单独跑，参数、顺序、遗漏文件都会影响结果。现在可以对一个 case set 统一重跑。</p>
+          </div>
+          <span class="badge">复用性提升</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li><code>run_case_set_refresh.py</code> 串起 PDF 文本提取、OCR、Claim 草稿、benchmark input、Markush、analysis、证据修复、校验、HTML。</li>
+              <li>每个案件完成后写入 <code>_refresh_status.csv</code>，方便定位失败案件。</li>
+              <li>支持 <code>--stage prepare</code> / <code>--stage analysis</code> / <code>--stage all</code>，便于增量运行。</li>
+              <li>关键参数集中在命令行，方便以后换模型、调 OCR、调证据阈值。</li>
+            </ul>
+            <pre>python scripts/run_case_set_refresh.py 疾病分类9个样例 \
+  --stage all \
+  --model gpt-5.5 \
+  --verify-min-score 0.88</pre>
+          </div>
+          <aside class="example">
+            <h4>例子：这 9 个疾病样例可以一条命令刷新</h4>
+            <div class="example-body">
+              <div class="status-row">
+                <div class="mini"><strong>代谢性疾病</strong><span>3 个 EP 案件</span></div>
+                <div class="mini"><strong>肿瘤</strong><span>3 个 EP 案件</span></div>
+                <div class="mini"><strong>自身免疫</strong><span>3 个 EP 案件</span></div>
+                <div class="mini"><strong>输出</strong><span>JSON + HTML + CSV</span></div>
+              </div>
+              <p>组会时可以强调：这不是为 9 个样例手写的临时代码，而是后续 case set 也能复用的批量处理入口。</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="improvement" id="quality">
+        <div class="improvement-header">
+          <span class="num">05</span>
+          <div>
+            <h3>增加完整性校验和质量审计</h3>
+            <p class="why">为什么做：HTML 能打开不代表结果可靠。必须检查原始文件、OCR、分析字段、证据链和案件结果是否齐全。</p>
+          </div>
+          <span class="badge">交付前质检</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li><code>validate_case_set_completeness.py</code> 检查 register、doclist、PDF、TXT/OCR、analysis JSON、HTML 必要区块。</li>
+              <li><code>audit_case_quality.py</code> 输出每案 Claim 字符数、证据命中数、source 文档数、案件结果一致性。</li>
+              <li>支持 <code>--require-verified-claims</code>，以后人工校对完 Claim 后可以打开法律级 Claim 校验。</li>
+              <li>质量问题会进入 CSV，不需要逐个 HTML 人眼找缺失字段。</li>
+            </ul>
+            <div class="link-row">
+              <a href="疾病分类9个样例/_quality_audit.csv">质量审计 CSV</a>
+              <a href="疾病分类9个样例/_completeness_validation.csv">完整性校验 CSV</a>
+            </div>
+          </div>
+          <aside class="example">
+            <h4>例子：9 个样例完整性全部通过</h4>
+            <div class="example-body">
+              <table class="kv">
+                <tr><th>EP16823054</th><td>pass，docs 15，original 3</td></tr>
+                <tr><th>EP17191704</th><td>pass，识别为 withdrawn，grant_label = no</td></tr>
+                <tr><th>EP18826609</th><td>pass，docs 32，original 5</td></tr>
+                <tr><th>总体</th><td>9 / 9 pass</td></tr>
+              </table>
+              <p>这里能说明“文件齐全、字段齐全、案件状态没有明显错配”，适合作为给标注人员分发前的质量门。</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="improvement" id="source">
+        <div class="improvement-header">
+          <span class="num">06</span>
+          <div>
+            <h3>改进分析输入稳定性</h3>
+            <p class="why">为什么做：如果模型拿到的 SOURCE 太少、只有 register HTML，或者路径解析错，输出就会漂。</p>
+          </div>
+          <span class="badge">降低随机波动</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li>改进路径解析：benchmark input 里的相对路径会按 case 目录解析，而不是依赖当前终端目录。</li>
+              <li>默认把 SOURCE 控制在审查文本文件，不再默认把 register HTML 当主要分析证据。</li>
+              <li>增加 source quality gate：Claim 太短、SOURCE 太少、文本量太低时直接报错。</li>
+              <li>split 分析模式增加重试：如果某个维度缺少 score 或 <code>original_text</code>，会重新要求模型输出完整 JSON。</li>
+            </ul>
+            <div class="link-row">
+              <a href="scripts/generate_analysis_json.py">单次分析脚本</a>
+              <a href="scripts/generate_analysis_json_split.py">分维度分析脚本</a>
+            </div>
+          </div>
+          <aside class="example">
+            <h4>例子：EP16823054 的 SOURCE 质量</h4>
+            <div class="example-body">
+              <table class="kv">
+                <tr><th>source docs</th><td>8</td></tr>
+                <tr><th>TXT 文件</th><td>23</td></tr>
+                <tr><th>OCR 文件</th><td>8</td></tr>
+                <tr><th>source 字符量</th><td>160,503 meaningful chars</td></tr>
+              </table>
+              <p>这个改动的价值是：模型分析前先确认“它看到的材料是足够的审查文件”，而不是靠一次偶然输入跑出结果。</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="improvement" id="markush">
+        <div class="improvement-header">
+          <span class="num">07</span>
+          <div>
+            <h3>Markush 图片和引用先文增加可解释状态</h3>
+            <p class="why">为什么做：以前图片或引用先文为空，只能看到“空”。现在可以知道是没有公式上下文、页面没定位到，还是候选图被过滤掉。</p>
+          </div>
+          <span class="badge">方便排查空结果</span>
+        </div>
+        <div class="improvement-body">
+          <div>
+            <ul class="point-list">
+              <li><code>render_markush_pages.py</code> 新增 <code>markush_extraction_status</code>。</li>
+              <li>状态里记录 snippets、page jobs、candidate images、selected images 的数量。</li>
+              <li><code>build_benchmark_input.py</code> 增强引用先文抽取，优先从审查文本和 register documents cited 中找专利号。</li>
+              <li>HTML 会把 benchmark input 里的引用先文合并进证据链，不完全依赖 LLM 自己列举。</li>
+            </ul>
+            <div class="link-row">
+              <a href="scripts/render_markush_pages.py">Markush 渲染脚本</a>
+              <a href="scripts/build_benchmark_input.py">引用先文抽取</a>
+            </div>
+          </div>
+          <aside class="example">
+            <h4>例子：EP16823054 的图片和引用先文</h4>
+            <div class="example-body">
+              <table class="kv">
+                <tr><th>Markush 状态</th><td><code>selected</code></td></tr>
+                <tr><th>候选图</th><td>48 candidates，自动选出 3 张</td></tr>
+                <tr><th>页面定位</th><td>9 pages，8 snippets</td></tr>
+                <tr><th>引用先文</th><td><code>WO2012019188</code>、<code>WO2009049165</code></td></tr>
+              </table>
+              <p>这类状态可以直接告诉检查同学：有些案子没图，不一定是程序坏了，可能是没有找到 Formula/Markush 上下文或候选图没有通过结构图过滤。</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="section-title" id="scripts">脚本索引：组会上可以这样讲</h2>
+    <table class="script-table">
+      <thead>
+        <tr>
+          <th>脚本</th>
+          <th>这次改进点</th>
+          <th>对结果稳定性的作用</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="scripts/run_case_set_refresh.py">run_case_set_refresh.py</a></td>
+          <td>新增批量刷新入口，串联 OCR、Claim、分析、修复、校验、HTML。</td>
+          <td>减少手动跑漏步骤、参数不一致的问题。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/generate_claims_verified.py">generate_claims_verified.py</a></td>
+          <td>新增 Claim 草稿 JSON 和 review HTML。</td>
+          <td>把 OCR 预览和法律级 Claim 文本分开。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/generate_analysis_json_split.py">generate_analysis_json_split.py</a></td>
+          <td>新增原文依据派生、SOURCE 质量门、缺字段重试。</td>
+          <td>让模型输出更完整，降低证据字段为空的概率。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/json_to_html_report.py">json_to_html_report.py</a></td>
+          <td>HTML 优先展示原文依据、Verified Claims、Markush/引用先文。</td>
+          <td>让外部复核人员看到的是可解释、可追溯结果。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/repair_report_sources.py">repair_report_sources.py</a></td>
+          <td>把弱匹配的原文证据替换成本地连续摘录。</td>
+          <td>减少模型改写句子进入 HTML。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/verify_report_sources.py">verify_report_sources.py</a></td>
+          <td>校验所有 <code>original_text</code> 能否回查到本地文本。</td>
+          <td>给“证据可追溯”加硬性检查。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/validate_case_set_completeness.py">validate_case_set_completeness.py</a></td>
+          <td>检查原始 PDF、TXT/OCR、analysis 字段、HTML 区块。</td>
+          <td>交付前确认每案材料齐全。</td>
+        </tr>
+        <tr>
+          <td><a href="scripts/audit_case_quality.py">audit_case_quality.py</a></td>
+          <td>输出质量审计 CSV，包括证据命中、Claim 状态、案件结果。</td>
+          <td>用表格快速定位需要人工复核的案件。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title">建议汇报话术</h2>
+    <section class="talk-track">
+      <h3>一段话版本</h3>
+      <p>这次我主要把原来的 demo 流程做了工程化改造。以前 HTML 里有些字段更像模型总结，Claim 也主要依赖 OCR，所以结果不够稳定、也不方便交给别人复核。现在我把风险和建议改成展示审查文件原文，并加了本地证据回查；Claim 改成 PDF 权威来源加人工校对的流程；同时把 OCR、分析、证据修复、HTML 渲染、完整性校验串成批量脚本。这样 9 个样例不仅能生成结果，还能说明每个字段来自哪里、哪些内容已经校对、哪些内容还只是预览。</p>
+    </section>
+
+    <p class="footer-note">备注：本页中的例子来自仓库当前的 <code>疾病分类9个样例</code> 输出结果。Claim 相关示例显示为 <code>needs_human_review</code> 是预期状态，表示法律级文本仍需人工对照 PDF 校对。</p>
+  </main>
+</body>
+</html>
