@@ -262,6 +262,14 @@ def run_analysis(app: str, benchmark_input: Path, analysis_json: Path, analysis_
     run_command(
         [
             sys.executable,
+            "scripts\\download_prior_art_pdfs.py",
+            str(benchmark_input),
+        ],
+        cwd=project_root,
+    )
+    run_command(
+        [
+            sys.executable,
             "scripts\\json_to_html_report.py",
             str(analysis_json),
             "-o",

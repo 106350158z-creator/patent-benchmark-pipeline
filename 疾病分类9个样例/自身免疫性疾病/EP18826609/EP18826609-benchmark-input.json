@@ -1285,7 +1285,16 @@
         "sources": [
           "27-06-2024_Annex_to_the_communication_LXT2DYZO1Y1CL6T_ocr.txt",
           "EP18826609-main.html#documents_cited"
-        ]
+        ],
+        "publication_number": "WO2017140778",
+        "pdf_lookup_url": "https://patents.google.com/patent/WO2017140778/en",
+        "pdf_lookup_publication": "WO2017140778",
+        "pdf_download_url": "https://patentimages.storage.googleapis.com/2e/17/97/6fc056ae0318cd/WO2017140778A1.pdf",
+        "local_pdf": "prior-art/WO2017140778.pdf",
+        "pdf_sha256": "168976d83f2e7f7085d851b12eec9f65ed9277ef8b787dde7c81bbdb3b169b97",
+        "pdf_bytes": 5211904,
+        "pdf_downloaded_at_utc": "2026-06-27T10:35:27.142330+00:00",
+        "pdf_download_status": "downloaded"
       }
     ]
   },

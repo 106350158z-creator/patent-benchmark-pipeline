@@ -437,7 +437,7 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], curre
     display_images = markush_images
     if display_images:
         image_items = []
-        for item in display_images[:1]:
+        for item in display_images[:6]:
             if not isinstance(item, dict) or not item.get("image_path"):
                 continue
             score = item.get("score")
@@ -450,6 +450,18 @@ def render_preview(benchmark: dict[str, Any] | None, meta: dict[str, Any], curre
             )
         if image_items:
             image_html = "<div class='markush-images'>" + "".join(image_items) + "</div>"
+            page_items = []
+            for item in page_images[:4]:
+                if not isinstance(item, dict) or not item.get("image_path"):
+                    continue
+                page_items.append(
+                    "<figure class='markush-figure markush-page-figure'>"
+                    f"<img src='{h(item.get('image_path'))}' alt='Markush / Formula source page'>"
+                    f"<figcaption>source page - {h(item.get('pdf') or item.get('source'))}, page {h(item.get('page'))}</figcaption>"
+                    "</figure>"
+                )
+            if page_items:
+                image_html += "<h4>Source Pages</h4><div class='markush-pages'>" + "".join(page_items) + "</div>"
     if not image_html:
         image_html = "<p class='muted'>No Markush / formula image selected.</p>"
 
@@ -511,7 +523,17 @@ def render_dimensions(scores: dict[str, Any]) -> str:
     """
 
 
-def render_prior_art(prior_art: Any) -> str:
+def render_prior_art_link(item: dict[str, Any], current_path: Path | None) -> str:
+    local_pdf = item.get("local_pdf") or item.get("pdf_path")
+    if local_pdf:
+        return render_local_link(local_pdf, current_path, "Local PDF")
+    link = patent_link_for_item(item)
+    if link:
+        return render_external_link(link, "Document link")
+    return "<span class='muted tiny'>No verified patent link</span>"
+
+
+def render_prior_art(prior_art: Any, current_path: Path | None = None) -> str:
     if not prior_art:
         return '<p class="muted">无</p>'
     if not any(isinstance(item, dict) for item in prior_art):
@@ -533,7 +555,6 @@ def render_prior_art(prior_art: Any) -> str:
         if not isinstance(item, dict):
             citation = str(item)
             mentioned = ""
-            link = official_patent_link(citation)
             explanation = ""
             method = ""
         else:
@@ -545,9 +566,8 @@ def render_prior_art(prior_art: Any) -> str:
                 mentioned = "Supplemental query"
             else:
                 mentioned = "Supplemental source"
-            link = patent_link_for_item(item)
             explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")
-        link_html = render_external_link(link, "Document link") if link else "<span class='muted tiny'>No verified patent link</span>"
+        link_html = render_prior_art_link(item if isinstance(item, dict) else {"citation": citation}, current_path)
         tag_class = "tag-hit" if mentioned == "Examined text" else "tag-semantic"
         rows.append(
             "<tr>"
@@ -598,7 +618,7 @@ def render_evidence_table(items: Any, fallback_location_label: str = "位置") -
     )
 
 
-def render_evidence(evidence: dict[str, Any]) -> str:
+def render_evidence(evidence: dict[str, Any], current_path: Path | None = None) -> str:
     return f"""
     <section class="card" id="evidence">
       <h2>证据链</h2>
@@ -607,7 +627,7 @@ def render_evidence(evidence: dict[str, Any]) -> str:
         <tr><th>审查轮次</th><td>{h(evidence.get('examination_rounds'))}</td></tr>
       </table>
       <h3>引用先文 / 官网相关专利</h3>
-      {render_prior_art(evidence.get('prior_art_documents'))}
+      {render_prior_art(evidence.get('prior_art_documents'), current_path)}
       <h3>说明书/支持证据</h3>
       {render_evidence_table(evidence.get('specification_support'))}
       <h3>审查材料证据</h3>
@@ -648,6 +668,13 @@ def merge_benchmark_prior_art(evidence: dict[str, Any], benchmark: dict[str, Any
                 "retrieval_method": item.get("retrieval_method", ""),
                 "official_source": item.get("official_source", ""),
                 "official_link": patent_link_for_item(item),
+                "publication_number": item.get("publication_number") or publication,
+                "local_pdf": item.get("local_pdf", ""),
+                "pdf_download_url": item.get("pdf_download_url", ""),
+                "pdf_lookup_url": item.get("pdf_lookup_url", ""),
+                "pdf_download_status": item.get("pdf_download_status", ""),
+                "pdf_sha256": item.get("pdf_sha256", ""),
+                "pdf_bytes": item.get("pdf_bytes", ""),
                 "llm_evidence_explanation": explanation_by_publication.get(
                     publication,
                     "Extracted from verified patent publication references in the benchmark input.",
@@ -689,7 +716,6 @@ def render_report_nav(current_path: Path | None = None) -> str:
       <a href="#preview">Preview</a>
       <a href="#case-info">Case</a>
       <a href="#dimensions">Dimensions</a>
-      <a href="#risks">Risks</a>
       <a href="#actions">Actions</a>
       <a href="#evidence">Evidence</a>
       {previous_link}
@@ -703,9 +729,7 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     title = "Patent Examination Benchmark Report"
     app_no = meta.get("application_number") or ""
     aggregate = data.get("aggregate_score", "")
-    risks = data.get("risk_source_sentences") or []
     actions = data.get("action_basis_source_sentences") or []
-    fallback_risks = data.get("top_risk_reasons") or []
     fallback_actions = data.get("recommended_actions") or []
     evidence = merge_benchmark_prior_art(data.get("evidence_trace") or {}, benchmark)
 
@@ -840,8 +864,14 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     }}
     .markush-images {{
       display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 10px;
       margin-bottom: 12px;
+    }}
+    .markush-pages {{
+      display: grid;
+      gap: 12px;
+      margin: 8px 0 12px;
     }}
     .markush-figure {{
       margin: 0;
@@ -856,6 +886,9 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
       max-height: 460px;
       object-fit: contain;
       background: #f8fafc;
+    }}
+    .markush-page-figure img {{
+      max-height: 760px;
     }}
     .markush-figure figcaption {{
       border-top: 1px solid var(--line);
@@ -1147,16 +1180,12 @@ def render_html(data: dict[str, Any], source_name: str, benchmark: dict[str, Any
     {render_meta(meta, data.get("grant_label", ""), aggregate)}
     {render_dimensions(data.get("dimension_scores") or {})}
 
-    <section class="card" id="risks">
-      <h2>风险原因</h2>
-      {render_source_sentence_list(risks, fallback_risks)}
-    </section>
     <section class="card" id="actions">
       <h2>建议依据原文</h2>
       {render_source_sentence_list(actions, fallback_actions)}
     </section>
 
-    {render_evidence(evidence)}
+    {render_evidence(evidence, current_path)}
   </main>
 </body>
 </html>

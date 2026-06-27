@@ -21,6 +21,8 @@ runs/
 
 # Downloaded patent/source artifacts
 *.pdf
+!**/prior-art/
+!**/prior-art/*.pdf
 *_ocr.txt
 *_text.txt
 **/docs/*.pdf

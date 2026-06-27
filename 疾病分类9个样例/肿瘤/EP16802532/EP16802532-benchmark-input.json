@@ -1292,7 +1292,16 @@
         "mentions": 2,
         "sources": [
           "26-11-2018_European_search_opinion_E2M0WMFX1516DSU_ocr.txt"
-        ]
+        ],
+        "publication_number": "CN1373763A",
+        "pdf_lookup_url": "https://patents.google.com/patent/CN1373763A/en",
+        "pdf_lookup_publication": "CN1373763A",
+        "pdf_download_url": "https://patentimages.storage.googleapis.com/7b/03/0c/7ab182bd310270/CN1373763A.pdf",
+        "local_pdf": "prior-art/CN1373763A.pdf",
+        "pdf_sha256": "eff22c990f2e84726efc8a33bb13bde1dba410a19cdb6a2ebf5b4d9b82a7d407",
+        "pdf_bytes": 3697265,
+        "pdf_downloaded_at_utc": "2026-06-27T10:34:14.695376+00:00",
+        "pdf_download_status": "downloaded"
       },
       {
         "rank": 2,
@@ -1304,7 +1313,16 @@
         "mentions": 2,
         "sources": [
           "26-11-2018_European_search_opinion_E2M0WMFX1516DSU_ocr.txt"
-        ]
+        ],
+        "publication_number": "WO2013170671A1",
+        "pdf_lookup_url": "https://patents.google.com/patent/WO2013170671A1/en",
+        "pdf_lookup_publication": "WO2013170671A1",
+        "pdf_download_url": "https://patentimages.storage.googleapis.com/be/0f/95/1addd089e45334/WO2013170671A1.pdf",
+        "local_pdf": "prior-art/WO2013170671A1.pdf",
+        "pdf_sha256": "7dd2eca4ec1841c151b9e9e38bd6266b192f76745e97d14ccfe3e6c7ab1801c3",
+        "pdf_bytes": 2118384,
+        "pdf_downloaded_at_utc": "2026-06-27T10:34:17.312200+00:00",
+        "pdf_download_status": "downloaded"
       },
       {
         "rank": 3,
@@ -1316,7 +1334,16 @@
         "mentions": 1,
         "sources": [
           "EP16802532-main.html#documents_cited"
-        ]
+        ],
+        "publication_number": "WO2006002367",
+        "pdf_lookup_url": "https://patents.google.com/patent/WO2006002367/en",
+        "pdf_lookup_publication": "WO2006002367",
+        "pdf_download_url": "https://patentimages.storage.googleapis.com/71/08/55/15a9403a27a86f/WO2006002367A1.pdf",
+        "local_pdf": "prior-art/WO2006002367.pdf",
+        "pdf_sha256": "6efbcb42d39cde62feec41fe6d0f1d9773b2e091a23ba40d81407552c0bcbe1b",
+        "pdf_bytes": 2495949,
+        "pdf_downloaded_at_utc": "2026-06-27T10:34:19.706427+00:00",
+        "pdf_download_status": "downloaded"
       }
     ]
   },

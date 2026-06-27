@@ -328,7 +328,11 @@ if ($AnalysisJson) {
         Write-Warning "Evidence source verification failed, continuing because -ContinueOnVerifyError was set."
     }
 
-    Write-Host "[13/13] Rendering benchmark output HTML..."
+    Write-Host "[13/14] Downloading prior-art PDFs..."
+    python (Join-Path $projectRoot "scripts\download_prior_art_pdfs.py") $benchmarkInput
+    Assert-NativeSuccess "Prior-art PDF download"
+
+    Write-Host "[14/14] Rendering benchmark output HTML..."
     $htmlOut = [System.IO.Path]::ChangeExtension($AnalysisJson, ".html")
     python (Join-Path $projectRoot "scripts\json_to_html_report.py") $AnalysisJson -o $htmlOut --benchmark-input $benchmarkInput
     Assert-NativeSuccess "HTML rendering"

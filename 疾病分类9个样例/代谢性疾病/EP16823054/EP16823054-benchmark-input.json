@@ -1300,7 +1300,16 @@
         "mentions": 1,
         "sources": [
           "EP16823054-main.html#documents_cited"
-        ]
+        ],
+        "publication_number": "WO2012019188",
+        "pdf_lookup_url": "https://patents.google.com/patent/WO2012019188/en",
+        "pdf_lookup_publication": "WO2012019188",
+        "pdf_download_url": "https://patentimages.storage.googleapis.com/5f/d8/29/22526250cec123/WO2012019188A2.pdf",
+        "local_pdf": "prior-art/WO2012019188.pdf",
+        "pdf_sha256": "9d0be81957b303ba25a5cfd7dbc1e5a38db6b4dd381049530934c27dc956955f",
+        "pdf_bytes": 3916465,
+        "pdf_downloaded_at_utc": "2026-06-27T10:33:48.563533+00:00",
+        "pdf_download_status": "downloaded"
       },
       {
         "rank": 2,
@@ -1312,7 +1321,16 @@
         "mentions": 1,
         "sources": [
           "EP16823054-main.html#documents_cited"
-        ]
+        ],
+        "publication_number": "WO2009049165",
+        "pdf_lookup_url": "https://patents.google.com/patent/WO2009049165/en",
+        "pdf_lookup_publication": "WO2009049165",
+        "pdf_download_url": "https://patentimages.storage.googleapis.com/1a/e1/73/9ed125ec2ee2e6/WO2009049165A1.pdf",
+        "local_pdf": "prior-art/WO2009049165.pdf",
+        "pdf_sha256": "ca3614c7bc78183ecdf68cb8777670ce3db00a1d5edac1e5ddfee55d1a4da0f2",
+        "pdf_bytes": 3846541,
+        "pdf_downloaded_at_utc": "2026-06-27T10:33:51.875464+00:00",
+        "pdf_download_status": "downloaded"
       }
     ]
   },

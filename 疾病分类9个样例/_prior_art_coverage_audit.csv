@@ -1,0 +1,10 @@
+﻿application_number,listed_prior_art_count,examined_prior_art_count,coverage_ok,hallucination_ok,local_pdf_ok,missing_examined_refs,hallucinated_listed_refs,missing_local_pdf_refs,unresolved_pdf_refs
+EP16823054,2,2,True,True,True,,,,
+EP18712343,2,2,True,True,True,,,,
+EP20726962,4,4,True,True,True,,,,
+EP16802532,3,3,True,True,True,,,,
+EP17191704,2,2,True,True,True,,,,
+EP17821262,4,4,True,True,False,,,EP3094752,EP3094752
+EP12710797,5,5,True,True,True,,,,
+EP18755728,12,12,True,True,False,,,DE1953431,DE1953431
+EP18826609,1,1,True,True,True,,,,
