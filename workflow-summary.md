@@ -1,32 +1,17 @@
-# EPO 审查报告爬取与分析流程总结
+# EPO Benchmark 脚本变动与最新运行入口
 
-## 当前药物 benchmark 链路
+本文档覆盖旧版流程说明，记录当前 `scripts/` 的最新职责划分和推荐运行方式。以后运行程序时，以这里和 `README.md` 中的入口为准。
 
-当前药物可授权性 benchmark 使用 `markush-run\benchmark\ep_review_file_sources_merged_current.json` 作为 EP 审查文件候选清单。清单中的每条记录至少包含 EP application number、publication number、Google Patents 链接、EPO Register main/doclist 链接和可复用下载命令。
+## 最新推荐入口
 
-推荐批量链路：
+### 单个 EP 案例
 
-```powershell
-python scripts\run_manifest_benchmark_batch.py `
-  --manifest markush-run/benchmark/ep_review_file_sources_merged_current.json `
-  --output-root markush-run/benchmark-api50 `
-  --analysis-mode split `
-  --env-file .env `
-  --api-key-env OPENAI_API_KEY `
-  --base-url https://yunwu.ai/v1 `
-  --model gpt-5.5 `
-  --write-analysis-steps `
-  --skip-existing
-```
-
-`split` 主分析模式将原来一次长耗时 LLM 请求拆为六次较小请求：`meta`、`novelty`、`inventive_step`、`support`、`clarity`、`eligibility`。每个子请求只处理一个局部任务，最后本地合并为与 HTML 渲染器兼容的 analysis JSON。该模式已在 `EP21842292` 上用 `gpt-5.5` 跑通，并产出 JSON 与 HTML。
-
-单案链路也支持同一模式：
+单案例继续使用 `scripts/run_epo_benchmark.ps1`。当前版本不只是抓取、OCR、生成分析和渲染 HTML，还会在生成报告后自动执行证据修复、字段补齐、证据校验、质量审计和完整性校验。
 
 ```powershell
 .\scripts\run_epo_benchmark.ps1 `
-  -ApplicationNumber EP21842292 `
-  -OutputRoot markush-run\benchmark-api50 `
+  -ApplicationNumber EP18885399 `
+  -OutputRoot markush-run\benchmark `
   -RunOcr `
   -GenerateAnalysis `
   -AnalysisMode split `
@@ -37,67 +22,123 @@ python scripts\run_manifest_benchmark_batch.py `
   -WriteAnalysisSteps
 ```
 
-## 本次使用的数据源
+默认会执行：
 
-早期验证只使用公开的 European Patent Register：
+- `repair_report_sources.py`：修复 analysis JSON 中较弱的 `original_text`，尽量替换成本地 TXT 中可匹配的连续原文。
+- `ensure_html_field_completeness.py`：补齐 HTML 会展示的关键字段，避免报告渲染后出现空块。
+- `verify_report_sources.py`：验证报告证据原文是否真的来自本地文本。
+- `audit_case_quality.py`：输出 `_quality_audit.csv`。
+- `validate_case_set_completeness.py`：输出 `_completeness_validation.csv`。
 
-- 授权案例：`EP10007106` / 申请号 `10007106.7`，最终状态为 granted，标题 `Model determination system`
-- 驳回案例：`EP94912949` / 申请号 `94912949.8`，最终状态为 rejected，标题 `Method of estimating product distribution`
+只有在明确需要跳过证据修复时才使用 `-SkipRepairEvidence`。证据校验失败默认会中断流程；如果只是批量试跑，可加 `-ContinueOnVerifyError` 继续执行。
 
-每个案子先访问：
+### 已有案例集或嵌套目录
 
-```text
-https://register.epo.org/application?number=<EP_NUMBER>&lng=en&tab=main
-https://register.epo.org/application?number=<EP_NUMBER>&lng=en&tab=doclist
-https://register.epo.org/application?number=<EP_NUMBER>&lng=en&tab=legal
+对已有目录批量刷新，使用新增的 `scripts/run_case_set_refresh.py`。它可以处理单个 case，也可以递归发现嵌套目录中的 `EP*` case。
+
+```powershell
+python scripts\run_case_set_refresh.py `
+  疾病分类9个样例 `
+  --stage all `
+  --env-file .env `
+  --api-key-env OPENAI_API_KEY `
+  --base-url https://yunwu.ai/v1 `
+  --model gpt-5.5 `
+  --write-analysis-steps
 ```
 
-`main` 用于确认申请号、标题、申请人、申请日、状态、引用文件和程序历史；`doclist` 用于找具体审查通信、附件、授权/驳回决定的 documentId；`legal` 用于核验最终授权、驳回、异议等法律状态。
+`--stage prepare` 只做本地准备，包括 PDF 文本提取、OCR、claims review、benchmark input 和 Markush 图片；`--stage analysis` 在已有 input 上生成 analysis、修复证据、补齐字段、验证来源并渲染 HTML；`--stage all` 连续执行两段。
 
-## PDF 下载方法
+## 本次脚本层面的核心变动
 
-EPO Register 的文档查看页会先打开一个 PDF viewer。关键点是页面内 iframe 的真实 PDF 地址可以直接访问：
+### 1. 主流程更严格
 
-```text
-https://register.epo.org/application?documentId=<DOCUMENT_ID>&appnumber=<EP_NUMBER>&showPdfPage=all&proc=
-```
+`scripts/run_epo_benchmark.ps1` 增加了统一的原生命令失败检查。PDF 文本提取、OCR、benchmark input 构建、Markush 页面渲染、分析生成、翻译、证据修复、字段补齐、HTML 渲染、质量审计和完整性校验，只要关键步骤失败就会及时中断。
 
-其中：
+下载范围也扩展了，文档标题匹配现在包含 `Copy of the international search report`、`Written opinion of the ISA`、`Copy of the international preliminary report on patentability` 等 PCT/ISA 相关材料。
 
-- `DOCUMENT_ID` 来自 `doclist` 页每一行 `<a id="...">`
-- `EP_NUMBER` 是带 EP 前缀的 Register 号，例如 `EP10007106`
-- `showPdfPage=all` 表示下载完整 PDF，而不是第一页
+### 2. Benchmark input 优先使用核验权利要求
 
-## OCR 方法
+`scripts/build_benchmark_input.py` 现在会优先读取 `<EP>-claims-verified.json` 中状态为 `verified` 的权利要求，并把它作为 `benchmark_input.claim_text`。如果没有核验文件，才回退到 OCR preview。
 
-这些旧 EPO PDF 多数是扫描图像，普通 PDF 文本提取几乎为空。因此我做了两步：
+同时，`source_trace` 改为以 case 目录为基准的相对路径，不再把本机绝对路径写进 benchmark input。它还会记录输入质量信息，例如 claim 1 的有效字符数、source 文档数量和 source 有效字符数。
 
-1. 用 PyMuPDF 把每一页渲染成图片。
-2. 用 `rapidocr-onnxruntime` 做本地 OCR，输出为同目录的 `*_ocr.txt`。
+### 3. 生成分析前增加 source quality gate
 
-整个 OCR 在本机执行，没有上传到第三方 OCR 服务。
+`scripts/generate_analysis_json.py` 和 `scripts/generate_analysis_json_split.py` 都增加了输入质量检查：
 
-## 分析方法
+- claim 1 必须有足够的有效文本。
+- SOURCE 文档不能为空。
+- SOURCE 文本不能过短。
+- 默认不再只用 Register HTML 作为 SOURCE。
 
-分析时同时使用三类材料：
+如确实需要放行低质量输入，显式加 `--allow-low-quality-source`。如需要把 Register HTML 作为 SOURCE，可加 `--include-register-html`。
 
-- Register `main/legal` 页面：提取元数据、状态、引用先文、程序轮次。
-- 审查通信和附件 OCR 文本：提取 Art.52、54、56、83、84、123 等审查意见。
-- 最终决定或授权意向：确认 `grant_label`、`outcome` 和异议是否最终被克服。
+拆分式分析的默认 `--max-source-files` 从 3 提高到 8，并增加 `--retries`。每个维度如果缺少分数或 `original_text`，会重试对应子请求。
 
-EP 案件的创造性分析按 COMVIK 逻辑处理：
+### 4. 拆分式分析会生成风险/动作依据原文
 
-1. 找最接近现有技术。
-2. 识别区别特征。
-3. 判断区别特征是否贡献技术效果。
-4. 非技术业务规则只可作为技术问题的约束，不能支持 Art.56 创造性。
+`scripts/generate_analysis_json_split.py` 会从维度分数和审查材料证据中派生：
 
-## 本次两个案例的核心结论
+- `risk_source_sentences`
+- `action_basis_source_sentences`
 
-### EP10007106 授权案
+这两个字段用于 HTML 报告中展示带来源、原文、翻译和证据说明的风险原因/建议依据，而不是只展示普通中文列表。
 
-早期被质疑 Art.52(2)(3) 和 Art.56。审查员认为权利要求中的模型确定、变量、假设、模型评价等主要是业务/抽象规则；技术部分只是通用联网计算机和多维数据存储，EP1492030 已显示 OLAP/多维数据存储背景。但后续文本进入 Rule 71(3) 授权意向，并最终按 Art.97(1) 授权。
+### 5. HTML 报告更强调可核验材料
 
-### EP94912949 驳回案
+`scripts/json_to_html_report.py` 的报告标题改为 `Patent Examination Benchmark Report`。报告预览区会优先读取 `<EP>-claims-verified.json`：
 
-最终决定认为主请求和辅助请求均不满足 Art.52(1)，实质上是 Art.52(2)(c) 和 52(3) 排除的商业方法。即使用数据库、处理器、内存等硬件，也只是通用技术手段，没有进一步技术效果。创造性方面，D1 US4972504 作为最接近现有技术，区别特征只是基于距离/空间相关进行销售估计，客观问题属于经济/统计问题；D3+D5 也显示 GIS 距离和空间相关分析背景。
+- 如果所有 claim 都是 `verified`，展示 `Verified Claims`。
+- 如果还未全部核验，展示 draft/OCR 预览，并给出 claims review HTML、claims JSON、authority PDF 的链接。
+
+风险和建议区也改为优先渲染 `risk_source_sentences` / `action_basis_source_sentences`，展示原文、翻译、来源和说明。旧字段 `top_risk_reasons` / `recommended_actions` 只作为 fallback。
+
+### 6. Markush 图片提取带状态说明
+
+`scripts/render_markush_pages.py` 会写入 `drug_structure.markush_extraction_status`，说明当前 Markush/Formula 图片提取处于哪种状态：
+
+- `selected`
+- `candidates_rejected`
+- `pages_no_candidates`
+- `snippets_no_pages`
+- `no_formula_context`
+
+这样 HTML 或后续审计能区分“没有 Markush 上下文”和“有候选但过滤后未通过”。
+
+### 7. OCR 批处理支持嵌套 case
+
+`scripts/ocr_case_batch.py` 现在会递归发现嵌套目录中的 `EP*` case，并用有效字符数判断 OCR 文本是否可用，而不只是检查文件大小。
+
+### 8. 新增质量、完整性和证据修复脚本
+
+新增脚本职责如下：
+
+| 脚本 | 作用 |
+| --- | --- |
+| `scripts/run_case_set_refresh.py` | 批量刷新已有 case set，串联 OCR、claims review、benchmark input、analysis、修复、验证、HTML 和审计 |
+| `scripts/generate_claims_verified.py` | 从本地 EPO claim PDF 生成 claims review HTML 和 claims verified JSON 草稿 |
+| `scripts/repair_report_sources.py` | 用本地 TXT 中的连续片段修复 analysis JSON 的 `original_text` |
+| `scripts/ensure_html_field_completeness.py` | 保证最终 analysis JSON 中有 HTML 渲染所需字段 |
+| `scripts/verify_report_sources.py` | 验证所有 `original_text` 是否可在本地 TXT 中匹配 |
+| `scripts/audit_case_quality.py` | 审计 case 质量、claims review 状态和证据可追溯性 |
+| `scripts/validate_case_set_completeness.py` | 校验 PDF/TXT/JSON/HTML/claims verified 等完整性 |
+
+## 最新样例集
+
+本次提交新增 `疾病分类9个样例/`，包含 9 个 EP case：
+
+| 分类 | 案例 |
+| --- | --- |
+| 代谢性疾病 | `EP16823054`, `EP18712343`, `EP20726962` |
+| 肿瘤 | `EP16802532`, `EP17191704`, `EP17821262` |
+| 自身免疫性疾病 | `EP12710797`, `EP18755728`, `EP18826609` |
+
+每个 case 目录通常包含 register、docs、original-application、benchmark input、analysis JSON/HTML、claims review、claims verified JSON、OCR 状态、质量审计和完整性校验结果。
+
+## 运行时注意
+
+- 默认优先走拆分式分析 `-AnalysisMode split` / `generate_analysis_json_split.py`。
+- 不要把低质量 OCR 或仅 Register HTML 的输入直接送入分析，除非显式使用 `--allow-low-quality-source`。
+- 如果要复用已有 case set，不要重新写临时流程，优先使用 `run_case_set_refresh.py`。
+- 报告中的 `original_text` 必须能追溯到本地 TXT 连续片段；生成后应保留 `verify_report_sources.py` 和 `audit_case_quality.py` 的结果。

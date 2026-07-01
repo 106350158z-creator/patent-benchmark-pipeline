@@ -694,7 +694,7 @@ def official_patent_search_link(query: str) -> str:
     wipo_id = wipo_doc_id(publication)
     if wipo_id:
         return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={quote_plus(wipo_id)}"
-    return f"https://patents.google.com/patent/{publication}/en"
+    return f"https://worldwide.espacenet.com/patent/search?q=pn%3D{quote_plus(publication)}"
 
 
 def wipo_doc_id(publication: str) -> str:

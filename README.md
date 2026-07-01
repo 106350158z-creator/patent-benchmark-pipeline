@@ -2,6 +2,8 @@
 
 这个仓库用于从 EPO Register 抓取欧洲专利申请材料，整理 benchmark input，调用 OpenAI-compatible LLM 生成审查分析 JSON，并渲染为 HTML 报告。
 
+当前脚本职责、质量校验和最新推荐运行入口见 `workflow-summary.md`。后续运行程序时，以 `workflow-summary.md` 和本文档中的入口命令为准。
+
 远程仓库：
 
 ```text
@@ -58,32 +60,28 @@ notepad .env
   -ApplicationNumber EP18885399 `
   -OutputRoot markush-run\benchmark `
   -RunOcr `
-  -GenerateAnalysis
-```
-
-如果使用 `gpt-5.5` 且 OpenAI-compatible 网关对长请求不稳定，推荐使用拆分式主分析。该模式会把一次完整审查分析拆成 `meta`、`novelty`、`inventive_step`、`support`、`clarity`、`eligibility` 六次较小调用，再本地合并为同一结构的 analysis JSON：
-
-```powershell
-.\scripts\run_epo_benchmark.ps1 `
-  -ApplicationNumber EP21842292 `
-  -OutputRoot markush-run\benchmark-api50 `
-  -RunOcr `
   -GenerateAnalysis `
   -AnalysisMode split `
   -EnvFile .env `
   -ApiKeyEnv OPENAI_API_KEY `
   -BaseUrl https://yunwu.ai/v1 `
   -Model gpt-5.5 `
-  -MaxSourceFiles 3 `
-  -MaxCharsPerFile 1800 `
-  -MaxFieldChars 1800 `
-  -MaxPriorArt 8 `
-  -MaxTokens 1000 `
-  -MetaMaxTokens 600 `
-  -RequestTimeout 180 `
-  -ReasoningEffort low `
-  -Verbosity low `
   -WriteAnalysisSteps
+```
+
+当前推荐使用拆分式主分析。该模式会把一次完整审查分析拆成 `meta`、`novelty`、`inventive_step`、`support`、`clarity`、`eligibility` 六次较小调用，再本地合并为同一结构的 analysis JSON。报告生成后会继续执行证据修复、HTML 字段补齐、证据校验、质量审计和完整性校验。
+
+如需对已有 case set 或嵌套目录批量刷新，使用 `scripts/run_case_set_refresh.py`：
+
+```powershell
+python scripts\run_case_set_refresh.py `
+  疾病分类9个样例 `
+  --stage all `
+  --env-file .env `
+  --api-key-env OPENAI_API_KEY `
+  --base-url https://yunwu.ai/v1 `
+  --model gpt-5.5 `
+  --write-analysis-steps
 ```
 
 输出目录默认位于：
@@ -215,6 +213,57 @@ python scripts\run_manifest_benchmark_batch.py `
 
 `collect` 写出 `batch-collect-status.csv`；`analysis` 写出 `batch-analysis-status.csv`。如果仍想单条记录内连续跑完整链路，可以使用 `--stage all`，它会先 collect，再 analysis。
 
+### 靶点驱动 500 个原始资料集
+
+如果要按现有靶点关键词扩展到 500 个可跑 case，使用端到端入口：
+
+```powershell
+python scripts\run_target_benchmark_raw_materials.py `
+  --candidate-source epo-register `
+  --target 500 `
+  --candidate-limit 2000 `
+  --publication-year-from 2014 `
+  --publication-year-to 2026 `
+  --output-root markush-run\benchmark-target500
+```
+
+这个入口会复用现有链路完成五步：通过 EPO Register Advanced Search 生成扩大候选池、验证 EPO doclist 并写出 `markush-run\benchmark\ep_review_file_sources_target500.json`、调用 `run_manifest_benchmark_batch.py --stage collect` 抓取审查文件和原始申请文件、调用 `download_prior_art_pdfs.py` 处理引用/相关专利 PDF、最后生成 `_raw_materials_audit.csv` 和 `_raw_materials_audit_summary.json`。
+
+默认不使用 Google Patents。引用/相关专利 PDF 如果没有可直接使用的官方 PDF URL，会标记为 `official_pdf_source_unavailable`，不会伪造本地文件。只有显式加 `--allow-google-prior-art-fallback` 时，才会把 Google Patents/patentimages 作为 PDF fallback。
+
+也可以分步运行：
+
+```powershell
+python scripts\collect_epo_register_candidates.py `
+  -o markush-run\benchmark\ep_application_candidates_epo_target_pool.json `
+  --limit 2000 `
+  --publication-year-from 2014 `
+  --publication-year-to 2026
+
+python scripts\build_target_review_manifest.py `
+  --candidates markush-run\benchmark\ep_application_candidates_epo_target_pool.json `
+  --output markush-run\benchmark\ep_review_file_sources_target500.json `
+  --target 500 `
+  --workers 2
+
+python scripts\run_manifest_benchmark_batch.py `
+  --manifest markush-run/benchmark/ep_review_file_sources_target500.json `
+  --output-root markush-run/benchmark-target500 `
+  --stage collect `
+  --extract-pdf-text `
+  --skip-existing `
+  --success-target 500 `
+  --workers 2
+
+python scripts\download_prior_art_pdfs.py markush-run\benchmark-target500
+
+python scripts\audit_raw_materials.py `
+  markush-run\benchmark-target500 `
+  --manifest markush-run\benchmark\ep_review_file_sources_target500.json
+```
+
+`--success-target` 只改变目标模式下的投递策略：达到指定成功数后停止继续投递新记录；不传该参数时，原有 manifest 批处理行为保持不变。
+
 ### EPO 下载稳定性
 
 EPO Register/PDF 下载偶尔会返回 Cloudflare challenge 或连接 EOF。当前链路已做以下处理：
@@ -271,6 +320,13 @@ $env:EPO_PROXY_URL = "http://127.0.0.1:7890"
 | `scripts/generate_analysis_json.py` | 调用 LLM 生成分析 JSON |
 | `scripts/generate_analysis_json_split.py` | 将主分析拆成多次较小 LLM 调用并合并 JSON |
 | `scripts/run_manifest_benchmark_batch.py` | 按 manifest 批量跑 EP benchmark |
+| `scripts/run_case_set_refresh.py` | 刷新已有单 case 或嵌套 case set，串联 OCR、claims review、analysis、修复、验证和审计 |
+| `scripts/generate_claims_verified.py` | 从本地 EPO claim PDF 生成 claims review HTML 和 claims verified JSON 草稿 |
+| `scripts/repair_report_sources.py` | 用本地 TXT 连续原文修复 analysis JSON 中较弱的 `original_text` |
+| `scripts/ensure_html_field_completeness.py` | 补齐 HTML 报告会渲染的关键字段 |
+| `scripts/verify_report_sources.py` | 校验报告证据原文是否可追溯到本地 TXT |
+| `scripts/audit_case_quality.py` | 输出 case 质量和证据可追溯性审计 |
+| `scripts/validate_case_set_completeness.py` | 校验 case set 的 PDF/TXT/JSON/HTML/claims verified 完整性 |
 | `scripts/json_to_html_report.py` | 渲染 HTML 报告 |
 
 ## Git

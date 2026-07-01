@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import unquote
+from urllib.parse import quote_plus, unquote
 from urllib.request import Request, urlopen
 
 from build_benchmark_input import normalize_patent_publication, wipo_doc_id
@@ -57,6 +57,13 @@ def google_publication_candidates(publication: str) -> list[str]:
     return candidates
 
 
+def official_patent_link(publication: str) -> str:
+    wipo_id = wipo_doc_id(publication)
+    if wipo_id:
+        return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={quote_plus(wipo_id)}"
+    return f"https://worldwide.espacenet.com/patent/search?q=pn%3D{quote_plus(publication)}"
+
+
 def find_pdf_url(publication: str, timeout: int) -> tuple[str, str, str]:
     for candidate in google_publication_candidates(publication):
         page_url = f"https://patents.google.com/patent/{candidate}/en"
@@ -93,6 +100,7 @@ def update_prior_art_item(
     timeout: int,
     sleep_seconds: float,
     force: bool,
+    allow_google_fallback: bool,
 ) -> dict[str, Any]:
     citation = str(item.get("citation") or "")
     publication = normalize_patent_publication(citation)
@@ -100,6 +108,7 @@ def update_prior_art_item(
     if not publication:
         item["pdf_download_status"] = "skipped_unverified_publication"
         return item
+    item["official_link"] = item.get("official_link") or official_patent_link(publication)
 
     output_dir = case_dir / "prior-art"
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -107,9 +116,19 @@ def update_prior_art_item(
     if output_path.exists() and not force and valid_existing_pdf(output_path):
         data = output_path.read_bytes()
         item["local_pdf"] = relative(output_path, case_dir)
+        item["pdf_local_path"] = item["local_pdf"]
         item["pdf_sha256"] = sha256_bytes(data)
         item["pdf_bytes"] = len(data)
         item["pdf_download_status"] = "existing"
+        return item
+
+    if not allow_google_fallback:
+        item.pop("local_pdf", None)
+        item.pop("pdf_local_path", None)
+        item.pop("pdf_download_url", None)
+        item["pdf_lookup_url"] = item["official_link"]
+        item["pdf_lookup_publication"] = publication
+        item["pdf_download_status"] = "official_pdf_source_unavailable"
         return item
 
     pdf_url, page_url, resolved_publication = find_pdf_url(publication, timeout)
@@ -117,6 +136,7 @@ def update_prior_art_item(
     item["pdf_lookup_publication"] = resolved_publication
     if not pdf_url:
         item.pop("local_pdf", None)
+        item.pop("pdf_local_path", None)
         item["pdf_download_status"] = "missing_pdf_url"
         return item
 
@@ -125,16 +145,19 @@ def update_prior_art_item(
         data = request_bytes(pdf_url, timeout)
     except (HTTPError, URLError, TimeoutError, OSError) as exc:
         item.pop("local_pdf", None)
+        item.pop("pdf_local_path", None)
         item["pdf_download_status"] = f"download_error: {exc}"
         return item
 
     if not data.startswith(b"%PDF"):
         item.pop("local_pdf", None)
+        item.pop("pdf_local_path", None)
         item["pdf_download_status"] = "downloaded_non_pdf"
         return item
 
     output_path.write_bytes(data)
     item["local_pdf"] = relative(output_path, case_dir)
+    item["pdf_local_path"] = item["local_pdf"]
     item["pdf_sha256"] = sha256_bytes(data)
     item["pdf_bytes"] = len(data)
     item["pdf_downloaded_at_utc"] = datetime.now(timezone.utc).isoformat()
@@ -150,7 +173,7 @@ def iter_benchmark_inputs(root: Path) -> list[Path]:
     return sorted(root.rglob("*-benchmark-input.json"))
 
 
-def update_file(path: Path, timeout: int, sleep_seconds: float, force: bool) -> tuple[int, int, int]:
+def update_file(path: Path, timeout: int, sleep_seconds: float, force: bool, allow_google_fallback: bool) -> tuple[int, int, int]:
     data = read_json(path)
     docs = ((data.get("benchmark_input") or {}).get("prior_art_docs") or [])
     case_dir = path.parent
@@ -160,7 +183,7 @@ def update_file(path: Path, timeout: int, sleep_seconds: float, force: bool) -> 
             continue
         total += 1
         before = item.get("pdf_download_status")
-        update_prior_art_item(item, case_dir, timeout, sleep_seconds, force)
+        update_prior_art_item(item, case_dir, timeout, sleep_seconds, force, allow_google_fallback)
         status = str(item.get("pdf_download_status") or "")
         if status in {"downloaded", "existing"}:
             downloaded += 1
@@ -176,6 +199,11 @@ def main() -> None:
     parser.add_argument("--timeout", type=int, default=45)
     parser.add_argument("--sleep-seconds", type=float, default=0.2)
     parser.add_argument("--force", action="store_true", help="Re-download even when a valid local PDF already exists.")
+    parser.add_argument(
+        "--allow-google-fallback",
+        action="store_true",
+        help="Use Google Patents/patentimages only as an explicit fallback for prior-art PDFs.",
+    )
     args = parser.parse_args()
 
     root = Path(args.root)
@@ -186,13 +214,13 @@ def main() -> None:
 
     overall = [0, 0, 0]
     for path in paths:
-        total, ok, failed = update_file(path, args.timeout, args.sleep_seconds, args.force)
+        total, ok, failed = update_file(path, args.timeout, args.sleep_seconds, args.force, args.allow_google_fallback)
         overall[0] += total
         overall[1] += ok
         overall[2] += failed
         print(f"{path}: prior_art={total}, local_pdf={ok}, unresolved={total - ok}")
 
-    if overall[0] and overall[1] == 0:
+    if args.allow_google_fallback and overall[0] and overall[1] == 0:
         raise SystemExit(2)
 
 

@@ -6,6 +6,7 @@ import os
 import re
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote_plus
 
 from openai import OpenAI
 
@@ -86,7 +87,7 @@ OUTPUT_SCHEMA = {
                 "rank": 1,
                 "citation": "对比文件/语义检索相关专利",
                 "mentioned_in_examined_text": True,
-                "official_link": "WIPO PATENTSCOPE 或 Google Patents 具体专利页链接",
+                "official_link": "WIPO PATENTSCOPE、Espacenet 或 EPO Register 具体专利页链接",
                 "llm_evidence_explanation": "该先文与审查意见或权利要求的关系",
             }
         ],
@@ -184,18 +185,14 @@ def official_patent_search_link(citation: str) -> str:
     wipo_id = wipo_doc_id(publication)
     if wipo_id:
         return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={wipo_id}"
-    return f"https://patents.google.com/patent/{publication}/en"
+    return f"https://worldwide.espacenet.com/patent/search?q=pn%3D{quote_plus(publication)}"
 
 
 def verified_direct_patent_link(citation: str, url: str) -> str:
     publication = normalize_patent_publication(citation)
     if not publication or not url:
         return ""
-    match = re.fullmatch(r"https://patents\.google\.com/patent/([A-Z]{2}[A-Z0-9]+)/(?:en|[a-z]{2})", url)
-    if not match:
-        return ""
-    linked_publication = normalize_patent_publication(match.group(1))
-    if linked_publication and linked_publication == publication:
+    if "patentscope.wipo.int" in url or "worldwide.espacenet.com" in url or "register.epo.org" in url:
         return url
     return ""
 
@@ -408,7 +405,7 @@ def build_user_prompt(benchmark: dict[str, Any], source_texts: list[dict[str, st
 输出要求：
 - 只保留新颖性、创造性、充分公开/支持、清楚性、适格性五个评分维度；不要输出单一性。
 - aggregate_score 按新权重计算：新颖性25%，创造性30%，充分公开/支持15%，清楚性10%，适格性20%。
-- evidence_trace.prior_art_documents 必须优先使用 benchmark_input.prior_art_docs，保留 top20；其中 mentioned_in_examined_text=true 的为审查文本已提及先文，其余为 Google Patents 语义检索返回的具体专利文献页；禁止输出关键词搜索页或自行构造不存在的专利号。
+- evidence_trace.prior_art_documents 必须优先使用 benchmark_input.prior_art_docs，保留 top20；其中 mentioned_in_examined_text=true 的为审查文本已提及先文；链接优先使用 WIPO PATENTSCOPE、Espacenet 或 EPO Register；禁止输出关键词搜索页、Google Patents fallback 或自行构造不存在的专利号。
 - dimension_scores 中每个 *_disc 都必须是对象，而不是字符串；每个对象必须包含 analysis、original_text、translation、llm_evidence_explanation。
 - 每个维度的 original_text 必须使用审查材料里的英文原始描述文本；不要只写中文概括。
 - evidence_trace 中的 specification_support 和 examination_material_evidence 必须包含 original_text、translation、llm_evidence_explanation。
@@ -565,7 +562,7 @@ def normalize_analysis_result(result: dict[str, Any], benchmark: dict[str, Any])
                 if item.get("mentioned_in_examined_text"):
                     explanation = "该引用由审查文本直接提及，作为审查意见或检索意见中的对比文件线索。"
                 else:
-                    explanation = "该引用由 Google Patents 语义检索返回的具体专利文献页补充，用于扩展与权利要求主题相关的专利背景。"
+                    explanation = "该引用由 benchmark prior_art_docs 提供，并通过官方专利检索入口保留为可追溯先文线索。"
             normalized_prior_art.append(
                 {
                     "rank": item.get("rank") or index,

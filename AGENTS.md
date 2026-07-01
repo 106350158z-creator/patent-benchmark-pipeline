@@ -1,8 +1,25 @@
 # AGENTS.md
 
-## EPO Benchmark 链路
+## EPO Benchmark Pipeline
 
-处理本仓库的 EPO benchmark、Markush 审查文件、OCR、analysis JSON 或 HTML 报告问题前，先阅读 [文档/链路脚本清单.md](文档/链路脚本清单.md)，再沿实际脚本链路排查。
+处理本仓库的 EPO benchmark、Markush 审查文件、OCR、analysis JSON 或 HTML 报告问题前，先阅读 `workflow-summary.md`，再沿实际脚本链路排查。
 
-优先从 `scripts/run_epo_benchmark.ps1` 和 `scripts/run_manifest_benchmark_batch.py` 判断入口，再追到 `build_benchmark_input.py`、`generate_analysis_json*.py` 和 `json_to_html_report.py`，不要只改渲染层来掩盖 input 或 OCR 的问题。
+优先入口：
 
+- 单个 EP case：`scripts/run_epo_benchmark.ps1`
+- 已有 case set 或嵌套目录批量刷新：`scripts/run_case_set_refresh.py`
+- Manifest 批量任务：`scripts/run_manifest_benchmark_batch.py`
+
+排查顺序：
+
+1. 先看入口脚本的实际参数和默认值。
+2. 再追 `scripts/build_benchmark_input.py`、`scripts/generate_analysis_json.py`、`scripts/generate_analysis_json_split.py`、`scripts/json_to_html_report.py`。
+3. 涉及证据或空字段时，同时检查 `scripts/repair_report_sources.py`、`scripts/ensure_html_field_completeness.py`、`scripts/verify_report_sources.py`、`scripts/audit_case_quality.py` 和 `scripts/validate_case_set_completeness.py`。
+
+重要约定：
+
+- 默认使用拆分式分析 `AnalysisMode split`。
+- 默认保留证据修复、HTML 字段补齐、证据验证、质量审计和完整性校验。
+- `original_text` 必须能从本地 TXT 中追溯到连续原文片段。
+- 不要只改 HTML 渲染层来掩盖 input、OCR 或 analysis JSON 的问题。
+- 提交或推送时检查 `AGENTS.md`，不要遗漏本文件。

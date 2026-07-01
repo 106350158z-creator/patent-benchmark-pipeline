@@ -129,18 +129,14 @@ def official_patent_link(citation: str) -> str:
     wipo_id = wipo_doc_id(publication)
     if wipo_id:
         return f"https://patentscope.wipo.int/search/en/detail.jsf?docId={quote_plus(wipo_id)}"
-    return f"https://patents.google.com/patent/{publication}/en"
+    return f"https://worldwide.espacenet.com/patent/search?q=pn%3D{quote_plus(publication)}"
 
 
 def verified_direct_patent_link(citation: str, url: str) -> str:
     publication = normalize_patent_publication(citation)
     if not publication or not url:
         return ""
-    match = re.fullmatch(r"https://patents\.google\.com/patent/([A-Z]{2}[A-Z0-9]+)/(?:en|[a-z]{2})", url)
-    if not match:
-        return ""
-    linked_publication = normalize_patent_publication(match.group(1))
-    if linked_publication and linked_publication == publication:
+    if "patentscope.wipo.int" in url or "worldwide.espacenet.com" in url or "register.epo.org" in url:
         return url
     return ""
 
@@ -563,7 +559,7 @@ def render_prior_art(prior_art: Any, current_path: Path | None = None) -> str:
             if item.get("mentioned_in_examined_text"):
                 mentioned = "Examined text"
             elif method in {"official_semantic_retrieval", "google_patents_semantic_retrieval"}:
-                mentioned = "Supplemental query"
+                mentioned = "Official supplemental query"
             else:
                 mentioned = "Supplemental source"
             explanation = str(item.get("llm_evidence_explanation") or item.get("relevance") or "")

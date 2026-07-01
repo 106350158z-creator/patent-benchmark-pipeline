@@ -3,7 +3,7 @@ import csv
 import json
 import subprocess
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, as_completed, wait
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -88,6 +88,27 @@ def write_status(status_path: Path, rows: list[dict[str, str]]) -> None:
         writer.writerows(sorted_rows)
 
 
+def row_counts_toward_success(row: dict[str, str], args: argparse.Namespace) -> bool:
+    if row.get("status") != "ok":
+        return False
+    if args.stage in {"collect", "all"}:
+        benchmark_input = row.get("benchmark_input") or ""
+        if not benchmark_input or not Path(benchmark_input).exists():
+            return False
+    if args.stage in {"analysis", "all"}:
+        analysis_json = row.get("analysis_json") or ""
+        analysis_html = row.get("analysis_html") or ""
+        if not analysis_json or not analysis_html:
+            return False
+        if not Path(analysis_json).exists() or not Path(analysis_html).exists():
+            return False
+    return True
+
+
+def count_successes(rows_by_app: dict[str, dict[str, str]], apps: set[str], args: argparse.Namespace) -> int:
+    return sum(1 for app, row in rows_by_app.items() if app in apps and row_counts_toward_success(row, args))
+
+
 def run_collect(app: str, args: argparse.Namespace, project_root: Path) -> None:
     collect_args = [
         "powershell",
@@ -132,6 +153,37 @@ def run_collect(app: str, args: argparse.Namespace, project_root: Path) -> None:
     if args.extract_pdf_text:
         collect_args.append("-ExtractPdfText")
     run_command(collect_args, cwd=project_root)
+
+
+def read_download_index(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as handle:
+            return list(csv.DictReader(handle))
+    except OSError:
+        return []
+
+
+def log_downloaded_case_files(app: str, case_dir: Path) -> None:
+    print(f"[case-files] {app} case_dir={case_dir}", flush=True)
+    for label, folder in [("docs", case_dir / "docs"), ("original-application", case_dir / "original-application")]:
+        rows = read_download_index(folder / "download-index.csv")
+        print(f"[case-files] {app} {label}_count={len(rows)}", flush=True)
+        if not rows:
+            continue
+        for row in rows:
+            title = str(row.get("title") or "")
+            date = str(row.get("date") or "")
+            file_name = str(row.get("fileName") or "")
+            path = str(row.get("path") or "")
+            pages = str(row.get("pages") or "")
+            document_id = str(row.get("documentId") or "")
+            print(
+                f"[case-file] {app} bucket={label} date={date} pages={pages} "
+                f"documentId={document_id} title={title} fileName={file_name} path={path}",
+                flush=True,
+            )
 
 
 def run_refine(app: str, benchmark_input: Path, args: argparse.Namespace, project_root: Path) -> None:
@@ -297,6 +349,7 @@ def run_record(index: int, record: dict[str, Any], args: argparse.Namespace, pro
                 print(f"[skip] {app} already has benchmark input", flush=True)
             else:
                 run_collect(app, args, project_root)
+            log_downloaded_case_files(app, case_dir)
 
         if args.stage in {"analysis", "all"}:
             refreshed_input = False
@@ -335,6 +388,127 @@ def run_record(index: int, record: dict[str, Any], args: argparse.Namespace, pro
     }
 
 
+def run_all_records(
+    indexed_records: list[tuple[int, dict[str, Any]]],
+    rows_by_app: dict[str, dict[str, str]],
+    status_path: Path,
+    args: argparse.Namespace,
+    project_root: Path,
+    output_root: Path,
+) -> None:
+    workers = max(1, args.workers)
+    print(f"Running {len(indexed_records)} records with {workers} worker(s). Status: {status_path}", flush=True)
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {
+            executor.submit(run_record, index, record, args, project_root, output_root): (
+                index,
+                str(record["application_number"]).split(".")[0],
+            )
+            for index, record in indexed_records
+        }
+        for future in as_completed(futures):
+            index, app = futures[future]
+            try:
+                row = future.result()
+            except Exception as exc:
+                row = {
+                    "index": str(index),
+                    "application_number": app,
+                    "publication_number": "",
+                    "benchmark_label": "",
+                    "keyword_group": "",
+                    "stage": args.stage,
+                    "analysis_mode": args.analysis_mode,
+                    "status": "error",
+                    "started_at_utc": "",
+                    "finished_at_utc": datetime.now(timezone.utc).isoformat(),
+                    "benchmark_input": "",
+                    "analysis_json": "",
+                    "analysis_html": "",
+                    "error": repr(exc),
+                }
+            rows_by_app[app] = row
+            write_status(status_path, list(rows_by_app.values()))
+            print(f"[done] {app}: {row['status']}", flush=True)
+
+
+def run_until_success_target(
+    indexed_records: list[tuple[int, dict[str, Any]]],
+    rows_by_app: dict[str, dict[str, str]],
+    status_path: Path,
+    args: argparse.Namespace,
+    project_root: Path,
+    output_root: Path,
+) -> None:
+    workers = max(1, args.workers)
+    candidate_apps = {str(record["application_number"]).split(".")[0] for _, record in indexed_records}
+    successes = count_successes(rows_by_app, candidate_apps, args)
+    print(
+        f"Running until {args.success_target} successful record(s) with {workers} worker(s). "
+        f"Already successful: {successes}. Status: {status_path}",
+        flush=True,
+    )
+    if successes >= args.success_target:
+        print(f"Success target already reached: {successes}/{args.success_target}", flush=True)
+        return
+
+    pending = iter(indexed_records)
+    in_flight = {}
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        def submit_next() -> bool:
+            for index, record in pending:
+                app = str(record["application_number"]).split(".")[0]
+                existing = rows_by_app.get(app)
+                if existing and row_counts_toward_success(existing, args):
+                    continue
+                future = executor.submit(run_record, index, record, args, project_root, output_root)
+                in_flight[future] = (index, app)
+                return True
+            return False
+
+        while len(in_flight) < workers and successes + len(in_flight) < args.success_target and submit_next():
+            pass
+
+        while in_flight and successes < args.success_target:
+            done, _ = wait(set(in_flight), return_when=FIRST_COMPLETED)
+            for future in done:
+                index, app = in_flight.pop(future)
+                try:
+                    row = future.result()
+                except Exception as exc:
+                    row = {
+                        "index": str(index),
+                        "application_number": app,
+                        "publication_number": "",
+                        "benchmark_label": "",
+                        "keyword_group": "",
+                        "stage": args.stage,
+                        "analysis_mode": args.analysis_mode,
+                        "status": "error",
+                        "started_at_utc": "",
+                        "finished_at_utc": datetime.now(timezone.utc).isoformat(),
+                        "benchmark_input": "",
+                        "analysis_json": "",
+                        "analysis_html": "",
+                        "error": repr(exc),
+                    }
+                rows_by_app[app] = row
+                write_status(status_path, list(rows_by_app.values()))
+                successes = count_successes(rows_by_app, candidate_apps, args)
+                print(f"[done] {app}: {row['status']} successes={successes}/{args.success_target}", flush=True)
+
+            while len(in_flight) < workers and successes + len(in_flight) < args.success_target and submit_next():
+                pass
+
+    if successes < args.success_target:
+        print(
+            f"WARNING: success target not reached: {successes}/{args.success_target}. "
+            "Enlarge the verified manifest and rerun.",
+            flush=True,
+        )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the existing EPO benchmark pipeline for records in a manifest.")
     parser.add_argument("--manifest", default="markush-run/benchmark/ep_review_file_sources_merged_current.json")
@@ -371,6 +545,12 @@ def main() -> None:
     parser.add_argument("--no-refresh-input-before-analysis", dest="refresh_input_before_analysis", action="store_false")
     parser.set_defaults(refresh_input_before_analysis=True)
     parser.add_argument("--workers", type=int, default=1, help="Number of records to process concurrently.")
+    parser.add_argument(
+        "--success-target",
+        type=int,
+        default=0,
+        help="Stop submitting new records once this many successful records exist. 0 preserves the old run-all behavior.",
+    )
     args = parser.parse_args()
 
     project_root = Path(__file__).resolve().parents[1]
@@ -388,41 +568,11 @@ def main() -> None:
                 if app:
                     rows_by_app[app] = row
 
-    workers = max(1, args.workers)
     indexed_records = list(enumerate(records, start=args.offset + 1))
-    print(f"Running {len(indexed_records)} records with {workers} worker(s). Status: {status_path}", flush=True)
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = {
-            executor.submit(run_record, index, record, args, project_root, output_root): (
-                index,
-                str(record["application_number"]).split(".")[0],
-            )
-            for index, record in indexed_records
-        }
-        for future in as_completed(futures):
-            index, app = futures[future]
-            try:
-                row = future.result()
-            except Exception as exc:
-                row = {
-                    "index": str(index),
-                    "application_number": app,
-                    "publication_number": "",
-                    "benchmark_label": "",
-                    "keyword_group": "",
-                    "stage": args.stage,
-                    "analysis_mode": args.analysis_mode,
-                    "status": "error",
-                    "started_at_utc": "",
-                    "finished_at_utc": datetime.now(timezone.utc).isoformat(),
-                    "benchmark_input": "",
-                    "analysis_json": "",
-                    "analysis_html": "",
-                    "error": repr(exc),
-                }
-            rows_by_app[app] = row
-            write_status(status_path, list(rows_by_app.values()))
-            print(f"[done] {app}: {row['status']}", flush=True)
+    if args.success_target:
+        run_until_success_target(indexed_records, rows_by_app, status_path, args, project_root, output_root)
+    else:
+        run_all_records(indexed_records, rows_by_app, status_path, args, project_root, output_root)
 
     print(f"Wrote status: {status_path}")
 
