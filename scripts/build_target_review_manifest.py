@@ -146,12 +146,9 @@ def build_manifest_record(
         "keyword_category": str(record.get("keyword_category") or record.get("category") or ""),
         "matched_query": matched_query or str(record.get("source_query") or ""),
         "benchmark_label": str(record.get("benchmark_label") or ""),
-        "google_status": str(record.get("google_legal_status") or record.get("google_status") or ""),
-        "google_patents_url": str(record.get("google_patents_url") or ""),
         "epo_doclist_url": doclist_url,
         "epo_register_main_url": main_url,
         "links": {
-            "google_patents": str(record.get("google_patents_url") or ""),
             "epo_register_main": main_url,
             "epo_register_doclist": doclist_url,
         },
@@ -190,6 +187,66 @@ def write_status(status_path: Path, rows: list[dict[str, str]]) -> None:
         writer = csv.DictWriter(handle, fieldnames=STATUS_FIELDS, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(sorted(rows, key=lambda row: int(row.get("index") or 0)))
+
+
+def manifest_payload(
+    selected: list[dict[str, Any]],
+    args: argparse.Namespace,
+    candidates_path: Path,
+    status_path: Path,
+    cache_root: Path,
+    validated_candidates: int,
+    partial: bool,
+    project_root: Path,
+) -> dict[str, Any]:
+    stats = {
+        "total_records": len(selected),
+        "labels": dict(Counter(str(row.get("benchmark_label") or "") for row in selected)),
+        "keyword_groups": dict(Counter(str(row.get("keyword_group") or "") for row in selected)),
+    }
+    return {
+        "metadata": {
+            "created_at_utc": datetime.now(timezone.utc).isoformat(),
+            "source": str(candidates_path),
+            "note": "EP application candidates verified through EPO Register doclist before benchmark collection.",
+            "partial": partial,
+            "target_requested": args.target,
+            "validated_candidates": validated_candidates,
+            "accepted_records": len(selected),
+            "min_exam_docs": args.min_exam_docs,
+            "min_original_docs": args.min_original_docs,
+            "validation_status_file": str(status_path.relative_to(project_root)),
+            "doclist_cache_root": str(cache_root.relative_to(project_root)),
+        },
+        "stats": stats,
+        "records": selected,
+    }
+
+
+def write_manifest(
+    output_path: Path,
+    selected: list[dict[str, Any]],
+    args: argparse.Namespace,
+    candidates_path: Path,
+    status_path: Path,
+    cache_root: Path,
+    validated_candidates: int,
+    partial: bool,
+    project_root: Path,
+) -> None:
+    write_json(
+        output_path,
+        manifest_payload(
+            selected,
+            args,
+            candidates_path,
+            status_path,
+            cache_root,
+            validated_candidates,
+            partial,
+            project_root,
+        ),
+    )
 
 
 def validate_one(
@@ -301,6 +358,17 @@ def main() -> None:
                 status_rows.append(row)
                 if manifest_record:
                     accepted.append(manifest_record)
+                    write_manifest(
+                        output_path,
+                        accepted[: args.target] if args.target else accepted,
+                        args,
+                        candidates_path,
+                        status_path,
+                        cache_root,
+                        len(status_rows),
+                        True,
+                        project_root,
+                    )
                 write_status(status_path, status_rows)
                 print(
                     f"[{row['status']}] {row['application_number']}: "
@@ -314,29 +382,9 @@ def main() -> None:
                 break
 
     selected = accepted[: args.target] if args.target else accepted
-    stats = {
-        "total_records": len(selected),
-        "labels": dict(Counter(str(row.get("benchmark_label") or "") for row in selected)),
-        "keyword_groups": dict(Counter(str(row.get("keyword_group") or "") for row in selected)),
-    }
-    output = {
-        "metadata": {
-            "created_at_utc": datetime.now(timezone.utc).isoformat(),
-            "source": str(candidates_path),
-            "note": "Target-keyword EP candidates verified through EPO Register doclist before benchmark collection.",
-            "target_requested": args.target,
-            "validated_candidates": len(status_rows),
-            "accepted_records": len(selected),
-            "min_exam_docs": args.min_exam_docs,
-            "min_original_docs": args.min_original_docs,
-            "validation_status_file": str(status_path.relative_to(project_root)),
-            "doclist_cache_root": str(cache_root.relative_to(project_root)),
-        },
-        "stats": stats,
-        "records": selected,
-    }
+    output = manifest_payload(selected, args, candidates_path, status_path, cache_root, len(status_rows), False, project_root)
     write_json(output_path, output)
-    print(json.dumps(stats, ensure_ascii=False, indent=2))
+    print(json.dumps(output["stats"], ensure_ascii=False, indent=2))
     print(f"Wrote manifest: {output_path}")
     print(f"Wrote validation status: {status_path}")
     if args.target and len(selected) < args.target:

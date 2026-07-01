@@ -556,9 +556,18 @@ def main() -> None:
     project_root = Path(__file__).resolve().parents[1]
     records = load_records(project_root / args.manifest, args.limit, args.offset)
     output_root = project_root / args.output_root
-    status_name = args.status_file or ("batch-status.csv" if args.stage == "all" else f"batch-{args.stage}-status.csv")
-    status_path = output_root / status_name
+    if args.status_file:
+        status_arg = Path(args.status_file)
+        if status_arg.is_absolute():
+            status_path = status_arg
+        elif len(status_arg.parts) > 1:
+            status_path = project_root / status_arg
+        else:
+            status_path = output_root / status_arg
+    else:
+        status_path = output_root / ("batch-status.csv" if args.stage == "all" else f"batch-{args.stage}-status.csv")
     output_root.mkdir(parents=True, exist_ok=True)
+    status_path.parent.mkdir(parents=True, exist_ok=True)
 
     rows_by_app: dict[str, dict[str, str]] = {}
     if status_path.exists():

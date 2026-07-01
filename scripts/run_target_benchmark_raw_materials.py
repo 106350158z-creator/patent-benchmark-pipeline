@@ -13,7 +13,12 @@ def run(args: list[str], cwd: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the target-keyword EPO raw-material collection workflow.")
-    parser.add_argument("--candidate-source", choices=["epo-register", "google"], default="epo-register")
+    parser.add_argument(
+        "--candidate-source",
+        choices=["manifest", "google"],
+        default="manifest",
+        help="manifest reuses an existing verified manifest and skips candidate discovery.",
+    )
     parser.add_argument("--candidate-pool", default="markush-run/benchmark/ep_application_candidates_epo_target_pool.json")
     parser.add_argument("--manifest", default="markush-run/benchmark/ep_review_file_sources_target500.json")
     parser.add_argument("--output-root", default="markush-run/benchmark-target500")
@@ -22,8 +27,6 @@ def main() -> None:
     parser.add_argument("--pages-per-query", type=int, default=5)
     parser.add_argument("--max-detail", type=int, default=3000)
     parser.add_argument("--candidate-workers", type=int, default=12)
-    parser.add_argument("--publication-year-from", type=int, default=2014)
-    parser.add_argument("--publication-year-to", type=int, default=2026)
     parser.add_argument("--validation-workers", type=int, default=2)
     parser.add_argument("--collect-workers", type=int, default=2)
     parser.add_argument("--env-file", default=".env")
@@ -41,41 +44,29 @@ def main() -> None:
     project_root = Path(__file__).resolve().parents[1]
     py = sys.executable
 
+    if args.candidate_source == "manifest":
+        print(f"[reuse-manifest] {args.manifest}", flush=True)
+        args.skip_candidate_collection = True
+        args.skip_manifest_validation = True
+
     if not args.skip_candidate_collection:
-        if args.candidate_source == "epo-register":
-            run(
-                [
-                    py,
-                    "scripts\\collect_epo_register_candidates.py",
-                    "-o",
-                    args.candidate_pool,
-                    "--limit",
-                    str(args.candidate_limit),
-                    "--publication-year-from",
-                    str(args.publication_year_from),
-                    "--publication-year-to",
-                    str(args.publication_year_to),
-                ],
-                cwd=project_root,
-            )
-        else:
-            run(
-                [
-                    py,
-                    "scripts\\collect_ep_application_candidates.py",
-                    "-o",
-                    args.candidate_pool,
-                    "--limit",
-                    str(args.candidate_limit),
-                    "--pages-per-query",
-                    str(args.pages_per_query),
-                    "--max-detail",
-                    str(args.max_detail),
-                    "--detail-workers",
-                    str(args.candidate_workers),
-                ],
-                cwd=project_root,
-            )
+        run(
+            [
+                py,
+                "scripts\\collect_ep_application_candidates.py",
+                "-o",
+                args.candidate_pool,
+                "--limit",
+                str(args.candidate_limit),
+                "--pages-per-query",
+                str(args.pages_per_query),
+                "--max-detail",
+                str(args.max_detail),
+                "--detail-workers",
+                str(args.candidate_workers),
+            ],
+            cwd=project_root,
+        )
 
     if not args.skip_manifest_validation:
         run(

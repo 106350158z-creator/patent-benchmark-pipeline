@@ -219,29 +219,23 @@ python scripts\run_manifest_benchmark_batch.py `
 
 ```powershell
 python scripts\run_target_benchmark_raw_materials.py `
-  --candidate-source epo-register `
+  --candidate-source manifest `
+  --manifest markush-run\benchmark\ep_review_file_sources_target500.json `
   --target 500 `
-  --candidate-limit 2000 `
-  --publication-year-from 2014 `
-  --publication-year-to 2026 `
   --output-root markush-run\benchmark-target500
 ```
 
-这个入口会复用现有链路完成五步：通过 EPO Register Advanced Search 生成扩大候选池、验证 EPO doclist 并写出 `markush-run\benchmark\ep_review_file_sources_target500.json`、调用 `run_manifest_benchmark_batch.py --stage collect` 抓取审查文件和原始申请文件、调用 `download_prior_art_pdfs.py` 处理引用/相关专利 PDF、最后生成 `_raw_materials_audit.csv` 和 `_raw_materials_audit_summary.json`。
+这个入口默认复用已有 verified manifest，不重新做候选发现；后续完全走现有批处理链路：调用 `run_manifest_benchmark_batch.py --stage collect` 抓取审查文件和原始申请文件、调用 `download_prior_art_pdfs.py` 处理引用/相关专利 PDF、最后生成 `_raw_materials_audit.csv` 和 `_raw_materials_audit_summary.json`。
 
 默认不使用 Google Patents。引用/相关专利 PDF 如果没有可直接使用的官方 PDF URL，会标记为 `official_pdf_source_unavailable`，不会伪造本地文件。只有显式加 `--allow-google-prior-art-fallback` 时，才会把 Google Patents/patentimages 作为 PDF fallback。
+
+日常 target500 下载应优先复用已经验证过的 manifest；候选扩展和 doclist 验证独立完成，避免下载阶段重复做候选发现。
 
 也可以分步运行：
 
 ```powershell
-python scripts\collect_epo_register_candidates.py `
-  -o markush-run\benchmark\ep_application_candidates_epo_target_pool.json `
-  --limit 2000 `
-  --publication-year-from 2014 `
-  --publication-year-to 2026
-
 python scripts\build_target_review_manifest.py `
-  --candidates markush-run\benchmark\ep_application_candidates_epo_target_pool.json `
+  --candidates markush-run\benchmark\ep_application_candidates_500.json `
   --output markush-run\benchmark\ep_review_file_sources_target500.json `
   --target 500 `
   --workers 2
@@ -260,6 +254,17 @@ python scripts\download_prior_art_pdfs.py markush-run\benchmark-target500
 python scripts\audit_raw_materials.py `
   markush-run\benchmark-target500 `
   --manifest markush-run\benchmark\ep_review_file_sources_target500.json
+```
+
+如果 manifest 正在后台构造，可以挂一个 watcher 等满 500 后自动启动下载：
+
+```powershell
+python scripts\wait_for_verified_manifest_and_collect.py `
+  --manifest markush-run\benchmark\ep_review_file_sources_verified500_keywords.json `
+  --output-root markush-run\benchmark-target500 `
+  --target 500 `
+  --interval-seconds 300 `
+  --collect-workers 1
 ```
 
 `--success-target` 只改变目标模式下的投递策略：达到指定成功数后停止继续投递新记录；不传该参数时，原有 manifest 批处理行为保持不变。
