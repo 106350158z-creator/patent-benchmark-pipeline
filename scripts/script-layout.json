@@ -1,0 +1,51 @@
+﻿{
+    "collection":  [
+                       "collect_ep_application_candidates.py",
+                       "fetch_publication_server_pdfs.py",
+                       "update_collection_ledger.py",
+                       "classify_collected_artifacts.py",
+                       "run_expanded_publication_fetch.py",
+                       "run_overnight_publication_fetch.py"
+                   ],
+    "audits":  [
+                   "audit_case_quality.py",
+                   "validate_case_set_completeness.py",
+                   "audit_prior_art_coverage.py",
+                   "audit_raw_materials.py"
+               ],
+    "legacy_register_pipeline":  [
+                                     "run_epo_benchmark.ps1",
+                                     "fetch-epo-main.ps1",
+                                     "fetch-epo-doclist.ps1",
+                                     "download-epo-docs.ps1",
+                                     "sanitize_epo_html.py",
+                                     "run_manifest_benchmark_batch.py",
+                                     "build_target_review_manifest.py",
+                                     "run_target_benchmark_raw_materials.py",
+                                     "wait_for_verified_manifest_and_collect.py"
+                                 ],
+    "processing":  [
+                       "run_case_set_refresh.py",
+                       "extract_pdf_text.py",
+                       "extract_original_application_texts.py",
+                       "ocr_case_batch.py",
+                       "ocr-pdfs.py",
+                       "build_benchmark_input.py",
+                       "render_markush_pages.py",
+                       "refine_benchmark_preview.py",
+                       "generate_claims_verified.py",
+                       "generate_analysis_json.py",
+                       "generate_analysis_json_split.py",
+                       "complete_analysis_json.py",
+                       "json_to_html_report.py",
+                       "translate_report_lists.py",
+                       "repair_report_sources.py",
+                       "ensure_html_field_completeness.py",
+                       "verify_report_sources.py",
+                       "download_prior_art_pdfs.py"
+                   ],
+    "maintenance":  [
+                        "reorganize_markush_run.py",
+                        "upgrade_existing_analysis.py"
+                    ]
+}

@@ -71,3 +71,7 @@ markush-run/
 文档/
 关键词靶点信息/
 疾病分类9个样例/
+
+# Large local data (not code) — keep out of GitHub
+final-benchmark/
+autodl_transfer/

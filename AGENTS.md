@@ -1,5 +1,13 @@
 # AGENTS.md
 
+## Benchmark Overview Index
+
+The canonical inventory is `markush-run/benchmark/benchmark-overview.json`. It identifies the current target benchmark EP applications and, for every discovered EP case directory, records every captured file path and type.
+
+- Rebuild it with `python scripts/collection/build_benchmark_overview.py` after collection work. Do not hand-append JSON: the script performs an idempotent on-disk reconciliation, so reruns cannot duplicate files and deleted files are removed from the index.
+- The standard single-case and manifest-batch entrypoints refresh the overview automatically when they finish, including after a partial collection failure.
+- When adding a new collection entrypoint or a script that writes case artifacts, call the overview generator after it writes files. Keep the target manifest current; the default is the latest `ep_review_file_sources_full_*.json` manifest.
+
 ## EPO Benchmark Pipeline
 
 处理本仓库的 EPO benchmark、Markush 审查文件、OCR、analysis JSON 或 HTML 报告问题前，先阅读 `workflow-summary.md`，再沿实际脚本链路排查。

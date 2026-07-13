@@ -1,38 +1,19 @@
-import argparse
+﻿from __future__ import annotations
+
+import runpy
+import sys
 from pathlib import Path
 
-import fitz
+_HERE = Path(__file__).resolve().parent
+_TARGET = _HERE / "processing" / "extract_pdf_text.py"
 
-
-def extract_pdf_text(pdf_path: Path, overwrite: bool) -> Path:
-    out_path = pdf_path.with_suffix(".txt")
-    if out_path.exists() and not overwrite:
-        return out_path
-
-    doc = fitz.open(pdf_path)
-    chunks: list[str] = []
-    for index, page in enumerate(doc, start=1):
-        text = page.get_text("text")
-        chunks.append(f"\n--- PAGE {index} ---\n")
-        chunks.append(text or "")
-        if text and not text.endswith("\n"):
-            chunks.append("\n")
-    out_path.write_text("".join(chunks), encoding="utf-8")
-    return out_path
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Extract embedded text from PDFs into sibling .txt files.")
-    parser.add_argument("input", help="PDF file or directory containing PDFs")
-    parser.add_argument("--overwrite", action="store_true")
-    args = parser.parse_args()
-
-    input_path = Path(args.input)
-    pdfs = [input_path] if input_path.is_file() else sorted(input_path.rglob("*.pdf"))
-    for pdf in pdfs:
-        out = extract_pdf_text(pdf, args.overwrite)
-        print(f"{pdf} -> {out}")
-
+for _path in [_HERE, _TARGET.parent, *[p for p in _HERE.iterdir() if p.is_dir()]]:
+    _text = str(_path)
+    if _text not in sys.path:
+        sys.path.insert(0, _text)
 
 if __name__ == "__main__":
-    main()
+    runpy.run_path(str(_TARGET), run_name="__main__")
+else:
+    _namespace = runpy.run_path(str(_TARGET), run_name=f"_wrapped_{Path(__file__).stem.replace('-', '_')}")
+    globals().update({key: value for key, value in _namespace.items() if not key.startswith("__")})

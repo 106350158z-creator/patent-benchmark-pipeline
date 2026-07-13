@@ -71,6 +71,8 @@ notepad .env
 
 当前推荐使用拆分式主分析。该模式会把一次完整审查分析拆成 `meta`、`novelty`、`inventive_step`、`support`、`clarity`、`eligibility` 六次较小调用，再本地合并为同一结构的 analysis JSON。报告生成后会继续执行证据修复、HTML 字段补齐、证据校验、质量审计和完整性校验。
 
+现在 `run_epo_benchmark.ps1`、`run_manifest_benchmark_batch.py` 和 `run_case_set_refresh.py` 都默认启用拆分式分析；拆分结果如果缺少某个维度的分数或 `original_text`，会自动调用 `complete_analysis_json.py` 只补跑缺失维度并合并回原 analysis JSON。需要跳过补缺时，分别使用 `-SkipCompleteSplitAnalysis` 或 `--skip-complete-split-analysis`。
+
 如需对已有 case set 或嵌套目录批量刷新，使用 `scripts/run_case_set_refresh.py`：
 
 ```powershell
@@ -143,6 +145,18 @@ python scripts\generate_analysis_json_split.py `
   --reasoning-effort low `
   --verbosity low `
   --write-steps
+```
+
+补齐已有拆分分析 JSON 的缺失维度：
+
+```powershell
+python scripts\complete_analysis_json.py `
+  markush-run\benchmark\EP21842292\EP21842292-benchmark-input.json `
+  markush-run\benchmark\EP21842292\EP21842292-analysis.json `
+  --env-file .env `
+  --api-key-env OPENAI_API_KEY `
+  --base-url https://yunwu.ai/v1 `
+  --model gpt-5.5
 ```
 
 只生成 prompt，不调用 API：
@@ -225,9 +239,13 @@ python scripts\run_target_benchmark_raw_materials.py `
   --output-root markush-run\benchmark-target500
 ```
 
-这个入口默认复用已有 verified manifest，不重新做候选发现；后续完全走现有批处理链路：调用 `run_manifest_benchmark_batch.py --stage collect` 抓取审查文件和原始申请文件、调用 `download_prior_art_pdfs.py` 处理引用/相关专利 PDF、最后生成 `_raw_materials_audit.csv` 和 `_raw_materials_audit_summary.json`。
+这个入口默认复用已有 verified manifest，不重新做候选发现；后续走完整原始抓取链路：调用 `run_manifest_benchmark_batch.py --stage collect --fetch-only` 抓取 Register 三件套、EPO file wrapper 审查 PDF，并用 EPO Publication Server 补齐缺失的 original-application PDF，最后生成 `_raw_materials_audit.csv` 和 `_raw_materials_audit_summary.json`。默认不做 OCR、不抽文本、不生成 benchmark input、不渲染 Markush 图片。
 
-默认不使用 Google Patents。引用/相关专利 PDF 如果没有可直接使用的官方 PDF URL，会标记为 `official_pdf_source_unavailable`，不会伪造本地文件。只有显式加 `--allow-google-prior-art-fallback` 时，才会把 Google Patents/patentimages 作为 PDF fallback。
+`--success-target` 的默认成功口径是 raw complete：`register/<EP>-main.html`、`register/<EP>-doclist.html`、`register/<EP>-doclist.csv`、`docs/download-index.csv` + 至少一个有效 docs PDF、`original-application/download-index.csv` + 至少一个有效 original PDF 都存在，才算成功。
+
+prior art PDF 不是核心完整抓取的默认部分。只有显式加 `--include-prior-art-download` 时才下载引用/相关专利 PDF；只有同时显式加 `--allow-google-prior-art-fallback` 时，才会把 Google Patents/patentimages 作为 PDF fallback。
+
+如果需要在本机 collect 阶段顺手抽取 PDF 文本，显式加 `--process-local`；大规模抓取建议保持默认 raw fetch only，把 OCR、Markush 裁图和 LLM 解析留给后续本地或 AutoDL 处理。
 
 日常 target500 下载应优先复用已经验证过的 manifest；候选扩展和 doclist 验证独立完成，避免下载阶段重复做候选发现。
 
@@ -244,12 +262,10 @@ python scripts\run_manifest_benchmark_batch.py `
   --manifest markush-run/benchmark/ep_review_file_sources_target500.json `
   --output-root markush-run/benchmark-target500 `
   --stage collect `
-  --extract-pdf-text `
+  --fetch-only `
   --skip-existing `
   --success-target 500 `
   --workers 2
-
-python scripts\download_prior_art_pdfs.py markush-run\benchmark-target500
 
 python scripts\audit_raw_materials.py `
   markush-run\benchmark-target500 `
@@ -268,6 +284,30 @@ python scripts\wait_for_verified_manifest_and_collect.py `
 ```
 
 `--success-target` 只改变目标模式下的投递策略：达到指定成功数后停止继续投递新记录；不传该参数时，原有 manifest 批处理行为保持不变。
+
+## AutoDL 远程解析
+
+如果要把本地 `markush-run` 下的原始 PDF 输入上传到 AutoDL 并在远端生成最终 benchmark，默认使用当前验证过的链路：
+
+```powershell
+.\autodl_transfer\upload_to_autodl.ps1 `
+  -KeyPath "C:\Users\de'l'l\.ssh\autodl_epo_ed25519_20260705" `
+  -Dataset full `
+  -Workers 3 `
+  -RunHours 10
+```
+
+该入口默认：
+
+- 上传 `d_pdf_only_full_manifest.json` 和 `d_pdf_only_full_files_from_markush.txt` 对应的原始输入；
+- 远端运行 `remote_run_10h_final.sh`，实际调用 `remote_run_final_parallel.sh`；
+- 使用 3 个 worker 分片并发；
+- 每条 case 默认走拆分式分析 `generate_analysis_json_split.py`；
+- 自动运行 `complete_analysis_json.py` 补齐缺失维度；
+- 默认不写 placeholder，占位 fallback 只有显式加 `-PlaceholderFallback` 才会启用；
+- 结果写入 `/root/epo/final-benchmark`，每轮 run 的进度和 summary 写入对应 run 目录。
+
+如需只上传/检查而不启动远端解析，可加 `-SkipRun`。如需覆盖已有 analysis，可加 `-OverwriteAnalysis`。
 
 ### EPO 下载稳定性
 
@@ -324,6 +364,7 @@ $env:EPO_PROXY_URL = "http://127.0.0.1:7890"
 | `scripts/build_benchmark_input.py` | 构建 benchmark input JSON |
 | `scripts/generate_analysis_json.py` | 调用 LLM 生成分析 JSON |
 | `scripts/generate_analysis_json_split.py` | 将主分析拆成多次较小 LLM 调用并合并 JSON |
+| `scripts/complete_analysis_json.py` | 检测拆分分析中缺失的维度，只补跑缺失部分并合并回原 JSON |
 | `scripts/run_manifest_benchmark_batch.py` | 按 manifest 批量跑 EP benchmark |
 | `scripts/run_case_set_refresh.py` | 刷新已有单 case 或嵌套 case set，串联 OCR、claims review、analysis、修复、验证和审计 |
 | `scripts/generate_claims_verified.py` | 从本地 EPO claim PDF 生成 claims review HTML 和 claims verified JSON 草稿 |
