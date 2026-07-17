@@ -119,7 +119,33 @@ function ResourceImage({ patentCase, path, onOpen }: {
   return <button className="image-preview" onClick={() => onOpen({ path, title: "Markush 图片" })}><img src={url} alt="Markush 候选" loading="lazy" /></button>;
 }
 
-function EvidenceViewer({ viewer, onClose }: { viewer?: ViewerState; onClose: () => void }) {
+function EvidenceViewer({ viewer, onClose, onNavigate }: { viewer?: ViewerState; onClose: () => void; onNavigate: (resource: ViewerResource) => void }) {
+  const frameRef = useRef<HTMLIFrameElement>(null);
+
+  const handleFrameLoad = () => {
+    const doc = frameRef.current?.contentDocument;
+    if (!doc) return;
+    doc.addEventListener("click", (event) => {
+      const anchor = (event.target as HTMLElement | null)?.closest?.("a");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href") || "";
+      if (!href) return;
+      if (href.startsWith("#")) {
+        event.preventDefault();
+        const target = doc.getElementById(decodeURIComponent(href.slice(1)));
+        target?.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      if (/^(?:https?:|mailto:|tel:)/i.test(href)) {
+        event.preventDefault();
+        window.open(href, "_blank", "noopener,noreferrer");
+        return;
+      }
+      event.preventDefault();
+      onNavigate({ path: href, title: anchor.textContent?.trim() || href });
+    });
+  };
+
   return (
     <aside className={`viewer ${viewer ? "viewer-open" : ""}`}>
       <div className="viewer-head">
@@ -134,7 +160,7 @@ function EvidenceViewer({ viewer, onClose }: { viewer?: ViewerState; onClose: ()
       {viewer?.text !== undefined && <pre className="text-viewer">{viewer.text}</pre>}
       {viewer?.url && viewer.mime?.startsWith("image/") && <div className="viewer-image"><img src={viewer.url} alt={viewer.title || viewer.path} /></div>}
       {viewer?.url && viewer.mime === "application/pdf" && <iframe className="viewer-frame" src={`${viewer.url}${viewer.page ? `#page=${viewer.page}` : ""}`} title={viewer.title || viewer.path} />}
-      {viewer?.srcdoc !== undefined && <iframe className="viewer-frame" srcDoc={viewer.srcdoc} sandbox="allow-same-origin" title={viewer.title || viewer.path} />}
+      {viewer?.srcdoc !== undefined && <iframe ref={frameRef} className="viewer-frame" srcDoc={viewer.srcdoc} sandbox="allow-same-origin" onLoad={handleFrameLoad} title={viewer.title || viewer.path} />}
     </aside>
   );
 }
@@ -282,17 +308,23 @@ function FieldCard({
         </div>
         <span className={`field-state state-${field.status}`}>{FIELD_STATUS_LABELS[field.status]}</span>
       </div>
-      {item.missingRequired && <div className="blocking-note"><AlertTriangle size={17} />必需字段缺失，请标记不通过并填写修正值。</div>}
-      {item.missingResources?.map((path) => <div className="blocking-note" key={path}><AlertTriangle size={17} />资源不存在：{path}</div>)}
+      {!item.autoPass && item.missingRequired && <div className="blocking-note"><AlertTriangle size={17} />必需字段缺失，请标记不通过并填写修正值。</div>}
+      {!item.autoPass && item.missingResources?.map((path) => <div className="blocking-note" key={path}><AlertTriangle size={17} />资源不存在：{path}</div>)}
       {imagePath ? <ResourceImage patentCase={patentCase} path={imagePath} onOpen={onOpenResource} /> : compactRecord(item.originalValue)}
       {item.evidencePaths.length > 0 && (
         <div className="evidence-links">
           {item.evidencePaths.map((path) => <button key={path} onClick={() => onOpenResource({ path, title: item.label })}><FileSearch size={14} />{path}</button>)}
         </div>
       )}
-      {field.status === "corrected_verified" && <div className="corrected-value"><strong>人工修正</strong>{displayValue(field.corrected_value ?? undefined)}<small>{field.comment}</small></div>}
-      <ReviewControls item={item} field={field} candidatePaths={patentCase.candidateImagePaths} onChange={onFieldChange} onConfirmCorrection={onConfirmCorrection} />
-      <NoteEditor field={field} onChange={onFieldChange} />
+      {item.autoPass ? (
+        <div className="auto-pass-note"><Check size={16} />该字段默认通过，无需审核。</div>
+      ) : (
+        <>
+          {field.status === "corrected_verified" && <div className="corrected-value"><strong>人工修正</strong>{displayValue(field.corrected_value ?? undefined)}<small>{field.comment}</small></div>}
+          <ReviewControls item={item} field={field} candidatePaths={patentCase.candidateImagePaths} onChange={onFieldChange} onConfirmCorrection={onConfirmCorrection} />
+          <NoteEditor field={field} onChange={onFieldChange} />
+        </>
+      )}
     </article>
   );
 }
@@ -490,7 +522,7 @@ export default function App() {
         }}
       />
       <header className="topbar">
-        <div className="brand"><div className="brand-mark">EP</div><div><strong>专利审查工作台</strong><span>本地分析结果逐字段核验</span></div></div>
+        <div className="brand"><div className="brand-mark">EP</div><div><strong>评测基准数据校验台</strong><span>本地分析结果逐字段核验</span></div></div>
         <div className="top-actions">
           {cases.length > 0 && <button onClick={exportAll}><Download size={17} />导出全部</button>}
           <button className="primary" onClick={chooseDirectory}><FolderOpen size={17} />导入文件夹</button>
@@ -560,7 +592,7 @@ export default function App() {
               </div>
             </main>
           )}
-          <EvidenceViewer viewer={viewer} onClose={() => setViewer(undefined)} />
+          <EvidenceViewer viewer={viewer} onClose={() => setViewer(undefined)} onNavigate={openResource} />
         </div>
       )}
     </div>

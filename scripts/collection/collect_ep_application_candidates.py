@@ -2,7 +2,10 @@ import argparse
 import html
 import json
 import re
+import subprocess
+import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter
@@ -58,7 +61,33 @@ KEYWORD_GROUPS = [
 ]
 
 
+_RETRY_STATUS = {429, 500, 502, 503, 504}
+_CFG = {"retries": 5, "backoff": 5.0, "rotate_controller": "", "rotate_selector": "node-selection"}
+
+
+def rotate_clash_node(reason: str = "google_503") -> None:
+    """Rotate the local Clash exit node to spread Google Patents load across IPs.
+    Best-effort: shells out to the shared rotate_clash_proxy.py helper and never
+    raises into the collection loop."""
+    controller = _CFG.get("rotate_controller") or ""
+    if not controller:
+        return
+    helper = Path(__file__).with_name("rotate_clash_proxy.py")
+    try:
+        subprocess.run(
+            [sys.executable, str(helper), "--controller", controller,
+             "--selector", _CFG.get("rotate_selector") or "node-selection",
+             "--reason", reason,
+             "--history-file", "markush-run/_state/clash-node-rotation-candidates.json"],
+            capture_output=True, text=True, timeout=60,
+        )
+    except Exception:
+        pass
+
+
 def request_text(url: str, timeout: int = 30) -> str:
+    retries = int(_CFG.get("retries", 5))
+    backoff = float(_CFG.get("backoff", 5.0))
     request = urllib.request.Request(
         url,
         headers={
@@ -66,8 +95,27 @@ def request_text(url: str, timeout: int = 30) -> str:
             "Accept": "text/html,application/json,*/*",
         },
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read().decode("utf-8", errors="ignore")
+    last_exc: Exception | None = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read().decode("utf-8", errors="ignore")
+        except urllib.error.HTTPError as exc:
+            last_exc = exc
+            if exc.code not in _RETRY_STATUS or attempt >= retries:
+                raise
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            last_exc = exc
+            if attempt >= retries:
+                raise
+        # rate-limited or transient: back off (and rotate exit IP), then retry
+        wait = min(90.0, backoff * (2 ** attempt))
+        if attempt == 0:
+            rotate_clash_node("google_ratelimit")
+        time.sleep(wait)
+    if last_exc:
+        raise last_exc
+    raise RuntimeError("request_text exhausted retries")
 
 
 def google_xhr_url(query: str, page: int) -> str:
@@ -231,12 +279,28 @@ def main() -> None:
     parser.add_argument("--detail-workers", type=int, default=12)
     parser.add_argument("--skip-detail", action="store_true", help="Write publication-number-only candidates without opening Google patent detail pages.")
     parser.add_argument("--exclude-source", action="append", default=[], help="Existing candidate/manifest JSON to exclude by EP application/publication number.")
+    parser.add_argument("--request-retries", type=int, default=5, help="Retries on Google 429/5xx before giving up on a request.")
+    parser.add_argument("--request-backoff", type=float, default=5.0, help="Base seconds for exponential backoff on rate-limit/5xx (capped 90s).")
+    parser.add_argument("--query-delay", type=float, default=1.5, help="Sleep between queries to avoid Google 503.")
+    parser.add_argument("--rotate-controller", default="", help="Clash controller (e.g. 127.0.0.1:9097) to rotate the local exit IP between groups and on 503. Empty disables rotation.")
+    parser.add_argument("--rotate-selector", default="node-selection", help="Clash selector group to rotate.")
+    parser.add_argument("--rotate-every-groups", type=int, default=1, help="Rotate the exit node before every N keyword groups (0=off).")
     args = parser.parse_args()
+    _CFG.update({
+        "retries": args.request_retries,
+        "backoff": args.request_backoff,
+        "rotate_controller": args.rotate_controller,
+        "rotate_selector": args.rotate_selector,
+    })
     excluded_ids = load_excluded_ids(args.exclude_source)
 
     by_publication: dict[str, dict[str, Any]] = {}
     query_errors: list[dict[str, str]] = []
-    for group in KEYWORD_GROUPS:
+    for gi, group in enumerate(KEYWORD_GROUPS):
+        if args.rotate_every_groups and args.rotate_controller and gi % args.rotate_every_groups == 0:
+            rotate_clash_node("group_boundary")
+            time.sleep(2.0)
+        group_seen_before = len(by_publication)
         for query in group["queries"]:
             try:
                 for row in iter_google_results(query, args.pages_per_query):
@@ -247,6 +311,10 @@ def main() -> None:
                     existing["category"] = existing.get("category") or group["category"]
             except Exception as exc:
                 query_errors.append({"query": query, "error": repr(exc)})
+            if args.query_delay:
+                time.sleep(args.query_delay)
+        print(f"[{gi + 1}/{len(KEYWORD_GROUPS)}] {group['keyword_group']}: "
+              f"+{len(by_publication) - group_seen_before} pubs (total {len(by_publication)})", flush=True)
 
     records: list[dict[str, Any]] = []
     detail_errors: list[dict[str, str]] = []

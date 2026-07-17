@@ -72,11 +72,12 @@ describe("review model", () => {
 
   it("does not allow a missing required resource to pass without a correction", () => {
     const items = buildReviewItems(analysis, benchmark, claims);
-    items[0].missingResources = ["missing.pdf"];
+    const target = items.find((item) => !item.autoPass)!;
+    target.missingResources = ["missing.pdf"];
     const review = createReview("EP12345678", { analysis_sha256: "a", benchmark_input_sha256: "b" }, items);
     for (const item of items) review.fields[item.id].status = "verified";
     expect(reviewStatus(review, items)).toBe("pending");
-    review.fields[items[0].id].status = "corrected_verified";
+    review.fields[target.id].status = "corrected_verified";
     expect(reviewStatus(review, items)).toBe("success");
   });
 

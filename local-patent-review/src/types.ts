@@ -24,6 +24,7 @@ export interface ReviewItem {
   evidencePaths: string[];
   missingRequired?: boolean;
   missingResources?: string[];
+  autoPass?: boolean;
 }
 
 export interface NoteImage {

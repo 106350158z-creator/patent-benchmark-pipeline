@@ -98,9 +98,9 @@ export function buildReviewItems(
   const scores = objectValue(analysis.dimension_scores);
 
   META_FIELDS.forEach(([key, label]) => {
-    items.push(item(`/meta/${key}`, "案件元数据", label, meta[key]));
+    items.push({ ...item(`/meta/${key}`, "案件元数据", label, meta[key]), autoPass: true });
   });
-  items.push(item("/grant_label", "案件元数据", "授权与否标签", analysis.grant_label));
+  items.push({ ...item("/grant_label", "案件元数据", "授权与否标签", analysis.grant_label), autoPass: true });
 
   const input = objectValue(benchmarkInput?.benchmark_input);
   const drugStructure = objectValue(input.drug_structure);
@@ -182,6 +182,7 @@ export function reviewStatus(review: ReviewDocument, items: ReviewItem[]): Overa
   const fields = items.map((reviewItem) => review.fields[reviewItem.id]);
   if (fields.some((field) => field?.status === "rejected")) return "needs_correction";
   const complete = items.every((reviewItem) => {
+    if (reviewItem.autoPass) return true;
     const field = review.fields[reviewItem.id];
     if (!field) return false;
     const blocked = reviewItem.missingRequired || Boolean(reviewItem.missingResources?.length);
@@ -193,6 +194,7 @@ export function reviewStatus(review: ReviewDocument, items: ReviewItem[]): Overa
 
 export function updateReviewSummary(review: ReviewDocument, items: ReviewItem[]): ReviewDocument {
   const completed = items.filter((reviewItem) => {
+    if (reviewItem.autoPass) return true;
     const status = review.fields[reviewItem.id]?.status;
     if ((reviewItem.missingRequired || reviewItem.missingResources?.length) && status !== "corrected_verified") return false;
     return status === "verified" || status === "corrected_verified" || status === "not_applicable";
@@ -213,7 +215,7 @@ export function createReview(
   const fields = Object.fromEntries(items.map((reviewItem) => [
     reviewItem.id,
     {
-      status: "pending" as ReviewStatus,
+      status: (reviewItem.autoPass ? "verified" : "pending") as ReviewStatus,
       original_value: reviewItem.originalValue,
       corrected_value: null,
       comment: "",
